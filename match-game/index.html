@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nish-Logic | Games Vault</title>
     <style>
-        body { background: #000; color: #0f0; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .vault-box { border: 2px solid #0f0; padding: 40px; text-align: center; box-shadow: 0 0 20px #0f0; background: rgba(0,10,0,0.9); }
-        .btn { display: block; padding: 15px; margin: 15px 0; border: 1px solid #0f0; color: #0f0; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        .btn:hover { background: #0f0; color: #000; }
+        body { margin: 0; background: #000; color: #0f0; font-family: monospace; text-align: center; }
+        .game-container { padding: 50px; border: 2px solid #0f0; display: inline-block; margin-top: 100px; }
+        #timer { font-size: 2rem; color: #ff0000; }
+        button { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 10px 20px; cursor: pointer; }
+        button:hover { background: #0f0; color: #000; }
     </style>
 </head>
 <body>
-    <div class="vault-box">
-        <h1>GAMES VAULT</h1>
-        <hr color="#0f0">
-        <a href="/nish-logic/match-game" class="btn">THE 3-OVER MATCH</a>
-        <a href="/nish-logic/reviewer" class="btn">ANALYTICAL OBSERVER</a>
-        <a href="https://nish-logic.web.app" style="color: #8f8; text-decoration: none; font-size: 0.8rem;">[ BACK TO HUB ]</a>
+    <h1>APTITUDE LOGIC: THE OVER</h1>
+    <div class="game-container">
+        <p>6 Questions. 60 Seconds. 1 Goal.</p>
+        <div id="timer">60s</div>
+        <div id="game-area">
+            <button onclick="startGame()">START SESSION</button>
+        </div>
     </div>
+    <script>
+        function startGame() { alert("Game logic initializing..."); }
+    </script>
 </body>
 </html>
