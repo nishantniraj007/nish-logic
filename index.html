@@ -21,11 +21,9 @@
     <div class="back-nav">
         <a href="https://nish-logic.web.app" style="color:#0f0; text-decoration:none;">[ < BACK TO PORTFOLIO ]</a>
     </div>
-
     <div class="game-box">
         <div id="start-screen">
             <h1>THE 3-OVER MATCH</h1>
-            <p>18 Questions | Select Difficulty</p>
             <select id="difficulty">
                 <option value="easy">Level 1 (Easy)</option>
                 <option value="medium">Level 2 (Medium)</option>
@@ -34,75 +32,52 @@
             <br><br>
             <button onclick="initMatch()">START MATCH</button>
         </div>
-
         <div id="game-screen" class="hidden">
             <div id="category-name" class="over-header">OVER 1: APTITUDE</div>
             <div id="timer">06:00</div>
             <div id="question">Fetching logic...</div>
             <div id="options-container" class="options"></div>
         </div>
-
         <div id="result-screen" class="hidden">
             <h2>MATCH ENDED</h2>
             <p id="final-score"></p>
             <button onclick="location.reload()">NEW MATCH</button>
         </div>
     </div>
-
     <script>
-        let matchData = [];
-        let currentQ = 0;
-        let score = 0;
-        let timer;
-        let timeLeft;
-
+        let matchData = []; let currentQ = 0; let score = 0; let timer; let timeLeft;
         async function initMatch() {
             const diff = document.getElementById('difficulty').value;
             document.getElementById('start-screen').innerHTML = "<h2>LOADING ENGINE...</h2>";
-            
-            // Fetch 18 total: 6 Math (Apti), 6 Gadgets (Reasoning), 6 General (GK)
             const categories = [19, 30, 9]; 
             for (let cat of categories) {
                 const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${cat}&difficulty=${diff}&type=multiple`);
                 const data = await res.json();
                 matchData.push(...data.results);
             }
-
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
             startOver();
         }
-
         function startOver() {
-            if (currentQ < 6) { 
-                updateHeader("OVER 1: APTITUDE", 360); 
-            } else if (currentQ < 12) { 
-                updateHeader("OVER 2: REASONING", 360); 
-            } else { 
-                updateHeader("OVER 3: GK", 180); 
-            }
+            if (currentQ < 6) updateHeader("OVER 1: APTITUDE", 360); 
+            else if (currentQ < 12) updateHeader("OVER 2: REASONING", 360); 
+            else updateHeader("OVER 3: GK", 180);
             showQuestion();
         }
-
         function updateHeader(text, time) {
             document.getElementById('category-name').innerText = text;
-            if (!timer || currentQ % 6 === 0) {
-                timeLeft = time;
-                runTimer();
-            }
+            if (!timer || currentQ % 6 === 0) { timeLeft = time; runTimer(); }
         }
-
         function runTimer() {
             clearInterval(timer);
             timer = setInterval(() => {
                 timeLeft--;
-                let m = Math.floor(timeLeft / 60);
-                let s = timeLeft % 60;
+                let m = Math.floor(timeLeft / 60); let s = timeLeft % 60;
                 document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
                 if (timeLeft <= 0) endMatch();
             }, 1000);
         }
-
         function showQuestion() {
             if (currentQ >= 18) return endMatch();
             const data = matchData[currentQ];
@@ -121,7 +96,6 @@
                 container.appendChild(btn);
             });
         }
-
         function endMatch() {
             clearInterval(timer);
             document.getElementById('game-screen').classList.add('hidden');
