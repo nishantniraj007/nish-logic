@@ -9,54 +9,66 @@
         body { background: #000; color: #0f0; font-family: 'Courier New', monospace; text-align: center; margin: 0; overflow: hidden; }
         .screen { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         .hidden { display: none; }
-        .btn { border: 1px solid #0f0; padding: 15px; background: none; color: #0f0; cursor: pointer; margin: 10px; width: 280px; font-weight: bold; }
+        select { background: #000; color: #0f0; border: 1px solid #0f0; padding: 10px; font-size: 1.1rem; width: 280px; margin: 20px; outline: none; }
+        .btn { border: 1px solid #0f0; padding: 15px; background: none; color: #0f0; cursor: pointer; width: 280px; font-weight: bold; text-transform: uppercase; margin: 10px; }
         .btn:hover { background: #0f0; color: #000; }
-        #timer { font-size: 3rem; color: #ff0; text-shadow: 0 0 10px #f00; }
-        
-        /* Kindle Style Modal */
-        #result-screen { background: #f4f4f4; color: #1a1a1a; border: 10px solid #1a1a1a; box-sizing: border-box; }
-        .certificate-box { border: 2px solid #1a1a1a; padding: 40px; margin: 20px; max-width: 80%; }
-        .kindle-text { font-family: serif; font-style: italic; }
+        #timer { font-size: 3.5rem; color: #ff0; text-shadow: 0 0 15px #f00; font-weight: bold; }
+        #question-text { font-size: 1.3rem; padding: 30px; max-width: 800px; line-height: 1.6; min-height: 100px; }
+        #result-screen { background: #e5e5e5; color: #1a1a1a; }
+        .cert-border { border: 5px double #1a1a1a; padding: 50px; background: #fff; width: 85%; max-width: 700px; box-shadow: 10px 10px 0px rgba(0,0,0,0.1); }
+        .kindle-font { font-family: serif; font-style: italic; }
     </style>
 </head>
 <body>
+
     <div id="start-screen" class="screen">
-        <h1>NISH-LOGIC: 3-OVER MATCH</h1>
-        <button class="btn" onclick="startMatch('easy')">START SESSION</button>
+        <h1 style="letter-spacing: 5px;">3-OVER MATCH</h1>
+        <p>APTITUDE (6m) | REASONING (6m) | GK (3m)</p>
+        <select id="level-select">
+            <option value="easy">LEVEL: NOVICE (EASY)</option>
+            <option value="medium">LEVEL: ANALYST (MEDIUM)</option>
+            <option value="hard">LEVEL: EXPERT (HARD)</option>
+        </select>
+        <button class="btn" onclick="initMatch()">INITIALIZE ENGINE</button>
     </div>
 
     <div id="game-screen" class="screen hidden">
-        <h2 id="over-title">OVER 1: APTITUDE</h2>
-        <div id="timer">60s</div>
-        <div id="question-box"><p id="question-text">Syncing...</p><div id="options"></div></div>
+        <h2 id="over-title" style="color: #8f8;">---</h2>
+        <div id="timer">--:--</div>
+        <div id="question-box">
+            <p id="question-text">Syncing...</p>
+            <div id="options"></div>
+        </div>
     </div>
 
     <div id="result-screen" class="screen hidden">
-        <div class="certificate-box">
-            <h1 class="kindle-text">Performance Certificate</h1>
-            <hr color="#1a1a1a">
-            <p>This document certifies the logical aptitude session completion.</p>
-            <h2 id="final-stats">SCORE: 0/18</h2>
-            <p class="kindle-text">Verified by Nish-Logic Engine</p>
-            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="downloadPDF()">GENERATE KINDLE PDF</button>
-            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="location.reload()">RETRY</button>
+        <div class="cert-border">
+            <h1 class="kindle-font" style="font-size: 2.5rem; margin: 0;">Certificate of Logic</h1>
+            <p style="text-transform: uppercase; letter-spacing: 2px;">Session Completion Report</p>
+            <hr style="border: 1px solid #1a1a1a;">
+            <p class="kindle-font" style="font-size: 1.2rem;">This confirms completion of 18 logical data points via Nish-Logic.</p>
+            <h1 id="final-stats" style="font-size: 3rem; margin: 20px 0;">0/18</h1>
+            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="downloadPDF()">DOWNLOAD KINDLE PDF</button>
+            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="location.reload()">RE-SYNC ENGINE</button>
         </div>
     </div>
 
     <script>
-        let score = 0, currentQ = 0, timeLeft = 60, timer, questions = [], level = 'easy';
+        let score = 0, currentQ = 0, timeLeft = 0, timer, questions = [], level = 'easy';
         const categories = [18, 19, 9];
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        let audioCtx;
 
         function playSound(f, t, d) {
+            if(!audioCtx) return;
             const o = audioCtx.createOscillator(), g = audioCtx.createGain();
             o.type = t; o.frequency.value = f; g.gain.value = 0.05;
             o.connect(g); g.connect(audioCtx.destination);
             o.start(); o.stop(audioCtx.currentTime + d);
         }
 
-        async function startMatch(lvl) {
-            level = lvl; audioCtx.resume();
+        async function initMatch() {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            level = document.getElementById('level-select').value;
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
             await fetchOver();
@@ -64,11 +76,15 @@
 
         async function fetchOver() {
             const idx = Math.floor(currentQ / 6);
+            const names = ["OVER 1: APTITUDE", "OVER 2: REASONING", "OVER 3: GK"];
+            const times = [360, 360, 180]; // 6m, 6m, 3m
+            document.getElementById('over-title').innerText = names[idx];
+            timeLeft = times[idx];
+            
             try {
                 const r = await fetch(`https://opentdb.com/api.php?amount=6&category=${categories[idx]}&difficulty=${level}&type=multiple`);
                 const d = await r.json();
                 questions = d.results;
-                timeLeft = 60;
                 startTimer();
                 showQuestion();
             } catch (e) { setTimeout(fetchOver, 2000); }
@@ -78,8 +94,9 @@
             clearInterval(timer);
             timer = setInterval(() => {
                 timeLeft--;
-                document.getElementById('timer').innerText = timeLeft + "s";
-                if(timeLeft % 2 === 0) playSound(50, 'sine', 0.1);
+                let m = Math.floor(timeLeft / 60), s = timeLeft % 60;
+                document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
+                if(timeLeft % 2 === 0) playSound(60, 'sine', 0.1); 
                 if(timeLeft <= 0) endMatch();
             }, 1000);
         }
@@ -87,10 +104,12 @@
         function showQuestion() {
             if (currentQ > 0 && currentQ % 6 === 0) { clearInterval(timer); return fetchOver(); }
             if (currentQ >= 18) return endMatch();
+
             const q = questions[currentQ % 6];
             document.getElementById('question-text').innerHTML = q.question;
             const opts = [...q.incorrect_answers, q.correct_answer].sort(() => Math.random() - 0.5);
             const box = document.getElementById('options'); box.innerHTML = '';
+            
             opts.forEach(o => {
                 const b = document.createElement('button'); b.className = 'btn'; b.innerHTML = o;
                 b.onclick = () => {
@@ -106,27 +125,21 @@
             clearInterval(timer);
             document.getElementById('game-screen').classList.add('hidden');
             document.getElementById('result-screen').classList.remove('hidden');
-            document.getElementById('final-stats').innerText = `FINAL SCORE: ${score}/18`;
+            document.getElementById('final-stats').innerText = `${score}/18`;
         }
 
         function downloadPDF() {
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF('landscape', 'mm', 'a5');
-            doc.setFillColor(244, 244, 244);
-            doc.rect(0, 0, 210, 148, 'F');
-            doc.setLineWidth(1);
-            doc.rect(10, 10, 190, 128); 
-            doc.setFont("serif", "italic");
-            doc.setFontSize(26);
+            doc.setFillColor(245, 245, 245); doc.rect(0, 0, 210, 148, 'F');
+            doc.setLineWidth(0.5); doc.rect(10, 10, 190, 128);
+            doc.setFont("serif", "italic"); doc.setFontSize(24);
             doc.text("Certificate of Logic", 105, 40, { align: "center" });
-            doc.setFont("courier", "normal");
-            doc.setFontSize(14);
-            doc.text("This confirms completion of the 3-Over Match", 105, 60, { align: "center" });
-            doc.setFontSize(30);
-            doc.text(`RESULT: ${score}/18`, 105, 90, { align: "center" });
-            doc.setFontSize(10);
-            doc.text(`ID: NL-${Math.random().toString(36).substr(2, 9).toUpperCase()}`, 105, 110, { align: "center" });
-            doc.save("Nish-Logic-Scorecard.pdf");
+            doc.setFont("courier", "normal"); doc.setFontSize(12);
+            doc.text("VERIFIED BY NISH-LOGIC ENGINE", 105, 55, { align: "center" });
+            doc.setFontSize(32); doc.text(`SCORE: ${score}/18`, 105, 90, { align: "center" });
+            doc.setFontSize(9); doc.text(`REF: NL-${Math.random().toString(36).toUpperCase().substr(2, 8)}`, 105, 120, { align: "center" });
+            doc.save("Kindle_Scorecard.pdf");
         }
     </script>
 </body>
