@@ -3,104 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nish-Logic | The 3-Over Match</title>
+    <title>3-OVER MATCH | APTITUDE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
-        body { margin: 0; background: #000; color: #0f0; font-family: monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
-        .back-nav { position: absolute; top: 10px; left: 10px; }
-        .game-box { border: 2px solid #0f0; padding: 20px; width: 90%; max-width: 450px; text-align: center; box-shadow: 0 0 20px #0f0; }
-        #timer { font-size: 2.5rem; color: #ff0; margin: 10px 0; }
-        .over-header { font-size: 1.5rem; background: #0f0; color: #000; padding: 5px; margin-bottom: 15px; font-weight: bold; }
-        #question { min-height: 80px; margin-bottom: 20px; font-size: 1.1rem; }
-        .options { display: grid; gap: 10px; }
-        button, select { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 12px; cursor: pointer; font-family: monospace; font-size: 1rem; width: 100%; }
-        button:hover { background: #0f0; color: #000; }
+        body { background: #000; color: #0f0; font-family: monospace; text-align: center; margin: 0; overflow: hidden; }
+        .screen { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         .hidden { display: none; }
+        .btn { border: 1px solid #0f0; padding: 15px 30px; background: none; color: #0f0; cursor: pointer; margin: 10px; font-size: 1.1rem; }
+        .btn:hover { background: #0f0; color: #000; }
+        #timer { font-size: 2.5rem; color: #ff0; text-shadow: 0 0 10px #ff0; }
+        .stats { margin-bottom: 20px; font-size: 1.2rem; }
     </style>
 </head>
 <body>
-    <div class="back-nav">
-        <a href="https://nish-logic.web.app" style="color:#0f0; text-decoration:none;">[ < BACK TO PORTFOLIO ]</a>
+    <div id="start-screen" class="screen">
+        <h1>3-OVER MATCH: LOGIC</h1>
+        <div class="stats">SELECT DIFFICULTY</div>
+        <button class="btn" onclick="startMatch('easy')">EASY</button>
+        <button class="btn" onclick="startMatch('medium')">MEDIUM</button>
+        <button class="btn" onclick="startMatch('hard')">HARD</button>
     </div>
-    <div class="game-box">
-        <div id="start-screen">
-            <h1>THE 3-OVER MATCH</h1>
-            <select id="difficulty">
-                <option value="easy">Level 1 (Easy)</option>
-                <option value="medium">Level 2 (Medium)</option>
-                <option value="hard">Level 3 (Hard)</option>
-            </select>
-            <br><br>
-            <button onclick="initMatch()">START MATCH</button>
+
+    <div id="game-screen" class="screen hidden">
+        <h2 id="over-title">OVER 1: APTITUDE</h2>
+        <div id="timer">60s</div>
+        <div id="question-box" style="padding: 20px; max-width: 600px;">
+            <p id="question-text">Fetching data...</p>
+            <div id="options"></div>
         </div>
-        <div id="game-screen" class="hidden">
-            <div id="category-name" class="over-header">OVER 1: APTITUDE</div>
-            <div id="timer">06:00</div>
-            <div id="question">Fetching logic...</div>
-            <div id="options-container" class="options"></div>
-        </div>
-        <div id="result-screen" class="hidden">
-            <h2>MATCH ENDED</h2>
-            <p id="final-score"></p>
-            <button onclick="location.reload()">NEW MATCH</button>
-        </div>
+        <div class="stats">Score: <span id="current-score">0</span>/18</div>
     </div>
+
+    <div id="result-screen" class="screen hidden">
+        <h1>MATCH OVER</h1>
+        <h2 id="final-stats">Final Score: 0/18</h2>
+        <button class="btn" onclick="downloadPDF()">DOWNLOAD SCORECARD</button>
+        <button class="btn" onclick="location.reload()">REPLAY</button>
+        <a href="../" class="btn">BACK TO VAULT</a>
+    </div>
+
     <script>
-        let matchData = []; let currentQ = 0; let score = 0; let timer; let timeLeft;
-        async function initMatch() {
-            const diff = document.getElementById('difficulty').value;
-            document.getElementById('start-screen').innerHTML = "<h2>LOADING ENGINE...</h2>";
-            const categories = [19, 30, 9]; 
-            for (let cat of categories) {
-                const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${cat}&difficulty=${diff}&type=multiple`);
-                const data = await res.json();
-                matchData.push(...data.results);
-            }
+        let score = 0; let currentQ = 0; let timeLeft = 60; let timer; let difficulty = 'easy';
+        const overNames = ["OVER 1: APTITUDE", "OVER 2: REASONING", "OVER 3: GK"];
+        const apiCategories = [18, 19, 9]; // Computer Science, Math, General Knowledge
+
+        async function startMatch(level) {
+            difficulty = level;
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
-            startOver();
+            await fetchOver();
         }
-        function startOver() {
-            if (currentQ < 6) updateHeader("OVER 1: APTITUDE", 360); 
-            else if (currentQ < 12) updateHeader("OVER 2: REASONING", 360); 
-            else updateHeader("OVER 3: GK", 180);
+
+        async function fetchOver() {
+            const overIndex = Math.floor(currentQ / 6);
+            document.getElementById('over-title').innerText = overNames[overIndex];
+            const resp = await fetch(`https://opentdb.com/api.php?amount=6&category=${apiCategories[overIndex]}&difficulty=${difficulty}&type=multiple`);
+            const data = await resp.json();
+            questions = data.results;
+            timeLeft = 60;
+            startTimer();
             showQuestion();
         }
-        function updateHeader(text, time) {
-            document.getElementById('category-name').innerText = text;
-            if (!timer || currentQ % 6 === 0) { timeLeft = time; runTimer(); }
-        }
-        function runTimer() {
+
+        function startTimer() {
             clearInterval(timer);
             timer = setInterval(() => {
                 timeLeft--;
-                let m = Math.floor(timeLeft / 60); let s = timeLeft % 60;
-                document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
+                document.getElementById('timer').innerText = timeLeft + "s";
                 if (timeLeft <= 0) endMatch();
             }, 1000);
         }
+
         function showQuestion() {
+            if (currentQ % 6 === 0 && currentQ !== 0 && currentQ < 18) {
+                clearInterval(timer);
+                return fetchOver();
+            }
             if (currentQ >= 18) return endMatch();
-            const data = matchData[currentQ];
-            document.getElementById('question').innerHTML = data.question;
-            const opts = [...data.incorrect_answers, data.correct_answer].sort(() => Math.random() - 0.5);
-            const container = document.getElementById('options-container');
-            container.innerHTML = '';
+
+            const qData = questions[currentQ % 6];
+            document.getElementById('question-text').innerHTML = qData.question;
+            const opts = [...qData.incorrect_answers, qData.correct_answer].sort(() => Math.random() - 0.5);
+            const optBox = document.getElementById('options');
+            optBox.innerHTML = '';
             opts.forEach(o => {
-                const btn = document.createElement('button');
-                btn.innerHTML = o;
-                btn.onclick = () => {
-                    if (o === data.correct_answer) score++;
+                const b = document.createElement('button');
+                b.className = 'btn';
+                b.innerHTML = o;
+                b.onclick = () => {
+                    if (o === qData.correct_answer) { score++; document.getElementById('current-score').innerText = score; }
                     currentQ++;
-                    if (currentQ % 6 === 0) startOver(); else showQuestion();
+                    showQuestion();
                 };
-                container.appendChild(btn);
+                optBox.appendChild(b);
             });
         }
+
         function endMatch() {
             clearInterval(timer);
             document.getElementById('game-screen').classList.add('hidden');
             document.getElementById('result-screen').classList.remove('hidden');
-            document.getElementById('final-score').innerText = `Score: ${score}/18`;
+            document.getElementById('final-stats').innerText = `Final Score: ${score}/18`;
+        }
+
+        function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            doc.text("NISH-LOGIC MATCH SCORECARD", 10, 10);
+            doc.text(`Difficulty: ${difficulty.toUpperCase()}`, 10, 20);
+            doc.text(`Final Score: ${score}/18`, 10, 30);
+            doc.save("scorecard.pdf");
         }
     </script>
 </body>
