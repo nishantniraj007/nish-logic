@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nish-Logic | The 3-Over Match</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        body { margin: 0; background: #000; color: #0f0; font-family: monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .back-nav { position: absolute; top: 10px; left: 10px; }
+        .game-box { border: 2px solid #0f0; padding: 20px; width: 90%; max-width: 450px; text-align: center; box-shadow: 0 0 20px #0f0; background: #000; }
+        #timer { font-size: 2.5rem; color: #ff0; margin: 10px 0; }
+        .over-header { font-size: 1.5rem; background: #0f0; color: #000; padding: 5px; margin-bottom: 15px; font-weight: bold; }
+        #question { min-height: 80px; margin-bottom: 20px; font-size: 1.1rem; }
+        .options { display: grid; gap: 10px; }
+        button, select { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 12px; cursor: pointer; font-family: monospace; font-size: 1rem; width: 100%; outline: none; }
+        button:hover { background: #0f0; color: #000; }
+        .hidden { display: none; }
+        #certificate { background: #111; border: 5px double #0f0; padding: 30px; margin-top: 20px; color: #0f0; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <div class="back-nav"><a href="https://nish-logic.web.app" style="color:#0f0; text-decoration:none;">[ < BACK TO PORTFOLIO ]</a></div>
+    <div class="game-box">
+        <div id="start-screen">
+            <h1>THE 3-OVER MATCH</h1>
+            <select id="difficulty"><option value="easy">Level 1 (Easy)</option><option value="medium">Level 2 (Medium)</option><option value="hard">Level 3 (Hard)</option></select>
+            <br><br><button onclick="startMatch()">START MATCH</button>
+        </div>
+        <div id="game-screen" class="hidden">
+            <div id="category-name" class="over-header">LOADING...</div>
+            <div id="timer">00:00</div>
+            <div id="question">Fetching...</div>
+            <div id="options-container" class="options"></div>
+        </div>
+        <div id="result-screen" class="hidden">
+            <div id="certificate">
+                <h2 style="border-bottom: 2px solid #0f0;">MATCH SCORECARD</h2>
+                <p>NISH-LOGIC CRICKET COUNCIL</p>
+                <div id="cert-content">
+                    <p>Level: <span id="res-level"></span></p>
+                    <p style="font-size: 1.5rem;">RUNS: <span id="res-score"></span>/18</p>
+                    <p>Strike Rate: <span id="res-sr"></span>%</p>
+                    <p>Date: <span id="res-date"></span></p>
+                </div>
+            </div>
+            <br><button onclick="downloadPDF()">DOWNLOAD SCORECARD (PDF)</button>
+            <br><br><button onclick="location.reload()">NEW MATCH</button>
+        </div>
+    </div>
+    <script>
+        let currentQ = 0, score = 0, timer, timeLeft, currentData = [], diff, audioCtx;
+
+        function playSound(freq, dur, vol = 0.1) {
+            if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            let osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+            osc.connect(gain); gain.connect(audioCtx.destination);
+            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+            gain.gain.setValueAtTime(vol, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+            osc.start(); osc.stop(audioCtx.currentTime + dur);
+        }
+
+        function startBeat() {
+            setInterval(() => {
+                if (currentQ < 18) {
+                    playSound(60, 0.5, 0.05); // Deep rhythmic bass pulse
+                    setTimeout(() => playSound(80, 0.3, 0.03), 500); // Secondary focus pulse
+                }
+            }, 1000);
+        }
+
+        async function fetchOver(overNum) {
+            document.getElementById('question').innerText = "Syncing Over " + overNum + "...";
+            try {
+                const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${{1:19,2:30,3:9}[overNum]}&difficulty=${diff}&type=multiple`);
+                const data = await res.json();
+                if(data.response_code !== 0) throw new Error("API Limit");
+                currentData = data.results;
+                timeLeft = {1:360,2:360,3:180}[overNum];
+                document.getElementById('category-name').innerText = `OVER ${overNum}: ${{1:"APTITUDE",2:"REASONING",3:"GK"}[overNum]}`;
+                runTimer();
+                showQuestion();
+            } catch (e) { setTimeout(() => fetchOver(overNum), 3000); }
+        }
+
+        function startMatch() {
+            diff = document.getElementById('difficulty').value;
+            document.getElementById('start-screen').classList.add('hidden');
+            document.getElementById('game-screen').classList.remove('hidden');
+            fetchOver(1);
+            startBeat(); // Unlocks and starts focus music
+        }
+
+        function showQuestion() {
+            const idx = currentQ % 6;
+            const d = currentData[idx];
+            document.getElementById('question').innerHTML = d.question;
+            const opts = [...d.incorrect_answers, d.correct_answer].sort(() => Math.random() - 0.5);
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            opts.forEach(o => {
+                const btn = document.createElement('button');
+                btn.innerHTML = o;
+                btn.onclick = () => {
+                    playSound(400, 0.1); 
+                    if (o === d.correct_answer) score++;
+                    currentQ++;
+                    if (currentQ % 6 === 0) {
+                        clearInterval(timer);
+                        if (currentQ === 18) endMatch();
+                        else fetchOver((currentQ / 6) + 1);
+                    } else showQuestion();
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function runTimer() {
+            clearInterval(timer);
+            timer = setInterval(() => {
+                timeLeft--;
+                let m = Math.floor(timeLeft / 60), s = timeLeft % 60;
+                document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
+                if (timeLeft <= 0) endMatch();
+            }, 1000);
+        }
+
+        function endMatch() {
+            clearInterval(timer);
+            document.getElementById('game-screen').classList.add('hidden');
+            document.getElementById('result-screen').classList.remove('hidden');
+            document.getElementById('res-level').innerText = diff.toUpperCase();
+            document.getElementById('res-score').innerText = score;
+            document.getElementById('res-sr').innerText = Math.round((score / 18) * 100);
+            document.getElementById('res-date').innerText = new Date().toLocaleDateString();
+            playSound(500, 1, 0.2); 
+        }
+
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById('certificate');
+            const canvas = await html2canvas(element, { backgroundColor: '#000' });
+            const pdf = new jsPDF('p', 'mm', 'a4');
+            pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 10, 10, 190, 100);
+            pdf.save(`Scorecard_${diff}.pdf`);
+        }
+    </script>
+</body>
+</html>
