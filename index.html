@@ -45,35 +45,42 @@
                     <p>Date: <span id="res-date"></span></p>
                 </div>
             </div>
-            <br>
-            <button onclick="downloadPDF()">DOWNLOAD SCORECARD (PDF)</button>
-            <br><br>
-            <button onclick="location.reload()">NEW MATCH</button>
+            <br><button onclick="downloadPDF()">DOWNLOAD SCORECARD (PDF)</button>
+            <br><br><button onclick="location.reload()">NEW MATCH</button>
         </div>
     </div>
     <script>
         let currentQ = 0, score = 0, timer, timeLeft, currentData = [], diff, audioCtx;
-        const cats = {1: {id: 19, name: "APTITUDE", time: 360}, 2: {id: 30, name: "REASONING", time: 360}, 3: {id: 9, name: "GK", time: 180}};
 
-        function playSound(freq, dur) {
+        function playSound(freq, dur, vol = 0.1) {
             if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            if(audioCtx.state === 'suspended') audioCtx.resume();
             let osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
             osc.connect(gain); gain.connect(audioCtx.destination);
             osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-            gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + dur);
+            gain.gain.setValueAtTime(vol, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
             osc.start(); osc.stop(audioCtx.currentTime + dur);
+        }
+
+        function startBeat() {
+            setInterval(() => {
+                if (currentQ < 18) {
+                    playSound(60, 0.5, 0.05); // Deep rhythmic bass pulse
+                    setTimeout(() => playSound(80, 0.3, 0.03), 500); // Secondary focus pulse
+                }
+            }, 1000);
         }
 
         async function fetchOver(overNum) {
             document.getElementById('question').innerText = "Syncing Over " + overNum + "...";
             try {
-                const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${cats[overNum].id}&difficulty=${diff}&type=multiple`);
+                const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${{1:19,2:30,3:9}[overNum]}&difficulty=${diff}&type=multiple`);
                 const data = await res.json();
                 if(data.response_code !== 0) throw new Error("API Limit");
                 currentData = data.results;
-                timeLeft = cats[overNum].time;
-                document.getElementById('category-name').innerText = `OVER ${overNum}: ${cats[overNum].name}`;
+                timeLeft = {1:360,2:360,3:180}[overNum];
+                document.getElementById('category-name').innerText = `OVER ${overNum}: ${{1:"APTITUDE",2:"REASONING",3:"GK"}[overNum]}`;
                 runTimer();
                 showQuestion();
             } catch (e) { setTimeout(() => fetchOver(overNum), 3000); }
@@ -84,7 +91,7 @@
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
             fetchOver(1);
-            setInterval(() => playSound(100, 0.1), 2000); // Focus beat
+            startBeat(); // Unlocks and starts focus music
         }
 
         function showQuestion() {
@@ -98,7 +105,7 @@
                 const btn = document.createElement('button');
                 btn.innerHTML = o;
                 btn.onclick = () => {
-                    playSound(600, 0.1); // Click sound
+                    playSound(400, 0.1); 
                     if (o === d.correct_answer) score++;
                     currentQ++;
                     if (currentQ % 6 === 0) {
@@ -129,17 +136,16 @@
             document.getElementById('res-score').innerText = score;
             document.getElementById('res-sr').innerText = Math.round((score / 18) * 100);
             document.getElementById('res-date').innerText = new Date().toLocaleDateString();
-            playSound(800, 0.5); // Victory sound
+            playSound(500, 1, 0.2); 
         }
 
         async function downloadPDF() {
             const { jsPDF } = window.jspdf;
             const element = document.getElementById('certificate');
             const canvas = await html2canvas(element, { backgroundColor: '#000' });
-            const imgData = canvas.toDataURL('image/png');
             const pdf = new jsPDF('p', 'mm', 'a4');
-            pdf.addImage(imgData, 'PNG', 10, 10, 190, 100);
-            pdf.save(`NishLogic_Scorecard_${diff}.pdf`);
+            pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 10, 10, 190, 100);
+            pdf.save(`Scorecard_${diff}.pdf`);
         }
     </script>
 </body>
