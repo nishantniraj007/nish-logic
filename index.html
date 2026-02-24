@@ -22,31 +22,55 @@
     <div class="game-box">
         <div id="start-screen">
             <h1>THE 3-OVER MATCH</h1>
-            <select id="difficulty"><option value="easy">Level 1</option><option value="medium">Level 2</option><option value="hard">Level 3</option></select>
-            <br><br><button onclick="startMatch()">START MATCH</button>
+            <select id="difficulty">
+                <option value="easy">Level 1 (Easy)</option>
+                <option value="medium">Level 2 (Medium)</option>
+                <option value="hard">Level 3 (Hard)</option>
+            </select>
+            <br><br>
+            <button onclick="startMatch()">START MATCH</button>
         </div>
+
         <div id="game-screen" class="hidden">
             <div id="category-name" class="over-header">LOADING...</div>
             <div id="timer">00:00</div>
             <div id="question">Fetching...</div>
             <div id="options-container" class="options"></div>
         </div>
-        <div id="result-screen" class="hidden"><h2>MATCH ENDED</h2><p id="final-score" style="font-size:1.5rem;"></p><button onclick="location.reload()">NEW MATCH</button></div>
+
+        <div id="result-screen" class="hidden">
+            <h2>MATCH ENDED</h2>
+            <p id="final-score" style="font-size:1.5rem;"></p>
+            <button onclick="location.reload()">NEW MATCH</button>
+        </div>
     </div>
+
     <script>
         let currentQ = 0, score = 0, timer, timeLeft, currentData = [], diff;
-        const cats = {1: {id: 19, name: "APTITUDE", time: 360}, 2: {id: 30, name: "REASONING", time: 360}, 3: {id: 9, name: "GK", time: 180}};
+        const cats = {
+            1: {id: 19, name: "APTITUDE", time: 360}, 
+            2: {id: 30, name: "REASONING", time: 360}, 
+            3: {id: 9, name: "GK", time: 180}
+        };
         
         async function fetchOver(overNum) {
+            document.getElementById('question').innerText = "Syncing Over " + overNum + "...";
             try {
                 const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${cats[overNum].id}&difficulty=${diff}&type=multiple`);
                 const data = await res.json();
+                
+                // response_code 0 means success. Anything else is an error or rate limit.
+                if(data.response_code !== 0) throw new Error("API Limit");
+                
                 currentData = data.results;
                 timeLeft = cats[overNum].time;
                 document.getElementById('category-name').innerText = `OVER ${overNum}: ${cats[overNum].name}`;
                 runTimer();
                 showQuestion();
-            } catch (e) { alert("API Busy. Retrying..."); setTimeout(() => fetchOver(overNum), 2000); }
+            } catch (e) { 
+                document.getElementById('question').innerText = "API Busy. Retrying in 3s...";
+                setTimeout(() => fetchOver(overNum), 3000); 
+            }
         }
 
         function startMatch() {
@@ -58,7 +82,6 @@
 
         function showQuestion() {
             const idx = currentQ % 6;
-            if (idx === 0 && currentQ > 0) return; 
             const d = currentData[idx];
             document.getElementById('question').innerHTML = d.question;
             const opts = [...d.incorrect_answers, d.correct_answer].sort(() => Math.random() - 0.5);
@@ -71,6 +94,7 @@
                     if (o === d.correct_answer) score++;
                     currentQ++;
                     if (currentQ % 6 === 0) {
+                        clearInterval(timer); // Pause timer while fetching next over
                         if (currentQ === 18) endMatch();
                         else fetchOver((currentQ / 6) + 1);
                     } else showQuestion();
@@ -83,7 +107,8 @@
             clearInterval(timer);
             timer = setInterval(() => {
                 timeLeft--;
-                let m = Math.floor(timeLeft / 60), s = timeLeft % 60;
+                let m = Math.floor(timeLeft / 60);
+                let s = timeLeft % 60;
                 document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
                 if (timeLeft <= 0) endMatch();
             }, 1000);
@@ -93,7 +118,7 @@
             clearInterval(timer);
             document.getElementById('game-screen').classList.add('hidden');
             document.getElementById('result-screen').classList.remove('hidden');
-            document.getElementById('final-score').innerText = `Score: ${score}/18`;
+            document.getElementById('final-score').innerText = `Final Score: ${score}/18`;
         }
     </script>
 </body>
