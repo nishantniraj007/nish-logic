@@ -9,25 +9,28 @@
         body { background: #000; color: #0f0; font-family: 'Courier New', monospace; text-align: center; margin: 0; overflow: hidden; }
         .screen { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         .hidden { display: none; }
-        select { background: #000; color: #0f0; border: 1px solid #0f0; padding: 10px; font-size: 1.1rem; width: 280px; margin: 20px; outline: none; }
+        select { background: #000; color: #0f0; border: 1px solid #0f0; padding: 10px; font-size: 1.1rem; width: 280px; margin: 10px; outline: none; }
         .btn { border: 1px solid #0f0; padding: 15px; background: none; color: #0f0; cursor: pointer; width: 280px; font-weight: bold; text-transform: uppercase; margin: 10px; }
         .btn:hover { background: #0f0; color: #000; }
         #timer { font-size: 3.5rem; color: #ff0; text-shadow: 0 0 15px #f00; font-weight: bold; }
         #question-text { font-size: 1.3rem; padding: 30px; max-width: 800px; line-height: 1.6; min-height: 100px; }
         #result-screen { background: #e5e5e5; color: #1a1a1a; }
-        .cert-border { border: 5px double #1a1a1a; padding: 50px; background: #fff; width: 85%; max-width: 700px; box-shadow: 10px 10px 0px rgba(0,0,0,0.1); }
-        .kindle-font { font-family: serif; font-style: italic; }
+        .cert-border { border: 5px double #1a1a1a; padding: 40px; background: #fff; width: 85%; max-width: 700px; }
+        .formal-font { font-family: serif; font-style: italic; }
     </style>
 </head>
 <body>
 
     <div id="start-screen" class="screen">
         <h1 style="letter-spacing: 5px;">3-OVER MATCH</h1>
-        <p>APTITUDE (6m) | REASONING (6m) | GK (3m)</p>
+        <select id="lang-select">
+            <option value="en">LANGUAGE: ENGLISH</option>
+            <option value="hi">LANGUAGE: HINDI (हिन्दी)</option>
+        </select>
         <select id="level-select">
-            <option value="easy">LEVEL: NOVICE (EASY)</option>
-            <option value="medium">LEVEL: ANALYST (MEDIUM)</option>
-            <option value="hard">LEVEL: EXPERT (HARD)</option>
+            <option value="easy">LEVEL: NOVICE</option>
+            <option value="medium">LEVEL: ANALYST</option>
+            <option value="hard">LEVEL: EXPERT</option>
         </select>
         <button class="btn" onclick="initMatch()">INITIALIZE ENGINE</button>
     </div>
@@ -35,28 +38,35 @@
     <div id="game-screen" class="screen hidden">
         <h2 id="over-title" style="color: #8f8;">---</h2>
         <div id="timer">--:--</div>
-        <div id="question-box">
-            <p id="question-text">Syncing...</p>
-            <div id="options"></div>
-        </div>
+        <div id="question-box"><p id="question-text">Syncing...</p><div id="options"></div></div>
     </div>
 
     <div id="result-screen" class="screen hidden">
         <div class="cert-border">
-            <h1 class="kindle-font" style="font-size: 2.5rem; margin: 0;">Certificate of Logic</h1>
-            <p style="text-transform: uppercase; letter-spacing: 2px;">Session Completion Report</p>
+            <h1 class="formal-font" style="font-size: 2.5rem; margin: 0;">Certificate of Logic</h1>
+            <p style="text-transform: uppercase; letter-spacing: 2px;">Official Session Report</p>
+            <p id="cert-date" style="font-size: 0.9rem; font-weight: bold;"></p>
             <hr style="border: 1px solid #1a1a1a;">
-            <p class="kindle-font" style="font-size: 1.2rem;">This confirms completion of 18 logical data points via Nish-Logic.</p>
-            <h1 id="final-stats" style="font-size: 3rem; margin: 20px 0;">0/18</h1>
-            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="downloadPDF()">DOWNLOAD KINDLE PDF</button>
+            <p class="formal-font" style="font-size: 1.2rem;">This document confirms the completion of 18 logical data points via the Nish-Logic Engine.</p>
+            <h1 id="final-stats" style="font-size: 3.5rem; margin: 15px 0;">0/18</h1>
+            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="downloadPDF()">DOWNLOAD SCORECARD</button>
             <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="location.reload()">RE-SYNC ENGINE</button>
         </div>
     </div>
 
     <script>
-        let score = 0, currentQ = 0, timeLeft = 0, timer, questions = [], level = 'easy';
-        const categories = [18, 19, 9];
+        let score = 0, currentQ = 0, timeLeft = 0, timer, questions = [], level = 'easy', lang = 'en';
+        const categories = [19, 18, 24]; 
         let audioCtx;
+
+        async function translateText(text) {
+            if (lang === 'en') return text;
+            try {
+                const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=hi&dt=t&q=${encodeURIComponent(text)}`);
+                const data = await res.json();
+                return data[0][0][0];
+            } catch(e) { return text; }
+        }
 
         function playSound(f, t, d) {
             if(!audioCtx) return;
@@ -69,6 +79,7 @@
         async function initMatch() {
             audioCtx = new (window.AudioContext || window.webkitAudioContext)();
             level = document.getElementById('level-select').value;
+            lang = document.getElementById('lang-select').value;
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
             await fetchOver();
@@ -77,8 +88,8 @@
         async function fetchOver() {
             const idx = Math.floor(currentQ / 6);
             const names = ["OVER 1: APTITUDE", "OVER 2: REASONING", "OVER 3: GK"];
-            const times = [360, 360, 180]; // 6m, 6m, 3m
-            document.getElementById('over-title').innerText = names[idx];
+            const times = [360, 360, 180];
+            document.getElementById('over-title').innerText = await translateText(names[idx]);
             timeLeft = times[idx];
             
             try {
@@ -101,28 +112,30 @@
             }, 1000);
         }
 
-        function showQuestion() {
+        async function showQuestion() {
             if (currentQ > 0 && currentQ % 6 === 0) { clearInterval(timer); return fetchOver(); }
             if (currentQ >= 18) return endMatch();
 
             const q = questions[currentQ % 6];
-            document.getElementById('question-text').innerHTML = q.question;
-            const opts = [...q.incorrect_answers, q.correct_answer].sort(() => Math.random() - 0.5);
+            document.getElementById('question-text').innerHTML = await translateText(q.question);
+            const rawOpts = [...q.incorrect_answers, q.correct_answer].sort(() => Math.random() - 0.5);
             const box = document.getElementById('options'); box.innerHTML = '';
             
-            opts.forEach(o => {
-                const b = document.createElement('button'); b.className = 'btn'; b.innerHTML = o;
+            for (let o of rawOpts) {
+                const b = document.createElement('button'); b.className = 'btn'; 
+                b.innerHTML = await translateText(o);
                 b.onclick = () => {
                     playSound(400, 'square', 0.05);
                     if(o === q.correct_answer) score++;
                     currentQ++; showQuestion();
                 };
                 box.appendChild(b);
-            });
+            }
         }
 
         function endMatch() {
             clearInterval(timer);
+            document.getElementById('cert-date').innerText = "DATE: " + new Date().toLocaleDateString();
             document.getElementById('game-screen').classList.add('hidden');
             document.getElementById('result-screen').classList.remove('hidden');
             document.getElementById('final-stats').innerText = `${score}/18`;
@@ -134,12 +147,14 @@
             doc.setFillColor(245, 245, 245); doc.rect(0, 0, 210, 148, 'F');
             doc.setLineWidth(0.5); doc.rect(10, 10, 190, 128);
             doc.setFont("serif", "italic"); doc.setFontSize(24);
-            doc.text("Certificate of Logic", 105, 40, { align: "center" });
+            doc.text("Certificate of Logic", 105, 35, { align: "center" });
+            doc.setFont("courier", "bold"); doc.setFontSize(10);
+            doc.text(`DATE: ${new Date().toLocaleDateString()}`, 105, 45, { align: "center" });
             doc.setFont("courier", "normal"); doc.setFontSize(12);
-            doc.text("VERIFIED BY NISH-LOGIC ENGINE", 105, 55, { align: "center" });
-            doc.setFontSize(32); doc.text(`SCORE: ${score}/18`, 105, 90, { align: "center" });
-            doc.setFontSize(9); doc.text(`REF: NL-${Math.random().toString(36).toUpperCase().substr(2, 8)}`, 105, 120, { align: "center" });
-            doc.save("Kindle_Scorecard.pdf");
+            doc.text("VERIFIED BY NISH-LOGIC ENGINE", 105, 60, { align: "center" });
+            doc.setFontSize(32); doc.text(`SCORE: ${score}/18`, 105, 95, { align: "center" });
+            doc.setFontSize(9); doc.text(`REF: NL-${Math.random().toString(36).toUpperCase().substr(2, 8)}`, 105, 125, { align: "center" });
+            doc.save("Nish_Logic_Scorecard.pdf");
         }
     </script>
 </body>
