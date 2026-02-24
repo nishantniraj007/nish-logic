@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nish-Logic | Production Architect</title>
     <style>
-        body { margin: 0; padding: 0; background: #000; color: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        body { margin: 0; padding: 0; background: #000; color: #fff; font-family: sans-serif; overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh; }
         canvas { position: absolute; top: 0; left: 0; z-index: 0; opacity: 0.4; }
-        .content { position: relative; z-index: 1; text-align: center; background: rgba(0, 0, 0, 0.7); padding: 40px; border-radius: 15px; border: 1px solid #0f0; box-shadow: 0 0 20px #0f0; max-width: 600px; }
-        h1 { color: #0f0; font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 5px; }
+        .content { position: relative; z-index: 1; text-align: center; background: rgba(0, 0, 0, 0.8); padding: 40px; border-radius: 15px; border: 1px solid #0f0; box-shadow: 0 0 20px #0f0; max-width: 600px; }
+        h1 { color: #0f0; font-size: 2.5rem; margin-bottom: 10px; letter-spacing: 5px; }
         p { line-height: 1.6; color: #ccc; font-size: 1.1rem; }
         .buttons { margin-top: 30px; display: flex; flex-direction: column; gap: 15px; }
         .btn { padding: 15px 30px; border: 1px solid #0f0; color: #0f0; text-decoration: none; border-radius: 5px; transition: 0.3s; background: transparent; font-weight: bold; }
-        .btn:hover { background: #0f0; color: #000; box-shadow: 0 0 15px #0f0; }
+        .btn:hover { background: #0f0; color: #000; }
     </style>
 </head>
 <body>
     <canvas id="matrix"></canvas>
     <div class="content">
         <h1>Nish-Logic</h1>
-        <p>Architecting high-performance digital solutions using a <strong>$0 production stack</strong>. I specialize in developing scalable web applications and APKs built exclusively with industry-standard free-tier tools to solve real-world problems with logical precision.</p>
+        <p>Architecting high-performance web applications through a <strong>$0 production stack</strong>. I develop scalable tools using industry-standard free-tier providers to solve real-life problems with clean, efficient logic.</p>
         <div class="buttons">
             <a href="#" class="btn">AI Novel App (Coming Soon)</a>
             <a href="#" class="btn">Games Vault (Coming Soon)</a>
@@ -30,7 +30,7 @@
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        const letters = "01";
         const fontSize = 16;
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
