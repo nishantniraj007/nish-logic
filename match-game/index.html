@@ -3,26 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nish-Logic | Games Vault</title>
+    <title>Nish-Logic | The 3-Over Match</title>
     <style>
-        body { margin: 0; background: #000; color: #0f0; font-family: monospace; text-align: center; }
-        .game-container { padding: 50px; border: 2px solid #0f0; display: inline-block; margin-top: 100px; }
-        #timer { font-size: 2rem; color: #ff0000; }
-        button { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 10px 20px; cursor: pointer; }
+        body { margin: 0; background: #000; color: #0f0; font-family: monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .back-nav { position: absolute; top: 10px; left: 10px; }
+        .game-box { border: 2px solid #0f0; padding: 20px; width: 90%; max-width: 450px; text-align: center; box-shadow: 0 0 20px #0f0; }
+        #timer { font-size: 2.5rem; color: #ff0; margin: 10px 0; }
+        .over-header { font-size: 1.5rem; background: #0f0; color: #000; padding: 5px; margin-bottom: 15px; font-weight: bold; }
+        #question { min-height: 80px; margin-bottom: 20px; font-size: 1.1rem; }
+        .options { display: grid; gap: 10px; }
+        button, select { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 12px; cursor: pointer; font-family: monospace; font-size: 1rem; width: 100%; }
         button:hover { background: #0f0; color: #000; }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
-    <h1>APTITUDE LOGIC: THE OVER</h1>
-    <div class="game-container">
-        <p>6 Questions. 60 Seconds. 1 Goal.</p>
-        <div id="timer">60s</div>
-        <div id="game-area">
-            <button onclick="startGame()">START SESSION</button>
+    <div class="back-nav">
+        <a href="https://nish-logic.web.app" style="color:#0f0; text-decoration:none;">[ < BACK TO PORTFOLIO ]</a>
+    </div>
+    <div class="game-box">
+        <div id="start-screen">
+            <h1>THE 3-OVER MATCH</h1>
+            <select id="difficulty">
+                <option value="easy">Level 1 (Easy)</option>
+                <option value="medium">Level 2 (Medium)</option>
+                <option value="hard">Level 3 (Hard)</option>
+            </select>
+            <br><br>
+            <button onclick="initMatch()">START MATCH</button>
+        </div>
+        <div id="game-screen" class="hidden">
+            <div id="category-name" class="over-header">OVER 1: APTITUDE</div>
+            <div id="timer">06:00</div>
+            <div id="question">Fetching logic...</div>
+            <div id="options-container" class="options"></div>
+        </div>
+        <div id="result-screen" class="hidden">
+            <h2>MATCH ENDED</h2>
+            <p id="final-score"></p>
+            <button onclick="location.reload()">NEW MATCH</button>
         </div>
     </div>
     <script>
-        function startGame() { alert("Game logic initializing..."); }
+        let matchData = []; let currentQ = 0; let score = 0; let timer; let timeLeft;
+        async function initMatch() {
+            const diff = document.getElementById('difficulty').value;
+            document.getElementById('start-screen').innerHTML = "<h2>LOADING ENGINE...</h2>";
+            const categories = [19, 30, 9]; 
+            for (let cat of categories) {
+                const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${cat}&difficulty=${diff}&type=multiple`);
+                const data = await res.json();
+                matchData.push(...data.results);
+            }
+            document.getElementById('start-screen').classList.add('hidden');
+            document.getElementById('game-screen').classList.remove('hidden');
+            startOver();
+        }
+        function startOver() {
+            if (currentQ < 6) updateHeader("OVER 1: APTITUDE", 360); 
+            else if (currentQ < 12) updateHeader("OVER 2: REASONING", 360); 
+            else updateHeader("OVER 3: GK", 180);
+            showQuestion();
+        }
+        function updateHeader(text, time) {
+            document.getElementById('category-name').innerText = text;
+            if (!timer || currentQ % 6 === 0) { timeLeft = time; runTimer(); }
+        }
+        function runTimer() {
+            clearInterval(timer);
+            timer = setInterval(() => {
+                timeLeft--;
+                let m = Math.floor(timeLeft / 60); let s = timeLeft % 60;
+                document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
+                if (timeLeft <= 0) endMatch();
+            }, 1000);
+        }
+        function showQuestion() {
+            if (currentQ >= 18) return endMatch();
+            const data = matchData[currentQ];
+            document.getElementById('question').innerHTML = data.question;
+            const opts = [...data.incorrect_answers, data.correct_answer].sort(() => Math.random() - 0.5);
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            opts.forEach(o => {
+                const btn = document.createElement('button');
+                btn.innerHTML = o;
+                btn.onclick = () => {
+                    if (o === data.correct_answer) score++;
+                    currentQ++;
+                    if (currentQ % 6 === 0) startOver(); else showQuestion();
+                };
+                container.appendChild(btn);
+            });
+        }
+        function endMatch() {
+            clearInterval(timer);
+            document.getElementById('game-screen').classList.add('hidden');
+            document.getElementById('result-screen').classList.remove('hidden');
+            document.getElementById('final-score').innerText = `Score: ${score}/18`;
+        }
     </script>
 </body>
 </html>
