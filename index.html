@@ -3,20 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nish-Logic | Games Vault</title>
+    <title>Nish-Logic | The Over</title>
     <style>
-        body { margin: 0; background: #000; color: #0f0; font-family: monospace; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100vh; }
-        .vault-box { border: 2px solid #0f0; padding: 40px; display: inline-block; box-shadow: 0 0 20px #0f0; }
-        h1 { letter-spacing: 5px; }
-        .game-link { display: block; margin: 20px; padding: 15px; border: 1px solid #0f0; color: #0f0; text-decoration: none; }
-        .game-link:hover { background: #0f0; color: #000; }
+        body { margin: 0; background: #000; color: #0f0; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+        .game-box { border: 2px solid #0f0; padding: 20px; width: 90%; max-width: 400px; text-align: center; box-shadow: 0 0 15px #0f0; }
+        #timer { font-size: 2rem; color: #f00; margin: 10px 0; }
+        #question { font-size: 1.2rem; margin-bottom: 20px; min-height: 50px; }
+        .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        button { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 10px; cursor: pointer; font-family: monospace; }
+        button:hover { background: #0f0; color: #000; }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
-    <div class="vault-box">
-        <h1>GAMES VAULT</h1>
-        <p>High-Bandwidth Gaming Zone</p>
-        <a href="#" class="game-link">APTITUDE LOGIC: THE OVER (Coming Soon)</a>
+    <div class="game-box">
+        <div id="start-screen">
+            <h1>THE OVER</h1>
+            <p>6 Questions | 60 Seconds</p>
+            <button onclick="startGame()">START SESSION</button>
+        </div>
+        <div id="game-screen" class="hidden">
+            <div id="timer">60s</div>
+            <div id="question">Loading...</div>
+            <div id="options-container" class="options"></div>
+        </div>
+        <div id="result-screen" class="hidden">
+            <h2 id="result-text"></h2>
+            <button onclick="location.reload()">RETRY</button>
+        </div>
     </div>
+
+    <script>
+        let timeLeft = 60;
+        let currentQ = 0;
+        let score = 0;
+        const questions = [
+            { q: "If 1=5, 2=25, 3=125, what is 5?", a: "1", o: ["625", "3125", "1", "25"] },
+            { q: "Light is to Dark as Knowledge is to...?", a: "Ignorance", o: ["Power", "Ignorance", "Books", "Study"] },
+            { q: "Which number is next: 2, 4, 8, 16...?", a: "32", o: ["24", "30", "32", "64"] },
+            { q: "Boat is to Water as Plane is to...?", a: "Air", o: ["Sky", "Air", "Pilot", "Wings"] },
+            { q: "Odd one out: Square, Circle, Triangle, Sphere?", a: "Sphere", o: ["Square", "Circle", "Triangle", "Sphere"] },
+            { q: "I have keys but no locks. What am I?", a: "Piano", o: ["Map", "Piano", "Wind", "Silence"] }
+        ];
+
+        function startGame() {
+            document.getElementById('start-screen').classList.add('hidden');
+            document.getElementById('game-screen').classList.remove('hidden');
+            nextQuestion();
+            const timerInterval = setInterval(() => {
+                timeLeft--;
+                document.getElementById('timer').innerText = timeLeft + "s";
+                if (timeLeft <= 0) { clearInterval(timerInterval); endGame("TIME OUT!"); }
+            }, 1000);
+        }
+
+        function nextQuestion() {
+            if (currentQ >= questions.length) return endGame("MISSION COMPLETE!");
+            const qData = questions[currentQ];
+            document.getElementById('question').innerText = qData.q;
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            qData.o.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.innerText = opt;
+                btn.onclick = () => checkAnswer(opt);
+                container.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(ans) {
+            if (ans === questions[currentQ].a) score++;
+            currentQ++;
+            nextQuestion();
+        }
+
+        function endGame(msg) {
+            document.getElementById('game-screen').classList.add('hidden');
+            document.getElementById('result-screen').classList.remove('hidden');
+            document.getElementById('result-text').innerText = `${msg}\nScore: ${score}/6`;
+        }
+    </script>
 </body>
 </html>
