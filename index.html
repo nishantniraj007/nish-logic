@@ -3,84 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nish-Logic | The Over</title>
+    <title>Nish-Logic | The 3-Over Match</title>
     <style>
-        body { margin: 0; background: #000; color: #0f0; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
-        .game-box { border: 2px solid #0f0; padding: 20px; width: 90%; max-width: 400px; text-align: center; box-shadow: 0 0 15px #0f0; }
-        #timer { font-size: 2rem; color: #f00; margin: 10px 0; }
-        #question { font-size: 1.2rem; margin-bottom: 20px; min-height: 50px; }
-        .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        button { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 10px; cursor: pointer; font-family: monospace; }
+        body { margin: 0; background: #000; color: #0f0; font-family: monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .back-nav { position: absolute; top: 10px; left: 10px; }
+        .game-box { border: 2px solid #0f0; padding: 20px; width: 90%; max-width: 450px; text-align: center; box-shadow: 0 0 20px #0f0; }
+        #timer { font-size: 2.5rem; color: #ff0; margin: 10px 0; }
+        .over-header { font-size: 1.5rem; background: #0f0; color: #000; padding: 5px; margin-bottom: 15px; font-weight: bold; }
+        #question { min-height: 80px; margin-bottom: 20px; font-size: 1.1rem; }
+        .options { display: grid; gap: 10px; }
+        button, select { background: transparent; color: #0f0; border: 1px solid #0f0; padding: 12px; cursor: pointer; font-family: monospace; font-size: 1rem; width: 100%; }
         button:hover { background: #0f0; color: #000; }
         .hidden { display: none; }
     </style>
 </head>
 <body>
+    <div class="back-nav">
+        <a href="https://nish-logic.web.app" style="color:#0f0; text-decoration:none;">[ < BACK TO PORTFOLIO ]</a>
+    </div>
+
     <div class="game-box">
         <div id="start-screen">
-            <h1>THE OVER</h1>
-            <p>6 Questions | 60 Seconds</p>
-            <button onclick="startGame()">START SESSION</button>
+            <h1>THE 3-OVER MATCH</h1>
+            <p>18 Questions | Select Difficulty</p>
+            <select id="difficulty">
+                <option value="easy">Level 1 (Easy)</option>
+                <option value="medium">Level 2 (Medium)</option>
+                <option value="hard">Level 3 (Hard)</option>
+            </select>
+            <br><br>
+            <button onclick="initMatch()">START MATCH</button>
         </div>
+
         <div id="game-screen" class="hidden">
-            <div id="timer">60s</div>
-            <div id="question">Loading...</div>
+            <div id="category-name" class="over-header">OVER 1: APTITUDE</div>
+            <div id="timer">06:00</div>
+            <div id="question">Fetching logic...</div>
             <div id="options-container" class="options"></div>
         </div>
+
         <div id="result-screen" class="hidden">
-            <h2 id="result-text"></h2>
-            <button onclick="location.reload()">RETRY</button>
+            <h2>MATCH ENDED</h2>
+            <p id="final-score"></p>
+            <button onclick="location.reload()">NEW MATCH</button>
         </div>
     </div>
 
     <script>
-        let timeLeft = 60;
+        let matchData = [];
         let currentQ = 0;
         let score = 0;
-        const questions = [
-            { q: "If 1=5, 2=25, 3=125, what is 5?", a: "1", o: ["625", "3125", "1", "25"] },
-            { q: "Light is to Dark as Knowledge is to...?", a: "Ignorance", o: ["Power", "Ignorance", "Books", "Study"] },
-            { q: "Which number is next: 2, 4, 8, 16...?", a: "32", o: ["24", "30", "32", "64"] },
-            { q: "Boat is to Water as Plane is to...?", a: "Air", o: ["Sky", "Air", "Pilot", "Wings"] },
-            { q: "Odd one out: Square, Circle, Triangle, Sphere?", a: "Sphere", o: ["Square", "Circle", "Triangle", "Sphere"] },
-            { q: "I have keys but no locks. What am I?", a: "Piano", o: ["Map", "Piano", "Wind", "Silence"] }
-        ];
+        let timer;
+        let timeLeft;
 
-        function startGame() {
+        async function initMatch() {
+            const diff = document.getElementById('difficulty').value;
+            document.getElementById('start-screen').innerHTML = "<h2>LOADING ENGINE...</h2>";
+            
+            // Fetch 18 total: 6 Math (Apti), 6 Gadgets (Reasoning), 6 General (GK)
+            const categories = [19, 30, 9]; 
+            for (let cat of categories) {
+                const res = await fetch(`https://opentdb.com/api.php?amount=6&category=${cat}&difficulty=${diff}&type=multiple`);
+                const data = await res.json();
+                matchData.push(...data.results);
+            }
+
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
-            nextQuestion();
-            const timerInterval = setInterval(() => {
+            startOver();
+        }
+
+        function startOver() {
+            if (currentQ < 6) { 
+                updateHeader("OVER 1: APTITUDE", 360); 
+            } else if (currentQ < 12) { 
+                updateHeader("OVER 2: REASONING", 360); 
+            } else { 
+                updateHeader("OVER 3: GK", 180); 
+            }
+            showQuestion();
+        }
+
+        function updateHeader(text, time) {
+            document.getElementById('category-name').innerText = text;
+            if (!timer || currentQ % 6 === 0) {
+                timeLeft = time;
+                runTimer();
+            }
+        }
+
+        function runTimer() {
+            clearInterval(timer);
+            timer = setInterval(() => {
                 timeLeft--;
-                document.getElementById('timer').innerText = timeLeft + "s";
-                if (timeLeft <= 0) { clearInterval(timerInterval); endGame("TIME OUT!"); }
+                let m = Math.floor(timeLeft / 60);
+                let s = timeLeft % 60;
+                document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
+                if (timeLeft <= 0) endMatch();
             }, 1000);
         }
 
-        function nextQuestion() {
-            if (currentQ >= questions.length) return endGame("MISSION COMPLETE!");
-            const qData = questions[currentQ];
-            document.getElementById('question').innerText = qData.q;
+        function showQuestion() {
+            if (currentQ >= 18) return endMatch();
+            const data = matchData[currentQ];
+            document.getElementById('question').innerHTML = data.question;
+            const opts = [...data.incorrect_answers, data.correct_answer].sort(() => Math.random() - 0.5);
             const container = document.getElementById('options-container');
             container.innerHTML = '';
-            qData.o.forEach(opt => {
+            opts.forEach(o => {
                 const btn = document.createElement('button');
-                btn.innerText = opt;
-                btn.onclick = () => checkAnswer(opt);
+                btn.innerHTML = o;
+                btn.onclick = () => {
+                    if (o === data.correct_answer) score++;
+                    currentQ++;
+                    if (currentQ % 6 === 0) startOver(); else showQuestion();
+                };
                 container.appendChild(btn);
             });
         }
 
-        function checkAnswer(ans) {
-            if (ans === questions[currentQ].a) score++;
-            currentQ++;
-            nextQuestion();
-        }
-
-        function endGame(msg) {
+        function endMatch() {
+            clearInterval(timer);
             document.getElementById('game-screen').classList.add('hidden');
             document.getElementById('result-screen').classList.remove('hidden');
-            document.getElementById('result-text').innerText = `${msg}\nScore: ${score}/6`;
+            document.getElementById('final-score').innerText = `Score: ${score}/18`;
         }
     </script>
 </body>
