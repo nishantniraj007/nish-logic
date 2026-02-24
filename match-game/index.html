@@ -3,66 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3-OVER MATCH | APTITUDE</title>
+    <title>3-OVER MATCH | PRO</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
         body { background: #000; color: #0f0; font-family: monospace; text-align: center; margin: 0; overflow: hidden; }
         .screen { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         .hidden { display: none; }
-        .btn { border: 1px solid #0f0; padding: 15px 30px; background: none; color: #0f0; cursor: pointer; margin: 10px; font-size: 1.1rem; }
-        .btn:hover { background: #0f0; color: #000; }
-        #timer { font-size: 2.5rem; color: #ff0; text-shadow: 0 0 10px #ff0; }
-        .stats { margin-bottom: 20px; font-size: 1.2rem; }
+        .btn { border: 1px solid #0f0; padding: 15px; background: none; color: #0f0; cursor: pointer; margin: 10px; width: 280px; font-size: 1rem; }
+        .btn:hover { background: #0f0; color: #000; box-shadow: 0 0 10px #0f0; }
+        #timer { font-size: 3rem; color: #ff0; text-shadow: 0 0 10px #f00; }
+        #question-text { font-size: 1.2rem; padding: 20px; max-width: 80%; }
     </style>
 </head>
 <body>
     <div id="start-screen" class="screen">
-        <h1>3-OVER MATCH: LOGIC</h1>
-        <div class="stats">SELECT DIFFICULTY</div>
-        <button class="btn" onclick="startMatch('easy')">EASY</button>
-        <button class="btn" onclick="startMatch('medium')">MEDIUM</button>
-        <button class="btn" onclick="startMatch('hard')">HARD</button>
+        <h1>NISH-LOGIC: 3-OVER MATCH</h1>
+        <p>18 QUESTIONS | 3 CATEGORIES</p>
+        <button class="btn" onclick="startMatch('easy')">START SESSION</button>
     </div>
 
     <div id="game-screen" class="screen hidden">
         <h2 id="over-title">OVER 1: APTITUDE</h2>
         <div id="timer">60s</div>
-        <div id="question-box" style="padding: 20px; max-width: 600px;">
-            <p id="question-text">Fetching data...</p>
+        <div id="question-box">
+            <p id="question-text">Syncing Logic...</p>
             <div id="options"></div>
         </div>
-        <div class="stats">Score: <span id="current-score">0</span>/18</div>
+        <div style="margin-top:20px;">Score: <span id="current-score">0</span>/18</div>
     </div>
 
     <div id="result-screen" class="screen hidden">
-        <h1>MATCH OVER</h1>
-        <h2 id="final-stats">Final Score: 0/18</h2>
+        <h1>MATCH SUMMARY</h1>
+        <h2 id="final-stats">SCORE: 0/18</h2>
         <button class="btn" onclick="downloadPDF()">DOWNLOAD SCORECARD</button>
-        <button class="btn" onclick="location.reload()">REPLAY</button>
-        <a href="../" class="btn">BACK TO VAULT</a>
+        <button class="btn" onclick="location.reload()">REPLAY MATCH</button>
     </div>
 
     <script>
-        let score = 0; let currentQ = 0; let timeLeft = 60; let timer; let difficulty = 'easy';
-        const overNames = ["OVER 1: APTITUDE", "OVER 2: REASONING", "OVER 3: GK"];
-        const apiCategories = [18, 19, 9]; // Computer Science, Math, General Knowledge
+        let score = 0, currentQ = 0, timeLeft = 60, timer, questions = [], level = 'easy';
+        const categories = [18, 19, 9];
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
-        async function startMatch(level) {
-            difficulty = level;
+        function playSound(f, t, d) {
+            const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+            o.type = t; o.frequency.value = f; g.gain.value = 0.1;
+            o.connect(g); g.connect(audioCtx.destination);
+            o.start(); o.stop(audioCtx.currentTime + d);
+        }
+
+        async function startMatch(lvl) {
+            level = lvl; audioCtx.resume();
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
             await fetchOver();
         }
 
         async function fetchOver() {
-            const overIndex = Math.floor(currentQ / 6);
-            document.getElementById('over-title').innerText = overNames[overIndex];
-            const resp = await fetch(`https://opentdb.com/api.php?amount=6&category=${apiCategories[overIndex]}&difficulty=${difficulty}&type=multiple`);
-            const data = await resp.json();
-            questions = data.results;
-            timeLeft = 60;
-            startTimer();
-            showQuestion();
+            const idx = Math.floor(currentQ / 6);
+            const names = ["OVER 1: APTITUDE", "OVER 2: REASONING", "OVER 3: GK"];
+            document.getElementById('over-title').innerText = names[idx];
+            document.getElementById('question-text').innerText = "Loading Over Logic...";
+            
+            try {
+                const r = await fetch(`https://opentdb.com/api.php?amount=6&category=${categories[idx]}&difficulty=${level}&type=multiple`);
+                const d = await r.json();
+                questions = d.results;
+                timeLeft = 60;
+                startTimer();
+                showQuestion();
+            } catch (e) { setTimeout(fetchOver, 2000); }
         }
 
         function startTimer() {
@@ -70,32 +79,31 @@
             timer = setInterval(() => {
                 timeLeft--;
                 document.getElementById('timer').innerText = timeLeft + "s";
-                if (timeLeft <= 0) endMatch();
+                if(timeLeft % 2 === 0) playSound(50, 'sine', 0.1); // Heartbeat
+                if(timeLeft <= 0) endMatch();
             }, 1000);
         }
 
         function showQuestion() {
-            if (currentQ % 6 === 0 && currentQ !== 0 && currentQ < 18) {
+            if (currentQ > 0 && currentQ % 6 === 0) {
                 clearInterval(timer);
                 return fetchOver();
             }
             if (currentQ >= 18) return endMatch();
 
-            const qData = questions[currentQ % 6];
-            document.getElementById('question-text').innerHTML = qData.question;
-            const opts = [...qData.incorrect_answers, qData.correct_answer].sort(() => Math.random() - 0.5);
-            const optBox = document.getElementById('options');
-            optBox.innerHTML = '';
+            const q = questions[currentQ % 6];
+            document.getElementById('question-text').innerHTML = q.question;
+            const opts = [...q.incorrect_answers, q.correct_answer].sort(() => Math.random() - 0.5);
+            const box = document.getElementById('options'); box.innerHTML = '';
+            
             opts.forEach(o => {
-                const b = document.createElement('button');
-                b.className = 'btn';
-                b.innerHTML = o;
+                const b = document.createElement('button'); b.className = 'btn'; b.innerHTML = o;
                 b.onclick = () => {
-                    if (o === qData.correct_answer) { score++; document.getElementById('current-score').innerText = score; }
-                    currentQ++;
-                    showQuestion();
+                    playSound(400, 'square', 0.05); // Click
+                    if(o === q.correct_answer) { score++; document.getElementById('current-score').innerText = score; }
+                    currentQ++; showQuestion();
                 };
-                optBox.appendChild(b);
+                box.appendChild(b);
             });
         }
 
@@ -103,16 +111,15 @@
             clearInterval(timer);
             document.getElementById('game-screen').classList.add('hidden');
             document.getElementById('result-screen').classList.remove('hidden');
-            document.getElementById('final-stats').innerText = `Final Score: ${score}/18`;
+            document.getElementById('final-stats').innerText = `SCORE: ${score}/18`;
         }
 
         function downloadPDF() {
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
-            doc.text("NISH-LOGIC MATCH SCORECARD", 10, 10);
-            doc.text(`Difficulty: ${difficulty.toUpperCase()}`, 10, 20);
-            doc.text(`Final Score: ${score}/18`, 10, 30);
-            doc.save("scorecard.pdf");
+            doc.text("NISH-LOGIC SCORECARD", 20, 20);
+            doc.text(`Final Score: ${score}/18`, 20, 40);
+            doc.save("match_scorecard.pdf");
         }
     </script>
 </body>
