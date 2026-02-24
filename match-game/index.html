@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3-OVER MATCH | PRO</title>
+    <title>3-OVER MATCH | OFFICIAL</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
         body { background: #000; color: #0f0; font-family: 'Courier New', monospace; text-align: center; margin: 0; overflow: hidden; }
@@ -13,44 +13,47 @@
         .btn { border: 1px solid #0f0; padding: 15px; background: none; color: #0f0; cursor: pointer; width: 280px; font-weight: bold; text-transform: uppercase; margin: 10px; }
         .btn:hover { background: #0f0; color: #000; }
         #timer { font-size: 3.5rem; color: #ff0; text-shadow: 0 0 15px #f00; font-weight: bold; }
-        #question-text { font-size: 1.3rem; padding: 30px; max-width: 800px; line-height: 1.6; min-height: 100px; }
-        #result-screen { background: #e5e5e5; color: #1a1a1a; }
-        .cert-border { border: 5px double #1a1a1a; padding: 40px; background: #fff; width: 85%; max-width: 700px; }
-        .formal-font { font-family: serif; font-style: italic; }
+        #question-text { font-size: 1.3rem; padding: 30px; max-width: 800px; line-height: 1.6; min-height: 120px; }
+        
+        /* New Professional Scorecard Look */
+        #result-screen { background: #fff; color: #000; }
+        .score-box { border: 2px solid #000; padding: 40px; background: #fff; width: 85%; max-width: 600px; box-shadow: 10px 10px 0px #ccc; }
+        .score-val { font-size: 5rem; font-weight: 900; margin: 10px 0; color: #d00; }
+        .label { text-transform: uppercase; letter-spacing: 3px; font-weight: bold; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <div id="start-screen" class="screen">
-        <h1 style="letter-spacing: 5px;">3-OVER MATCH</h1>
+        <h1 style="letter-spacing: 5px; color: #0f0;">3-OVER MATCH</h1>
         <select id="lang-select">
-            <option value="en">LANGUAGE: ENGLISH</option>
-            <option value="hi">LANGUAGE: HINDI (हिन्दी)</option>
+            <option value="en">ENGLISH MODE</option>
+            <option value="hi">HINDI MODE (हिन्दी)</option>
         </select>
         <select id="level-select">
             <option value="easy">LEVEL: NOVICE</option>
             <option value="medium">LEVEL: ANALYST</option>
             <option value="hard">LEVEL: EXPERT</option>
         </select>
-        <button class="btn" onclick="initMatch()">INITIALIZE ENGINE</button>
+        <button class="btn" onclick="initMatch()">START MATCH</button>
     </div>
 
     <div id="game-screen" class="screen hidden">
         <h2 id="over-title" style="color: #8f8;">---</h2>
         <div id="timer">--:--</div>
-        <div id="question-box"><p id="question-text">Syncing...</p><div id="options"></div></div>
+        <div id="question-box"><p id="question-text">Loading Questions...</p><div id="options"></div></div>
     </div>
 
     <div id="result-screen" class="screen hidden">
-        <div class="cert-border">
-            <h1 class="formal-font" style="font-size: 2.5rem; margin: 0;">Certificate of Logic</h1>
-            <p style="text-transform: uppercase; letter-spacing: 2px;">Official Session Report</p>
-            <p id="cert-date" style="font-size: 0.9rem; font-weight: bold;"></p>
-            <hr style="border: 1px solid #1a1a1a;">
-            <p class="formal-font" style="font-size: 1.2rem;">This document confirms the completion of 18 logical data points via the Nish-Logic Engine.</p>
-            <h1 id="final-stats" style="font-size: 3.5rem; margin: 15px 0;">0/18</h1>
-            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="downloadPDF()">DOWNLOAD SCORECARD</button>
-            <button class="btn" style="border-color:#1a1a1a; color:#1a1a1a;" onclick="location.reload()">RE-SYNC ENGINE</button>
+        <div class="score-box">
+            <div class="label">Official Scorecard</div>
+            <hr>
+            <p id="cert-date" style="font-weight: bold;"></p>
+            <div class="label">Final Match Points</div>
+            <div id="final-stats" class="score-val">0/18</div>
+            <p>NISH-LOGIC ANALYTICS ENGINE</p>
+            <button class="btn" style="border-color:#000; color:#000;" onclick="downloadPDF()">SAVE SCORECARD PDF</button>
+            <button class="btn" style="border-color:#000; color:#000;" onclick="location.reload()">NEW MATCH</button>
         </div>
     </div>
 
@@ -87,7 +90,7 @@
 
         async function fetchOver() {
             const idx = Math.floor(currentQ / 6);
-            const names = ["OVER 1: APTITUDE", "OVER 2: REASONING", "OVER 3: GK"];
+            const names = ["OVER 1: APTITUDE (MATHS)", "OVER 2: REASONING (LOGIC)", "OVER 3: GK (CURRENT)"];
             const times = [360, 360, 180];
             document.getElementById('over-title').innerText = await translateText(names[idx]);
             timeLeft = times[idx];
@@ -143,18 +146,19 @@
 
         function downloadPDF() {
             const { jsPDF } = window.jspdf;
-            const doc = new jsPDF('landscape', 'mm', 'a5');
-            doc.setFillColor(245, 245, 245); doc.rect(0, 0, 210, 148, 'F');
-            doc.setLineWidth(0.5); doc.rect(10, 10, 190, 128);
-            doc.setFont("serif", "italic"); doc.setFontSize(24);
-            doc.text("Certificate of Logic", 105, 35, { align: "center" });
-            doc.setFont("courier", "bold"); doc.setFontSize(10);
-            doc.text(`DATE: ${new Date().toLocaleDateString()}`, 105, 45, { align: "center" });
-            doc.setFont("courier", "normal"); doc.setFontSize(12);
-            doc.text("VERIFIED BY NISH-LOGIC ENGINE", 105, 60, { align: "center" });
-            doc.setFontSize(32); doc.text(`SCORE: ${score}/18`, 105, 95, { align: "center" });
-            doc.setFontSize(9); doc.text(`REF: NL-${Math.random().toString(36).toUpperCase().substr(2, 8)}`, 105, 125, { align: "center" });
-            doc.save("Nish_Logic_Scorecard.pdf");
+            const doc = new jsPDF('p', 'mm', 'a4');
+            doc.setLineWidth(1); doc.rect(10, 10, 190, 277);
+            doc.setFont("courier", "bold"); doc.setFontSize(22);
+            doc.text("OFFICIAL SCORECARD", 105, 40, { align: "center" });
+            doc.setFontSize(12); doc.text(`DATE: ${new Date().toLocaleDateString()}`, 105, 50, { align: "center" });
+            doc.line(30, 60, 180, 60);
+            doc.setFontSize(16); doc.text("MATCH PERFORMANCE SCORE", 105, 80, { align: "center" });
+            doc.setFontSize(60); doc.setTextColor(200, 0, 0);
+            doc.text(`${score}/18`, 105, 120, { align: "center" });
+            doc.setTextColor(0, 0, 0); doc.setFontSize(10);
+            doc.text("NISH-LOGIC APTITUDE ASSESSMENT ENGINE", 105, 140, { align: "center" });
+            doc.text(`REF: NL-${Math.random().toString(36).toUpperCase().substr(2, 8)}`, 105, 150, { align: "center" });
+            doc.save("Scorecard.pdf");
         }
     </script>
 </body>
