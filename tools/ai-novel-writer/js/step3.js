@@ -139,68 +139,75 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
         alert('Chapter saved locally to your device storage!');
     });
 
-    // Helper to generate Kindle-styled HTML string
-    function generateKindleHTML(data) {
+    // Helper to generate Kindle-styled HTML string or raw DOM element string for PDF
+    function generateKindleHTML(data, forPdf = false) {
         let title = `My AI Generated ${data.format === 'story' ? 'Story' : 'Novel'}`;
 
-        // Build styling
-        let htmlContent = `
-<!DOCTYPE html>
+        let styles = `
+        <style>
+            .kindle-page {
+                background-color: #f4ecd8;
+                color: #333333;
+                font-family: 'Georgia', serif;
+                line-height: 1.6;
+                padding: 40px;
+                max-width: 800px;
+                margin: auto;
+                text-align: justify;
+            }
+            .kindle-page h1, .kindle-page h2, .kindle-page h3 {
+                font-family: 'Merriweather', 'Georgia', serif;
+                text-align: center;
+                color: #111;
+            }
+            .kindle-page h1 { margin-bottom: 50px; border-bottom: 2px solid #ccc; padding-bottom: 20px;}
+            .kindle-page h2 { margin-top: 60px; margin-bottom: 20px;}
+            .kindle-page .chapter-break {
+                text-align: center;
+                margin: 40px 0;
+                font-size: 24px;
+                color: #888;
+            }
+            .kindle-page .content { font-size: 18px; }
+        </style>
+        `;
+
+        let contentObj = `
+        <div class="kindle-page">
+            <h1>${title}</h1>
+            <div class="content">
+        `;
+
+        data.generatedChapters.forEach((chap, idx) => {
+            contentObj += `<h2>Chapter ${idx + 1}</h2>\n`;
+            contentObj += `${marked.parse(chap.content)}\n`;
+            if (idx < data.generatedChapters.length - 1) {
+                contentObj += `<div class="chapter-break">***</div>\n`;
+            }
+        });
+
+        contentObj += `</div></div>`;
+
+        if (forPdf) {
+            // For PDF we just return the raw inner HTML (styles + the container)
+            return styles + contentObj;
+        }
+
+        // For direct HTML export we return a complete webpage string
+        return `<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>${title}</title>
+    ${styles}
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f4ecd8; /* Warm sepia Kindle background */
-        }
-        .kindle-page {
-            background-color: #f4ecd8; /* Force background for html2pdf */
-            color: #333333;
-            font-family: 'Georgia', serif; /* Classic reading font */
-            line-height: 1.6;
-            padding: 40px;
-            max-width: 800px;
-            margin: auto;
-            text-align: justify;
-        }
-        h1, h2, h3 {
-            font-family: 'Merriweather', 'Georgia', serif;
-            text-align: center;
-            color: #111;
-        }
-        h1 { margin-bottom: 50px; border-bottom: 2px solid #ccc; padding-bottom: 20px;}
-        h2 { margin-top: 60px; margin-bottom: 20px;}
-        .chapter-break {
-            text-align: center;
-            margin: 40px 0;
-            font-size: 24px;
-            color: #888;
-        }
-        .content { font-size: 18px; }
+        body { margin: 0; padding: 0; background-color: #f4ecd8; }
     </style>
 </head>
 <body>
-    <div class="kindle-page">
-        <h1>${title}</h1>
-        <div class="content">
-`;
-
-        data.generatedChapters.forEach((chap, idx) => {
-            htmlContent += `<h2>Chapter ${idx + 1}</h2>\n`;
-            // The content is already markdown, so we parse it to HTML for the eBook
-            htmlContent += `${marked.parse(chap.content)}\n`;
-            if (idx < data.generatedChapters.length - 1) {
-                htmlContent += `<div class="chapter-break">***</div>\n`;
-            }
-        });
-
-        htmlContent += `        </div>
-    </div>
-</body></html>`;
-        return htmlContent;
+    ${contentObj}
+</body>
+</html>`;
     }
 
     document.getElementById('downloadBookBtn').addEventListener('click', () => {
@@ -210,7 +217,7 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
             return;
         }
 
-        const htmlString = generateKindleHTML(data);
+        const htmlString = generateKindleHTML(data, false);
 
         // Force download as .html
         const blob = new Blob([htmlString], { type: 'text/html;charset=utf-8' });
@@ -232,23 +239,27 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
             return;
         }
 
-        const htmlString = generateKindleHTML(data);
+        // Get inner nodes for PDF conversion
+        const pdfContent = generateKindleHTML(data, true);
 
-        // We need to parse the HTML string into a DOM element for html2pdf to read
         const opt = {
             margin: 15,
             filename: 'Generated_AI_Book.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
+            html2canvas: { scale: 2, backgroundColor: '#f4ecd8' },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         };
 
         const tempContainer = document.createElement('div');
-        tempContainer.innerHTML = htmlString;
+        tempContainer.innerHTML = pdfContent;
 
-        // Temporarily visually hide but attach to DOM (required for html2canvas)
+        // Vital Fix: Do NOT hide it offscreen or display:none or html2canvas will drop the text.
+        // We push it to z-index -9999 underneath everything, at the top of the body.
         tempContainer.style.position = 'absolute';
-        tempContainer.style.left = '-9999px';
+        tempContainer.style.top = '0';
+        tempContainer.style.left = '0';
+        tempContainer.style.width = '800px';
+        tempContainer.style.zIndex = '-9999';
         document.body.appendChild(tempContainer);
 
         const dlBtn = document.getElementById('downloadPdfBtn');
