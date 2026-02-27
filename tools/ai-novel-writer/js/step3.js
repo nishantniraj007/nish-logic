@@ -141,7 +141,7 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
 
     // Helper to generate Kindle-styled HTML string
     function generateKindleHTML(data) {
-        let title = `My AI Generated ${data.format === 'story' ? 'Story' : 'Novel'} (Style: ${data.author})`;
+        let title = `My AI Generated ${data.format === 'story' ? 'Story' : 'Novel'}`;
 
         // Build styling
         let htmlContent = `
@@ -152,7 +152,12 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
     <title>${title}</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background-color: #f4ecd8; /* Warm sepia Kindle background */
+        }
+        .kindle-page {
+            background-color: #f4ecd8; /* Force background for html2pdf */
             color: #333333;
             font-family: 'Georgia', serif; /* Classic reading font */
             line-height: 1.6;
@@ -178,8 +183,9 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
     </style>
 </head>
 <body>
-    <h1>${title}</h1>
-    <div class="content">
+    <div class="kindle-page">
+        <h1>${title}</h1>
+        <div class="content">
 `;
 
         data.generatedChapters.forEach((chap, idx) => {
@@ -191,7 +197,9 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
             }
         });
 
-        htmlContent += `    </div></body></html>`;
+        htmlContent += `        </div>
+    </div>
+</body></html>`;
         return htmlContent;
     }
 
