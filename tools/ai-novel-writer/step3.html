@@ -12,6 +12,8 @@
 
     <!-- Marked.js for parsing Markdown from AI -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- HTML2PDF for generating PDF documents -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -68,7 +70,7 @@
 
             <!-- Action Buttons for Generation -->
             <div class="action-menu" style="margin-top: 1rem;">
-                <button type="submit" id="generateBtn" class="cyber-button">
+                <button type="button" id="generateBtn" class="cyber-button">
                     <span class="btn-text">GENERATE CHAPTER</span>
                     <span class="btn-glitch"></span>
                 </button>
@@ -93,7 +95,11 @@
                 <span class="btn-text">SAVE CHAPTER</span>
             </button>
             <button id="downloadBookBtn" class="cyber-button">
-                <span class="btn-text">DOWNLOAD AS BOOK</span>
+                <span class="btn-text">DOWNLOAD AS BOOK (HTML)</span>
+                <span class="btn-glitch"></span>
+            </button>
+            <button id="downloadPdfBtn" class="cyber-button" style="border-color: #0F0;">
+                <span class="btn-text">DOWNLOAD AS PDF</span>
                 <span class="btn-glitch"></span>
             </button>
         </div>
@@ -110,15 +116,8 @@
         </div>
     </main>
 
-    <script src="../../js/matrix.js"></script>
-    <script type="importmap">
-        {
-          "imports": {
-            "@google/genai": "https://esm.run/@google/genai"
-          }
-        }
-    </script>
-    <script type="module" src="js/step3.js"></script>
+    <script src="../../js/matrix.js?v=2.3"></script>
+    <script src="js/step3.js?v=2.4"></script>
 </body>
 
 </html>

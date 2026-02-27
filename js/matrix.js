@@ -10,7 +10,7 @@ resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
 // Matrix Characters (Katakana + Latin + Digits)
-const chars = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレゲゼデベペオォコソトノホモヨョロゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const chars = '01'.split('');
 
 const fontSize = 16;
 // Number of columns based on font size & screen width
@@ -31,7 +31,7 @@ function draw() {
     ctx.font = fontSize + 'px monospace';
 
     // Update columns on resize
-    if(drops.length < canvas.width / fontSize) {
+    if (drops.length < canvas.width / fontSize) {
         let oldDrops = drops;
         columns = canvas.width / fontSize;
         drops = [];
@@ -43,7 +43,7 @@ function draw() {
     for (let i = 0; i < drops.length; i++) {
         // Random character
         const text = chars[Math.floor(Math.random() * chars.length)];
-        
+
         // Draw character
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
@@ -51,7 +51,7 @@ function draw() {
         if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
             drops[i] = 0;
         }
-        
+
         // Move drop down
         drops[i]++;
     }
@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.has-dropdown > button');
 
     buttons.forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             e.stopPropagation();
-            
+
             // Close other open dropdowns
             document.querySelectorAll('.dropdown-content.show').forEach(dropdown => {
                 if (dropdown !== this.nextElementSibling) {

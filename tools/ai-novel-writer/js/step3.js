@@ -1,5 +1,3 @@
-import { GoogleGenAI } from '@google/genai';
-
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('step3Form');
     const apiKeyInput = document.getElementById('apiKey');
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    form.addEventListener('submit', async (e) => {
+    generateBtn.addEventListener('click', async (e) => {
         e.preventDefault();
 
         const apiKey = apiKeyInput.value.trim();
@@ -41,11 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Initialize Gemini Client
-        const ai = new GoogleGenAI({ apiKey: apiKey });
-
         // Construct System Prompt enforcing strict rules
-        const systemInstruction = `
+        const systemInstructionText = `
 You are an expert AI Novel Writer. You must strictly follow these constraints:
 1. FORMAT: You are writing a ${savedData.format} (${savedData.format === 'story' ? '5-6 chapters total' : '50-60 chapters total'}). This generation is for ONE chapter only.
 2. AUTHOR STYLE: You must write strictly in the literary voice, tone, and style of: ${savedData.author}.
@@ -75,17 +70,42 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
         outputBox.innerHTML = '';
 
         try {
-            // Call Gemini
-            const response = await ai.models.generateContent({
-                model: 'gemini-2.5-flash',
-                contents: userPrompt,
-                config: {
-                    systemInstruction: systemInstruction,
+            // Call Gemini using Native Fetch (No External SDK)
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+
+            const payload = {
+                system_instruction: {
+                    parts: [{ text: systemInstructionText }]
+                },
+                contents: [{
+                    parts: [{ text: userPrompt }]
+                }],
+                generationConfig: {
                     temperature: 0.7,
                 }
+            };
+
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
             });
 
-            const markdownOutput = response.text;
+            const data = await response.json();
+
+            if (!response.ok) {
+                const errorMessage = data.error?.message || response.statusText;
+                throw new Error(`API Error (${response.status}): ${errorMessage}`);
+            }
+
+            // Extract the generated text
+            const markdownOutput = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+            if (!markdownOutput) {
+                throw new Error("No content was generated. The API response format might be unexpected.");
+            }
 
             // Render Markdown
             outputBox.innerHTML = marked.parse(markdownOutput);
@@ -107,7 +127,7 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
             console.error(error);
             loadingIndicator.style.display = 'none';
             outputBox.style.display = 'block';
-            outputBox.innerHTML = `<span style="color: #ff3333;">ERROR: Failed to generate content. Please check your API key and try again.<br><br>Details: ${error.message}</span>`;
+            outputBox.innerHTML = `< span style = "color: #ff3333;" > ERROR: Failed to generate content.Please check your API key and try again.< br > <br>Details: ${error.message}</span>`;
         } finally {
             generateBtn.disabled = false;
             btnText.textContent = 'GENERATE CHAPTER';
@@ -119,6 +139,62 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
         alert('Chapter saved locally to your device storage!');
     });
 
+    // Helper to generate Kindle-styled HTML string
+    function generateKindleHTML(data) {
+        let title = `My AI Generated ${data.format === 'story' ? 'Story' : 'Novel'} (Style: ${data.author})`;
+
+        // Build styling
+        let htmlContent = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>${title}</title>
+    <style>
+        body {
+            background-color: #f4ecd8; /* Warm sepia Kindle background */
+            color: #333333;
+            font-family: 'Georgia', serif; /* Classic reading font */
+            line-height: 1.6;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', 'Georgia', serif;
+            text-align: center;
+            color: #111;
+        }
+        h1 { margin-bottom: 50px; border-bottom: 2px solid #ccc; padding-bottom: 20px;}
+        h2 { margin-top: 60px; margin-bottom: 20px;}
+        .chapter-break {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 24px;
+            color: #888;
+        }
+        .content { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>${title}</h1>
+    <div class="content">
+`;
+
+        data.generatedChapters.forEach((chap, idx) => {
+            htmlContent += `<h2>Chapter ${idx + 1}</h2>\n`;
+            // The content is already markdown, so we parse it to HTML for the eBook
+            htmlContent += `${marked.parse(chap.content)}\n`;
+            if (idx < data.generatedChapters.length - 1) {
+                htmlContent += `<div class="chapter-break">***</div>\n`;
+            }
+        });
+
+        htmlContent += `    </div></body></html>`;
+        return htmlContent;
+    }
+
     document.getElementById('downloadBookBtn').addEventListener('click', () => {
         const data = JSON.parse(localStorage.getItem('novelData')) || {};
         if (!data.generatedChapters || data.generatedChapters.length === 0) {
@@ -126,23 +202,64 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
             return;
         }
 
-        let bookContent = `# My AI Generated ${data.format === 'story' ? 'Story' : 'Novel'} (Style: ${data.author})\n\n`;
+        const htmlString = generateKindleHTML(data);
 
-        data.generatedChapters.forEach((chap, idx) => {
-            bookContent += `## Chapter ${idx + 1}\n\n`;
-            bookContent += `${chap.content}\n\n`;
-            bookContent += `---\n\n`;
-        });
-
-        // Create blob and force download
-        const blob = new Blob([bookContent], { type: 'text/markdown' });
+        // Force download as .html
+        const blob = new Blob([htmlString], { type: 'text/html;charset=utf-8' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `Generated_AI_Book.md`;
+        a.download = `Generated_AI_Book.html`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
+    });
+
+    // New DOWNLOAD AS PDF Action
+    document.getElementById('downloadPdfBtn').addEventListener('click', () => {
+        const data = JSON.parse(localStorage.getItem('novelData')) || {};
+        if (!data.generatedChapters || data.generatedChapters.length === 0) {
+            alert('No chapters generated yet!');
+            return;
+        }
+
+        const htmlString = generateKindleHTML(data);
+
+        // We need to parse the HTML string into a DOM element for html2pdf to read
+        const opt = {
+            margin: 15,
+            filename: 'Generated_AI_Book.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        const tempContainer = document.createElement('div');
+        tempContainer.innerHTML = htmlString;
+
+        // Temporarily visually hide but attach to DOM (required for html2canvas)
+        tempContainer.style.position = 'absolute';
+        tempContainer.style.left = '-9999px';
+        document.body.appendChild(tempContainer);
+
+        const dlBtn = document.getElementById('downloadPdfBtn');
+        const originalText = dlBtn.querySelector('.btn-text').textContent;
+        dlBtn.disabled = true;
+        dlBtn.querySelector('.btn-text').textContent = "PRINTING PDF...";
+
+        // Generate and Save PDF
+        html2pdf().set(opt).from(tempContainer).save().then(() => {
+            // Cleanup
+            document.body.removeChild(tempContainer);
+            dlBtn.disabled = false;
+            dlBtn.querySelector('.btn-text').textContent = originalText;
+        }).catch((err) => {
+            console.error("PDF generation failed:", err);
+            alert("Sorry, PDF generation failed. Try downloading as HTML Book instead.");
+            document.body.removeChild(tempContainer);
+            dlBtn.disabled = false;
+            dlBtn.querySelector('.btn-text').textContent = originalText;
+        });
     });
 });
