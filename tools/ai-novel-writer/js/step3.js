@@ -15,6 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load saved data to construct the prompt
     const savedData = JSON.parse(localStorage.getItem('novelData')) || {};
 
+    // 24 Hour Expiration Logic
+    const TWENTY_FOUR_HOURS = 24 * 60 * 60 * 1000;
+    if (savedData.lastGenerated && (Date.now() - savedData.lastGenerated > TWENTY_FOUR_HOURS)) {
+        savedData.generatedChapters = [];
+        savedData.lastGenerated = null;
+        localStorage.setItem('novelData', JSON.stringify(savedData));
+        console.log("Session expired. Cleared previous chapters.");
+    }
+
     // Check if user skipped steps
     if (!savedData.format || !savedData.characters) {
         alert("System Error: Missing data from Step 1 or 2. Redirecting to start.");
@@ -116,6 +125,7 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
                 topic: coreTopic,
                 content: markdownOutput
             });
+            savedData.lastGenerated = Date.now();
             localStorage.setItem('novelData', JSON.stringify(savedData));
 
             // UI Success State
@@ -231,54 +241,31 @@ Here is what happens in this specific chapter. Write this occurrence in the esta
         URL.revokeObjectURL(url);
     });
 
-    // New DOWNLOAD AS PDF Action
-    document.getElementById('downloadPdfBtn').addEventListener('click', () => {
+    // New DOWNLOAD AS TEXT Action (With UTF-8 BOM)
+    document.getElementById('downloadTxtBtn').addEventListener('click', () => {
         const data = JSON.parse(localStorage.getItem('novelData')) || {};
         if (!data.generatedChapters || data.generatedChapters.length === 0) {
             alert('No chapters generated yet!');
             return;
         }
 
-        // Get inner nodes for PDF conversion
-        const pdfContent = generateKindleHTML(data, true);
+        let bookContent = `My AI Generated ${data.format === 'story' ? 'Story' : 'Novel'} (Style: ${data.author || 'Assistant'})\n\n`;
 
-        const opt = {
-            margin: 15,
-            filename: 'Generated_AI_Book.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, backgroundColor: '#f4ecd8' },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-
-        const tempContainer = document.createElement('div');
-        tempContainer.innerHTML = pdfContent;
-
-        // Vital Fix: Do NOT hide it offscreen or display:none or html2canvas will drop the text.
-        // We push it to z-index -9999 underneath everything, at the top of the body.
-        tempContainer.style.position = 'absolute';
-        tempContainer.style.top = '0';
-        tempContainer.style.left = '0';
-        tempContainer.style.width = '800px';
-        tempContainer.style.zIndex = '-9999';
-        document.body.appendChild(tempContainer);
-
-        const dlBtn = document.getElementById('downloadPdfBtn');
-        const originalText = dlBtn.querySelector('.btn-text').textContent;
-        dlBtn.disabled = true;
-        dlBtn.querySelector('.btn-text').textContent = "PRINTING PDF...";
-
-        // Generate and Save PDF
-        html2pdf().set(opt).from(tempContainer).save().then(() => {
-            // Cleanup
-            document.body.removeChild(tempContainer);
-            dlBtn.disabled = false;
-            dlBtn.querySelector('.btn-text').textContent = originalText;
-        }).catch((err) => {
-            console.error("PDF generation failed:", err);
-            alert("Sorry, PDF generation failed. Try downloading as HTML Book instead.");
-            document.body.removeChild(tempContainer);
-            dlBtn.disabled = false;
-            dlBtn.querySelector('.btn-text').textContent = originalText;
+        data.generatedChapters.forEach((chap, idx) => {
+            bookContent += `Chapter ${idx + 1}\n\n`;
+            bookContent += `${chap.content}\n\n`;
+            bookContent += `----------------------------------------\n\n`;
         });
+
+        // Add UTF-8 BOM (\uFEFF) to force Notepad/Mobile apps to natively read as UTF-8
+        const blob = new Blob(['\uFEFF', bookContent], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Generated_AI_Book.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
     });
 });
