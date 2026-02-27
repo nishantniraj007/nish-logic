@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Novel Writer - Step 1 | Format & Style</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/novel-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="matrixCanvas"></canvas>
+
+    <main class="glass-container wizard-container">
+        <header class="wizard-header">
+            <h1 class="glitch" data-text="AI Novel Writer">AI Novel Writer</h1>
+            <h2 class="subtitle">Step 1: Format & Author Style</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 33%;"></div>
+            </div>
+        </header>
+
+        <form id="step1Form" class="cyber-form">
+            <!-- Format Selection -->
+            <div class="form-group">
+                <label for="formatSelect" class="cyber-label">Select Format:</label>
+                <select id="formatSelect" class="cyber-select" required>
+                    <option value="" disabled selected>-- Choose length --</option>
+                    <option value="story">Story (5-6 Chapters)</option>
+                    <option value="novel">Novel (50-60 Chapters)</option>
+                </select>
+            </div>
+
+            <!-- Author Style Selection -->
+            <div class="form-group">
+                <label for="authorSelect" class="cyber-label">Select Author Style:</label>
+                <select id="authorSelect" class="cyber-select" required>
+                    <option value="" disabled selected>-- Choose an author's voice --</option>
+                    <option value="Chetan Bhagat">Chetan Bhagat (Conversational, Relatable Drama)</option>
+                    <option value="Munshi Premchand">Munshi Premchand (Social Realism, Deeply Emotional)</option>
+                    <option value="J.K. Rowling">J.K. Rowling (Magical Realism, Detailed World-building)</option>
+                    <option value="Stephen King">Stephen King (Suspense, Psychological Horror)</option>
+                    <option value="George R.R. Martin">George R.R. Martin (Epic Fantasy, Political Intrigue)</option>
+                    <option value="Agatha Christie">Agatha Christie (Classic Mystery, Deduction)</option>
+                    <option value="Rabindranath Tagore">Rabindranath Tagore (Poetic, Philosophical)</option>
+                    <option value="Amrita Pritam">Amrita Pritam (Feminist, Emotional, Raw)</option>
+                    <option value="Haruki Murakami">Haruki Murakami (Surrealism, Melancholy)</option>
+                    <option value="Ramdhari Singh Dinkar">Ramdhari Singh Dinkar (Heroic, Powerful, Patriotic)</option>
+                    <option value="Arthur Conan Doyle">Arthur Conan Doyle (Analytical, Victorian Mystery)</option>
+                    <option value="J.R.R. Tolkien">J.R.R. Tolkien (High Fantasy, Mythological)</option>
+                    <option value="Ruskin Bond">Ruskin Bond (Nature-centric, Nostalgic, Gentle)</option>
+                    <option value="Saadat Hasan Manto">Saadat Hasan Manto (Gritty Realism, Controversial)</option>
+                    <option value="R.K. Narayan">R.K. Narayan (Simple, Ironic, Small-town life)</option>
+                </select>
+            </div>
+
+            <!-- Navigation -->
+            <div class="action-menu nav-buttons">
+                <a href="../../index.html" class="cyber-button btn-secondary">
+                    <span class="btn-text">BACK TO HUB</span>
+                </a>
+                <button type="submit" class="cyber-button">
+                    <span class="btn-text">SAVE & NEXT</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Reuse matrix background -->
+    <script src="../../js/matrix.js"></script>
+    <script src="js/novel-main.js"></script>
+</body>
+
+</html>

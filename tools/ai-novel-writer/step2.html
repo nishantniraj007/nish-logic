@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Novel Writer - Step 2 | Characters & World</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/novel-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="matrixCanvas"></canvas>
+
+    <main class="glass-container wizard-container">
+        <header class="wizard-header">
+            <h1 class="glitch" data-text="AI Novel Writer">AI Novel Writer</h1>
+            <h2 class="subtitle">Step 2: Characters & World Building</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 66%;"></div>
+            </div>
+        </header>
+
+        <form id="step2Form" class="cyber-form">
+
+            <!-- Characters Section -->
+            <fieldset style="border: 1px solid var(--matrix-green); padding: 1.5rem; border-radius: 5px;">
+                <legend class="cyber-label" style="padding: 0 10px;">Characters</legend>
+
+                <div id="characterList" class="character-list">
+                    <!-- Characters will be added here dynamically -->
+                </div>
+
+                <div class="nav-buttons" style="margin-top: 10px;">
+                    <button type="button" id="addCharBtn" class="cyber-button"
+                        style="padding: 0.5rem 1rem; width: auto; min-width: 150px;">
+                        + ADD CHARACTER
+                    </button>
+                </div>
+            </fieldset>
+
+            <!-- World Context Section -->
+            <fieldset
+                style="border: 1px solid var(--matrix-green); padding: 1.5rem; border-radius: 5px; margin-top: 1rem;">
+                <legend class="cyber-label" style="padding: 0 10px;">World Context</legend>
+
+                <div class="form-group">
+                    <label for="eraPlace" class="cyber-label">Era and Place:</label>
+                    <input type="text" id="eraPlace" class="cyber-input"
+                        placeholder="e.g., 1800s Victorian London, 2050 Neo-Tokyo" required>
+                </div>
+
+                <div class="form-group" style="margin-top: 1rem;">
+                    <label for="worldRules" class="cyber-label">World Rules / Genre:</label>
+                    <input type="text" id="worldRules" class="cyber-input"
+                        placeholder="e.g., Sci-Fi realism, High Magic Rules, Lovecraftian Horror" required>
+                </div>
+
+                <div class="form-group" style="margin-top: 1rem;">
+                    <label for="storyDirection" class="cyber-label">Story Direction / Ending Note:</label>
+                    <input type="text" id="storyDirection" class="cyber-input"
+                        placeholder="e.g., Tragic ending, Joyful redemption, Unsolved mystery" required>
+                </div>
+            </fieldset>
+
+            <!-- Navigation -->
+            <div class="action-menu nav-buttons">
+                <a href="index.html" class="cyber-button btn-secondary">
+                    <span class="btn-text">BACK</span>
+                </a>
+                <button type="submit" class="cyber-button">
+                    <span class="btn-text">SAVE & NEXT</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <!-- UI Template for Character (Hidden) -->
+    <template id="charTemplate">
+        <div class="character-card">
+            <button type="button" class="remove-char-btn" title="Remove Character">X</button>
+            <div class="character-grid">
+                <div class="form-group">
+                    <label class="cyber-label" style="font-size: 0.9rem;">Name:</label>
+                    <input type="text" class="char-name cyber-input" style="padding: 0.5rem;" required>
+                </div>
+                <div class="form-group">
+                    <label class="cyber-label" style="font-size: 0.9rem;">Age:</label>
+                    <input type="number" class="char-age cyber-input" style="padding: 0.5rem;" required min="0">
+                </div>
+                <div class="form-group">
+                    <label class="cyber-label" style="font-size: 0.9rem;">Gender:</label>
+                    <select class="char-gender cyber-select" style="padding: 0.5rem;" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="cyber-label" style="font-size: 0.9rem;">Nature:</label>
+                    <select class="char-nature cyber-select" style="padding: 0.5rem;" required>
+                        <option value="Heroic/Brave">Heroic/Brave</option>
+                        <option value="Cunning/Manipulative">Cunning/Manipulative</option>
+                        <option value="Innocent/Naive">Innocent/Naive</option>
+                        <option value="Grumpy/Cynical">Grumpy/Cynical</option>
+                        <option value="Wise/Mentor">Wise/Mentor</option>
+                        <option value="Chaotic/Unpredictable">Chaotic/Unpredictable</option>
+                        <option value="Loyal/Devoted">Loyal/Devoted</option>
+                        <option value="Ambitious/Driven">Ambitious/Driven</option>
+                        <option value="Cowardly/Fearful">Cowardly/Fearful</option>
+                        <option value="Mysterious/Secretive">Mysterious/Secretive</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="../../js/matrix.js"></script>
+    <script src="js/step2.js"></script>
+</body>
+
+</html>

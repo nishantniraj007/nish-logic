@@ -1,7 +1,77 @@
 <!DOCTYPE html>
-<html>
-<head><title>New Project</title></head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishant Niraj | Vibe Coder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
-    <h1>New Project Started</h1>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Main Content Container -->
+    <main class="glass-container">
+        <!-- Profile Section -->
+        <header class="profile-section">
+            <h1 class="glitch" data-text="Nishant Niraj">Nishant Niraj</h1>
+            <h2 class="subtitle">&lt; Vibe Coder /&gt;</h2>
+            <div class="description">
+                <p>
+                    I build innovative solutions with minimal or zero cost using free tools.
+                    My expertise includes deploying robust web apps directly from mobile devices
+                    using Termux, Zrok, and Firebase. I focus on creating accessible, practical,
+                    and serverless applications that leverage the power of modern APIs.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation Buttons -->
+        <nav class="action-menu">
+            <!-- Tools Dropdown Trigger -->
+            <div class="menu-item has-dropdown">
+                <button class="cyber-button" id="toolsBtn" aria-expanded="false" aria-controls="toolsDropdown">
+                    <span class="btn-text">TOOLS</span>
+                    <span class="btn-glitch"></span>
+                </button>
+                <div class="dropdown-content" id="toolsDropdown">
+                    <a href="tools/ai-novel-writer/index.html" class="dropdown-link">AI Novel Writer (BYOK)</a>
+                    <a href="tools/ai-tts/index.html" class="dropdown-link coming-soon">AI TTS <span>(Coming
+                            Soon)</span></a>
+                </div>
+            </div>
+
+            <!-- Games Vault -->
+            <div class="menu-item has-dropdown">
+                <button class="cyber-button" id="gamesBtn" aria-expanded="false" aria-controls="gamesDropdown">
+                    <span class="btn-text">GAMES VAULT</span>
+                    <span class="btn-glitch"></span>
+                </button>
+                <div class="dropdown-content" id="gamesDropdown">
+                    <a href="https://github.com/nishantniraj007/nish-logic" target="_blank"
+                        class="dropdown-link github-link">GitHub Repo</a>
+                    <a href="#" class="dropdown-link coming-soon">3 Over Match <span>(Coming Soon)</span></a>
+                    <a href="#" class="dropdown-link coming-soon">Expert Analyser <span>(Coming Soon)</span></a>
+                </div>
+            </div>
+
+            <!-- Test Deploy -->
+            <div class="menu-item">
+                <button class="cyber-button" id="testBtn">
+                    <span class="btn-text">TEST DEPLOY</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+        </nav>
+    </main>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

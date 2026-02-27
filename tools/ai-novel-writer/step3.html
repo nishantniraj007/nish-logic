@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Novel Writer - Step 3 | Generate Story</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/novel-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Marked.js for parsing Markdown from AI -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <canvas id="matrixCanvas"></canvas>
+
+    <main class="glass-container wizard-container">
+        <header class="wizard-header">
+            <h1 class="glitch" data-text="AI Novel Writer">AI Novel Writer</h1>
+            <h2 class="subtitle">Step 3: Generate & Export</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+            </div>
+        </header>
+
+        <form id="step3Form" class="cyber-form">
+
+            <div class="form-group"
+                style="display: flex; flex-direction: row; align-items: center; gap: 1rem; justify-content: space-between;">
+                <!-- Language Toggle -->
+                <div style="flex: 1;">
+                    <label for="outputLang" class="cyber-label">Output Language:</label>
+                    <div style="margin-top: 5px;">
+                        <select id="outputLang" class="cyber-select" required style="width: 100%;">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- API Key Input -->
+                <div style="flex: 2;">
+                    <label for="apiKey" class="cyber-label">Google AI API Key:</label>
+                    <div style="display: flex; gap: 10px; margin-top: 5px;">
+                        <input type="password" id="apiKey" class="cyber-input"
+                            placeholder="Enter your Gemini API Key..." required style="flex: 1;">
+                        <a href="https://aistudio.google.com/app/apikey" target="_blank" class="cyber-button"
+                            style="padding: 0.5rem 1rem; min-width: auto; text-decoration: none;" title="Get Free Key">
+                            <span class="btn-text">? HELP</span>
+                        </a>
+                    </div>
+                    <div class="help-text">Your key is never sent to our servers. (Strictly local execution).</div>
+                </div>
+            </div>
+
+            <!-- Core Topic / Prompt Input -->
+            <div class="form-group" style="margin-top: 1.5rem;">
+                <label for="coreTopic" class="cyber-label">What happens in this chapter? (Auto-detects
+                    language):</label>
+                <textarea id="coreTopic" class="cyber-textarea" rows="4"
+                    placeholder="Describe the instance in your own words. e.g., 'The hero walks into a dark cave and finds a glowing sword. He feels scared but proceeds.'"
+                    required style="resize: vertical;"></textarea>
+            </div>
+
+            <!-- Action Buttons for Generation -->
+            <div class="action-menu" style="margin-top: 1rem;">
+                <button type="submit" id="generateBtn" class="cyber-button">
+                    <span class="btn-text">GENERATE CHAPTER</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+        </form>
+
+        <!-- Output Box -->
+        <h3 class="cyber-label" id="outputLabel" style="margin-top: 2rem; display: none;">Chapter Output:</h3>
+
+        <div id="loadingIndicator" class="loading-spinner">
+            <p>> CONNECTING TO NEURAL NET...</p>
+            <p>> SYNTHESIZING NARRATIVE...</p>
+        </div>
+
+        <div id="outputBox" class="output-container" style="display: none;">
+            <!-- Generated content goes here -->
+        </div>
+
+        <!-- Export Buttons (Hidden until content exists) -->
+        <div id="exportMenu" class="action-menu" style="margin-top: 1.5rem; display: none;">
+            <button id="saveChapterBtn" class="cyber-button btn-secondary">
+                <span class="btn-text">SAVE CHAPTER</span>
+            </button>
+            <button id="downloadBookBtn" class="cyber-button">
+                <span class="btn-text">DOWNLOAD AS BOOK</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-buttons" style="margin-top: 2rem;">
+            <a href="step2.html" class="cyber-button btn-secondary">
+                <span class="btn-text">BACK</span>
+            </a>
+            <a href="../../index.html" class="cyber-button btn-secondary"
+                style="border-color: #ff3333; color: #ff3333;">
+                <span class="btn-text">ABORT & EXIT</span>
+            </a>
+        </div>
+    </main>
+
+    <script src="../../js/matrix.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/genai": "https://esm.run/@google/genai"
+          }
+        }
+    </script>
+    <script type="module" src="js/step3.js"></script>
+</body>
+
+</html>
