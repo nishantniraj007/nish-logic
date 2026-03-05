@@ -65,16 +65,16 @@ async function generateWithFallback(prompt, primaryModelId) {
         console.error(`Error with ${primaryModelId}:`, error.message);
 
         // Fallback to Flash if we were using Pro or Flash-Lite
-        if (primaryModelId !== "gemini-2.5-flash") {
-            console.log(`Falling back to gemini-2.5-flash...`);
+        if (primaryModelId !== "gemini-2.0-flash") {
+            console.log(`Falling back to gemini-2.0-flash...`);
             const fallbackModel = genAI.getGenerativeModel({
-                model: "gemini-2.5-flash",
+                model: "gemini-2.0-flash",
                 generationConfig: { temperature: 0.7 }
             });
             const result = await fallbackModel.generateContent(prompt);
             return result.response.text();
         } else {
-            throw new Error("Primary model gemini-2.5-flash failed and no further fallbacks available.");
+            throw new Error("Primary model gemini-2.0-flash failed and no further fallbacks available.");
         }
     }
 }
