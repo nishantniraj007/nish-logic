@@ -14,16 +14,16 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 // Batch Configuration mapping
 const batchConfig = {
-    0: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.0-flash-lite" },
-    1: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.0-flash-lite" },
-    2: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.0-flash" },
-    3: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.0-flash" },
-    4: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.0-flash" },
-    5: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.0-flash" },
-    6: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.0-flash" },
-    7: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.0-flash" },
-    8: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.0-pro" },
-    9: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.0-pro" }
+    0: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
+    1: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
+    2: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
+    3: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
+    4: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
+    5: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
+    6: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
+    7: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
+    8: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.5-pro" },
+    9: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.5-pro" }
 };
 
 // Prompt Generator
@@ -65,16 +65,16 @@ async function generateWithFallback(prompt, primaryModelId) {
         console.error(`Error with ${primaryModelId}:`, error.message);
 
         // Fallback to Flash if we were using Pro or Flash-Lite
-        if (primaryModelId !== "gemini-2.0-flash") {
-            console.log(`Falling back to gemini-2.0-flash...`);
+        if (primaryModelId !== "gemini-2.5-flash") {
+            console.log(`Falling back to gemini-2.5-flash...`);
             const fallbackModel = genAI.getGenerativeModel({
-                model: "gemini-2.0-flash",
+                model: "gemini-2.5-flash",
                 generationConfig: { temperature: 0.7 }
             });
             const result = await fallbackModel.generateContent(prompt);
             return result.response.text();
         } else {
-            throw new Error("Primary model gemini-2.0-flash failed and no further fallbacks available.");
+            throw new Error("Primary model gemini-2.5-flash failed and no further fallbacks available.");
         }
     }
 }
