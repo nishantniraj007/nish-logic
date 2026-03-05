@@ -39,4 +39,9 @@ Copy and paste this into our next conversation to resume work on **Expert Analys
 - **Pool Data**: `games/3-over-match/data/`
 
 ### 🎯 5. Goal for Tomorrow
-- Build the **Expert Analyser** web app using the same Gemini-powered automation infrastructure.
+- Build the **Expert Analyser** web app using the same Gemini infrastructure.
+
+### ⚡ 6. API Optimization (Plan B)
+If tonight's **UPSC/CAT (Pro)** batches time out (longer than 60s):
+- **Action**: Split the 18-question request into **3 internal calls of 6 questions each**.
+- **Reason**: Loads faster, prevents hangs, and stays within the 1 GH Action run (saving your monthly minutes).
