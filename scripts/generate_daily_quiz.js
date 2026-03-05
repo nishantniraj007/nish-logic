@@ -53,28 +53,42 @@ Provide NO introductory text and NO conversational text. Output ONLY the JSON ar
 }
 
 async function generateWithFallback(prompt, primaryModelId) {
-    try {
-        console.log(`Attempting generation with primary model: ${primaryModelId}...`);
+    const makeRequest = async (modelId) => {
+        console.log(`[${new Date().toISOString()}] Attempting request with: ${modelId}...`);
         const model = genAI.getGenerativeModel({
-            model: primaryModelId,
+            model: modelId,
             generationConfig: { temperature: 0.7 }
         });
-        const result = await model.generateContent(prompt);
-        return result.response.text();
+
+        // Use a 60s timeout to prevent GitHub Actions from hanging at 3 mins
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 60000);
+
+        try {
+            const result = await model.generateContent(prompt, { signal: controller.signal });
+            clearTimeout(timeoutId);
+            return result.response.text();
+        } catch (err) {
+            clearTimeout(timeoutId);
+            throw err;
+        }
+    };
+
+    try {
+        return await makeRequest(primaryModelId);
     } catch (error) {
         console.error(`Error with ${primaryModelId}:`, error.message);
 
         // Fallback to Flash if we were using Pro or Flash-Lite
         if (primaryModelId !== "gemini-2.5-flash") {
             console.log(`Falling back to gemini-2.5-flash...`);
-            const fallbackModel = genAI.getGenerativeModel({
-                model: "gemini-2.5-flash",
-                generationConfig: { temperature: 0.7 }
-            });
-            const result = await fallbackModel.generateContent(prompt);
-            return result.response.text();
+            try {
+                return await makeRequest("gemini-2.5-flash");
+            } catch (fallbackErr) {
+                throw new Error(`Primary and Fallback models failed: ${fallbackErr.message}`);
+            }
         } else {
-            throw new Error("Primary model gemini-2.5-flash failed and no further fallbacks available.");
+            throw new Error(`Primary model gemini-2.5-flash failed: ${error.message}`);
         }
     }
 }
@@ -95,12 +109,16 @@ async function main() {
     }
 
     const config = batchConfig[batchIndex];
-    console.log(`--- Starting Batch ${batchIndex} (${config.diff} Level) ---`);
+    console.log(`[${new Date().toISOString()}] --- Starting Batch ${batchIndex} (${config.diff} Level) ---`);
 
     const prompt = buildPrompt(config);
 
     try {
+        console.log(`[${new Date().toISOString()}] Sending request to Gemini...`);
+        const startTime = Date.now();
         let rawJsonText = await generateWithFallback(prompt, config.model);
+        const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+        console.log(`[${new Date().toISOString()}] Received response from Gemini in ${duration}s.`);
 
         // Clean markdown backticks if the model ignores our instruction
         if (rawJsonText.startsWith("```json")) {
