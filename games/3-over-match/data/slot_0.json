@@ -4,38 +4,38 @@
     "day_index": 0,
     "slot_index": 0,
     "difficulty": "Easy",
-    "generated_at": "2026-03-05T13:39:32.424Z"
+    "generated_at": "2026-03-05T13:40:41.675Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much do 12 apples cost?",
+      "question": "If 5 apples cost Rs. 100, then how much do 7 apples cost?",
       "options": [
-        "$20",
-        "$24",
-        "$30",
-        "$36"
+        "Rs. 120",
+        "Rs. 140",
+        "Rs. 160",
+        "Rs. 180"
       ],
-      "correct_answer": "$24",
-      "explanation": "The cost of one apple is $10 / 5 = $2. Therefore, the cost of 12 apples is 12 * $2 = $24.",
-      "trick": "Find cost per unit, then multiply by desired quantity."
+      "correct_answer": "Rs. 140",
+      "explanation": "First, find the cost of one apple: Rs. 100 / 5 = Rs. 20. Then, multiply the cost of one apple by 7: Rs. 20 * 7 = Rs. 140.",
+      "trick": "Unitary Method: Find cost of 1, then multiply by desired quantity."
     },
     {
       "category": "Quantitative Aptitude",
       "question": "What is 25% of 200?",
       "options": [
-        "25",
+        "40",
         "50",
-        "75",
-        "100"
+        "60",
+        "70"
       ],
       "correct_answer": "50",
-      "explanation": "25% can be written as 0.25 or 1/4. So, 0.25 * 200 = 50, or 200 / 4 = 50.",
-      "trick": "25% is the same as dividing by 4."
+      "explanation": "To find 25% of 200, you can multiply 200 by 0.25 (which is 25/100). 200 * 0.25 = 50.",
+      "trick": "25% is equivalent to 1/4. So, 200 / 4 = 50."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If a train travels at 60 km/h, how long will it take to cover 180 km?",
+      "question": "A train travels at a speed of 60 km/hr. How long will it take to cover a distance of 180 km?",
       "options": [
         "2 hours",
         "3 hours",
@@ -43,12 +43,12 @@
         "5 hours"
       ],
       "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/h = 3 hours.",
-      "trick": "Divide distance by speed."
+      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hr = 3 hours.",
+      "trick": "Formula: Time = Distance / Speed."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the next number in the sequence: 2, 4, 6, 8, ...?",
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
       "options": [
         "9",
         "10",
@@ -56,21 +56,21 @@
         "12"
       ],
       "correct_answer": "10",
-      "explanation": "This is a sequence of even numbers, where each number is 2 more than the previous one.",
-      "trick": "Look for a simple arithmetic progression (adding or subtracting a constant)."
+      "explanation": "This is a sequence of even numbers. Each number is obtained by adding 2 to the previous number. 8 + 2 = 10.",
+      "trick": "Add 2 to the previous term."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all cats are mammals, and all mammals have fur, then all cats have fur. This is an example of:",
+      "question": "If CAT is coded as 3120, how is DOG coded?",
       "options": [
-        "Deductive Reasoning",
-        "Inductive Reasoning",
-        "Abductive Reasoning",
-        "Analogical Reasoning"
+        "4157",
+        "4167",
+        "5167",
+        "5177"
       ],
-      "correct_answer": "Deductive Reasoning",
-      "explanation": "Deductive reasoning starts with a general statement and reaches a specific conclusion.",
-      "trick": "General to specific = Deduction."
+      "correct_answer": "4157",
+      "explanation": "The code is derived by assigning the alphabetical position of each letter (A=1, B=2, ...). C=3, A=1, T=20. So CAT = 3120. For DOG, D=4, O=15, G=7. So DOG = 4157.",
+      "trick": "Use alphabetical positions of letters."
     },
     {
       "category": "Logical Reasoning",
@@ -83,33 +83,33 @@
       ],
       "correct_answer": "Carrot",
       "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Identify the common category and find the outlier."
+      "trick": "Identify the outlier based on common category."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'A' is the brother of 'B', and 'B' is the sister of 'C', what is the relationship of 'A' to 'C'?",
+      "question": "If 'Sun' is to 'Day', then 'Moon' is to?",
       "options": [
-        "Brother",
-        "Sister",
-        "Cousin",
-        "Uncle"
+        "Morning",
+        "Evening",
+        "Night",
+        "Dawn"
       ],
-      "correct_answer": "Brother",
-      "explanation": "If B is C's sister, and A is B's brother, then A is also C's brother.",
-      "trick": "Draw a family tree or visualize the relationships."
+      "correct_answer": "Night",
+      "explanation": "The Sun is associated with daylight, and the Moon is primarily associated with nighttime.",
+      "trick": "Analogy based on common association."
     },
     {
       "category": "Logical Reasoning",
-      "question": "What is the odd one out?",
+      "question": "A is taller than B. C is shorter than A. D is shorter than C. Who is the tallest?",
       "options": [
-        "Square",
-        "Circle",
-        "Triangle",
-        "Rectangle"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correct_answer": "Circle",
-      "explanation": "Square, Triangle, and Rectangle are polygons (shapes with straight sides). A circle has a curved line.",
-      "trick": "Look for a defining characteristic that is not shared by one item."
+      "correct_answer": "A",
+      "explanation": "From the statements, we know A > B, A > C, and C > D. Therefore, A is the tallest.",
+      "trick": "Visualize or list out the comparisons: A > B, A > C, C > D. A is at the top."
     },
     {
       "category": "Static GK",
@@ -121,125 +121,125 @@
         "Rome"
       ],
       "correct_answer": "Paris",
-      "explanation": "Paris is the capital and largest city of France.",
-      "trick": "Association: Eiffel Tower is in Paris, France."
+      "explanation": "Paris is the capital and most populous city of France.",
+      "trick": "Memorization of world capitals."
     },
     {
       "category": "Static GK",
-      "question": "Which planet is known as the 'Red Planet'?",
+      "question": "Which is the largest planet in our solar system?",
       "options": [
         "Earth",
         "Mars",
         "Jupiter",
-        "Venus"
+        "Saturn"
       ],
-      "correct_answer": "Mars",
-      "explanation": "Mars appears red due to the iron oxide (rust) on its surface.",
-      "trick": "Red color association."
+      "correct_answer": "Jupiter",
+      "explanation": "Jupiter is the largest planet in our solar system by both mass and volume.",
+      "trick": "Remember the order of planets or their relative sizes."
     },
     {
       "category": "Static GK",
-      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "question": "Who painted the Mona Lisa?",
       "options": [
-        "Charles Dickens",
-        "William Shakespeare",
-        "Jane Austen",
-        "Mark Twain"
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Claude Monet"
       ],
-      "correct_answer": "William Shakespeare",
-      "explanation": "William Shakespeare is one of the most famous playwrights in English literature, and 'Romeo and Juliet' is one of his most well-known tragedies.",
-      "trick": "Famous playwrights are often associated with their most famous works."
+      "correct_answer": "Leonardo da Vinci",
+      "explanation": "The Mona Lisa is a world-famous painting by the Italian artist Leonardo da Vinci.",
+      "trick": "Associate famous artworks with their artists."
     },
     {
       "category": "Static GK",
-      "question": "What is the largest ocean on Earth?",
+      "question": "Which continent is known as the 'Dark Continent'?",
       "options": [
-        "Atlantic Ocean",
-        "Indian Ocean",
-        "Arctic Ocean",
-        "Pacific Ocean"
+        "Asia",
+        "Africa",
+        "South America",
+        "Australia"
       ],
-      "correct_answer": "Pacific Ocean",
-      "explanation": "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions.",
-      "trick": "Think of the vastness of the Pacific."
+      "correct_answer": "Africa",
+      "explanation": "Africa has historically been referred to as the 'Dark Continent' due to its limited exploration and understanding by Europeans in earlier times.",
+      "trick": "Learn common nicknames for continents."
     },
     {
       "category": "Current Affairs",
-      "question": "As of early 2024, which country recently hosted the ICC U19 Men's Cricket World Cup?",
+      "question": "Which country recently hosted the G7 Summit in June 2024?",
       "options": [
-        "India",
-        "South Africa",
-        "Australia",
-        "New Zealand"
+        "Italy",
+        "Germany",
+        "Japan",
+        "Canada"
       ],
-      "correct_answer": "South Africa",
-      "explanation": "South Africa hosted the ICC U19 Men's Cricket World Cup in January-February 2024.",
-      "trick": "Recent major sporting events."
+      "correct_answer": "Italy",
+      "explanation": "Italy hosted the G7 Summit in Puglia from June 13-15, 2024.",
+      "trick": "Keep track of major international summits and their hosts."
     },
     {
       "category": "Current Affairs",
-      "question": "Which Indian state launched the 'Mera Yuva Bharat' (MY Bharat) platform in late 2023?",
+      "question": "Who won the men's singles title at Wimbledon 2024?",
       "options": [
-        "Maharashtra",
+        "Novak Djokovic",
+        "Carlos Alcaraz",
+        "Roger Federer",
+        "Andy Murray"
+      ],
+      "correct_answer": "Carlos Alcaraz",
+      "explanation": "Carlos Alcaraz won the men's singles title at Wimbledon 2024.",
+      "trick": "Follow major sporting events and their outcomes."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which Indian state recently launched the 'Mukhyamantri Yuva Campaign' to promote entrepreneurship?",
+      "options": [
         "Uttar Pradesh",
-        "Haryana",
+        "Rajasthan",
+        "Madhya Pradesh",
         "Gujarat"
       ],
-      "correct_answer": "Haryana",
-      "explanation": "While the platform was launched nationally, Haryana was among the states to actively promote and implement it among its youth in the initial phase.",
-      "trick": "Government initiatives targeting youth."
+      "correct_answer": "Uttar Pradesh",
+      "explanation": "Uttar Pradesh launched the 'Mukhyamantri Yuva Abhiyan' (Chief Minister's Youth Campaign) to foster entrepreneurship among the youth.",
+      "trick": "Stay updated on government schemes and initiatives in India."
     },
     {
       "category": "Current Affairs",
-      "question": "In early 2024, which country's president visited India for the Republic Day celebrations?",
+      "question": "What is the name of the new AI model launched by Google in late 2023/early 2024 that is considered a successor to LaMDA and PaLM?",
       "options": [
-        "France",
-        "USA",
+        "Bard",
+        "Gemini",
+        "Meena",
+        "LaMDA 2"
+      ],
+      "correct_answer": "Gemini",
+      "explanation": "Google officially launched its Gemini AI model family in December 2023.",
+      "trick": "Follow advancements in AI and technology companies."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which nation successfully conducted the first-ever private astronaut mission to the International Space Station in early 2024?",
+      "options": [
+        "United States",
         "Russia",
-        "Japan"
+        "China",
+        "India"
       ],
-      "correct_answer": "France",
-      "explanation": "French President Emmanuel Macron was the chief guest at India's Republic Day parade on January 26, 2024.",
-      "trick": "Chief guests at major national events."
+      "correct_answer": "United States",
+      "explanation": "Axiom Mission 3 (Ax-3), a private astronaut mission, was launched in January 2024, with all astronauts being from NATO member countries, primarily sponsored by the United States.",
+      "trick": "Keep an eye on developments in space exploration and private space companies."
     },
     {
       "category": "Current Affairs",
-      "question": "Which Indian film won the Oscar for Best Original Song in 2023?",
+      "question": "What major global sporting event is scheduled to take place in Paris in the summer of 2024?",
       "options": [
-        "Jhoome Jo Pathaan",
-        "Naatu Naatu",
-        "Tum Kya Mile",
-        "Besharam Rang"
+        "FIFA World Cup",
+        "UEFA European Championship",
+        "Summer Olympics",
+        "Commonwealth Games"
       ],
-      "correct_answer": "Naatu Naatu",
-      "explanation": "'Naatu Naatu' from the film 'RRR' won the Academy Award for Best Original Song in 2023.",
-      "trick": "Major international awards for Indian cinema."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "As of early 2024, who is the Director-General of the World Health Organization (WHO)?",
-      "options": [
-        "Tedros Adhanom Ghebreyesus",
-        "Margaret Chan",
-        "Gro Harlem Brundtland",
-        "Kofi Annan"
-      ],
-      "correct_answer": "Tedros Adhanom Ghebreyesus",
-      "explanation": "Dr. Tedros Adhanom Ghebreyesus has been the Director-General of the WHO since 2017 and continues in his role.",
-      "trick": "Leadership of major international organizations."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which Indian state recently celebrated its 64th Statehood Day on January 25, 2024?",
-      "options": [
-        "Assam",
-        "Himachal Pradesh",
-        "Arunachal Pradesh",
-        "Meghalaya"
-      ],
-      "correct_answer": "Himachal Pradesh",
-      "explanation": "Himachal Pradesh was granted statehood on January 25, 1971, and celebrated its 53rd Statehood Day in 2024.",
-      "trick": "Anniversaries of state formations."
+      "correct_answer": "Summer Olympics",
+      "explanation": "The 2024 Summer Olympics are scheduled to be held in Paris, France.",
+      "trick": "Know about upcoming major international sporting events."
     }
   ]
 }
