@@ -71,11 +71,14 @@ async function startGame() {
         const easyBatches = [0, 1];
         selectedBatch = easyBatches[Math.floor(Math.random() * easyBatches.length)];
     } else if (diff === 'medium') {
-        const mediumBatches = [2, 3, 4, 5, 6, 7];
+        const mediumBatches = [2, 3, 4];
         selectedBatch = mediumBatches[Math.floor(Math.random() * mediumBatches.length)];
-    } else if (diff === 'hard') {
-        const hardBatches = [8, 9];
-        selectedBatch = hardBatches[Math.floor(Math.random() * hardBatches.length)];
+    } else if (diff === 'ssc') {
+        const sscBatches = [5, 6, 7];
+        selectedBatch = sscBatches[Math.floor(Math.random() * sscBatches.length)];
+    } else if (diff === 'upsc') {
+        const upscBatches = [8, 9];
+        selectedBatch = upscBatches[Math.floor(Math.random() * upscBatches.length)];
     }
 
     try {

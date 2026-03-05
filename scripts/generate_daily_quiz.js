@@ -13,21 +13,17 @@ if (!apiKey) {
 const genAI = new GoogleGenerativeAI(apiKey);
 
 // Batch Configuration mapping
-// 0, 1 = Easy (Flash-Lite)
-// 2, 3, 4 = Medium (Flash)
-// 5, 6, 7 = Bank/SSC (Flash)
-// 8, 9 = CAT/UPSC (Pro)
 const batchConfig = {
-    0: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
-    1: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
-    2: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
-    3: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
-    4: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
-    5: { diff: "Bank/SSC", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
-    6: { diff: "Bank/SSC", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
-    7: { diff: "Bank/SSC", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
-    8: { diff: "CAT/UPSC", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.5-pro" },
-    9: { diff: "CAT/UPSC", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.5-pro" }
+    0: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.0-flash-lite" },
+    1: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.0-flash-lite" },
+    2: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.0-flash" },
+    3: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.0-flash" },
+    4: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.0-flash" },
+    5: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.0-flash" },
+    6: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.0-flash" },
+    7: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.0-flash" },
+    8: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.0-pro" },
+    9: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.0-pro" }
 };
 
 // Prompt Generator
