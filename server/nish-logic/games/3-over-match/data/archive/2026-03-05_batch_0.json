@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "batch_index": 0,
+    "difficulty": "Easy",
+    "generated_at": "2026-03-05T10:10:44.855Z"
+  },
+  "questions": [
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a shirt costs $20 and is on sale for 25% off, what is the sale price?",
+      "options": [
+        "$15",
+        "$16",
+        "$18",
+        "$10"
+      ],
+      "correct_answer": "$15",
+      "explanation": "A 25% discount means the shirt costs 100% - 25% = 75% of its original price. 75% of $20 is 0.75 * $20 = $15.",
+      "trick": "Calculate 10% of the price ($2) and then multiply by 2.5 (for 25%). Or, calculate 1/4 of the price ($5) and subtract it from the original price."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct_answer": "10",
+      "explanation": "This is a sequence of even numbers. Each number is obtained by adding 2 to the previous number.",
+      "trick": "The difference between consecutive numbers is constant (2)."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A train travels 100 kilometers in 2 hours. What is its average speed in kilometers per hour?",
+      "options": [
+        "40 km/h",
+        "50 km/h",
+        "60 km/h",
+        "200 km/h"
+      ],
+      "correct_answer": "50 km/h",
+      "explanation": "Speed = Distance / Time. So, speed = 100 km / 2 hours = 50 km/h.",
+      "trick": "Speed is just distance divided by time."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If 5 apples cost $10, how much do 15 apples cost?",
+      "options": [
+        "$20",
+        "$30",
+        "$40",
+        "$50"
+      ],
+      "correct_answer": "$30",
+      "explanation": "First, find the cost of one apple: $10 / 5 apples = $2 per apple. Then, multiply the cost per apple by the desired number of apples: $2/apple * 15 apples = $30.",
+      "trick": "15 apples is 3 times 5 apples, so the cost will be 3 times $10."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If all cats are animals, and all animals are mammals, then are all cats mammals?",
+      "options": [
+        "Yes",
+        "No",
+        "Maybe",
+        "Cannot be determined"
+      ],
+      "correct_answer": "Yes",
+      "explanation": "This is a classic syllogism. If A is in B, and B is in C, then A is in C. Cats (A) are in animals (B), and animals (B) are in mammals (C), so cats (A) are in mammals (C).",
+      "trick": "Think of it as nested sets: Cats are inside the Animals set, and the Animals set is inside the Mammals set."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
+      "trick": "Identify the common characteristic of most items in the list and find the outlier."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'A' is to 'B' as 'C' is to '?', what letter comes next?",
+      "options": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "correct_answer": "D",
+      "explanation": "The pattern is sequential letters in the alphabet. A comes before B, and C comes before D.",
+      "trick": "It's just the next letter in the alphabet."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Look at this series: 3, 1, 4, 1, 5, 9, ?. What number comes next?",
+      "options": [
+        "1",
+        "2",
+        "6",
+        "7"
+      ],
+      "correct_answer": "1",
+      "explanation": "This series represents the digits of Pi (π): 3.14159... The next digit after 9 is 1.",
+      "trick": "Recognize the pattern of digits of a famous mathematical constant."
+    },
+    {
+      "category": "Static GK",
+      "question": "Who was the first Prime Minister of India?",
+      "options": [
+        "Mahatma Gandhi",
+        "Jawaharlal Nehru",
+        "Sardar Vallabhbhai Patel",
+        "Dr. Rajendra Prasad"
+      ],
+      "correct_answer": "Jawaharlal Nehru",
+      "explanation": "Jawaharlal Nehru became the first Prime Minister of India upon its independence in 1947.",
+      "trick": "He is a very prominent figure in India's independence movement and early nation-building."
+    },
+    {
+      "category": "Static GK",
+      "question": "Which is the largest continent in the world by land area?",
+      "options": [
+        "Africa",
+        "North America",
+        "Asia",
+        "Europe"
+      ],
+      "correct_answer": "Asia",
+      "explanation": "Asia is the largest continent, covering approximately 30% of Earth's total land area.",
+      "trick": "Think of the most populous and geographically vast landmass."
+    },
+    {
+      "category": "Static GK",
+      "question": "What is the chemical symbol for water?",
+      "options": [
+        "O2",
+        "H2O",
+        "CO2",
+        "NaCl"
+      ],
+      "correct_answer": "H2O",
+      "explanation": "Water is composed of two hydrogen atoms (H) and one oxygen atom (O), hence its chemical formula is H2O.",
+      "trick": "Remember the elements that make up water: Hydrogen and Oxygen."
+    },
+    {
+      "category": "Static GK",
+      "question": "In which year did World War II end?",
+      "options": [
+        "1940",
+        "1945",
+        "1950",
+        "1939"
+      ],
+      "correct_answer": "1945",
+      "explanation": "World War II officially ended on September 2, 1945, with the surrender of Japan.",
+      "trick": "It happened shortly after the atomic bombings of Hiroshima and Nagasaki."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which country recently hosted the G7 Summit in June 2024?",
+      "options": [
+        "United States",
+        "Italy",
+        "Japan",
+        "Germany"
+      ],
+      "correct_answer": "Italy",
+      "explanation": "The G7 Summit in June 2024 was held in Apulia, Italy.",
+      "trick": "Look for recent major international diplomatic events."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who won the men's singles title at Wimbledon in July 2024?",
+      "options": [
+        "Novak Djokovic",
+        "Carlos Alcaraz",
+        "Jannik Sinner",
+        "Roger Federer"
+      ],
+      "correct_answer": "Jannik Sinner",
+      "explanation": "Jannik Sinner won his first Wimbledon men's singles title in July 2024.",
+      "trick": "Keep track of major sporting event winners."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "What is the name of the new AI model launched by Google in mid-2024 that aims to be multimodal?",
+      "options": [
+        "LaMDA",
+        "PaLM 2",
+        "Gemini",
+        "Bard"
+      ],
+      "correct_answer": "Gemini",
+      "explanation": "Google launched Gemini, a family of highly capable multimodal AI models, in December 2023, with further advancements and integrations throughout 2024.",
+      "trick": "Focus on major tech company product launches, especially in AI."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which Indian state experienced significant flooding in the northeastern region in May-June 2024?",
+      "options": [
+        "Kerala",
+        "Assam",
+        "Tamil Nadu",
+        "Maharashtra"
+      ],
+      "correct_answer": "Assam",
+      "explanation": "Assam faced severe floods and landslides in May and June 2024, affecting millions.",
+      "trick": "Pay attention to natural disaster events in news reports."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "The 2024 Summer Olympics were held in which city?",
+      "options": [
+        "Los Angeles",
+        "Tokyo",
+        "Paris",
+        "London"
+      ],
+      "correct_answer": "Paris",
+      "explanation": "The 2024 Summer Olympics were held in Paris, France.",
+      "trick": "Major global sporting events are frequently in the news."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who was appointed as the new Chief Election Commissioner of India in May 2024?",
+      "options": [
+        "Rajiv Kumar",
+        "Anup Chandra Pandey",
+        "Arun Goel",
+        "Sushil Chandra"
+      ],
+      "correct_answer": "Rajiv Kumar",
+      "explanation": "Rajiv Kumar was appointed as the Chief Election Commissioner of India in May 2024.",
+      "trick": "Important appointments in national bodies are usually reported."
+    }
+  ]
+}

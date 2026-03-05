@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Over Match - Games Vault | Nishant Niraj</title>
+    <!-- Use base theme CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Specific Game CSS -->
+    <link rel="stylesheet" href="css/quiz.css">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Matrix Background Canvas from main site -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Main Content Container -->
+    <main class="glass-container quiz-container">
+
+        <!-- Profile Section / Header -->
+        <header class="profile-section">
+            <h1 class="glitch small-glitch" data-text="3 Over Match">3 Over Match</h1>
+            <h2 class="subtitle">&lt; 18 Questions | Bank/SSC/UPSC Level /&gt;</h2>
+        </header>
+
+        <!-- Quiz UI Mount Point -->
+        <div id="quiz-app">
+            <div id="loading-state" class="center-content">
+                <p>Loading Daily Questions...</p>
+                <div class="loader"></div>
+            </div>
+
+            <!-- Intro / Config Screen -->
+            <div id="intro-screen" style="display: none;" class="screen-view">
+                <p class="description">Test your aptitude, reasoning, GK, and current affairs in an 18-question barrage.
+                </p>
+
+                <div class="diff-selector">
+                    <h3>Select Difficulty:</h3>
+                    <div class="radio-group">
+                        <label><input type="radio" name="difficulty" value="easy" checked> Easy (Flash-Lite)</label>
+                        <label><input type="radio" name="difficulty" value="medium"> Medium (Bank/SSC)</label>
+                        <label><input type="radio" name="difficulty" value="hard"> Hard (UPSC/CAT)</label>
+                    </div>
+                </div>
+
+                <div class="timer-toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="timer-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Enable 15-Minute Timer</span>
+                </div>
+
+                <div class="action-menu" style="margin-top: 2rem;">
+                    <button class="cyber-button" id="start-btn">
+                        <span class="btn-text">PLAY MATCH</span>
+                        <span class="btn-glitch"></span>
+                    </button>
+                    <a href="../../index.html" class="cyber-button outline" style="text-decoration:none;">
+                        <span class="btn-text">GO BACK</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Active Gameplay Screen -->
+            <div id="game-screen" style="display: none;" class="screen-view">
+                <div class="game-header">
+                    <div class="stats">
+                        <span id="q-counter">Q: 1/18</span>
+                        <span id="category-badge" class="badge">Aptitude</span>
+                        <span id="timer" class="hidden">15:00</span>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h3 id="question-text"></h3>
+                </div>
+
+                <div class="options-grid" id="options-container">
+                    <!-- Options injected via JS -->
+                </div>
+
+                <div class="game-footer">
+                    <button id="prev-btn" class="nav-btn cyber-button" disabled>&lt; Prev</button>
+                    <button id="next-btn" class="nav-btn cyber-button">Next &gt;</button>
+                    <button id="submit-btn" class="primary-btn cyber-button" style="display:none;">Submit Match</button>
+                </div>
+            </div>
+
+            <!-- Certificate & Results Screen -->
+            <div id="result-screen" style="display: none;" class="screen-view">
+                <div id="certificate" class="certificate-wrapper">
+                    <!-- Watermark added via CSS -->
+                    <div class="cert-header">
+                        <h2>CERTIFICATE OF PERFORMANCE</h2>
+                        <h3 class="cyber-text">3 OVER MATCH</h3>
+                    </div>
+                    <div class="cert-body">
+                        <p>Completed On: <span id="cert-date">--</span></p>
+                        <p>Time Taken: <span id="cert-time">--</span></p>
+                        <hr>
+                        <h1 id="final-score" class="glitch" data-text="0/18">0/18</h1>
+                        <p id="cert-message" class="subtitle">Well Played!</p>
+                    </div>
+
+                    <div class="answer-sheet" id="answer-sheet">
+                        <!-- Detailed breakdown injected here -->
+                    </div>
+                </div>
+
+                <div class="action-menu" style="margin-top: 2rem;">
+                    <button class="cyber-button" id="print-btn">
+                        <span class="btn-text">PRINT / PDF</span>
+                        <span class="btn-glitch"></span>
+                    </button>
+                    <button class="cyber-button" onclick="location.reload()">
+                        <span class="btn-text">PLAY AGAIN</span>
+                        <span class="btn-glitch"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../js/matrix.js?v=2.3"></script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
