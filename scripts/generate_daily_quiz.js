@@ -122,21 +122,20 @@ async function main() {
             fs.mkdirSync(targetDir, { recursive: true });
         }
 
-        // Include archive strategy
-        const dateStr = new Date().toISOString().split('T')[0];
-        const archiveDir = path.join(targetDir, 'archive');
-        if (!fs.existsSync(archiveDir)) {
-            fs.mkdirSync(archiveDir, { recursive: true });
-        }
+        // Rolling Pool Strategy: 5 days * 10 batches = 50 slots
+        // slot_0 to slot_49
+        const dayIndex = new Date().getUTCDate() % 5;
+        const slotIndex = (dayIndex * 10) + batchIndex;
 
-        const filename = `batch_${batchIndex}.json`;
-        const archiveFilename = `${dateStr}_batch_${batchIndex}.json`;
+        const filename = `slot_${slotIndex}.json`;
         const filepath = path.join(targetDir, filename);
 
-        // Calculate a timestamp for when this file was generated to help the archiver
+        // Calculate a timestamp for when this file was generated 
         const outputObject = {
             metadata: {
                 batch_index: batchIndex,
+                day_index: dayIndex,
+                slot_index: slotIndex,
                 difficulty: config.diff,
                 generated_at: new Date().toISOString()
             },
@@ -144,8 +143,20 @@ async function main() {
         };
 
         fs.writeFileSync(filepath, JSON.stringify(outputObject, null, 2));
+
+        // Legacy/Direct link support (the webapp will prioritize pool eventually)
+        // Overwrite the standard batch_X.json so the "latest" is always active too
+        const legacyFilepath = path.join(targetDir, `batch_${batchIndex}.json`);
+        // Archive Strategy (Backup for Drive)
+        const dateStr = new Date().toISOString().split('T')[0];
+        const archiveDir = path.join(targetDir, 'archive');
+        if (!fs.existsSync(archiveDir)) {
+            fs.mkdirSync(archiveDir, { recursive: true });
+        }
+        const archiveFilename = `${dateStr}_batch_${batchIndex}.json`;
         fs.writeFileSync(path.join(archiveDir, archiveFilename), JSON.stringify(outputObject, null, 2));
-        console.log(`Success! Saved ${parsedData.length} questions to ${filepath}`);
+
+        console.log(`Success! Saved ${parsedData.length} questions to ${filepath}, ${legacyFilepath}, and archive.`);
 
     } catch (err) {
         console.error("Failed to generate and save batch:", err);

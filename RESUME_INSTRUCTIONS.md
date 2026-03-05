@@ -15,5 +15,16 @@ Follow the "Permanent Hosting Split" rules:
 2. **Deploying Games (GitHub)**:
    - Run `git push origin master` to update the GitHub URL.
 
-## 🔴 Step 3: Archive
-- Quizzes older than 5 days are moved to your [Google Drive Folder](https://drive.google.com/drive/u/0/folders/1O-ZZF_DozitW64U1YAtKqYid1-7Q8R6I).
+## 🔄 Pool Management (900 Questions)
+- **Active Pool**: The webapp maintains a pool of 900 questions (5 days * 180 questions).
+- **Storage**: Questions are stored in `games/3-over-match/data/slot_0.json` through `slot_49.json`.
+- **Rotation**: Every 5 days, the slots repeat (Day 6 overwrites Day 1).
+- **Archiving**: The `archive_to_drive.js` script triggers after batch 10 (midnight). It identifies files in `data/archive/` older than 5 days and moves them to Google Drive.
+
+## ✅ Verification Checklist
+1. **GitHub Actions**: Ensure "Daily Quiz Generation" shows a green checkmark every night.
+2. **Drive Sync**: Check your "Quiz Archive" folder on Google Drive after 5 days to see the first automated backups.
+3. **Local Pool**: Verify that `games/3-over-match/data/` begins to fill up with `slot_X.json` files.
+
+---
+**Permanent Note**: Tools (Firebase) and Games (GitHub) must remain on their respective platforms. Tomorrow we proceed with **Expert Analyser**.

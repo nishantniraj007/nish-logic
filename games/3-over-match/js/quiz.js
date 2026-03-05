@@ -66,23 +66,25 @@ async function startGame() {
     isTimerEnabled = timerToggle.checked;
     const diff = document.querySelector('input[name="difficulty"]:checked').value;
 
-    let selectedBatch = 0;
-    if (diff === 'easy') {
-        const easyBatches = [0, 1];
-        selectedBatch = easyBatches[Math.floor(Math.random() * easyBatches.length)];
-    } else if (diff === 'medium') {
-        const mediumBatches = [2, 3, 4];
-        selectedBatch = mediumBatches[Math.floor(Math.random() * mediumBatches.length)];
-    } else if (diff === 'ssc') {
-        const sscBatches = [5, 6, 7];
-        selectedBatch = sscBatches[Math.floor(Math.random() * sscBatches.length)];
-    } else if (diff === 'upsc') {
-        const upscBatches = [8, 9];
-        selectedBatch = upscBatches[Math.floor(Math.random() * upscBatches.length)];
-    }
+    let batchRange = [0, 0];
+    if (diff === 'easy') batchRange = [0, 1];
+    else if (diff === 'medium') batchRange = [2, 4];
+    else if (diff === 'ssc') batchRange = [5, 7];
+    else if (diff === 'upsc') batchRange = [8, 9];
+
+    // Rolling Pool Selection:
+    // We have 5 days of data (0-4). Pick a random potential day.
+    const randomDay = Math.floor(Math.random() * 5);
+    const selectedBatch = batchRange[0] + Math.floor(Math.random() * (batchRange[1] - batchRange[0] + 1));
+    const poolSlot = (randomDay * 10) + selectedBatch;
 
     try {
-        const res = await fetch(`data/batch_${selectedBatch}.json`);
+        // Try to load from pool first
+        let res = await fetch(`data/slot_${poolSlot}.json`);
+        if (!res.ok) {
+            // Fallback to the latest standard batch
+            res = await fetch(`data/batch_${selectedBatch}.json`);
+        }
         if (res.ok) {
             const data = await res.json();
             quizData = data.questions || data; // handle root array or obj
