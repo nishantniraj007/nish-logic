@@ -27,7 +27,7 @@ const auth = new google.auth.GoogleAuth({
 
 const drive = google.drive({ version: 'v3', auth });
 // Local temp archive directory holding generated snapshots prior to uploads
-const archiveDir = path.join(__dirname, '../../games/3-over-match/data/archive');
+const archiveDir = path.join(__dirname, '../games/3-over-match/data/archive');
 
 async function archiveOldFiles() {
     if (!fs.existsSync(archiveDir)) {

@@ -29,10 +29,9 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: 'server/package-lock.json'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Install Dependencies
-        working-directory: ./server
         run: npm ci
 
       - name: Determine Batch Index
@@ -55,14 +54,12 @@ jobs:
           echo "Running batch index $INDEX"
 
       - name: Run Quiz Generation
-        working-directory: ./server
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generate_daily_quiz.js ${{ env.INDEX }}
 
       - name: Run Drive Archive (on final batch)
         if: env.INDEX == '9' || github.event_name == 'workflow_dispatch'
-        working-directory: ./server
         env:
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
           GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}

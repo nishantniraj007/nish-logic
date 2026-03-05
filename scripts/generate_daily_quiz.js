@@ -121,7 +121,7 @@ async function main() {
         }
 
         // Save file
-        const targetDir = path.join(__dirname, '../../games/3-over-match/data');
+        const targetDir = path.join(__dirname, '../games/3-over-match/data');
         if (!fs.existsSync(targetDir)) {
             fs.mkdirSync(targetDir, { recursive: true });
         }
