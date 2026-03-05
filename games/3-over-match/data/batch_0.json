@@ -2,77 +2,77 @@
   "metadata": {
     "batch_index": 0,
     "difficulty": "Easy",
-    "generated_at": "2026-03-05T10:10:44.855Z"
+    "generated_at": "2026-03-05T12:40:14.682Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If a shirt costs $20 and is on sale for 25% off, what is the sale price?",
+      "question": "What is the sum of 15, 20, and 5?",
       "options": [
-        "$15",
-        "$16",
-        "$18",
-        "$10"
+        "30",
+        "35",
+        "40",
+        "45"
       ],
-      "correct_answer": "$15",
-      "explanation": "A 25% discount means the shirt costs 100% - 25% = 75% of its original price. 75% of $20 is 0.75 * $20 = $15.",
-      "trick": "Calculate 10% of the price ($2) and then multiply by 2.5 (for 25%). Or, calculate 1/4 of the price ($5) and subtract it from the original price."
+      "correct_answer": "40",
+      "explanation": "To find the sum, add the numbers together: 15 + 20 + 5 = 40.",
+      "trick": "None"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+      "question": "If a shirt costs $25 and is on sale for 10% off, how much is the discount?",
       "options": [
+        "$1.50",
+        "$2.00",
+        "$2.50",
+        "$5.00"
+      ],
+      "correct_answer": "$2.50",
+      "explanation": "To calculate 10% of $25, multiply 25 by 0.10 (or 10/100). $25 * 0.10 = $2.50.",
+      "trick": "To find 10% of a number, simply move the decimal point one place to the left."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is 3/4 of 12?",
+      "options": [
+        "3",
+        "6",
         "9",
-        "10",
-        "12",
-        "14"
+        "12"
       ],
-      "correct_answer": "10",
-      "explanation": "This is a sequence of even numbers. Each number is obtained by adding 2 to the previous number.",
-      "trick": "The difference between consecutive numbers is constant (2)."
+      "correct_answer": "9",
+      "explanation": "To find 3/4 of 12, divide 12 by 4 (which is 3) and then multiply by 3. So, (12/4) * 3 = 3 * 3 = 9.",
+      "trick": "Divide by the denominator, multiply by the numerator."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A train travels 100 kilometers in 2 hours. What is its average speed in kilometers per hour?",
+      "question": "If you have 8 pens and give away 3, how many pens do you have left?",
       "options": [
-        "40 km/h",
-        "50 km/h",
-        "60 km/h",
-        "200 km/h"
+        "3",
+        "4",
+        "5",
+        "6"
       ],
-      "correct_answer": "50 km/h",
-      "explanation": "Speed = Distance / Time. So, speed = 100 km / 2 hours = 50 km/h.",
-      "trick": "Speed is just distance divided by time."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much do 15 apples cost?",
-      "options": [
-        "$20",
-        "$30",
-        "$40",
-        "$50"
-      ],
-      "correct_answer": "$30",
-      "explanation": "First, find the cost of one apple: $10 / 5 apples = $2 per apple. Then, multiply the cost per apple by the desired number of apples: $2/apple * 15 apples = $30.",
-      "trick": "15 apples is 3 times 5 apples, so the cost will be 3 times $10."
+      "correct_answer": "5",
+      "explanation": "To find the number of pens left, subtract the pens given away from the total: 8 - 3 = 5.",
+      "trick": "None"
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all cats are animals, and all animals are mammals, then are all cats mammals?",
+      "question": "Complete the series: 5, 10, 15, 20, __",
       "options": [
-        "Yes",
-        "No",
-        "Maybe",
-        "Cannot be determined"
+        "22",
+        "25",
+        "30",
+        "35"
       ],
-      "correct_answer": "Yes",
-      "explanation": "This is a classic syllogism. If A is in B, and B is in C, then A is in C. Cats (A) are in animals (B), and animals (B) are in mammals (C), so cats (A) are in mammals (C).",
-      "trick": "Think of it as nested sets: Cats are inside the Animals set, and the Animals set is inside the Mammals set."
+      "correct_answer": "25",
+      "explanation": "The series consists of numbers increasing by 5 each time. So, 20 + 5 = 25.",
+      "trick": "Identify the pattern of addition, subtraction, multiplication, or division."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "question": "Find the odd one out: Apple, Banana, Carrot, Orange",
       "options": [
         "Apple",
         "Banana",
@@ -80,164 +80,164 @@
         "Orange"
       ],
       "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Identify the common characteristic of most items in the list and find the outlier."
+      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
+      "trick": "Look for a common characteristic shared by three items, and identify the one that doesn't fit."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'A' is to 'B' as 'C' is to '?', what letter comes next?",
+      "question": "Dog is to Bark as Cat is to __",
       "options": [
-        "D",
-        "E",
-        "F",
-        "G"
+        "Roar",
+        "Moo",
+        "Meow",
+        "Chirp"
       ],
-      "correct_answer": "D",
-      "explanation": "The pattern is sequential letters in the alphabet. A comes before B, and C comes before D.",
-      "trick": "It's just the next letter in the alphabet."
+      "correct_answer": "Meow",
+      "explanation": "This is an analogy based on animal sounds. A Dog barks, and a Cat meows.",
+      "trick": "Determine the relationship between the first pair of words and apply the same relationship to the second pair."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Look at this series: 3, 1, 4, 1, 5, 9, ?. What number comes next?",
+      "question": "If A=1, B=2, C=3, then E=?",
       "options": [
-        "1",
-        "2",
+        "4",
+        "5",
         "6",
         "7"
       ],
-      "correct_answer": "1",
-      "explanation": "This series represents the digits of Pi (π): 3.14159... The next digit after 9 is 1.",
-      "trick": "Recognize the pattern of digits of a famous mathematical constant."
+      "correct_answer": "5",
+      "explanation": "The pattern assigns a number to each letter based on its position in the alphabet. E is the 5th letter.",
+      "trick": "Count the alphabetical position of the letter."
     },
     {
       "category": "Static GK",
-      "question": "Who was the first Prime Minister of India?",
+      "question": "What is the capital city of France?",
       "options": [
-        "Mahatma Gandhi",
-        "Jawaharlal Nehru",
-        "Sardar Vallabhbhai Patel",
-        "Dr. Rajendra Prasad"
-      ],
-      "correct_answer": "Jawaharlal Nehru",
-      "explanation": "Jawaharlal Nehru became the first Prime Minister of India upon its independence in 1947.",
-      "trick": "He is a very prominent figure in India's independence movement and early nation-building."
-    },
-    {
-      "category": "Static GK",
-      "question": "Which is the largest continent in the world by land area?",
-      "options": [
-        "Africa",
-        "North America",
-        "Asia",
-        "Europe"
-      ],
-      "correct_answer": "Asia",
-      "explanation": "Asia is the largest continent, covering approximately 30% of Earth's total land area.",
-      "trick": "Think of the most populous and geographically vast landmass."
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the chemical symbol for water?",
-      "options": [
-        "O2",
-        "H2O",
-        "CO2",
-        "NaCl"
-      ],
-      "correct_answer": "H2O",
-      "explanation": "Water is composed of two hydrogen atoms (H) and one oxygen atom (O), hence its chemical formula is H2O.",
-      "trick": "Remember the elements that make up water: Hydrogen and Oxygen."
-    },
-    {
-      "category": "Static GK",
-      "question": "In which year did World War II end?",
-      "options": [
-        "1940",
-        "1945",
-        "1950",
-        "1939"
-      ],
-      "correct_answer": "1945",
-      "explanation": "World War II officially ended on September 2, 1945, with the surrender of Japan.",
-      "trick": "It happened shortly after the atomic bombings of Hiroshima and Nagasaki."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which country recently hosted the G7 Summit in June 2024?",
-      "options": [
-        "United States",
-        "Italy",
-        "Japan",
-        "Germany"
-      ],
-      "correct_answer": "Italy",
-      "explanation": "The G7 Summit in June 2024 was held in Apulia, Italy.",
-      "trick": "Look for recent major international diplomatic events."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the men's singles title at Wimbledon in July 2024?",
-      "options": [
-        "Novak Djokovic",
-        "Carlos Alcaraz",
-        "Jannik Sinner",
-        "Roger Federer"
-      ],
-      "correct_answer": "Jannik Sinner",
-      "explanation": "Jannik Sinner won his first Wimbledon men's singles title in July 2024.",
-      "trick": "Keep track of major sporting event winners."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "What is the name of the new AI model launched by Google in mid-2024 that aims to be multimodal?",
-      "options": [
-        "LaMDA",
-        "PaLM 2",
-        "Gemini",
-        "Bard"
-      ],
-      "correct_answer": "Gemini",
-      "explanation": "Google launched Gemini, a family of highly capable multimodal AI models, in December 2023, with further advancements and integrations throughout 2024.",
-      "trick": "Focus on major tech company product launches, especially in AI."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which Indian state experienced significant flooding in the northeastern region in May-June 2024?",
-      "options": [
-        "Kerala",
-        "Assam",
-        "Tamil Nadu",
-        "Maharashtra"
-      ],
-      "correct_answer": "Assam",
-      "explanation": "Assam faced severe floods and landslides in May and June 2024, affecting millions.",
-      "trick": "Pay attention to natural disaster events in news reports."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The 2024 Summer Olympics were held in which city?",
-      "options": [
-        "Los Angeles",
-        "Tokyo",
+        "Rome",
+        "Berlin",
         "Paris",
-        "London"
+        "Madrid"
       ],
       "correct_answer": "Paris",
-      "explanation": "The 2024 Summer Olympics were held in Paris, France.",
-      "trick": "Major global sporting events are frequently in the news."
+      "explanation": "Paris is the capital and most populous city of France.",
+      "trick": "None"
+    },
+    {
+      "category": "Static GK",
+      "question": "Which planet is known as the 'Red Planet'?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correct_answer": "Mars",
+      "explanation": "Mars is often called the 'Red Planet' due to the presence of iron oxide (rust) on its surface.",
+      "trick": "None"
+    },
+    {
+      "category": "Static GK",
+      "question": "Who is known for inventing the light bulb?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Thomas Edison",
+        "Nikola Tesla"
+      ],
+      "correct_answer": "Thomas Edison",
+      "explanation": "Thomas Edison is widely credited with inventing the practical incandescent light bulb.",
+      "trick": "None"
+    },
+    {
+      "category": "Static GK",
+      "question": "What is the largest ocean on Earth?",
+      "options": [
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Southern Ocean",
+        "Pacific Ocean"
+      ],
+      "correct_answer": "Pacific Ocean",
+      "explanation": "The Pacific Ocean is the largest and deepest of Earth's five oceanic divisions.",
+      "trick": "None"
     },
     {
       "category": "Current Affairs",
-      "question": "Who was appointed as the new Chief Election Commissioner of India in May 2024?",
+      "question": "Which city hosted the COP28 climate summit in December 2023?",
       "options": [
-        "Rajiv Kumar",
-        "Anup Chandra Pandey",
-        "Arun Goel",
-        "Sushil Chandra"
+        "Glasgow",
+        "Sharm El Sheikh",
+        "Dubai",
+        "Paris"
       ],
-      "correct_answer": "Rajiv Kumar",
-      "explanation": "Rajiv Kumar was appointed as the Chief Election Commissioner of India in May 2024.",
-      "trick": "Important appointments in national bodies are usually reported."
+      "correct_answer": "Dubai",
+      "explanation": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in Dubai, United Arab Emirates, from November 30 to December 13, 2023.",
+      "trick": "None"
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which film won the 'Best Picture' award at the 96th Academy Awards in March 2024?",
+      "options": [
+        "Barbie",
+        "Killers of the Flower Moon",
+        "Oppenheimer",
+        "Poor Things"
+      ],
+      "correct_answer": "Oppenheimer",
+      "explanation": "Christopher Nolan's 'Oppenheimer' was the big winner at the 2024 Oscars, taking home seven awards including Best Picture.",
+      "trick": "None"
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which country recently launched the 'Chang'e-6' mission in May 2024 to collect samples from the far side of the Moon?",
+      "options": [
+        "USA",
+        "Russia",
+        "China",
+        "India"
+      ],
+      "correct_answer": "China",
+      "explanation": "China successfully launched its Chang'e-6 lunar mission in May 2024, aiming to be the first to collect samples from the Moon's far side.",
+      "trick": "None"
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who was sworn in as the new President of Indonesia in October 2024, after winning elections earlier in the year?",
+      "options": [
+        "Joko Widodo",
+        "Prabowo Subianto",
+        "Anies Baswedan",
+        "Ganjar Pranowo"
+      ],
+      "correct_answer": "Prabowo Subianto",
+      "explanation": "Prabowo Subianto won Indonesia's presidential election in February 2024 and is set to be sworn in in October 2024.",
+      "trick": "None"
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which major sporting event concluded in February 2024, with Qatar winning the title?",
+      "options": [
+        "Cricket World Cup",
+        "AFC Asian Cup",
+        "Africa Cup of Nations",
+        "Rugby World Cup"
+      ],
+      "correct_answer": "AFC Asian Cup",
+      "explanation": "The AFC Asian Cup 2023 (held in early 2024) concluded in February, with host nation Qatar winning the final.",
+      "trick": "None"
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which Indian state conducted its assembly elections in November 2023, with results declared in early December?",
+      "options": [
+        "Uttar Pradesh",
+        "West Bengal",
+        "Rajasthan",
+        "Maharashtra"
+      ],
+      "correct_answer": "Rajasthan",
+      "explanation": "Along with Madhya Pradesh, Telangana, and Chhattisgarh, Rajasthan held its assembly elections in November 2023, with results announced on December 3, 2023.",
+      "trick": "None"
     }
   ]
 }
