@@ -2,944 +2,945 @@ const fallbackData = {
   "easy": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 10 and another costs 15, what is the total cost?",
+      "question": "If an article is priced at Rs. 200 and a 35% discount is applied, what is the discount amount?",
       "options": [
-        "45",
-        "15",
-        "35",
-        "25"
+        "75",
+        "85",
+        "70",
+        "65"
       ],
-      "correct_answer": "25",
-      "explanation": "Simple addition: 10 + 15 = 25",
-      "trick": "Always add the units digit first."
+      "correct_answer": "70",
+      "explanation": "Discount = 35% of 200 = (35/100) * 200 = 70",
+      "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 15 and another costs 6, what is the total cost?",
+      "question": "If an article is priced at Rs. 240 and a 45% discount is applied, what is the discount amount?",
       "options": [
-        "41",
-        "31",
-        "11",
-        "21"
+        "108",
+        "103",
+        "113",
+        "123"
       ],
-      "correct_answer": "21",
-      "explanation": "Simple addition: 15 + 6 = 21",
-      "trick": "Always add the units digit first."
+      "correct_answer": "108",
+      "explanation": "Discount = 45% of 240 = (45/100) * 240 = 108",
+      "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 5 and another costs 8, what is the total cost?",
+      "question": "If an article is priced at Rs. 460 and a 35% discount is applied, what is the discount amount?",
       "options": [
-        "23",
-        "13",
-        "3",
-        "33"
+        "166",
+        "156",
+        "161",
+        "176"
       ],
-      "correct_answer": "13",
-      "explanation": "Simple addition: 5 + 8 = 13",
-      "trick": "Always add the units digit first."
+      "correct_answer": "161",
+      "explanation": "Discount = 35% of 460 = (35/100) * 460 = 161",
+      "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 6 and another costs 8, what is the total cost?",
+      "question": "If an article is priced at Rs. 320 and a 45% discount is applied, what is the discount amount?",
       "options": [
-        "24",
-        "4",
-        "14",
-        "34"
+        "144",
+        "139",
+        "149",
+        "159"
       ],
-      "correct_answer": "14",
-      "explanation": "Simple addition: 6 + 8 = 14",
-      "trick": "Always add the units digit first."
+      "correct_answer": "144",
+      "explanation": "Discount = 45% of 320 = (45/100) * 320 = 144",
+      "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: easy)",
+      "question": "If A implies B, and B implies C, does A imply C?",
       "options": [
-        "Car",
-        "Bus",
-        "Train",
-        "Banana"
+        "Yes",
+        "No",
+        "Only if C implies A",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Yes",
+      "explanation": "Transitive property of logic (Syllogism).",
+      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: easy)",
+      "question": "If A implies B, and B implies C, does A imply C?",
       "options": [
-        "Car",
-        "Bus",
-        "Train",
-        "Banana"
+        "Yes",
+        "No",
+        "Only if C implies A",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Yes",
+      "explanation": "Transitive property of logic (Syllogism).",
+      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: easy)",
+      "question": "If A implies B, and B implies C, does A imply C?",
       "options": [
-        "Car",
-        "Bus",
-        "Train",
-        "Banana"
+        "Yes",
+        "No",
+        "Only if C implies A",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Yes",
+      "explanation": "Transitive property of logic (Syllogism).",
+      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: easy)",
+      "question": "If A implies B, and B implies C, does A imply C?",
       "options": [
-        "Car",
-        "Bus",
-        "Train",
-        "Banana"
+        "Yes",
+        "No",
+        "Only if C implies A",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Yes",
+      "explanation": "Transitive property of logic (Syllogism).",
+      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
     },
     {
-      "category": "Static GK",
-      "question": "What is the capital of India?",
+      "category": "General Knowledge",
+      "question": "What is the SI unit of Force?",
       "options": [
-        "New Delhi",
-        "Mumbai",
-        "Kolkata",
-        "Chennai"
+        "Joule",
+        "Watt",
+        "Newton",
+        "Pascal"
       ],
-      "correct_answer": "New Delhi",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Newton",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Who wrote national anthem?",
+      "category": "General Knowledge",
+      "question": "Which is the longest river in the world?",
       "options": [
-        "Tagore",
-        "Bankim",
-        "Nehru",
-        "Bose"
+        "Amazon",
+        "Nile",
+        "Mississippi",
+        "Yangtze"
       ],
-      "correct_answer": "Tagore",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Nile",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "What is the national animal?",
+      "category": "General Knowledge",
+      "question": "What is the capital of Australia?",
       "options": [
-        "Tiger",
-        "Lion",
-        "Elephant",
-        "Leopard"
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
       ],
-      "correct_answer": "Tiger",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Canberra",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "What is the currency of India?",
+      "category": "General Knowledge",
+      "question": "Who invented the light bulb?",
       "options": [
-        "Rupee",
-        "Dollar",
-        "Pound",
-        "Euro"
+        "Nikola Tesla",
+        "Thomas Edison",
+        "Alexander Bell",
+        "Albert Einstein"
       ],
-      "correct_answer": "Rupee",
-      "explanation": "Factual knowledge.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the easy championship recently?",
-      "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
-      ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Thomas Edison",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the easy championship recently?",
+      "question": "Which article of the Indian Constitution abolishes Untouchability?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Article 14",
+        "Article 15",
+        "Article 16",
+        "Article 17"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Article 17",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the easy championship recently?",
+      "question": "How many bones are there in the adult human body?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "206",
+        "208",
+        "201",
+        "210"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "206",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the easy championship recently?",
+      "question": "What is the pH of pure water?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "7",
+        "6",
+        "8",
+        "1"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "7",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the easy championship recently?",
+      "question": "Which gas is most abundant in the Earth's atmosphere?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Nitrogen",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the easy championship recently?",
+      "question": "Who wrote the 'Mahabharata'?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Valmiki",
+        "Ved Vyasa",
+        "Tulsidas",
+        "Kalidasa"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Ved Vyasa",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which state has the largest coastal line in India?",
+      "options": [
+        "Gujarat",
+        "Tamil Nadu",
+        "Maharashtra",
+        "Kerala"
+      ],
+      "correct_answer": "Gujarat",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     }
   ],
   "medium": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 24 and another costs 24, what is the total cost?",
+      "question": "A can do a piece of work in 15 days and B can do it in 24 days. How long will they take if they work together?",
       "options": [
-        "58",
-        "68",
-        "38",
-        "48"
+        "8.23 days",
+        "10.73 days",
+        "11.23 days",
+        "9.23 days"
       ],
-      "correct_answer": "48",
-      "explanation": "Simple addition: 24 + 24 = 48",
-      "trick": "Always add the units digit first."
+      "correct_answer": "9.23 days",
+      "explanation": "A's 1 day work = 1/15. B's = 1/24. Together = 1/15 + 1/24. Total time = 9.23 days",
+      "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 30 and another costs 18, what is the total cost?",
+      "question": "A can do a piece of work in 10 days and B can do it in 24 days. How long will they take if they work together?",
       "options": [
-        "68",
-        "38",
-        "58",
-        "48"
+        "9.059999999999999 days",
+        "8.559999999999999 days",
+        "7.06 days",
+        "6.06 days"
       ],
-      "correct_answer": "48",
-      "explanation": "Simple addition: 30 + 18 = 48",
-      "trick": "Always add the units digit first."
+      "correct_answer": "7.06 days",
+      "explanation": "A's 1 day work = 1/10. B's = 1/24. Together = 1/10 + 1/24. Total time = 7.06 days",
+      "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 18 and another costs 14, what is the total cost?",
+      "question": "A can do a piece of work in 12 days and B can do it in 24 days. How long will they take if they work together?",
       "options": [
-        "32",
-        "52",
-        "42",
-        "22"
+        "10.0 days",
+        "9.5 days",
+        "7.0 days",
+        "8 days"
       ],
-      "correct_answer": "32",
-      "explanation": "Simple addition: 18 + 14 = 32",
-      "trick": "Always add the units digit first."
+      "correct_answer": "8 days",
+      "explanation": "A's 1 day work = 1/12. B's = 1/24. Together = 1/12 + 1/24. Total time = 8 days",
+      "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 28 and another costs 30, what is the total cost?",
+      "question": "A can do a piece of work in 15 days and B can do it in 20 days. How long will they take if they work together?",
       "options": [
-        "78",
-        "68",
-        "48",
-        "58"
+        "10.57 days",
+        "8.57 days",
+        "7.57 days",
+        "10.07 days"
       ],
-      "correct_answer": "58",
-      "explanation": "Simple addition: 28 + 30 = 58",
-      "trick": "Always add the units digit first."
+      "correct_answer": "8.57 days",
+      "explanation": "A's 1 day work = 1/15. B's = 1/20. Together = 1/15 + 1/20. Total time = 8.57 days",
+      "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: medium)",
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
       "options": [
-        "Table",
-        "Chair",
-        "Bed",
-        "Banana"
+        "His son's",
+        "His own",
+        "His father's",
+        "His grandson's"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "His son's",
+      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
+      "trick": "Work backwards from 'my father's son'."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: medium)",
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
       "options": [
-        "Table",
-        "Chair",
-        "Bed",
-        "Banana"
+        "His son's",
+        "His own",
+        "His father's",
+        "His grandson's"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "His son's",
+      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
+      "trick": "Work backwards from 'my father's son'."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: medium)",
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
       "options": [
-        "Table",
-        "Chair",
-        "Bed",
-        "Banana"
+        "His son's",
+        "His own",
+        "His father's",
+        "His grandson's"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "His son's",
+      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
+      "trick": "Work backwards from 'my father's son'."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: medium)",
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
       "options": [
-        "Table",
-        "Chair",
-        "Bed",
-        "Banana"
+        "His son's",
+        "His own",
+        "His father's",
+        "His grandson's"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "His son's",
+      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
+      "trick": "Work backwards from 'my father's son'."
     },
     {
-      "category": "Static GK",
-      "question": "Who was the first PM of India?",
+      "category": "General Knowledge",
+      "question": "Who among the following was the first Viceroy of India?",
       "options": [
-        "Nehru",
-        "Gandhi",
-        "Patel",
-        "Bose"
+        "Lord Canning",
+        "Lord Mountbatten",
+        "Lord Dalhousie",
+        "Lord Curzon"
       ],
-      "correct_answer": "Nehru",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Lord Canning",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Highest mountain peak in India?",
+      "category": "General Knowledge",
+      "question": "Which lens is used to correct Myopia?",
       "options": [
-        "Kanchenjunga",
-        "Everest",
-        "Nanda Devi",
-        "K2"
+        "Convex",
+        "Concave",
+        "Cylindrical",
+        "Bifocal"
       ],
-      "correct_answer": "Kanchenjunga",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Concave",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "National Tree?",
+      "category": "General Knowledge",
+      "question": "In which year was the Reserve Bank of India established?",
       "options": [
-        "Banyan",
-        "Mango",
-        "Neem",
-        "Peepal"
+        "1935",
+        "1947",
+        "1949",
+        "1950"
       ],
-      "correct_answer": "Banyan",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "1935",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Total states in India?",
+      "category": "General Knowledge",
+      "question": "The battle of Plassey was fought in?",
       "options": [
-        "28",
-        "29",
-        "27",
-        "30"
+        "1757",
+        "1764",
+        "1857",
+        "1761"
       ],
-      "correct_answer": "28",
-      "explanation": "Factual knowledge.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the medium championship recently?",
-      "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
-      ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "1757",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the medium championship recently?",
+      "question": "Which amendment added the Fundamental Duties to the Constitution?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "42nd",
+        "44th",
+        "86th",
+        "73rd"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "42nd",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the medium championship recently?",
+      "question": "Which acid is present in ant sting?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Formic acid",
+        "Acetic acid",
+        "Lactic acid",
+        "Citric acid"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Formic acid",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the medium championship recently?",
+      "question": "The Tropic of Cancer does NOT pass through which of the following Indian states?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Rajasthan",
+        "Chhattisgarh",
+        "Odisha",
+        "Tripura"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Odisha",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the medium championship recently?",
+      "question": "The Harappan site 'Lothal' is located in which state?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Punjab",
+        "Rajasthan",
+        "Gujarat",
+        "Haryana"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Gujarat",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the medium championship recently?",
+      "question": "What is the functional unit of the kidney?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Neuron",
+        "Nephron",
+        "Alveoli",
+        "Villi"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Nephron",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who was the founder of the Brahmo Samaj?",
+      "options": [
+        "Swami Vivekananda",
+        "Raja Ram Mohan Roy",
+        "Dayananda Saraswati",
+        "Ishwar Chandra Vidyasagar"
+      ],
+      "correct_answer": "Raja Ram Mohan Roy",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     }
   ],
   "ssc": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 60 and another costs 70, what is the total cost?",
+      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 8000 for 2 years at 10% per annum?",
       "options": [
-        "120",
-        "150",
-        "140",
-        "130"
+        "Rs. 105",
+        "Rs. 70",
+        "Rs. 130",
+        "Rs. 80"
       ],
-      "correct_answer": "130",
-      "explanation": "Simple addition: 60 + 70 = 130",
-      "trick": "Always add the units digit first."
+      "correct_answer": "Rs. 80",
+      "explanation": "For 2 years, diff = P(R/100)^2. 8000 * (10/100)^2 = 80",
+      "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 50 and another costs 60, what is the total cost?",
+      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 5000 for 2 years at 10% per annum?",
       "options": [
-        "100",
-        "110",
-        "120",
-        "130"
+        "Rs. 100",
+        "Rs. 40",
+        "Rs. 50",
+        "Rs. 75"
       ],
-      "correct_answer": "110",
-      "explanation": "Simple addition: 50 + 60 = 110",
-      "trick": "Always add the units digit first."
+      "correct_answer": "Rs. 50",
+      "explanation": "For 2 years, diff = P(R/100)^2. 5000 * (10/100)^2 = 50",
+      "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 55 and another costs 35, what is the total cost?",
+      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 5000 for 2 years at 10% per annum?",
       "options": [
-        "80",
-        "110",
-        "90",
-        "100"
+        "Rs. 40",
+        "Rs. 100",
+        "Rs. 50",
+        "Rs. 75"
       ],
-      "correct_answer": "90",
-      "explanation": "Simple addition: 55 + 35 = 90",
-      "trick": "Always add the units digit first."
+      "correct_answer": "Rs. 50",
+      "explanation": "For 2 years, diff = P(R/100)^2. 5000 * (10/100)^2 = 50",
+      "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 35 and another costs 75, what is the total cost?",
+      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 5000 for 2 years at 10% per annum?",
       "options": [
-        "120",
-        "100",
-        "110",
-        "130"
+        "Rs. 40",
+        "Rs. 50",
+        "Rs. 100",
+        "Rs. 75"
       ],
-      "correct_answer": "110",
-      "explanation": "Simple addition: 35 + 75 = 110",
-      "trick": "Always add the units digit first."
+      "correct_answer": "Rs. 50",
+      "explanation": "For 2 years, diff = P(R/100)^2. 5000 * (10/100)^2 = 50",
+      "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: ssc)",
+      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
       "options": [
-        "Square",
-        "Circle",
-        "Triangle",
-        "Banana"
+        "EOJDJEFM",
+        "EOJDEJFM",
+        "MFEJDJOE",
+        "MFEDJJOE"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "EOJDJEFM",
+      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
+      "trick": "Always check for reversal + offset combinations first."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: ssc)",
+      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
       "options": [
-        "Square",
-        "Circle",
-        "Triangle",
-        "Banana"
+        "EOJDJEFM",
+        "EOJDEJFM",
+        "MFEJDJOE",
+        "MFEDJJOE"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "EOJDJEFM",
+      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
+      "trick": "Always check for reversal + offset combinations first."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: ssc)",
+      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
       "options": [
-        "Square",
-        "Circle",
-        "Triangle",
-        "Banana"
+        "EOJDJEFM",
+        "EOJDEJFM",
+        "MFEJDJOE",
+        "MFEDJJOE"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "EOJDJEFM",
+      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
+      "trick": "Always check for reversal + offset combinations first."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: ssc)",
+      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
       "options": [
-        "Square",
-        "Circle",
-        "Triangle",
-        "Banana"
+        "EOJDJEFM",
+        "EOJDEJFM",
+        "MFEJDJOE",
+        "MFEDJJOE"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "EOJDJEFM",
+      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
+      "trick": "Always check for reversal + offset combinations first."
     },
     {
-      "category": "Static GK",
-      "question": "Article 32 is related to?",
+      "category": "General Knowledge",
+      "question": "Which instrument is used to measure humidity?",
       "options": [
-        "Constitutional Remedies",
-        "Panchayat",
-        "Election",
-        "Finance"
+        "Hydrometer",
+        "Hygrometer",
+        "Barometer",
+        "Anemometer"
       ],
-      "correct_answer": "Constitutional Remedies",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Hygrometer",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Who founded Maurya Empire?",
+      "category": "General Knowledge",
+      "question": "Identify the incorrect pair of Governor-General and their policy:",
       "options": [
-        "Chandragupta",
-        "Ashoka",
-        "Bindusara",
-        "Dasharatha"
+        "Dalhousie - Doctrine of Lapse",
+        "Wellesley - Subsidiary Alliance",
+        "Cornwallis - Permanent Settlement",
+        "William Bentinck - Local Self Government"
       ],
-      "correct_answer": "Chandragupta",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "William Bentinck - Local Self Government",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Longest river of South India?",
+      "category": "General Knowledge",
+      "question": "The 'Moplah Rebellion' of 1921 took place in:",
       "options": [
-        "Godavari",
-        "Krishna",
-        "Kaveri",
-        "Mahanadi"
+        "Assam",
+        "Malabar",
+        "Bengal",
+        "Bihar"
       ],
-      "correct_answer": "Godavari",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Malabar",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Vitamin C chemical name?",
+      "category": "General Knowledge",
+      "question": "Who was the court poet of Samudragupta?",
       "options": [
-        "Ascorbic Acid",
-        "Citric Acid",
-        "Retinol",
-        "Thiamine"
+        "Harishena",
+        "Banabhatta",
+        "Kalidasa",
+        "Chand Bardai"
       ],
-      "correct_answer": "Ascorbic Acid",
-      "explanation": "Factual knowledge.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the ssc championship recently?",
-      "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
-      ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Harishena",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the ssc championship recently?",
+      "question": "The 'Riyadh Declaration' is associated with which international grouping?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "BRICS",
+        "G20",
+        "ASEAN",
+        "OPEC"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "G20",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the ssc championship recently?",
+      "question": "Where is the headquarters of the World Trade Organization (WTO)?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Geneva",
+        "Paris",
+        "New York",
+        "Washington DC"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Geneva",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the ssc championship recently?",
+      "question": "What is the minimum age required to become a member of the Rajya Sabha?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "21 years",
+        "25 years",
+        "30 years",
+        "35 years"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "30 years",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the ssc championship recently?",
+      "question": "Which Article deals with the Finance Commission?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Article 280",
+        "Article 324",
+        "Article 315",
+        "Article 148"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Article 280",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the ssc championship recently?",
+      "question": "Which schedule of the Indian constitution deals with Anti-Defection law?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "8th Schedule",
+        "9th Schedule",
+        "10th Schedule",
+        "11th Schedule"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "10th Schedule",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "The enzyme 'Pepsin' is secreted by which organ?",
+      "options": [
+        "Stomach",
+        "Pancreas",
+        "Liver",
+        "Salivary glands"
+      ],
+      "correct_answer": "Stomach",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     }
   ],
   "upsc": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 110 and another costs 70, what is the total cost?",
+      "question": "A bag contains 4 red and 16 blue balls. Two balls are drawn at random. What is the probability they are both red?",
       "options": [
-        "200",
-        "180",
-        "190",
-        "170"
+        "4/95",
+        "98/95",
+        "3/94",
+        "3/95"
       ],
-      "correct_answer": "180",
-      "explanation": "Simple addition: 110 + 70 = 180",
-      "trick": "Always add the units digit first."
+      "correct_answer": "3/95",
+      "explanation": "P(Both Red) = (4C2) / (20C2) = 3/95",
+      "trick": "Successive multiplication: (R/Total) * ((R-1)/(Total-1))"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 150 and another costs 100, what is the total cost?",
+      "question": "A bag contains 4 red and 16 blue balls. Two balls are drawn at random. What is the probability they are both red?",
       "options": [
-        "240",
-        "270",
-        "260",
-        "250"
+        "4/95",
+        "98/95",
+        "3/94",
+        "3/95"
       ],
-      "correct_answer": "250",
-      "explanation": "Simple addition: 150 + 100 = 250",
-      "trick": "Always add the units digit first."
+      "correct_answer": "3/95",
+      "explanation": "P(Both Red) = (4C2) / (20C2) = 3/95",
+      "trick": "Successive multiplication: (R/Total) * ((R-1)/(Total-1))"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 140 and another costs 150, what is the total cost?",
+      "question": "A bag contains 7 red and 12 blue balls. Two balls are drawn at random. What is the probability they are both red?",
       "options": [
-        "290",
-        "310",
-        "280",
-        "300"
+        "64/57",
+        "8/57",
+        "7/57",
+        "7/56"
       ],
-      "correct_answer": "290",
-      "explanation": "Simple addition: 140 + 150 = 290",
-      "trick": "Always add the units digit first."
+      "correct_answer": "7/57",
+      "explanation": "P(Both Red) = (7C2) / (19C2) = 7/57",
+      "trick": "Successive multiplication: (R/Total) * ((R-1)/(Total-1))"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an item costs 150 and another costs 130, what is the total cost?",
+      "question": "A bag contains 4 red and 13 blue balls. Two balls are drawn at random. What is the probability they are both red?",
       "options": [
-        "270",
-        "280",
-        "300",
-        "290"
+        "3/68",
+        "71/68",
+        "3/67",
+        "4/68"
       ],
-      "correct_answer": "280",
-      "explanation": "Simple addition: 150 + 130 = 280",
-      "trick": "Always add the units digit first."
+      "correct_answer": "3/68",
+      "explanation": "P(Both Red) = (4C2) / (17C2) = 3/68",
+      "trick": "Successive multiplication: (R/Total) * ((R-1)/(Total-1))"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: upsc)",
+      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
       "options": [
-        "Physics",
-        "Chemistry",
-        "Biology",
-        "Banana"
+        "B",
+        "D",
+        "E",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Cannot be determined",
+      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
+      "trick": "Do not assume orientations if 'between' is used without directional specs."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: upsc)",
+      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
       "options": [
-        "Physics",
-        "Chemistry",
-        "Biology",
-        "Banana"
+        "B",
+        "D",
+        "E",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Cannot be determined",
+      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
+      "trick": "Do not assume orientations if 'between' is used without directional specs."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: upsc)",
+      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
       "options": [
-        "Physics",
-        "Chemistry",
-        "Biology",
-        "Banana"
+        "B",
+        "D",
+        "E",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Cannot be determined",
+      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
+      "trick": "Do not assume orientations if 'between' is used without directional specs."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong to the group? (Level: upsc)",
+      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
       "options": [
-        "Physics",
-        "Chemistry",
-        "Biology",
-        "Banana"
+        "B",
+        "D",
+        "E",
+        "Cannot be determined"
       ],
-      "correct_answer": "Banana",
-      "explanation": "Banana is a fruit, others are not.",
-      "trick": "Find the general classification of the terms."
+      "correct_answer": "Cannot be determined",
+      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
+      "trick": "Do not assume orientations if 'between' is used without directional specs."
     },
     {
-      "category": "Static GK",
-      "question": "Objective Resolution was moved by?",
+      "category": "General Knowledge",
+      "question": "Consider the following statements regarding the 'Basic Structure' doctrine: 1. It was established in the Kesavananda Bharati case. 2. It restricts Parliament's power under Article 368. Which is correct?",
       "options": [
-        "Nehru",
-        "Ambedkar",
-        "Rajendra Prasad",
-        "Kripalani"
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
       ],
-      "correct_answer": "Nehru",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Both 1 and 2",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Who is the custodian of Contingency Fund?",
+      "category": "General Knowledge",
+      "question": "With reference to the core of the Earth, which statement is true?",
       "options": [
-        "President",
-        "PM",
-        "Finance Minister",
-        "RBI Gov"
+        "The outer core is solid and inner core is liquid",
+        "The outer core is liquid and inner core is solid",
+        "Both are solid",
+        "Both are liquid"
       ],
-      "correct_answer": "President",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "The outer core is liquid and inner core is solid",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "Sadddle Peak is located in?",
+      "category": "General Knowledge",
+      "question": "In the context of Indian History, the 'Rakhmabai case' of 1884 revolved around:",
       "options": [
-        "Andaman",
-        "Lakshadweep",
-        "Nicobar",
-        "Goa"
+        "Age of consent",
+        "Restitution of conjugal rights",
+        "Widow remarriage",
+        "Abolition of Sati"
       ],
-      "correct_answer": "Andaman",
-      "explanation": "Factual knowledge.",
+      "correct_answer": "Restitution of conjugal rights",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "X-Rays discovered by?",
+      "category": "General Knowledge",
+      "question": "The term 'Base Erosion and Profit Shifting (BEPS)' is often seen in the news in the context of:",
       "options": [
-        "Roentgen",
-        "Curie",
-        "Newton",
-        "Einstein"
+        "Mining of resources by MNCs",
+        "Tax evasion by multinational companies",
+        "Deforestation due to rapid industrialization",
+        "Shift of indigenous populations"
       ],
-      "correct_answer": "Roentgen",
-      "explanation": "Factual knowledge.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the upsc championship recently?",
-      "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
-      ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Tax evasion by multinational companies",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the upsc championship recently?",
+      "question": "In ecology, 'Ecotone' is defined as:",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "A fragile ecosystem highly vulnerable to climate change",
+        "A zone of transition between two independent ecosystems",
+        "An ecosystem entirely created by human intervention",
+        "A deeply isolated ecosystem with endemic species"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "A zone of transition between two independent ecosystems",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the upsc championship recently?",
+      "question": "Regarding the 'National Green Tribunal (NGT)', which is correct? 1. It is bound by the Code of Civil Procedure. 2. It is guided by principles of natural justice.",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "1 only",
+        "2 only",
+        "Both",
+        "Neither"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "2 only",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the upsc championship recently?",
+      "question": "Which of the following is NOT an 'Intangible Cultural Heritage' recognized by UNESCO from India?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Kumbh Mela",
+        "Yoga",
+        "Ramlila",
+        "Sattriya dance",
+        "Hampi historical site"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Hampi historical site",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the upsc championship recently?",
+      "question": "With reference to 'Monetary Policy Committee (MPC)', consider the following: 1. It decides the RBI's benchmark interest rates. 2. It is a 12-member body. Which is correct?",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "1 only",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the upsc championship recently?",
+      "question": "The 'Washington Consensus' primarily advocates for:",
       "options": [
-        "Team A",
-        "Team B",
-        "Team C",
-        "Team D"
+        "Strict protectionism",
+        "Neo-liberal economic policies",
+        "State-controlled enterprises",
+        "Universal basic income"
       ],
-      "correct_answer": "Team A",
-      "explanation": "Team A won the recent tournament.",
+      "correct_answer": "Neo-liberal economic policies",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "What is the primary objective of the 'Insolvency and Bankruptcy Code (IBC)'?",
+      "options": [
+        "To waive agricultural loans",
+        "To consolidate and amend laws relating to reorganization and insolvency resolution",
+        "To regulate the stock market",
+        "To manage fiscal deficit"
+      ],
+      "correct_answer": "To consolidate and amend laws relating to reorganization and insolvency resolution",
+      "explanation": "Standard knowledge application.",
       "trick": ""
     }
   ]
