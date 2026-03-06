@@ -4,181 +4,181 @@
     "day_index": 1,
     "slot_index": 10,
     "difficulty": "Medium",
-    "generated_at": "2026-03-06T07:51:13.362Z"
+    "generated_at": "2026-03-06T08:49:20.919Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 3x + 7 = 22, what is the value of x?",
+      "question": "If 4x + 9 = 25, what is the value of x?",
       "options": [
+        "3",
+        "4",
         "5",
-        "6",
-        "7",
-        "8"
+        "6"
       ],
-      "correct_answer": "5",
-      "explanation": "To solve for x, first subtract 7 from both sides: 3x = 22 - 7 => 3x = 15. Then, divide by 3: x = 15 / 3 => x = 5.",
-      "trick": "Isolate the variable by performing inverse operations."
+      "correct_answer": "4",
+      "explanation": "To solve for x, first subtract 9 from both sides: 4x = 25 - 9, which simplifies to 4x = 16. Then, divide both sides by 4: x = 16 / 4, so x = 4.",
+      "trick": "Isolate x by performing inverse operations."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A shop offers a 20% discount on a shirt priced at $50. What is the discounted price of the shirt?",
+      "question": "A shirt is marked at $800 and sold for $680. What is the percentage discount offered?",
       "options": [
-        "$40",
-        "$30",
-        "$45",
-        "$35"
+        "10%",
+        "12%",
+        "15%",
+        "20%"
       ],
-      "correct_answer": "$40",
-      "explanation": "First, calculate the discount amount: 20% of $50 = (20/100) * 50 = $10. Then, subtract the discount from the original price: $50 - $10 = $40.",
-      "trick": "To find the discounted price, calculate (100% - discount%) of the original price directly. (100% - 20%) = 80%. So, 0.80 * $50 = $40."
+      "correct_answer": "15%",
+      "explanation": "The discount amount is $800 - $680 = $120. To find the percentage discount, divide the discount amount by the original marked price and multiply by 100: ($120 / $800) * 100 = 0.15 * 100 = 15%.",
+      "trick": "Percentage discount = (Discount / Original Price) * 100."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "The ratio of boys to girls in a class is 3:2. If there are 18 boys, how many girls are there?",
+      "question": "The perimeter of a rectangular garden is 60 meters. If its length is 20 meters, what is its width?",
       "options": [
-        "10",
-        "12",
-        "15",
-        "18"
+        "10 meters",
+        "15 meters",
+        "20 meters",
+        "25 meters"
       ],
-      "correct_answer": "12",
-      "explanation": "Let the number of boys be 3k and girls be 2k. Given that there are 18 boys, 3k = 18, which means k = 18/3 = 6. Therefore, the number of girls is 2k = 2 * 6 = 12.",
-      "trick": "Set up a proportion: Boys/Girls = 3/2. So, 18/Girls = 3/2. Cross-multiply to solve for Girls."
+      "correct_answer": "10 meters",
+      "explanation": "The formula for the perimeter of a rectangle is P = 2 * (length + width). Given P = 60 m and length = 20 m, we have 60 = 2 * (20 + width). Divide by 2: 30 = 20 + width. Subtract 20: width = 30 - 20 = 10 meters.",
+      "trick": "Width = (Perimeter / 2) - Length."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the area of a rectangle with a length of 8 cm and a width of 5 cm?",
+      "question": "What is the average of the first five prime numbers?",
       "options": [
-        "40 cm²",
-        "26 cm²",
-        "13 cm²",
-        "30 cm²"
+        "3.4",
+        "4.6",
+        "5.6",
+        "6.2"
       ],
-      "correct_answer": "40 cm²",
-      "explanation": "The formula for the area of a rectangle is length × width. So, Area = 8 cm × 5 cm = 40 cm².",
-      "trick": "Remember the basic formula: Area = Length × Width."
+      "correct_answer": "5.6",
+      "explanation": "The first five prime numbers are 2, 3, 5, 7, and 11. Their sum is 2 + 3 + 5 + 7 + 11 = 28. The average is the sum divided by the count of numbers: 28 / 5 = 5.6.",
+      "trick": "Remember the definition of prime numbers (only divisible by 1 and themselves)."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Complete the series: 2, 4, 8, 16, ?",
+      "question": "Complete the series: 3, 7, 13, 21, ?",
       "options": [
-        "20",
-        "24",
-        "30",
-        "32"
+        "29",
+        "31",
+        "33",
+        "35"
       ],
-      "correct_answer": "32",
-      "explanation": "This is a geometric progression where each term is twice the previous term. 2 × 2 = 4, 4 × 2 = 8, 8 × 2 = 16. Therefore, the next term is 16 × 2 = 32.",
-      "trick": "Look for a consistent pattern of addition, subtraction, multiplication, or division."
+      "correct_answer": "31",
+      "explanation": "The pattern involves adding consecutive even numbers to the previous term. The differences between consecutive terms are: 7-3=4, 13-7=6, 21-13=8. Following this pattern, the next difference should be 10. So, 21 + 10 = 31.",
+      "trick": "Look for differences between consecutive terms to find an arithmetic progression."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Find the missing term: Book is to Author as Painting is to ?",
+      "question": "If 'CAT' is coded as 'DBU', how is 'DOG' coded?",
       "options": [
-        "Color",
-        "Canvas",
-        "Painter",
-        "Brush"
+        "EPH",
+        "CPF",
+        "EQI",
+        "FOI"
       ],
-      "correct_answer": "Painter",
-      "explanation": "The relationship is 'creator to creation'. An Author creates a Book. Similarly, a Painter creates a Painting.",
-      "trick": "Identify the exact relationship (e.g., part-whole, cause-effect, worker-tool, creator-creation) between the first pair of words."
+      "correct_answer": "EPH",
+      "explanation": "In the code 'DBU' for 'CAT', each letter is shifted one position forward in the alphabet (C+1=D, A+1=B, T+1=U). Applying the same rule to 'DOG': D+1=E, O+1=P, G+1=H. So, 'DOG' is coded as 'EPH'.",
+      "trick": "Identify the shift pattern (e.g., +1, -1, specific numeric shift) for each letter."
     },
     {
       "category": "Logical Reasoning",
-      "question": "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
+      "question": "Complete the series: 3, 7, 13, 21, ?",
       "options": [
-        "40",
-        "42",
-        "44",
-        "46"
+        "29",
+        "31",
+        "33",
+        "35"
       ],
-      "correct_answer": "42",
-      "explanation": "The differences between consecutive terms are increasing by 2: (6-2)=4, (12-6)=6, (20-12)=8, (30-20)=10. So the next difference should be 12. Therefore, 30 + 12 = 42.",
-      "trick": "Look for differences between terms or patterns in the differences."
+      "correct_answer": "31",
+      "explanation": "The pattern is an increasing difference: +4, +6, +8. The next difference should be +10. So, 21 + 10 = 31.",
+      "trick": "Look for differences between consecutive numbers."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'Bird' is to 'Nest' as 'Human' is to '?'",
+      "question": "Find the odd one out: Rose, Lily, Marigold, Cabbage",
       "options": [
-        "City",
-        "House",
-        "Building",
-        "Apartment"
+        "Rose",
+        "Lily",
+        "Marigold",
+        "Cabbage"
       ],
-      "correct_answer": "House",
-      "explanation": "A bird builds and lives in a nest. Similarly, a human builds and lives in a house.",
-      "trick": "Identify the relationship between the first pair and apply it to the second."
+      "correct_answer": "Cabbage",
+      "explanation": "Rose, Lily, and Marigold are all types of flowers, whereas Cabbage is a vegetable.",
+      "trick": "Identify the common category among most items."
     },
     {
       "category": "Static GK",
-      "question": "Who among the following was known as the 'Iron Man of India'?",
+      "question": "Who is known as the 'Father of Indian Constitution'?",
       "options": [
         "Mahatma Gandhi",
         "Jawaharlal Nehru",
         "Sardar Vallabhbhai Patel",
-        "Subhas Chandra Bose"
+        "Dr. B.R. Ambedkar"
       ],
-      "correct_answer": "Sardar Vallabhbhai Patel",
-      "explanation": "Sardar Vallabhbhai Patel was given the title 'Iron Man of India' for his crucial role in integrating over 500 princely states into the Indian Union after independence.",
+      "correct_answer": "Dr. B.R. Ambedkar",
+      "explanation": "Dr. B.R. Ambedkar was the chairman of the Drafting Committee of the Constitution of India and is widely regarded as its chief architect.",
       "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Which continent is home to the Amazon Rainforest?",
+      "question": "Which of the following is the longest river in the world?",
       "options": [
-        "Africa",
-        "Asia",
-        "South America",
-        "Australia"
+        "Amazon River",
+        "Nile River",
+        "Yangtze River",
+        "Mississippi River"
       ],
-      "correct_answer": "South America",
-      "explanation": "The Amazon Rainforest is primarily located in South America, spanning across several countries, with the majority in Brazil.",
-      "trick": ""
+      "correct_answer": "Nile River",
+      "explanation": "The Nile River, flowing through northeastern Africa, is generally considered the longest river in the world.",
+      "trick": "Remember the 'N' for Nile and 'N' for 'Number one' in length."
     },
     {
       "category": "Static GK",
-      "question": "Which of the following is the largest organ in the human body?",
+      "question": "What is the chemical symbol for Gold?",
       "options": [
-        "Brain",
-        "Heart",
-        "Skin",
-        "Liver"
+        "Au",
+        "Ag",
+        "Fe",
+        "Cu"
       ],
-      "correct_answer": "Skin",
-      "explanation": "The skin is the largest organ of the human body, both by surface area and by weight.",
-      "trick": ""
+      "correct_answer": "Au",
+      "explanation": "The chemical symbol for Gold is Au, derived from its Latin name 'aurum'. Ag is Silver, Fe is Iron, and Cu is Copper.",
+      "trick": "Associate 'Au' with 'Au-some' gold."
     },
     {
       "category": "Static GK",
-      "question": "What is the chemical symbol for water?",
+      "question": "Which planet is known as the 'Red Planet'?",
       "options": [
-        "O2",
-        "CO2",
-        "H2O",
-        "NaCl"
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
       ],
-      "correct_answer": "H2O",
-      "explanation": "Water is a chemical compound with the chemical formula H2O, meaning it has two hydrogen atoms and one oxygen atom.",
-      "trick": "Memorize common chemical formulas."
+      "correct_answer": "Mars",
+      "explanation": "Mars is often called the 'Red Planet' due to the iron oxide prevalent on its surface, which gives it a reddish appearance.",
+      "trick": "Red planet rhymes with 'Mars'."
     },
     {
       "category": "Current Affairs",
-      "question": "Which country won the ICC Men's Cricket World Cup 2023, held in India?",
+      "question": "Who presented the Interim Budget 2024-25 in the Indian Parliament on February 1, 2024?",
       "options": [
-        "India",
-        "Australia",
-        "England",
-        "New Zealand"
+        "Nirmala Sitharaman",
+        "Rajnath Singh",
+        "Amit Shah",
+        "Narendra Modi"
       ],
-      "correct_answer": "Australia",
-      "explanation": "Australia defeated India in the final match of the ICC Men's Cricket World Cup 2023 to win their record-extending sixth title. The tournament concluded in November 2023.",
+      "correct_answer": "Nirmala Sitharaman",
+      "explanation": "Union Finance Minister Nirmala Sitharaman presented the Interim Budget 2024-25 in the Indian Parliament, outlining the government's financial plans before the general elections.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in which city from November 30 to December 13, 2023?",
+      "question": "Which city hosted the COP28 UN Climate Change Conference in late 2023?",
       "options": [
         "Glasgow",
         "Sharm El Sheikh",
@@ -186,12 +186,12 @@
         "Paris"
       ],
       "correct_answer": "Dubai",
-      "explanation": "COP28, the United Nations Climate Change Conference, took place in Dubai, United Arab Emirates, focusing on global climate action and emissions reduction.",
+      "explanation": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in Dubai, United Arab Emirates, from November 30 to December 13, 2023.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "India's first dedicated solar mission, successfully placed into its halo orbit around the Sun-Earth Lagrangian Point 1 (L1) in January 2024, is named what?",
+      "question": "What is the name of India's first dedicated solar mission, successfully placed into its halo orbit around the L1 point in January 2024?",
       "options": [
         "Chandrayaan-3",
         "Mangalyaan-2",
@@ -199,46 +199,46 @@
         "Gaganyaan"
       ],
       "correct_answer": "Aditya-L1",
-      "explanation": "Aditya-L1 is India's first space-based observatory to study the Sun, launched by ISRO in September 2023 and reaching its intended orbit in January 2024.",
+      "explanation": "Aditya-L1 is India's first space-based observatory to study the Sun, successfully inserted into its final halo orbit around the Lagrange Point 1 (L1) in January 2024.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "In January 2024, the Government of India announced the Padma Awards. How many individuals were awarded the Padma Vibhushan, the second-highest civilian award?",
+      "question": "Which city is set to host the Summer Olympic Games in 2024?",
       "options": [
-        "3",
-        "5",
-        "7",
-        "9"
+        "Los Angeles",
+        "Paris",
+        "Tokyo",
+        "London"
       ],
-      "correct_answer": "5",
-      "explanation": "For the year 2024, five eminent personalities were awarded the Padma Vibhushan: Ms. Vyjayantimala Bali, Shri Konidela Chiranjeevi, Shri M. Venkaiah Naidu, Shri Bindeshwar Pathak (Posthumous), and Ms. Padma Subrahmanyam.",
+      "correct_answer": "Paris",
+      "explanation": "Paris, France, will host the XXXIII Summer Olympic Games from July 26 to August 11, 2024.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "In February 2024, OpenAI unveiled a new artificial intelligence model capable of generating realistic and imaginative videos from text instructions. What is it called?",
+      "question": "Which major tech company launched its new AI model named 'Gemini' as a competitor to OpenAI's GPT series in late 2023?",
       "options": [
-        "DALL-E 3",
-        "ChatGPT-5",
-        "Sora",
-        "Gemini Ultra"
+        "Microsoft",
+        "Apple",
+        "Amazon",
+        "Google"
       ],
-      "correct_answer": "Sora",
-      "explanation": "Sora is a text-to-video AI model developed by OpenAI, announced in February 2024, which can create realistic and diverse video scenes from text prompts.",
+      "correct_answer": "Google",
+      "explanation": "Google DeepMind officially launched its 'Gemini' AI model in December 2023, positioning it as a powerful, multimodal AI model.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Which of the following countries officially joined the BRICS group as a full member at the beginning of 2024?",
+      "question": "Who was awarded the Nobel Peace Prize in 2023 for her fight against the oppression of women in Iran and her promotion of human rights and freedom for all?",
       "options": [
-        "Argentina",
-        "Indonesia",
-        "Saudi Arabia",
-        "Turkey"
+        "Narges Mohammadi",
+        "Ales Bialiatski",
+        "Maria Ressa",
+        "Dmitry Muratov"
       ],
-      "correct_answer": "Saudi Arabia",
-      "explanation": "At the start of 2024, Saudi Arabia, Egypt, UAE, Iran, and Ethiopia officially joined BRICS as full members, expanding the bloc from five to ten nations. Argentina had been invited but declined.",
+      "correct_answer": "Narges Mohammadi",
+      "explanation": "Iranian activist Narges Mohammadi was awarded the 2023 Nobel Peace Prize by the Norwegian Nobel Committee for her courageous struggle against the oppression of women in Iran.",
       "trick": ""
     }
   ]
