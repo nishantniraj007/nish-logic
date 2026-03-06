@@ -27,20 +27,38 @@ const batchConfig = {
 };
 
 // Prompt Generator
-function buildPrompt(config, chunkIndex) {
+function buildPrompt(config, chunkIndex, totalChunks) {
     let focus = "";
-    if (chunkIndex === 1) {
-        focus = "- 4 Quantitative Aptitude / Mathematics questions\n- 2 Logical Reasoning questions";
-    } else if (chunkIndex === 2) {
-        focus = "- 2 Logical Reasoning questions\n- 4 Static General Knowledge (History/Geography/Science) questions";
-    } else if (chunkIndex === 3) {
-        focus = "- 6 Current Affairs questions (relevant to the last 6 months)";
+    let questionCount = 0;
+
+    if (totalChunks === 3) {
+        // Old 3x6 Behavior (for Easy / Medium)
+        questionCount = 6;
+        if (chunkIndex === 1) {
+            focus = "- 4 Quantitative Aptitude / Mathematics questions\n- 2 Logical Reasoning questions";
+        } else if (chunkIndex === 2) {
+            focus = "- 2 Logical Reasoning questions\n- 4 Static General Knowledge (History/Geography/Science) questions";
+        } else if (chunkIndex === 3) {
+            focus = "- 6 Current Affairs questions (relevant to the last 6 months)";
+        }
+    } else if (totalChunks === 9) {
+        // New 9x2 Behavior (for SSC / UPSC to prevent 429 token rate limits)
+        questionCount = 2;
+        if (chunkIndex === 1 || chunkIndex === 2) {
+            focus = "- 2 Quantitative Aptitude / Mathematics questions";
+        } else if (chunkIndex === 3 || chunkIndex === 4) {
+            focus = "- 2 Logical Reasoning questions";
+        } else if (chunkIndex === 5 || chunkIndex === 6) {
+            focus = "- 2 Static General Knowledge (History/Geography/Science) questions";
+        } else if (chunkIndex === 7 || chunkIndex === 8 || chunkIndex === 9) {
+            focus = "- 2 Current Affairs questions (relevant to the last 6 months)";
+        }
     }
 
     return `You are an expert exam question setter for ${config.diff} level examinations.
 ${config.context}
 
-Your task is to generate exactly 6 Multiple Choice Questions (MCQs) following this distribution:
+Your task is to generate exactly ${questionCount} Multiple Choice Questions (MCQs) following this distribution:
 ${focus}
 
 You MUST respond with ONLY a valid, raw JSON array of 6 objects. Do not wrap it in markdown code blocks like \`\`\`json. Just the raw array.
@@ -66,9 +84,10 @@ async function generateWithFallback(prompt, primaryModelId) {
             generationConfig: { temperature: 0.7 }
         });
 
-        // Use a 60s timeout to prevent GitHub Actions from hanging at 3 mins
+        // Use a 180s timeout (3 mins) to prevent GitHub Actions from hanging infinitely
+        // but give the prompt plenty of breathing room.
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 60000);
+        const timeoutId = setTimeout(() => controller.abort(), 180000);
 
         try {
             const result = await model.generateContent(prompt, { signal: controller.signal });
@@ -133,9 +152,14 @@ async function main() {
     try {
         let allQuestions = [];
 
-        for (let chunkIndex = 1; chunkIndex <= 3; chunkIndex++) {
-            const prompt = buildPrompt(config, chunkIndex);
-            console.log(`[${new Date().toISOString()}] Sending request ${chunkIndex}/3 to Gemini...`);
+        // Dynamic Chunk Sizing based on difficulty/model to avoid 429 API Token Rates
+        // Easy/Medium (gemini-2.5-flash series) can handle 3 chunks of 6
+        // SSC/UPSC (gemini-2.5-pro series) gets exhausted and fails, so we switch to 9 chunks of 2.
+        const totalChunks = (config.diff === "SSC/Bank" || config.diff === "UPSC/CAT") ? 9 : 3;
+
+        for (let chunkIndex = 1; chunkIndex <= totalChunks; chunkIndex++) {
+            const prompt = buildPrompt(config, chunkIndex, totalChunks);
+            console.log(`[${new Date().toISOString()}] Sending request ${chunkIndex}/${totalChunks} to Gemini...`);
 
             let success = false;
             let attempt = 0;
@@ -146,7 +170,7 @@ async function main() {
                     const startTime = Date.now();
                     let rawJsonText = await generateWithFallback(prompt, config.model);
                     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-                    console.log(`[${new Date().toISOString()}] Received response ${chunkIndex}/3 in ${duration}s.`);
+                    console.log(`[${new Date().toISOString()}] Received response ${chunkIndex}/${totalChunks} in ${duration}s.`);
 
                     // Clean markdown backticks if the model ignores our instruction
                     if (rawJsonText.startsWith("```json")) {
@@ -157,8 +181,9 @@ async function main() {
 
                     const parsedData = JSON.parse(rawJsonText);
 
-                    if (!Array.isArray(parsedData) || parsedData.length !== 6) {
-                        console.warn(`WARNING: The model returned ${parsedData.length || 'invalid number of'} items instead of 6 for chunk ${chunkIndex}.`);
+                    const expectedQuestionsPerChunk = (totalChunks === 9) ? 2 : 6;
+                    if (!Array.isArray(parsedData) || parsedData.length !== expectedQuestionsPerChunk) {
+                        console.warn(`WARNING: The model returned ${parsedData.length || 'invalid number of'} items instead of ${expectedQuestionsPerChunk} for chunk ${chunkIndex}.`);
                     }
 
                     allQuestions = allQuestions.concat(parsedData);
