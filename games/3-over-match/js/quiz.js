@@ -81,18 +81,24 @@ async function startGame() {
     }
 
     if (!success) {
-        // Fallback to legacy batch if random pool fails
-        const fallbackBatch = batchRange[0] + Math.floor(Math.random() * (batchRange[1] - batchRange[0] + 1));
-        try {
-            console.log(`Attempting fallback to batch_${fallbackBatch}...`);
-            const res = await fetch(`data/batch_${fallbackBatch}.json?t=${cacheBuster}`);
-            if (res.ok) {
-                const data = await res.json();
-                quizData = data.questions || data;
-                success = true;
+        // Robust Online Fallback: Try EVERY single valid batch for this difficulty
+        // If the pool is still building up on day 1, this guarantees we find the newly generated AI data
+        for (let batch = batchRange[0]; batch <= batchRange[1]; batch++) {
+            try {
+                console.log(`Attempting fallback to batch_${batch}...`);
+                const res = await fetch(`data/batch_${batch}.json?t=${cacheBuster}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    quizData = data.questions || data;
+                    success = true;
+
+                    // Shuffle the questions slightly so even if we hit the same fallback repeatedly, it feels fresh
+                    quizData.sort(() => Math.random() - 0.5);
+                    break;
+                }
+            } catch (e) {
+                console.warn(`Fallback batch_${batch} failed`, e);
             }
-        } catch (e) {
-            console.warn(`Fallback batch failed`, e);
         }
     }
 
