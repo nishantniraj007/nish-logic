@@ -4,47 +4,47 @@
     "day_index": 1,
     "slot_index": 10,
     "difficulty": "Easy",
-    "generated_at": "2026-03-06T05:03:59.801Z"
+    "generated_at": "2026-03-06T05:14:08.600Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If a train travels at 60 km/hour, how long will it take to cover a distance of 180 km?",
+      "question": "If a pen costs $5 and you buy 3 pens, what is the total cost?",
       "options": [
-        "2 hours",
-        "3 hours",
-        "4 hours",
-        "5 hours"
+        "$10",
+        "$15",
+        "$20",
+        "$25"
       ],
-      "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hour = 3 hours.",
-      "trick": "Divide distance by speed directly."
+      "correct_answer": "$15",
+      "explanation": "To find the total cost, multiply the cost of one pen by the number of pens purchased. $5 * 3 = $15.",
+      "trick": "Multiply the price by the quantity."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
+      "question": "What is 10% of 100?",
       "options": [
-        "25",
-        "50",
-        "75",
-        "100"
+        "5",
+        "10",
+        "15",
+        "20"
       ],
-      "correct_answer": "50",
-      "explanation": "25% of 200 is (25/100) * 200 = 0.25 * 200 = 50.",
-      "trick": "25% is 1/4. So, 1/4 of 200 is 50."
+      "correct_answer": "10",
+      "explanation": "10% of 100 can be calculated as (10/100) * 100, which equals 10.",
+      "trick": "10% is the same as dividing by 10."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If the cost price of an item is $100 and the selling price is $120, what is the profit percentage?",
+      "question": "If a train travels at 60 km/hour, how far will it travel in 2 hours?",
       "options": [
-        "10%",
-        "15%",
-        "20%",
-        "25%"
+        "60 km",
+        "120 km",
+        "180 km",
+        "240 km"
       ],
-      "correct_answer": "20%",
-      "explanation": "Profit = Selling Price - Cost Price = $120 - $100 = $20. Profit Percentage = (Profit / Cost Price) * 100 = ($20 / $100) * 100 = 20%.",
-      "trick": "Profit percentage is profit amount divided by original cost, then multiply by 100."
+      "correct_answer": "120 km",
+      "explanation": "Distance = Speed * Time. So, 60 km/hour * 2 hours = 120 km.",
+      "trick": "Multiply speed by time."
     },
     {
       "category": "Quantitative Aptitude",
@@ -56,21 +56,21 @@
         "12"
       ],
       "correct_answer": "10",
-      "explanation": "The sequence is a series of even numbers, where each number is obtained by adding 2 to the previous number.",
-      "trick": "Add 2 to the last number."
+      "explanation": "This is a sequence of even numbers, where each number is 2 more than the previous one. 8 + 2 = 10.",
+      "trick": "Look for a constant difference between consecutive numbers."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'CAT' is coded as '3120', how is 'DOG' coded?",
+      "question": "If all dogs are mammals, and Fido is a dog, then Fido is a:",
       "options": [
-        "4157",
-        "4167",
-        "4158",
-        "4168"
+        "Reptile",
+        "Bird",
+        "Mammal",
+        "Fish"
       ],
-      "correct_answer": "4157",
-      "explanation": "The code represents the alphabetical position of each letter (C=3, A=1, T=20). For DOG: D=4, O=15, G=7. So, DOG is coded as 4157.",
-      "trick": "Find the alphabetical position of each letter."
+      "correct_answer": "Mammal",
+      "explanation": "This is a deductive reasoning problem. If Fido belongs to the group 'dogs', and 'dogs' belong to the group 'mammals', then Fido must also belong to the group 'mammals'.",
+      "trick": "Identify the larger group the smaller group belongs to."
     },
     {
       "category": "Logical Reasoning",
@@ -83,163 +83,163 @@
       ],
       "correct_answer": "Carrot",
       "explanation": "Apple, Banana, and Orange are fruits, while Carrot is a vegetable.",
-      "trick": "Identify the odd one out based on common classification."
+      "trick": "Look for a common characteristic among most items."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all dogs are animals, and some animals are cats, which of the following must be true?",
+      "question": "If 'A' is taller than 'B', and 'B' is taller than 'C', then 'A' is taller than:",
       "options": [
-        "All cats are dogs",
-        "Some dogs are cats",
-        "No dogs are cats",
-        "Some cats are animals"
+        "B only",
+        "C only",
+        "Both B and C",
+        "None of the above"
       ],
-      "correct_answer": "Some cats are animals",
-      "explanation": "The premise states 'some animals are cats'. This directly implies that some cats are animals.",
-      "trick": "Focus on the direct implication of the given statements."
+      "correct_answer": "Both B and C",
+      "explanation": "This is a transitive property. If A > B and B > C, then it logically follows that A > C and A > B.",
+      "trick": "Visualize the relationships as a chain."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Find the odd one out: 10, 20, 30, 35, 40",
+      "question": "What is the next letter in the sequence: A, C, E, G, ?",
       "options": [
-        "10",
-        "20",
-        "30",
-        "35"
+        "H",
+        "I",
+        "J",
+        "K"
       ],
-      "correct_answer": "35",
-      "explanation": "All the other numbers are multiples of 10, while 35 is not.",
-      "trick": "Check for divisibility by a common number."
+      "correct_answer": "I",
+      "explanation": "The sequence skips one letter of the alphabet each time. A (skip B) C (skip D) E (skip F) G (skip H) I.",
+      "trick": "Identify the pattern of skipping letters."
     },
     {
       "category": "Static GK",
-      "question": "Who was the first Prime Minister of India?",
+      "question": "What is the capital of France?",
       "options": [
-        "Mahatma Gandhi",
-        "Sardar Vallabhbhai Patel",
-        "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad"
+        "Berlin",
+        "Madrid",
+        "Paris",
+        "Rome"
       ],
-      "correct_answer": "Jawaharlal Nehru",
-      "explanation": "Jawaharlal Nehru became the first Prime Minister of India on August 15, 1947.",
-      "trick": "Recall key figures of India's independence."
+      "correct_answer": "Paris",
+      "explanation": "Paris is the capital city of France.",
+      "trick": "Recall famous landmarks or associations with the country."
     },
     {
       "category": "Static GK",
-      "question": "Which is the largest continent in the world by area?",
+      "question": "Which planet is known as the Red Planet?",
       "options": [
-        "Africa",
-        "North America",
-        "Asia",
-        "Europe"
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Venus"
       ],
-      "correct_answer": "Asia",
-      "explanation": "Asia is the largest continent, covering about 30% of the Earth's total land area.",
-      "trick": "Think of the most populous and geographically extensive landmass."
+      "correct_answer": "Mars",
+      "explanation": "Mars is often called the Red Planet due to its reddish appearance caused by iron oxide on its surface.",
+      "trick": "Think about distinctive colors associated with planets."
     },
     {
       "category": "Static GK",
-      "question": "What is the chemical symbol for water?",
+      "question": "Who painted the Mona Lisa?",
       "options": [
-        "O2",
-        "H2O",
-        "CO2",
-        "NaCl"
+        "Vincent van Gogh",
+        "Leonardo da Vinci",
+        "Pablo Picasso",
+        "Claude Monet"
       ],
-      "correct_answer": "H2O",
-      "explanation": "Water is composed of two hydrogen atoms and one oxygen atom, hence its chemical formula is H2O.",
-      "trick": "Remember the basic building blocks of common substances."
+      "correct_answer": "Leonardo da Vinci",
+      "explanation": "The Mona Lisa is one of the most famous paintings in the world, created by Leonardo da Vinci.",
+      "trick": "Associate famous artworks with well-known artists."
     },
     {
       "category": "Static GK",
-      "question": "In which year did India gain independence?",
+      "question": "What is the largest ocean on Earth?",
       "options": [
-        "1945",
-        "1947",
-        "1950",
-        "1952"
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Arctic Ocean",
+        "Pacific Ocean"
       ],
-      "correct_answer": "1947",
-      "explanation": "India gained independence from British rule on August 15, 1947.",
-      "trick": "Recall the year of a major historical event."
+      "correct_answer": "Pacific Ocean",
+      "explanation": "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions.",
+      "trick": "Consider the relative sizes of continents and oceans."
     },
     {
       "category": "Current Affairs",
-      "question": "As of early 2024, who is the current President of the United States?",
+      "question": "As of early 2024, which country is hosting the Summer Olympics?",
       "options": [
-        "Donald Trump",
-        "Barack Obama",
-        "Joe Biden",
-        "Kamala Harris"
+        "France",
+        "Japan",
+        "USA",
+        "Australia"
       ],
-      "correct_answer": "Joe Biden",
-      "explanation": "Joe Biden is the 46th and current President of the United States, inaugurated in January 2021.",
-      "trick": "Stay updated on major world leaders."
+      "correct_answer": "France",
+      "explanation": "Paris, France is scheduled to host the 2024 Summer Olympics.",
+      "trick": "Remember major upcoming global events."
     },
     {
       "category": "Current Affairs",
-      "question": "Which country hosted the COP28 climate summit in late 2023?",
+      "question": "Which AI model has gained significant public attention in late 2023 and early 2024 for its advanced conversational abilities?",
       "options": [
-        "India",
-        "United Arab Emirates",
+        "AlphaFold",
+        "GPT-4",
+        "LaMDA",
+        "Bard"
+      ],
+      "correct_answer": "GPT-4",
+      "explanation": "GPT-4, developed by OpenAI, has been widely discussed for its impressive capabilities in understanding and generating human-like text.",
+      "trick": "Keep track of major technological advancements."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "In early 2024, which major space mission successfully landed on the Moon?",
+      "options": [
+        "Artemis II",
+        "Chandrayaan-3",
+        "SLIM",
+        "Luna 25"
+      ],
+      "correct_answer": "SLIM",
+      "explanation": "Japan's SLIM (Smart Lander for Investigating Moon) successfully achieved a soft landing on the Moon in January 2024.",
+      "trick": "Follow significant achievements in space exploration."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which country experienced significant flooding in late 2023 and early 2024, leading to widespread displacement?",
+      "options": [
         "Brazil",
-        "Egypt"
+        "Australia",
+        "Libya",
+        "Canada"
       ],
-      "correct_answer": "United Arab Emirates",
-      "explanation": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in Dubai, United Arab Emirates.",
-      "trick": "Follow major international conferences and their locations."
+      "correct_answer": "Libya",
+      "explanation": "Libya was devastated by catastrophic floods in September 2023 caused by Storm Daniel, which breached two dams.",
+      "trick": "Be aware of major natural disasters globally."
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the men's singles title at the Wimbledon Championships in 2023?",
+      "question": "As of early 2024, who is the current Prime Minister of the United Kingdom?",
       "options": [
-        "Novak Djokovic",
-        "Carlos Alcaraz",
-        "Roger Federer",
-        "Rafael Nadal"
+        "Boris Johnson",
+        "Theresa May",
+        "Rishi Sunak",
+        "Liz Truss"
       ],
-      "correct_answer": "Carlos Alcaraz",
-      "explanation": "Carlos Alcaraz defeated Novak Djokovic in the men's singles final of Wimbledon 2023.",
-      "trick": "Keep track of major sporting event winners."
+      "correct_answer": "Rishi Sunak",
+      "explanation": "Rishi Sunak has been the Prime Minister of the United Kingdom since October 2022.",
+      "trick": "Stay updated on leadership changes in major countries."
     },
     {
       "category": "Current Affairs",
-      "question": "Which Indian state launched the 'Mera Yuva Bharat' (MY Bharat) platform in October 2023?",
+      "question": "Which major sporting event concluded in February 2024, crowning a new champion?",
       "options": [
-        "Maharashtra",
-        "Uttar Pradesh",
-        "Delhi",
-        "Gujarat"
+        "FIFA World Cup",
+        "Super Bowl LVIII",
+        "Wimbledon",
+        "Tour de France"
       ],
-      "correct_answer": "Gujarat",
-      "explanation": "The 'Mera Yuva Bharat' platform was launched by Prime Minister Narendra Modi in Kevadia, Gujarat.",
-      "trick": "Note significant government initiatives and their launch locations/states."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "As of early 2024, what is the approximate global inflation rate being observed in many countries?",
-      "options": [
-        "Around 1-2%",
-        "Around 3-4%",
-        "Around 5-7%",
-        "Above 10%"
-      ],
-      "correct_answer": "Around 3-4%",
-      "explanation": "While varying by country, many major economies have seen inflation figures in the 3-4% range in recent times, after peaking higher.",
-      "trick": "Be aware of general economic trends."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which space agency successfully launched the Chandrayaan-3 mission to the Moon in July 2023?",
-      "options": [
-        "NASA",
-        "ESA",
-        "ISRO",
-        "Roscosmos"
-      ],
-      "correct_answer": "ISRO",
-      "explanation": "The Indian Space Research Organisation (ISRO) successfully launched the Chandrayaan-3 mission.",
-      "trick": "Follow major space exploration achievements."
+      "correct_answer": "Super Bowl LVIII",
+      "explanation": "Super Bowl LVIII took place in February 2024, with the Kansas City Chiefs defeating the San Francisco 49ers.",
+      "trick": "Follow prominent annual sporting events."
     }
   ]
 }
