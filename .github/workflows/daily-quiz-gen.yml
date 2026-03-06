@@ -12,7 +12,24 @@ on:
     - cron: '40 19 * * *'
     - cron: '50 19 * * *'
     - cron: '0 20 * * *'
-  workflow_dispatch: # Allow manual triggers
+  workflow_dispatch:
+    inputs:
+      batch_index:
+        description: 'Batch Index (0-9). 0=Med, 3=Easy, 5=SSC, 8=UPSC'
+        required: true
+        default: '0'
+        type: choice
+        options:
+          - '0'
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+          - '6'
+          - '7'
+          - '8'
+          - '9'
 
 jobs:
   generate-quiz:
@@ -39,17 +56,22 @@ jobs:
         run: |
           # Use minutes and hours to map to 0-9
           # 18:30 -> 0, 18:40 -> 1, 18:50 -> 2, 19:00 -> 3, ..., 20:00 -> 9
-          MINUTE=$(date -u +%M)
-          HOUR=$(date -u +%H)
-          
-          if [ "$HOUR" == "18" ]; then
-            INDEX=$(awk "BEGIN {print int(($MINUTE - 30) / 10)}")
-          elif [ "$HOUR" == "19" ]; then
-            INDEX=$(awk "BEGIN {print int($MINUTE / 10) + 3}")
-          elif [ "$HOUR" == "20" ]; then
-            INDEX=9
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            INDEX="${{ github.event.inputs.batch_index }}"
+            echo "Manual trigger detected. Using provided index: $INDEX"
           else
-            INDEX=0 # fallback for manual triggers
+            MINUTE=$(date -u +%M)
+            HOUR=$(date -u +%H)
+            
+            if [ "$HOUR" == "18" ]; then
+              INDEX=$(awk "BEGIN {print int(($MINUTE - 30) / 10)}")
+            elif [ "$HOUR" == "19" ]; then
+              INDEX=$(awk "BEGIN {print int($MINUTE / 10) + 3}")
+            elif [ "$HOUR" == "20" ]; then
+              INDEX=9
+            else
+              INDEX=0 # fallback
+            fi
           fi
           
           echo "INDEX=$INDEX" >> $GITHUB_ENV
