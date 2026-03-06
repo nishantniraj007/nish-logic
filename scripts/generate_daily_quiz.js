@@ -61,7 +61,7 @@ ${config.context}
 Your task is to generate exactly ${questionCount} Multiple Choice Questions (MCQs) following this distribution:
 ${focus}
 
-You MUST respond with ONLY a valid, raw JSON array of 6 objects. Do not wrap it in markdown code blocks like \`\`\`json. Just the raw array.
+You MUST respond with ONLY a valid, raw JSON array of ${questionCount} objects. Do not wrap it in markdown code blocks like \`\`\`json. Just the raw array.
 
 Each object in the array must strictly match this schema:
 {
@@ -188,6 +188,12 @@ async function main() {
 
                     allQuestions = allQuestions.concat(parsedData);
                     success = true;
+
+                    // Add a short delay to respect the free API tier rate limits (15 requests per minute for flash)
+                    if (chunkIndex < totalChunks) {
+                        console.log(`[${new Date().toISOString()}] Waiting 4 seconds before next chunk to respect API rate limits...`);
+                        await new Promise(r => setTimeout(r, 4000));
+                    }
                 } catch (err) {
                     console.error(`[${new Date().toISOString()}] Chunk ${chunkIndex} attempt ${attempt} failed:`, err.message);
                     if (attempt >= 3) {
