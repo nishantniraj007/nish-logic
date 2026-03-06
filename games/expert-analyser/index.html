@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Analyser | Nishant Niraj</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <main class="glass-container">
+        <header class="profile-section">
+            <h1 class="glitch" data-text="Expert Analyser">Expert Analyser</h1>
+            <h2 class="subtitle">&lt; Incident Analysis from Multiple Perspectives /&gt;</h2>
+        </header>
+
+        <section id="step-1" class="analyser-content">
+            <div class="description">
+                <p>Select your desired expert and output preferences.</p>
+            </div>
+
+            <div class="controls-row">
+                <div class="input-group">
+                    <label for="expert-type">Expert Persona</label>
+                    <select id="expert-type" class="cyber-select">
+                        <option value="Cyber Security Expert">Cyber Security Expert</option>
+                        <option value="Geopolitics Analyst">Geopolitics Analyst</option>
+                        <option value="Financial Strategist">Financial Strategist</option>
+                        <option value="Military Historian">Military Historian</option>
+                        <option value="Behavioral Economist">Behavioral Economist</option>
+                        <option value="Legal Scholar">Legal Scholar</option>
+                        <option value="Educator">World-Class Educator</option>
+                        <option value="UPSC Topper">UPSC Rank 1 Aspirant</option>
+                        <option value="Philosopher">Venerated Philosopher</option>
+                        <option value="Scientist">Nobel-Laureate Scientist</option>
+                        <option value="Engineer">Distinguished Chief Engineer</option>
+                        <option value="Doctor">Top-Tier Medical Doctor</option>
+                        <option value="Lawyer">Supreme Court Lawyer</option>
+                        <option value="Founder">Billion-Dollar Startup Founder</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="word-count">Approximate Word Count</label>
+                    <select id="word-count" class="cyber-select">
+                        <option value="200">200 Words (Brief)</option>
+                        <option value="500" selected>500 Words (Standard)</option>
+                        <option value="1000">1000 Words (In-Depth)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="output-lang">Output Language</label>
+                    <select id="output-lang" class="cyber-select">
+                        <option value="English" selected>English</option>
+                        <option value="Hindi">Hindi (हिंदी)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="cyber-button" id="next-to-step-2-btn">
+                <span class="btn-text">NEXT STEP →</span>
+            </button>
+        </section>
+
+        <section id="step-2" class="analyser-content hidden">
+            <div class="description">
+                <p>Provide API context and describe the incident.</p>
+            </div>
+
+            <button class="text-button" id="back-to-step-1-btn">← Back to Setup</button>
+
+            <div class="api-config">
+                <input type="password" id="api-key" placeholder="Enter Gemini API Key (Stored locally only)">
+            </div>
+
+            <div class="input-group">
+                <label for="incident-input">Incident / Situation Description</label>
+                <textarea id="incident-input"
+                    placeholder="e.g. The sudden resignation of the CEO... (Any language)"></textarea>
+            </div>
+
+            <button class="cyber-button highlight" id="analyse-btn">
+                <span class="btn-text">GENERATE EXPERT ANALYSIS</span>
+            </button>
+        </section>
+
+        <section id="loading-section" class="analyser-content hidden">
+            <div class="loader"></div>
+            <p>The Expert is analyzing...</p>
+        </section>
+
+        <section id="report-section" class="analyser-content hidden">
+            <div id="analysis-report" class="report-box"></div>
+
+            <div class="download-controls">
+                <button class="cyber-button small" id="download-txt-btn">
+                    <span class="btn-text">📥 Download TXT</span>
+                </button>
+                <button class="cyber-button small" id="download-kindle-btn">
+                    <span class="btn-text">📖 Download Kindle HTML</span>
+                </button>
+            </div>
+
+            <button class="text-button" id="reset-btn">
+                Start New Analysis
+            </button>
+        </section>
+
+        <footer class="back-link">
+            <a href="../../index.html" class="dropdown-link">← Back to Portal</a>
+        </footer>
+    </main>
+
+    <script src="../../js/matrix.js"></script>
+    <script src="js/analyser.js"></script>
+</body>
+
+</html>

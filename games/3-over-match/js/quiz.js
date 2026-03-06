@@ -73,28 +73,49 @@ async function startGame() {
     else if (diff === 'upsc') batchRange = [8, 9];
 
     // Rolling Pool Selection:
-    // We have 5 days of data (0-4). Pick a random potential day.
-    const randomDay = Math.floor(Math.random() * 5);
-    const selectedBatch = batchRange[0] + Math.floor(Math.random() * (batchRange[1] - batchRange[0] + 1));
-    const poolSlot = (randomDay * 10) + selectedBatch;
+    // We have 5 days of data (0-4). 
+    // Instead of one random slot, we'll try up to 3 random slots from the pool before falling back.
+    const maxAttempts = 3;
+    let success = false;
 
-    try {
-        // Try to load from pool first
-        let res = await fetch(`data/slot_${poolSlot}.json`);
-        if (!res.ok) {
-            // Fallback to the latest standard batch
-            res = await fetch(`data/batch_${selectedBatch}.json`);
+    for (let i = 0; i < maxAttempts; i++) {
+        const randomDay = Math.floor(Math.random() * 5);
+        const selectedBatch = batchRange[0] + Math.floor(Math.random() * (batchRange[1] - batchRange[0] + 1));
+        const poolSlot = (randomDay * 10) + selectedBatch;
+
+        try {
+            console.log(`Attempting to load slot_${poolSlot}...`);
+            const res = await fetch(`data/slot_${poolSlot}.json`);
+            if (res.ok) {
+                const data = await res.json();
+                quizData = data.questions || data;
+                success = true;
+                break;
+            }
+        } catch (e) {
+            console.warn(`Failed to load slot_${poolSlot}`, e);
         }
-        if (res.ok) {
-            const data = await res.json();
-            quizData = data.questions || data; // handle root array or obj
-        } else {
-            quizData = [...dummyData];
-            console.warn("Using fallback local data");
+    }
+
+    if (!success) {
+        // Fallback to legacy batch if random pool fails
+        const fallbackBatch = batchRange[0] + Math.floor(Math.random() * (batchRange[1] - batchRange[0] + 1));
+        try {
+            console.log(`Attempting fallback to batch_${fallbackBatch}...`);
+            const res = await fetch(`data/batch_${fallbackBatch}.json`);
+            if (res.ok) {
+                const data = await res.json();
+                quizData = data.questions || data;
+                success = true;
+            }
+        } catch (e) {
+            console.warn(`Fallback batch failed`, e);
         }
-    } catch (e) {
+    }
+
+    if (!success) {
         quizData = [...dummyData];
-        console.warn("Using fallback local data", e);
+        console.warn("Using fallback local dummy data");
     }
 
     introScreen.style.display = 'none';
