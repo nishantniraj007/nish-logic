@@ -61,7 +61,7 @@ jobs:
         run: node scripts/generate_daily_quiz.js ${{ env.INDEX }}
 
       - name: Run Drive Archive (on final batch)
-        if: env.INDEX == '9' || github.event_name == 'workflow_dispatch'
+        if: ${{ env.INDEX == '9' || github.event_name == 'workflow_dispatch' }}
         env:
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
           GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}

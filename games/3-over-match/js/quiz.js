@@ -77,6 +77,7 @@ async function startGame() {
     // Instead of one random slot, we'll try up to 3 random slots from the pool before falling back.
     const maxAttempts = 3;
     let success = false;
+    const cacheBuster = Date.now();
 
     for (let i = 0; i < maxAttempts; i++) {
         const randomDay = Math.floor(Math.random() * 5);
@@ -85,7 +86,7 @@ async function startGame() {
 
         try {
             console.log(`Attempting to load slot_${poolSlot}...`);
-            const res = await fetch(`data/slot_${poolSlot}.json`);
+            const res = await fetch(`data/slot_${poolSlot}.json?t=${cacheBuster}`);
             if (res.ok) {
                 const data = await res.json();
                 quizData = data.questions || data;
@@ -102,7 +103,7 @@ async function startGame() {
         const fallbackBatch = batchRange[0] + Math.floor(Math.random() * (batchRange[1] - batchRange[0] + 1));
         try {
             console.log(`Attempting fallback to batch_${fallbackBatch}...`);
-            const res = await fetch(`data/batch_${fallbackBatch}.json`);
+            const res = await fetch(`data/batch_${fallbackBatch}.json?t=${cacheBuster}`);
             if (res.ok) {
                 const data = await res.json();
                 quizData = data.questions || data;

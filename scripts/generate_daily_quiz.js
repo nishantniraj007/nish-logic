@@ -27,17 +27,23 @@ const batchConfig = {
 };
 
 // Prompt Generator
-function buildPrompt(config) {
+function buildPrompt(config, chunkIndex) {
+    let focus = "";
+    if (chunkIndex === 1) {
+        focus = "- 4 Quantitative Aptitude / Mathematics questions\n- 2 Logical Reasoning questions";
+    } else if (chunkIndex === 2) {
+        focus = "- 2 Logical Reasoning questions\n- 4 Static General Knowledge (History/Geography/Science) questions";
+    } else if (chunkIndex === 3) {
+        focus = "- 6 Current Affairs questions (relevant to the last 6 months)";
+    }
+
     return `You are an expert exam question setter for ${config.diff} level examinations.
 ${config.context}
 
-Your task is to generate exactly 18 Multiple Choice Questions (MCQs) following this distribution:
-- 4 Quantitative Aptitude / Mathematics questions
-- 4 Logical Reasoning questions
-- 4 Static General Knowledge (History/Geography/Science) questions
-- 6 Current Affairs questions (relevant to the last 6 months)
+Your task is to generate exactly 6 Multiple Choice Questions (MCQs) following this distribution:
+${focus}
 
-You MUST respond with ONLY a valid, raw JSON array of 18 objects. Do not wrap it in markdown code blocks like \`\`\`json. Just the raw array.
+You MUST respond with ONLY a valid, raw JSON array of 6 objects. Do not wrap it in markdown code blocks like \`\`\`json. Just the raw array.
 
 Each object in the array must strictly match this schema:
 {
@@ -111,27 +117,52 @@ async function main() {
     const config = batchConfig[batchIndex];
     console.log(`[${new Date().toISOString()}] --- Starting Batch ${batchIndex} (${config.diff} Level) ---`);
 
-    const prompt = buildPrompt(config);
-
     try {
-        console.log(`[${new Date().toISOString()}] Sending request to Gemini...`);
-        const startTime = Date.now();
-        let rawJsonText = await generateWithFallback(prompt, config.model);
-        const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-        console.log(`[${new Date().toISOString()}] Received response from Gemini in ${duration}s.`);
+        let allQuestions = [];
 
-        // Clean markdown backticks if the model ignores our instruction
-        if (rawJsonText.startsWith("```json")) {
-            rawJsonText = rawJsonText.replace(/^```json\n/, "").replace(/\n```$/, "");
-        } else if (rawJsonText.startsWith("```")) {
-            rawJsonText = rawJsonText.replace(/^```\n/, "").replace(/\n```$/, "");
+        for (let chunkIndex = 1; chunkIndex <= 3; chunkIndex++) {
+            const prompt = buildPrompt(config, chunkIndex);
+            console.log(`[${new Date().toISOString()}] Sending request ${chunkIndex}/3 to Gemini...`);
+
+            let success = false;
+            let attempt = 0;
+
+            while (!success && attempt < 3) {
+                attempt++;
+                try {
+                    const startTime = Date.now();
+                    let rawJsonText = await generateWithFallback(prompt, config.model);
+                    const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+                    console.log(`[${new Date().toISOString()}] Received response ${chunkIndex}/3 in ${duration}s.`);
+
+                    // Clean markdown backticks if the model ignores our instruction
+                    if (rawJsonText.startsWith("```json")) {
+                        rawJsonText = rawJsonText.replace(/^```json\n/, "").replace(/\n```$/, "");
+                    } else if (rawJsonText.startsWith("```")) {
+                        rawJsonText = rawJsonText.replace(/^```\n/, "").replace(/\n```$/, "");
+                    }
+
+                    const parsedData = JSON.parse(rawJsonText);
+
+                    if (!Array.isArray(parsedData) || parsedData.length !== 6) {
+                        console.warn(`WARNING: The model returned ${parsedData.length || 'invalid number of'} items instead of 6 for chunk ${chunkIndex}.`);
+                    }
+
+                    allQuestions = allQuestions.concat(parsedData);
+                    success = true;
+                } catch (err) {
+                    console.error(`[${new Date().toISOString()}] Chunk ${chunkIndex} attempt ${attempt} failed:`, err.message);
+                    if (attempt >= 3) {
+                        throw new Error(`Failed to generate chunk ${chunkIndex} after 3 attempts.`);
+                    }
+                    // Wait 2 seconds before retry
+                    await new Promise(r => setTimeout(r, 2000));
+                }
+            }
         }
 
-        // Validate JSON parsing
-        const parsedData = JSON.parse(rawJsonText);
-
-        if (!Array.isArray(parsedData) || parsedData.length !== 18) {
-            console.warn(`WARNING: The model returned ${parsedData.length || 'invalid number of'} items instead of 18.`);
+        if (allQuestions.length !== 18) {
+            console.warn(`WARNING: Total questions generated is ${allQuestions.length}, expected 18.`);
         }
 
         // Save file
@@ -157,7 +188,7 @@ async function main() {
                 difficulty: config.diff,
                 generated_at: new Date().toISOString()
             },
-            questions: parsedData
+            questions: allQuestions
         };
 
         fs.writeFileSync(filepath, JSON.stringify(outputObject, null, 2));
@@ -174,7 +205,7 @@ async function main() {
         const archiveFilename = `${dateStr}_batch_${batchIndex}.json`;
         fs.writeFileSync(path.join(archiveDir, archiveFilename), JSON.stringify(outputObject, null, 2));
 
-        console.log(`Success! Saved ${parsedData.length} questions to ${filepath}, ${legacyFilepath}, and archive.`);
+        console.log(`Success! Saved ${allQuestions.length} questions to ${filepath}, ${legacyFilepath}, and archive.`);
 
     } catch (err) {
         console.error("Failed to generate and save batch:", err);
