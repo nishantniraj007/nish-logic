@@ -4,21 +4,21 @@
     "day_index": 1,
     "slot_index": 10,
     "difficulty": "Easy",
-    "generated_at": "2026-03-06T05:15:10.820Z"
+    "generated_at": "2026-03-06T07:20:27.452Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much would 12 apples cost?",
+      "question": "If 5 apples cost $10, how much do 15 apples cost?",
       "options": [
         "$20",
-        "$24",
+        "$25",
         "$30",
-        "$36"
+        "$35"
       ],
-      "correct_answer": "$24",
-      "explanation": "First, find the cost of one apple: $10 / 5 apples = $2 per apple. Then, multiply the cost per apple by 12: $2/apple * 12 apples = $24.",
-      "trick": "Find the cost of one unit and multiply."
+      "correct_answer": "$30",
+      "explanation": "The cost per apple is $10 / 5 = $2. Therefore, 15 apples will cost 15 * $2 = $30.",
+      "trick": "Cost of 15 apples is 3 times the cost of 5 apples, so 3 * $10 = $30."
     },
     {
       "category": "Quantitative Aptitude",
@@ -26,42 +26,81 @@
       "options": [
         "25",
         "50",
-        "100",
-        "150"
+        "75",
+        "100"
       ],
       "correct_answer": "50",
-      "explanation": "To find 25% of 200, you can multiply 200 by 0.25 (which is 25/100). 200 * 0.25 = 50.",
-      "trick": "25% is the same as 1/4. Divide by 4."
+      "explanation": "25% can be written as 0.25 or 1/4. So, 0.25 * 200 = 50, or (1/4) * 200 = 50.",
+      "trick": "25% is one-fourth. One-fourth of 200 is 200 / 4 = 50."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If a train travels at 60 km/h, how long will it take to travel 180 km?",
+      "question": "A train travels at 60 km/hour. How long will it take to travel 180 km?",
       "options": [
+        "1 hour",
         "2 hours",
         "3 hours",
-        "4 hours",
-        "5 hours"
+        "4 hours"
       ],
       "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/h = 3 hours.",
-      "trick": "Speed x Time = Distance. If Distance is 3 times Speed, Time is 3."
+      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hour = 3 hours.",
+      "trick": "In 1 hour it travels 60 km. To travel 180 km (which is 3 * 60 km), it will take 3 hours."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+      "question": "If a shirt costs $40 and is on sale for 10% off, what is the sale price?",
       "options": [
-        "9",
-        "10",
-        "12",
-        "14"
+        "$30",
+        "$36",
+        "$38",
+        "$39"
       ],
-      "correct_answer": "10",
-      "explanation": "This is an arithmetic sequence where each number is obtained by adding 2 to the previous number. 8 + 2 = 10.",
-      "trick": "Add 2 to the last number."
+      "correct_answer": "$36",
+      "explanation": "The discount is 10% of $40, which is 0.10 * $40 = $4. The sale price is $40 - $4 = $36.",
+      "trick": "If it's 10% off, you pay 90% of the original price. 90% of $40 = 0.90 * $40 = $36."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong with the others?",
+      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
+      "trick": "Identify the common category (fruits) and find the outlier."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If all cats are mammals, and some mammals are black, can we say that some cats are black?",
+      "options": [
+        "Yes",
+        "No",
+        "Maybe",
+        "Cannot be determined"
+      ],
+      "correct_answer": "No",
+      "explanation": "The statement 'some mammals are black' does not guarantee that the black mammals are also cats. The black mammals could be dogs, bears, etc.",
+      "trick": "Just because two groups share a common characteristic with a larger group doesn't mean they share it with each other."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'CAT' is coded as '3120', what is 'DOG' coded as?",
+      "options": [
+        "4157",
+        "4168",
+        "5167",
+        "5178"
+      ],
+      "correct_answer": "4157",
+      "explanation": "The code assigns the alphabetical position of each letter (C=3, A=1, T=20). For DOG, D=4, O=15, G=7.",
+      "trick": "Convert letters to their alphabetical positions."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
       "options": [
         "Apple",
         "Banana",
@@ -70,63 +109,24 @@
       ],
       "correct_answer": "Carrot",
       "explanation": "Apple, Banana, and Orange are fruits, while Carrot is a vegetable.",
-      "trick": "Identify the outlier based on a common category."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If 'CAT' is coded as '3120', what is 'DOG' coded as?",
-      "options": [
-        "4157",
-        "4158",
-        "4167",
-        "4168"
-      ],
-      "correct_answer": "4157",
-      "explanation": "The code assigns numbers to letters based on their position in the alphabet (A=1, B=2, etc.). C=3, A=1, T=20. For DOG: D=4, O=15, G=7. So, DOG is 4157.",
-      "trick": "Map letters to their alphabetical position."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What is the odd one out?",
-      "options": [
-        "Circle",
-        "Square",
-        "Triangle",
-        "Line"
-      ],
-      "correct_answer": "Line",
-      "explanation": "Circle, Square, and Triangle are 2D shapes with enclosed areas. A Line is a one-dimensional figure.",
-      "trick": "Identify the item that lacks a defining characteristic of the others."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Ram is taller than Shyam. Mohan is shorter than Ram. Who is the tallest?",
-      "options": [
-        "Ram",
-        "Shyam",
-        "Mohan",
-        "Cannot be determined"
-      ],
-      "correct_answer": "Ram",
-      "explanation": "Ram is taller than Shyam. Mohan is shorter than Ram. This means Ram is taller than both Shyam and Mohan. We don't know the relation between Shyam and Mohan, but Ram is definitely the tallest.",
-      "trick": "Focus on the statement that establishes the maximum height."
+      "trick": "Identify the common characteristic and find the outlier."
     },
     {
       "category": "Static GK",
-      "question": "What is the capital of France?",
+      "question": "What is the capital of India?",
       "options": [
-        "Berlin",
-        "Madrid",
-        "Paris",
-        "Rome"
+        "Mumbai",
+        "Kolkata",
+        "New Delhi",
+        "Chennai"
       ],
-      "correct_answer": "Paris",
-      "explanation": "Paris is the capital and largest city of France.",
-      "trick": "Recall common capital cities."
+      "correct_answer": "New Delhi",
+      "explanation": "New Delhi is the official capital city of India.",
+      "trick": "Recall common knowledge about major countries."
     },
     {
       "category": "Static GK",
-      "question": "Which planet is known as the Red Planet?",
+      "question": "Which planet is known as the 'Red Planet'?",
       "options": [
         "Earth",
         "Mars",
@@ -134,8 +134,8 @@
         "Venus"
       ],
       "correct_answer": "Mars",
-      "explanation": "Mars is known as the Red Planet due to the iron oxide prevalent on its surface.",
-      "trick": "Associate common nicknames with celestial bodies."
+      "explanation": "Mars appears reddish due to the iron oxide (rust) on its surface.",
+      "trick": "Remember common nicknames of planets."
     },
     {
       "category": "Static GK",
@@ -147,99 +147,99 @@
         "Claude Monet"
       ],
       "correct_answer": "Leonardo da Vinci",
-      "explanation": "The Mona Lisa is a famous oil painting by Leonardo da Vinci.",
-      "trick": "Remember famous artists and their iconic works."
+      "explanation": "The Mona Lisa is one of the most famous paintings by Leonardo da Vinci.",
+      "trick": "Associate famous artworks with their artists."
     },
     {
       "category": "Static GK",
-      "question": "Which is the longest river in the world?",
+      "question": "What is the largest ocean on Earth?",
       "options": [
-        "Amazon River",
-        "Nile River",
-        "Yangtze River",
-        "Mississippi River"
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Arctic Ocean",
+        "Pacific Ocean"
       ],
-      "correct_answer": "Nile River",
-      "explanation": "The Nile River is traditionally considered the longest river in the world, though the Amazon is sometimes cited as longer depending on measurement methods.",
-      "trick": "Recall geographical superlatives."
+      "correct_answer": "Pacific Ocean",
+      "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth.",
+      "trick": "Recall basic geographical facts about Earth's features."
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the men's singles title at the 2024 Australian Open?",
+      "question": "Which country recently hosted the G7 Summit in June 2024?",
+      "options": [
+        "France",
+        "Italy",
+        "Germany",
+        "Japan"
+      ],
+      "correct_answer": "Italy",
+      "explanation": "The G7 Summit in June 2024 was held in Puglia, Italy.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who won the men's singles title at Wimbledon in July 2024?",
       "options": [
         "Novak Djokovic",
         "Carlos Alcaraz",
         "Jannik Sinner",
-        "Daniil Medvedev"
+        "Roger Federer"
       ],
-      "correct_answer": "Jannik Sinner",
-      "explanation": "Jannik Sinner of Italy won his first Grand Slam title at the 2024 Australian Open.",
-      "trick": "Stay updated on major sporting event results."
+      "correct_answer": "Carlos Alcaraz",
+      "explanation": "Carlos Alcaraz defeated Novak Djokovic in a thrilling five-set final to win the Wimbledon men's singles title.",
+      "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "In which country did the 2024 Winter Youth Olympics take place?",
+      "question": "What major space mission was successfully launched by India in mid-2024 to study the Sun?",
       "options": [
-        "South Korea",
-        "Canada",
-        "South Korea",
-        "Switzerland"
+        "Chandrayaan-4",
+        "Aditya-L1",
+        "Mangalyaan-2",
+        "Gaganyaan"
       ],
-      "correct_answer": "South Korea",
-      "explanation": "The 2024 Winter Youth Olympics were held in Gangwon Province, South Korea.",
-      "trick": "Follow news about international sporting events."
+      "correct_answer": "Aditya-L1",
+      "explanation": "Aditya-L1 is India's first dedicated space observatory to study the Sun, launched in September 2023 and continuing its mission into 2024.",
+      "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Which country recently launched its own space station module named 'Wentian'?",
+      "question": "Which Indian state recently celebrated its formation day on April 1, 2024?",
       "options": [
-        "Japan",
-        "India",
-        "China",
-        "Russia"
+        "Telangana",
+        "Uttarakhand",
+        "Odisha",
+        "Bihar"
       ],
-      "correct_answer": "China",
-      "explanation": "China launched the 'Wentian' laboratory module as part of its Tiangong space station.",
-      "trick": "Keep track of significant space exploration milestones."
+      "correct_answer": "Odisha",
+      "explanation": "Odisha was formed on April 1, 1936, and celebrates its formation day as Utkal Divas on April 1st.",
+      "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "What is the name of the new AI model launched by OpenAI in late 2023/early 2024 that has gained significant attention?",
+      "question": "In which city were the Summer Olympics held in July-August 2024?",
       "options": [
-        "Bard",
-        "Claude",
-        "Gemini",
-        "Llama"
+        "Los Angeles",
+        "Paris",
+        "Tokyo",
+        "London"
       ],
-      "correct_answer": "Gemini",
-      "explanation": "Google launched its Gemini AI model family in December 2023.",
-      "trick": "Follow developments in artificial intelligence."
+      "correct_answer": "Paris",
+      "explanation": "The XXXIII Olympiad, the Summer Olympics of 2024, were held in Paris, France.",
+      "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Which country is hosting the COP29 climate summit in 2024?",
+      "question": "Who was appointed as the new Prime Minister of the United Kingdom in July 2024?",
       "options": [
-        "Brazil",
-        "United Arab Emirates",
-        "Azerbaijan",
-        "Egypt"
+        "Rishi Sunak",
+        "Boris Johnson",
+        "Keir Starmer",
+        "Liz Truss"
       ],
-      "correct_answer": "Azerbaijan",
-      "explanation": "Azerbaijan will host the COP29 climate summit in Baku.",
-      "trick": "Note down major international conference locations."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The G20 Summit in 2023 was held in which country?",
-      "options": [
-        "Japan",
-        "India",
-        "Brazil",
-        "South Africa"
-      ],
-      "correct_answer": "India",
-      "explanation": "The G20 Summit in 2023 was held in New Delhi, India.",
-      "trick": "Remember the host countries of major global summits."
+      "correct_answer": "Keir Starmer",
+      "explanation": "Keir Starmer, leader of the Labour Party, became the Prime Minister of the United Kingdom following the general election in July 2024.",
+      "trick": ""
     }
   ]
 }
