@@ -4,12 +4,38 @@
     "day_index": 1,
     "slot_index": 10,
     "difficulty": "Easy",
-    "generated_at": "2026-03-06T05:01:35.729Z"
+    "generated_at": "2026-03-06T05:02:09.481Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If a train travels at 60 km/hr, how long will it take to travel 180 km?",
+      "question": "If 5 apples cost 100 rupees, how much will 8 apples cost?",
+      "options": [
+        "120 rupees",
+        "160 rupees",
+        "150 rupees",
+        "180 rupees"
+      ],
+      "correct_answer": "160 rupees",
+      "explanation": "First, find the cost of one apple: 100 rupees / 5 apples = 20 rupees/apple. Then, multiply the cost of one apple by 8: 20 rupees/apple * 8 apples = 160 rupees.",
+      "trick": "Ratio and proportion: (Cost1 / Quantity1) = (Cost2 / Quantity2). (100/5) = (x/8) => x = (100 * 8) / 5 = 160."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is 25% of 200?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "75"
+      ],
+      "correct_answer": "50",
+      "explanation": "To find 25% of 200, you can multiply 200 by 0.25 (which is 25/100). 200 * 0.25 = 50.",
+      "trick": "25% is the same as 1/4. So, 1/4 of 200 is 200 / 4 = 50."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a train travels at 60 km/hr, how long will it take to cover a distance of 180 km?",
       "options": [
         "2 hours",
         "3 hours",
@@ -18,63 +44,37 @@
       ],
       "correct_answer": "3 hours",
       "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hr = 3 hours.",
-      "trick": "Think of it as: 60 km in 1 hour, 120 km in 2 hours, 180 km in 3 hours."
+      "trick": "Think of it as 'how many 60s fit into 180?' 180 / 60 = 3."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
       "options": [
-        "25",
-        "50",
-        "75",
-        "100"
-      ],
-      "correct_answer": "50",
-      "explanation": "25% can be written as 25/100 or 1/4.  So, (1/4) * 200 = 50.",
-      "trick": "25% is one-fourth. One-fourth of 200 is 50."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If the side of a square is 5 cm, what is its area?",
-      "options": [
-        "10 sq cm",
-        "20 sq cm",
-        "25 sq cm",
-        "30 sq cm"
-      ],
-      "correct_answer": "25 sq cm",
-      "explanation": "The area of a square is side * side. So, Area = 5 cm * 5 cm = 25 sq cm.",
-      "trick": "Square the number for the side length."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is the sum of the first 5 natural numbers (1, 2, 3, 4, 5)?",
-      "options": [
+        "9",
         "10",
-        "12",
-        "15",
-        "20"
+        "11",
+        "12"
       ],
-      "correct_answer": "15",
-      "explanation": "1 + 2 + 3 + 4 + 5 = 15.",
-      "trick": "Pair the first and last (1+5=6), second and second-to-last (2+4=6), and the middle number (3). 6+6+3 = 15. Or use the formula n(n+1)/2 for n=5."
+      "correct_answer": "10",
+      "explanation": "This is a sequence of even numbers. Each number is obtained by adding 2 to the previous number. So, 8 + 2 = 10.",
+      "trick": "Simple addition of a constant difference."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If CAT is coded as 3120, how is DOG coded?",
+      "question": "If 'CAT' is written as '3120', how will 'DOG' be written?",
       "options": [
         "4157",
+        "4187",
         "4158",
-        "4167",
-        "4168"
+        "4188"
       ],
       "correct_answer": "4157",
-      "explanation": "Each letter is replaced by its position in the alphabet. C=3, A=1, T=20. For DOG: D=4, O=15, G=7. So, DOG is 4157.",
-      "trick": "Find the alphabetical position of each letter."
+      "explanation": "Each letter is replaced by its position in the alphabet (A=1, B=2, ...). C=3, A=1, T=20. For DOG: D=4, O=15, G=7. So, DOG is 4157.",
+      "trick": "Alphabetical position mapping."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which is the odd one out?",
+      "question": "Which word does not belong with the others?",
       "options": [
         "Apple",
         "Banana",
@@ -83,59 +83,59 @@
       ],
       "correct_answer": "Carrot",
       "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Categorize the items and find the one that doesn't fit the category."
+      "trick": "Categorization based on common properties."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 1 = 5, 2 = 10, 3 = 15, 4 = 20, then 5 = ?",
+      "question": "If all dogs are animals, and Fido is a dog, then Fido is an:",
       "options": [
-        "25",
-        "1",
-        "10",
-        "It cannot be determined"
+        "Mammal",
+        "Animal",
+        "Pet",
+        "Canine"
       ],
-      "correct_answer": "1",
-      "explanation": "The pattern is that the number on the right is 5 times the number on the left. However, the question implies that 1 is equal to 5, meaning the statement '1=5' is the premise. Therefore, if 1=5, then 5 must equal 1.",
-      "trick": "Focus on the first statement as the defining rule."
+      "correct_answer": "Animal",
+      "explanation": "This is a classic syllogism. The statement 'all dogs are animals' means that anything that is a dog is also an animal. Since Fido is a dog, Fido must be an animal.",
+      "trick": "Deductive reasoning: If A implies B, and X is A, then X is B."
     },
     {
       "category": "Logical Reasoning",
-      "question": "A father and son are fishing. The son says, 'I didn't catch any fish, but my father caught 10 fish.' If the father is the son's father, who is the son?",
+      "question": "Look at this series: 3, 1, 4, 1, 5, 9, ... What number comes next?",
       "options": [
-        "The father's son",
-        "The father's nephew",
-        "The father's brother",
-        "The father's uncle"
+        "2",
+        "6",
+        "8",
+        "7"
       ],
-      "correct_answer": "The father's son",
-      "explanation": "The question states 'a father and son'. The son is speaking. Therefore, the son is the father's son.",
-      "trick": "Read carefully and identify the speaker."
+      "correct_answer": "2",
+      "explanation": "This series represents the digits of the mathematical constant Pi (π): 3.141592...",
+      "trick": "Recognize famous mathematical constants."
     },
     {
       "category": "Static GK",
-      "question": "Which is the largest continent in the world by area?",
+      "question": "Who was the first Prime Minister of India?",
       "options": [
-        "Africa",
-        "North America",
-        "Asia",
-        "Europe"
+        "Mahatma Gandhi",
+        "Sardar Vallabhbhai Patel",
+        "Jawaharlal Nehru",
+        "Rajendra Prasad"
       ],
-      "correct_answer": "Asia",
-      "explanation": "Asia is the largest continent, covering approximately 30% of the Earth's land area.",
-      "trick": "Think of vast countries like China and India; they are in Asia."
+      "correct_answer": "Jawaharlal Nehru",
+      "explanation": "Jawaharlal Nehru became the first Prime Minister of India on 15 August 1947.",
+      "trick": "General historical knowledge about India's independence."
     },
     {
       "category": "Static GK",
-      "question": "Who invented the telephone?",
+      "question": "Which is the longest river in the world?",
       "options": [
-        "Thomas Edison",
-        "Alexander Graham Bell",
-        "Nikola Tesla",
-        "Isaac Newton"
+        "Amazon River",
+        "Nile River",
+        "Yangtze River",
+        "Mississippi River"
       ],
-      "correct_answer": "Alexander Graham Bell",
-      "explanation": "Alexander Graham Bell is credited with inventing the first practical telephone.",
-      "trick": "Bell rings, like a phone."
+      "correct_answer": "Nile River",
+      "explanation": "The Nile River is traditionally considered the longest river in the world, flowing northwards through northeastern Africa.",
+      "trick": "Memorize major geographical features."
     },
     {
       "category": "Static GK",
@@ -144,102 +144,102 @@
         "Kyoto",
         "Osaka",
         "Tokyo",
-        "Hiroshima"
+        "Seoul"
       ],
       "correct_answer": "Tokyo",
       "explanation": "Tokyo is the capital and largest city of Japan.",
-      "trick": "Think of the iconic Tokyo Tower."
+      "trick": "Basic world capitals knowledge."
     },
     {
       "category": "Static GK",
-      "question": "Which planet is known as the Red Planet?",
+      "question": "Which gas do plants absorb from the atmosphere for photosynthesis?",
       "options": [
-        "Earth",
-        "Jupiter",
-        "Mars",
-        "Venus"
+        "Oxygen",
+        "Nitrogen",
+        "Carbon Dioxide",
+        "Hydrogen"
       ],
-      "correct_answer": "Mars",
-      "explanation": "Mars is called the Red Planet due to the iron oxide prevalent on its surface, giving it a reddish appearance.",
-      "trick": "The color of Mars is the clue."
+      "correct_answer": "Carbon Dioxide",
+      "explanation": "Plants use carbon dioxide from the atmosphere, water from the soil, and sunlight to create their own food (glucose) through photosynthesis.",
+      "trick": "Basic science concept of plant respiration."
     },
     {
       "category": "Current Affairs",
       "question": "Which country recently hosted the G7 Summit in June 2024?",
       "options": [
-        "Japan",
+        "France",
         "Italy",
         "Germany",
-        "Canada"
+        "Japan"
       ],
       "correct_answer": "Italy",
       "explanation": "The G7 Summit in June 2024 was held in Puglia, Italy.",
-      "trick": "Think of recent major international events and their locations."
+      "trick": "Follow major international summits and their locations."
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the men's singles title at the French Open tennis tournament in 2024?",
+      "question": "Who won the Men's Singles title at Wimbledon 2024?",
       "options": [
         "Novak Djokovic",
         "Carlos Alcaraz",
-        "Alexander Zverev",
+        "Roger Federer",
         "Rafael Nadal"
       ],
       "correct_answer": "Carlos Alcaraz",
-      "explanation": "Carlos Alcaraz won the men's singles title at the 2024 French Open.",
-      "trick": "Keep track of major sports tournament winners."
+      "explanation": "Carlos Alcaraz won the Men's Singles title at Wimbledon 2024.",
+      "trick": "Keep track of major sporting event winners."
     },
     {
       "category": "Current Affairs",
-      "question": "What is the name of the new AI model developed by Google announced in early 2024?",
+      "question": "What is the name of the Indian Space Research Organisation's (ISRO) upcoming mission to the Moon?",
       "options": [
-        "GPT-4",
-        "Gemini",
-        "Claude 3",
-        "Llama 3"
+        "Chandrayaan-4",
+        "Chandrayaan-5",
+        "Chandrayaan-3",
+        "Lunar Orbiter Mission"
       ],
-      "correct_answer": "Gemini",
-      "explanation": "Google announced and began rolling out its Gemini family of AI models in late 2023 and early 2024.",
-      "trick": "Follow major tech company announcements regarding AI."
+      "correct_answer": "Chandrayaan-4",
+      "explanation": "ISRO has announced plans for Chandrayaan-4, a follow-up mission to Chandrayaan-3.",
+      "trick": "Stay updated on significant space exploration programs."
     },
     {
       "category": "Current Affairs",
-      "question": "Which Indian state recently launched the 'Mahatari Vandan Yojana' for women?",
+      "question": "Which Indian state recently launched the 'Mukhyamantri Yuva Kaushal Yojana' to boost youth employment?",
       "options": [
         "Uttar Pradesh",
         "Rajasthan",
-        "Chhattisgarh",
-        "Madhya Pradesh"
+        "Madhya Pradesh",
+        "Bihar"
       ],
-      "correct_answer": "Chhattisgarh",
-      "explanation": "The 'Mahatari Vandan Yojana' was launched by the Chhattisgarh government in early 2024.",
-      "trick": "Be aware of significant government schemes in key Indian states."
+      "correct_answer": "Rajasthan",
+      "explanation": "Rajasthan launched the Mukhyamantri Yuva Kaushal Yojana in early 2024.",
+      "trick": "Monitor new government schemes and initiatives in India."
     },
     {
       "category": "Current Affairs",
-      "question": "What major sporting event is scheduled to take place in Paris in July-August 2024?",
+      "question": "Who was appointed as the new Director-General of the World Health Organization (WHO) in mid-2024?",
+      "options": [
+        "Tedros Adhanom Ghebreyesus",
+        "Margaret Chan",
+        "Gro Harlem Brundtland",
+        "A new appointment was not made in mid-2024"
+      ],
+      "correct_answer": "A new appointment was not made in mid-2024",
+      "explanation": "Tedros Adhanom Ghebreyesus was re-elected as the Director-General of the WHO in May 2022 for a second five-year term, and his current term extends beyond mid-2024.",
+      "trick": "Verify information about leadership changes in major international organizations."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "What major global sporting event is scheduled to take place in Paris in July-August 2024?",
       "options": [
         "FIFA World Cup",
-        "UEFA European Championship",
+        "Rugby World Cup",
         "Olympic Games",
         "Commonwealth Games"
       ],
       "correct_answer": "Olympic Games",
-      "explanation": "Paris is hosting the Summer Olympic Games in 2024.",
-      "trick": "Major global events are usually widely publicized."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which space agency successfully landed its Chandrayaan-3 mission on the Moon in August 2023?",
-      "options": [
-        "NASA",
-        "ESA",
-        "ISRO",
-        "Roscosmos"
-      ],
-      "correct_answer": "ISRO",
-      "explanation": "The Indian Space Research Organisation (ISRO) successfully landed Chandrayaan-3 near the lunar south pole.",
-      "trick": "This was a landmark achievement for India's space program."
+      "explanation": "The Summer Olympic Games are scheduled to be held in Paris, France, from July 26 to August 11, 2024.",
+      "trick": "Be aware of upcoming major international sporting events."
     }
   ]
 }
