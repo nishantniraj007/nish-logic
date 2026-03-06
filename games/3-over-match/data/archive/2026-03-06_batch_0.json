@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "batch_index": 0,
+    "day_index": 1,
+    "slot_index": 10,
+    "difficulty": "Easy",
+    "generated_at": "2026-03-06T05:01:35.729Z"
+  },
+  "questions": [
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a train travels at 60 km/hr, how long will it take to travel 180 km?",
+      "options": [
+        "2 hours",
+        "3 hours",
+        "4 hours",
+        "5 hours"
+      ],
+      "correct_answer": "3 hours",
+      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hr = 3 hours.",
+      "trick": "Think of it as: 60 km in 1 hour, 120 km in 2 hours, 180 km in 3 hours."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is 25% of 200?",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "correct_answer": "50",
+      "explanation": "25% can be written as 25/100 or 1/4.  So, (1/4) * 200 = 50.",
+      "trick": "25% is one-fourth. One-fourth of 200 is 50."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If the side of a square is 5 cm, what is its area?",
+      "options": [
+        "10 sq cm",
+        "20 sq cm",
+        "25 sq cm",
+        "30 sq cm"
+      ],
+      "correct_answer": "25 sq cm",
+      "explanation": "The area of a square is side * side. So, Area = 5 cm * 5 cm = 25 sq cm.",
+      "trick": "Square the number for the side length."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the sum of the first 5 natural numbers (1, 2, 3, 4, 5)?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "20"
+      ],
+      "correct_answer": "15",
+      "explanation": "1 + 2 + 3 + 4 + 5 = 15.",
+      "trick": "Pair the first and last (1+5=6), second and second-to-last (2+4=6), and the middle number (3). 6+6+3 = 15. Or use the formula n(n+1)/2 for n=5."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If CAT is coded as 3120, how is DOG coded?",
+      "options": [
+        "4157",
+        "4158",
+        "4167",
+        "4168"
+      ],
+      "correct_answer": "4157",
+      "explanation": "Each letter is replaced by its position in the alphabet. C=3, A=1, T=20. For DOG: D=4, O=15, G=7. So, DOG is 4157.",
+      "trick": "Find the alphabetical position of each letter."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Which is the odd one out?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
+      "trick": "Categorize the items and find the one that doesn't fit the category."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 1 = 5, 2 = 10, 3 = 15, 4 = 20, then 5 = ?",
+      "options": [
+        "25",
+        "1",
+        "10",
+        "It cannot be determined"
+      ],
+      "correct_answer": "1",
+      "explanation": "The pattern is that the number on the right is 5 times the number on the left. However, the question implies that 1 is equal to 5, meaning the statement '1=5' is the premise. Therefore, if 1=5, then 5 must equal 1.",
+      "trick": "Focus on the first statement as the defining rule."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "A father and son are fishing. The son says, 'I didn't catch any fish, but my father caught 10 fish.' If the father is the son's father, who is the son?",
+      "options": [
+        "The father's son",
+        "The father's nephew",
+        "The father's brother",
+        "The father's uncle"
+      ],
+      "correct_answer": "The father's son",
+      "explanation": "The question states 'a father and son'. The son is speaking. Therefore, the son is the father's son.",
+      "trick": "Read carefully and identify the speaker."
+    },
+    {
+      "category": "Static GK",
+      "question": "Which is the largest continent in the world by area?",
+      "options": [
+        "Africa",
+        "North America",
+        "Asia",
+        "Europe"
+      ],
+      "correct_answer": "Asia",
+      "explanation": "Asia is the largest continent, covering approximately 30% of the Earth's land area.",
+      "trick": "Think of vast countries like China and India; they are in Asia."
+    },
+    {
+      "category": "Static GK",
+      "question": "Who invented the telephone?",
+      "options": [
+        "Thomas Edison",
+        "Alexander Graham Bell",
+        "Nikola Tesla",
+        "Isaac Newton"
+      ],
+      "correct_answer": "Alexander Graham Bell",
+      "explanation": "Alexander Graham Bell is credited with inventing the first practical telephone.",
+      "trick": "Bell rings, like a phone."
+    },
+    {
+      "category": "Static GK",
+      "question": "What is the capital of Japan?",
+      "options": [
+        "Kyoto",
+        "Osaka",
+        "Tokyo",
+        "Hiroshima"
+      ],
+      "correct_answer": "Tokyo",
+      "explanation": "Tokyo is the capital and largest city of Japan.",
+      "trick": "Think of the iconic Tokyo Tower."
+    },
+    {
+      "category": "Static GK",
+      "question": "Which planet is known as the Red Planet?",
+      "options": [
+        "Earth",
+        "Jupiter",
+        "Mars",
+        "Venus"
+      ],
+      "correct_answer": "Mars",
+      "explanation": "Mars is called the Red Planet due to the iron oxide prevalent on its surface, giving it a reddish appearance.",
+      "trick": "The color of Mars is the clue."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which country recently hosted the G7 Summit in June 2024?",
+      "options": [
+        "Japan",
+        "Italy",
+        "Germany",
+        "Canada"
+      ],
+      "correct_answer": "Italy",
+      "explanation": "The G7 Summit in June 2024 was held in Puglia, Italy.",
+      "trick": "Think of recent major international events and their locations."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who won the men's singles title at the French Open tennis tournament in 2024?",
+      "options": [
+        "Novak Djokovic",
+        "Carlos Alcaraz",
+        "Alexander Zverev",
+        "Rafael Nadal"
+      ],
+      "correct_answer": "Carlos Alcaraz",
+      "explanation": "Carlos Alcaraz won the men's singles title at the 2024 French Open.",
+      "trick": "Keep track of major sports tournament winners."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "What is the name of the new AI model developed by Google announced in early 2024?",
+      "options": [
+        "GPT-4",
+        "Gemini",
+        "Claude 3",
+        "Llama 3"
+      ],
+      "correct_answer": "Gemini",
+      "explanation": "Google announced and began rolling out its Gemini family of AI models in late 2023 and early 2024.",
+      "trick": "Follow major tech company announcements regarding AI."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which Indian state recently launched the 'Mahatari Vandan Yojana' for women?",
+      "options": [
+        "Uttar Pradesh",
+        "Rajasthan",
+        "Chhattisgarh",
+        "Madhya Pradesh"
+      ],
+      "correct_answer": "Chhattisgarh",
+      "explanation": "The 'Mahatari Vandan Yojana' was launched by the Chhattisgarh government in early 2024.",
+      "trick": "Be aware of significant government schemes in key Indian states."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "What major sporting event is scheduled to take place in Paris in July-August 2024?",
+      "options": [
+        "FIFA World Cup",
+        "UEFA European Championship",
+        "Olympic Games",
+        "Commonwealth Games"
+      ],
+      "correct_answer": "Olympic Games",
+      "explanation": "Paris is hosting the Summer Olympic Games in 2024.",
+      "trick": "Major global events are usually widely publicized."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which space agency successfully landed its Chandrayaan-3 mission on the Moon in August 2023?",
+      "options": [
+        "NASA",
+        "ESA",
+        "ISRO",
+        "Roscosmos"
+      ],
+      "correct_answer": "ISRO",
+      "explanation": "The Indian Space Research Organisation (ISRO) successfully landed Chandrayaan-3 near the lunar south pole.",
+      "trick": "This was a landmark achievement for India's space program."
+    }
+  ]
+}
