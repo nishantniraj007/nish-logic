@@ -49,8 +49,8 @@ async function startGame() {
     const diff = document.querySelector('input[name="difficulty"]:checked').value;
 
     let batchRange = [0, 0];
-    if (diff === 'easy') batchRange = [0, 1];
-    else if (diff === 'medium') batchRange = [2, 4];
+    if (diff === 'medium') batchRange = [0, 2];
+    else if (diff === 'easy') batchRange = [3, 4];
     else if (diff === 'ssc') batchRange = [5, 7];
     else if (diff === 'upsc') batchRange = [8, 9];
 

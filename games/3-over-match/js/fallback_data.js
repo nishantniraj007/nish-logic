@@ -2,131 +2,118 @@ const fallbackData = {
   "easy": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If an article is priced at Rs. 200 and a 35% discount is applied, what is the discount amount?",
+      "question": "Question 1: If an article is priced at Rs. 360 and a 35% discount is applied, what is the discount amount?",
       "options": [
-        "75",
-        "85",
-        "70",
-        "65"
+        "126",
+        "131",
+        "121",
+        "141"
       ],
-      "correct_answer": "70",
-      "explanation": "Discount = 35% of 200 = (35/100) * 200 = 70",
+      "correct_answer": "126",
+      "explanation": "Discount = 35% of 360 = (35/100) * 360 = 126",
       "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an article is priced at Rs. 240 and a 45% discount is applied, what is the discount amount?",
+      "question": "Question 2: If an article is priced at Rs. 310 and a 25% discount is applied, what is the discount amount?",
       "options": [
-        "108",
-        "103",
-        "113",
-        "123"
+        "82",
+        "72",
+        "92",
+        "77"
       ],
-      "correct_answer": "108",
-      "explanation": "Discount = 45% of 240 = (45/100) * 240 = 108",
+      "correct_answer": "77",
+      "explanation": "Discount = 25% of 310 = (25/100) * 310 = 77",
       "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an article is priced at Rs. 460 and a 35% discount is applied, what is the discount amount?",
+      "question": "Question 3: If an article is priced at Rs. 390 and a 25% discount is applied, what is the discount amount?",
       "options": [
-        "166",
-        "156",
-        "161",
-        "176"
+        "112",
+        "102",
+        "97",
+        "92"
       ],
-      "correct_answer": "161",
-      "explanation": "Discount = 35% of 460 = (35/100) * 460 = 161",
+      "correct_answer": "97",
+      "explanation": "Discount = 25% of 390 = (25/100) * 390 = 97",
       "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If an article is priced at Rs. 320 and a 45% discount is applied, what is the discount amount?",
+      "question": "Question 4: If an article is priced at Rs. 380 and a 25% discount is applied, what is the discount amount?",
       "options": [
-        "144",
-        "139",
-        "149",
-        "159"
+        "90",
+        "100",
+        "110",
+        "95"
       ],
-      "correct_answer": "144",
-      "explanation": "Discount = 45% of 320 = (45/100) * 320 = 144",
+      "correct_answer": "95",
+      "explanation": "Discount = 25% of 380 = (25/100) * 380 = 95",
       "trick": "Calculate 10% first, then scale it up."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If A implies B, and B implies C, does A imply C?",
+      "question": "If all blips are blops, and all blops are blaps, are all blips blaps?",
       "options": [
         "Yes",
         "No",
-        "Only if C implies A",
-        "Cannot be determined"
+        "Maybe",
+        "Never"
       ],
       "correct_answer": "Yes",
-      "explanation": "Transitive property of logic (Syllogism).",
-      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
+      "explanation": "Basic Syllogism",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "If A implies B, and B implies C, does A imply C?",
+      "question": "Which letter comes next? A, C, E, G, ...",
       "options": [
-        "Yes",
-        "No",
-        "Only if C implies A",
-        "Cannot be determined"
+        "H",
+        "I",
+        "J",
+        "K"
       ],
-      "correct_answer": "Yes",
-      "explanation": "Transitive property of logic (Syllogism).",
-      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
+      "correct_answer": "I",
+      "explanation": "Skip one letter",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "If A implies B, and B implies C, does A imply C?",
+      "question": "If a cat is an animal, is an animal always a cat?",
       "options": [
         "Yes",
         "No",
-        "Only if C implies A",
-        "Cannot be determined"
+        "Maybe",
+        "Always"
       ],
-      "correct_answer": "Yes",
-      "explanation": "Transitive property of logic (Syllogism).",
-      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
+      "correct_answer": "No",
+      "explanation": "Subset logic",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "If A implies B, and B implies C, does A imply C?",
+      "question": "Does a triangle have 4 sides?",
       "options": [
         "Yes",
         "No",
-        "Only if C implies A",
-        "Cannot be determined"
+        "Maybe",
+        "Sometimes"
       ],
-      "correct_answer": "Yes",
-      "explanation": "Transitive property of logic (Syllogism).",
-      "trick": "Draw a Venn diagram or arrow chart (A -> B -> C)."
+      "correct_answer": "No",
+      "explanation": "Geometry logic",
+      "trick": "Analyze pattern"
     },
     {
       "category": "General Knowledge",
-      "question": "What is the SI unit of Force?",
+      "question": "Which gas is most abundant in the Earth's atmosphere?",
       "options": [
-        "Joule",
-        "Watt",
-        "Newton",
-        "Pascal"
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
       ],
-      "correct_answer": "Newton",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "General Knowledge",
-      "question": "Which is the longest river in the world?",
-      "options": [
-        "Amazon",
-        "Nile",
-        "Mississippi",
-        "Yangtze"
-      ],
-      "correct_answer": "Nile",
+      "correct_answer": "Nitrogen",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
@@ -145,6 +132,58 @@ const fallbackData = {
     },
     {
       "category": "General Knowledge",
+      "question": "Which is the longest river in the world?",
+      "options": [
+        "Amazon",
+        "Nile",
+        "Mississippi",
+        "Yangtze"
+      ],
+      "correct_answer": "Nile",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "General Knowledge",
+      "question": "What is the pH of pure water?",
+      "options": [
+        "7",
+        "6",
+        "8",
+        "1"
+      ],
+      "correct_answer": "7",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "What is the SI unit of Force?",
+      "options": [
+        "Joule",
+        "Watt",
+        "Newton",
+        "Pascal"
+      ],
+      "correct_answer": "Newton",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "How many bones are there in the adult human body?",
+      "options": [
+        "206",
+        "208",
+        "201",
+        "210"
+      ],
+      "correct_answer": "206",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
       "question": "Who invented the light bulb?",
       "options": [
         "Nikola Tesla",
@@ -171,40 +210,14 @@ const fallbackData = {
     },
     {
       "category": "Current Affairs",
-      "question": "How many bones are there in the adult human body?",
+      "question": "Which state has the largest coastal line in India?",
       "options": [
-        "206",
-        "208",
-        "201",
-        "210"
+        "Gujarat",
+        "Tamil Nadu",
+        "Maharashtra",
+        "Kerala"
       ],
-      "correct_answer": "206",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "What is the pH of pure water?",
-      "options": [
-        "7",
-        "6",
-        "8",
-        "1"
-      ],
-      "correct_answer": "7",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which gas is most abundant in the Earth's atmosphere?",
-      "options": [
-        "Oxygen",
-        "Carbon Dioxide",
-        "Nitrogen",
-        "Hydrogen"
-      ],
-      "correct_answer": "Nitrogen",
+      "correct_answer": "Gujarat",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
@@ -220,136 +233,149 @@ const fallbackData = {
       "correct_answer": "Ved Vyasa",
       "explanation": "Standard knowledge application.",
       "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which state has the largest coastal line in India?",
-      "options": [
-        "Gujarat",
-        "Tamil Nadu",
-        "Maharashtra",
-        "Kerala"
-      ],
-      "correct_answer": "Gujarat",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
     }
   ],
   "medium": [
     {
       "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 15 days and B can do it in 24 days. How long will they take if they work together?",
+      "question": "Question 1: A can do a piece of work in 15 days and B can do it in 30 days. How long will they take if they work together?",
       "options": [
-        "8.23 days",
-        "10.73 days",
-        "11.23 days",
-        "9.23 days"
+        "11.5 days",
+        "10 days",
+        "9.0 days",
+        "12.0 days"
       ],
-      "correct_answer": "9.23 days",
-      "explanation": "A's 1 day work = 1/15. B's = 1/24. Together = 1/15 + 1/24. Total time = 9.23 days",
+      "correct_answer": "10 days",
+      "explanation": "A's 1 day work = 1/15. B's = 1/30. Together = 1/15 + 1/30. Total time = 10 days",
       "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 10 days and B can do it in 24 days. How long will they take if they work together?",
+      "question": "Question 2: A can do a piece of work in 12 days and B can do it in 22 days. How long will they take if they work together?",
       "options": [
-        "9.059999999999999 days",
-        "8.559999999999999 days",
-        "7.06 days",
-        "6.06 days"
+        "9.26 days",
+        "9.76 days",
+        "6.76 days",
+        "7.76 days"
       ],
-      "correct_answer": "7.06 days",
-      "explanation": "A's 1 day work = 1/10. B's = 1/24. Together = 1/10 + 1/24. Total time = 7.06 days",
+      "correct_answer": "7.76 days",
+      "explanation": "A's 1 day work = 1/12. B's = 1/22. Together = 1/12 + 1/22. Total time = 7.76 days",
       "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 12 days and B can do it in 24 days. How long will they take if they work together?",
+      "question": "Question 3: A can do a piece of work in 19 days and B can do it in 28 days. How long will they take if they work together?",
       "options": [
-        "10.0 days",
-        "9.5 days",
-        "7.0 days",
-        "8 days"
+        "11.32 days",
+        "13.32 days",
+        "12.82 days",
+        "10.32 days"
       ],
-      "correct_answer": "8 days",
-      "explanation": "A's 1 day work = 1/12. B's = 1/24. Together = 1/12 + 1/24. Total time = 8 days",
+      "correct_answer": "11.32 days",
+      "explanation": "A's 1 day work = 1/19. B's = 1/28. Together = 1/19 + 1/28. Total time = 11.32 days",
       "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 15 days and B can do it in 20 days. How long will they take if they work together?",
+      "question": "Question 4: A can do a piece of work in 21 days and B can do it in 36 days. How long will they take if they work together?",
       "options": [
-        "10.57 days",
-        "8.57 days",
-        "7.57 days",
-        "10.07 days"
+        "15.26 days",
+        "14.76 days",
+        "12.26 days",
+        "13.26 days"
       ],
-      "correct_answer": "8.57 days",
-      "explanation": "A's 1 day work = 1/15. B's = 1/20. Together = 1/15 + 1/20. Total time = 8.57 days",
+      "correct_answer": "13.26 days",
+      "explanation": "A's 1 day work = 1/21. B's = 1/36. Together = 1/21 + 1/36. Total time = 13.26 days",
       "trick": "Formula: (A * B) / (A + B)"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+      "question": "Pointing to a photograph, a man said, 'I have no brothers or sisters but that man's father is my father's son.' Whose photograph was it?",
       "options": [
         "His son's",
-        "His own",
         "His father's",
-        "His grandson's"
+        "His grandson's",
+        "His own"
       ],
       "correct_answer": "His son's",
-      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
-      "trick": "Work backwards from 'my father's son'."
+      "explanation": "Work backwards from 'my father's son'",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+      "question": "If A is B's sister, and C is B's mother, and D is C's father. How is A related to D?",
       "options": [
-        "His son's",
-        "His own",
-        "His father's",
-        "His grandson's"
+        "Granddaughter",
+        "Daughter",
+        "Niece",
+        "Cousin"
       ],
-      "correct_answer": "His son's",
-      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
-      "trick": "Work backwards from 'my father's son'."
+      "correct_answer": "Granddaughter",
+      "explanation": "Family tree trace",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+      "question": "If today is Monday, what day of the week will it be 65 days from now?",
       "options": [
-        "His son's",
-        "His own",
-        "His father's",
-        "His grandson's"
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
       ],
-      "correct_answer": "His son's",
-      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
-      "trick": "Work backwards from 'my father's son'."
+      "correct_answer": "Wednesday",
+      "explanation": "65 mod 7 = 2. Monday + 2 = Wednesday",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+      "question": "In a row of 20 kids, Ram is 5th from left. What is his position from right?",
       "options": [
-        "His son's",
-        "His own",
-        "His father's",
-        "His grandson's"
+        "15th",
+        "16th",
+        "14th",
+        "17th"
       ],
-      "correct_answer": "His son's",
-      "explanation": "Since the speaker has no siblings, 'my father's son' is the speaker himself. Thus, the man in the photograph's father is the speaker.",
-      "trick": "Work backwards from 'my father's son'."
+      "correct_answer": "16th",
+      "explanation": "Total - Left + 1",
+      "trick": "Analyze pattern"
     },
     {
       "category": "General Knowledge",
-      "question": "Who among the following was the first Viceroy of India?",
+      "question": "The Tropic of Cancer does NOT pass through which of the following Indian states?",
       "options": [
-        "Lord Canning",
-        "Lord Mountbatten",
-        "Lord Dalhousie",
-        "Lord Curzon"
+        "Rajasthan",
+        "Chhattisgarh",
+        "Odisha",
+        "Tripura"
       ],
-      "correct_answer": "Lord Canning",
+      "correct_answer": "Odisha",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "General Knowledge",
+      "question": "Which acid is present in ant sting?",
+      "options": [
+        "Formic acid",
+        "Acetic acid",
+        "Lactic acid",
+        "Citric acid"
+      ],
+      "correct_answer": "Formic acid",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "General Knowledge",
+      "question": "The battle of Plassey was fought in?",
+      "options": [
+        "1757",
+        "1764",
+        "1857",
+        "1761"
+      ],
+      "correct_answer": "1757",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
@@ -367,28 +393,28 @@ const fallbackData = {
       "trick": ""
     },
     {
-      "category": "General Knowledge",
-      "question": "In which year was the Reserve Bank of India established?",
+      "category": "Current Affairs",
+      "question": "The Harappan site 'Lothal' is located in which state?",
       "options": [
-        "1935",
-        "1947",
-        "1949",
-        "1950"
+        "Punjab",
+        "Rajasthan",
+        "Gujarat",
+        "Haryana"
       ],
-      "correct_answer": "1935",
+      "correct_answer": "Gujarat",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "General Knowledge",
-      "question": "The battle of Plassey was fought in?",
+      "category": "Current Affairs",
+      "question": "Who among the following was the first Viceroy of India?",
       "options": [
-        "1757",
-        "1764",
-        "1857",
-        "1761"
+        "Lord Canning",
+        "Lord Mountbatten",
+        "Lord Dalhousie",
+        "Lord Curzon"
       ],
-      "correct_answer": "1757",
+      "correct_answer": "Lord Canning",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
@@ -407,40 +433,14 @@ const fallbackData = {
     },
     {
       "category": "Current Affairs",
-      "question": "Which acid is present in ant sting?",
+      "question": "In which year was the Reserve Bank of India established?",
       "options": [
-        "Formic acid",
-        "Acetic acid",
-        "Lactic acid",
-        "Citric acid"
+        "1935",
+        "1947",
+        "1949",
+        "1950"
       ],
-      "correct_answer": "Formic acid",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The Tropic of Cancer does NOT pass through which of the following Indian states?",
-      "options": [
-        "Rajasthan",
-        "Chhattisgarh",
-        "Odisha",
-        "Tripura"
-      ],
-      "correct_answer": "Odisha",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The Harappan site 'Lothal' is located in which state?",
-      "options": [
-        "Punjab",
-        "Rajasthan",
-        "Gujarat",
-        "Haryana"
-      ],
-      "correct_answer": "Gujarat",
+      "correct_answer": "1935",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
@@ -474,59 +474,59 @@ const fallbackData = {
   "ssc": [
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 8000 for 2 years at 10% per annum?",
+      "question": "Question 1: What is the difference between Compound Interest and Simple Interest on Rs. 10000 for 2 years at 15% per annum?",
       "options": [
-        "Rs. 105",
-        "Rs. 70",
-        "Rs. 130",
-        "Rs. 80"
+        "Rs. 249",
+        "Rs. 214",
+        "Rs. 274",
+        "Rs. 224"
       ],
-      "correct_answer": "Rs. 80",
-      "explanation": "For 2 years, diff = P(R/100)^2. 8000 * (10/100)^2 = 80",
+      "correct_answer": "Rs. 224",
+      "explanation": "For 2 years, diff = P(R/100)^2. 10000 * (15/100)^2 = 224",
       "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 5000 for 2 years at 10% per annum?",
+      "question": "Question 2: What is the difference between Compound Interest and Simple Interest on Rs. 11000 for 2 years at 5% per annum?",
       "options": [
-        "Rs. 100",
-        "Rs. 40",
-        "Rs. 50",
-        "Rs. 75"
+        "Rs. 77",
+        "Rs. 17",
+        "Rs. 27",
+        "Rs. 52"
       ],
-      "correct_answer": "Rs. 50",
-      "explanation": "For 2 years, diff = P(R/100)^2. 5000 * (10/100)^2 = 50",
+      "correct_answer": "Rs. 27",
+      "explanation": "For 2 years, diff = P(R/100)^2. 11000 * (5/100)^2 = 27",
       "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 5000 for 2 years at 10% per annum?",
+      "question": "Question 3: What is the difference between Compound Interest and Simple Interest on Rs. 7000 for 2 years at 10% per annum?",
       "options": [
-        "Rs. 40",
-        "Rs. 100",
-        "Rs. 50",
-        "Rs. 75"
+        "Rs. 120",
+        "Rs. 95",
+        "Rs. 60",
+        "Rs. 70"
       ],
-      "correct_answer": "Rs. 50",
-      "explanation": "For 2 years, diff = P(R/100)^2. 5000 * (10/100)^2 = 50",
+      "correct_answer": "Rs. 70",
+      "explanation": "For 2 years, diff = P(R/100)^2. 7000 * (10/100)^2 = 70",
       "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the difference between Compound Interest and Simple Interest on Rs. 5000 for 2 years at 10% per annum?",
+      "question": "Question 4: What is the difference between Compound Interest and Simple Interest on Rs. 13000 for 2 years at 5% per annum?",
       "options": [
-        "Rs. 40",
-        "Rs. 50",
-        "Rs. 100",
-        "Rs. 75"
+        "Rs. 82",
+        "Rs. 22",
+        "Rs. 57",
+        "Rs. 32"
       ],
-      "correct_answer": "Rs. 50",
-      "explanation": "For 2 years, diff = P(R/100)^2. 5000 * (10/100)^2 = 50",
+      "correct_answer": "Rs. 32",
+      "explanation": "For 2 years, diff = P(R/100)^2. 13000 * (5/100)^2 = 32",
       "trick": "Remember the 2-year difference formula: P * (R/100)^2"
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
+      "question": "In a certain code, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code?",
       "options": [
         "EOJDJEFM",
         "EOJDEJFM",
@@ -534,73 +534,47 @@ const fallbackData = {
         "MFEDJJOE"
       ],
       "correct_answer": "EOJDJEFM",
-      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
-      "trick": "Always check for reversal + offset combinations first."
+      "explanation": "Reverse order and +1 offset",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
+      "question": "Find the odd one out: 27, 64, 125, 144",
       "options": [
-        "EOJDJEFM",
-        "EOJDEJFM",
-        "MFEJDJOE",
-        "MFEDJJOE"
+        "27",
+        "64",
+        "125",
+        "144"
       ],
-      "correct_answer": "EOJDJEFM",
-      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
-      "trick": "Always check for reversal + offset combinations first."
+      "correct_answer": "144",
+      "explanation": "144 is a square, others are cubes",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
+      "question": "If + means -, - means *, * means / and / means +, then 15 * 3 / 4 - 6 + 7 = ?",
       "options": [
-        "EOJDJEFM",
-        "EOJDEJFM",
-        "MFEJDJOE",
-        "MFEDJJOE"
+        "22",
+        "15",
+        "25",
+        "None of these"
       ],
-      "correct_answer": "EOJDJEFM",
-      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
-      "trick": "Always check for reversal + offset combinations first."
+      "correct_answer": "22",
+      "explanation": "Substitute signs and apply BODMAS",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that code language?",
+      "question": "Five boys are sitting in a circle. A is to the right of B, E is to the left of B, but to the right of C. If A is to the left of D, who is in the middle?",
       "options": [
-        "EOJDJEFM",
-        "EOJDEJFM",
-        "MFEJDJOE",
-        "MFEDJJOE"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correct_answer": "EOJDJEFM",
-      "explanation": "Write the word in reverse order and then add 1 to the middle letters while swapping the first and last.",
-      "trick": "Always check for reversal + offset combinations first."
-    },
-    {
-      "category": "General Knowledge",
-      "question": "Which instrument is used to measure humidity?",
-      "options": [
-        "Hydrometer",
-        "Hygrometer",
-        "Barometer",
-        "Anemometer"
-      ],
-      "correct_answer": "Hygrometer",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "General Knowledge",
-      "question": "Identify the incorrect pair of Governor-General and their policy:",
-      "options": [
-        "Dalhousie - Doctrine of Lapse",
-        "Wellesley - Subsidiary Alliance",
-        "Cornwallis - Permanent Settlement",
-        "William Bentinck - Local Self Government"
-      ],
-      "correct_answer": "William Bentinck - Local Self Government",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
+      "correct_answer": "B",
+      "explanation": "Draw the circular arrangement",
+      "trick": "Analyze pattern"
     },
     {
       "category": "General Knowledge",
@@ -617,45 +591,19 @@ const fallbackData = {
     },
     {
       "category": "General Knowledge",
-      "question": "Who was the court poet of Samudragupta?",
+      "question": "The enzyme 'Pepsin' is secreted by which organ?",
       "options": [
-        "Harishena",
-        "Banabhatta",
-        "Kalidasa",
-        "Chand Bardai"
+        "Stomach",
+        "Pancreas",
+        "Liver",
+        "Salivary glands"
       ],
-      "correct_answer": "Harishena",
+      "correct_answer": "Stomach",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
     {
-      "category": "Current Affairs",
-      "question": "The 'Riyadh Declaration' is associated with which international grouping?",
-      "options": [
-        "BRICS",
-        "G20",
-        "ASEAN",
-        "OPEC"
-      ],
-      "correct_answer": "G20",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Where is the headquarters of the World Trade Organization (WTO)?",
-      "options": [
-        "Geneva",
-        "Paris",
-        "New York",
-        "Washington DC"
-      ],
-      "correct_answer": "Geneva",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
+      "category": "General Knowledge",
       "question": "What is the minimum age required to become a member of the Rajya Sabha?",
       "options": [
         "21 years",
@@ -664,6 +612,19 @@ const fallbackData = {
         "35 years"
       ],
       "correct_answer": "30 years",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "General Knowledge",
+      "question": "Which instrument is used to measure humidity?",
+      "options": [
+        "Hydrometer",
+        "Hygrometer",
+        "Barometer",
+        "Anemometer"
+      ],
+      "correct_answer": "Hygrometer",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
@@ -695,14 +656,53 @@ const fallbackData = {
     },
     {
       "category": "Current Affairs",
-      "question": "The enzyme 'Pepsin' is secreted by which organ?",
+      "question": "Where is the headquarters of the World Trade Organization (WTO)?",
       "options": [
-        "Stomach",
-        "Pancreas",
-        "Liver",
-        "Salivary glands"
+        "Geneva",
+        "Paris",
+        "New York",
+        "Washington DC"
       ],
-      "correct_answer": "Stomach",
+      "correct_answer": "Geneva",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who was the court poet of Samudragupta?",
+      "options": [
+        "Harishena",
+        "Banabhatta",
+        "Kalidasa",
+        "Chand Bardai"
+      ],
+      "correct_answer": "Harishena",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "The 'Riyadh Declaration' is associated with which international grouping?",
+      "options": [
+        "BRICS",
+        "G20",
+        "ASEAN",
+        "OPEC"
+      ],
+      "correct_answer": "G20",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Identify the incorrect pair of Governor-General and their policy:",
+      "options": [
+        "Dalhousie - Doctrine of Lapse",
+        "Wellesley - Subsidiary Alliance",
+        "Cornwallis - Permanent Settlement",
+        "William Bentinck - Local Self Government"
+      ],
+      "correct_answer": "William Bentinck - Local Self Government",
       "explanation": "Standard knowledge application.",
       "trick": ""
     }
@@ -710,51 +710,51 @@ const fallbackData = {
   "upsc": [
     {
       "category": "Quantitative Aptitude",
-      "question": "A bag contains 4 red and 16 blue balls. Two balls are drawn at random. What is the probability they are both red?",
+      "question": "Question 1: A bag contains 4 red and 9 blue balls. Two balls are drawn at random sequentially without replacement. What is the probability that they are both red?",
       "options": [
-        "4/95",
-        "98/95",
-        "3/94",
-        "3/95"
+        "1/13",
+        "2/13",
+        "1/12",
+        "3/13"
       ],
-      "correct_answer": "3/95",
-      "explanation": "P(Both Red) = (4C2) / (20C2) = 3/95",
+      "correct_answer": "1/13",
+      "explanation": "P(Both Red) = (4C2) / (13C2) = 1/13",
       "trick": "Successive multiplication: (R/Total) * ((R-1)/(Total-1))"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A bag contains 4 red and 16 blue balls. Two balls are drawn at random. What is the probability they are both red?",
+      "question": "Question 2: A bag contains 6 red and 15 blue balls. Two balls are drawn at random sequentially without replacement. What is the probability that they are both red?",
       "options": [
-        "4/95",
-        "98/95",
-        "3/94",
-        "3/95"
+        "1/13",
+        "1/14",
+        "2/14",
+        "3/14"
       ],
-      "correct_answer": "3/95",
-      "explanation": "P(Both Red) = (4C2) / (20C2) = 3/95",
+      "correct_answer": "1/14",
+      "explanation": "P(Both Red) = (6C2) / (21C2) = 1/14",
       "trick": "Successive multiplication: (R/Total) * ((R-1)/(Total-1))"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A bag contains 7 red and 12 blue balls. Two balls are drawn at random. What is the probability they are both red?",
+      "question": "Question 3: A bag contains 6 red and 14 blue balls. Two balls are drawn at random sequentially without replacement. What is the probability that they are both red?",
       "options": [
-        "64/57",
-        "8/57",
-        "7/57",
-        "7/56"
+        "5/38",
+        "4/38",
+        "3/37",
+        "3/38"
       ],
-      "correct_answer": "7/57",
-      "explanation": "P(Both Red) = (7C2) / (19C2) = 7/57",
+      "correct_answer": "3/38",
+      "explanation": "P(Both Red) = (6C2) / (20C2) = 3/38",
       "trick": "Successive multiplication: (R/Total) * ((R-1)/(Total-1))"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A bag contains 4 red and 13 blue balls. Two balls are drawn at random. What is the probability they are both red?",
+      "question": "Question 4: A bag contains 4 red and 13 blue balls. Two balls are drawn at random sequentially without replacement. What is the probability that they are both red?",
       "options": [
         "3/68",
-        "71/68",
-        "3/67",
-        "4/68"
+        "4/68",
+        "5/68",
+        "3/67"
       ],
       "correct_answer": "3/68",
       "explanation": "P(Both Red) = (4C2) / (17C2) = 3/68",
@@ -762,136 +762,58 @@ const fallbackData = {
     },
     {
       "category": "Logical Reasoning",
-      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
+      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second left of C. B is between D and E. F is not adjacent to A or C. Who is immediate right of F?",
       "options": [
+        "A",
         "B",
-        "D",
         "E",
-        "Cannot be determined"
+        "Data Inadequate"
       ],
-      "correct_answer": "Cannot be determined",
-      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
-      "trick": "Do not assume orientations if 'between' is used without directional specs."
+      "correct_answer": "Data Inadequate",
+      "explanation": "Exact positions of D and E relative to B are not fixed",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
+      "question": "Statement: All cats are dogs. Some dogs are birds. Conclusion 1: Some cats are birds. Conclusion 2: Some birds are dogs.",
       "options": [
-        "B",
-        "D",
-        "E",
-        "Cannot be determined"
+        "Only 1 follows",
+        "Only 2 follows",
+        "Both follow",
+        "Neither follows"
       ],
-      "correct_answer": "Cannot be determined",
-      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
-      "trick": "Do not assume orientations if 'between' is used without directional specs."
+      "correct_answer": "Only 2 follows",
+      "explanation": "Venn diagram overlap",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
+      "question": "Six distinct tasks must be completed in order. Task 3 must happen before Task 5 but after Task 1. How many valid orderings exist?",
       "options": [
-        "B",
-        "D",
-        "E",
-        "Cannot be determined"
+        "120",
+        "60",
+        "20",
+        "None of these"
       ],
-      "correct_answer": "Cannot be determined",
-      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
-      "trick": "Do not assume orientations if 'between' is used without directional specs."
+      "correct_answer": "120",
+      "explanation": "Combinatorics and constraints",
+      "trick": "Analyze pattern"
     },
     {
       "category": "Logical Reasoning",
-      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. A is second to the left of C. B is between D and E. F is not adjacent to A or C. Who is sitting to the immediate right of F?",
+      "question": "If a clock shows 3:15, what is the angle between the hour and minute hands?",
       "options": [
-        "B",
-        "D",
-        "E",
-        "Cannot be determined"
+        "0 degrees",
+        "7.5 degrees",
+        "15 degrees",
+        "22.5 degrees"
       ],
-      "correct_answer": "Cannot be determined",
-      "explanation": "Because the exact positions of D and E relative to B are not fixed (could be D-B-E or E-B-D), the immediate right of F cannot be definitively established.",
-      "trick": "Do not assume orientations if 'between' is used without directional specs."
+      "correct_answer": "7.5 degrees",
+      "explanation": "Angle = |30H - 5.5M|",
+      "trick": "Analyze pattern"
     },
     {
       "category": "General Knowledge",
-      "question": "Consider the following statements regarding the 'Basic Structure' doctrine: 1. It was established in the Kesavananda Bharati case. 2. It restricts Parliament's power under Article 368. Which is correct?",
-      "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
-      ],
-      "correct_answer": "Both 1 and 2",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "General Knowledge",
-      "question": "With reference to the core of the Earth, which statement is true?",
-      "options": [
-        "The outer core is solid and inner core is liquid",
-        "The outer core is liquid and inner core is solid",
-        "Both are solid",
-        "Both are liquid"
-      ],
-      "correct_answer": "The outer core is liquid and inner core is solid",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "General Knowledge",
-      "question": "In the context of Indian History, the 'Rakhmabai case' of 1884 revolved around:",
-      "options": [
-        "Age of consent",
-        "Restitution of conjugal rights",
-        "Widow remarriage",
-        "Abolition of Sati"
-      ],
-      "correct_answer": "Restitution of conjugal rights",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "General Knowledge",
-      "question": "The term 'Base Erosion and Profit Shifting (BEPS)' is often seen in the news in the context of:",
-      "options": [
-        "Mining of resources by MNCs",
-        "Tax evasion by multinational companies",
-        "Deforestation due to rapid industrialization",
-        "Shift of indigenous populations"
-      ],
-      "correct_answer": "Tax evasion by multinational companies",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "In ecology, 'Ecotone' is defined as:",
-      "options": [
-        "A fragile ecosystem highly vulnerable to climate change",
-        "A zone of transition between two independent ecosystems",
-        "An ecosystem entirely created by human intervention",
-        "A deeply isolated ecosystem with endemic species"
-      ],
-      "correct_answer": "A zone of transition between two independent ecosystems",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Regarding the 'National Green Tribunal (NGT)', which is correct? 1. It is bound by the Code of Civil Procedure. 2. It is guided by principles of natural justice.",
-      "options": [
-        "1 only",
-        "2 only",
-        "Both",
-        "Neither"
-      ],
-      "correct_answer": "2 only",
-      "explanation": "Standard knowledge application.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
       "question": "Which of the following is NOT an 'Intangible Cultural Heritage' recognized by UNESCO from India?",
       "options": [
         "Kumbh Mela",
@@ -905,15 +827,41 @@ const fallbackData = {
       "trick": ""
     },
     {
-      "category": "Current Affairs",
-      "question": "With reference to 'Monetary Policy Committee (MPC)', consider the following: 1. It decides the RBI's benchmark interest rates. 2. It is a 12-member body. Which is correct?",
+      "category": "General Knowledge",
+      "question": "In ecology, 'Ecotone' is defined as:",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither"
+        "A fragile ecosystem highly vulnerable to climate change",
+        "A zone of transition between two independent ecosystems",
+        "An ecosystem entirely created by human intervention",
+        "A deeply isolated ecosystem with endemic species"
       ],
-      "correct_answer": "1 only",
+      "correct_answer": "A zone of transition between two independent ecosystems",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "General Knowledge",
+      "question": "What is the primary objective of the 'Insolvency and Bankruptcy Code (IBC)'?",
+      "options": [
+        "To waive agricultural loans",
+        "To consolidate and amend laws relating to reorganization and insolvency resolution",
+        "To regulate the stock market",
+        "To manage fiscal deficit"
+      ],
+      "correct_answer": "To consolidate and amend laws relating to reorganization and insolvency resolution",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "General Knowledge",
+      "question": "In the context of Indian History, the 'Rakhmabai case' of 1884 revolved around:",
+      "options": [
+        "Age of consent",
+        "Restitution of conjugal rights",
+        "Widow remarriage",
+        "Abolition of Sati"
+      ],
+      "correct_answer": "Restitution of conjugal rights",
       "explanation": "Standard knowledge application.",
       "trick": ""
     },
@@ -932,14 +880,66 @@ const fallbackData = {
     },
     {
       "category": "Current Affairs",
-      "question": "What is the primary objective of the 'Insolvency and Bankruptcy Code (IBC)'?",
+      "question": "The term 'Base Erosion and Profit Shifting (BEPS)' is often seen in the news in the context of:",
       "options": [
-        "To waive agricultural loans",
-        "To consolidate and amend laws relating to reorganization and insolvency resolution",
-        "To regulate the stock market",
-        "To manage fiscal deficit"
+        "Mining of resources by MNCs",
+        "Tax evasion by multinational companies",
+        "Deforestation due to rapid industrialization",
+        "Shift of indigenous populations"
       ],
-      "correct_answer": "To consolidate and amend laws relating to reorganization and insolvency resolution",
+      "correct_answer": "Tax evasion by multinational companies",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "With reference to the core of the Earth, which statement is true?",
+      "options": [
+        "The outer core is solid and inner core is liquid",
+        "The outer core is liquid and inner core is solid",
+        "Both are solid",
+        "Both are liquid"
+      ],
+      "correct_answer": "The outer core is liquid and inner core is solid",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Regarding the 'National Green Tribunal (NGT)', which is correct? 1. It is bound by the Code of Civil Procedure. 2. It is guided by principles of natural justice.",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both",
+        "Neither"
+      ],
+      "correct_answer": "2 only",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "With reference to 'Monetary Policy Committee (MPC)', consider the following: 1. It decides the RBI's benchmark interest rates. 2. It is a 12-member body. Which is correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither"
+      ],
+      "correct_answer": "1 only",
+      "explanation": "Standard knowledge application.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Consider the following statements regarding the 'Basic Structure' doctrine: 1. It was established in the Kesavananda Bharati case. 2. It restricts Parliament's power under Article 368. Which is correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correct_answer": "Both 1 and 2",
       "explanation": "Standard knowledge application.",
       "trick": ""
     }
