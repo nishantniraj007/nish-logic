@@ -102,7 +102,14 @@ async function generateWithFallback(prompt, primaryModelId) {
     try {
         return await makeRequest(primaryModelId);
     } catch (error) {
+        // If we hit a 429, we should log specifically that we are entering fallback mode
+        const isRateLimit = error.message.includes("429") || error.message.toLowerCase().includes("quota");
         console.error(`Error with ${primaryModelId}:`, error.message);
+
+        if (isRateLimit) {
+            console.warn(`[QUARTERMASTER] Rate limit hit on ${primaryModelId}. Waiting 10s before fallback to relieve pressure.`);
+            await new Promise(r => setTimeout(r, 10000));
+        }
 
         // Fallback Cascade: pro -> flash -> flash-lite
         let nextModel = null;
@@ -119,7 +126,8 @@ async function generateWithFallback(prompt, primaryModelId) {
             } catch (fallbackErr) {
                 console.error(`Error with ${nextModel}:`, fallbackErr.message);
                 if (nextModel === "gemini-2.5-flash") {
-                    console.log(`Falling back to gemini-2.5-flash-lite...`);
+                    console.log(`Falling back to gemini-2.5-flash-lite after waiting 5s...`);
+                    await new Promise(r => setTimeout(r, 5000));
                     return await makeRequest("gemini-2.5-flash-lite");
                 } else {
                     throw new Error(`All fallback models failed. Last error: ${fallbackErr.message}`);
@@ -195,15 +203,15 @@ async function main() {
                         let delayMs = 4000; // Default 4s for flash
                         if (config.model === "gemini-2.5-pro") {
                             // Pro allows 2 Requests Per Minute (RPM) and 50 Per Day (RPD).
-                            // To safely space out 9 chunks over 5 minutes, we pause 35 seconds per chunk.
-                            delayMs = 35000;
+                            // To safely space out 9 chunks over 7-8 minutes, we pause 45 seconds per chunk.
+                            delayMs = 45000;
                         } else if (config.model === "gemini-2.5-flash") {
                             // Flash allows 15 Requests Per Minute (RPM)
-                            // 3 chunks of 6 = perfectly fine with 8 second pauses
-                            delayMs = 8000;
+                            // 3 chunks of 6 = perfectly fine with 10 second pauses
+                            delayMs = 10000;
                         } else if (config.model === "gemini-2.5-flash-lite") {
                             // Flash Lite has high volume thresholds (30 RPM)
-                            delayMs = 4000;
+                            delayMs = 5000;
                         }
 
                         console.log(`[${new Date().toISOString()}] Waiting ${delayMs / 1000} seconds before next chunk to respect ${config.model} API rate limits...`);
@@ -214,8 +222,9 @@ async function main() {
                     if (attempt >= 3) {
                         throw new Error(`Failed to generate chunk ${chunkIndex} after 3 attempts.`);
                     }
-                    // Wait 2 seconds before retry
-                    await new Promise(r => setTimeout(r, 2000));
+                    // Wait at least 15 seconds before retry to let Quota reset
+                    console.warn(`[RETRY-ENGINE] Waiting 15s before attempt ${attempt + 1} for chunk ${chunkIndex}...`);
+                    await new Promise(r => setTimeout(r, 15000));
                 }
             }
         }
