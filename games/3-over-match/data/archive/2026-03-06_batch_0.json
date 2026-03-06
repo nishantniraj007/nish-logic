@@ -3,242 +3,242 @@
     "batch_index": 0,
     "day_index": 1,
     "slot_index": 10,
-    "difficulty": "Easy",
-    "generated_at": "2026-03-06T07:20:27.452Z"
+    "difficulty": "Medium",
+    "generated_at": "2026-03-06T07:51:13.362Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much do 15 apples cost?",
+      "question": "If 3x + 7 = 22, what is the value of x?",
       "options": [
-        "$20",
-        "$25",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": "5",
+      "explanation": "To solve for x, first subtract 7 from both sides: 3x = 22 - 7 => 3x = 15. Then, divide by 3: x = 15 / 3 => x = 5.",
+      "trick": "Isolate the variable by performing inverse operations."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shop offers a 20% discount on a shirt priced at $50. What is the discounted price of the shirt?",
+      "options": [
+        "$40",
         "$30",
+        "$45",
         "$35"
       ],
-      "correct_answer": "$30",
-      "explanation": "The cost per apple is $10 / 5 = $2. Therefore, 15 apples will cost 15 * $2 = $30.",
-      "trick": "Cost of 15 apples is 3 times the cost of 5 apples, so 3 * $10 = $30."
+      "correct_answer": "$40",
+      "explanation": "First, calculate the discount amount: 20% of $50 = (20/100) * 50 = $10. Then, subtract the discount from the original price: $50 - $10 = $40.",
+      "trick": "To find the discounted price, calculate (100% - discount%) of the original price directly. (100% - 20%) = 80%. So, 0.80 * $50 = $40."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
+      "question": "The ratio of boys to girls in a class is 3:2. If there are 18 boys, how many girls are there?",
       "options": [
-        "25",
-        "50",
-        "75",
-        "100"
+        "10",
+        "12",
+        "15",
+        "18"
       ],
-      "correct_answer": "50",
-      "explanation": "25% can be written as 0.25 or 1/4. So, 0.25 * 200 = 50, or (1/4) * 200 = 50.",
-      "trick": "25% is one-fourth. One-fourth of 200 is 200 / 4 = 50."
+      "correct_answer": "12",
+      "explanation": "Let the number of boys be 3k and girls be 2k. Given that there are 18 boys, 3k = 18, which means k = 18/3 = 6. Therefore, the number of girls is 2k = 2 * 6 = 12.",
+      "trick": "Set up a proportion: Boys/Girls = 3/2. So, 18/Girls = 3/2. Cross-multiply to solve for Girls."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A train travels at 60 km/hour. How long will it take to travel 180 km?",
+      "question": "What is the area of a rectangle with a length of 8 cm and a width of 5 cm?",
       "options": [
-        "1 hour",
-        "2 hours",
-        "3 hours",
-        "4 hours"
+        "40 cm²",
+        "26 cm²",
+        "13 cm²",
+        "30 cm²"
       ],
-      "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hour = 3 hours.",
-      "trick": "In 1 hour it travels 60 km. To travel 180 km (which is 3 * 60 km), it will take 3 hours."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If a shirt costs $40 and is on sale for 10% off, what is the sale price?",
-      "options": [
-        "$30",
-        "$36",
-        "$38",
-        "$39"
-      ],
-      "correct_answer": "$36",
-      "explanation": "The discount is 10% of $40, which is 0.10 * $40 = $4. The sale price is $40 - $4 = $36.",
-      "trick": "If it's 10% off, you pay 90% of the original price. 90% of $40 = 0.90 * $40 = $36."
+      "correct_answer": "40 cm²",
+      "explanation": "The formula for the area of a rectangle is length × width. So, Area = 8 cm × 5 cm = 40 cm².",
+      "trick": "Remember the basic formula: Area = Length × Width."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "question": "Complete the series: 2, 4, 8, 16, ?",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "20",
+        "24",
+        "30",
+        "32"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Identify the common category (fruits) and find the outlier."
+      "correct_answer": "32",
+      "explanation": "This is a geometric progression where each term is twice the previous term. 2 × 2 = 4, 4 × 2 = 8, 8 × 2 = 16. Therefore, the next term is 16 × 2 = 32.",
+      "trick": "Look for a consistent pattern of addition, subtraction, multiplication, or division."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all cats are mammals, and some mammals are black, can we say that some cats are black?",
+      "question": "Find the missing term: Book is to Author as Painting is to ?",
       "options": [
-        "Yes",
-        "No",
-        "Maybe",
-        "Cannot be determined"
+        "Color",
+        "Canvas",
+        "Painter",
+        "Brush"
       ],
-      "correct_answer": "No",
-      "explanation": "The statement 'some mammals are black' does not guarantee that the black mammals are also cats. The black mammals could be dogs, bears, etc.",
-      "trick": "Just because two groups share a common characteristic with a larger group doesn't mean they share it with each other."
+      "correct_answer": "Painter",
+      "explanation": "The relationship is 'creator to creation'. An Author creates a Book. Similarly, a Painter creates a Painting.",
+      "trick": "Identify the exact relationship (e.g., part-whole, cause-effect, worker-tool, creator-creation) between the first pair of words."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'CAT' is coded as '3120', what is 'DOG' coded as?",
+      "question": "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
       "options": [
-        "4157",
-        "4168",
-        "5167",
-        "5178"
+        "40",
+        "42",
+        "44",
+        "46"
       ],
-      "correct_answer": "4157",
-      "explanation": "The code assigns the alphabetical position of each letter (C=3, A=1, T=20). For DOG, D=4, O=15, G=7.",
-      "trick": "Convert letters to their alphabetical positions."
+      "correct_answer": "42",
+      "explanation": "The differences between consecutive terms are increasing by 2: (6-2)=4, (12-6)=6, (20-12)=8, (30-20)=10. So the next difference should be 12. Therefore, 30 + 12 = 42.",
+      "trick": "Look for differences between terms or patterns in the differences."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "question": "If 'Bird' is to 'Nest' as 'Human' is to '?'",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "City",
+        "House",
+        "Building",
+        "Apartment"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits, while Carrot is a vegetable.",
-      "trick": "Identify the common characteristic and find the outlier."
+      "correct_answer": "House",
+      "explanation": "A bird builds and lives in a nest. Similarly, a human builds and lives in a house.",
+      "trick": "Identify the relationship between the first pair and apply it to the second."
     },
     {
       "category": "Static GK",
-      "question": "What is the capital of India?",
+      "question": "Who among the following was known as the 'Iron Man of India'?",
       "options": [
-        "Mumbai",
-        "Kolkata",
-        "New Delhi",
-        "Chennai"
+        "Mahatma Gandhi",
+        "Jawaharlal Nehru",
+        "Sardar Vallabhbhai Patel",
+        "Subhas Chandra Bose"
       ],
-      "correct_answer": "New Delhi",
-      "explanation": "New Delhi is the official capital city of India.",
-      "trick": "Recall common knowledge about major countries."
+      "correct_answer": "Sardar Vallabhbhai Patel",
+      "explanation": "Sardar Vallabhbhai Patel was given the title 'Iron Man of India' for his crucial role in integrating over 500 princely states into the Indian Union after independence.",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Which planet is known as the 'Red Planet'?",
+      "question": "Which continent is home to the Amazon Rainforest?",
       "options": [
-        "Earth",
-        "Mars",
-        "Jupiter",
-        "Venus"
+        "Africa",
+        "Asia",
+        "South America",
+        "Australia"
       ],
-      "correct_answer": "Mars",
-      "explanation": "Mars appears reddish due to the iron oxide (rust) on its surface.",
-      "trick": "Remember common nicknames of planets."
+      "correct_answer": "South America",
+      "explanation": "The Amazon Rainforest is primarily located in South America, spanning across several countries, with the majority in Brazil.",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Who painted the Mona Lisa?",
+      "question": "Which of the following is the largest organ in the human body?",
       "options": [
-        "Vincent van Gogh",
-        "Pablo Picasso",
-        "Leonardo da Vinci",
-        "Claude Monet"
+        "Brain",
+        "Heart",
+        "Skin",
+        "Liver"
       ],
-      "correct_answer": "Leonardo da Vinci",
-      "explanation": "The Mona Lisa is one of the most famous paintings by Leonardo da Vinci.",
-      "trick": "Associate famous artworks with their artists."
+      "correct_answer": "Skin",
+      "explanation": "The skin is the largest organ of the human body, both by surface area and by weight.",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "What is the largest ocean on Earth?",
+      "question": "What is the chemical symbol for water?",
       "options": [
-        "Atlantic Ocean",
-        "Indian Ocean",
-        "Arctic Ocean",
-        "Pacific Ocean"
+        "O2",
+        "CO2",
+        "H2O",
+        "NaCl"
       ],
-      "correct_answer": "Pacific Ocean",
-      "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth.",
-      "trick": "Recall basic geographical facts about Earth's features."
+      "correct_answer": "H2O",
+      "explanation": "Water is a chemical compound with the chemical formula H2O, meaning it has two hydrogen atoms and one oxygen atom.",
+      "trick": "Memorize common chemical formulas."
     },
     {
       "category": "Current Affairs",
-      "question": "Which country recently hosted the G7 Summit in June 2024?",
+      "question": "Which country won the ICC Men's Cricket World Cup 2023, held in India?",
       "options": [
-        "France",
-        "Italy",
-        "Germany",
-        "Japan"
+        "India",
+        "Australia",
+        "England",
+        "New Zealand"
       ],
-      "correct_answer": "Italy",
-      "explanation": "The G7 Summit in June 2024 was held in Puglia, Italy.",
+      "correct_answer": "Australia",
+      "explanation": "Australia defeated India in the final match of the ICC Men's Cricket World Cup 2023 to win their record-extending sixth title. The tournament concluded in November 2023.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the men's singles title at Wimbledon in July 2024?",
+      "question": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in which city from November 30 to December 13, 2023?",
       "options": [
-        "Novak Djokovic",
-        "Carlos Alcaraz",
-        "Jannik Sinner",
-        "Roger Federer"
+        "Glasgow",
+        "Sharm El Sheikh",
+        "Dubai",
+        "Paris"
       ],
-      "correct_answer": "Carlos Alcaraz",
-      "explanation": "Carlos Alcaraz defeated Novak Djokovic in a thrilling five-set final to win the Wimbledon men's singles title.",
+      "correct_answer": "Dubai",
+      "explanation": "COP28, the United Nations Climate Change Conference, took place in Dubai, United Arab Emirates, focusing on global climate action and emissions reduction.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "What major space mission was successfully launched by India in mid-2024 to study the Sun?",
+      "question": "India's first dedicated solar mission, successfully placed into its halo orbit around the Sun-Earth Lagrangian Point 1 (L1) in January 2024, is named what?",
       "options": [
-        "Chandrayaan-4",
-        "Aditya-L1",
+        "Chandrayaan-3",
         "Mangalyaan-2",
+        "Aditya-L1",
         "Gaganyaan"
       ],
       "correct_answer": "Aditya-L1",
-      "explanation": "Aditya-L1 is India's first dedicated space observatory to study the Sun, launched in September 2023 and continuing its mission into 2024.",
+      "explanation": "Aditya-L1 is India's first space-based observatory to study the Sun, launched by ISRO in September 2023 and reaching its intended orbit in January 2024.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Which Indian state recently celebrated its formation day on April 1, 2024?",
+      "question": "In January 2024, the Government of India announced the Padma Awards. How many individuals were awarded the Padma Vibhushan, the second-highest civilian award?",
       "options": [
-        "Telangana",
-        "Uttarakhand",
-        "Odisha",
-        "Bihar"
+        "3",
+        "5",
+        "7",
+        "9"
       ],
-      "correct_answer": "Odisha",
-      "explanation": "Odisha was formed on April 1, 1936, and celebrates its formation day as Utkal Divas on April 1st.",
+      "correct_answer": "5",
+      "explanation": "For the year 2024, five eminent personalities were awarded the Padma Vibhushan: Ms. Vyjayantimala Bali, Shri Konidela Chiranjeevi, Shri M. Venkaiah Naidu, Shri Bindeshwar Pathak (Posthumous), and Ms. Padma Subrahmanyam.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "In which city were the Summer Olympics held in July-August 2024?",
+      "question": "In February 2024, OpenAI unveiled a new artificial intelligence model capable of generating realistic and imaginative videos from text instructions. What is it called?",
       "options": [
-        "Los Angeles",
-        "Paris",
-        "Tokyo",
-        "London"
+        "DALL-E 3",
+        "ChatGPT-5",
+        "Sora",
+        "Gemini Ultra"
       ],
-      "correct_answer": "Paris",
-      "explanation": "The XXXIII Olympiad, the Summer Olympics of 2024, were held in Paris, France.",
+      "correct_answer": "Sora",
+      "explanation": "Sora is a text-to-video AI model developed by OpenAI, announced in February 2024, which can create realistic and diverse video scenes from text prompts.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who was appointed as the new Prime Minister of the United Kingdom in July 2024?",
+      "question": "Which of the following countries officially joined the BRICS group as a full member at the beginning of 2024?",
       "options": [
-        "Rishi Sunak",
-        "Boris Johnson",
-        "Keir Starmer",
-        "Liz Truss"
+        "Argentina",
+        "Indonesia",
+        "Saudi Arabia",
+        "Turkey"
       ],
-      "correct_answer": "Keir Starmer",
-      "explanation": "Keir Starmer, leader of the Labour Party, became the Prime Minister of the United Kingdom following the general election in July 2024.",
+      "correct_answer": "Saudi Arabia",
+      "explanation": "At the start of 2024, Saudi Arabia, Egypt, UAE, Iran, and Ethiopia officially joined BRICS as full members, expanding the bloc from five to ten nations. Argentina had been invited but declined.",
       "trick": ""
     }
   ]
