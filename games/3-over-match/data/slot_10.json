@@ -4,64 +4,77 @@
     "day_index": 1,
     "slot_index": 10,
     "difficulty": "Easy",
-    "generated_at": "2026-03-06T05:03:29.873Z"
+    "generated_at": "2026-03-06T05:03:59.801Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost 100 rupees, how much will 8 apples cost?",
+      "question": "If a train travels at 60 km/hour, how long will it take to cover a distance of 180 km?",
       "options": [
-        "140 rupees",
-        "160 rupees",
-        "150 rupees",
-        "120 rupees"
+        "2 hours",
+        "3 hours",
+        "4 hours",
+        "5 hours"
       ],
-      "correct_answer": "160 rupees",
-      "explanation": "The cost of one apple is 100/5 = 20 rupees. Therefore, the cost of 8 apples is 8 * 20 = 160 rupees.",
-      "trick": "Find the cost of one item, then multiply by the desired quantity."
+      "correct_answer": "3 hours",
+      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hour = 3 hours.",
+      "trick": "Divide distance by speed directly."
     },
     {
       "category": "Quantitative Aptitude",
       "question": "What is 25% of 200?",
       "options": [
-        "40",
-        "50",
         "25",
+        "50",
+        "75",
         "100"
       ],
       "correct_answer": "50",
-      "explanation": "25% can be written as 25/100 or 1/4. So, 25% of 200 is (1/4) * 200 = 50.",
-      "trick": "25% is the same as dividing by 4."
+      "explanation": "25% of 200 is (25/100) * 200 = 0.25 * 200 = 50.",
+      "trick": "25% is 1/4. So, 1/4 of 200 is 50."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If a train travels at 60 km/h, how long will it take to cover a distance of 180 km?",
+      "question": "If the cost price of an item is $100 and the selling price is $120, what is the profit percentage?",
       "options": [
-        "3 hours",
-        "2 hours",
-        "4 hours",
-        "2.5 hours"
+        "10%",
+        "15%",
+        "20%",
+        "25%"
       ],
-      "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/h = 3 hours.",
-      "trick": "Speed x Time = Distance. If you know two, you can find the third."
+      "correct_answer": "20%",
+      "explanation": "Profit = Selling Price - Cost Price = $120 - $100 = $20. Profit Percentage = (Profit / Cost Price) * 100 = ($20 / $100) * 100 = 20%.",
+      "trick": "Profit percentage is profit amount divided by original cost, then multiply by 100."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the sum of the first 5 natural numbers (1, 2, 3, 4, 5)?",
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
       "options": [
+        "9",
         "10",
-        "15",
-        "20",
+        "11",
         "12"
       ],
-      "correct_answer": "15",
-      "explanation": "The sum is 1 + 2 + 3 + 4 + 5 = 15.",
-      "trick": "Sum of first n natural numbers = n*(n+1)/2. For n=5, it's 5*(5+1)/2 = 5*6/2 = 15."
+      "correct_answer": "10",
+      "explanation": "The sequence is a series of even numbers, where each number is obtained by adding 2 to the previous number.",
+      "trick": "Add 2 to the last number."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "question": "If 'CAT' is coded as '3120', how is 'DOG' coded?",
+      "options": [
+        "4157",
+        "4167",
+        "4158",
+        "4168"
+      ],
+      "correct_answer": "4157",
+      "explanation": "The code represents the alphabetical position of each letter (C=3, A=1, T=20). For DOG: D=4, O=15, G=7. So, DOG is coded as 4157.",
+      "trick": "Find the alphabetical position of each letter."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Which word does not belong with the others?",
       "options": [
         "Apple",
         "Banana",
@@ -70,59 +83,46 @@
       ],
       "correct_answer": "Carrot",
       "explanation": "Apple, Banana, and Orange are fruits, while Carrot is a vegetable.",
-      "trick": "Look for the item that is a different category from the others."
+      "trick": "Identify the odd one out based on common classification."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If CAT is coded as 3120, how is DOG coded?",
+      "question": "If all dogs are animals, and some animals are cats, which of the following must be true?",
       "options": [
-        "4157",
-        "4158",
-        "5147",
-        "7154"
+        "All cats are dogs",
+        "Some dogs are cats",
+        "No dogs are cats",
+        "Some cats are animals"
       ],
-      "correct_answer": "4157",
-      "explanation": "Each letter is replaced by its position in the alphabet: C=3, A=1, T=20. For DOG: D=4, O=15, G=7.",
-      "trick": "Assign numerical values to letters based on their alphabetical order."
+      "correct_answer": "Some cats are animals",
+      "explanation": "The premise states 'some animals are cats'. This directly implies that some cats are animals.",
+      "trick": "Focus on the direct implication of the given statements."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which is the next letter in the sequence: A, C, E, G, ?",
+      "question": "Find the odd one out: 10, 20, 30, 35, 40",
       "options": [
-        "H",
-        "I",
-        "J",
-        "K"
+        "10",
+        "20",
+        "30",
+        "35"
       ],
-      "correct_answer": "I",
-      "explanation": "The sequence skips one letter each time (A+2=C, C+2=E, E+2=G, G+2=I).",
-      "trick": "Identify the pattern of addition or subtraction between consecutive elements."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "A father's age is three times his son's age. In 10 years, the father's age will be twice his son's age. What is the father's current age?",
-      "options": [
-        "30 years",
-        "40 years",
-        "50 years",
-        "60 years"
-      ],
-      "correct_answer": "30 years",
-      "explanation": "Let son's current age be x. Father's current age is 3x. In 10 years, son's age will be x+10 and father's will be 3x+10. So, 3x+10 = 2(x+10) => 3x+10 = 2x+20 => x = 10. Father's current age = 3*10 = 30 years.",
-      "trick": "Set up algebraic equations based on the given relationships."
+      "correct_answer": "35",
+      "explanation": "All the other numbers are multiples of 10, while 35 is not.",
+      "trick": "Check for divisibility by a common number."
     },
     {
       "category": "Static GK",
       "question": "Who was the first Prime Minister of India?",
       "options": [
         "Mahatma Gandhi",
-        "Jawaharlal Nehru",
         "Sardar Vallabhbhai Patel",
+        "Jawaharlal Nehru",
         "Dr. Rajendra Prasad"
       ],
       "correct_answer": "Jawaharlal Nehru",
-      "explanation": "Jawaharlal Nehru became the first Prime Minister of India after independence in 1947.",
-      "trick": "Recall key figures associated with India's independence and early governance."
+      "explanation": "Jawaharlal Nehru became the first Prime Minister of India on August 15, 1947.",
+      "trick": "Recall key figures of India's independence."
     },
     {
       "category": "Static GK",
@@ -135,7 +135,7 @@
       ],
       "correct_answer": "Asia",
       "explanation": "Asia is the largest continent, covering about 30% of the Earth's total land area.",
-      "trick": "Remember the order of continents by size."
+      "trick": "Think of the most populous and geographically extensive landmass."
     },
     {
       "category": "Static GK",
@@ -148,11 +148,11 @@
       ],
       "correct_answer": "H2O",
       "explanation": "Water is composed of two hydrogen atoms and one oxygen atom, hence its chemical formula is H2O.",
-      "trick": "Recall common chemical formulas for everyday substances."
+      "trick": "Remember the basic building blocks of common substances."
     },
     {
       "category": "Static GK",
-      "question": "In which year did India gain independence from British rule?",
+      "question": "In which year did India gain independence?",
       "options": [
         "1945",
         "1947",
@@ -160,25 +160,38 @@
         "1952"
       ],
       "correct_answer": "1947",
-      "explanation": "India achieved independence on August 15, 1947.",
-      "trick": "Remember significant historical dates related to your country."
+      "explanation": "India gained independence from British rule on August 15, 1947.",
+      "trick": "Recall the year of a major historical event."
     },
     {
       "category": "Current Affairs",
-      "question": "Which country recently hosted the G7 Summit in June 2024?",
+      "question": "As of early 2024, who is the current President of the United States?",
       "options": [
-        "France",
-        "Italy",
-        "Japan",
-        "Germany"
+        "Donald Trump",
+        "Barack Obama",
+        "Joe Biden",
+        "Kamala Harris"
       ],
-      "correct_answer": "Italy",
-      "explanation": "The G7 Summit in June 2024 was hosted by Italy in the Puglia region.",
-      "trick": "Keep track of major international summits and their host countries."
+      "correct_answer": "Joe Biden",
+      "explanation": "Joe Biden is the 46th and current President of the United States, inaugurated in January 2021.",
+      "trick": "Stay updated on major world leaders."
     },
     {
       "category": "Current Affairs",
-      "question": "Who won the men's singles title at Wimbledon 2023?",
+      "question": "Which country hosted the COP28 climate summit in late 2023?",
+      "options": [
+        "India",
+        "United Arab Emirates",
+        "Brazil",
+        "Egypt"
+      ],
+      "correct_answer": "United Arab Emirates",
+      "explanation": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in Dubai, United Arab Emirates.",
+      "trick": "Follow major international conferences and their locations."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who won the men's singles title at the Wimbledon Championships in 2023?",
       "options": [
         "Novak Djokovic",
         "Carlos Alcaraz",
@@ -186,60 +199,47 @@
         "Rafael Nadal"
       ],
       "correct_answer": "Carlos Alcaraz",
-      "explanation": "Carlos Alcaraz defeated Novak Djokovic in a thrilling final to win the Wimbledon men's singles title in 2023.",
-      "trick": "Follow major sporting events and their winners."
+      "explanation": "Carlos Alcaraz defeated Novak Djokovic in the men's singles final of Wimbledon 2023.",
+      "trick": "Keep track of major sporting event winners."
     },
     {
       "category": "Current Affairs",
-      "question": "Which Indian state launched the 'Mukhyamantri Gramin Patha Unnayan Yojana' in early 2024 to improve rural road connectivity?",
+      "question": "Which Indian state launched the 'Mera Yuva Bharat' (MY Bharat) platform in October 2023?",
       "options": [
-        "Bihar",
+        "Maharashtra",
         "Uttar Pradesh",
-        "Rajasthan",
-        "Assam"
+        "Delhi",
+        "Gujarat"
       ],
-      "correct_answer": "Bihar",
-      "explanation": "The Bihar government launched the 'Mukhyamantri Gramin Patha Unnayan Yojana' to enhance rural road infrastructure.",
-      "trick": "Note down significant government schemes and the states that implement them."
+      "correct_answer": "Gujarat",
+      "explanation": "The 'Mera Yuva Bharat' platform was launched by Prime Minister Narendra Modi in Kevadia, Gujarat.",
+      "trick": "Note significant government initiatives and their launch locations/states."
     },
     {
       "category": "Current Affairs",
-      "question": "What significant event occurred in India on January 22, 2024?",
+      "question": "As of early 2024, what is the approximate global inflation rate being observed in many countries?",
       "options": [
-        "Launch of Chandrayaan-4",
-        "Inauguration of Ram Mandir in Ayodhya",
-        "Declaration of a new national holiday",
-        "Major earthquake in Delhi"
+        "Around 1-2%",
+        "Around 3-4%",
+        "Around 5-7%",
+        "Above 10%"
       ],
-      "correct_answer": "Inauguration of Ram Mandir in Ayodhya",
-      "explanation": "The Ram Mandir in Ayodhya was inaugurated on January 22, 2024, a widely covered event.",
-      "trick": "Pay attention to culturally and nationally significant events."
+      "correct_answer": "Around 3-4%",
+      "explanation": "While varying by country, many major economies have seen inflation figures in the 3-4% range in recent times, after peaking higher.",
+      "trick": "Be aware of general economic trends."
     },
     {
       "category": "Current Affairs",
-      "question": "Which organization released the 'World Happiness Report 2024'?",
+      "question": "Which space agency successfully launched the Chandrayaan-3 mission to the Moon in July 2023?",
       "options": [
-        "United Nations",
-        "World Bank",
-        "International Monetary Fund",
-        "World Economic Forum"
+        "NASA",
+        "ESA",
+        "ISRO",
+        "Roscosmos"
       ],
-      "correct_answer": "United Nations",
-      "explanation": "The World Happiness Report is an annual publication of the United Nations Sustainable Development Solutions Network.",
-      "trick": "Be aware of key global reports and the organizations that publish them."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who was appointed as the new Director-General of the World Health Organization (WHO) in late 2023 / early 2024?",
-      "options": [
-        "Dr. Tedros Adhanom Ghebreyesus",
-        "Dr. Margaret Chan",
-        "Dr. Hans Kluge",
-        "Dr. Soumya Swaminathan"
-      ],
-      "correct_answer": "Dr. Tedros Adhanom Ghebreyesus",
-      "explanation": "Dr. Tedros Adhanom Ghebreyesus continued his tenure as the Director-General of the WHO, his term was renewed.",
-      "trick": "Follow leadership changes in major international organizations."
+      "correct_answer": "ISRO",
+      "explanation": "The Indian Space Research Organisation (ISRO) successfully launched the Chandrayaan-3 mission.",
+      "trick": "Follow major space exploration achievements."
     }
   ]
 }
