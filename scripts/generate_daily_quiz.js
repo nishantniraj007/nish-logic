@@ -234,6 +234,8 @@ async function main() {
         // Legacy/Direct link support (the webapp will prioritize pool eventually)
         // Overwrite the standard batch_X.json so the "latest" is always active too
         const legacyFilepath = path.join(targetDir, `batch_${batchIndex}.json`);
+        fs.writeFileSync(legacyFilepath, JSON.stringify(outputObject, null, 2));
+
         // Archive Strategy (Backup for Drive)
         const dateStr = new Date().toISOString().split('T')[0];
         const archiveDir = path.join(targetDir, 'archive');
