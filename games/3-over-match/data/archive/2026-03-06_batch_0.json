@@ -4,35 +4,9 @@
     "day_index": 1,
     "slot_index": 10,
     "difficulty": "Easy",
-    "generated_at": "2026-03-06T05:02:09.481Z"
+    "generated_at": "2026-03-06T05:02:58.867Z"
   },
   "questions": [
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost 100 rupees, how much will 8 apples cost?",
-      "options": [
-        "120 rupees",
-        "160 rupees",
-        "150 rupees",
-        "180 rupees"
-      ],
-      "correct_answer": "160 rupees",
-      "explanation": "First, find the cost of one apple: 100 rupees / 5 apples = 20 rupees/apple. Then, multiply the cost of one apple by 8: 20 rupees/apple * 8 apples = 160 rupees.",
-      "trick": "Ratio and proportion: (Cost1 / Quantity1) = (Cost2 / Quantity2). (100/5) = (x/8) => x = (100 * 8) / 5 = 160."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
-      "options": [
-        "40",
-        "50",
-        "60",
-        "75"
-      ],
-      "correct_answer": "50",
-      "explanation": "To find 25% of 200, you can multiply 200 by 0.25 (which is 25/100). 200 * 0.25 = 50.",
-      "trick": "25% is the same as 1/4. So, 1/4 of 200 is 200 / 4 = 50."
-    },
     {
       "category": "Quantitative Aptitude",
       "question": "If a train travels at 60 km/hr, how long will it take to cover a distance of 180 km?",
@@ -44,7 +18,33 @@
       ],
       "correct_answer": "3 hours",
       "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hr = 3 hours.",
-      "trick": "Think of it as 'how many 60s fit into 180?' 180 / 60 = 3."
+      "trick": "Divide distance by speed."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is 25% of 200?",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "correct_answer": "50",
+      "explanation": "25% of 200 is (25/100) * 200 = 0.25 * 200 = 50.",
+      "trick": "25% is 1/4. So, 200 / 4 = 50."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If the cost price of an item is $100 and the selling price is $120, what is the profit percentage?",
+      "options": [
+        "10%",
+        "15%",
+        "20%",
+        "25%"
+      ],
+      "correct_answer": "20%",
+      "explanation": "Profit = Selling Price - Cost Price = $120 - $100 = $20. Profit Percentage = (Profit / Cost Price) * 100 = ($20 / $100) * 100 = 20%.",
+      "trick": "Profit is $20 on $100, which is directly 20%."
     },
     {
       "category": "Quantitative Aptitude",
@@ -56,21 +56,21 @@
         "12"
       ],
       "correct_answer": "10",
-      "explanation": "This is a sequence of even numbers. Each number is obtained by adding 2 to the previous number. So, 8 + 2 = 10.",
-      "trick": "Simple addition of a constant difference."
+      "explanation": "This is an arithmetic sequence where 2 is added to each term to get the next term.",
+      "trick": "Add 2 to the previous number."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'CAT' is written as '3120', how will 'DOG' be written?",
+      "question": "If ALL cats are black, and Mittens is a cat, then Mittens is:",
       "options": [
-        "4157",
-        "4187",
-        "4158",
-        "4188"
+        "White",
+        "Black",
+        "Brown",
+        "Grey"
       ],
-      "correct_answer": "4157",
-      "explanation": "Each letter is replaced by its position in the alphabet (A=1, B=2, ...). C=3, A=1, T=20. For DOG: D=4, O=15, G=7. So, DOG is 4157.",
-      "trick": "Alphabetical position mapping."
+      "correct_answer": "Black",
+      "explanation": "This is a deductive reasoning problem. If the general statement is true, and Mittens fits the category, the conclusion must be true.",
+      "trick": "Follow the rule given."
     },
     {
       "category": "Logical Reasoning",
@@ -82,73 +82,73 @@
         "Orange"
       ],
       "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Categorization based on common properties."
+      "explanation": "Apple, Banana, and Orange are fruits, while Carrot is a vegetable.",
+      "trick": "Identify the category that most words belong to."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all dogs are animals, and Fido is a dog, then Fido is an:",
+      "question": "If 'A' is the brother of 'B', and 'C' is the sister of 'B', then 'A' is the _______ of 'C'.",
       "options": [
-        "Mammal",
-        "Animal",
-        "Pet",
-        "Canine"
+        "Sister",
+        "Brother",
+        "Cousin",
+        "Aunt"
       ],
-      "correct_answer": "Animal",
-      "explanation": "This is a classic syllogism. The statement 'all dogs are animals' means that anything that is a dog is also an animal. Since Fido is a dog, Fido must be an animal.",
-      "trick": "Deductive reasoning: If A implies B, and X is A, then X is B."
+      "correct_answer": "Brother",
+      "explanation": "A is male and is B's sibling. C is B's sibling. Therefore, A is C's brother.",
+      "trick": "Draw a family tree."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Look at this series: 3, 1, 4, 1, 5, 9, ... What number comes next?",
+      "question": "What is the odd one out?",
       "options": [
-        "2",
-        "6",
-        "8",
-        "7"
+        "Square",
+        "Circle",
+        "Triangle",
+        "Rectangle"
       ],
-      "correct_answer": "2",
-      "explanation": "This series represents the digits of the mathematical constant Pi (π): 3.141592...",
-      "trick": "Recognize famous mathematical constants."
+      "correct_answer": "Circle",
+      "explanation": "Square, Triangle, and Rectangle are polygons (shapes with straight sides). Circle is not a polygon.",
+      "trick": "Look for a defining characteristic that most items share but one does not."
     },
     {
       "category": "Static GK",
       "question": "Who was the first Prime Minister of India?",
       "options": [
         "Mahatma Gandhi",
-        "Sardar Vallabhbhai Patel",
         "Jawaharlal Nehru",
-        "Rajendra Prasad"
+        "Sardar Vallabhbhai Patel",
+        "Dr. Rajendra Prasad"
       ],
       "correct_answer": "Jawaharlal Nehru",
-      "explanation": "Jawaharlal Nehru became the first Prime Minister of India on 15 August 1947.",
-      "trick": "General historical knowledge about India's independence."
+      "explanation": "Jawaharlal Nehru became the first Prime Minister of India after India's independence in 1947.",
+      "trick": "Recall prominent leaders of India's independence movement."
     },
     {
       "category": "Static GK",
       "question": "Which is the longest river in the world?",
       "options": [
-        "Amazon River",
-        "Nile River",
-        "Yangtze River",
-        "Mississippi River"
+        "Amazon",
+        "Nile",
+        "Yangtze",
+        "Mississippi"
       ],
-      "correct_answer": "Nile River",
-      "explanation": "The Nile River is traditionally considered the longest river in the world, flowing northwards through northeastern Africa.",
-      "trick": "Memorize major geographical features."
+      "correct_answer": "Nile",
+      "explanation": "The Nile River is traditionally considered the longest river in the world.",
+      "trick": "Think of major continents and their primary rivers."
     },
     {
       "category": "Static GK",
       "question": "What is the capital of Japan?",
       "options": [
-        "Kyoto",
-        "Osaka",
+        "Seoul",
+        "Beijing",
         "Tokyo",
-        "Seoul"
+        "Bangkok"
       ],
       "correct_answer": "Tokyo",
       "explanation": "Tokyo is the capital and largest city of Japan.",
-      "trick": "Basic world capitals knowledge."
+      "trick": "Match countries with their well-known capital cities."
     },
     {
       "category": "Static GK",
@@ -160,25 +160,12 @@
         "Hydrogen"
       ],
       "correct_answer": "Carbon Dioxide",
-      "explanation": "Plants use carbon dioxide from the atmosphere, water from the soil, and sunlight to create their own food (glucose) through photosynthesis.",
-      "trick": "Basic science concept of plant respiration."
+      "explanation": "Plants use carbon dioxide from the air, water from the soil, and sunlight to produce glucose (food) and oxygen during photosynthesis.",
+      "trick": "Think about what plants 'breathe in'."
     },
     {
       "category": "Current Affairs",
-      "question": "Which country recently hosted the G7 Summit in June 2024?",
-      "options": [
-        "France",
-        "Italy",
-        "Germany",
-        "Japan"
-      ],
-      "correct_answer": "Italy",
-      "explanation": "The G7 Summit in June 2024 was held in Puglia, Italy.",
-      "trick": "Follow major international summits and their locations."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the Men's Singles title at Wimbledon 2024?",
+      "question": "Who won the men's singles title at Wimbledon in 2023?",
       "options": [
         "Novak Djokovic",
         "Carlos Alcaraz",
@@ -186,60 +173,73 @@
         "Rafael Nadal"
       ],
       "correct_answer": "Carlos Alcaraz",
-      "explanation": "Carlos Alcaraz won the Men's Singles title at Wimbledon 2024.",
+      "explanation": "Carlos Alcaraz defeated Novak Djokovic in the Wimbledon 2023 men's singles final.",
       "trick": "Keep track of major sporting event winners."
     },
     {
       "category": "Current Affairs",
-      "question": "What is the name of the Indian Space Research Organisation's (ISRO) upcoming mission to the Moon?",
+      "question": "Which country hosted the G20 Summit in September 2023?",
       "options": [
-        "Chandrayaan-4",
-        "Chandrayaan-5",
-        "Chandrayaan-3",
-        "Lunar Orbiter Mission"
+        "United States",
+        "India",
+        "Indonesia",
+        "Brazil"
       ],
-      "correct_answer": "Chandrayaan-4",
-      "explanation": "ISRO has announced plans for Chandrayaan-4, a follow-up mission to Chandrayaan-3.",
-      "trick": "Stay updated on significant space exploration programs."
+      "correct_answer": "India",
+      "explanation": "India hosted the G20 Summit in New Delhi in September 2023.",
+      "trick": "Note the host country for major international summits."
     },
     {
       "category": "Current Affairs",
-      "question": "Which Indian state recently launched the 'Mukhyamantri Yuva Kaushal Yojana' to boost youth employment?",
+      "question": "What is the name of the new AI model launched by Google in late 2023/early 2024?",
       "options": [
-        "Uttar Pradesh",
+        "ChatGPT",
+        "Bard",
+        "Gemini",
+        "LaMDA"
+      ],
+      "correct_answer": "Gemini",
+      "explanation": "Google officially announced and began rolling out its Gemini AI model.",
+      "trick": "Stay updated on major tech company product launches."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which Indian state launched the 'Mukhyamantri Solar Abhiyan' in late 2023?",
+      "options": [
+        "Gujarat",
         "Rajasthan",
-        "Madhya Pradesh",
-        "Bihar"
+        "Uttar Pradesh",
+        "Madhya Pradesh"
       ],
-      "correct_answer": "Rajasthan",
-      "explanation": "Rajasthan launched the Mukhyamantri Yuva Kaushal Yojana in early 2024.",
-      "trick": "Monitor new government schemes and initiatives in India."
+      "correct_answer": "Assam",
+      "explanation": "Assam launched the 'Mukhyamantri Solar Abhiyan' to promote solar energy.",
+      "trick": "Follow state-level government initiatives and schemes."
     },
     {
       "category": "Current Affairs",
-      "question": "Who was appointed as the new Director-General of the World Health Organization (WHO) in mid-2024?",
+      "question": "Who was appointed as the new Chief Election Commissioner of India in February 2024?",
       "options": [
-        "Tedros Adhanom Ghebreyesus",
-        "Margaret Chan",
-        "Gro Harlem Brundtland",
-        "A new appointment was not made in mid-2024"
+        "Rajiv Kumar",
+        "Anup Chandra Pandey",
+        "Sushil Chandra",
+        "Gyana Bhushan Sharma"
       ],
-      "correct_answer": "A new appointment was not made in mid-2024",
-      "explanation": "Tedros Adhanom Ghebreyesus was re-elected as the Director-General of the WHO in May 2022 for a second five-year term, and his current term extends beyond mid-2024.",
-      "trick": "Verify information about leadership changes in major international organizations."
+      "correct_answer": "Gyana Bhushan Sharma",
+      "explanation": "Gyana Bhushan Sharma was appointed as the new Chief Election Commissioner of India.",
+      "trick": "Note key appointments in constitutional bodies."
     },
     {
       "category": "Current Affairs",
-      "question": "What major global sporting event is scheduled to take place in Paris in July-August 2024?",
+      "question": "What significant space mission did ISRO launch in January 2024 aimed at studying the Sun?",
       "options": [
-        "FIFA World Cup",
-        "Rugby World Cup",
-        "Olympic Games",
-        "Commonwealth Games"
+        "Chandrayaan-3",
+        "Mangalyaan-2",
+        "Aditya-L1",
+        "Gaganyaan"
       ],
-      "correct_answer": "Olympic Games",
-      "explanation": "The Summer Olympic Games are scheduled to be held in Paris, France, from July 26 to August 11, 2024.",
-      "trick": "Be aware of upcoming major international sporting events."
+      "correct_answer": "Aditya-L1",
+      "explanation": "Aditya-L1, ISRO's first solar observatory mission, was launched in September 2023 and reached its destination in January 2024.",
+      "trick": "Follow India's space agency (ISRO) missions and their objectives."
     }
   ]
 }
