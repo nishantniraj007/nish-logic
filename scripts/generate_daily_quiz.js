@@ -14,11 +14,11 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 // Batch Configuration mapping
 const batchConfig = {
-    0: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
-    1: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
+    0: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
+    1: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
     2: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
-    3: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
-    4: { diff: "Medium", context: "Standard difficulty, high-school level concepts.", model: "gemini-2.5-flash" },
+    3: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
+    4: { diff: "Easy", context: "General knowledge and basic logical concepts suitable for beginners.", model: "gemini-2.5-flash-lite" },
     5: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
     6: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
     7: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
@@ -85,16 +85,29 @@ async function generateWithFallback(prompt, primaryModelId) {
     } catch (error) {
         console.error(`Error with ${primaryModelId}:`, error.message);
 
-        // Fallback to Flash if we were using Pro or Flash-Lite
-        if (primaryModelId !== "gemini-2.5-flash") {
-            console.log(`Falling back to gemini-2.5-flash...`);
+        // Fallback Cascade: pro -> flash -> flash-lite
+        let nextModel = null;
+        if (primaryModelId === "gemini-2.5-pro") {
+            nextModel = "gemini-2.5-flash";
+        } else if (primaryModelId === "gemini-2.5-flash") {
+            nextModel = "gemini-2.5-flash-lite";
+        }
+
+        if (nextModel) {
+            console.log(`Falling back to ${nextModel}...`);
             try {
-                return await makeRequest("gemini-2.5-flash");
+                return await makeRequest(nextModel);
             } catch (fallbackErr) {
-                throw new Error(`Primary and Fallback models failed: ${fallbackErr.message}`);
+                console.error(`Error with ${nextModel}:`, fallbackErr.message);
+                if (nextModel === "gemini-2.5-flash") {
+                    console.log(`Falling back to gemini-2.5-flash-lite...`);
+                    return await makeRequest("gemini-2.5-flash-lite");
+                } else {
+                    throw new Error(`All fallback models failed. Last error: ${fallbackErr.message}`);
+                }
             }
         } else {
-            throw new Error(`Primary model gemini-2.5-flash failed: ${error.message}`);
+            throw new Error(`Primary model ${primaryModelId} failed and no fallbacks available: ${error.message}`);
         }
     }
 }

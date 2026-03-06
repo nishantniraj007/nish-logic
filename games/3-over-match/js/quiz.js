@@ -24,25 +24,7 @@ const submitBtn = document.getElementById('submit-btn');
 const timerDisplay = document.getElementById('timer');
 
 // Dummy Data Fallback for Development/Testing
-const dummyData = [
-    {
-        "category": "Quantitative Aptitude",
-        "question": "A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?",
-        "options": ["120 metres", "180 metres", "324 metres", "150 metres"],
-        "correct_answer": "150 metres",
-        "explanation": "Speed = 60 * (5/18) m/s = 50/3 m/s. Distance = Speed * Time = (50/3) * 9 = 150 metres.",
-        "trick": "Multiply km/hr by 5/18 to get m/s quickly."
-    },
-    // Adding just a few for testing. Real prod will load from JSON.
-    ...Array(17).fill({
-        "category": "Logical Reasoning",
-        "question": "If A is the brother of B; B is the sister of C; and C is the father of D, how D is related to A?",
-        "options": ["Nephew", "Niece", "Cannot be determined", "Brother"],
-        "correct_answer": "Cannot be determined",
-        "explanation": "The gender of D is not mentioned.",
-        "trick": "Always identify the genders first before tracing relationships."
-    })
-];
+// 72 full-length questions are injected by fallback_data.js before this script runs.
 
 document.addEventListener('DOMContentLoaded', () => {
     // Attempt to load current data based on difficulty
@@ -115,8 +97,13 @@ async function startGame() {
     }
 
     if (!success) {
-        quizData = [...dummyData];
-        console.warn("Using fallback local dummy data");
+        // Fall to the 72-question static fallback file based on difficulty
+        if (fallbackData && fallbackData[diff]) {
+            quizData = [...fallbackData[diff]];
+            console.warn(`Using local offline fallback for difficulty: ${diff}`);
+        } else {
+            console.error("Fatal: failed to load JSON and offline defaults are missing.");
+        }
     }
 
     introScreen.style.display = 'none';
