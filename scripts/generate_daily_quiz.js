@@ -189,10 +189,25 @@ async function main() {
                     allQuestions = allQuestions.concat(parsedData);
                     success = true;
 
-                    // Add a short delay to respect the free API tier rate limits (15 requests per minute for flash)
+                    // Dynamic Delay Architecture to respect Google AI Studio Free Tier Quotas
+                    // GitHub Actions runner is 100% Free and Unlimited, so we can afford long pauses to guarantee high-quality generation.
                     if (chunkIndex < totalChunks) {
-                        console.log(`[${new Date().toISOString()}] Waiting 4 seconds before next chunk to respect API rate limits...`);
-                        await new Promise(r => setTimeout(r, 4000));
+                        let delayMs = 4000; // Default 4s for flash
+                        if (config.model === "gemini-2.5-pro") {
+                            // Pro allows 2 Requests Per Minute (RPM) and 50 Per Day (RPD).
+                            // To safely space out 9 chunks over 5 minutes, we pause 35 seconds per chunk.
+                            delayMs = 35000;
+                        } else if (config.model === "gemini-2.5-flash") {
+                            // Flash allows 15 Requests Per Minute (RPM)
+                            // 3 chunks of 6 = perfectly fine with 8 second pauses
+                            delayMs = 8000;
+                        } else if (config.model === "gemini-2.5-flash-lite") {
+                            // Flash Lite has high volume thresholds (30 RPM)
+                            delayMs = 4000;
+                        }
+
+                        console.log(`[${new Date().toISOString()}] Waiting ${delayMs / 1000} seconds before next chunk to respect ${config.model} API rate limits...`);
+                        await new Promise(r => setTimeout(r, delayMs));
                     }
                 } catch (err) {
                     console.error(`[${new Date().toISOString()}] Chunk ${chunkIndex} attempt ${attempt} failed:`, err.message);
