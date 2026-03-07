@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "timestamp": "2026-03-07T07:03:54.490Z",
+    "difficulty": "upsc",
+    "framework": "hybrid-tbg-ai",
+    "total_questions": 12
+  },
+  "questions": [
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All trees are cars.\n2. No trees are dogs.\n\nConclusions:\n1. No cars are dogs.\n2. Some cars are not dogs.",
+      "options": [
+        "Only conclusion 1 follows",
+        "Only conclusion 2 follows",
+        "Both follow",
+        "Neither follows"
+      ],
+      "correct_answer": "Only conclusion 2 follows",
+      "explanation": "By drawing an overlapping Venn Diagram of trees, cars, and dogs, we can determine the logical boundaries. The conclusion 'Some cars are not dogs.' satisfies the universal constraint.",
+      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper bought an item for Rs. 3300 and sold it at a profit of 16.66%. Find the selling price.",
+      "options": [
+        "Rs. 3685",
+        "Rs. 4015",
+        "Rs. 3850",
+        "Rs. 4180"
+      ],
+      "correct_answer": "Rs. 3850",
+      "explanation": "CP = 3300. Profit% = 16.66%. SP = CP * (100 + Profit%)/100. Thus SP = 3850.",
+      "trick": "Use fractional multipliers for famous percentages to speed up calculation."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All bikes are tables.\n2. All tables are pens.\n\nConclusions:\n1. Some bikes are not pens.\n2. All bikes are pens.",
+      "options": [
+        "Only conclusion 1 follows",
+        "Only conclusion 2 follows",
+        "Both follow",
+        "Neither follows"
+      ],
+      "correct_answer": "Only conclusion 2 follows",
+      "explanation": "By drawing an overlapping Venn Diagram of bikes, tables, and pens, we can determine the logical boundaries. The conclusion 'All bikes are pens.' satisfies the universal constraint.",
+      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All trees are birds.\n2. No trees are pencils.\n\nConclusions:\n1. Some birds are not pencils.\n2. No birds are pencils.",
+      "options": [
+        "Only conclusion 1 follows",
+        "Only conclusion 2 follows",
+        "Both follow",
+        "Neither follows"
+      ],
+      "correct_answer": "Only conclusion 1 follows",
+      "explanation": "By drawing an overlapping Venn Diagram of trees, birds, and pencils, we can determine the logical boundaries. The conclusion 'Some birds are not pencils.' satisfies the universal constraint.",
+      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A can finish a piece of work in 18 days while B can do it in 36 days. How many days will they take to complete the work if they work together?",
+      "options": [
+        "14 days",
+        "13 days",
+        "12 days",
+        "11 days"
+      ],
+      "correct_answer": "12 days",
+      "explanation": "1 day work of A = 1/18. 1 day work of B = 1/36. Total = 1/18 + 1/36 = (18+36)/(648). Time taken = 648/(54) = 12 days.",
+      "trick": "Direct formula for two people working together: (A * B) / (A + B)"
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper bought an item for Rs. 1200 and sold it at a loss of 37.5%. Find the selling price.",
+      "options": [
+        "Rs. 630",
+        "Rs. 690",
+        "Rs. 750",
+        "Rs. 810"
+      ],
+      "correct_answer": "Rs. 750",
+      "explanation": "CP = 1200. Loss% = 37.5%. SP = CP * (100 - Profit%)/100. Thus SP = 750.",
+      "trick": "Use fractional multipliers for famous percentages to speed up calculation."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A can finish a piece of work in 16 days while B can do it in 48 days. How many days will they take to complete the work if they work together?",
+      "options": [
+        "14 days",
+        "12 days",
+        "11 days",
+        "13 days"
+      ],
+      "correct_answer": "12 days",
+      "explanation": "1 day work of A = 1/16. 1 day work of B = 1/48. Total = 1/16 + 1/48 = (16+48)/(768). Time taken = 768/(64) = 12 days.",
+      "trick": "Direct formula for two people working together: (A * B) / (A + B)"
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All trees are pens.\n2. No trees are cats.\n\nConclusions:\n1. No pens are cats.\n2. Some pens are not cats.",
+      "options": [
+        "Only conclusion 1 follows",
+        "Only conclusion 2 follows",
+        "Both follow",
+        "Neither follows"
+      ],
+      "correct_answer": "Only conclusion 2 follows",
+      "explanation": "By drawing an overlapping Venn Diagram of trees, pens, and cats, we can determine the logical boundaries. The conclusion 'Some pens are not cats.' satisfies the universal constraint.",
+      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All trees are bikes.\n2. No trees are tables.\n\nConclusions:\n1. Some bikes are not tables.\n2. No bikes are tables.",
+      "options": [
+        "Only conclusion 1 follows",
+        "Only conclusion 2 follows",
+        "Both follow",
+        "Neither follows"
+      ],
+      "correct_answer": "Only conclusion 1 follows",
+      "explanation": "By drawing an overlapping Venn Diagram of trees, bikes, and tables, we can determine the logical boundaries. The conclusion 'Some bikes are not tables.' satisfies the universal constraint.",
+      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A can finish a piece of work in 15 days while B can do it in 45 days. How many days will they take to complete the work if they work together?",
+      "options": [
+        "11.8 days",
+        "11.25 days",
+        "10.8 days",
+        "12.3 days"
+      ],
+      "correct_answer": "11.25 days",
+      "explanation": "1 day work of A = 1/15. 1 day work of B = 1/45. Total = 1/15 + 1/45 = (15+45)/(675). Time taken = 675/(60) = 11.25 days.",
+      "trick": "Direct formula for two people working together: (A * B) / (A + B)"
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All trees are cars.\n2. No trees are pens.\n\nConclusions:\n1. Some cars are not pens.\n2. No cars are pens.",
+      "options": [
+        "Only conclusion 1 follows",
+        "Only conclusion 2 follows",
+        "Both follow",
+        "Neither follows"
+      ],
+      "correct_answer": "Only conclusion 1 follows",
+      "explanation": "By drawing an overlapping Venn Diagram of trees, cars, and pens, we can determine the logical boundaries. The conclusion 'Some cars are not pens.' satisfies the universal constraint.",
+      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper bought an item for Rs. 2900 and sold it at a profit of 33.33%. Find the selling price.",
+      "options": [
+        "Rs. 3867",
+        "Rs. 4157",
+        "Rs. 4012",
+        "Rs. 3722"
+      ],
+      "correct_answer": "Rs. 3867",
+      "explanation": "CP = 2900. Profit% = 33.33%. SP = CP * (100 + Profit%)/100. Thus SP = 3867.",
+      "trick": "Use fractional multipliers for famous percentages to speed up calculation."
+    }
+  ]
+}
