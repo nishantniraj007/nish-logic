@@ -5,94 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nish-Logic Beta | Nishant Niraj</title>
+    <!-- Use base theme CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .test-container {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .q-card {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid #00ff41;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-        }
-
-        .q-card h3 {
-            color: #00ff41;
-            margin-top: 0;
-        }
-
-        .q-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .q-card li {
-            margin: 0.5rem 0;
-            padding: 0.5rem;
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .correct {
-            border-left: 4px solid #00ff41;
-        }
-
-        .badge {
-            background: #00ff41;
-            color: black;
-            padding: 2px 6px;
-            font-size: 0.8rem;
-            border-radius: 4px;
-            float: right;
-        }
-    </style>
+    <!-- Specific Game CSS -->
+    <link rel="stylesheet" href="css/quiz.css">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Matrix Background Canvas from main site -->
     <canvas id="matrixCanvas"></canvas>
-    <main class="glass-container test-container">
-        <header>
-            <h1 class="glitch" data-text="Nish-Logic Beta Engine">Nish-Logic Beta Engine</h1>
-            <p>12 Quantitative/Reasoning Questions + 6 General Knowledge</p>
-            <a href="../index.html" class="cyber-button" style="text-decoration:none;">← Back to Portal</a>
+
+    <!-- Main Content Container -->
+    <main class="glass-container quiz-container">
+
+        <!-- Profile Section / Header -->
+        <header class="profile-section">
+            <h1 class="glitch small-glitch" data-text="Nish-Logic Beta">Nish-Logic Beta</h1>
+            <h2 class="subtitle">&lt; 18 Questions | Hybrid Generation Engine /&gt;</h2>
         </header>
 
-        <div id="results" style="margin-top: 2rem;">
-            Loading generated JSON...
+        <!-- Quiz UI Mount Point -->
+        <div id="quiz-app">
+            <div id="loading-state" class="center-content">
+                <p>Loading Hybrid Sets...</p>
+                <div class="loader"></div>
+            </div>
+
+            <!-- Intro / Config Screen -->
+            <div id="intro-screen" style="display: none;" class="screen-view">
+                <p class="description">Test your aptitude, reasoning, GK, and current affairs in an 18-question barrage
+                    powered by our Hybrid Engine.
+                </p>
+
+                <div class="diff-selector">
+                    <h3>Select Difficulty:</h3>
+                    <div class="radio-group">
+                        <label><input type="radio" name="difficulty" value="easy" checked> Easy</label>
+                        <label><input type="radio" name="difficulty" value="medium"> Medium</label>
+                        <label><input type="radio" name="difficulty" value="ssc"> SSC / Bank</label>
+                        <label><input type="radio" name="difficulty" value="upsc"> UPSC / CAT</label>
+                    </div>
+                </div>
+
+                <div class="timer-toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="timer-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Enable 15-Minute Timer</span>
+                </div>
+
+                <div class="action-menu" style="margin-top: 2rem;">
+                    <button class="cyber-button" id="start-btn">
+                        <span class="btn-text">PLAY MATCH</span>
+                        <span class="btn-glitch"></span>
+                    </button>
+                    <a href="../index.html" class="cyber-button outline" style="text-decoration:none;">
+                        <span class="btn-text">GO BACK</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Active Gameplay Screen -->
+            <div id="game-screen" style="display: none;" class="screen-view">
+                <div class="game-header">
+                    <div class="stats">
+                        <span id="q-counter">Q: 1/18</span>
+                        <span id="category-badge" class="badge">Aptitude</span>
+                        <span id="timer" class="hidden">15:00</span>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h3 id="question-text"></h3>
+                </div>
+
+                <div class="options-grid" id="options-container">
+                    <!-- Options injected via JS -->
+                </div>
+
+                <div class="game-footer">
+                    <button id="prev-btn" class="nav-btn cyber-button" disabled>&lt; Prev</button>
+                    <button id="next-btn" class="nav-btn cyber-button">Next &gt;</button>
+                    <button id="submit-btn" class="primary-btn cyber-button" style="display:none;">Submit Match</button>
+                </div>
+            </div>
+
+            <!-- Certificate & Results Screen -->
+            <div id="result-screen" style="display: none;" class="screen-view">
+                <div id="certificate" class="certificate-wrapper">
+                    <!-- Watermark added via CSS -->
+                    <div class="cert-header">
+                        <h2>CERTIFICATE OF PERFORMANCE</h2>
+                        <h3 class="cyber-text">NISH-LOGIC HYBRID BETA</h3>
+                    </div>
+                    <div class="cert-body">
+                        <p>Completed On: <span id="cert-date">--</span></p>
+                        <p>Time Taken: <span id="cert-time">--</span></p>
+                        <hr>
+                        <h1 id="final-score" class="glitch" data-text="0/18">0/18</h1>
+                        <p id="cert-message" class="subtitle">Well Played!</p>
+                    </div>
+
+                    <div class="answer-sheet" id="answer-sheet">
+                        <!-- Detailed breakdown injected here -->
+                    </div>
+                </div>
+
+                <div class="action-menu" style="margin-top: 2rem;">
+                    <button class="cyber-button" id="print-btn">
+                        <span class="btn-text">PRINT / PDF</span>
+                        <span class="btn-glitch"></span>
+                    </button>
+                    <button class="cyber-button" onclick="location.reload()">
+                        <span class="btn-text">PLAY AGAIN</span>
+                        <span class="btn-glitch"></span>
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
 
-    <script src="../js/matrix.js"></script>
-    <script>
-        async function loadTest() {
-            try {
-                // Fetch the static json that GH actions will continuously overwrite
-                const res = await fetch('data/hybrid_upsc.json?t=' + Date.now());
-                if (!res.ok) throw new Error("JSON not found. Generation might be running.");
-                const data = await res.json();
-
-                let html = `<h2>Difficulty: ${data.metadata.difficulty.toUpperCase()}</h2>`;
-                data.questions.forEach((q, i) => {
-                    html += `
-                    <div class="q-card">
-                        <h3>Q${i + 1}: ${q.question} <span class="badge">${q.category}</span></h3>
-                        <ul>
-                            ${q.options.map(opt => `<li class="${opt === q.correct_answer ? 'correct' : ''}">${opt}</li>`).join('')}
-                        </ul>
-                        <p style="color: #aaa; font-size: 0.9em;"><strong>Explanation:</strong> ${q.explanation}</p>
-                    </div>`;
-                });
-                document.getElementById('results').innerHTML = html;
-            } catch (e) {
-                document.getElementById('results').innerHTML = `<p style="color:red;">Error: ${e.message}. <br>Content engine is currently updating...</p>`;
-            }
-        }
-        loadTest();
-    </script>
+    <script src="../js/matrix.js?v=2.3"></script>
+    <script src="js/quiz.js"></script>
 </body>
 
 </html>
