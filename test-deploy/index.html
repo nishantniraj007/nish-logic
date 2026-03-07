@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Generation Test | Nish-Logic</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .test-container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .q-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid #00ff41;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .q-card h3 {
+            color: #00ff41;
+            margin-top: 0;
+        }
+
+        .q-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .q-card li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .correct {
+            border-left: 4px solid #00ff41;
+        }
+
+        .badge {
+            background: #00ff41;
+            color: black;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <main class="glass-container test-container">
+        <header>
+            <h1 class="glitch" data-text="Hybrid TBG + AI Engine">Hybrid TBG + AI Engine</h1>
+            <p>12 Math/Logic TBG Questions + 6 AI Current Affairs</p>
+            <a href="../index.html" class="cyber-button" style="text-decoration:none;">← Back to Portal</a>
+        </header>
+
+        <div id="results" style="margin-top: 2rem;">
+            Loading generated JSON...
+        </div>
+    </main>
+
+    <script src="../js/matrix.js"></script>
+    <script>
+        async function loadTest() {
+            try {
+                // Fetch the static json that GH actions will continuously overwrite
+                const res = await fetch('data/hybrid_upsc.json?t=' + Date.now());
+                if (!res.ok) throw new Error("JSON not found. Generation might be running.");
+                const data = await res.json();
+
+                let html = `<h2>Difficulty: ${data.metadata.difficulty.toUpperCase()}</h2>`;
+                data.questions.forEach((q, i) => {
+                    html += `
+                    <div class="q-card">
+                        <h3>Q${i + 1}: ${q.question} <span class="badge">${q.category}</span></h3>
+                        <ul>
+                            ${q.options.map(opt => `<li class="${opt === q.correct_answer ? 'correct' : ''}">${opt}</li>`).join('')}
+                        </ul>
+                        <p style="color: #aaa; font-size: 0.9em;"><strong>Explanation:</strong> ${q.explanation}</p>
+                    </div>`;
+                });
+                document.getElementById('results').innerHTML = html;
+            } catch (e) {
+                document.getElementById('results').innerHTML = `<p style="color:red;">Error: ${e.message}. <br>Make sure to run the Test Workflow from GitHub Actions first!</p>`;
+            }
+        }
+        loadTest();
+    </script>
+</body>
+
+</html>
