@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hybrid Generation Test | Nish-Logic</title>
+    <title>Nish-Logic Beta | Nishant Niraj</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .test-container {
@@ -56,8 +56,8 @@
     <canvas id="matrixCanvas"></canvas>
     <main class="glass-container test-container">
         <header>
-            <h1 class="glitch" data-text="Hybrid TBG + AI Engine">Hybrid TBG + AI Engine</h1>
-            <p>12 Math/Logic TBG Questions + 6 AI Current Affairs</p>
+            <h1 class="glitch" data-text="Nish-Logic Beta Engine">Nish-Logic Beta Engine</h1>
+            <p>12 Quantitative/Reasoning Questions + 6 General Knowledge</p>
             <a href="../index.html" class="cyber-button" style="text-decoration:none;">← Back to Portal</a>
         </header>
 
@@ -88,7 +88,7 @@
                 });
                 document.getElementById('results').innerHTML = html;
             } catch (e) {
-                document.getElementById('results').innerHTML = `<p style="color:red;">Error: ${e.message}. <br>Make sure to run the Test Workflow from GitHub Actions first!</p>`;
+                document.getElementById('results').innerHTML = `<p style="color:red;">Error: ${e.message}. <br>Content engine is currently updating...</p>`;
             }
         }
         loadTest();

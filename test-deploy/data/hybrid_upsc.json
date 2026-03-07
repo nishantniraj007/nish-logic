@@ -1,166 +1,226 @@
 {
-  "metadata": {
-    "timestamp": "2026-03-07T07:03:54.490Z",
-    "difficulty": "upsc",
-    "framework": "hybrid-tbg-ai",
-    "total_questions": 12
-  },
-  "questions": [
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. All trees are cars.\n2. No trees are dogs.\n\nConclusions:\n1. No cars are dogs.\n2. Some cars are not dogs.",
-      "options": [
-        "Only conclusion 1 follows",
-        "Only conclusion 2 follows",
-        "Both follow",
-        "Neither follows"
-      ],
-      "correct_answer": "Only conclusion 2 follows",
-      "explanation": "By drawing an overlapping Venn Diagram of trees, cars, and dogs, we can determine the logical boundaries. The conclusion 'Some cars are not dogs.' satisfies the universal constraint.",
-      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
+    "metadata": {
+        "difficulty": "upsc",
+        "generated_at": "2026-03-07T12:59:59.231800",
+        "type": "Hybrid TBG + AI Engine",
+        "total_questions": 18
     },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper bought an item for Rs. 3300 and sold it at a profit of 16.66%. Find the selling price.",
-      "options": [
-        "Rs. 3685",
-        "Rs. 4015",
-        "Rs. 3850",
-        "Rs. 4180"
-      ],
-      "correct_answer": "Rs. 3850",
-      "explanation": "CP = 3300. Profit% = 16.66%. SP = CP * (100 + Profit%)/100. Thus SP = 3850.",
-      "trick": "Use fractional multipliers for famous percentages to speed up calculation."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. All bikes are tables.\n2. All tables are pens.\n\nConclusions:\n1. Some bikes are not pens.\n2. All bikes are pens.",
-      "options": [
-        "Only conclusion 1 follows",
-        "Only conclusion 2 follows",
-        "Both follow",
-        "Neither follows"
-      ],
-      "correct_answer": "Only conclusion 2 follows",
-      "explanation": "By drawing an overlapping Venn Diagram of bikes, tables, and pens, we can determine the logical boundaries. The conclusion 'All bikes are pens.' satisfies the universal constraint.",
-      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. All trees are birds.\n2. No trees are pencils.\n\nConclusions:\n1. Some birds are not pencils.\n2. No birds are pencils.",
-      "options": [
-        "Only conclusion 1 follows",
-        "Only conclusion 2 follows",
-        "Both follow",
-        "Neither follows"
-      ],
-      "correct_answer": "Only conclusion 1 follows",
-      "explanation": "By drawing an overlapping Venn Diagram of trees, birds, and pencils, we can determine the logical boundaries. The conclusion 'Some birds are not pencils.' satisfies the universal constraint.",
-      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A can finish a piece of work in 18 days while B can do it in 36 days. How many days will they take to complete the work if they work together?",
-      "options": [
-        "14 days",
-        "13 days",
-        "12 days",
-        "11 days"
-      ],
-      "correct_answer": "12 days",
-      "explanation": "1 day work of A = 1/18. 1 day work of B = 1/36. Total = 1/18 + 1/36 = (18+36)/(648). Time taken = 648/(54) = 12 days.",
-      "trick": "Direct formula for two people working together: (A * B) / (A + B)"
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper bought an item for Rs. 1200 and sold it at a loss of 37.5%. Find the selling price.",
-      "options": [
-        "Rs. 630",
-        "Rs. 690",
-        "Rs. 750",
-        "Rs. 810"
-      ],
-      "correct_answer": "Rs. 750",
-      "explanation": "CP = 1200. Loss% = 37.5%. SP = CP * (100 - Profit%)/100. Thus SP = 750.",
-      "trick": "Use fractional multipliers for famous percentages to speed up calculation."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A can finish a piece of work in 16 days while B can do it in 48 days. How many days will they take to complete the work if they work together?",
-      "options": [
-        "14 days",
-        "12 days",
-        "11 days",
-        "13 days"
-      ],
-      "correct_answer": "12 days",
-      "explanation": "1 day work of A = 1/16. 1 day work of B = 1/48. Total = 1/16 + 1/48 = (16+48)/(768). Time taken = 768/(64) = 12 days.",
-      "trick": "Direct formula for two people working together: (A * B) / (A + B)"
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. All trees are pens.\n2. No trees are cats.\n\nConclusions:\n1. No pens are cats.\n2. Some pens are not cats.",
-      "options": [
-        "Only conclusion 1 follows",
-        "Only conclusion 2 follows",
-        "Both follow",
-        "Neither follows"
-      ],
-      "correct_answer": "Only conclusion 2 follows",
-      "explanation": "By drawing an overlapping Venn Diagram of trees, pens, and cats, we can determine the logical boundaries. The conclusion 'Some pens are not cats.' satisfies the universal constraint.",
-      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. All trees are bikes.\n2. No trees are tables.\n\nConclusions:\n1. Some bikes are not tables.\n2. No bikes are tables.",
-      "options": [
-        "Only conclusion 1 follows",
-        "Only conclusion 2 follows",
-        "Both follow",
-        "Neither follows"
-      ],
-      "correct_answer": "Only conclusion 1 follows",
-      "explanation": "By drawing an overlapping Venn Diagram of trees, bikes, and tables, we can determine the logical boundaries. The conclusion 'Some bikes are not tables.' satisfies the universal constraint.",
-      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A can finish a piece of work in 15 days while B can do it in 45 days. How many days will they take to complete the work if they work together?",
-      "options": [
-        "11.8 days",
-        "11.25 days",
-        "10.8 days",
-        "12.3 days"
-      ],
-      "correct_answer": "11.25 days",
-      "explanation": "1 day work of A = 1/15. 1 day work of B = 1/45. Total = 1/15 + 1/45 = (15+45)/(675). Time taken = 675/(60) = 11.25 days.",
-      "trick": "Direct formula for two people working together: (A * B) / (A + B)"
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. All trees are cars.\n2. No trees are pens.\n\nConclusions:\n1. Some cars are not pens.\n2. No cars are pens.",
-      "options": [
-        "Only conclusion 1 follows",
-        "Only conclusion 2 follows",
-        "Both follow",
-        "Neither follows"
-      ],
-      "correct_answer": "Only conclusion 1 follows",
-      "explanation": "By drawing an overlapping Venn Diagram of trees, cars, and pens, we can determine the logical boundaries. The conclusion 'Some cars are not pens.' satisfies the universal constraint.",
-      "trick": "Always draw Venn Diagrams. 'All A are B' means A is a subset of B."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper bought an item for Rs. 2900 and sold it at a profit of 33.33%. Find the selling price.",
-      "options": [
-        "Rs. 3867",
-        "Rs. 4157",
-        "Rs. 4012",
-        "Rs. 3722"
-      ],
-      "correct_answer": "Rs. 3867",
-      "explanation": "CP = 2900. Profit% = 33.33%. SP = CP * (100 + Profit%)/100. Thus SP = 3867.",
-      "trick": "Use fractional multipliers for famous percentages to speed up calculation."
-    }
-  ]
+    "questions": [
+        {
+            "question": "If an article is bought for Rs. 130 and sold at a profit of 50%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "208",
+                "175",
+                "195",
+                "205"
+            ],
+            "correct_answer": "195",
+            "explanation": "SP = CP * (1 + Profit%/100) = 130 * (1 + 50/100) = Rs. 195."
+        },
+        {
+            "question": "Find the missing number in the series: 8, 11, 14, 17, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "28",
+                "22",
+                "20",
+                "39"
+            ],
+            "correct_answer": "20",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 3. Next term: 17 + 3 = 20."
+        },
+        {
+            "question": "If an article is bought for Rs. 120 and sold at a profit of 40%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "148",
+                "180",
+                "178",
+                "168"
+            ],
+            "correct_answer": "168",
+            "explanation": "SP = CP * (1 + Profit%/100) = 120 * (1 + 40/100) = Rs. 168."
+        },
+        {
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.",
+            "category": "Logical Reasoning",
+            "options": [
+                "All Apples are Foods.",
+                "All Foods are Apples.",
+                "No Apples are Foods.",
+                "Some Foods are not Apples."
+            ],
+            "correct_answer": "All Apples are Foods.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Apples are Foods.' is the logically certain conclusion."
+        },
+        {
+            "question": "A can complete a piece of work in 30 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "22",
+                "19",
+                "24",
+                "20"
+            ],
+            "correct_answer": "20",
+            "explanation": "1/A + 1/B = 1/30 + 1/60 = (60+30)/(30*60) = 1/20. So they complete it in 20 days."
+        },
+        {
+            "question": "Find the missing number in the series: 4, 8, 16, 32, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "60",
+                "53",
+                "66",
+                "64"
+            ],
+            "correct_answer": "64",
+            "explanation": "The series is a Geometric Progression with a common ratio of 2. Next term: 32 * 2 = 64."
+        },
+        {
+            "question": "If an article is bought for Rs. 160 and sold at a profit of 25%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "200",
+                "180",
+                "210",
+                "216"
+            ],
+            "correct_answer": "200",
+            "explanation": "SP = CP * (1 + Profit%/100) = 160 * (1 + 25/100) = Rs. 200."
+        },
+        {
+            "question": "A can complete a piece of work in 15 days while B can complete the same work in 30 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "9",
+                "14",
+                "12",
+                "10"
+            ],
+            "correct_answer": "10",
+            "explanation": "1/A + 1/B = 1/15 + 1/30 = (30+15)/(15*30) = 1/10. So they complete it in 10 days."
+        },
+        {
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.",
+            "category": "Logical Reasoning",
+            "options": [
+                "All Apples are Foods.",
+                "Some Foods are not Apples.",
+                "No Apples are Foods.",
+                "All Foods are Apples."
+            ],
+            "correct_answer": "All Apples are Foods.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Apples are Foods.' is the logically certain conclusion."
+        },
+        {
+            "question": "A can complete a piece of work in 20 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "15",
+                "17",
+                "14",
+                "19"
+            ],
+            "correct_answer": "15",
+            "explanation": "1/A + 1/B = 1/20 + 1/60 = (60+20)/(20*60) = 1/15. So they complete it in 15 days."
+        },
+        {
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.",
+            "category": "Logical Reasoning",
+            "options": [
+                "Some Stationery are not Pens.",
+                "No Pens are Stationery.",
+                "All Pens are Stationery.",
+                "All Stationery are Pens."
+            ],
+            "correct_answer": "All Pens are Stationery.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Pens are Stationery.' is the logically certain conclusion."
+        },
+        {
+            "question": "Find the missing number in the series: 6, 10, 14, 18, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "20",
+                "27",
+                "12",
+                "22"
+            ],
+            "correct_answer": "22",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 4. Next term: 18 + 4 = 22."
+        },
+        {
+            "question": "Which country recently won the Thomas Cup?",
+            "category": "Current Affairs",
+            "options": [
+                "India",
+                "Indonesia",
+                "China",
+                "Denmark"
+            ],
+            "correct_answer": "India",
+            "explanation": "India made history by winning the Thomas Cup for the first time."
+        },
+        {
+            "question": "Who won the ICC Men's Cricket World Cup 2023?",
+            "category": "Current Affairs",
+            "options": [
+                "Australia",
+                "South Africa",
+                "India",
+                "England"
+            ],
+            "correct_answer": "Australia",
+            "explanation": "Australia defeated India in the final to win the 2023 ICC World Cup."
+        },
+        {
+            "question": "Which city hosted the G20 Summit in 2023?",
+            "category": "Current Affairs",
+            "options": [
+                "Riyadh",
+                "New Delhi",
+                "Bali",
+                "Rome"
+            ],
+            "correct_answer": "New Delhi",
+            "explanation": "The 2023 G20 New Delhi summit was the eighteenth meeting of G20."
+        },
+        {
+            "question": "What is the name of India's first solar mission?",
+            "category": "Current Affairs",
+            "options": [
+                "Aditya-L1",
+                "Chandrayaan-3",
+                "Bhaskara-L",
+                "Surya-1"
+            ],
+            "correct_answer": "Aditya-L1",
+            "explanation": "Aditya-L1 is a coronalography spacecraft designed to study the solar atmosphere."
+        },
+        {
+            "question": "Which film won the Best Picture at the 96th Academy Awards?",
+            "category": "Current Affairs",
+            "options": [
+                "Poor Things",
+                "Oppenheimer",
+                "Killers of the Flower Moon",
+                "Barbie"
+            ],
+            "correct_answer": "Oppenheimer",
+            "explanation": "Oppenheimer won the Academy Award for Best Picture in 2024."
+        },
+        {
+            "question": "Which country officially became the 32nd member of NATO in 2024?",
+            "category": "Current Affairs",
+            "options": [
+                "Sweden",
+                "Finland",
+                "Georgia",
+                "Ukraine"
+            ],
+            "correct_answer": "Sweden",
+            "explanation": "Sweden officially became the 32nd member of NATO in March 2024."
+        }
+    ]
 }
