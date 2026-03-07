@@ -332,11 +332,13 @@ input:checked+.slider:before {
 /* Print optimizations */
 @media print {
     @page {
-        margin: 0;
+        margin: 0.5cm;
     }
 
     body {
-        padding: 2cm;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
     }
 
     body,
@@ -345,6 +347,11 @@ input:checked+.slider:before {
         color: black !important;
         box-shadow: none !important;
         border: none !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        padding: 0.5rem !important;
+        margin: 0 !important;
     }
 
     .action-menu,
