@@ -112,58 +112,6 @@
       "trick": "Recognize that the centroid of points chosen from a convex set always lies within that same convex set. This avoids complex probability calculations."
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "",
-      "options": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "explanation": "",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "",
-      "options": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "explanation": "",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "",
-      "options": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "explanation": "",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "",
-      "options": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "explanation": "",
-      "trick": ""
-    },
-    {
       "category": "Logical Reasoning",
       "question": "Consider the following statements and determine which of the conclusions can be logically derived:\n\nStatements:\n1. All students who study diligently pass the exam.\n2. Some students who attend coaching classes also study diligently.\n3. No student who fails the exam gets a scholarship.\n4. Some students who get a scholarship do not attend coaching classes.\n\nConclusions:\nI. Some students who attend coaching classes pass the exam.\nII. All students who study diligently get a scholarship.\nIII. No student who gets a scholarship fails the exam.\nIV. Some students who do not attend coaching classes study diligently.",
       "options": [
@@ -291,58 +239,6 @@
       ],
       "correct_answer": "To repatriate Indian nationals stranded in a country experiencing a sudden outbreak of civil unrest and conflict.",
       "explanation": "Operation Ajay was launched by the Indian government to evacuate Indian citizens and people of Indian origin from Israel following the outbreak of the Israel-Hamas conflict.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The 'Global Biofuels Alliance' (GBA), launched during India's G20 Presidency in 2023, aims to accelerate the global adoption of biofuels. Which of the following is NOT among the primary objectives of the GBA?",
-      "options": [
-        "To develop and deploy advanced biofuels technologies.",
-        "To establish a framework for the sustainable production and use of biofuels.",
-        "To create a global market for fossil fuels by subsidizing their production.",
-        "To promote international cooperation and partnerships in the biofuels sector."
-      ],
-      "correct_answer": "To create a global market for fossil fuels by subsidizing their production.",
-      "explanation": "The Global Biofuels Alliance (GBA) is focused on promoting biofuels as a sustainable alternative to fossil fuels, not on creating a market for fossil fuels. Its objectives revolve around technology development, sustainable production, and international cooperation in the biofuels sector.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Recently, the Reserve Bank of India (RBI) announced the introduction of a new regulatory framework for 'Digital Lending'. This framework aims to address concerns related to predatory lending practices and ensure greater transparency. Which of the following is a key provision of this new framework?",
-      "options": [
-        "Allowing lending service providers (LSPs) to hold customer data without explicit consent.",
-        "Mandating a cooling-off period for all digital loans to allow borrowers to reconsider.",
-        "Permitting the outsourcing of all recovery and collection activities to unregulated entities.",
-        "Requiring upfront disclosure of all charges, fees, and the Annual Percentage Rate (APR) to borrowers."
-      ],
-      "correct_answer": "Requiring upfront disclosure of all charges, fees, and the Annual Percentage Rate (APR) to borrowers.",
-      "explanation": "A crucial aspect of the RBI's digital lending framework is enhanced transparency. It mandates that all charges, fees, and the Annual Percentage Rate (APR) must be clearly communicated to the borrower upfront, before they agree to the loan. This helps prevent hidden charges and predatory practices.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "In the context of recent geopolitical developments, which of the following multilateral initiatives has been actively promoting sustainable agriculture, climate resilience, and food security through collaborative research, knowledge sharing, and capacity building among member nations, with a particular focus on the Global South?",
-      "options": [
-        "The Belt and Road Initiative (BRI)",
-        "The Indo-Pacific Economic Framework for Prosperity (IPEF)",
-        "The Global Alliance for Climate-Smart Agriculture (GACSA)",
-        "The African Continental Free Trade Area (AfCFTA)"
-      ],
-      "correct_answer": "The Global Alliance for Climate-Smart Agriculture (GACSA)",
-      "explanation": "The Global Alliance for Climate-Smart Agriculture (GACSA) is a multi-stakeholder platform that brings together governments, NGOs, private sector entities, and research institutions to promote climate-smart agriculture. Its agenda strongly aligns with sustainable agriculture, climate resilience, and food security, particularly benefiting developing nations.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Recently, India hosted the 19th G20 Summit. Considering the summit's focus and outcomes, which of the following was a significant declaration or initiative prominently discussed and advanced, reflecting a shift towards greater inclusivity and addressing emerging global challenges?",
-      "options": [
-        "Establishment of a new Global Carbon Tax",
-        "Formal admission of the African Union as a permanent member of the G20",
-        "A comprehensive plan for global debt restructuring of developing nations",
-        "The creation of a unified global digital currency"
-      ],
-      "correct_answer": "Formal admission of the African Union as a permanent member of the G20",
-      "explanation": "A landmark outcome of the 19th G20 Summit hosted by India in September 2023 was the formal admission of the African Union (AU) as a permanent member. This decision was a significant step towards making the G20 more representative and inclusive, giving a stronger voice to the African continent on global economic issues.",
       "trick": ""
     }
   ]

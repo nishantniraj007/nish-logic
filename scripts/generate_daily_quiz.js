@@ -187,11 +187,21 @@ async function main() {
                         rawJsonText = rawJsonText.replace(/^```\n/, "").replace(/\n```$/, "");
                     }
 
-                    const parsedData = JSON.parse(rawJsonText);
+                    let parsedData = JSON.parse(rawJsonText);
 
                     const expectedQuestionsPerChunk = (totalChunks === 9) ? 2 : 6;
-                    if (!Array.isArray(parsedData) || parsedData.length !== expectedQuestionsPerChunk) {
-                        console.warn(`WARNING: The model returned ${parsedData.length || 'invalid number of'} items instead of ${expectedQuestionsPerChunk} for chunk ${chunkIndex}.`);
+
+                    if (!Array.isArray(parsedData)) {
+                        throw new Error("Model returned invalid JSON format (not an array).");
+                    }
+
+                    // Filter out empty skeletons and rigidly cap array sizes
+                    parsedData = parsedData.filter(q => q.question && q.question.trim().length > 0);
+                    if (parsedData.length > expectedQuestionsPerChunk) {
+                        parsedData = parsedData.slice(0, expectedQuestionsPerChunk);
+                    }
+                    if (parsedData.length < expectedQuestionsPerChunk) {
+                        console.warn(`WARNING: The model returned ${parsedData.length} valid items instead of ${expectedQuestionsPerChunk} for chunk ${chunkIndex}.`);
                     }
 
                     allQuestions = allQuestions.concat(parsedData);
@@ -229,8 +239,11 @@ async function main() {
             }
         }
 
-        if (allQuestions.length !== 18) {
-            console.warn(`WARNING: Total questions generated is ${allQuestions.length}, expected 18.`);
+        if (allQuestions.length > 18) {
+            console.warn(`WARNING: Total questions generated is ${allQuestions.length}. Truncating to 18.`);
+            allQuestions = allQuestions.slice(0, 18);
+        } else if (allQuestions.length < 18) {
+            console.warn(`WARNING: Total questions generated is ${allQuestions.length}, expected 18. Some sections might be missing.`);
         }
 
         // Save file
