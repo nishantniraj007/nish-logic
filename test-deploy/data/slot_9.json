@@ -2,244 +2,234 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 9,
-    "generated_at": "2026-03-07T08:07:47.793Z",
+    "generated_at": "2026-03-07T19:39:40.717Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Rs. 640 is divided between A and B in the ratio 2:3. What is A's share?",
-      "correct_answer": "Rs. 256",
+      "question": "Find the next number in the series: 19, -21, -61, -101, -141, ?",
+      "correct_answer": "-181",
       "options": [
-        "Rs. 192",
-        "Rs. 256",
-        "Rs. 384",
-        "Rs. 320"
+        "-141",
+        "-221",
+        "-181",
+        "-179"
       ],
-      "explanation": "Total parts = 2 + 3 = 5. Value of 1 part = 640/5 = 128. A's share = 2 * 128 = 256.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "The fourth session of the Intergovernmental Negotiating Committee (INC-4) to develop an international legally binding instrument on plastic pollution was held in April 2024. Concerning this, consider the following statements:\n\n1. The INC-4 meeting took place in Ottawa, Canada, aiming to advance negotiations on the 'zero draft' of the plastic treaty.\n2. A major point of contention during INC-4 was whether the treaty should focus solely on plastic waste management or also include upstream measures like reducing plastic production.\n3. The High Ambition Coalition to End Plastic Pollution advocates for strong legally binding global rules across the full lifecycle of plastics.\n4. The proposed treaty is expected to be finalized and adopted at INC-5, scheduled for later in 2024.\n\nHow many of the statements given above are correct?",
-      "options": [
-        "Only three",
-        "All four",
-        "Only two",
-        "Only one"
-      ],
-      "correct_answer": "Only three",
-      "explanation": "Statements 1, 2, and 3 are correct. INC-4 was held in Ottawa, Canada, to negotiate the 'zero draft' of the treaty. A key point of disagreement was the scope, particularly upstream measures like reducing plastic production versus focusing only on waste management. The High Ambition Coalition indeed advocates for strong legally binding rules across the entire plastic lifecycle. Statement 4 is incorrect; while INC-5 (in South Korea) is expected to finalize negotiations, the formal adoption of the treaty is typically done at a diplomatic conference, which is anticipated to happen in 2025, not at INC-5 itself.",
-      "trick": "While many details are correct, the distinction between 'finalization' of negotiations (at INC-5) and the formal 'adoption' of the treaty (at a subsequent diplomatic conference) is a subtle but important nuance in international agreements.",
-      "category": "Current Affairs - Environment & Global Governance"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 28000 at an interest rate of 8% per annum over 5 years?",
-      "correct_answer": "Rs. 11200",
-      "options": [
-        "Rs. 12600",
-        "Rs. 11150",
-        "Rs. 11300",
-        "Rs. 11200"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (28000 * 8 * 5) / 100 = 11200.",
-      "trick": "Treat percentage as decimal visually: 280 * 8 * 5 = 11200.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "Sardar Patel",
-        "B.R. Ambedkar"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "trick": "He was the only president to serve two full terms.",
-      "category": "Static GK"
-    },
-    {
-      "question": "With reference to the Monetary Policy Committee (MPC) statement released by the Reserve Bank of India in April 2024, consider the following statements:\n\n1. The MPC decided to keep the policy repo rate unchanged at 6.50% and maintained its 'withdrawal of accommodation' stance.\n2. India's real GDP growth for FY25 was projected at 7.0%, while CPI inflation for FY25 was projected at 4.5%.\n3. The MPC noted that domestic economic activity remains resilient, supported by private consumption and investment.\n\nWhich of the statements given above are correct?",
-      "options": [
-        "1 and 3 only",
-        "1, 2 and 3",
-        "2 and 3 only",
-        "1 and 2 only"
-      ],
-      "correct_answer": "1, 2 and 3",
-      "explanation": "In its April 2024 meeting, the MPC unanimously decided to keep the policy repo rate unchanged at 6.50% and maintained its 'withdrawal of accommodation' stance. Real GDP growth for 2024-25 was projected at 7.0% and CPI inflation at 4.5%. The MPC highlighted the resilience of domestic economic activity, driven by consumption and investment.",
-      "trick": "The 'withdrawal of accommodation' stance is crucial, not a 'neutral' or 'accommodative' one. The exact figures for GDP and CPI projections are also key to differentiating options. Precision in numbers is often tested.",
-      "category": "Current Affairs - Economy"
-    },
-    {
-      "question": "Regarding the international expansion and adoption of India's Unified Payments Interface (UPI) in recent months (March-April 2024), consider the following statements:\n\n1. Nepal has become the first country to integrate India's UPI platform, allowing for instant person-to-person (P2P) and merchant payments.\n2. Sri Lanka and Mauritius launched their respective domestic card schemes and also integrated UPI for cross-border transactions in March 2024.\n3. NPCI International Payments Ltd (NIPL) has collaborated with Lyra Network to enable UPI payments for French tourists in India.\n4. Bhutan was the first country to adopt UPI standards for QR code-based payments in 2021.\n\nHow many of the statements given above are correct?",
-      "options": [
-        "Only three",
-        "Only one",
-        "Only two",
-        "All four"
-      ],
-      "correct_answer": "Only two",
-      "explanation": "Statement 1 is incorrect. While Nepal was among the early adopters for P2P payments, it was Bhutan that was the first country to adopt UPI standards for QR code-based payments in 2021 (making statement 4 correct). Statement 2 is correct; Sri Lanka and Mauritius officially launched UPI services in their countries in March 2024, enabling cross-border merchant payments. Statement 3 is incorrect; NIPL partnered with Lyra Network to enable UPI payments in France, specifically for Indian tourists and users to make payments in France, not for French tourists in India.",
-      "trick": "The internationalization of UPI involves several countries with different types of integration and timelines. Distinguishing between 'first country', 'bilateral integration for tourists', and 'adoption of standards' is crucial. The partnership with Lyra Network was for UPI payments in France by Indians, not for French tourists in India.",
-      "category": "Current Affairs - Technology & International Relations"
-    },
-    {
-      "question": "What is the capital of Australia?",
-      "correct_answer": "Canberra",
-      "options": [
-        "Brisbane",
-        "Canberra",
-        "Melbourne",
-        "Sydney"
-      ],
-      "explanation": "Canberra was chosen as a compromise between Sydney and Melbourne in 1908.",
-      "trick": "It's an inland constructed city perfectly between the two coast majors.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
-      "correct_answer": "32",
-      "options": [
-        "34",
-        "30",
-        "32",
-        "64"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -40. So, -141 + (-40) = -181.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "If MAT is coded as NBU, how will CUP be coded in that same language?",
-      "correct_answer": "DVQ",
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
       "options": [
-        "EWR",
-        "DVQ",
-        "BTO",
-        "CUP"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "India recently signed the Trade and Economic Partnership Agreement (TEPA) with the European Free Trade Association (EFTA) in March 2024. Regarding this agreement, consider the following statements:\n\n1. EFTA is an intergovernmental organization comprising Iceland, Liechtenstein, Norway, and Switzerland.\n2. TEPA is a comprehensive agreement covering areas such as trade in goods, services, investment, intellectual property rights, and sustainable development.\n3. India has committed to providing market access to 80% of its tariff lines for EFTA members, while EFTA has offered 92.2% of its tariff lines to India.\n4. A key feature of the agreement is EFTA's commitment to invest $100 billion in India over 15 years and create 1 million jobs.\n\nHow many of the statements given above are correct?",
-      "options": [
-        "Only two",
-        "All four",
-        "Only one",
-        "Only three"
-      ],
-      "correct_answer": "All four",
-      "explanation": "All statements are correct. EFTA comprises Iceland, Liechtenstein, Norway, and Switzerland. TEPA is a comprehensive agreement covering various economic aspects. India offers market access on 80% of its tariff lines, and EFTA offers 92.2%. The $100 billion investment and 1 million jobs over 15 years is a landmark commitment from EFTA nations, aimed at boosting economic ties.",
-      "trick": "The specific percentages of tariff lines and the exact investment/job commitment figures are precise details that can be easily confused or mistaken. Knowing all four statements are correct requires detailed knowledge of the agreement's nuances.",
-      "category": "Current Affairs - International Relations & Economy"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 45, 47, 49, 51, 53?",
-      "correct_answer": "49",
-      "options": [
-        "47",
-        "49",
-        "53",
-        "51"
-      ],
-      "explanation": "Sum = 245. Average = Sum / 5 = 49.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Yangtze",
-        "Mississippi",
-        "Nile",
-        "Amazon"
-      ],
-      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
-      "trick": "Amazon is largest by volume, Nile is longest by length.",
-      "category": "Static GK"
-    },
-    {
-      "question": "The International Monetary Fund (IMF) released its World Economic Outlook (WEO) in April 2024. Which of the following statements accurately reflect its key findings and projections?\n\n1. The IMF projected global growth at 3.2% for both 2024 and 2025, largely unchanged from its January forecast.\n2. India's growth projection for FY25 was revised upwards to 6.8%, attributing it to robust domestic demand and public investment.\n3. The report highlighted persistent inflation, high public debt, and geopolitical fragmentation as major downside risks to the global economy.\n4. Advanced economies are expected to see a significant deceleration in growth compared to emerging market and developing economies in 2024.\n\nSelect the correct answer using the code given below:",
-      "options": [
-        "1, 2, 3 and 4",
-        "2, 3 and 4 only",
-        "1, 2 and 3 only",
-        "1, 3 and 4 only"
-      ],
-      "correct_answer": "1, 2 and 3 only",
-      "explanation": "The IMF's April 2024 WEO projected global growth at 3.2% for both 2024 and 2025. India's growth for FY25 (calendar year 2024) was indeed revised upwards to 6.8%, supported by strong domestic demand and public investment. The report underscored persistent inflation, high public debt, and geopolitical fragmentation as key risks. Statement 4 is incorrect; while EMDEs are expected to be the primary drivers of global growth, advanced economies are generally projected to show stable or slightly improving growth, not a 'significant deceleration' against EMDEs in 2024.",
-      "trick": "The precise growth figures for global and India, along with accurately identifying the 'downside risks', are critical. Statement 4's phrasing about 'significant deceleration' for advanced economies can be misleading; the growth gap exists but not necessarily a 'significant deceleration' for advanced economies this year.",
-      "category": "Current Affairs - Global Economy"
-    },
-    {
-      "question": "If an article is bought for Rs. 1760 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 1936.0000000000002",
-      "options": [
-        "Rs. 2288",
-        "Rs. 1760.0000000000002",
-        "Rs. 2112",
-        "Rs. 1936.0000000000002"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 1760 * 1.10 = Rs. 1936.0000000000002.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
-      "options": [
-        "All Apples are Foods.",
+        "All Dogs are Animals.",
         "None of the above.",
-        "Some Foods are not Apples.",
-        "No Apples are Foods."
+        "No Dogs are Animals.",
+        "Some Animals are not Dogs."
       ],
       "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
       "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Find the odd one out among the following numbers: 9, 16, 4, 50",
+      "question": "What is the average of the following 5 consecutive even numbers: 48, 50, 52, 54, 56?",
+      "correct_answer": "52",
+      "options": [
+        "54",
+        "50",
+        "52",
+        "56"
+      ],
+      "explanation": "Sum = 260. Average = Sum / 5 = 52.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #1 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 3",
+        "Option 2",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Mississippi",
+        "Nile",
+        "Amazon",
+        "Yangtze"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #3 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 2",
+        "Option 4",
+        "Option 1",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 16, 4, 50, 9",
       "correct_answer": "50",
       "options": [
-        "9",
         "16",
         "4",
-        "50"
+        "50",
+        "9"
       ],
       "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
       "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "correct_answer": "Mars",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Jupiter",
-        "Mars",
-        "Saturn",
-        "Venus"
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Mahatma Gandhi",
+        "Sarojini Naidu"
       ],
-      "explanation": "Mars is covered in iron oxide (rust) dust.",
-      "trick": "Think 'Rust' -> 'Red'.",
+      "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "In March 2024, the Indian Space Research Organisation (ISRO) successfully conducted the third Reusable Launch Vehicle (RLV) Landing Experiment (RLV-LEX-03). Consider the following statements about this mission:\n\n1. The Pushpak RLV was autonomously released from an Indian Air Force Chinook helicopter at an altitude of 4.5 km and accurately landed on a runway.\n2. This experiment validated autonomous landing capabilities under more challenging conditions, including off-nominal releases and higher sink rates.\n3. RLV-LEX-03 is a crucial step towards ISRO's long-term vision of developing a Two Stage To Orbit (TSTO) reusable launch vehicle.\n4. The Pushpak RLV is designed to carry a crew of two astronauts for future manned space missions.\n\nHow many of the statements given above are correct?",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 8000 at an interest rate of 6% per annum over 3 years?",
+      "correct_answer": "Rs. 1440",
       "options": [
-        "Only three",
-        "Only one",
-        "All four",
-        "Only two"
+        "Rs. 1540",
+        "Rs. 1840",
+        "Rs. 1440",
+        "Rs. 1390"
       ],
-      "correct_answer": "Only three",
-      "explanation": "Statements 1, 2, and 3 are correct. The Pushpak RLV (LEX-03) was released from a Chinook helicopter at 4.5 km and performed an autonomous landing. This marked the third successful test, validating robust autonomous landing capabilities under varied and more challenging release conditions, essential for developing a Two Stage To Orbit (TSTO) RLV. Statement 4 is incorrect; the Pushpak RLV (RLV-TD) is a technology demonstrator for reusable launch vehicle capabilities and is not designed to carry astronauts. India's Gaganyaan program is dedicated to manned space missions.",
-      "trick": "Distinguishing between technology demonstrators like Pushpak RLV and crew-carrying vehicles (which is the objective of Gaganyaan) is a common point of confusion. The specific details of the experiment (altitude, helicopter type) and its strategic purpose (TSTO) are key.",
-      "category": "Current Affairs - Science & Technology"
+      "explanation": "SI = (P * R * T) / 100 = (8000 * 6 * 3) / 100 = 1440.",
+      "trick": "Treat percentage as decimal visually: 80 * 6 * 3 = 1440.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #6 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 2",
+        "Option 1",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Neptune",
+        "Jupiter",
+        "Saturn",
+        "Earth"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #5 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 2",
+        "Option 1",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #4 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 2",
+        "Option 1",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "If an article is bought for Rs. 1120 and sold at a profit of 40%, what is the selling price?",
+      "correct_answer": "Rs. 1568",
+      "options": [
+        "Rs. 1792",
+        "Rs. 1680",
+        "Rs. 1456",
+        "Rs. 1568"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 1120 * 1.40 = Rs. 1568.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
+      "correct_answer": "32",
+      "options": [
+        "30",
+        "34",
+        "64",
+        "32"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #2 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 4",
+        "Option 1",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Sardar Patel",
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Rs. 2592 is divided between A and B in the ratio 4:5. What is A's share?",
+      "correct_answer": "Rs. 1152",
+      "options": [
+        "Rs. 892.8",
+        "Rs. 1411.2",
+        "Rs. 1152",
+        "Rs. 1440"
+      ],
+      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 2592/9 = 288. A's share = 4 * 288 = 1152.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }

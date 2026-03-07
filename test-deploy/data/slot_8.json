@@ -2,112 +2,196 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 8,
-    "generated_at": "2026-03-07T08:07:47.793Z",
+    "generated_at": "2026-03-07T19:39:40.717Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "The International Monetary Fund (IMF) recently released its World Economic Outlook (WEO) update in April 2024. Which of the following accurately reflects the key projections and assessments related to India and global growth?\n\n1.  IMF upgraded India's growth projection for the fiscal year 2024-25 (FY25) to 6.8% from its previous estimate.\n2.  Global growth is projected to remain steady at 3.2% in both 2024 and 2025.\n3.  The report highlighted persistent inflation and geopolitical conflicts as key downside risks to the global economic outlook.\n\nSelect the correct option:",
+      "question": "[FALLBACK] Recent news Item #1 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "2 and 3 only",
-        "1 and 2 only",
-        "1 and 3 only",
-        "1, 2 and 3"
+        "Option 1",
+        "Option 4",
+        "Option 2",
+        "Option 3"
       ],
-      "correct_answer": "2 and 3 only",
-      "explanation": "Statement 1 is incorrect. While the IMF did upgrade India's growth projection to 6.8% for *calendar year 2024* (from 6.5% in the January update), the IMF typically provides calendar year projections, not fiscal year (FY) projections directly. Therefore, specifying 'fiscal year 2024-25 (FY25)' for an IMF projection makes the statement technically inaccurate. Statements 2 and 3 are correct. Global growth is indeed projected to be stable at 3.2% for both 2024 and 2025, and the report consistently identifies inflation and geopolitical tensions as significant risks.",
-      "trick": "The subtle distinction between calendar year (IMF's standard) and fiscal year (Indian context) for growth projections is a common trick. Specific growth figures and the period for projections are key.",
-      "category": "Global Economy"
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
-      "question": "If an article is bought for Rs. 1680 and sold at a profit of 30%, what is the selling price?",
-      "correct_answer": "Rs. 2184",
+      "question": "What is the average of the following 5 consecutive even numbers: 38, 40, 42, 44, 46?",
+      "correct_answer": "42",
       "options": [
-        "Rs. 2520",
-        "Rs. 2352",
-        "Rs. 2016",
-        "Rs. 2184"
+        "44",
+        "40",
+        "46",
+        "42"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 1680 * 1.30 = Rs. 2184.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "explanation": "Sum = 210. Average = Sum / 5 = 42.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "India recently achieved a significant milestone in its nuclear power programme by loading the first core of its indigenous Fast Breeder Reactor (PFBR) at Kalpakkam. Which of the following statements about India's nuclear energy strategy and PFBRs is/are correct?\n\n1.  PFBRs are crucial for India's three-stage nuclear power programme as they primarily utilize thorium, which India possesses in abundance.\n2.  PFBRs derive their name from their ability to 'breed' more fissile fuel than they consume, primarily using Uranium-238 to create Plutonium-239.\n3.  The Kalpakkam PFBR has a power generation capacity of 500 MWe and is operated by Bhavini (Bharatiya Nabhikiya Vidyut Nigam Ltd.).\n\nSelect the correct option:",
+      "question": "Find the next number in the series: 5, 15, 45, 135, ?",
+      "correct_answer": "405",
       "options": [
-        "2 and 3 only",
-        "1 and 2 only",
-        "1 and 3 only",
-        "1, 2 and 3"
+        "408",
+        "1215",
+        "405",
+        "400"
       ],
-      "correct_answer": "2 and 3 only",
-      "explanation": "Statement 1 is incorrect. While PFBRs are crucial for India's three-stage program, they primarily use Plutonium-239 (bred from Uranium-238) as fuel and breed more Plutonium-239. The *third stage* of India's program aims to utilize thorium for energy generation in Advanced Heavy Water Reactors, after breeding U-233 from Thorium in breeder reactors. PFBRs are part of the *second stage* that primarily uses plutonium. Statement 2 is correct, accurately describing the 'breeder' concept. Statement 3 is correct; the Kalpakkam PFBR has a 500 MWe capacity and is operated by Bhavini.",
-      "trick": "Confusing the stages of India's nuclear program and the specific fuel cycles used at each stage (Uranium-Plutonium vs. Thorium-Uranium-233) is a common point of confusion.",
-      "category": "Science & Technology"
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
     },
     {
-      "question": "Which vitamin is produced when skin is exposed to sunlight?",
-      "correct_answer": "Vitamin D",
+      "question": "[FALLBACK] Recent news Item #2 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "Vitamin D",
-        "Vitamin B12",
-        "Vitamin C",
-        "Vitamin A"
+        "Option 1",
+        "Option 4",
+        "Option 2",
+        "Option 3"
       ],
-      "explanation": "UVB rays synthesize Vitamin D in the body.",
-      "trick": "The 'sunshine' vitamin.",
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Mahatma Gandhi",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu"
+      ],
+      "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "A can complete a piece of work in 96 days while B can complete the same work in 216 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "66.46 days",
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
       "options": [
-        "66.46 days",
-        "65.46 days",
-        "68.46 days",
-        "70.46 days"
+        "Nile",
+        "Yangtze",
+        "Mississippi",
+        "Amazon"
       ],
-      "explanation": "Work = 96 * 216 = 20736. Rate = 96 + 216 = 312. Time = Work / Rate = 66.46 days.",
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #5 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 2",
+        "Option 3",
+        "Option 1"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "A can complete a piece of work in 128 days while B can complete the same work in 208 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "79.24 days",
+      "options": [
+        "81.24 days",
+        "78.24 days",
+        "83.24 days",
+        "79.24 days"
+      ],
+      "explanation": "Work = 128 * 208 = 26624. Rate = 128 + 208 = 336. Time = Work / Rate = 79.24 days.",
       "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "India recently signed the Trade and Economic Partnership Agreement (TEPA) with the European Free Trade Association (EFTA). Which of the following statements about this agreement is/are correct?\n\n1.  EFTA is an intergovernmental organisation comprising Iceland, Liechtenstein, Norway, and Switzerland.\n2.  The agreement includes a binding commitment from EFTA countries to promote an investment of USD 100 billion in India over the next 15 years.\n3.  TEPA is India's first free trade agreement with a major European bloc.\n\nSelect the correct option:",
+      "question": "[FALLBACK] Recent news Item #4 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "1 and 2 only",
-        "1 and 3 only",
-        "2 and 3 only",
-        "1, 2 and 3"
+        "Option 4",
+        "Option 2",
+        "Option 1",
+        "Option 3"
       ],
-      "correct_answer": "1, 2 and 3",
-      "explanation": "All three statements are correct. Statement 1 accurately lists the EFTA member states. Statement 2 correctly details the unique binding commitment for investment and job creation outlined in the TEPA. Statement 3 is also correct, as EFTA countries collectively represent a significant economic bloc in Europe, making this India's first FTA with such a grouping, distinct from the European Union.",
-      "trick": "The precise commitment figure and timeframe for investment (USD 100 billion in 15 years) and the exact phrasing ('binding commitment to promote investments') are critical. Also, discerning 'major European bloc' from the EU is key.",
-      "category": "International Relations & Economy"
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
-      "question": "With reference to the recent Monetary Policy Committee (MPC) meeting of the Reserve Bank of India (RBI) in April 2024, consider the following statements:\n\n1.  The MPC unanimously decided to keep the policy repo rate unchanged at 6.50%.\n2.  The stance of 'withdrawal of accommodation' was maintained, indicating a focus on aligning inflation with the target while supporting growth.\n3.  The RBI projected India's real GDP growth for FY25 at 7.0%.\n\nHow many of the statements given above are correct?",
+      "question": "Rs. 2752 is divided between A and B in the ratio 2:6. What is A's share?",
+      "correct_answer": "Rs. 688",
       "options": [
-        "All three",
-        "Only one",
-        "None",
-        "Only two"
+        "Rs. 963.2",
+        "Rs. 688",
+        "Rs. 412.8",
+        "Rs. 2064"
       ],
-      "correct_answer": "All three",
-      "explanation": "All three statements are correct. The MPC indeed unanimously voted to keep the repo rate at 6.50%. The 'withdrawal of accommodation' stance was retained, signalling continued efforts to bring inflation within the target band. Furthermore, the RBI projected India's real GDP growth for FY25 at 7.0%, while also projecting CPI inflation at 4.5% for FY25.",
-      "trick": "The unanimity of the decision, the specific GDP projection figure, and a nuanced understanding of the 'withdrawal of accommodation' stance are common tricky details in MPC statements.",
-      "category": "Economy & Finance"
+      "explanation": "Total parts = 2 + 6 = 8. Value of 1 part = 2752/8 = 344. A's share = 2 * 344 = 688.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
     },
     {
-      "question": "Find the odd one out among the following numbers: 36, 16, 82, 25",
-      "correct_answer": "82",
+      "question": "[FALLBACK] Recent news Item #6 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
+        "Option 1",
+        "Option 4",
+        "Option 3",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "No Dogs are Animals.",
+        "None of the above.",
+        "All Dogs are Animals.",
+        "Some Animals are not Dogs."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the next number in the series: 3, -17, -37, -57, -77, ?",
+      "correct_answer": "-97",
+      "options": [
+        "-95",
+        "-77",
+        "-117",
+        "-97"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -20. So, -77 + (-20) = -97.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 147 km/hr. How much distance will it cover in 6 hours?",
+      "correct_answer": "882 km",
+      "options": [
+        "902 km",
+        "882 km",
+        "1029 km",
+        "735 km"
+      ],
+      "explanation": "Distance = Speed * Time = 147 * 6 = 882 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 49, 36, 64, 122",
+      "correct_answer": "122",
+      "options": [
+        "49",
         "36",
-        "16",
-        "82",
-        "25"
+        "64",
+        "122"
       ],
-      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
       "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
@@ -121,125 +205,31 @@
         "Dr. Rajendra Prasad"
       ],
       "explanation": "He served from 1950 to 1962.",
-      "trick": "He was the only president to serve two full terms.",
       "category": "Static GK"
     },
     {
-      "question": "In March 2024, Prime Minister Narendra Modi laid the foundation stone for three major semiconductor projects in India. Which of the following accurately describes these initiatives?\n\n1.  A semiconductor fabrication facility (fab) by Tata Electronics Private Limited in Dholera, Gujarat, for producing 28 nm chips.\n2.  A semiconductor ATMP (Assembly, Testing, Marking, and Packaging) unit by CG Power and Industrial Solutions in Sanand, Gujarat.\n3.  An ATMP facility by Tata Semiconductor Assembly and Test (TSAT) Private Limited in Morigaon, Assam.\n\nHow many of the statements given above are correct?",
+      "question": "[FALLBACK] Recent news Item #3 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "None",
-        "Only one",
-        "All three",
-        "Only two"
+        "Option 4",
+        "Option 1",
+        "Option 3",
+        "Option 2"
       ],
-      "correct_answer": "All three",
-      "explanation": "All three statements are correct. The foundation stone was laid for: 1. Tata Electronics Pvt Ltd's semiconductor fab in Dholera, Gujarat, in partnership with Powerchip Taiwan, for 28 nm chips. 2. CG Power and Industrial Solutions' semiconductor ATMP unit in Sanand, Gujarat, in partnership with Renesas Electronics Corp and Stars Microelectronics. 3. Tata Semiconductor Assembly and Test (TSAT) Pvt Ltd's ATMP facility in Morigaon, Assam.",
-      "trick": "The specific locations, technology nodes (fab vs. ATMP), and the precise names of the companies involved (Tata Electronics vs. TSAT, CG Power) can be confusing.",
-      "category": "Economy & Technology"
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
-      "question": "Regarding 'Mission Divyastra', which recently conducted India's first flight test of an Agni-5 missile with Multiple Independently Targetable Re-entry Vehicle (MIRV) technology, consider the following statements:\n\n1.  The Agni-5 missile, with a range exceeding 5,000 km, is a two-stage solid-fueled missile.\n2.  MIRV technology allows a single missile to deliver multiple warheads to different targets.\n3.  This development places India among a select group of nations possessing MIRV capability for long-range ballistic missiles.\n\nHow many of the statements given above are correct?",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "Only two",
-        "Only one",
-        "All three",
-        "None"
+        "Neptune",
+        "Saturn",
+        "Jupiter",
+        "Earth"
       ],
-      "correct_answer": "Only two",
-      "explanation": "Statement 1 is incorrect. Agni-5 is a three-stage solid-fueled missile, not two-stage. Statements 2 and 3 are correct. MIRV technology indeed enables a single missile to engage multiple independent targets, and its successful demonstration places India in an elite club of nations like the US, Russia, China, UK, and France with such advanced capability.",
-      "trick": "The number of stages for Agni-5 (three-stage) is a common detail that can be confused. MIRV concept and its strategic implication are generally known but can be tested for precision.",
-      "category": "Defence & Technology"
-    },
-    {
-      "question": "Find the next number in the series: 13, 3, -7, -17, -27, ?",
-      "correct_answer": "-37",
-      "options": [
-        "-37",
-        "-35",
-        "-27",
-        "-47"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -10. So, -27 + (-10) = -37.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 4, 8, 16, 32, ?",
-      "correct_answer": "64",
-      "options": [
-        "128",
-        "60",
-        "64",
-        "66"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 32 * 2 = 64.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If DOG is coded as EPH, how will CUP be coded in that same language?",
-      "correct_answer": "DVQ",
-      "options": [
-        "DVQ",
-        "EWR",
-        "BTO",
-        "CUP"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "When did the Indian Constitution come into effect?",
-      "correct_answer": "26 January 1950",
-      "options": [
-        "2 October 1948",
-        "26 November 1949",
-        "26 January 1950",
-        "15 August 1947"
-      ],
-      "explanation": "The Constitution of India came into effect on Republic Day, Jan 26, 1950.",
-      "trick": "26 Jan was chosen to honor the 'Purna Swaraj' declaration of 1930.",
+      "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
-    },
-    {
-      "question": "A train travels at an average speed of 91 km/hr. How much distance will it cover in 5 hours?",
-      "correct_answer": "455 km",
-      "options": [
-        "455 km",
-        "546 km",
-        "475 km",
-        "364 km"
-      ],
-      "explanation": "Distance = Speed * Time = 91 * 5 = 455 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Yangtze",
-        "Mississippi",
-        "Amazon",
-        "Nile"
-      ],
-      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
-      "trick": "Amazon is largest by volume, Nile is longest by length.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 56, 58, 60, 62, 64?",
-      "correct_answer": "60",
-      "options": [
-        "58",
-        "64",
-        "60",
-        "62"
-      ],
-      "explanation": "Sum = 300. Average = Sum / 5 = 60.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
     }
   ]
 }

@@ -2,244 +2,234 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 5,
-    "generated_at": "2026-03-07T08:07:47.793Z",
+    "generated_at": "2026-03-07T19:39:40.717Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Find the odd one out among the following numbers: 25, 16, 65, 9",
-      "correct_answer": "65",
+      "question": "[FALLBACK] Recent news Item #6 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "25",
-        "16",
-        "65",
-        "9"
+        "Option 1",
+        "Option 3",
+        "Option 4",
+        "Option 2"
       ],
-      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
-      "question": "Which state emerged as the overall champion in the 6th edition of the Khelo India Youth Games 2023, held from January 19 to February 1, 2024?",
+      "question": "A train travels at an average speed of 86 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "258 km",
       "options": [
-        "Haryana",
-        "Tamil Nadu",
-        "Maharashtra",
-        "Uttar Pradesh"
+        "278 km",
+        "258 km",
+        "344 km",
+        "172 km"
       ],
-      "correct_answer": "Maharashtra",
-      "explanation": "Maharashtra topped the medal tally with 158 medals (57 gold, 48 silver, 53 bronze) at the Khelo India Youth Games 2023, held in Tamil Nadu.",
-      "trick": "Host state was Tamil Nadu, but the winner was Maharashtra, continuing its dominance in these games.",
-      "category": "National Sports"
+      "explanation": "Distance = Speed * Time = 86 * 3 = 258 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "What is the average of the following 5 consecutive even numbers: 45, 47, 49, 51, 53?",
+      "correct_answer": "49",
       "options": [
-        "Mississippi",
-        "Yangtze",
-        "Amazon",
-        "Nile"
+        "47",
+        "51",
+        "49",
+        "53"
       ],
-      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
-      "trick": "Amazon is largest by volume, Nile is longest by length.",
-      "category": "Static GK"
+      "explanation": "Sum = 245. Average = Sum / 5 = 49.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
     },
     {
-      "question": "If BAT is coded as DCV, how will PEN be coded in that same language?",
-      "correct_answer": "RGP",
+      "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
       "options": [
-        "NCL",
-        "RGP",
-        "PEN",
-        "SHQ"
+        "PDQ",
+        "OCP",
+        "K?L",
+        "MAN"
       ],
       "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Who has been recently appointed as the Chairperson of the Lokpal of India in February 2024?",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "Justice Pinaki Chandra Ghose",
-        "Justice D. Y. Chandrachud",
-        "Justice N. V. Ramana",
-        "Justice A. M. Khanwilkar"
+        "Saturn",
+        "Earth",
+        "Jupiter",
+        "Neptune"
       ],
-      "correct_answer": "Justice A. M. Khanwilkar",
-      "explanation": "Justice Ajay Manikrao Khanwilkar, a former Supreme Court judge, was appointed as the new Chairperson of the Lokpal of India in February 2024.",
-      "trick": "Remember 'Khanwilkar' for Lokpal, distinct from the Chief Justice of India.",
-      "category": "New Appointments"
-    },
-    {
-      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
-      "correct_answer": "1915",
-      "options": [
-        "1920",
-        "1910",
-        "1917",
-        "1915"
-      ],
-      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
-      "trick": "Remember 1915 as the start of his Indian movements.",
+      "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 17600 at an interest rate of 12% per annum over 2 years?",
-      "correct_answer": "Rs. 4224",
+      "question": "Find the next number in the series: 11, 17, 23, 29, 35, ?",
+      "correct_answer": "41",
       "options": [
-        "Rs. 5104",
-        "Rs. 4174",
-        "Rs. 4324",
-        "Rs. 4224"
+        "35",
+        "43",
+        "41",
+        "47"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (17600 * 12 * 2) / 100 = 4224.",
-      "trick": "Treat percentage as decimal visually: 176 * 12 * 2 = 4224.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "What is the name of the new scheme launched by Prime Minister Narendra Modi in February 2024, aiming to provide free electricity through rooftop solarization?",
-      "options": [
-        "PM Ujjwala Yojana 2.0",
-        "PM Surya Ghar Muft Bijli Yojana",
-        "PM Kusum Yojana",
-        "PM Urja Vikas Yojana"
-      ],
-      "correct_answer": "PM Surya Ghar Muft Bijli Yojana",
-      "explanation": "PM Surya Ghar Muft Bijli Yojana was launched in February 2024 with an outlay of over Rs 75,000 crore to provide free electricity to 1 crore households through rooftop solarization.",
-      "trick": "The name directly translates to 'PM Sun Home Free Electricity Scheme'.",
-      "category": "Direct Schemes"
-    },
-    {
-      "question": "Rs. 432 is divided between A and B in the ratio 4:5. What is A's share?",
-      "correct_answer": "Rs. 192",
-      "options": [
-        "Rs. 148.8",
-        "Rs. 240",
-        "Rs. 235.2",
-        "Rs. 192"
-      ],
-      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 432/9 = 48. A's share = 4 * 48 = 192.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
-      "options": [
-        "All Pens are Stationery.",
-        "None of the above.",
-        "Some Stationery are not Pens.",
-        "No Pens are Stationery."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 48 days while B can complete the same work in 64 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "27.43 days",
-      "options": [
-        "27.43 days",
-        "31.43 days",
-        "29.43 days",
-        "26.43 days"
-      ],
-      "explanation": "Work = 48 * 64 = 3072. Rate = 48 + 64 = 112. Time = Work / Rate = 27.43 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "How many individuals were posthumously or otherwise conferred with India's highest civilian honour, Bharat Ratna, by the Indian government in February 2024?",
-      "options": [
-        "4",
-        "6",
-        "3",
-        "5"
-      ],
-      "correct_answer": "5",
-      "explanation": "In February 2024, the government announced Bharat Ratna for five distinguished personalities: P. V. Narasimha Rao, Chaudhary Charan Singh, M. S. Swaminathan (all posthumous), along with Karpoori Thakur (posthumous) and L. K. Advani.",
-      "trick": "Remember the specific number 'five' as it was an unusually high number of awards given in a single year.",
-      "category": "Awards"
-    },
-    {
-      "question": "Which specific payment bank was recently put under severe restrictions by the Reserve Bank of India (RBI) in January 2024, preventing it from accepting new deposits or top-ups?",
-      "options": [
-        "Jio Payments Bank",
-        "Fino Payments Bank",
-        "Paytm Payments Bank",
-        "Airtel Payments Bank"
-      ],
-      "correct_answer": "Paytm Payments Bank",
-      "explanation": "The RBI imposed severe restrictions on Paytm Payments Bank Ltd in January 2024, prohibiting it from accepting new deposits or top-ups in any customer accounts, wallets, FASTags, etc., after February 29, 2024 (later extended to March 15, 2024) due to persistent non-compliance and supervisory concerns.",
-      "trick": "The issue was widely covered in news; associate 'Paytm' with 'RBI restrictions'.",
-      "category": "Banking Norms"
-    },
-    {
-      "question": "Find the next number in the series: 19, 49, 79, 109, 139, ?",
-      "correct_answer": "169",
-      "options": [
-        "169",
-        "199",
-        "171",
-        "139"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 30. So, 139 + (30) = 169.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 6. So, 35 + (6) = 41.",
       "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "A train travels at an average speed of 66 km/hr. How much distance will it cover in 2 hours?",
-      "correct_answer": "132 km",
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
       "options": [
-        "198 km",
-        "132 km",
-        "152 km",
-        "66 km"
+        "243",
+        "246",
+        "729",
+        "240"
       ],
-      "explanation": "Distance = Speed * Time = 66 * 2 = 132 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Jawaharlal Nehru",
+        "Sardar Patel",
+        "B.R. Ambedkar",
+        "Dr. Rajendra Prasad"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 50, 4, 16, 9",
+      "correct_answer": "50",
+      "options": [
+        "50",
+        "4",
+        "16",
+        "9"
+      ],
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Amazon",
+        "Mississippi",
+        "Nile"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #4 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 4",
+        "Option 2",
+        "Option 1"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #5 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 4",
+        "Option 3",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Mahatma Gandhi"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #1 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #2 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 4",
+        "Option 2",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #3 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 2",
+        "Option 4",
+        "Option 1"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Rs. 800 is divided between A and B in the ratio 2:6. What is A's share?",
+      "correct_answer": "Rs. 200",
+      "options": [
+        "Rs. 200",
+        "Rs. 280",
+        "Rs. 600",
+        "Rs. 120"
+      ],
+      "explanation": "Total parts = 2 + 6 = 8. Value of 1 part = 800/8 = 100. A's share = 2 * 100 = 200.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the largest ocean on Earth?",
-      "correct_answer": "Pacific Ocean",
+      "question": "If an article is bought for Rs. 560 and sold at a profit of 50%, what is the selling price?",
+      "correct_answer": "Rs. 840",
       "options": [
-        "Pacific Ocean",
-        "Indian Ocean",
-        "Arctic Ocean",
-        "Atlantic Ocean"
+        "Rs. 784",
+        "Rs. 952",
+        "Rs. 896",
+        "Rs. 840"
       ],
-      "explanation": "It covers more than 30% of the Earth's surface.",
-      "trick": "Pacific derives from 'pace' meaning peaceful.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which planet is known as the Red Planet?",
-      "correct_answer": "Mars",
-      "options": [
-        "Venus",
-        "Jupiter",
-        "Mars",
-        "Saturn"
-      ],
-      "explanation": "Mars is covered in iron oxide (rust) dust.",
-      "trick": "Think 'Rust' -> 'Red'.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Who was appointed as the new Director General (DG) of the Sashastra Seema Bal (SSB) in January 2024?",
-      "options": [
-        "Rahul Rasgotra",
-        "Vivek Srivastava",
-        "Daljit Singh Chaudhary",
-        "Anish Dayal Singh"
-      ],
-      "correct_answer": "Daljit Singh Chaudhary",
-      "explanation": "IPS officer Daljit Singh Chaudhary was appointed as the new Director General of Sashastra Seema Bal (SSB) in January 2024. He also holds an additional charge as DG of NSG.",
-      "trick": "Many DG appointments happened around this time; Chaudhary for SSB.",
-      "category": "New Appointments"
+      "explanation": "SP = CP * (1 + Profit/100) = 560 * 1.50 = Rs. 840.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }

@@ -2,88 +2,109 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 6,
-    "generated_at": "2026-03-07T08:07:47.793Z",
+    "generated_at": "2026-03-07T19:39:40.717Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Which is the largest ocean on Earth?",
-      "correct_answer": "Pacific Ocean",
+      "question": "[FALLBACK] Recent news Item #5 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "Indian Ocean",
-        "Atlantic Ocean",
-        "Arctic Ocean",
-        "Pacific Ocean"
+        "Option 2",
+        "Option 4",
+        "Option 3",
+        "Option 1"
       ],
-      "explanation": "It covers more than 30% of the Earth's surface.",
-      "trick": "Pacific derives from 'pace' meaning peaceful.",
-      "category": "Static GK"
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
-      "question": "Who among the following was recently appointed as a new Election Commissioner of India in March 2024?",
+      "question": "Find the next number in the series: 5, 11, 17, 23, 29, ?",
+      "correct_answer": "35",
       "options": [
-        "Rajiv Kumar",
-        "Sukhbir Singh Sandhu",
-        "Arun Goel",
-        "Anup Chandra Pandey"
+        "35",
+        "37",
+        "29",
+        "41"
       ],
-      "correct_answer": "Sukhbir Singh Sandhu",
-      "explanation": "Sukhbir Singh Sandhu and Gyanesh Kumar were appointed as Election Commissioners by the President of India on March 14, 2024.",
-      "trick": "Arun Goel had resigned earlier. Rajiv Kumar is the Chief Election Commissioner. Anup Chandra Pandey retired recently.",
-      "category": "Appointments"
-    },
-    {
-      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
-      "options": [
-        "SHQ",
-        "MBK",
-        "PEN",
-        "TIR"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 6. So, 29 + (6) = 35.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "What is the primary objective of the 'PM Surya Ghar Muft Bijli Yojana' launched by the Union Government in February 2024?",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "Promoting electric vehicles",
-        "Offering free rooftop solar electricity",
-        "Providing free LPG connections",
-        "Subsidizing agricultural machinery"
+        "Neptune",
+        "Jupiter",
+        "Saturn",
+        "Earth"
       ],
-      "correct_answer": "Offering free rooftop solar electricity",
-      "explanation": "The scheme aims to provide free electricity to one crore households by installing rooftop solar panels, with substantial subsidies.",
-      "trick": "The name 'Surya Ghar Muft Bijli' clearly indicates solar power ('Surya'), for homes ('Ghar'), and free electricity ('Muft Bijli').",
-      "category": "Direct Schemes"
-    },
-    {
-      "question": "Which core service related to new deposits or credit transactions was primarily restricted for Paytm Payments Bank accounts/wallets by the RBI order effective March 15, 2024 (later extended)?",
-      "options": [
-        "Withdrawal of existing balance",
-        "Accepting new deposits",
-        "Online bill payments using linked bank accounts",
-        "UPI payments from existing balance"
-      ],
-      "correct_answer": "Accepting new deposits",
-      "explanation": "RBI prohibited Paytm Payments Bank from accepting new deposits or credit transactions into customer accounts, prepaid instruments, wallets, and FASTags after the specified date (originally Feb 29, 2024, then extended to March 15, 2024, and subsequently April 15, 2024, for certain services).",
-      "trick": "Customers can still withdraw existing balances or use them for payments, but new money cannot be added to the PPBL ecosystem.",
-      "category": "Banking Norms"
-    },
-    {
-      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
-      "correct_answer": "1915",
-      "options": [
-        "1917",
-        "1910",
-        "1915",
-        "1920"
-      ],
-      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
-      "trick": "Remember 1915 as the start of his Indian movements.",
+      "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
+    },
+    {
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
+      "options": [
+        "Some Stationery are not Pens.",
+        "No Pens are Stationery.",
+        "None of the above.",
+        "All Pens are Stationery."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Amazon",
+        "Mississippi",
+        "Nile"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #6 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "A train travels at an average speed of 88 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "264 km",
+      "options": [
+        "352 km",
+        "264 km",
+        "176 km",
+        "284 km"
+      ],
+      "explanation": "Distance = Speed * Time = 88 * 3 = 264 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #3 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 2",
+        "Option 1",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
       "question": "Who was the first President of India?",
@@ -91,155 +112,124 @@
       "options": [
         "Sardar Patel",
         "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar"
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru"
       ],
       "explanation": "He served from 1950 to 1962.",
-      "trick": "He was the only president to serve two full terms.",
       "category": "Static GK"
     },
     {
-      "question": "If an article is bought for Rs. 720 and sold at a profit of 30%, what is the selling price?",
-      "correct_answer": "Rs. 936",
+      "question": "Rs. 364 is divided between A and B in the ratio 3:4. What is A's share?",
+      "correct_answer": "Rs. 156",
       "options": [
-        "Rs. 1008",
-        "Rs. 1080",
-        "Rs. 936",
-        "Rs. 864"
+        "Rs. 156",
+        "Rs. 208",
+        "Rs. 192.4",
+        "Rs. 119.6"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 720 * 1.30 = Rs. 936.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "explanation": "Total parts = 3 + 4 = 7. Value of 1 part = 364/7 = 52. A's share = 3 * 52 = 156.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "A train travels at an average speed of 102 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "306 km",
+      "question": "[FALLBACK] Recent news Item #2 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "204 km",
-        "306 km",
-        "408 km",
-        "326 km"
+        "Option 4",
+        "Option 2",
+        "Option 3",
+        "Option 1"
       ],
-      "explanation": "Distance = Speed * Time = 102 * 3 = 306 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 40, 42, 44, 46, 48?",
+      "correct_answer": "44",
+      "options": [
+        "44",
+        "48",
+        "42",
+        "46"
+      ],
+      "explanation": "Sum = 220. Average = Sum / 5 = 44.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
-      "correct_answer": "162",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "165",
-        "486",
-        "160",
-        "162"
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Mahatma Gandhi"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 122, 36, 49, 64",
-      "correct_answer": "122",
-      "options": [
-        "122",
-        "36",
-        "49",
-        "64"
-      ],
-      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "The Reserve Bank of India (RBI) recently announced a new facility allowing customers to deposit cash into their bank accounts at Cash Deposit Machines (CDMs) using which payment interface?",
-      "options": [
-        "IMPS",
-        "UPI",
-        "RTGS",
-        "NEFT"
-      ],
-      "correct_answer": "UPI",
-      "explanation": "In February 2024, the RBI announced that cash deposits can now be made into bank accounts using UPI at Cash Deposit Machines (CDMs) across various banks, by scanning a QR code.",
-      "trick": "While all options are valid payment systems, UPI is the specific interface enabled for this new CDM cash deposit functionality.",
-      "category": "Banking Norms"
-    },
-    {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
-      "options": [
-        "Some Animals are not Dogs.",
-        "All Dogs are Animals.",
-        "None of the above.",
-        "No Dogs are Animals."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 10000 at an interest rate of 8% per annum over 4 years?",
-      "correct_answer": "Rs. 3200",
-      "options": [
-        "Rs. 3300",
-        "Rs. 3700",
-        "Rs. 3200",
-        "Rs. 3150"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (10000 * 8 * 4) / 100 = 3200.",
-      "trick": "Treat percentage as decimal visually: 100 * 8 * 4 = 3200.",
-      "category": "Quantitative Aptitude"
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
       "question": "A can complete a piece of work in 68 days while B can complete the same work in 72 days. If they work together, in how many days will they complete the work?",
       "correct_answer": "34.97 days",
       "options": [
         "38.97 days",
+        "33.97 days",
         "34.97 days",
-        "36.97 days",
-        "33.97 days"
+        "36.97 days"
       ],
       "explanation": "Work = 68 * 72 = 4896. Rate = 68 + 72 = 140. Time = Work / Rate = 34.97 days.",
       "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "How many individuals were posthumously awarded the Bharat Ratna, India's highest civilian honour, in February 2024?",
+      "question": "If BAT is coded as DCV, how will CUP be coded in that same language?",
+      "correct_answer": "EWR",
       "options": [
-        "2",
-        "5",
-        "3",
-        "4"
+        "ASN",
+        "CUP",
+        "FXS",
+        "EWR"
       ],
-      "correct_answer": "4",
-      "explanation": "In February 2024, the government announced Bharat Ratna for five individuals: P.V. Narasimha Rao, Charan Singh, M.S. Swaminathan, and Karpoori Thakur (all posthumously), and L.K. Advani.",
-      "trick": "Knowing the total number (5) but identifying only the posthumous recipients (4) is key. L.K. Advani is alive.",
-      "category": "Awards"
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "correct_answer": "Mars",
+      "question": "[FALLBACK] Recent news Item #4 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "Jupiter",
-        "Mars",
-        "Saturn",
-        "Venus"
+        "Option 1",
+        "Option 2",
+        "Option 4",
+        "Option 3"
       ],
-      "explanation": "Mars is covered in iron oxide (rust) dust.",
-      "trick": "Think 'Rust' -> 'Red'.",
-      "category": "Static GK"
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
-      "question": "Which team/state topped the medal tally in the 4th edition of the Khelo India Winter Games held in February 2024?",
+      "question": "Find the odd one out among the following numbers: 82, 36, 25, 16",
+      "correct_answer": "82",
       "options": [
-        "Himachal Pradesh",
-        "Jammu & Kashmir",
-        "Maharashtra",
-        "Services Sports Control Board"
+        "82",
+        "36",
+        "25",
+        "16"
       ],
-      "correct_answer": "Services Sports Control Board",
-      "explanation": "The Services Sports Control Board (SSCB) topped the medal tally at the 4th Khelo India Winter Games 2024, held in Gulmarg (J&K) and Leh (Ladakh). Jammu & Kashmir secured the second position.",
-      "trick": "Jammu & Kashmir being a primary host and a strong performer in winter sports might be a common incorrect guess.",
-      "category": "National Sports"
+      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #1 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 2",
+        "Option 1",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     }
   ]
 }

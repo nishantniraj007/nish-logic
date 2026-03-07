@@ -2,244 +2,234 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 3,
-    "generated_at": "2026-03-07T08:07:47.793Z",
+    "generated_at": "2026-03-07T19:39:40.717Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "In April 2024, Iran launched an extensive drone and missile attack against Israel. Which of the following military operations was reportedly conducted by Iran in response to the strike on its consulate in Damascus?",
+      "question": "[FALLBACK] Recent news Item #3 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "Operation True Promise",
-        "Operation Martyr Soleimani",
-        "Operation Storm Al-Aqsa",
-        "Operation Sacred Defense"
+        "Option 3",
+        "Option 4",
+        "Option 2",
+        "Option 1"
       ],
-      "correct_answer": "Operation True Promise",
-      "explanation": "Iran designated its retaliatory attack on Israel on April 13, 2024, as 'Operation True Promise,' following an alleged Israeli strike on Iran's consulate in Damascus.",
-      "trick": "'Storm Al-Aqsa' was the name given to the October 7, 2023, attack by Hamas on Israel.",
+      "explanation": "Remote Database sync failed temporarily.",
       "category": "Current Affairs"
     },
     {
-      "question": "Which is the largest ocean on Earth?",
-      "correct_answer": "Pacific Ocean",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "Indian Ocean",
-        "Atlantic Ocean",
-        "Arctic Ocean",
-        "Pacific Ocean"
+        "Neptune",
+        "Jupiter",
+        "Saturn",
+        "Earth"
       ],
-      "explanation": "It covers more than 30% of the Earth's surface.",
-      "trick": "Pacific derives from 'pace' meaning peaceful.",
+      "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "In March 2024, ISRO successfully conducted the third and final landing experiment (LEX-03) of its Reusable Launch Vehicle (RLV-TD) from an aerial platform. What is the primary objective of developing this RLV-TD?",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "To conduct sub-orbital manned space missions",
-        "To develop a fully reusable two-stage orbital launch vehicle",
-        "To deploy small satellites into low earth orbit cost-effectively",
-        "To test atmospheric re-entry for planetary probes"
+        "Sarojini Naidu",
+        "Rabindranath Tagore",
+        "Mahatma Gandhi",
+        "Bankim Chandra Chatterjee"
       ],
-      "correct_answer": "To develop a fully reusable two-stage orbital launch vehicle",
-      "explanation": "The RLV-TD (Technology Demonstrator) programme is aimed at demonstrating various technologies required for a Two Stage To Orbit (TSTO) fully reusable launch vehicle, which would significantly reduce launch costs.",
-      "trick": "Distinguish between the RLV-TD's long-term goal and other specific space missions or objectives.",
-      "category": "Current Affairs"
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
-      "question": "In April 2024, the International Monetary Fund (IMF) revised its growth projection for India's GDP for the fiscal year 2024-25. What is the updated forecast by the IMF?",
+      "question": "A can complete a piece of work in 38 days while B can complete the same work in 42 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "19.95 days",
       "options": [
-        "7.0%",
-        "7.2%",
-        "6.8%",
-        "6.5%"
+        "21.95 days",
+        "19.95 days",
+        "18.95 days",
+        "23.95 days"
       ],
-      "correct_answer": "6.8%",
-      "explanation": "The IMF, in its April 2024 World Economic Outlook, upgraded India's growth projection for FY25 to 6.8%, citing robust domestic demand and a strong public investment push.",
-      "trick": "Economic projections often vary slightly between different agencies (IMF, World Bank, ADB, RBI), so knowing the specific IMF figure is important.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "If an article is bought for Rs. 520 and sold at a profit of 40%, what is the selling price?",
-      "correct_answer": "Rs. 728",
-      "options": [
-        "Rs. 832",
-        "Rs. 676",
-        "Rs. 780",
-        "Rs. 728"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 520 * 1.40 = Rs. 728.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "explanation": "Work = 38 * 42 = 1596. Rate = 38 + 42 = 80. Time = Work / Rate = 19.95 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Find the odd one out among the following numbers: 65, 16, 9, 25",
-      "correct_answer": "65",
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
       "options": [
-        "65",
-        "16",
-        "9",
-        "25"
-      ],
-      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "In light of the ongoing Lok Sabha Elections 2024, the Election Commission of India (ECI) has been actively promoting voter turnout. Which recent ECI initiative aims to facilitate voting for special categories of voters, including senior citizens (85+) and persons with disabilities, at their homes?",
-      "options": [
-        "Vote from Home",
-        "Assisted Voting Drive",
-        "E-Ballot System",
-        "Mobile Polling Booths"
-      ],
-      "correct_answer": "Vote from Home",
-      "explanation": "The 'Vote from Home' facility has been introduced by the ECI for the Lok Sabha Elections 2024, allowing eligible senior citizens (85+) and PwDs to cast their votes from their residences using postal ballots, aiming to boost inclusivity and participation.",
-      "trick": "While other initiatives promote voting, 'Vote from Home' is the specific term for home-based postal ballot voting for these categories.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Find the next number in the series: 18, 30, 42, 54, 66, ?",
-      "correct_answer": "78",
-      "options": [
-        "80",
-        "90",
-        "66",
-        "78"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 66 + (12) = 78.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
-      "correct_answer": "1915",
-      "options": [
-        "1917",
-        "1910",
-        "1920",
-        "1915"
-      ],
-      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
-      "trick": "Remember 1915 as the start of his Indian movements.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the capital of Australia?",
-      "correct_answer": "Canberra",
-      "options": [
-        "Canberra",
-        "Brisbane",
-        "Sydney",
-        "Melbourne"
-      ],
-      "explanation": "Canberra was chosen as a compromise between Sydney and Melbourne in 1908.",
-      "trick": "It's an inland constructed city perfectly between the two coast majors.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What was the key outcome of the Reserve Bank of India's Monetary Policy Committee (MPC) meeting in April 2024 regarding the policy repo rate?",
-      "options": [
-        "Maintained at 6.00%",
-        "Maintained at 6.50%",
-        "Decreased to 6.25%",
-        "Increased to 6.75%"
-      ],
-      "correct_answer": "Maintained at 6.50%",
-      "explanation": "The RBI MPC voted unanimously to keep the policy repo rate unchanged at 6.50% for the seventh consecutive time in its April 2024 meeting, maintaining its 'withdrawal of accommodation' stance.",
-      "trick": "The MPC has consistently maintained the rate, so look for continuity rather than a change.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "The 2024 Pulitzer Prize for Public Service was awarded to which news organization for its coverage of the Israel-Hamas conflict?",
-      "options": [
-        "The New York Times",
-        "The Associated Press",
-        "Reuters",
-        "The Washington Post"
-      ],
-      "correct_answer": "The Associated Press",
-      "explanation": "The Associated Press received the 2024 Pulitzer Prize for Public Service on May 6, 2024, for its 'courageous and insightful coverage' of the first year of the war in Gaza.",
-      "trick": "All options are prominent news agencies; remembering the specific recipient for Public Service is key.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Cars are Vehicles.",
-      "options": [
+        "No Apples are Foods.",
+        "Some Foods are not Apples.",
         "None of the above.",
-        "Some Vehicles are not Cars.",
-        "No Cars are Vehicles.",
-        "All Cars are Vehicles."
+        "All Apples are Foods."
       ],
       "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
       "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "A train travels at an average speed of 67 km/hr. How much distance will it cover in 2 hours?",
-      "correct_answer": "134 km",
+      "question": "[FALLBACK] Recent news Item #4 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "154 km",
-        "201 km",
-        "67 km",
-        "134 km"
+        "Option 2",
+        "Option 4",
+        "Option 1",
+        "Option 3"
       ],
-      "explanation": "Distance = Speed * Time = 67 * 2 = 134 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 7800 at an interest rate of 5% per annum over 2 years?",
+      "correct_answer": "Rs. 780",
+      "options": [
+        "Rs. 1170",
+        "Rs. 780",
+        "Rs. 880",
+        "Rs. 730"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (7800 * 5 * 2) / 100 = 780.",
+      "trick": "Treat percentage as decimal visually: 78 * 5 * 2 = 780.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "Find the odd one out among the following numbers: 36, 25, 49, 101",
+      "correct_answer": "101",
       "options": [
-        "Yangtze",
-        "Amazon",
-        "Nile",
-        "Mississippi"
+        "36",
+        "25",
+        "49",
+        "101"
       ],
-      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
-      "trick": "Amazon is largest by volume, Nile is longest by length.",
-      "category": "Static GK"
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If an article is bought for Rs. 420 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 546",
+      "options": [
+        "Rs. 588",
+        "Rs. 504",
+        "Rs. 546",
+        "Rs. 630"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 420 * 1.30 = Rs. 546.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 4, 14, 24, 34, 44, ?",
+      "correct_answer": "54",
+      "options": [
+        "56",
+        "54",
+        "44",
+        "64"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 44 + (10) = 54.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #6 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 2",
+        "Option 4",
+        "Option 1"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     },
     {
       "question": "What is the average of the following 5 consecutive even numbers: 36, 38, 40, 42, 44?",
       "correct_answer": "40",
       "options": [
-        "44",
-        "40",
+        "38",
         "42",
-        "38"
+        "44",
+        "40"
       ],
       "explanation": "Sum = 200. Average = Sum / 5 = 40.",
       "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
-      "correct_answer": "162",
+      "question": "[FALLBACK] Recent news Item #5 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
       "options": [
-        "160",
-        "486",
-        "162",
-        "165"
+        "Option 4",
+        "Option 2",
+        "Option 3",
+        "Option 1"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Mississippi",
+        "Amazon",
+        "Nile"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #2 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 2",
+        "Option 1",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "If MAT is coded as NBU, how will PEN be coded in that same language?",
+      "correct_answer": "QFO",
+      "options": [
+        "ODM",
+        "QFO",
+        "RGP",
+        "PEN"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 3800 at an interest rate of 11% per annum over 3 years?",
-      "correct_answer": "Rs. 1254",
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Rs. 1444",
-        "Rs. 1354",
-        "Rs. 1204",
-        "Rs. 1254"
+        "B.R. Ambedkar",
+        "Dr. Rajendra Prasad",
+        "Sardar Patel",
+        "Jawaharlal Nehru"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (3800 * 11 * 3) / 100 = 1254.",
-      "trick": "Treat percentage as decimal visually: 38 * 11 * 3 = 1254.",
-      "category": "Quantitative Aptitude"
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #1 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 1",
+        "Option 2",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
     }
   ]
 }
