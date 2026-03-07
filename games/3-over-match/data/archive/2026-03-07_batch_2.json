@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "batch_index": 2,
+    "day_index": 2,
+    "slot_index": 22,
+    "difficulty": "Medium",
+    "generated_at": "2026-03-07T19:45:29.228Z"
+  },
+  "questions": [
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an item 20% above its cost price. If he offers a discount of 10% on the marked price, what is his profit percentage?",
+      "options": [
+        "A) 8%",
+        "B) 10%",
+        "C) 12%",
+        "D) 15%"
+      ],
+      "correct_answer": "A) 8%",
+      "explanation": "Let the cost price (CP) be ₹100. Marked price (MP) = CP + 20% of CP = 100 + 20 = ₹120. Discount = 10% of MP = 10% of 120 = ₹12. Selling price (SP) = MP - Discount = 120 - 12 = ₹108. Profit = SP - CP = 108 - 100 = ₹8. Profit percentage = (Profit / CP) * 100 = (8 / 100) * 100 = 8%.",
+      "trick": "Assume CP=100, then calculate MP and SP sequentially."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The sum of two numbers is 30, and their difference is 6. What is the larger number?",
+      "options": [
+        "A) 12",
+        "B) 18",
+        "C) 20",
+        "D) 24"
+      ],
+      "correct_answer": "B) 18",
+      "explanation": "Let the two numbers be x and y. We are given: x + y = 30 (Equation 1) and x - y = 6 (Equation 2). Adding Equation 1 and Equation 2: (x + y) + (x - y) = 30 + 6 => 2x = 36 => x = 18. Substituting x=18 into Equation 1: 18 + y = 30 => y = 12. The larger number is 18.",
+      "trick": "Larger number = (Sum + Difference) / 2"
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A rectangular garden has a length of 15 meters and a width of 10 meters. What is the area of the garden?",
+      "options": [
+        "A) 25 sq m",
+        "B) 50 sq m",
+        "C) 150 sq m",
+        "D) 300 sq m"
+      ],
+      "correct_answer": "C) 150 sq m",
+      "explanation": "The area of a rectangle is calculated by the formula: Area = Length × Width. Given Length = 15 meters and Width = 10 meters. Area = 15 m × 10 m = 150 square meters.",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The average of five numbers is 25. If four of the numbers are 20, 30, 22, and 28, what is the fifth number?",
+      "options": [
+        "A) 20",
+        "B) 25",
+        "C) 30",
+        "D) 35"
+      ],
+      "correct_answer": "B) 25",
+      "explanation": "The sum of five numbers = Average × Number of items = 25 × 5 = 125. The sum of the four given numbers = 20 + 30 + 22 + 28 = 100. The fifth number = Total sum - Sum of four numbers = 125 - 100 = 25.",
+      "trick": "Sum = Average × Count"
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "What comes next in the sequence: 2, 5, 10, 17, 26, ___?",
+      "options": [
+        "A) 35",
+        "B) 37",
+        "C) 39",
+        "D) 41"
+      ],
+      "correct_answer": "B) 37",
+      "explanation": "Let's find the differences between consecutive terms: 5-2=3, 10-5=5, 17-10=7, 26-17=9. The differences are consecutive odd numbers (3, 5, 7, 9). The next difference in this pattern should be 11. Therefore, the next term in the sequence is 26 + 11 = 37.",
+      "trick": "Look for patterns in differences (first, second-order)."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Lion is to Roar as Snake is to ___?",
+      "options": [
+        "A) Hiss",
+        "B) Bark",
+        "C) Meow",
+        "D) Trumpet"
+      ],
+      "correct_answer": "A) Hiss",
+      "explanation": "This is an analogy based on the characteristic sound made by an animal. A lion makes a 'roar' sound, and similarly, a snake makes a 'hiss' sound.",
+      "trick": "Identify the relationship between the first pair (animal and its sound)."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "correct_answer": "42",
+      "explanation": "The differences between consecutive terms are 4, 6, 8, 10. Following this pattern, the next difference should be 12. So, 30 + 12 = 42.",
+      "trick": "Look for patterns in the differences between consecutive numbers."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'Cloud' is called 'White', 'White' is called 'Rain', 'Rain' is called 'Green', 'Green' is called 'Air', and 'Air' is called 'Blue', then what is the color of the sky?",
+      "options": [
+        "White",
+        "Rain",
+        "Green",
+        "Blue"
+      ],
+      "correct_answer": "Blue",
+      "explanation": "The actual color of the sky is blue. In this code, 'Air' is called 'Blue'. Since the sky is 'Air', its coded color is 'Blue'.",
+      "trick": "Identify the real object first, then find its direct coded name."
+    },
+    {
+      "category": "Static GK",
+      "question": "Which ancient civilization is known for building the Pyramids?",
+      "options": [
+        "Mesopotamian",
+        "Indus Valley",
+        "Egyptian",
+        "Roman"
+      ],
+      "correct_answer": "Egyptian",
+      "explanation": "The ancient Egyptian civilization is renowned for constructing monumental pyramids, primarily as tombs for their pharaohs.",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "Which of the following is generally considered the longest river in the world?",
+      "options": [
+        "Amazon River",
+        "Nile River",
+        "Yangtze River",
+        "Mississippi River"
+      ],
+      "correct_answer": "Nile River",
+      "explanation": "The Nile River, flowing through northeastern Africa, is widely recognized as the longest river globally.",
+      "trick": "Memorize geographical superlatives (longest, largest, highest)."
+    },
+    {
+      "category": "Static GK",
+      "question": "What is the SI unit of electric current?",
+      "options": [
+        "Volt",
+        "Ohm",
+        "Ampere",
+        "Watt"
+      ],
+      "correct_answer": "Ampere",
+      "explanation": "The Ampere (A) is the SI unit for measuring electric current. Volt measures electric potential, Ohm measures electrical resistance, and Watt measures power.",
+      "trick": "Associate units with their respective physical quantities."
+    },
+    {
+      "category": "Static GK",
+      "question": "Which gas do plants primarily absorb from the atmosphere for photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon Dioxide",
+        "Hydrogen"
+      ],
+      "correct_answer": "Carbon Dioxide",
+      "explanation": "During photosynthesis, plants take in carbon dioxide from the atmosphere along with water and sunlight to produce glucose (food) and oxygen.",
+      "trick": "Understand the basic inputs and outputs of key biological processes."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which private American company successfully landed its Odysseus spacecraft on the Moon in February 2024, marking the first U.S. lunar landing since Apollo 17?",
+      "options": [
+        "SpaceX",
+        "Blue Origin",
+        "Intuitive Machines",
+        "Astrobotic Technology"
+      ],
+      "correct_answer": "Intuitive Machines",
+      "explanation": "Intuitive Machines' Odysseus lander, part of NASA's CLPS program, made history by successfully landing on the Moon's south polar region in February 2024, becoming the first private American company to achieve this feat.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who was declared the winner of the Indonesian presidential election held in February 2024, succeeding Joko Widodo?",
+      "options": [
+        "Anies Baswedan",
+        "Ganjar Pranowo",
+        "Prabowo Subianto",
+        "Muhaimin Iskandar"
+      ],
+      "correct_answer": "Prabowo Subianto",
+      "explanation": "Prabowo Subianto, the former Minister of Defense, secured a landslide victory in the Indonesian presidential election held on February 14, 2024, and is set to become the next president.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "According to the International Monetary Fund's (IMF) World Economic Outlook update released in April 2024, what is the projected global economic growth rate for 2024?",
+      "options": [
+        "2.8%",
+        "3.2%",
+        "3.5%",
+        "3.0%"
+      ],
+      "correct_answer": "3.2%",
+      "explanation": "In its April 2024 World Economic Outlook, the IMF maintained its global growth projection for 2024 at 3.2%, the same as its January forecast.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which international organization released its 'State of the Global Climate 2023' report in March 2024, confirming that 2023 was the warmest year on record?",
+      "options": [
+        "Intergovernmental Panel on Climate Change (IPCC)",
+        "United Nations Environment Programme (UNEP)",
+        "World Meteorological Organization (WMO)",
+        "Greenpeace"
+      ],
+      "correct_answer": "World Meteorological Organization (WMO)",
+      "explanation": "The World Meteorological Organization (WMO) published its flagship 'State of the Global Climate 2023' report in March 2024, highlighting record-breaking temperatures, ocean heat, and ice loss.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who won the Men's Singles title at the Australian Open in January 2024?",
+      "options": [
+        "Novak Djokovic",
+        "Jannik Sinner",
+        "Daniil Medvedev",
+        "Carlos Alcaraz"
+      ],
+      "correct_answer": "Jannik Sinner",
+      "explanation": "Italy's Jannik Sinner won his first Grand Slam title by defeating Daniil Medvedev in a thrilling five-set final at the Australian Open 2024.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "In February 2024, which company unveiled 'Sora', a groundbreaking artificial intelligence model capable of generating realistic and imaginative videos from text instructions?",
+      "options": [
+        "Google",
+        "Meta",
+        "OpenAI",
+        "Microsoft"
+      ],
+      "correct_answer": "OpenAI",
+      "explanation": "OpenAI, known for ChatGPT, introduced Sora in February 2024, showcasing its advanced capabilities in creating high-quality videos from text prompts.",
+      "trick": ""
+    }
+  ]
+}
