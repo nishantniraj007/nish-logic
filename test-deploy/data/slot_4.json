@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "difficulty": "medium",
+    "slot": 4,
+    "generated_at": "2026-03-07T08:07:47.793Z",
+    "type": "Hybrid AI/TBG Engine",
+    "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
+  },
+  "questions": [
+    {
+      "question": "What is the capital of Australia?",
+      "correct_answer": "Canberra",
+      "options": [
+        "Canberra",
+        "Melbourne",
+        "Sydney",
+        "Brisbane"
+      ],
+      "explanation": "Canberra was chosen as a compromise between Sydney and Melbourne in 1908.",
+      "trick": "It's an inland constructed city perfectly between the two coast majors.",
+      "category": "Static GK"
+    },
+    {
+      "question": "In its latest Monetary Policy Committee (MPC) meeting concluding on April 5, 2024, what was the Reserve Bank of India's (RBI) decision regarding the benchmark repo rate?",
+      "options": [
+        "Increased by 50 basis points",
+        "Decreased by 25 basis points",
+        "Kept unchanged at 6.50%",
+        "Increased by 25 basis points"
+      ],
+      "correct_answer": "Kept unchanged at 6.50%",
+      "explanation": "The RBI's Monetary Policy Committee, in its meeting concluding on April 5, 2024, decided to keep the repo rate unchanged at 6.50% for the seventh consecutive time, citing inflation concerns.",
+      "trick": "Economic news often highlights changes in rates; however, a decision to keep rates stable is also a significant policy outcome and should not be overlooked.",
+      "category": "Current Affairs (Economy)"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "trick": "He was the only president to serve two full terms.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 5, 15, 45, 135, ?",
+      "correct_answer": "405",
+      "options": [
+        "408",
+        "405",
+        "400",
+        "1215"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 25, 9, 16, 65",
+      "correct_answer": "65",
+      "options": [
+        "25",
+        "9",
+        "16",
+        "65"
+      ],
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "ISRO successfully conducted the third landing experiment of its Reusable Launch Vehicle (RLV) 'Pushpak'. From which specific test range was this experiment conducted?",
+      "options": [
+        "Satish Dhawan Space Centre",
+        "Vikram Sarabhai Space Centre",
+        "Aeronautical Test Range (ATR) Chitradurga",
+        "Thumba Equatorial Rocket Launching Station"
+      ],
+      "correct_answer": "Aeronautical Test Range (ATR) Chitradurga",
+      "explanation": "ISRO successfully carried out the third landing mission (LEX-03) of the Pushpak RLV (TD) on April 19, 2024, at the Aeronautical Test Range (ATR), Chitradurga, Karnataka.",
+      "trick": "While many ISRO launches happen from Sriharikota, specific RLV landing experiments are conducted at Chitradurga's ATR due to its runway facilities.",
+      "category": "Current Affairs (Science & Technology)"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "correct_answer": "Mars",
+      "options": [
+        "Mars",
+        "Venus",
+        "Saturn",
+        "Jupiter"
+      ],
+      "explanation": "Mars is covered in iron oxide (rust) dust.",
+      "trick": "Think 'Rust' -> 'Red'.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which country conducted a series of significant missile and drone attacks on Israel in April 2024, in retaliation for an alleged Israeli strike on its consulate in Damascus, Syria?",
+      "options": [
+        "Yemen",
+        "Iran",
+        "Lebanon",
+        "Syria"
+      ],
+      "correct_answer": "Iran",
+      "explanation": "Iran launched over 300 drones and missiles at Israel on April 13, 2024, in response to an attack on its consulate in Damascus, Syria, which it attributed to Israel.",
+      "trick": "While various non-state actors and proxies are involved in regional conflicts, this specific large-scale, direct state-on-state attack was from Iran.",
+      "category": "Current Affairs (International)"
+    },
+    {
+      "question": "Rs. 638 is divided between A and B in the ratio 5:6. What is A's share?",
+      "correct_answer": "Rs. 290",
+      "options": [
+        "Rs. 290",
+        "Rs. 353.8",
+        "Rs. 226.2",
+        "Rs. 348"
+      ],
+      "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 638/11 = 58. A's share = 5 * 58 = 290.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 36, 38, 40, 42, 44?",
+      "correct_answer": "40",
+      "options": [
+        "38",
+        "42",
+        "40",
+        "44"
+      ],
+      "explanation": "Sum = 200. Average = Sum / 5 = 40.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
+      "correct_answer": "1915",
+      "options": [
+        "1917",
+        "1915",
+        "1920",
+        "1910"
+      ],
+      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
+      "trick": "Remember 1915 as the start of his Indian movements.",
+      "category": "Static GK"
+    },
+    {
+      "question": "India recently signed a long-term agreement for the operation of the Shahid Beheshti Terminal at the Chabahar Port. With which country was this 10-year bilateral agreement signed?",
+      "options": [
+        "Oman",
+        "Iran",
+        "Afghanistan",
+        "Pakistan"
+      ],
+      "correct_answer": "Iran",
+      "explanation": "On May 13, 2024, India signed a 10-year bilateral agreement with Iran for the operation of the Shahid Beheshti Terminal at the Chabahar Port, marking a significant step for regional trade connectivity.",
+      "trick": "Chabahar Port is strategically important for connecting to Afghanistan and Central Asia, but the direct agreement for its operation is with the host country, Iran.",
+      "category": "Current Affairs (International Relations)"
+    },
+    {
+      "question": "The first phase of the 2024 Lok Sabha Elections was conducted on which date, covering multiple states and Union Territories?",
+      "options": [
+        "April 26, 2024",
+        "April 19, 2024",
+        "May 7, 2024",
+        "May 13, 2024"
+      ],
+      "correct_answer": "April 19, 2024",
+      "explanation": "The 2024 Lok Sabha elections commenced with its first phase of polling on April 19, 2024, across 102 constituencies in 21 states and Union Territories.",
+      "trick": "The Lok Sabha elections are a multi-phase event; identifying the start date requires precise tracking.",
+      "category": "Current Affairs (National)"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 2000 at an interest rate of 6% per annum over 3 years?",
+      "correct_answer": "Rs. 360",
+      "options": [
+        "Rs. 310",
+        "Rs. 360",
+        "Rs. 460",
+        "Rs. 460"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (2000 * 6 * 3) / 100 = 360.",
+      "trick": "Treat percentage as decimal visually: 20 * 6 * 3 = 360.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A train travels at an average speed of 69 km/hr. How much distance will it cover in 4 hours?",
+      "correct_answer": "276 km",
+      "options": [
+        "345 km",
+        "296 km",
+        "207 km",
+        "276 km"
+      ],
+      "explanation": "Distance = Speed * Time = 69 * 4 = 276 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If BAT is coded as DCV, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
+      "options": [
+        "PDQ",
+        "OCP",
+        "MAN",
+        "K?L"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "According to the 'World Press Freedom Index 2024' released by Reporters Without Borders (RSF), what is India's rank among 180 countries?",
+      "options": [
+        "161st",
+        "180th",
+        "172nd",
+        "159th"
+      ],
+      "correct_answer": "159th",
+      "explanation": "India ranked 159th out of 180 countries in the World Press Freedom Index 2024, published on May 3, 2024, by Reporters Without Borders (RSF). This marked an improvement from its 161st position in 2023.",
+      "trick": "It's crucial to remember the most recent year's ranking and whether it represents an improvement or decline from previous years.",
+      "category": "Current Affairs (Reports & Indices)"
+    },
+    {
+      "question": "Find the next number in the series: 10, 18, 26, 34, 42, ?",
+      "correct_answer": "50",
+      "options": [
+        "52",
+        "42",
+        "58",
+        "50"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 8. So, 42 + (8) = 50.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    }
+  ]
+}

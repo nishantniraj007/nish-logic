@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "difficulty": "easy",
+    "slot": 1,
+    "generated_at": "2026-03-07T08:07:47.793Z",
+    "type": "Hybrid AI/TBG Engine",
+    "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
+  },
+  "questions": [
+    {
+      "question": "Find the odd one out among the following numbers: 65, 25, 9, 16",
+      "correct_answer": "65",
+      "options": [
+        "65",
+        "25",
+        "9",
+        "16"
+      ],
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "According to the 2024 World Press Freedom Index released by Reporters Without Borders (RSF) in May 2024, what was India's rank?",
+      "options": [
+        "159th",
+        "161st",
+        "148th",
+        "133rd"
+      ],
+      "correct_answer": "159th",
+      "explanation": "India was ranked 159th out of 180 countries in the 2024 World Press Freedom Index, released by Reporters Without Borders (RSF). This marked a slight improvement from its 161st rank in 2023. Norway topped the index.",
+      "trick": "Remembering the exact rank can be challenging. It's often helpful to recall if the country's position improved or worsened compared to the previous year (India improved by 2 spots).",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Find the next number in the series: 4, 11, 18, 25, 32, ?",
+      "correct_answer": "39",
+      "options": [
+        "46",
+        "41",
+        "32",
+        "39"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 7. So, 32 + (7) = 39.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "correct_answer": "Mars",
+      "options": [
+        "Mars",
+        "Jupiter",
+        "Venus",
+        "Saturn"
+      ],
+      "explanation": "Mars is covered in iron oxide (rust) dust.",
+      "trick": "Think 'Rust' -> 'Red'.",
+      "category": "Static GK"
+    },
+    {
+      "question": "What is the chemical symbol for Gold?",
+      "correct_answer": "Au",
+      "options": [
+        "Go",
+        "Ag",
+        "Au",
+        "Gd"
+      ],
+      "explanation": "Au comes from the Latin word 'Aurum'.",
+      "trick": "Aurum means 'shining dawn'.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Rs. 430 is divided between A and B in the ratio 4:6. What is A's share?",
+      "correct_answer": "Rs. 172",
+      "options": [
+        "Rs. 172",
+        "Rs. 215",
+        "Rs. 258",
+        "Rs. 129"
+      ],
+      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 430/10 = 43. A's share = 4 * 43 = 172.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Yangtze",
+        "Nile",
+        "Mississippi"
+      ],
+      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
+      "trick": "Amazon is largest by volume, Nile is longest by length.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A train travels at an average speed of 103 km/hr. How much distance will it cover in 4 hours?",
+      "correct_answer": "412 km",
+      "options": [
+        "515 km",
+        "309 km",
+        "432 km",
+        "412 km"
+      ],
+      "explanation": "Distance = Speed * Time = 103 * 4 = 412 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which mobile application was launched by the Election Commission of India (ECI) to enable citizens to report violations of the Model Code of Conduct during the recent Lok Sabha elections?",
+      "options": [
+        "ECI Connect",
+        "cVIGIL",
+        "MyVote",
+        "Voter Mitra"
+      ],
+      "correct_answer": "cVIGIL",
+      "explanation": "The ECI's cVIGIL app allows citizens to digitally report Model Code of Conduct violations in real-time with geo-tagged photos or videos. This ensures prompt action by election authorities, typically within 100 minutes of the complaint.",
+      "trick": "The name 'cVIGIL' (citizen + vigil) directly implies its function for vigilance by citizens during elections. Other options might sound plausible but are not the specific ECI tool for this purpose.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "India recently signed a long-term agreement with which country for the operation of the Shahid Beheshti terminal at the Chabahar Port?",
+      "options": [
+        "Iran",
+        "UAE",
+        "Afghanistan",
+        "Oman"
+      ],
+      "correct_answer": "Iran",
+      "explanation": "In May 2024, India signed a 10-year bilateral agreement with Iran for the operation of the Shahid Beheshti terminal at Chabahar Port. This agreement involves India Port Global Limited (IPGL) investing significantly in the port's development and operation.",
+      "trick": "Remember 'Chabahar' and 'Iran' are closely linked for India's regional connectivity, especially to Afghanistan and Central Asia, bypassing Pakistan. The investment is significant and strategic.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Which is the largest ocean on Earth?",
+      "correct_answer": "Pacific Ocean",
+      "options": [
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Arctic Ocean",
+        "Pacific Ocean"
+      ],
+      "explanation": "It covers more than 30% of the Earth's surface.",
+      "trick": "Pacific derives from 'pace' meaning peaceful.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who recently assumed office as the new Chief of the Naval Staff of India in April 2024?",
+      "options": [
+        "Admiral Dinesh K. Tripathi",
+        "Admiral R. Hari Kumar",
+        "Admiral Karambir Singh",
+        "Admiral Sunil Lanba"
+      ],
+      "correct_answer": "Admiral Dinesh K. Tripathi",
+      "explanation": "Admiral Dinesh K. Tripathi assumed command as the 26th Chief of the Naval Staff on April 30, 2024, succeeding Admiral R. Hari Kumar upon his superannuation. Prior to this, he served as the Vice Chief of Naval Staff.",
+      "trick": "Naval chiefs often have 'Admiral' prefix. Knowing the predecessor (Admiral R. Hari Kumar) helps confirm the new one. He was the Vice Chief before taking over, which is a common progression.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
+      "correct_answer": "324",
+      "options": [
+        "320",
+        "327",
+        "972",
+        "324"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "According to the provisional estimates released by the National Statistical Office (NSO) in May 2024, what was India's estimated GDP growth rate for the financial year 2023-24 (FY24)?",
+      "options": [
+        "8.2%",
+        "6.8%",
+        "7.8%",
+        "7.2%"
+      ],
+      "correct_answer": "8.2%",
+      "explanation": "The NSO's provisional estimates released on May 31, 2024, indicated that India's GDP grew by 8.2% in FY24, which was higher than the earlier forecast of 7.6%. The GDP growth for Q4 FY24 (January-March) was 7.8%.",
+      "trick": "Distinguish between the growth rate for the entire financial year (FY24: 8.2%) and the growth rate for the last quarter of that financial year (Q4 FY24: 7.8%). Exam setters often use these close numbers as distractors.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "If an article is bought for Rs. 380 and sold at a profit of 20%, what is the selling price?",
+      "correct_answer": "Rs. 456",
+      "options": [
+        "Rs. 494",
+        "Rs. 532",
+        "Rs. 418",
+        "Rs. 456"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 380 * 1.20 = Rs. 456.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A can complete a piece of work in 12 days while B can complete the same work in 20 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "7.50 days",
+      "options": [
+        "6.50 days",
+        "9.50 days",
+        "7.50 days",
+        "11.50 days"
+      ],
+      "explanation": "Work = 12 * 20 = 240. Rate = 12 + 20 = 32. Time = Work / Rate = 7.50 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which team won the Indian Premier League (IPL) 2024 title, defeating Sunrisers Hyderabad in the final?",
+      "options": [
+        "Rajasthan Royals",
+        "Kolkata Knight Riders",
+        "Chennai Super Kings",
+        "Mumbai Indians"
+      ],
+      "correct_answer": "Kolkata Knight Riders",
+      "explanation": "Kolkata Knight Riders (KKR) won their third IPL title in May 2024, defeating Sunrisers Hyderabad by 8 wickets in a dominant performance in the final held in Chennai. Mitchell Starc was awarded Player of the Match.",
+      "trick": "Chennai Super Kings and Mumbai Indians are historically the most successful teams with multiple titles, often serving as strong distractors. Knowing the specific season's winner is crucial.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
+      "options": [
+        "None of the above.",
+        "Some Vehicles are not Cars.",
+        "No Cars are Vehicles.",
+        "All Cars are Vehicles."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    }
+  ]
+}

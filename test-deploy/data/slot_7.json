@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "difficulty": "ssc",
+    "slot": 7,
+    "generated_at": "2026-03-07T08:07:47.793Z",
+    "type": "Hybrid AI/TBG Engine",
+    "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
+  },
+  "questions": [
+    {
+      "question": "What is the capital of Australia?",
+      "correct_answer": "Canberra",
+      "options": [
+        "Brisbane",
+        "Canberra",
+        "Melbourne",
+        "Sydney"
+      ],
+      "explanation": "Canberra was chosen as a compromise between Sydney and Melbourne in 1908.",
+      "trick": "It's an inland constructed city perfectly between the two coast majors.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "All Dogs are Animals.",
+        "None of the above.",
+        "No Dogs are Animals.",
+        "Some Animals are not Dogs."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Nile",
+        "Amazon",
+        "Mississippi"
+      ],
+      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
+      "trick": "Amazon is largest by volume, Nile is longest by length.",
+      "category": "Static GK"
+    },
+    {
+      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
+      "correct_answer": "1915",
+      "options": [
+        "1915",
+        "1917",
+        "1920",
+        "1910"
+      ],
+      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
+      "trick": "Remember 1915 as the start of his Indian movements.",
+      "category": "Static GK"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 16400 at an interest rate of 11% per annum over 3 years?",
+      "correct_answer": "Rs. 5412",
+      "options": [
+        "Rs. 5412",
+        "Rs. 5512",
+        "Rs. 6232",
+        "Rs. 5362"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (16400 * 11 * 3) / 100 = 5412.",
+      "trick": "Treat percentage as decimal visually: 164 * 11 * 3 = 5412.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who has been appointed as the new Chief of the Naval Staff of India, taking charge from April 30, 2024?",
+      "options": [
+        "Admiral Dinesh K Tripathi",
+        "Admiral Karambir Singh",
+        "Admiral Sunil Lanba",
+        "Admiral R. Hari Kumar"
+      ],
+      "correct_answer": "Admiral Dinesh K Tripathi",
+      "explanation": "Admiral Dinesh K Tripathi took over as the 26th Chief of the Naval Staff on April 30, 2024, succeeding Admiral R. Hari Kumar.",
+      "trick": "Other options are former chiefs of the Naval Staff or incorrect names.",
+      "category": "New Appointments"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 46, 48, 50, 52, 54?",
+      "correct_answer": "50",
+      "options": [
+        "52",
+        "48",
+        "54",
+        "50"
+      ],
+      "explanation": "Sum = 250. Average = Sum / 5 = 50.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which new payment facility did the Reserve Bank of India (RBI) recently enable for non-bank Payment System Operators (PSOs) and their customers, effective from March 15, 2024?",
+      "options": [
+        "Cross-border remittances via UPI",
+        "UPI access through Prepaid Payment Instruments (PPIs)",
+        "Offline UPI transactions using NFC",
+        "Direct Debit linkage with UPI"
+      ],
+      "correct_answer": "UPI access through Prepaid Payment Instruments (PPIs)",
+      "explanation": "The RBI permitted non-bank PSOs to offer UPI using their existing Prepaid Payment Instruments (PPIs) such as wallets, enhancing convenience for users.",
+      "trick": "Other options represent different aspects of digital payments, some of which might be under discussion or already exist in different forms.",
+      "category": "Banking Norms"
+    },
+    {
+      "question": "Who among the following were recently appointed as the new Election Commissioners of India in March 2024?",
+      "options": [
+        "Gyanesh Kumar and Sukhbir Singh Sandhu",
+        "Sukhbir Singh Sandhu and T.V. Somanathan",
+        "Rajiv Kumar and Anup Chandra Pandey",
+        "Gyanesh Kumar and Ajay Bhalla"
+      ],
+      "correct_answer": "Gyanesh Kumar and Sukhbir Singh Sandhu",
+      "explanation": "Gyanesh Kumar and Sukhbir Singh Sandhu were appointed as Election Commissioners on March 14, 2024, to fill vacancies in the Election Commission.",
+      "trick": "Rajiv Kumar is the Chief Election Commissioner. Anup Chandra Pandey retired. Other names are high-ranking officials but not Election Commissioners.",
+      "category": "New Appointments"
+    },
+    {
+      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
+      "options": [
+        "PEN",
+        "SHQ",
+        "TIR",
+        "MBK"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which university emerged as the overall champion at the 4th Khelo India University Games 2023, held in Guwahati, Assam, which concluded in February 2024?",
+      "options": [
+        "Maharshi Dayanand University",
+        "Panjab University",
+        "Chandigarh University",
+        "Lovely Professional University"
+      ],
+      "correct_answer": "Chandigarh University",
+      "explanation": "Chandigarh University secured the top position at the 4th Khelo India University Games 2023 (KIUG 2023), which concluded on February 29, 2024, with a total of 71 medals including 32 gold.",
+      "trick": "The other options are also strong contenders in such games or have won previously, making it a test of recent recall.",
+      "category": "National Sports"
+    },
+    {
+      "question": "What does 'SURAJ' stand for in the recently launched PM-SURAJ portal, a national portal for beneficiaries of schemes related to Scheduled Castes (SCs)?",
+      "options": [
+        "Saksham Utthan Rojgar Avam Jagriti",
+        "Samanvay Utkarsh Rojgar Avthan Jeevan",
+        "Samagra Anusuchit Jati Utkarsh Sahbhagita",
+        "Samagra Utkarsh Rojgar Avam Jeevan"
+      ],
+      "correct_answer": "Samagra Anusuchit Jati Utkarsh Sahbhagita",
+      "explanation": "PM-SURAJ stands for 'Pradhan Mantri - Samagra Anusuchit Jati Utkarsh Sahbhagita'. The portal and scheme were launched by the Prime Minister in March 2024.",
+      "trick": "The options are designed to sound plausible, testing recall of the exact acronym.",
+      "category": "Direct Schemes"
+    },
+    {
+      "question": "If an article is bought for Rs. 1960 and sold at a profit of 15%, what is the selling price?",
+      "correct_answer": "Rs. 2254",
+      "options": [
+        "Rs. 2646",
+        "Rs. 2254",
+        "Rs. 2450",
+        "Rs. 2058"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 1960 * 1.15 = Rs. 2254.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A can complete a piece of work in 48 days while B can complete the same work in 108 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "33.23 days",
+      "options": [
+        "33.23 days",
+        "37.23 days",
+        "32.23 days",
+        "35.23 days"
+      ],
+      "explanation": "Work = 48 * 108 = 5184. Rate = 48 + 108 = 156. Time = Work / Rate = 33.23 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who among the following eminent personalities was posthumously conferred the Padma Vibhushan, India's second-highest civilian honour, during the recent Padma Awards ceremony in April 2024?",
+      "options": [
+        "Shri M. Venkaiah Naidu",
+        "Ms. Vyjayantimala Bali",
+        "Shri Konidela Chiranjeevi",
+        "Dr. Bindeshwar Pathak"
+      ],
+      "correct_answer": "Dr. Bindeshwar Pathak",
+      "explanation": "Dr. Bindeshwar Pathak, founder of Sulabh International, was posthumously awarded the Padma Vibhushan. All other options also received Padma Vibhushan in 2024 but were not posthumous.",
+      "trick": "All options are Padma Vibhushan recipients for 2024, but only one posthumously. This tests specific recall.",
+      "category": "Awards"
+    },
+    {
+      "question": "Find the next number in the series: 14, 29, 44, 59, 74, ?",
+      "correct_answer": "89",
+      "options": [
+        "74",
+        "89",
+        "104",
+        "91"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 15. So, 74 + (15) = 89.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the chemical symbol for Gold?",
+      "correct_answer": "Au",
+      "options": [
+        "Gd",
+        "Ag",
+        "Go",
+        "Au"
+      ],
+      "explanation": "Au comes from the Latin word 'Aurum'.",
+      "trick": "Aurum means 'shining dawn'.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 101, 25, 49, 36",
+      "correct_answer": "101",
+      "options": [
+        "101",
+        "25",
+        "49",
+        "36"
+      ],
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    }
+  ]
+}

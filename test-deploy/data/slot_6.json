@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "difficulty": "ssc",
+    "slot": 6,
+    "generated_at": "2026-03-07T08:07:47.793Z",
+    "type": "Hybrid AI/TBG Engine",
+    "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
+  },
+  "questions": [
+    {
+      "question": "Which is the largest ocean on Earth?",
+      "correct_answer": "Pacific Ocean",
+      "options": [
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Arctic Ocean",
+        "Pacific Ocean"
+      ],
+      "explanation": "It covers more than 30% of the Earth's surface.",
+      "trick": "Pacific derives from 'pace' meaning peaceful.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who among the following was recently appointed as a new Election Commissioner of India in March 2024?",
+      "options": [
+        "Rajiv Kumar",
+        "Sukhbir Singh Sandhu",
+        "Arun Goel",
+        "Anup Chandra Pandey"
+      ],
+      "correct_answer": "Sukhbir Singh Sandhu",
+      "explanation": "Sukhbir Singh Sandhu and Gyanesh Kumar were appointed as Election Commissioners by the President of India on March 14, 2024.",
+      "trick": "Arun Goel had resigned earlier. Rajiv Kumar is the Chief Election Commissioner. Anup Chandra Pandey retired recently.",
+      "category": "Appointments"
+    },
+    {
+      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
+      "options": [
+        "SHQ",
+        "MBK",
+        "PEN",
+        "TIR"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the primary objective of the 'PM Surya Ghar Muft Bijli Yojana' launched by the Union Government in February 2024?",
+      "options": [
+        "Promoting electric vehicles",
+        "Offering free rooftop solar electricity",
+        "Providing free LPG connections",
+        "Subsidizing agricultural machinery"
+      ],
+      "correct_answer": "Offering free rooftop solar electricity",
+      "explanation": "The scheme aims to provide free electricity to one crore households by installing rooftop solar panels, with substantial subsidies.",
+      "trick": "The name 'Surya Ghar Muft Bijli' clearly indicates solar power ('Surya'), for homes ('Ghar'), and free electricity ('Muft Bijli').",
+      "category": "Direct Schemes"
+    },
+    {
+      "question": "Which core service related to new deposits or credit transactions was primarily restricted for Paytm Payments Bank accounts/wallets by the RBI order effective March 15, 2024 (later extended)?",
+      "options": [
+        "Withdrawal of existing balance",
+        "Accepting new deposits",
+        "Online bill payments using linked bank accounts",
+        "UPI payments from existing balance"
+      ],
+      "correct_answer": "Accepting new deposits",
+      "explanation": "RBI prohibited Paytm Payments Bank from accepting new deposits or credit transactions into customer accounts, prepaid instruments, wallets, and FASTags after the specified date (originally Feb 29, 2024, then extended to March 15, 2024, and subsequently April 15, 2024, for certain services).",
+      "trick": "Customers can still withdraw existing balances or use them for payments, but new money cannot be added to the PPBL ecosystem.",
+      "category": "Banking Norms"
+    },
+    {
+      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
+      "correct_answer": "1915",
+      "options": [
+        "1917",
+        "1910",
+        "1915",
+        "1920"
+      ],
+      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
+      "trick": "Remember 1915 as the start of his Indian movements.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "trick": "He was the only president to serve two full terms.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If an article is bought for Rs. 720 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 936",
+      "options": [
+        "Rs. 1008",
+        "Rs. 1080",
+        "Rs. 936",
+        "Rs. 864"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 720 * 1.30 = Rs. 936.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A train travels at an average speed of 102 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "306 km",
+      "options": [
+        "204 km",
+        "306 km",
+        "408 km",
+        "326 km"
+      ],
+      "explanation": "Distance = Speed * Time = 102 * 3 = 306 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
+      "correct_answer": "162",
+      "options": [
+        "165",
+        "486",
+        "160",
+        "162"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 122, 36, 49, 64",
+      "correct_answer": "122",
+      "options": [
+        "122",
+        "36",
+        "49",
+        "64"
+      ],
+      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "The Reserve Bank of India (RBI) recently announced a new facility allowing customers to deposit cash into their bank accounts at Cash Deposit Machines (CDMs) using which payment interface?",
+      "options": [
+        "IMPS",
+        "UPI",
+        "RTGS",
+        "NEFT"
+      ],
+      "correct_answer": "UPI",
+      "explanation": "In February 2024, the RBI announced that cash deposits can now be made into bank accounts using UPI at Cash Deposit Machines (CDMs) across various banks, by scanning a QR code.",
+      "trick": "While all options are valid payment systems, UPI is the specific interface enabled for this new CDM cash deposit functionality.",
+      "category": "Banking Norms"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "Some Animals are not Dogs.",
+        "All Dogs are Animals.",
+        "None of the above.",
+        "No Dogs are Animals."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 10000 at an interest rate of 8% per annum over 4 years?",
+      "correct_answer": "Rs. 3200",
+      "options": [
+        "Rs. 3300",
+        "Rs. 3700",
+        "Rs. 3200",
+        "Rs. 3150"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (10000 * 8 * 4) / 100 = 3200.",
+      "trick": "Treat percentage as decimal visually: 100 * 8 * 4 = 3200.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A can complete a piece of work in 68 days while B can complete the same work in 72 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "34.97 days",
+      "options": [
+        "38.97 days",
+        "34.97 days",
+        "36.97 days",
+        "33.97 days"
+      ],
+      "explanation": "Work = 68 * 72 = 4896. Rate = 68 + 72 = 140. Time = Work / Rate = 34.97 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "How many individuals were posthumously awarded the Bharat Ratna, India's highest civilian honour, in February 2024?",
+      "options": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correct_answer": "4",
+      "explanation": "In February 2024, the government announced Bharat Ratna for five individuals: P.V. Narasimha Rao, Charan Singh, M.S. Swaminathan, and Karpoori Thakur (all posthumously), and L.K. Advani.",
+      "trick": "Knowing the total number (5) but identifying only the posthumous recipients (4) is key. L.K. Advani is alive.",
+      "category": "Awards"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "correct_answer": "Mars",
+      "options": [
+        "Jupiter",
+        "Mars",
+        "Saturn",
+        "Venus"
+      ],
+      "explanation": "Mars is covered in iron oxide (rust) dust.",
+      "trick": "Think 'Rust' -> 'Red'.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which team/state topped the medal tally in the 4th edition of the Khelo India Winter Games held in February 2024?",
+      "options": [
+        "Himachal Pradesh",
+        "Jammu & Kashmir",
+        "Maharashtra",
+        "Services Sports Control Board"
+      ],
+      "correct_answer": "Services Sports Control Board",
+      "explanation": "The Services Sports Control Board (SSCB) topped the medal tally at the 4th Khelo India Winter Games 2024, held in Gulmarg (J&K) and Leh (Ladakh). Jammu & Kashmir secured the second position.",
+      "trick": "Jammu & Kashmir being a primary host and a strong performer in winter sports might be a common incorrect guess.",
+      "category": "National Sports"
+    }
+  ]
+}

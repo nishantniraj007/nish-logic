@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "difficulty": "easy",
+    "slot": 0,
+    "generated_at": "2026-03-07T08:07:47.793Z",
+    "type": "Hybrid AI/TBG Engine",
+    "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
+  },
+  "questions": [
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 37, 39, 41, 43, 45?",
+      "correct_answer": "41",
+      "options": [
+        "45",
+        "39",
+        "41",
+        "43"
+      ],
+      "explanation": "Sum = 205. Average = Sum / 5 = 41.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 4, 8, 16, 32, ?",
+      "correct_answer": "64",
+      "options": [
+        "128",
+        "60",
+        "64",
+        "66"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 32 * 2 = 64.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "In March 2024, two new Election Commissioners were appointed to the Election Commission of India. Who among the following is NOT one of them?",
+      "options": [
+        "Sukhbir Singh Sandhu",
+        "Both A and B are the new appointees",
+        "Gyanesh Kumar",
+        "Rajiv Kumar"
+      ],
+      "correct_answer": "Rajiv Kumar",
+      "explanation": "Gyanesh Kumar and Sukhbir Singh Sandhu were appointed as Election Commissioners in March 2024. Rajiv Kumar is currently the Chief Election Commissioner (CEC) and was not a new appointee in March.",
+      "trick": "The question asks 'NOT one of them'. Rajiv Kumar is a prominent figure as the CEC, which might lead one to incorrectly select him as a new appointee if not careful. The other two are the recent appointees.",
+      "category": "Polity, Current Affairs"
+    },
+    {
+      "question": "If an article is bought for Rs. 250 and sold at a profit of 40%, what is the selling price?",
+      "correct_answer": "Rs. 350",
+      "options": [
+        "Rs. 350",
+        "Rs. 400",
+        "Rs. 375",
+        "Rs. 325"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 250 * 1.40 = Rs. 350.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 65, 16, 9, 25",
+      "correct_answer": "65",
+      "options": [
+        "65",
+        "16",
+        "9",
+        "25"
+      ],
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "When did the Indian Constitution come into effect?",
+      "correct_answer": "26 January 1950",
+      "options": [
+        "15 August 1947",
+        "26 November 1949",
+        "2 October 1948",
+        "26 January 1950"
+      ],
+      "explanation": "The Constitution of India came into effect on Republic Day, Jan 26, 1950.",
+      "trick": "26 Jan was chosen to honor the 'Purna Swaraj' declaration of 1930.",
+      "category": "Static GK"
+    },
+    {
+      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
+      "correct_answer": "1915",
+      "options": [
+        "1915",
+        "1910",
+        "1917",
+        "1920"
+      ],
+      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
+      "trick": "Remember 1915 as the start of his Indian movements.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which vitamin is produced when skin is exposed to sunlight?",
+      "correct_answer": "Vitamin D",
+      "options": [
+        "Vitamin B12",
+        "Vitamin C",
+        "Vitamin A",
+        "Vitamin D"
+      ],
+      "explanation": "UVB rays synthesize Vitamin D in the body.",
+      "trick": "The 'sunshine' vitamin.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which specific experiment was successfully conducted by ISRO on March 22, 2024, involving its Reusable Launch Vehicle (RLV)?",
+      "options": [
+        "RLV Orbital Re-entry Test",
+        "RLV Hypersonic Flight Test",
+        "RLV LEX-02 Landing Experiment",
+        "RLV-TD Ascent Test"
+      ],
+      "correct_answer": "RLV LEX-02 Landing Experiment",
+      "explanation": "ISRO successfully conducted the second RLV Landing Experiment (RLV LEX-02) at the Aeronautical Test Range (ATR), Chitradurga, Karnataka, on March 22, 2024. This demonstrated autonomous landing capabilities under more challenging conditions.",
+      "trick": "LEX stands for Landing EXperiment, and '02' signifies the second in this series. Options could distract with other possible phases of RLV testing.",
+      "category": "Science & Technology, Current Affairs"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 3800 at an interest rate of 7% per annum over 2 years?",
+      "correct_answer": "Rs. 532",
+      "options": [
+        "Rs. 632",
+        "Rs. 482",
+        "Rs. 532",
+        "Rs. 722"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (3800 * 7 * 2) / 100 = 532.",
+      "trick": "Treat percentage as decimal visually: 38 * 7 * 2 = 532.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "In its first Monetary Policy Committee (MPC) meeting of FY25 held in April 2024, what was the Reserve Bank of India's (RBI) decision regarding the repo rate?",
+      "options": [
+        "Kept it unchanged at 6.5%",
+        "Decreased it by 25 basis points",
+        "Increased it by 25 basis points",
+        "Increased it by 50 basis points"
+      ],
+      "correct_answer": "Kept it unchanged at 6.5%",
+      "explanation": "The RBI's Monetary Policy Committee, in its meeting from April 3-5, 2024, decided to keep the repo rate unchanged at 6.5% for the seventh consecutive time, while maintaining its 'withdrawal of accommodation' stance.",
+      "trick": "The phrase 'withdrawal of accommodation' might suggest a rate hike or a change, but the actual decision was to hold rates steady due to persistent inflation concerns and a focus on growth.",
+      "category": "Economy, Current Affairs"
+    },
+    {
+      "question": "According to the Reporters Without Borders (RSF) World Press Freedom Index 2024, released in May 2024, what is India's rank out of 180 countries?",
+      "options": [
+        "159th",
+        "140th",
+        "150th",
+        "165th"
+      ],
+      "correct_answer": "159th",
+      "explanation": "India ranked 159th out of 180 countries in the World Press Freedom Index 2024, published by Reporters Without Borders (RSF) on May 3, 2024. This represents a slight improvement from 161st in 2023.",
+      "trick": "India's rank in such global indices often fluctuates and is a topic of discussion. Remembering the exact, most recent rank among closely placed numbers can be challenging.",
+      "category": "International Reports, Current Affairs"
+    },
+    {
+      "question": "A train travels at an average speed of 107 km/hr. How much distance will it cover in 6 hours?",
+      "correct_answer": "642 km",
+      "options": [
+        "642 km",
+        "662 km",
+        "749 km",
+        "535 km"
+      ],
+      "explanation": "Distance = Speed * Time = 107 * 6 = 642 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Yangtze",
+        "Nile",
+        "Mississippi"
+      ],
+      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
+      "trick": "Amazon is largest by volume, Nile is longest by length.",
+      "category": "Static GK"
+    },
+    {
+      "question": "India's General Elections 2024 are being conducted in how many phases?",
+      "options": [
+        "7",
+        "6",
+        "5",
+        "8"
+      ],
+      "correct_answer": "7",
+      "explanation": "The Election Commission of India announced that the 2024 Lok Sabha elections would be held in 7 phases, starting from April 19, 2024, with results declared on June 4, 2024.",
+      "trick": "Often, large elections in India have multiple phases; remembering the exact number can be tricky. Some might confuse it with assembly elections that typically have fewer phases.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "If CAT is coded as FDW, how will CUP be coded in that same language?",
+      "correct_answer": "FXS",
+      "options": [
+        "CUP",
+        "FXS",
+        "GYT",
+        "@RM"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which neighbouring country's Prime Minister visited India in mid-March 2024, holding extensive talks with Indian leadership on bilateral cooperation?",
+      "options": [
+        "Bhutan",
+        "Bangladesh",
+        "Nepal",
+        "Sri Lanka"
+      ],
+      "correct_answer": "Bhutan",
+      "explanation": "Bhutanese Prime Minister Tshering Tobgay paid an official visit to India from March 14-18, 2024, engaging in discussions with PM Narendra Modi and other Indian officials to deepen bilateral ties, especially regarding the Gelephu Mindfulness City project.",
+      "trick": "Many South Asian leaders visit India frequently. One might confuse it with a visit from another close neighbor without recalling the specific timeline.",
+      "category": "International Relations, Current Affairs"
+    },
+    {
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
+      "options": [
+        "None of the above.",
+        "No Cars are Vehicles.",
+        "All Cars are Vehicles.",
+        "Some Vehicles are not Cars."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    }
+  ]
+}

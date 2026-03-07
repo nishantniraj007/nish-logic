@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "difficulty": "medium",
+    "slot": 2,
+    "generated_at": "2026-03-07T08:07:47.793Z",
+    "type": "Hybrid AI/TBG Engine",
+    "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
+  },
+  "questions": [
+    {
+      "question": "Find the next number in the series: 6, 14, 22, 30, 38, ?",
+      "correct_answer": "46",
+      "options": [
+        "38",
+        "46",
+        "54",
+        "48"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 8. So, 38 + (8) = 46.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which international organization recently warned that 2024 is on track to be the hottest year on record, following an unprecedented global heatwave trend in 2023 and early 2024?",
+      "options": [
+        "Intergovernmental Panel on Climate Change (IPCC)",
+        "United Nations Environment Programme (UNEP)",
+        "World Meteorological Organization (WMO)",
+        "Food and Agriculture Organization (FAO)"
+      ],
+      "correct_answer": "World Meteorological Organization (WMO)",
+      "explanation": "The World Meteorological Organization (WMO) has repeatedly issued warnings about record-breaking global temperatures and the high likelihood of 2024 being the warmest year due to climate change and El Niño.",
+      "trick": "WMO: The official 'weather watcher' and 'warner' for global climate.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "A train travels at an average speed of 128 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "384 km",
+      "options": [
+        "404 km",
+        "384 km",
+        "256 km",
+        "512 km"
+      ],
+      "explanation": "Distance = Speed * Time = 128 * 3 = 384 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If an article is bought for Rs. 220 and sold at a profit of 10%, what is the selling price?",
+      "correct_answer": "Rs. 242.00000000000003",
+      "options": [
+        "Rs. 242.00000000000003",
+        "Rs. 286",
+        "Rs. 264",
+        "Rs. 220.00000000000003"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 220 * 1.10 = Rs. 242.00000000000003.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Following the declaration of the 2024 Lok Sabha election results, which political party emerged as the single largest party, even though it did not secure an absolute majority on its own?",
+      "options": [
+        "Indian National Congress (INC)",
+        "All India Trinamool Congress (AITC)",
+        "Bharatiya Janata Party (BJP)",
+        "Samajwadi Party (SP)"
+      ],
+      "correct_answer": "Bharatiya Janata Party (BJP)",
+      "explanation": "The Bharatiya Janata Party (BJP) won 240 seats in the 2024 Lok Sabha elections, making it the single largest party, though it fell short of the 272-seat majority mark and formed the government with its NDA allies.",
+      "trick": "Largest in numbers, but reliant on allies for the majority.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "What significant milestone did Narendra Modi achieve following the 2024 Lok Sabha election results?",
+      "options": [
+        "Becoming the longest-serving Prime Minister of India.",
+        "Securing a third consecutive term as Prime Minister.",
+        "Becoming the first PM from a non-Congress party to complete two full terms.",
+        "Leading a majority government for the first time."
+      ],
+      "correct_answer": "Securing a third consecutive term as Prime Minister.",
+      "explanation": "Narendra Modi became the first Prime Minister since Jawaharlal Nehru to secure a third consecutive term in office following the results of the 2024 Lok Sabha elections.",
+      "trick": "NaMo 3.0: The third term, a historic hat-trick since Nehru.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "According to the World Bank's latest 'Global Economic Prospects' report, released in June 2024, what is the projected growth rate for the Indian economy in FY25 (2024-25)?",
+      "options": [
+        "6.5%",
+        "6.7%",
+        "7.0%",
+        "6.2%"
+      ],
+      "correct_answer": "6.7%",
+      "explanation": "The World Bank's June 2024 'Global Economic Prospects' report projects India's economy to grow at 6.7% in FY25 (2024-25), driven by strong public investment and private consumption.",
+      "trick": "Think 'almost seven' but a bit less for India's growth.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "correct_answer": "Canberra",
+      "options": [
+        "Brisbane",
+        "Melbourne",
+        "Canberra",
+        "Sydney"
+      ],
+      "explanation": "Canberra was chosen as a compromise between Sydney and Melbourne in 1908.",
+      "trick": "It's an inland constructed city perfectly between the two coast majors.",
+      "category": "Static GK"
+    },
+    {
+      "question": "The BRICS Foreign Ministers' meeting was recently held on June 10-11, 2024, marking the first such meeting since its expansion. In which city was this meeting hosted?",
+      "options": [
+        "Cape Town, South Africa",
+        "Beijing, China",
+        "Nizhny Novgorod, Russia",
+        "Brasilia, Brazil"
+      ],
+      "correct_answer": "Nizhny Novgorod, Russia",
+      "explanation": "Russia hosted the BRICS Foreign Ministers' meeting in Nizhny Novgorod on June 10-11, 2024. This was the first meeting of the group's foreign ministers since its expansion earlier this year.",
+      "trick": "Nizhny is the 'new' host for expanded BRICS talks.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "What is the chemical symbol for Gold?",
+      "correct_answer": "Au",
+      "options": [
+        "Ag",
+        "Go",
+        "Au",
+        "Gd"
+      ],
+      "explanation": "Au comes from the Latin word 'Aurum'.",
+      "trick": "Aurum means 'shining dawn'.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
+      "options": [
+        "No Pens are Stationery.",
+        "Some Stationery are not Pens.",
+        "All Pens are Stationery.",
+        "None of the above."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Nile",
+        "Mississippi",
+        "Amazon"
+      ],
+      "explanation": "At about 6,650 km long, it flows into the Mediterranean Sea.",
+      "trick": "Amazon is largest by volume, Nile is longest by length.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If CAT is coded as DBU, how will PEN be coded in that same language?",
+      "correct_answer": "QFO",
+      "options": [
+        "ODM",
+        "RGP",
+        "PEN",
+        "QFO"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "In which year did Mahatma Gandhi return to India from South Africa?",
+      "correct_answer": "1915",
+      "options": [
+        "1910",
+        "1920",
+        "1915",
+        "1917"
+      ],
+      "explanation": "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).",
+      "trick": "Remember 1915 as the start of his Indian movements.",
+      "category": "Static GK"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 50, 52, 54, 56, 58?",
+      "correct_answer": "54",
+      "options": [
+        "52",
+        "54",
+        "58",
+        "56"
+      ],
+      "explanation": "Sum = 270. Average = Sum / 5 = 54.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 5, 10, 20, 40, ?",
+      "correct_answer": "80",
+      "options": [
+        "80",
+        "82",
+        "75",
+        "160"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 40 * 2 = 80.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which aerospace company successfully launched its Starliner spacecraft with a crew aboard for the first time, docking with the International Space Station (ISS) in June 2024?",
+      "options": [
+        "United Launch Alliance",
+        "SpaceX",
+        "Blue Origin",
+        "Boeing"
+      ],
+      "correct_answer": "Boeing",
+      "explanation": "Boeing's CST-100 Starliner successfully launched its first crewed flight test (CFT) with NASA astronauts Butch Wilmore and Suni Williams on June 5, 2024, docking with the ISS on June 6, 2024.",
+      "trick": "Boeing's Starliner finally joins the space race with humans.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "A can complete a piece of work in 26 days while B can complete the same work in 50 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "17.11 days",
+      "options": [
+        "16.11 days",
+        "17.11 days",
+        "19.11 days",
+        "21.11 days"
+      ],
+      "explanation": "Work = 26 * 50 = 1300. Rate = 26 + 50 = 76. Time = Work / Rate = 17.11 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    }
+  ]
+}
