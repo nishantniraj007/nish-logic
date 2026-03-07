@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "batch_index": 1,
+    "day_index": 2,
+    "slot_index": 21,
+    "difficulty": "Medium",
+    "generated_at": "2026-03-07T19:40:32.717Z"
+  },
+  "questions": [
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper sells an item for $480 after giving a 20% discount on its marked price. What is the marked price of the item?",
+      "options": [
+        "$576",
+        "$600",
+        "$640",
+        "$720"
+      ],
+      "correct_answer": "$600",
+      "explanation": "If the item is sold for $480 after a 20% discount, then $480 represents 80% of the marked price. Let the marked price be MP. So, 0.80 * MP = $480. MP = $480 / 0.80 = $600.",
+      "trick": "M.P. = S.P. * 100 / (100 - Discount%)"
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If 3x + 7 = 22, what is the value of 6x - 5?",
+      "options": [
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "correct_answer": "25",
+      "explanation": "First, solve for x: 3x + 7 = 22 => 3x = 15 => x = 5. Then substitute x = 5 into 6x - 5: 6(5) - 5 = 30 - 5 = 25.",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The perimeter of a square is 64 cm. What is the area of the square?",
+      "options": [
+        "16 cm²",
+        "64 cm²",
+        "128 cm²",
+        "256 cm²"
+      ],
+      "correct_answer": "256 cm²",
+      "explanation": "If the perimeter of a square is 64 cm, then each side (s) is 64/4 = 16 cm. The area of a square is side * side (s²). So, Area = 16 * 16 = 256 cm².",
+      "trick": "Area = (Perimeter/4)²"
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The average age of three friends, A, B, and C, is 25 years. If the average age of A and B is 22 years, what is the age of C?",
+      "options": [
+        "28 years",
+        "31 years",
+        "34 years",
+        "37 years"
+      ],
+      "correct_answer": "31 years",
+      "explanation": "Total age of A, B, and C = 3 * 25 = 75 years. Total age of A and B = 2 * 22 = 44 years. Age of C = 75 - 44 = 31 years.",
+      "trick": "C's age = (Total sum of 3 members) - (Total sum of 2 members)"
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "What comes next in the sequence: 2, 5, 10, 17, 26, ?",
+      "options": [
+        "35",
+        "37",
+        "39",
+        "41"
+      ],
+      "correct_answer": "37",
+      "explanation": "The differences between consecutive terms are: 5-2=3, 10-5=5, 17-10=7, 26-17=9. The differences are consecutive odd numbers. The next difference should be 11. So, 26 + 11 = 37.",
+      "trick": "Look for patterns in the differences between terms."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Pen is to Write as Knife is to _____.",
+      "options": [
+        "Cut",
+        "Sharp",
+        "Blade",
+        "Food"
+      ],
+      "correct_answer": "Cut",
+      "explanation": "A pen is used for the action of writing. Similarly, a knife is used for the action of cutting.",
+      "trick": "Identify the primary function or purpose relationship."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Complete the series: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "correct_answer": "42",
+      "explanation": "The pattern involves adding consecutive even numbers: 2+4=6, 6+6=12, 12+8=20, 20+10=30. The next number to add would be 12, so 30+12=42.",
+      "trick": "Look for differences between consecutive terms; if not constant, look for differences of differences."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "A person walks 10 km North, then 20 km East, and then 10 km South. How far is he from his starting point?",
+      "options": [
+        "10 km",
+        "20 km",
+        "30 km",
+        "40 km"
+      ],
+      "correct_answer": "20 km",
+      "explanation": "The person walks 10 km North and then 10 km South, which means their North-South displacement cancels out. They are effectively 20 km East from their starting point.",
+      "trick": "Visualize or draw the path; opposite directions cancel out."
+    },
+    {
+      "category": "Static GK",
+      "question": "Who is known as the 'Father of the Indian Nation'?",
+      "options": [
+        "Jawaharlal Nehru",
+        "Sardar Vallabhbhai Patel",
+        "Mahatma Gandhi",
+        "Subhas Chandra Bose"
+      ],
+      "correct_answer": "Mahatma Gandhi",
+      "explanation": "Mahatma Gandhi is widely revered as the 'Father of the Indian Nation' for his pivotal role in India's independence movement through non-violent civil disobedience.",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "Which continent is home to the Amazon Rainforest?",
+      "options": [
+        "Africa",
+        "Asia",
+        "South America",
+        "North America"
+      ],
+      "correct_answer": "South America",
+      "explanation": "The Amazon Rainforest, the largest tropical rainforest in the world, is primarily located in South America, covering parts of Brazil, Peru, Ecuador, and other countries.",
+      "trick": "Associate major geographical features with their continents."
+    },
+    {
+      "category": "Static GK",
+      "question": "Which organ is responsible for pumping blood throughout the human body?",
+      "options": [
+        "Lungs",
+        "Brain",
+        "Heart",
+        "Liver"
+      ],
+      "correct_answer": "Heart",
+      "explanation": "The heart is a muscular organ that pumps blood through the circulatory system, supplying oxygen and nutrients to the body's tissues and removing carbon dioxide and other waste products.",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "What is the SI unit of electric current?",
+      "options": [
+        "Volt",
+        "Ohm",
+        "Ampere",
+        "Watt"
+      ],
+      "correct_answer": "Ampere",
+      "explanation": "The Ampere (A) is the SI unit of electric current. Volt is for electric potential, Ohm for resistance, and Watt for power.",
+      "trick": "Memorize fundamental SI units."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which of the following personalities was NOT among the five recipients of the Bharat Ratna, India's highest civilian award, announced in early 2024?",
+      "options": [
+        "L.K. Advani",
+        "M.S. Swaminathan",
+        "Atal Bihari Vajpayee",
+        "P.V. Narasimha Rao"
+      ],
+      "correct_answer": "Atal Bihari Vajpayee",
+      "explanation": "In 2024, the Bharat Ratna was posthumously awarded to Karpoori Thakur, P.V. Narasimha Rao, Chaudhary Charan Singh, and M.S. Swaminathan, and to L.K. Advani. Atal Bihari Vajpayee received the award in 2015.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which country successfully landed its Smart Lander for Investigating Moon (SLIM) spacecraft on the lunar surface in January 2024, becoming the fifth nation to achieve this feat?",
+      "options": [
+        "China",
+        "Japan",
+        "India",
+        "Russia"
+      ],
+      "correct_answer": "Japan",
+      "explanation": "Japan's SLIM spacecraft successfully landed on the Moon on January 20, 2024, making Japan the fifth country to achieve a soft landing on the lunar surface.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "The 19th Non-Aligned Movement (NAM) Summit was held in January 2024. Which city hosted this significant international event?",
+      "options": [
+        "New Delhi, India",
+        "Kampala, Uganda",
+        "Jakarta, Indonesia",
+        "Cairo, Egypt"
+      ],
+      "correct_answer": "Kampala, Uganda",
+      "explanation": "The 19th Non-Aligned Movement (NAM) Summit took place in Kampala, Uganda, from January 15-20, 2024.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Who clinched the Men's Singles title at the Australian Open 2024, marking his first Grand Slam victory?",
+      "options": [
+        "Novak Djokovic",
+        "Daniil Medvedev",
+        "Carlos Alcaraz",
+        "Jannik Sinner"
+      ],
+      "correct_answer": "Jannik Sinner",
+      "explanation": "Jannik Sinner defeated Daniil Medvedev in the final to win the Men's Singles title at the Australian Open 2024, securing his maiden Grand Slam trophy.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "The Indian government recently launched a new scheme aimed at promoting solar energy adoption in households by providing free electricity up to a certain limit. What is the name of this scheme?",
+      "options": [
+        "PM-Kisan Urja Yojana",
+        "PM-Surya Ghar Muft Bijli Yojana",
+        "National Solar Mission",
+        "Har Ghar Bijli Yojana"
+      ],
+      "correct_answer": "PM-Surya Ghar Muft Bijli Yojana",
+      "explanation": "Prime Minister Narendra Modi launched the 'PM-Surya Ghar Muft Bijli Yojana' in February 2024, aiming to provide free electricity to 1 crore households through rooftop solar installations.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Google launched its most capable and general AI model in December 2023, designed to be multimodal, understanding and operating across text, images, audio, and video. What is this AI model called?",
+      "options": [
+        "Bard",
+        "ChatGPT-5",
+        "Gemini",
+        "Copilot"
+      ],
+      "correct_answer": "Gemini",
+      "explanation": "Google introduced Gemini in December 2023 as its latest and most advanced AI model, built from the ground up to be multimodal and highly efficient.",
+      "trick": ""
+    }
+  ]
+}
