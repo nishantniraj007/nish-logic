@@ -4,241 +4,241 @@
     "day_index": 2,
     "slot_index": 20,
     "difficulty": "Medium",
-    "generated_at": "2026-03-07T08:08:27.738Z"
+    "generated_at": "2026-03-07T19:33:53.214Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 3 shirts cost $75, what is the cost of 7 shirts?",
+      "question": "If 3x + 7 = 22, what is the value of x?",
       "options": [
-        "$125",
-        "$150",
-        "$175",
-        "$200"
+        "A) 3",
+        "B) 5",
+        "C) 7",
+        "D) 9"
       ],
-      "correct_answer": "$175",
-      "explanation": "Cost of 3 shirts = $75. Cost of 1 shirt = $75 / 3 = $25. Cost of 7 shirts = 7 * $25 = $175.",
-      "trick": "Find unit cost first."
+      "correct_answer": "B) 5",
+      "explanation": "Subtract 7 from both sides: 3x = 22 - 7 => 3x = 15. Divide by 3: x = 15/3 => x = 5.",
+      "trick": "Isolate the variable by performing inverse operations."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A shopkeeper bought an item for $200 and sold it for $250. What is the profit percentage?",
+      "question": "A shopkeeper sells an item for $480 after giving a 20% discount. What was the original marked price of the item?",
       "options": [
-        "20%",
-        "25%",
-        "30%",
-        "50%"
+        "A) $576",
+        "B) $600",
+        "C) $500",
+        "D) $550"
       ],
-      "correct_answer": "25%",
-      "explanation": "Cost Price (CP) = $200, Selling Price (SP) = $250. Profit = SP - CP = $250 - $200 = $50. Profit Percentage = (Profit / CP) * 100 = ($50 / $200) * 100 = 0.25 * 100 = 25%.",
-      "trick": "Profit% = (Profit/CP)*100"
+      "correct_answer": "B) $600",
+      "explanation": "If the item is sold at a 20% discount, the selling price ($480) represents 100% - 20% = 80% of the original marked price. So, 0.80 * Marked Price = $480. Marked Price = $480 / 0.80 = $600.",
+      "trick": "Original Price = Selling Price / (1 - Discount Rate)"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If the ratio of boys to girls in a class is 3:2 and there are 30 boys, what is the total number of students in the class?",
+      "question": "The ratio of the ages of A and B is 3:5. If the sum of their ages is 48 years, what is the age of B?",
       "options": [
-        "40",
-        "50",
-        "60",
-        "75"
+        "A) 18 years",
+        "B) 24 years",
+        "C) 30 years",
+        "D) 36 years"
       ],
-      "correct_answer": "50",
-      "explanation": "Ratio of boys to girls = 3:2. If 3 parts represent 30 boys, then 1 part = 30 / 3 = 10 students. Number of girls = 2 parts = 2 * 10 = 20 girls. Total students = Boys + Girls = 30 + 20 = 50.",
-      "trick": "Find value of one ratio unit."
+      "correct_answer": "C) 30 years",
+      "explanation": "Let the ages of A and B be 3x and 5x respectively. Their sum is 3x + 5x = 8x. Given 8x = 48 years, so x = 48/8 = 6. Age of B = 5x = 5 * 6 = 30 years.",
+      "trick": "B's age = (B's ratio part / Sum of ratio parts) * Total sum"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A car travels at a speed of 60 km/h. How much distance will it cover in 2.5 hours?",
+      "question": "What is the area of a circle whose radius is 7 cm? (Use π = 22/7)",
       "options": [
-        "120 km",
-        "150 km",
-        "180 km",
-        "200 km"
+        "A) 44 cm²",
+        "B) 77 cm²",
+        "C) 154 cm²",
+        "D) 308 cm²"
       ],
-      "correct_answer": "150 km",
-      "explanation": "Distance = Speed × Time. Speed = 60 km/h, Time = 2.5 hours. Distance = 60 km/h × 2.5 h = 150 km.",
-      "trick": "Distance = Speed × Time"
+      "correct_answer": "C) 154 cm²",
+      "explanation": "The area of a circle is given by the formula A = πr². Given r = 7 cm and π = 22/7. So, A = (22/7) * 7 * 7 = 22 * 7 = 154 cm².",
+      "trick": "Memorize A = πr²."
     },
     {
       "category": "Logical Reasoning",
-      "question": "What comes next in the series: 3, 6, 12, 24, ?",
+      "question": "Find the next term in the series: 2, 5, 10, 17, ?",
       "options": [
-        "30",
-        "36",
-        "48",
-        "52"
+        "A) 24",
+        "B) 26",
+        "C) 28",
+        "D) 30"
       ],
-      "correct_answer": "48",
-      "explanation": "Each number in the series is double the previous number (3*2=6, 6*2=12, 12*2=24). So, the next number will be 24*2 = 48.",
-      "trick": "Look for multiplication/division pattern."
+      "correct_answer": "B) 26",
+      "explanation": "The differences between consecutive terms are: 5-2=3, 10-5=5, 17-10=7. The differences are increasing by 2 (3, 5, 7). The next difference should be 9. So, 17 + 9 = 26. Alternatively, the terms are n^2 + 1 for n=1, 2, 3, 4, 5. (1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26).",
+      "trick": "Look for patterns in differences or squares/cubes +/- a number."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'APPLE' is coded as 'BQQMF', how would 'GRAPE' be coded?",
+      "question": "Choose the word that is related to the third word in the same way as the second word is related to the first word.\nBird : Nest :: Dog : ?",
       "options": [
-        "HSBQG",
-        "HSBQF",
-        "HTBQG",
-        "HSAPF"
+        "A) Kennel",
+        "B) Stable",
+        "C) Den",
+        "D) Burrow"
       ],
-      "correct_answer": "HSBQF",
-      "explanation": "In the code 'BQQMF' for 'APPLE': A+1=B, P+1=Q, P+1=Q, L+1=M, E+1=F. Each letter is shifted one position forward in the alphabet. Applying the same rule to 'GRAPE': G+1=H, R+1=S, A+1=B, P+1=Q, E+1=F. So, 'GRAPE' becomes 'HSBQF'.",
-      "trick": "Identify the shift/transformation rule per character."
+      "correct_answer": "A) Kennel",
+      "explanation": "A bird lives in a nest. Similarly, a dog lives in a kennel.",
+      "trick": "Identify the relationship type (e.g., inhabitant and dwelling)."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Find the missing number in the series: 2, 5, 9, 14, ?, 27",
+      "question": "Find the odd one out from the following list:",
       "options": [
-        "18",
-        "19",
+        "Apple",
+        "Banana",
+        "Potato",
+        "Grape"
+      ],
+      "correct_answer": "Potato",
+      "explanation": "Apple, Banana, and Grape are all types of fruits. Potato is a vegetable (specifically, a stem tuber).",
+      "trick": "Look for a common category or property that unites three items and excludes one."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Complete the series: 2, 4, 8, 16, ?",
+      "options": [
         "20",
-        "21"
+        "24",
+        "30",
+        "32"
       ],
-      "correct_answer": "20",
-      "explanation": "The pattern involves adding consecutive natural numbers starting from 3. \n2 + 3 = 5\n5 + 4 = 9\n9 + 5 = 14\n14 + 6 = 20\n20 + 7 = 27",
-      "trick": "Look for differences between consecutive terms first."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If 'APPLE' is coded as 'BQQMF', how is 'GRAPE' coded?",
-      "options": [
-        "HSBRF",
-        "HSBSF",
-        "HTBRF",
-        "HRARF"
-      ],
-      "correct_answer": "HSBRF",
-      "explanation": "Each letter in the word is shifted one position forward in the alphabet. A becomes B, P becomes Q, L becomes M, E becomes F. Applying the same rule to GRAPE:\nG+1 = H\nR+1 = S\nA+1 = B\nP+1 = Q\nE+1 = F\nSo, GRAPE becomes HSBRF.",
-      "trick": "Identify the shift pattern (e.g., +1, -1, reverse) for a few letters."
+      "correct_answer": "32",
+      "explanation": "Each number in the series is obtained by multiplying the previous number by 2. (2x2=4, 4x2=8, 8x2=16, 16x2=32).",
+      "trick": "Identify the mathematical operation (addition, subtraction, multiplication, division, or a combination) or pattern between consecutive terms."
     },
     {
       "category": "Static GK",
-      "question": "Who is credited with inventing the practical incandescent light bulb?",
+      "question": "Who is famously known as the 'Father of the Indian Constitution'?",
       "options": [
-        "Nikola Tesla",
-        "Thomas Edison",
-        "Alexander Graham Bell",
-        "Marie Curie"
+        "Mahatma Gandhi",
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar",
+        "Sardar Patel"
       ],
-      "correct_answer": "Thomas Edison",
-      "explanation": "Thomas Edison is widely credited with inventing a practical, long-lasting incandescent light bulb in 1879, though many others contributed to the development of electric lighting.",
+      "correct_answer": "B.R. Ambedkar",
+      "explanation": "Dr. B.R. Ambedkar was the chairman of the Drafting Committee of the Indian Constitution and played a crucial role in its formulation.",
       "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Which is the longest river in the world?",
+      "question": "Which of the following continents is the largest by land area?",
       "options": [
-        "Amazon River",
-        "Nile River",
-        "Mississippi River",
-        "Yangtze River"
+        "Africa",
+        "North America",
+        "Asia",
+        "Europe"
       ],
-      "correct_answer": "Nile River",
-      "explanation": "The Nile River, flowing through northeastern Africa, is traditionally considered the longest river in the world, stretching approximately 6,650 kilometers (4,132 miles). However, there is ongoing debate about whether the Amazon or Nile is longer due to different methods of measurement.",
-      "trick": "Remember 'N' for Nile, 'L' for Longest (traditional view)."
+      "correct_answer": "Asia",
+      "explanation": "Asia is the largest continent in the world, covering approximately 30% of the Earth's total land area.",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "What is often referred to as the 'powerhouse of the cell'?",
+      "question": "What is the primary function of red blood cells in the human body?",
       "options": [
-        "Nucleus",
-        "Mitochondria",
-        "Ribosome",
-        "Endoplasmic Reticulum"
+        "Fighting infections",
+        "Clotting blood",
+        "Transporting oxygen",
+        "Producing hormones"
       ],
-      "correct_answer": "Mitochondria",
-      "explanation": "Mitochondria are membrane-bound organelles that generate most of the chemical energy needed to power the cell's biochemical reactions, hence they are called the 'powerhouse of the cell'.",
-      "trick": "Powerhouse = Mitochondria (M for muscle/energy)."
+      "correct_answer": "Transporting oxygen",
+      "explanation": "Red blood cells contain hemoglobin, a protein that binds to oxygen in the lungs and transports it to tissues throughout the body.",
+      "trick": "Associate 'red' with 'oxygenated blood' for its key role."
     },
     {
       "category": "Static GK",
-      "question": "Which gas makes up the largest percentage of Earth's atmosphere?",
+      "question": "Which of the following is an example of a renewable energy source?",
       "options": [
-        "Oxygen",
-        "Carbon Dioxide",
-        "Nitrogen",
-        "Argon"
+        "Coal",
+        "Natural Gas",
+        "Solar Power",
+        "Petroleum"
       ],
-      "correct_answer": "Nitrogen",
-      "explanation": "Nitrogen constitutes approximately 78% of Earth's atmosphere, followed by Oxygen (about 21%), Argon (about 0.93%), and Carbon Dioxide (about 0.04%).",
-      "trick": "Think 'N' for Nitrogen, 'N' for 'Numerous' (most abundant)."
+      "correct_answer": "Solar Power",
+      "explanation": "Renewable energy sources are naturally replenished. Solar power harnesses energy from the sun, which is a continuously available source, unlike fossil fuels (coal, natural gas, petroleum) which are finite.",
+      "trick": "Renewable means it replenishes naturally and relatively quickly; think 'infinite' or 'sustainable'."
     },
     {
       "category": "Current Affairs",
-      "question": "Which state topped the medal tally in the 6th edition of the Khelo India Youth Games, held in Tamil Nadu in January-February 2024?",
+      "question": "Who was sworn in as the Prime Minister of India for a third consecutive term in June 2024?",
       "options": [
-        "Haryana",
-        "Maharashtra",
-        "Tamil Nadu",
-        "Rajasthan"
+        "Rahul Gandhi",
+        "Narendra Modi",
+        "Amit Shah",
+        "Arvind Kejriwal"
       ],
-      "correct_answer": "Maharashtra",
-      "explanation": "Maharashtra secured the top position in the 6th Khelo India Youth Games 2024, winning a total of 158 medals, including 57 gold.",
+      "correct_answer": "Narendra Modi",
+      "explanation": "Narendra Modi was sworn in as the Prime Minister of India for his third consecutive term on June 9, 2024, following the results of the Lok Sabha elections.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "The 28th Conference of the Parties (COP28) to the UNFCCC, which concluded with a historic agreement on transitioning away from fossil fuels, was held in which city in December 2023?",
+      "question": "Which of the following countries officially joined the BRICS group as a full member in January 2024?",
       "options": [
-        "Geneva",
+        "Indonesia",
+        "Saudi Arabia",
+        "Turkey",
+        "Mexico"
+      ],
+      "correct_answer": "Saudi Arabia",
+      "explanation": "In January 2024, Saudi Arabia, along with UAE, Egypt, Ethiopia, and Iran, officially became full members of the BRICS group, expanding the bloc from five to ten nations.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "India's first dedicated solar mission, launched in September 2023, is named what?",
+      "options": [
+        "Suryaayan-1",
+        "Aditya-L1",
+        "Heliosat-1",
+        "SolarProbe-1"
+      ],
+      "correct_answer": "Aditya-L1",
+      "explanation": "Aditya-L1 is India's first solar mission, launched by ISRO on September 2, 2023, to study the Sun from a halo orbit around the Lagrange Point 1 (L1).",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "Which country won the ICC Men's Cricket World Cup 2023, held in India?",
+      "options": [
+        "India",
+        "Australia",
+        "England",
+        "South Africa"
+      ],
+      "correct_answer": "Australia",
+      "explanation": "Australia defeated India in the final match to win the ICC Men's Cricket World Cup 2023, securing their record-extending sixth title.",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "The 28th Conference of the Parties (COP28) to the UNFCCC, held in December 2023, took place in which city?",
+      "options": [
+        "Paris",
+        "Glasgow",
         "Dubai",
-        "Sharm El Sheikh",
-        "Glasgow"
+        "Sharm El Sheikh"
       ],
       "correct_answer": "Dubai",
-      "explanation": "COP28 was held in Dubai, United Arab Emirates, from November 30 to December 13, 2023, where countries agreed to begin transitioning away from fossil fuels.",
+      "explanation": "COP28, the United Nations Climate Change Conference, was held in Dubai, United Arab Emirates, from November 30 to December 13, 2023.",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "India's first dedicated solar mission, Aditya-L1, successfully reached its halo orbit around the Sun-Earth Lagrange Point 1 (L1) in January 2024. What is its primary objective?",
-      "options": [
-        "To study the Moon's geological composition",
-        "To observe the Sun's corona and solar winds",
-        "To explore Mars for signs of past life",
-        "To detect exoplanets in distant star systems"
-      ],
-      "correct_answer": "To observe the Sun's corona and solar winds",
-      "explanation": "Aditya-L1 is designed to study the Sun's outermost layers (corona), chromosphere, solar emissions, solar winds, and coronal mass ejections (CMEs).",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which of the following personalities was NOT posthumously awarded the Bharat Ratna, India's highest civilian honor, in February 2024?",
+      "question": "Which former Prime Minister of India was posthumously awarded the Bharat Ratna in February 2024?",
       "options": [
         "P.V. Narasimha Rao",
-        "Chaudhary Charan Singh",
-        "L.K. Advani",
-        "M.S. Swaminathan"
+        "Atal Bihari Vajpayee",
+        "Manmohan Singh",
+        "H.D. Deve Gowda"
       ],
-      "correct_answer": "L.K. Advani",
-      "explanation": "In February 2024, the government announced Bharat Ratna for P.V. Narasimha Rao, Chaudhary Charan Singh, and M.S. Swaminathan posthumously, along with Karpoori Thakur (posthumously) and L.K. Advani (living).",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The Indian government launched the 'PM-Surya Ghar Muft Bijli Yojana' in February 2024. What is the main aim of this scheme?",
-      "options": [
-        "To provide free cooking gas connections to rural households",
-        "To promote electric vehicle charging infrastructure",
-        "To provide free electricity through rooftop solar installations",
-        "To establish new nuclear power plants"
-      ],
-      "correct_answer": "To provide free electricity through rooftop solar installations",
-      "explanation": "The 'PM-Surya Ghar Muft Bijli Yojana' aims to provide free electricity up to 300 units every month to one crore households by installing rooftop solar systems.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who was awarded the Nobel Peace Prize in October 2023 for her fight against the oppression of women in Iran and her promotion of human rights and freedom for all?",
-      "options": [
-        "Malala Yousafzai",
-        "Greta Thunberg",
-        "Narges Mohammadi",
-        "Maria Ressa"
-      ],
-      "correct_answer": "Narges Mohammadi",
-      "explanation": "The Norwegian Nobel Committee awarded the Nobel Peace Prize for 2023 to Narges Mohammadi for her courageous struggle for human rights, freedom, and democracy in Iran.",
+      "correct_answer": "P.V. Narasimha Rao",
+      "explanation": "Former Prime Minister P.V. Narasimha Rao was posthumously awarded the Bharat Ratna, India's highest civilian honour, in February 2024, along with several other eminent personalities.",
       "trick": ""
     }
   ]
