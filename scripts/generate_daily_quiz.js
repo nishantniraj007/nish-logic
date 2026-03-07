@@ -107,34 +107,41 @@ async function generateWithFallback(prompt, primaryModelId) {
         console.error(`Error with ${primaryModelId}:`, error.message);
 
         if (isRateLimit) {
-            console.warn(`[QUARTERMASTER] Rate limit hit on ${primaryModelId}. Waiting 10s before fallback to relieve pressure.`);
-            await new Promise(r => setTimeout(r, 10000));
-        }
+            const isRateLimit = error.message && error.message.includes('429');
 
-        // Fallback Cascade: pro -> flash -> flash-lite
-        let nextModel = null;
-        if (primaryModelId === "gemini-2.5-pro") {
-            nextModel = "gemini-2.5-flash";
-        } else if (primaryModelId === "gemini-2.5-flash") {
-            nextModel = "gemini-2.5-flash-lite";
-        }
-
-        if (nextModel) {
-            console.log(`Falling back to ${nextModel}...`);
-            try {
-                return await makeRequest(nextModel);
-            } catch (fallbackErr) {
-                console.error(`Error with ${nextModel}:`, fallbackErr.message);
-                if (nextModel === "gemini-2.5-flash") {
-                    console.log(`Falling back to gemini-2.5-flash-lite after waiting 5s...`);
-                    await new Promise(r => setTimeout(r, 5000));
-                    return await makeRequest("gemini-2.5-flash-lite");
-                } else {
-                    throw new Error(`All fallback models failed. Last error: ${fallbackErr.message}`);
-                }
+            if (isRateLimit) {
+                console.warn(`[QUARTERMASTER] Rate limit (429) hit on ${primaryModelId}. Executing massive backoff of 65 seconds...`);
+                await new Promise(r => setTimeout(r, 65000));
+            } else {
+                console.warn(`Error using ${primaryModelId}, taking a short 10s breather before fallback...`);
+                await new Promise(r => setTimeout(r, 10000));
             }
-        } else {
-            throw new Error(`Primary model ${primaryModelId} failed and no fallbacks available: ${error.message}`);
+
+            // Fallback Cascade: pro -> flash -> flash-lite
+            let nextModel = null;
+            if (primaryModelId === "gemini-2.5-pro") {
+                nextModel = "gemini-2.5-flash";
+            } else if (primaryModelId === "gemini-2.5-flash") {
+                nextModel = "gemini-2.5-flash-lite";
+            }
+
+            if (nextModel) {
+                console.log(`Falling back to ${nextModel}...`);
+                try {
+                    return await makeRequest(nextModel);
+                } catch (fallbackErr) {
+                    console.error(`Error with ${nextModel}:`, fallbackErr.message);
+                    if (nextModel === "gemini-2.5-flash") {
+                        console.log(`Falling back to gemini-2.5-flash-lite after waiting another 65s...`);
+                        await new Promise(r => setTimeout(r, 65000));
+                        return await makeRequest("gemini-2.5-flash-lite");
+                    } else {
+                        throw new Error(`All fallback models failed. Last error: ${fallbackErr.message}`);
+                    }
+                }
+            } else {
+                throw new Error(`Primary model ${primaryModelId} failed and no fallbacks available: ${error.message}`);
+            }
         }
     }
 }
