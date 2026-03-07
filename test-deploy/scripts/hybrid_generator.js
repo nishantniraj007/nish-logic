@@ -216,35 +216,50 @@ function generateLR(difficulty) {
 
 
 // ==========================================
-// STATIC GK ENGINE
+// STATIC GK ENGINE (Fetched from Headless Remote DB)
 // ==========================================
-function generateStaticGK() {
-    // Robust local database. In production with thousands of items.
-    const staticGKDB = [
-        { q: "Who was the first President of India?", a: "Dr. Rajendra Prasad", o: ["Jawaharlal Nehru", "Sardar Patel", "B.R. Ambedkar"], exp: "He served from 1950 to 1962.", t: "He was the only president to serve two full terms." },
-        { q: "Which is the longest river in the world?", a: "Nile", o: ["Amazon", "Yangtze", "Mississippi"], exp: "At about 6,650 km long, it flows into the Mediterranean Sea.", t: "Amazon is largest by volume, Nile is longest by length." },
-        { q: "What is the capital of Australia?", a: "Canberra", o: ["Sydney", "Melbourne", "Brisbane"], exp: "Canberra was chosen as a compromise between Sydney and Melbourne in 1908.", t: "It's an inland constructed city perfectly between the two coast majors." },
-        { q: "Which planet is known as the Red Planet?", a: "Mars", o: ["Venus", "Jupiter", "Saturn"], exp: "Mars is covered in iron oxide (rust) dust.", t: "Think 'Rust' -> 'Red'." },
-        { q: "When did the Indian Constitution come into effect?", a: "26 January 1950", o: ["15 August 1947", "26 November 1949", "2 October 1948"], exp: "The Constitution of India came into effect on Republic Day, Jan 26, 1950.", t: "26 Jan was chosen to honor the 'Purna Swaraj' declaration of 1930." },
-        { q: "What is the chemical symbol for Gold?", a: "Au", o: ["Ag", "Go", "Gd"], exp: "Au comes from the Latin word 'Aurum'.", t: "Aurum means 'shining dawn'." },
-        { q: "Who wrote the Indian National Anthem?", a: "Rabindranath Tagore", o: ["Bankim Chandra Chatterjee", "Sarojini Naidu", "Mahatma Gandhi"], exp: "Rabindranath Tagore wrote 'Jana Gana Mana' initially in Bengali.", t: "Tagore also wrote the national anthem for Bangladesh." },
-        { q: "Which is the largest ocean on Earth?", a: "Pacific Ocean", o: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"], exp: "It covers more than 30% of the Earth's surface.", t: "Pacific derives from 'pace' meaning peaceful." },
-        { q: "In which year did Mahatma Gandhi return to India from South Africa?", a: "1915", o: ["1910", "1917", "1920"], exp: "Gandhi returned to India on Jan 9, 1915 (Pravasi Bharatiya Divas).", t: "Remember 1915 as the start of his Indian movements." },
-        { q: "Which vitamin is produced when skin is exposed to sunlight?", a: "Vitamin D", o: ["Vitamin A", "Vitamin C", "Vitamin B12"], exp: "UVB rays synthesize Vitamin D in the body.", t: "The 'sunshine' vitamin." }
-    ];
+async function generateStaticGK(difficulty) {
+    // Difficulty mapping:
+    // Easy: levels 7-10
+    // Medium: levels 11-13
+    // SSC: levels 13-15
+    // UPSC: levels 15-17
 
-    shuffle(staticGKDB);
-    return staticGKDB.slice(0, 4).map(item => {
-        let opts = shuffle([item.a, ...item.o]);
-        return {
-            question: item.q,
-            correct_answer: item.a,
-            options: opts,
-            explanation: item.exp,
-            trick: item.t,
-            category: 'Static GK'
-        };
-    });
+    let levelRange = [7, 10];
+    if (difficulty === 'medium') levelRange = [11, 13];
+    else if (difficulty === 'ssc') levelRange = [13, 15];
+    else if (difficulty === 'upsc') levelRange = [15, 17];
+
+    const randomLevel = getRandomInt(levelRange[0], levelRange[1]);
+    const subjects = ['history', 'geography', 'polity'];
+    const randomSubject = subjects[getRandomInt(0, 2)];
+
+    // We use the raw github usercontent link as our Public API
+    const remoteUrl = `https://raw.githubusercontent.com/nishantniraj007/nish-logic-gk-database/master/${randomSubject}/level_${randomLevel}.json`;
+
+    console.log(`   -> Fetching Static GK from Headless DB: ${randomSubject} Level ${randomLevel}...`);
+
+    try {
+        const response = await fetch(remoteUrl);
+        if (!response.ok) throw new Error("Remote DB fetch failed");
+        const allQuestions = await response.json();
+
+        // Return exactly 4 unique questions
+        return shuffle([...allQuestions]).slice(0, 4).map(q => ({
+            ...q,
+            category: `Static GK (${randomSubject.charAt(0).toUpperCase() + randomSubject.slice(1)})`
+        }));
+    } catch (e) {
+        console.warn(`   -> Headless DB Fetch failed (${e.message}). Using local backup.`);
+        // Robust local fallback array maintained in generateStaticGK as a safety net
+        const backupPool = [
+            { question: "Who was the first President of India?", correct_answer: "Dr. Rajendra Prasad", options: shuffle(["Dr. Rajendra Prasad", "Jawaharlal Nehru", "Sardar Patel", "B.R. Ambedkar"]), explanation: "He served from 1950 to 1962.", category: "Static GK" },
+            { question: "Which is the longest river in the world?", correct_answer: "Nile", options: shuffle(["Nile", "Amazon", "Yangtze", "Mississippi"]), explanation: "Length approx 6,650 km.", category: "Static GK" },
+            { question: "Which is the largest planet in our solar system?", correct_answer: "Jupiter", options: shuffle(["Jupiter", "Saturn", "Neptune", "Earth"]), explanation: "Jupiter is a gas giant.", category: "Static GK" },
+            { question: "Who wrote the national anthem of India?", correct_answer: "Rabindranath Tagore", options: shuffle(["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Mahatma Gandhi"]), explanation: "Jana Gana Mana.", category: "Static GK" }
+        ];
+        return shuffle(backupPool).slice(0, 4);
+    }
 }
 
 
@@ -336,7 +351,7 @@ async function main() {
 
         const qaSect = generateQA(difficulty);
         const lrSect = generateLR(difficulty);
-        const gkSect = generateStaticGK();
+        const gkSect = await generateStaticGK(difficulty);
 
         console.log(`   -> Engine assembled: QA(4), LR(4), Static(4). Contacting Gemini for CA...`);
         const caSect = await fetchCurrentAffairs(difficulty);
