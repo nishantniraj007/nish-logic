@@ -2,168 +2,79 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 3,
-    "generated_at": "2026-03-07T19:39:40.717Z",
+    "generated_at": "2026-03-08T08:38:55.043Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "[FALLBACK] Recent news Item #3 regarding events for medium difficulty?",
+      "question": "[FALLBACK] Recent news Item #2 regarding events for medium difficulty?",
       "correct_answer": "Option 1",
       "options": [
-        "Option 3",
-        "Option 4",
-        "Option 2",
-        "Option 1"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Neptune",
-        "Jupiter",
-        "Saturn",
-        "Earth"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Sarojini Naidu",
-        "Rabindranath Tagore",
-        "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "A can complete a piece of work in 38 days while B can complete the same work in 42 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "19.95 days",
-      "options": [
-        "21.95 days",
-        "19.95 days",
-        "18.95 days",
-        "23.95 days"
-      ],
-      "explanation": "Work = 38 * 42 = 1596. Rate = 38 + 42 = 80. Time = Work / Rate = 19.95 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
-      "options": [
-        "No Apples are Foods.",
-        "Some Foods are not Apples.",
-        "None of the above.",
-        "All Apples are Foods."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #4 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 2",
         "Option 4",
         "Option 1",
+        "Option 2",
         "Option 3"
       ],
       "explanation": "Remote Database sync failed temporarily.",
       "category": "Current Affairs"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 7800 at an interest rate of 5% per annum over 2 years?",
-      "correct_answer": "Rs. 780",
-      "options": [
-        "Rs. 1170",
-        "Rs. 780",
-        "Rs. 880",
-        "Rs. 730"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (7800 * 5 * 2) / 100 = 780.",
-      "trick": "Treat percentage as decimal visually: 78 * 5 * 2 = 780.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 36, 25, 49, 101",
-      "correct_answer": "101",
-      "options": [
-        "36",
-        "25",
-        "49",
-        "101"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If an article is bought for Rs. 420 and sold at a profit of 30%, what is the selling price?",
-      "correct_answer": "Rs. 546",
-      "options": [
-        "Rs. 588",
-        "Rs. 504",
-        "Rs. 546",
-        "Rs. 630"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 420 * 1.30 = Rs. 546.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 4, 14, 24, 34, 44, ?",
-      "correct_answer": "54",
-      "options": [
-        "56",
-        "54",
-        "44",
-        "64"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 44 + (10) = 54.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "[FALLBACK] Recent news Item #6 regarding events for medium difficulty?",
       "correct_answer": "Option 1",
       "options": [
+        "Option 4",
         "Option 3",
         "Option 2",
-        "Option 4",
         "Option 1"
       ],
       "explanation": "Remote Database sync failed temporarily.",
       "category": "Current Affairs"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 36, 38, 40, 42, 44?",
-      "correct_answer": "40",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 8200 at an interest rate of 7% per annum over 4 years?",
+      "correct_answer": "Rs. 2296",
       "options": [
-        "38",
-        "42",
-        "44",
-        "40"
+        "Rs. 2246",
+        "Rs. 2296",
+        "Rs. 2396",
+        "Rs. 2706"
       ],
-      "explanation": "Sum = 200. Average = Sum / 5 = 40.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "SI = (P * R * T) / 100 = (8200 * 7 * 4) / 100 = 2296.",
+      "trick": "Treat percentage as decimal visually: 82 * 7 * 4 = 2296.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "[FALLBACK] Recent news Item #5 regarding events for medium difficulty?",
+      "question": "[FALLBACK] Recent news Item #3 regarding events for medium difficulty?",
       "correct_answer": "Option 1",
       "options": [
-        "Option 4",
+        "Option 3",
+        "Option 1",
         "Option 2",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Find the next number in the series: 3, 15, 27, 39, 51, ?",
+      "correct_answer": "63",
+      "options": [
+        "75",
+        "63",
+        "51",
+        "65"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 51 + (12) = 63.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #1 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 2",
+        "Option 4",
         "Option 3",
         "Option 1"
       ],
@@ -171,40 +82,16 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "Find the next number in the series: 4, 8, 16, 32, ?",
+      "correct_answer": "64",
       "options": [
-        "Yangtze",
-        "Mississippi",
-        "Amazon",
-        "Nile"
+        "66",
+        "60",
+        "128",
+        "64"
       ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #2 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 4",
-        "Option 2",
-        "Option 1",
-        "Option 3"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "If MAT is coded as NBU, how will PEN be coded in that same language?",
-      "correct_answer": "QFO",
-      "options": [
-        "ODM",
-        "QFO",
-        "RGP",
-        "PEN"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 32 * 2 = 64.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
     },
     {
@@ -220,7 +107,44 @@
       "category": "Static GK"
     },
     {
-      "question": "[FALLBACK] Recent news Item #1 regarding events for medium difficulty?",
+      "question": "Rs. 602 is divided between A and B in the ratio 3:4. What is A's share?",
+      "correct_answer": "Rs. 258",
+      "options": [
+        "Rs. 197.8",
+        "Rs. 318.2",
+        "Rs. 344",
+        "Rs. 258"
+      ],
+      "explanation": "Total parts = 3 + 4 = 7. Value of 1 part = 602/7 = 86. A's share = 3 * 86 = 258.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Nile",
+        "Yangtze",
+        "Mississippi",
+        "Amazon"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #4 regarding events for medium difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 2",
+        "Option 1",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #5 regarding events for medium difficulty?",
       "correct_answer": "Option 1",
       "options": [
         "Option 3",
@@ -230,6 +154,82 @@
       ],
       "explanation": "Remote Database sync failed temporarily.",
       "category": "Current Affairs"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Saturn",
+        "Earth",
+        "Jupiter",
+        "Neptune"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Mahatma Gandhi"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "All Dogs are Animals.",
+        "Some Animals are not Dogs.",
+        "No Dogs are Animals.",
+        "None of the above."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 23, 25, 27, 29, 31?",
+      "correct_answer": "27",
+      "options": [
+        "27",
+        "29",
+        "31",
+        "25"
+      ],
+      "explanation": "Sum = 135. Average = Sum / 5 = 27.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 16, 25, 82, 36",
+      "correct_answer": "82",
+      "options": [
+        "16",
+        "25",
+        "82",
+        "36"
+      ],
+      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If an article is bought for Rs. 280 and sold at a profit of 10%, what is the selling price?",
+      "correct_answer": "Rs. 308",
+      "options": [
+        "Rs. 364",
+        "Rs. 280",
+        "Rs. 336",
+        "Rs. 308"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 280 * 1.10 = Rs. 308.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }

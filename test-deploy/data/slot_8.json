@@ -2,219 +2,19 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 8,
-    "generated_at": "2026-03-07T19:39:40.717Z",
+    "generated_at": "2026-03-08T08:38:55.043Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "[FALLBACK] Recent news Item #1 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 4",
-        "Option 2",
-        "Option 3"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 38, 40, 42, 44, 46?",
-      "correct_answer": "42",
-      "options": [
-        "44",
-        "40",
-        "46",
-        "42"
-      ],
-      "explanation": "Sum = 210. Average = Sum / 5 = 42.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 5, 15, 45, 135, ?",
-      "correct_answer": "405",
-      "options": [
-        "408",
-        "1215",
-        "405",
-        "400"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #2 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 4",
-        "Option 2",
-        "Option 3"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Mahatma Gandhi",
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Nile",
-        "Yangtze",
-        "Mississippi",
-        "Amazon"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #5 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 4",
-        "Option 2",
-        "Option 3",
-        "Option 1"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "A can complete a piece of work in 128 days while B can complete the same work in 208 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "79.24 days",
-      "options": [
-        "81.24 days",
-        "78.24 days",
-        "83.24 days",
-        "79.24 days"
-      ],
-      "explanation": "Work = 128 * 208 = 26624. Rate = 128 + 208 = 336. Time = Work / Rate = 79.24 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
       "question": "[FALLBACK] Recent news Item #4 regarding events for upsc difficulty?",
       "correct_answer": "Option 1",
       "options": [
-        "Option 4",
         "Option 2",
-        "Option 1",
-        "Option 3"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Rs. 2752 is divided between A and B in the ratio 2:6. What is A's share?",
-      "correct_answer": "Rs. 688",
-      "options": [
-        "Rs. 963.2",
-        "Rs. 688",
-        "Rs. 412.8",
-        "Rs. 2064"
-      ],
-      "explanation": "Total parts = 2 + 6 = 8. Value of 1 part = 2752/8 = 344. A's share = 2 * 344 = 688.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #6 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 4",
         "Option 3",
-        "Option 2"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
-      "options": [
-        "No Dogs are Animals.",
-        "None of the above.",
-        "All Dogs are Animals.",
-        "Some Animals are not Dogs."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 3, -17, -37, -57, -77, ?",
-      "correct_answer": "-97",
-      "options": [
-        "-95",
-        "-77",
-        "-117",
-        "-97"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -20. So, -77 + (-20) = -97.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 147 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "882 km",
-      "options": [
-        "902 km",
-        "882 km",
-        "1029 km",
-        "735 km"
-      ],
-      "explanation": "Distance = Speed * Time = 147 * 6 = 882 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 49, 36, 64, 122",
-      "correct_answer": "122",
-      "options": [
-        "49",
-        "36",
-        "64",
-        "122"
-      ],
-      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Jawaharlal Nehru",
-        "Sardar Patel",
-        "B.R. Ambedkar",
-        "Dr. Rajendra Prasad"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #3 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 4",
         "Option 1",
-        "Option 3",
-        "Option 2"
+        "Option 4"
       ],
       "explanation": "Remote Database sync failed temporarily.",
       "category": "Current Affairs"
@@ -223,13 +23,213 @@
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Neptune",
         "Saturn",
         "Jupiter",
-        "Earth"
+        "Earth",
+        "Neptune"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
+    },
+    {
+      "question": "Rs. 672 is divided between A and B in the ratio 2:5. What is A's share?",
+      "correct_answer": "Rs. 192",
+      "options": [
+        "Rs. 259.2",
+        "Rs. 192",
+        "Rs. 480",
+        "Rs. 124.8"
+      ],
+      "explanation": "Total parts = 2 + 5 = 7. Value of 1 part = 672/7 = 96. A's share = 2 * 96 = 192.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If CAT is coded as ECV, how will BOX be coded in that same language?",
+      "correct_answer": "DQZ",
+      "options": [
+        "BOX",
+        "ER[",
+        "@MV",
+        "DQZ"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 39, 41, 43, 45, 47?",
+      "correct_answer": "43",
+      "options": [
+        "47",
+        "45",
+        "41",
+        "43"
+      ],
+      "explanation": "Sum = 215. Average = Sum / 5 = 43.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
+      "options": [
+        "No Cars are Vehicles.",
+        "None of the above.",
+        "Some Vehicles are not Cars.",
+        "All Cars are Vehicles."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Amazon",
+        "Nile",
+        "Mississippi"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #2 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 4",
+        "Option 1",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #3 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #6 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 3",
+        "Option 1",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "A can complete a piece of work in 120 days while B can complete the same work in 208 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "76.10 days",
+      "options": [
+        "80.10 days",
+        "78.10 days",
+        "75.10 days",
+        "76.10 days"
+      ],
+      "explanation": "Work = 120 * 208 = 24960. Rate = 120 + 208 = 328. Time = Work / Rate = 76.10 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 122, 49, 64, 36",
+      "correct_answer": "122",
+      "options": [
+        "122",
+        "49",
+        "64",
+        "36"
+      ],
+      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #1 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 3",
+        "Option 4",
+        "Option 1",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "B.R. Ambedkar",
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru",
+        "Sardar Patel"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #5 regarding events for upsc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 3",
+        "Option 2",
+        "Option 4"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Find the next number in the series: 6, -39, -84, -129, -174, ?",
+      "correct_answer": "-219",
+      "options": [
+        "-217",
+        "-219",
+        "-174",
+        "-264"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -45. So, -174 + (-45) = -219.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 35200 at an interest rate of 12% per annum over 2 years?",
+      "correct_answer": "Rs. 8448",
+      "options": [
+        "Rs. 8398",
+        "Rs. 10208",
+        "Rs. 8448",
+        "Rs. 8548"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (35200 * 12 * 2) / 100 = 8448.",
+      "trick": "Treat percentage as decimal visually: 352 * 12 * 2 = 8448.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }
