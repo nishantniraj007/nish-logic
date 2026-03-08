@@ -22,7 +22,7 @@ const batchConfig = {
     5: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
     6: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
     7: { diff: "SSC/Bank", context: "Competitive exam style. Fast calculation tricks needed, standard banking awareness.", model: "gemini-2.5-flash" },
-    8: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.5-pro" },
+    8: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.5-flash" },
     9: { diff: "UPSC/CAT", context: "Highly analytical, multi-step logical reasoning, deep conceptual understanding, and complex math.", model: "gemini-2.5-pro" }
 };
 
@@ -103,26 +103,23 @@ async function generateWithFallback(prompt, primaryModelId) {
         return await makeRequest(primaryModelId);
     } catch (error) {
         // If we hit a 429, we should log specifically that we are entering fallback mode
-        const isRateLimit = error.message.includes("429") || error.message.toLowerCase().includes("quota");
+        const isRateLimit = error.message && (error.message.includes("429") || error.message.toLowerCase().includes("quota"));
         console.error(`Error with ${primaryModelId}:`, error.message);
 
         if (isRateLimit) {
-            const isRateLimit = error.message && error.message.includes('429');
-
-            if (isRateLimit) {
-                console.warn(`[QUARTERMASTER] Rate limit (429) hit on ${primaryModelId}. Executing massive backoff of 65 seconds...`);
-                await new Promise(r => setTimeout(r, 65000));
-            } else {
-                console.warn(`Error using ${primaryModelId}, taking a short 10s breather before fallback...`);
-                await new Promise(r => setTimeout(r, 10000));
-            }
-
             // Fallback Cascade: pro -> flash -> flash-lite
             let nextModel = null;
             if (primaryModelId === "gemini-2.5-pro") {
                 nextModel = "gemini-2.5-flash";
             } else if (primaryModelId === "gemini-2.5-flash") {
                 nextModel = "gemini-2.5-flash-lite";
+            }
+
+            if (primaryModelId === "gemini-2.5-pro") {
+                console.warn(`[QUARTERMASTER] Rate limit hit on PRO. Instantly falling back to ${nextModel} to bypass daily quota blocks.`);
+            } else {
+                console.warn(`[QUARTERMASTER] Rate limit (429) hit on ${primaryModelId}. Executing backoff of 65 seconds...`);
+                await new Promise(r => setTimeout(r, 65000));
             }
 
             if (nextModel) {
@@ -142,6 +139,8 @@ async function generateWithFallback(prompt, primaryModelId) {
             } else {
                 throw new Error(`Primary model ${primaryModelId} failed and no fallbacks available: ${error.message}`);
             }
+        } else {
+            throw new Error(`Non-quota Error with ${primaryModelId}: ${error.message}`);
         }
     }
 }

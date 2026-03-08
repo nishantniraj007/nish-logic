@@ -39,6 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => navigate(1));
     submitBtn.addEventListener('click', finishGame);
 
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.addEventListener('change', (e) => {
+            const select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = e.target.checked ? 'hi' : 'en';
+                select.dispatchEvent(new Event('change'));
+            }
+        });
+    }
+
     document.getElementById('print-btn').addEventListener('click', () => {
         window.print();
     });

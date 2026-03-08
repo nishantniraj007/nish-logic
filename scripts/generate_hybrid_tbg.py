@@ -125,56 +125,95 @@ def generate_syllogism():
         "explanation": explanation
     }
 
-# 3. GK & Current Affairs (The Scraper Method Placeholder)
-def generate_gk_current_affairs(index):
-    # This acts as a stub for the Web Scraper pulling data from news APIs.
+import urllib.request
+import urllib.error
+
+# 3. GK & Current Affairs (Live Fetch from Headless DB)
+def fetch_live_gk_data():
+    urls = [
+        "https://raw.githubusercontent.com/nishantniraj007/nish-logic-gk-database/master/current_affairs/latest.json",
+        "https://raw.githubusercontent.com/nishantniraj007/nish-logic-gk-database/master/history/level_7.json",
+        "https://raw.githubusercontent.com/nishantniraj007/nish-logic-gk-database/master/geography/level_7.json"
+    ]
+    all_live_questions = []
+    
+    for url in urls:
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=5) as response:
+                data = json.loads(response.read().decode())
+                if isinstance(data, list):
+                    all_live_questions.extend(data)
+        except (urllib.error.URLError, json.JSONDecodeError) as e:
+            print(f"Warning: Failed to fetch or parse {url}: {e}")
+            pass
+            
+    return all_live_questions
+
+def generate_gk_current_affairs(index, live_data_pool):
+    # This acts as a fallback stub if the DB is empty
     gk_db = [
         {
-            "q": "Which country recently won the Thomas Cup?",
-            "c": "India",
-            "opts": ["India", "Indonesia", "China", "Denmark"],
-            "exp": "India made history by winning the Thomas Cup for the first time."
+            "category": "Current Affairs",
+            "question": "Which country recently won the Thomas Cup?",
+            "options": ["India", "Indonesia", "China", "Denmark"],
+            "correct_answer": "India",
+            "explanation": "India made history by winning the Thomas Cup for the first time."
         },
         {
-            "q": "Who won the ICC Men's Cricket World Cup 2023?",
-            "c": "Australia",
-            "opts": ["India", "Australia", "England", "South Africa"],
-            "exp": "Australia defeated India in the final to win the 2023 ICC World Cup."
+            "category": "Current Affairs",
+            "question": "Who won the ICC Men's Cricket World Cup 2023?",
+            "options": ["India", "Australia", "England", "South Africa"],
+            "correct_answer": "Australia",
+            "explanation": "Australia defeated India in the final to win the 2023 ICC World Cup."
         },
         {
-            "q": "Which city hosted the G20 Summit in 2023?",
-            "c": "New Delhi",
-            "opts": ["New Delhi", "Bali", "Rome", "Riyadh"],
-            "exp": "The 2023 G20 New Delhi summit was the eighteenth meeting of G20."
+            "category": "Current Affairs",
+            "question": "Which city hosted the G20 Summit in 2023?",
+            "options": ["New Delhi", "Bali", "Rome", "Riyadh"],
+            "correct_answer": "New Delhi",
+            "explanation": "The 2023 G20 New Delhi summit was the eighteenth meeting of G20."
         },
         {
-            "q": "What is the name of India's first solar mission?",
-            "c": "Aditya-L1",
-            "opts": ["Aditya-L1", "Surya-1", "Bhaskara-L", "Chandrayaan-3"],
-            "exp": "Aditya-L1 is a coronalography spacecraft designed to study the solar atmosphere."
+            "category": "Current Affairs",
+            "question": "What is the name of India's first solar mission?",
+            "options": ["Aditya-L1", "Surya-1", "Bhaskara-L", "Chandrayaan-3"],
+            "correct_answer": "Aditya-L1",
+            "explanation": "Aditya-L1 is a coronalography spacecraft designed to study the solar atmosphere."
         },
         {
-            "q": "Which film won the Best Picture at the 96th Academy Awards?",
-            "c": "Oppenheimer",
-            "opts": ["Oppenheimer", "Barbie", "Poor Things", "Killers of the Flower Moon"],
-            "exp": "Oppenheimer won the Academy Award for Best Picture in 2024."
+            "category": "Current Affairs",
+            "question": "Which film won the Best Picture at the 96th Academy Awards?",
+            "options": ["Oppenheimer", "Barbie", "Poor Things", "Killers of the Flower Moon"],
+            "correct_answer": "Oppenheimer",
+            "explanation": "Oppenheimer won the Academy Award for Best Picture in 2024."
         },
         {
-            "q": "Which country officially became the 32nd member of NATO in 2024?",
-            "c": "Sweden",
-            "opts": ["Sweden", "Finland", "Ukraine", "Georgia"],
-            "exp": "Sweden officially became the 32nd member of NATO in March 2024."
+            "category": "Current Affairs",
+            "question": "Which country officially became the 32nd member of NATO in 2024?",
+            "options": ["Sweden", "Finland", "Ukraine", "Georgia"],
+            "correct_answer": "Sweden",
+            "explanation": "Sweden officially became the 32nd member of NATO in March 2024."
         }
     ]
-    item = gk_db[index % len(gk_db)]
-    options = item["opts"].copy()
-    random.shuffle(options)
+    
+    if live_data_pool and len(live_data_pool) > index:
+        item = live_data_pool[index]
+    else:
+        # Fallback to local stub
+        item = gk_db[index % len(gk_db)]
+        
+    options = item.get("options", []).copy()
+    if len(options) >= 4:
+        random.shuffle(options)
+    
     return {
-        "question": item["q"],
-        "category": "Current Affairs",
+        "question": item.get("question", "Unknown Question"),
+        "category": item.get("category", "General Knowledge"),
         "options": options,
-        "correct_answer": item["c"],
-        "explanation": item["exp"]
+        "correct_answer": item.get("correct_answer", ""),
+        "explanation": item.get("explanation", ""),
+        "trick": item.get("trick", "") # Keep it matching the standard schema
     }
 
 def main():
@@ -196,10 +235,14 @@ def main():
         
     random.shuffle(questions)
     
-    # 6 GK/Current Affairs 
+    # 6 GK/Current Affairs from Headless DB
+    live_data_pool = fetch_live_gk_data()
+    if len(live_data_pool) > 6:
+        live_data_pool = random.sample(live_data_pool, 6) # Select 6 random distinct questions
+        
     gk_questions = []
     for i in range(6):
-        gk_questions.append(generate_gk_current_affairs(i))
+        gk_questions.append(generate_gk_current_affairs(i, live_data_pool))
         
     # Append GK at the end
     questions.extend(gk_questions)
@@ -208,7 +251,7 @@ def main():
         "metadata": {
             "difficulty": "upsc",
             "generated_at": datetime.now().isoformat(),
-            "type": "Hybrid TBG + AI Engine",
+            "type": "Hybrid TBG + Live DB Sync",
             "total_questions": len(questions)
         },
         "questions": questions
