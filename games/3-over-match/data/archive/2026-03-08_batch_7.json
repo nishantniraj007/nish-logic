@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "batch_index": 7,
+    "day_index": 3,
+    "slot_index": 37,
+    "difficulty": "SSC/Bank",
+    "generated_at": "2026-03-08T21:03:29.843Z"
+  },
+  "questions": [
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A sum of money becomes 3 times itself in 8 years at simple interest. In how many years will it become 7 times itself at the same rate?",
+      "options": [
+        "A) 16 years",
+        "B) 20 years",
+        "C) 24 years",
+        "D) 28 years"
+      ],
+      "correct_answer": "C) 24 years",
+      "explanation": "Let the Principal (P) be ₹1.\nCase 1: Amount = 3P = ₹3. Interest (I1) = Amount - Principal = 3 - 1 = ₹2.\nTime (T1) = 8 years.\nUsing Simple Interest formula I = (P * R * T) / 100:\n2 = (1 * R * 8) / 100\nR = (2 * 100) / 8 = 200 / 8 = 25%.\nCase 2: Amount = 7P = ₹7. Interest (I2) = Amount - Principal = 7 - 1 = ₹6.\nWe need to find Time (T2) at the same rate R = 25%.\n6 = (1 * 25 * T2) / 100\n6 = T2 / 4\nT2 = 6 * 4 = 24 years.",
+      "trick": "For simple interest, the interest earned is directly proportional to the time for a fixed principal and rate. If a sum becomes 'n' times, the interest earned is (n-1) times the principal.\nCase 1: Sum becomes 3 times, so Interest is (3-1) = 2 units (of principal). This takes 8 years.\nCase 2: Sum becomes 7 times, so Interest is (7-1) = 6 units (of principal).\nSince Interest is proportional to Time (I ∝ T):\n(Interest1 / Time1) = (Interest2 / Time2)\n(2 units / 8 years) = (6 units / T2 years)\n1/4 = 6 / T2\nT2 = 6 * 4 = 24 years."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\nI. Some pens are pencils.\nII. All pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\n1. Some pens are erasers.\n2. Some sharpeners are pencils.\n3. No pen is a sharpener.\n4. All erasers are pencils.\n\nWhich of the following conclusions logically follows from the given statements?",
+      "options": [
+        "A. Only 1 follows.",
+        "B. Only 1 and 2 follow.",
+        "C. Only 1 and 3 follow.",
+        "D. Only 1 and 4 follow."
+      ],
+      "correct_answer": "A. Only 1 follows.",
+      "explanation": "Let's analyze each conclusion based on the given statements:\n\n1.  **Some pens are erasers:**\n    From Statement I: Some pens are pencils.\n    From Statement II: All pencils are erasers.\n    Combining these, if some pens are pencils and all pencils are erasers, then it logically follows that some pens are erasers. (Pens ↔ Pencils → Erasers). Conclusion 1 follows.\n\n2.  **Some sharpeners are pencils:**\n    From Statement II: All pencils are erasers.\n    From Statement III: No eraser is a sharpener.\n    If all pencils are erasers and no eraser is a sharpener, then no pencil can be a sharpener. Therefore, 'Some sharpeners are pencils' does not follow.\n\n3.  **No pen is a sharpener:**\n    We know 'Some pens are erasers' (from Conclusion 1) and 'No eraser is a sharpener'. This implies 'Some pens are not sharpeners'. However, we cannot definitively conclude that 'No pen is a sharpener'. There might be some pens that are not pencils, and those pens could potentially be sharpeners. So, Conclusion 3 does not follow.\n\n4.  **All erasers are pencils:**\n    From Statement II: All pencils are erasers. This is a one-way relationship. It does not imply that all erasers are necessarily pencils (e.g., there could be erasers that are not pencils). So, Conclusion 4 does not follow.\n\nTherefore, only Conclusion 1 logically follows from the given statements.",
+      "trick": "Use Venn diagrams for quick visualization. Draw circles for each category. For 'Some A are B', draw overlapping circles. For 'All A are B', draw circle A completely inside circle B. For 'No A is B', draw separate circles. Then, check if each conclusion is necessarily true in all possible valid diagrams."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\nI. Some pens are pencils.\nII. All pencils are erasers.\nIII. All erasers are sharpeners.\n\nConclusions:\n1. Some pens are erasers.\n2. All pencils are sharpeners.\n3. Some sharpeners are pens.",
+      "options": [
+        "A) Only 1 and 2 follow",
+        "B) Only 2 and 3 follow",
+        "C) Only 1 and 3 follow",
+        "D) All 1, 2 and 3 follow"
+      ],
+      "correct_answer": "D) All 1, 2 and 3 follow",
+      "explanation": "Let's analyze each conclusion based on the given statements:\n\nStatement I: Some pens are pencils (P + P)\nStatement II: All pencils are erasers (A)\nStatement III: All erasers are sharpeners (A)\n\nConclusion 1: Some pens are erasers.\nFrom Statement I (Some pens are pencils) and Statement II (All pencils are erasers):\nSome pens are pencils + All pencils are erasers => Some pens are erasers. (I + A type combination yields I type conclusion). This conclusion follows.\n\nConclusion 2: All pencils are sharpeners.\nFrom Statement II (All pencils are erasers) and Statement III (All erasers are sharpeners):\nAll pencils are erasers + All erasers are sharpeners => All pencils are sharpeners. (A + A type combination yields A type conclusion). This conclusion follows.\n\nConclusion 3: Some sharpeners are pens.\nWe know from Conclusion 1 that 'Some pens are erasers'.\nFrom Statement III, 'All erasers are sharpeners'.\nCombining 'Some pens are erasers' (I) and 'All erasers are sharpeners' (A) => Some pens are sharpeners. The converse of 'Some pens are sharpeners' is 'Some sharpeners are pens'. (I type conclusions are convertible). This conclusion follows.\n\nTherefore, all three conclusions follow from the given statements.",
+      "trick": "For syllogism questions, drawing Venn diagrams is often the quickest method. Represent each statement with overlapping or concentric circles. Then, visually check if the conclusions are necessarily true based on your diagram. For example:\n1. Draw a circle for 'Pencils' inside 'Erasers'.\n2. Draw 'Pens' overlapping with 'Pencils' (and thus 'Erasers').\n3. Draw 'Sharpeners' encompassing 'Erasers' (and thus 'Pencils' and part of 'Pens').\nNow, visually verify each conclusion based on the diagram."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If in a certain code language, 'MARKET' is coded as 'PDUNHW' and 'PUBLIC' is coded as 'SXEOIF', then how will 'VENDOR' be coded?",
+      "options": [
+        "A) YHQGRU",
+        "B) XGPFQT",
+        "C) YIRHSV",
+        "D) ZHQGRV"
+      ],
+      "correct_answer": "A) YHQGRU",
+      "explanation": "Let's analyze the pattern in the given coded words:\n\nFor 'MARKET' to 'PDUNHW':\nM (13) + 3 = P (16)\nA (1) + 3 = D (4)\nR (18) + 3 = U (21)\nK (11) + 3 = N (14)\nE (5) + 3 = H (8)\nT (20) + 3 = W (23)\n\nIt appears that each letter in the word 'MARKET' is shifted 3 positions forward in the English alphabet to get its corresponding letter in the code 'PDUNHW'.\n\nLet's verify this pattern with the second example, 'PUBLIC' to 'SXEOIF':\nP (16) + 3 = S (19)\nU (21) + 3 = X (24)\nB (2) + 3 = E (5)\nL (12) + 3 = O (15)\nI (9) + 3 = L (12)\nC (3) + 3 = F (6)\n\nThe pattern is consistent: each letter is shifted 3 positions forward.\n\nNow, let's apply the same rule to code 'VENDOR':\nV (22) + 3 = Y (25)\nE (5) + 3 = H (8)\nN (14) + 3 = Q (17)\nD (4) + 3 = G (7)\nO (15) + 3 = R (18)\nR (18) + 3 = U (21)\n\nTherefore, 'VENDOR' will be coded as 'YHQGRU'.",
+      "trick": "1. **Alphabet Position Recognition:** Quickly recall the alphabetical position of letters (e.g., A=1, M=13, Z=26). This is crucial for fast calculation.\n2. **Pattern Identification:** Compare the first one or two letters of the given word and its code to identify the shift (e.g., M to P is +3). Test this pattern on a few more letters to confirm consistency.\n3. **Apply and Verify:** Once the pattern is confirmed (here, +3 for each letter), apply it to the target word ('VENDOR'). Do a quick mental check for each letter."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an item 40% above its cost price. He then sells it after giving a discount of 20%. What is his profit percentage?",
+      "options": [
+        "A) 10%",
+        "B) 12%",
+        "C) 16%",
+        "D) 18%"
+      ],
+      "correct_answer": "B) 12%",
+      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 40% of CP = 100 + 40 = Rs. 140.\nDiscount = 20% of MP = 20% of 140 = (20/100) * 140 = Rs. 28.\nSelling Price (SP) = MP - Discount = 140 - 28 = Rs. 112.\nProfit = SP - CP = 112 - 100 = Rs. 12.\nProfit Percentage = (Profit / CP) * 100 = (12 / 100) * 100 = 12%.",
+      "trick": "Use the successive percentage change formula: Net Change = A + B + (A*B)/100.\nHere, A = +40% (markup), B = -20% (discount).\nNet Change = 40 + (-20) + (40 * -20) / 100\n= 40 - 20 - (800 / 100)\n= 20 - 8\n= 12%.\nSince the net change is positive, it's a 12% profit."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The difference between Compound Interest and Simple Interest on a certain sum at 10% per annum for 2 years is Rs. 50. Find the sum.",
+      "options": [
+        "A) Rs. 4000",
+        "B) Rs. 5000",
+        "C) Rs. 6000",
+        "D) Rs. 5500"
+      ],
+      "correct_answer": "B) Rs. 5000",
+      "explanation": "Let the principal sum be P.\nRate (R) = 10% p.a.\nTime (T) = 2 years.\nSimple Interest (SI) = (P * R * T) / 100 = (P * 10 * 2) / 100 = P/5.\nCompound Interest (CI) = P * [(1 + R/100)^T - 1] = P * [(1 + 10/100)^2 - 1]\n= P * [(11/10)^2 - 1] = P * [121/100 - 1] = P * [21/100] = 21P/100.\nDifference (CI - SI) = (21P/100) - (P/5) = 50.\nTo combine, find a common denominator (100):\n(21P - 20P) / 100 = 50\nP / 100 = 50\nP = 50 * 100 = Rs. 5000.",
+      "trick": "For 2 years, the difference between Compound Interest and Simple Interest is given by the formula: Difference = P * (R/100)^2.\nGiven Difference = Rs. 50, R = 10%.\n50 = P * (10/100)^2\n50 = P * (1/10)^2\n50 = P * (1/100)\nP = 50 * 100\nP = Rs. 5000."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an item 40% above its cost price. He offers a discount of 20% on the marked price. If the profit earned is ₹84, what is the cost price of the item?",
+      "options": [
+        "A) ₹600",
+        "B) ₹700",
+        "C) ₹750",
+        "D) ₹800"
+      ],
+      "correct_answer": "B) ₹700",
+      "explanation": "Let the Cost Price (CP) be 'C'.\nMarked Price (MP) = CP + 40% of CP = C * (1 + 0.40) = 1.4C.\nSelling Price (SP) = MP - 20% of MP = 1.4C * (1 - 0.20) = 1.4C * 0.8 = 1.12C.\nProfit = SP - CP = 1.12C - C = 0.12C.\nGiven Profit = ₹84.\nSo, 0.12C = 84.\nC = 84 / 0.12 = 8400 / 12 = ₹700.",
+      "trick": "Use the concept of successive percentage change. If an item is marked up by A% and then discounted by B%, the net percentage change (profit/loss percentage) is given by A - B - (AB/100).\nHere, A = 40% (markup) and B = 20% (discount).\nNet change = 40 - 20 - (40 * 20 / 100) = 20 - (800 / 100) = 20 - 8 = 12%.\nThis 12% is the profit percentage on the Cost Price.\nSo, 12% of CP = ₹84.\nCP = (84 / 12) * 100 = 7 * 100 = ₹700."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Five friends A, B, C, D, and E have different heights.\nI. C is taller than only one person.\nII. B is taller than E but shorter than D.\nIII. A is taller than B.\nIV. D is not the tallest.\n\nWho among them is the second tallest person?",
+      "options": [
+        "A. A",
+        "B. B",
+        "C. C",
+        "D. D"
+      ],
+      "correct_answer": "D. D",
+      "explanation": "Let's arrange the friends in descending order of height (Tallest > ... > Shortest):\n\n1.  **From (I): C is taller than only one person.**\n    This means C is the second shortest person among the five. So, the arrangement looks like: _ > _ > _ > C > _ (Shortest)\n\n2.  **From (II): B is taller than E but shorter than D.**\n    This gives us a sequence: D > B > E.\n\n3.  **From (III): A is taller than B.**\n    So, A > B.\n\n4.  **From (IV): D is not the tallest.**\n    This means D cannot be in the first position of our height order.\n\nNow, let's combine these deductions:\nWe have 5 positions for height: P1 > P2 > P3 > P4 > P5\nFrom (1), P4 = C. So, P5 is the shortest person.\nOur current structure: P1 > P2 > P3 > C > P5\n\nFrom D > B > E, these three individuals must occupy three consecutive positions. Since C is P4, E cannot be P4 or P5 if B > E. So, D, B, E must occupy P1, P2, P3 or P2, P3, P5. However, if E is P5, then D, B must be P1, P2 or P2, P3.\n\nGiven D > B > E, and E cannot be C or taller than C.\nIf E is P5, then D > B > P5 (E).\n\nNow consider D is not the tallest (P1). This implies D must be P2 or P3.\nIf D is P2, then P1 must be someone taller than D.\nSo, we can have: P1 > D > B > C > E (Here E is P5)\n\nLet's check this arrangement: A > D > B > C > E\n*   C is taller than only one person (E). (Correct: A > D > B > C > E)\n*   B is taller than E but shorter than D. (Correct: D > B > E)\n*   A is taller than B. (Correct: A > D > B > C > E)\n*   D is not the tallest. (Correct: A is the tallest)\n\nAll conditions are satisfied by the arrangement A > D > B > C > E.\n\nTherefore, the second tallest person is D.",
+      "trick": "Start with the most restrictive condition first (C is taller than only one person, placing C immediately). Then, build sequences (like D>B>E) and use elimination (D is not the tallest) to fit them into the remaining slots. Prioritize conditions that define relative positions of multiple individuals."
+    }
+  ]
+}
