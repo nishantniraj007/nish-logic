@@ -42,11 +42,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggle = document.getElementById('lang-toggle');
     if (langToggle) {
         langToggle.addEventListener('change', (e) => {
-            const select = document.querySelector('.goog-te-combo');
-            if (select) {
-                select.value = e.target.checked ? 'hi' : 'en';
-                select.dispatchEvent(new Event('change'));
-            }
+            const tryTranslate = () => {
+                const select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = e.target.checked ? 'hi' : 'en';
+                    select.dispatchEvent(new Event('change'));
+                } else {
+                    // If widget not ready, retry in 500ms
+                    setTimeout(tryTranslate, 500);
+                }
+            };
+            tryTranslate();
         });
     }
 
