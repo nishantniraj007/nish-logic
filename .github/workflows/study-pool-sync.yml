@@ -1,0 +1,31 @@
+name: 🎓 Daily 10k Study Pool Sync
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # Runs 1 hr after the main DB generator finishes (4AM UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync_pool:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Pool Manager Sync
+        run: node study-portal/scripts/pool_manager.js
+
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add study-portal/client/data/massive_pool.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: Daily sync of 10k Study Portal Pool" && git pull --rebase origin master && git push origin master)

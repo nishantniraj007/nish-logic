@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Arena | Nish-Logic</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/marathon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="arena-body">
+    <div id="stats-bar" class="stats-bar neon-border-bottom">
+        <div class="stat-item">Q: <span id="q-count">0/0</span></div>
+        <div class="stat-item timer-box neon-text" id="timer">00:00</div>
+        <div class="stat-item score-box">Score: <span id="current-score">0</span></div>
+    </div>
+
+    <main id="quiz-arena" class="arena-container">
+        <!-- Loading State -->
+        <div id="loading" class="loading-state">
+            <div class="loader"></div>
+            <p>Syncing with GK Vault...</p>
+        </div>
+
+        <!-- Question View -->
+        <div id="question-card" class="glass-container question-card" style="display:none;">
+            <div class="card-header">
+                <span id="q-category" class="category-tag">CATEGORY</span>
+            </div>
+            <div id="q-text" class="question-text">Loading question...</div>
+            <div id="options-container" class="options-grid">
+                <!-- Buttons injected by JS -->
+            </div>
+            <div class="card-footer">
+                <button id="next-btn" class="cyber-button outline" style="display:none;">NEXT QUESTION</button>
+            </div>
+        </div>
+
+        <!-- Results View -->
+        <div id="results-card" class="glass-container results-card" style="display:none;">
+            <h1 class="neon-text">MARATHON COMPLETE</h1>
+            <div class="final-stats">
+                <div class="final-stat">Accuracy: <span id="final-accuracy">0%</span></div>
+                <div class="final-stat">Time Taken: <span id="final-time">0:00</span></div>
+            </div>
+            <div id="mini-review" class="review-scroller">
+                <!-- Mini review cards -->
+            </div>
+            <div class="result-actions">
+                <button id="download-cert" class="cyber-button">DOWNLOAD CERTIFICATE</button>
+                <button onclick="window.location.href='index.html'" class="cyber-button outline">EXIT</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Hidden element for translation -->
+    <div id="google_translate_element" style="display:none;"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="js/marathon.js"></script>
+</body>
+
+</html>
