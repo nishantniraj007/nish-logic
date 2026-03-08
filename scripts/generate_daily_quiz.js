@@ -52,22 +52,22 @@ function buildPrompt(config, chunkIndex, totalChunks) {
     return `You are an expert exam question setter for ${config.diff} level examinations.
 ${config.context}
 
-Your task is to generate exactly ${questionCount} Multiple Choice Questions (MCQs) following this distribution:
-${focus}
+Your task is to generate exactly ${questionCount} HIGH-QUALITY MULTIPLE CHOICE QUESTIONS (MCQs).
+FOCUS: ${focus}
 
-You MUST respond with ONLY a valid, raw JSON array of ${questionCount} objects. Do not wrap it in markdown code blocks like \`\`\`json. Just the raw array.
+You MUST respond with ONLY a valid, raw JSON array of ${questionCount} objects. Do not wrap it in markdown code blocks.
 
-Each object in the array must strictly match this schema:
+Each object MUST strictly match this schema:
 {
-  "category": "Quantitative Aptitude" | "Logical Reasoning" | "Static GK" | "Current Affairs",
-  "question": "The actual question text...",
-  "options": ["Option A", "Option B", "Option C", "Option D"],
-  "correct_answer": "The exact string from the options array that is correct limit to 1 string",
-  "explanation": "A concise explanation of why the answer is correct.",
-  "trick": "An extremely short shortcut or trick to solve this type of question faster (optional, leave empty string if none)"
+  "category": "Quantitative Aptitude" | "Logical Reasoning",
+  "question": "Clear, concise question statement",
+  "options": ["A", "B", "C", "D"],
+  "correct_answer": "exactly matching one of the options",
+  "explanation": "Step-by-step logic or calculation",
+  "trick": "Time-saving shortcut"
 }
 
-Provide NO introductory text and NO conversational text. Output ONLY the JSON array.`;
+NO introductory text. No preamble.`;
 }
 
 async function generateWithFallback(prompt, primaryModelId) {
@@ -188,8 +188,7 @@ async function main() {
                     }
 
                     let parsedData = JSON.parse(rawJsonText);
-
-                    const expectedQuestionsPerChunk = (totalChunks === 9) ? 2 : 6;
+                    const expectedQuestionsPerChunk = 4; // 2 chunks * 4 = 8 total logic items
 
                     if (!Array.isArray(parsedData)) {
                         throw new Error("Model returned invalid JSON format (not an array).");

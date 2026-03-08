@@ -12,6 +12,13 @@ on:
     - cron: '39 20 * * *'
     - cron: '57 20 * * *'
     - cron: '19 21 * * *'
+    # Clone Batches (After 3 AM IST / 9:30 PM UTC)
+    - cron: '00 00 * * *'
+    - cron: '00 03 * * *'
+    - cron: '00 06 * * *'
+    - cron: '00 09 * * *'
+    - cron: '00 12 * * *'
+    - cron: '00 15 * * *'
   workflow_dispatch:
     inputs:
       batch_index:
@@ -87,7 +94,15 @@ jobs:
       - name: Run Quiz Generation
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/generate_daily_quiz.js ${{ env.INDEX }}
+        run: |
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" -ge 18 ] && [ "$HOUR" -le 21 ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "Window: 12AM-3AM IST. Running Standard AI Generation..."
+            node scripts/generate_daily_quiz.js ${{ env.INDEX }}
+          else
+            echo "Window: After 3AM IST. Running Clone Internal Generation..."
+            node scripts/generate_clone_quiz.js ${{ env.INDEX }}
+          fi
 
       - name: Run Hybrid Question Generation
         run: python3 scripts/generate_hybrid_tbg.py

@@ -3,11 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggle = document.getElementById('lang-toggle');
     langToggle.addEventListener('change', (e) => {
         const targetLang = e.target.checked ? 'hi' : 'en';
-        const comboSelect = document.querySelector('.goog-te-combo');
-        if (comboSelect) {
-            comboSelect.value = targetLang;
-            comboSelect.dispatchEvent(new Event('change'));
-        }
+
+        const tryTranslate = () => {
+            const comboSelect = document.querySelector('.goog-te-combo');
+            if (comboSelect) {
+                comboSelect.value = targetLang;
+                comboSelect.dispatchEvent(new Event('change'));
+            } else {
+                setTimeout(tryTranslate, 500);
+            }
+        };
+        tryTranslate();
     });
 
     // 2. Length & Timer Mapping
@@ -20,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let mins = 10;
             if (e.target.value === "50") mins = 20;
             if (e.target.value === "100") mins = 40;
-            
+
             timeDisplay.textContent = `${mins} Minutes`;
             timerVal.value = mins;
         });
@@ -30,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const configForm = document.getElementById('marathon-config');
     configForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const config = {
             length: parseInt(document.querySelector('input[name="length"]:checked').value),
             timeMins: parseInt(timerVal.value),
@@ -39,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         localStorage.setItem('marathonConfig', JSON.stringify(config));
-        
+
         // Redirect to Arena route
         window.location.href = 'quiz.html';
     });
