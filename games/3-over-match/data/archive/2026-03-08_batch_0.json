@@ -4,241 +4,241 @@
     "day_index": 3,
     "slot_index": 30,
     "difficulty": "Medium",
-    "generated_at": "2026-03-08T08:40:05.410Z"
+    "generated_at": "2026-03-08T19:37:53.213Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks up an item by 20% and then offers a discount of 10%. If the cost price of the item is $100, what is its selling price?",
+      "category": "Logical Reasoning",
+      "question": "Five friends A, B, C, D, E are sitting in a row facing North.\n1. C is to the immediate right of B.\n2. D is to the immediate left of E.\n3. A is at the extreme left end.\n4. E is not next to A.\n5. B is to the right of D.\nWho is sitting exactly in the middle of the row?",
       "options": [
-        "$108",
-        "$110",
-        "$112",
-        "$120"
+        "A) A",
+        "B) B",
+        "C) C",
+        "D) E"
       ],
-      "correct_answer": "$108",
-      "explanation": "Cost Price (CP) = $100. Marked Price (MP) = CP + 20% of CP = $100 + $20 = $120. Selling Price (SP) = MP - 10% of MP = $120 - ($120 * 0.10) = $120 - $12 = $108.",
-      "trick": "Net change: (1 + markup%)(1 - discount%) * CP = SP. (1.20)(0.90)*100 = 1.08*100 = $108."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If 3x + 7 = 22, what is the value of x?",
-      "options": [
-        "3",
-        "5",
-        "7",
-        "9"
-      ],
-      "correct_answer": "5",
-      "explanation": "3x + 7 = 22. Subtract 7 from both sides: 3x = 22 - 7 => 3x = 15. Divide by 3: x = 15 / 3 => x = 5.",
-      "trick": ""
+      "correct_answer": "D) E",
+      "explanation": "Let the five positions be [1] [2] [3] [4] [5] from left to right.\n1.  From (3), A is at the extreme left: A _ _ _ _\n2.  From (1), C is to the immediate right of B: (BC) block.\n3.  From (2), D is to the immediate left of E: (DE) block.\n4.  From (4), E is not next to A. This means E cannot be in position [2].\n5.  From (5), B is to the right of D.\n\nNow, let's place the blocks (DE) and (BC) in the remaining positions [2], [3], [4], [5].\n\n**Case 1: (DE) block starts at position [2].**\n-   If D is at [2], then E is at [3]. Arrangement: A D E _ _.\n-   This satisfies condition (4) as E is not next to A (D is between them).\n-   The remaining positions are [4] and [5] for (BC). So, B is at [4], C is at [5].\n-   Resulting arrangement: A D E B C.\n-   Let's check all conditions for A D E B C:\n    1.  C is to the immediate right of B (Yes).\n    2.  D is to the immediate left of E (Yes).\n    3.  A is at the extreme left end (Yes).\n    4.  E is not next to A (Yes, D is between A and E).\n    5.  B is to the right of D (Yes, D is at [2], B is at [4]).\n-   This arrangement is valid. The person in the middle (position [3]) is E.\n\n**Case 2: (DE) block starts at position [3].**\n-   If D is at [3], then E is at [4]. Arrangement: A _ D E _.\n-   The remaining positions are [2] and [5] for (BC).\n-   If B is at [2], C must be at [3], but [3] is occupied by D. So (BC) cannot start at [2].\n-   If B is at [5], C would be at position [6], which doesn't exist. So (BC) cannot be placed here.\n-   Therefore, this case is not possible.\n\n**Case 3: (DE) block starts at position [4].**\n-   If D is at [4], then E is at [5]. Arrangement: A _ _ D E.\n-   The remaining positions are [2] and [3] for (BC). So, B is at [2], C is at [3].\n-   Resulting arrangement: A B C D E.\n-   Let's check all conditions for A B C D E:\n    1.  C is to the immediate right of B (Yes).\n    2.  D is to the immediate left of E (Yes).\n    3.  A is at the extreme left end (Yes).\n    4.  E is not next to A (Yes, B, C, D are between A and E).\n    5.  B is to the right of D (No, B is at [2], D is at [4], so B is to the left of D). This condition is violated.\n-   Therefore, this arrangement is invalid.\n\nSince A D E B C is the only valid arrangement, the person in the middle (position [3]) is E.",
+      "trick": "Use placeholders for positions. Treat 'immediate right/left' as blocks (e.g., (BC), (DE)). Systematically try placing these blocks while checking all conditions. Eliminate arrangements that violate any condition. The 'not next to' condition usually implies 'not immediately adjacent'."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A square garden has a perimeter of 48 meters. What is the area of the garden?",
+      "question": "The average of 5 consecutive odd numbers is 27. What is the product of the smallest and the largest of these numbers?",
       "options": [
-        "144 sq m",
-        "96 sq m",
-        "12 sq m",
-        "108 sq m"
+        "A) 713",
+        "B) 729",
+        "C) 759",
+        "D) 783"
       ],
-      "correct_answer": "144 sq m",
-      "explanation": "For a square, Perimeter = 4 * side. So, 4 * side = 48m => side = 48m / 4 = 12m. Area of a square = side * side = 12m * 12m = 144 sq m.",
+      "correct_answer": "A) 713",
+      "explanation": "For any set of consecutive odd numbers (an arithmetic progression), the average is equal to the middle number.\nSince there are 5 consecutive odd numbers, the 3rd number is the average, which is 27.\nSo, the sequence of 5 consecutive odd numbers is:\n(27 - 4), (27 - 2), 27, (27 + 2), (27 + 4)\nWhich are: 23, 25, 27, 29, 31.\nThe smallest number is 23.\nThe largest number is 31.\nThe product of the smallest and the largest number = 23 * 31.\n23 * 31 = 713.",
+      "trick": "Recognize that for an odd number of consecutive terms in an arithmetic progression, the average is the middle term. This directly gives you the middle number, from which you can find the smallest and largest by adding/subtracting multiples of the common difference (which is 2 for consecutive odd numbers)."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If the length of a rectangle is increased by 20% and its width is decreased by 10%, what is the percentage change in its area?",
+      "options": [
+        "A) 8% increase",
+        "B) 10% increase",
+        "C) 8% decrease",
+        "D) 10% decrease"
+      ],
+      "correct_answer": "A) 8% increase",
+      "explanation": "Let the original length be L and the original width be W.\nOriginal Area (A_orig) = L * W\nNew length (L_new) = L + 20% of L = L * (1 + 20/100) = 1.2 L\nNew width (W_new) = W - 10% of W = W * (1 - 10/100) = 0.9 W\nNew Area (A_new) = L_new * W_new = (1.2 L) * (0.9 W) = 1.08 LW\nPercentage change in area = ((A_new - A_orig) / A_orig) * 100\n= ((1.08 LW - LW) / LW) * 100\n= (0.08 LW / LW) * 100\n= 0.08 * 100 = 8%\nSince the value is positive, it's an 8% increase.",
+      "trick": "Use the net percentage change formula for successive changes: A + B + (AB/100), where A is the percentage change in length and B is the percentage change in width. Increase is positive, decrease is negative.\nA = +20 (for 20% increase)\nB = -10 (for 10% decrease)\nNet change = 20 + (-10) + (20 * -10 / 100)\n= 10 + (-200 / 100)\n= 10 - 2 = 8%\nSince the result is positive, it's an 8% increase."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "What comes next in the sequence: 3, 7, 13, 21, 31, ?",
+      "options": [
+        "A) 41",
+        "B) 43",
+        "C) 45",
+        "D) 47"
+      ],
+      "correct_answer": "B) 43",
+      "explanation": "1. Observe the differences between consecutive terms:\n   - 7 - 3 = 4\n   - 13 - 7 = 6\n   - 21 - 13 = 8\n   - 31 - 21 = 10\n2. The differences form an arithmetic progression (4, 6, 8, 10), increasing by 2 each time.\n3. The next difference in this sequence should be 12.\n4. Therefore, the next term in the original sequence is 31 + 12 = 43.",
+      "trick": "For number sequences, always start by checking the differences between consecutive terms. If the first differences don't show a clear pattern, check the differences of the differences (second-level differences), or look for patterns involving squares, cubes, or multiplication."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "All birds can fly. All sparrows are birds. Which of the following statements must be true?",
+      "options": [
+        "A) All sparrows can fly.",
+        "B) Some birds are sparrows.",
+        "C) No sparrows can fly.",
+        "D) All flying creatures are sparrows."
+      ],
+      "correct_answer": "A) All sparrows can fly.",
+      "explanation": "1. Premise 1: All birds can fly.\n2. Premise 2: All sparrows are birds (meaning sparrows are a subset of birds).\n3. If all members of a larger group (birds) have a certain property (can fly), then all members of a subset of that group (sparrows) must also have that property.\n4. Therefore, it must be true that all sparrows can fly.",
+      "trick": "Visualize using Venn diagrams. Draw a large circle for 'Flying Creatures', a smaller circle inside for 'Birds', and an even smaller circle inside 'Birds' for 'Sparrows'. This clearly shows that Sparrows are within Birds, which are within Flying Creatures, implying sparrows can fly."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
       "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "The average of five numbers is 30. If one number is removed, the average becomes 28. What was the removed number?",
+      "question": "A shopkeeper buys an item for Rs. 800. He marks it up by 25% and then offers a discount of 10% on the marked price. What is the shopkeeper's profit percentage?",
       "options": [
-        "38",
-        "36",
-        "40",
-        "32"
+        "A) 12.5%",
+        "B) 15%",
+        "C) 18%",
+        "D) 20%"
       ],
-      "correct_answer": "38",
-      "explanation": "Sum of the five numbers = 5 * 30 = 150. After one number is removed, there are 4 numbers left, and their average is 28. Sum of the four numbers = 4 * 28 = 112. The removed number = (Sum of five numbers) - (Sum of four numbers) = 150 - 112 = 38.",
-      "trick": "Removed number = (Old Avg × Old Count) - (New Avg × New Count) = (30 × 5) - (28 × 4) = 150 - 112 = 38."
+      "correct_answer": "A) 12.5%",
+      "explanation": "Cost Price (CP) = Rs. 800\nMarked Price (MP) = CP + 25% of CP\nMP = 800 + (25/100) * 800\nMP = 800 + 200 = Rs. 1000\nSelling Price (SP) = MP - 10% discount on MP\nSP = 1000 - (10/100) * 1000\nSP = 1000 - 100 = Rs. 900\nProfit = SP - CP = 900 - 800 = Rs. 100\nProfit Percentage = (Profit / CP) * 100\nProfit Percentage = (100 / 800) * 100 = (1/8) * 100 = 12.5%",
+      "trick": "Assume CP = 100 for percentage calculation. Marked price is 100 * (1 + 25/100) = 125. Selling price after 10% discount is 125 * (1 - 10/100) = 125 * 0.9 = 112.5. The net profit is 112.5 - 100 = 12.5. So, the profit percentage is 12.5%."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The sum of the ages of a father and his son is 60 years. Six years ago, the father's age was five times the son's age. What is the current age of the son?",
+      "options": [
+        "A) 12 years",
+        "B) 14 years",
+        "C) 16 years",
+        "D) 18 years"
+      ],
+      "correct_answer": "B) 14 years",
+      "explanation": "Let F be the current age of the father and S be the current age of the son.\nFrom the first statement: F + S = 60  (Equation 1)\nSix years ago, their ages were (F-6) and (S-6).\nFrom the second statement: F - 6 = 5(S - 6)\nF - 6 = 5S - 30\nF = 5S - 24 (Equation 2)\nSubstitute Equation 2 into Equation 1:\n(5S - 24) + S = 60\n6S - 24 = 60\n6S = 60 + 24\n6S = 84\nS = 84 / 6\nS = 14 years.\nSo, the current age of the son is 14 years.",
+      "trick": "You can test the options. If the son's current age is 14 (Option B), then the father's age is 60 - 14 = 46. Six years ago, the son was 14 - 6 = 8, and the father was 46 - 6 = 40. Since 40 = 5 * 8, this option is correct."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "Complete the series: 2, 5, 10, 17, 26, ?",
+      "question": "Pointing to a man in a photograph, a woman says, \"He is the son of the only son of my mother.\" How is the man in the photograph related to the woman?",
       "options": [
-        "35",
-        "37",
-        "39",
-        "41"
+        "A) Brother",
+        "B) Son",
+        "C) Father",
+        "D) Nephew"
       ],
-      "correct_answer": "37",
-      "explanation": "The differences between consecutive terms are: 5-2=3, 10-5=5, 17-10=7, 26-17=9. The differences form a series of consecutive odd numbers (3, 5, 7, 9). The next difference should be 11. So, the next term is 26 + 11 = 37.",
-      "trick": "Look for patterns in differences between terms."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If 'Bird' is to 'Nest', then 'Human' is to '?'",
-      "options": [
-        "House",
-        "City",
-        "Family",
-        "Clothes"
-      ],
-      "correct_answer": "House",
-      "explanation": "The relationship is 'inhabitant' to 'dwelling'. A bird lives in a nest. Similarly, a human lives in a house.",
-      "trick": "Identify the exact relationship (e.g., part-whole, cause-effect, object-function) between the first pair."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What comes next in the series: 2, 5, 10, 17, ?",
-      "options": [
-        "24",
-        "26",
-        "28",
-        "30"
-      ],
-      "correct_answer": "26",
-      "explanation": "The pattern is an increase by consecutive odd numbers: 2+3=5, 5+5=10, 10+7=17. So, the next increase should be by 9: 17+9=26.",
-      "trick": "Look for differences between consecutive terms."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Find the odd one out from the following list:",
-      "options": [
-        "Apple",
-        "Banana",
-        "Potato",
-        "Orange"
-      ],
-      "correct_answer": "Potato",
-      "explanation": "Apple, Banana, and Orange are all types of fruits, whereas Potato is a vegetable (specifically, a tuber).",
-      "trick": "Identify the common category or characteristic."
+      "correct_answer": "D) Nephew",
+      "explanation": "1. Start by identifying the speaker: 'my mother' refers to the woman's mother.\n2. 'The only son of my mother' refers to the woman's brother (since she is a woman and her mother has only one son).\n3. The statement then says, 'He is the son of [the woman's brother]'.\n4. Therefore, the man in the photograph is the son of the woman's brother, which makes him the woman's nephew.",
+      "trick": "Break down the statement from the end or from the 'my' reference. 'My mother' -> 'only son of my mother' (the woman's brother) -> 'son of (her brother)' (her nephew). Drawing a quick family tree can also help."
     },
     {
       "category": "Static GK",
-      "question": "Who is widely credited with inventing the practical incandescent light bulb?",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
       "options": [
-        "Isaac Newton",
-        "Galileo Galilei",
-        "Thomas Edison",
-        "Marie Curie"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Thomas Edison",
-      "explanation": "Thomas Edison is most famously known for developing a long-lasting and commercially viable incandescent light bulb in the late 19th century.",
-      "trick": "Associate inventors with their most famous inventions."
-    },
-    {
-      "category": "Static GK",
-      "question": "Which of the following continents is the largest by land area?",
-      "options": [
-        "Africa",
-        "North America",
-        "Asia",
-        "Europe"
-      ],
-      "correct_answer": "Asia",
-      "explanation": "Asia is the largest continent in the world by land area and also by population, covering approximately 30% of the Earth's land area.",
-      "trick": "Visualize a world map to compare sizes."
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the powerhouse of the cell?",
-      "options": [
-        "Nucleus",
-        "Mitochondria",
-        "Ribosome",
-        "Cytoplasm"
-      ],
-      "correct_answer": "Mitochondria",
-      "explanation": "Mitochondria are often referred to as the 'powerhouses' of the cell because they generate most of the chemical energy needed to power the cell's biochemical reactions.",
-      "trick": "Remember key cell organelles by their primary function."
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the SI unit for electric current?",
-      "options": [
-        "Volt",
-        "Ohm",
-        "Ampere",
-        "Watt"
-      ],
-      "correct_answer": "Ampere",
-      "explanation": "The Ampere (A) is the SI unit of electric current. Volt is for electric potential, Ohm for electrical resistance, and Watt for power.",
-      "trick": "Memorize the fundamental SI units for common physical quantities."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which country successfully landed its SLIM (Smart Lander for Investigating Moon) spacecraft on the Moon in January 2024, becoming the fifth country to achieve this feat?",
-      "options": [
-        "China",
-        "India",
-        "Japan",
-        "Russia"
-      ],
-      "correct_answer": "Japan",
-      "explanation": "Japan's SLIM mission achieved a precise lunar landing in January 2024, making Japan the fifth nation to successfully land a spacecraft on the Moon.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who among the following was NOT posthumously awarded the Bharat Ratna in 2024?",
-      "options": [
-        "P.V. Narasimha Rao",
-        "Charan Singh",
-        "M.S. Swaminathan",
-        "L.K. Advani"
-      ],
-      "correct_answer": "L.K. Advani",
-      "explanation": "In 2024, Bharat Ratna was posthumously awarded to P.V. Narasimha Rao, Charan Singh, M.S. Swaminathan, and Karpoori Thakur. L.K. Advani also received the award, but he was alive at the time of the announcement.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in December 2023. Which city hosted this significant climate summit?",
-      "options": [
-        "Sharm El Sheikh",
-        "Glasgow",
-        "Dubai",
-        "Paris"
-      ],
-      "correct_answer": "Dubai",
-      "explanation": "COP28, the United Nations Climate Change Conference, took place in Dubai, United Arab Emirates, from November 30 to December 13, 2023.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "What is the name of India's first dedicated solar mission launched by ISRO in September 2023?",
-      "options": [
-        "Chandrayaan-3",
-        "Mangalyaan-2",
-        "Aditya-L1",
-        "Gaganyaan"
-      ],
-      "correct_answer": "Aditya-L1",
-      "explanation": "Aditya-L1 is India's first dedicated space mission to study the Sun, launched by ISRO on September 2, 2023. It reached its halo orbit around the Lagrange Point 1 (L1) in January 2024.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which country won the ICC Men's Cricket World Cup 2023, defeating the host nation in the final?",
-      "options": [
-        "India",
-        "Australia",
-        "England",
-        "New Zealand"
-      ],
-      "correct_answer": "Australia",
-      "explanation": "Australia defeated India in the final match to win the ICC Men's Cricket World Cup 2023, held in India.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who was sworn in as the Prime Minister of Pakistan in March 2024 for a second term?",
-      "options": [
-        "Imran Khan",
-        "Shehbaz Sharif",
-        "Nawaz Sharif",
-        "Bilawal Bhutto Zardari"
-      ],
-      "correct_answer": "Shehbaz Sharif",
-      "explanation": "Shehbaz Sharif was sworn in as Pakistan's Prime Minister for a second term in March 2024, following the general elections.",
+      "explanation": "DB Offline",
       "trick": ""
     }
   ]
