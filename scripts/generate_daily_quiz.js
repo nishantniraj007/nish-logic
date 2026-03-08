@@ -31,27 +31,21 @@ function buildPrompt(config, chunkIndex, totalChunks) {
     let focus = "";
     let questionCount = 0;
 
-    if (totalChunks === 3) {
-        // Old 3x6 Behavior (for Easy / Medium)
-        questionCount = 6;
+    if (totalChunks === 2) {
+        // AI specifically constructs 8 questions
+        questionCount = 4;
         if (chunkIndex === 1) {
-            focus = "- 4 Quantitative Aptitude / Mathematics questions\n- 2 Logical Reasoning questions";
+            focus = "- 4 Quantitative Aptitude / Mathematics questions";
         } else if (chunkIndex === 2) {
-            focus = "- 2 Logical Reasoning questions\n- 4 Static General Knowledge (History/Geography/Science) questions";
-        } else if (chunkIndex === 3) {
-            focus = "- 6 Current Affairs questions (relevant to the last 6 months)";
+            focus = "- 4 Logical Reasoning questions";
         }
-    } else if (totalChunks === 9) {
-        // New 9x2 Behavior (for SSC / UPSC to prevent 429 token rate limits)
+    } else if (totalChunks === 4) {
+        // High difficulty tiers (split chunks to prevent rate limits)
         questionCount = 2;
         if (chunkIndex === 1 || chunkIndex === 2) {
             focus = "- 2 Quantitative Aptitude / Mathematics questions";
         } else if (chunkIndex === 3 || chunkIndex === 4) {
             focus = "- 2 Logical Reasoning questions";
-        } else if (chunkIndex === 5 || chunkIndex === 6) {
-            focus = "- 2 Static General Knowledge (History/Geography/Science) questions";
-        } else if (chunkIndex === 7 || chunkIndex === 8 || chunkIndex === 9) {
-            focus = "- 2 Current Affairs questions (relevant to the last 6 months)";
         }
     }
 
@@ -167,9 +161,9 @@ async function main() {
         let allQuestions = [];
 
         // Dynamic Chunk Sizing based on difficulty/model to avoid 429 API Token Rates
-        // Easy/Medium (gemini-2.5-flash series) can handle 3 chunks of 6
-        // SSC/UPSC (gemini-2.5-pro series) gets exhausted and fails, so we switch to 9 chunks of 2.
-        const totalChunks = (config.diff === "SSC/Bank" || config.diff === "UPSC/CAT") ? 9 : 3;
+        // Easy/Medium (gemini-2.5-flash series) can handle 2 chunks of 4 for math/logic
+        // SSC/UPSC (gemini-2.5-pro series) gets exhausted and fails, so we switch to 4 chunks of 2.
+        const totalChunks = (config.diff === "SSC/Bank" || config.diff === "UPSC/CAT") ? 4 : 2;
 
         for (let chunkIndex = 1; chunkIndex <= totalChunks; chunkIndex++) {
             const prompt = buildPrompt(config, chunkIndex, totalChunks);
@@ -244,6 +238,57 @@ async function main() {
                 }
             }
         }
+
+        // =====================================
+        // Headless Remote DB Sync for SGK / CA
+        // =====================================
+        try {
+            console.log(`[${new Date().toISOString()}] Syncing GK & CA from Central Headless Database...`);
+            let levelRange = [7, 10];
+            if (config.diff === 'Medium') levelRange = [11, 13];
+            else if (config.diff === 'SSC/Bank') levelRange = [13, 15];
+            else if (config.diff === 'UPSC/CAT') levelRange = [15, 17];
+
+            const randomLevel = Math.floor(Math.random() * (levelRange[1] - levelRange[0] + 1)) + levelRange[0];
+            const subjects = ['history', 'geography', 'polity'];
+            const randomSubject = subjects[Math.floor(Math.random() * subjects.length)];
+
+            // Static GK Sync
+            const gkUrl = `https://raw.githubusercontent.com/nishantniraj007/nish-logic-gk-database/master/${randomSubject}/level_${randomLevel}.json`;
+            const gkRes = await globalThis.fetch(gkUrl);
+            let downloadedGk = [];
+            if (gkRes.ok) {
+                const rawGk = await gkRes.json();
+                downloadedGk = rawGk.sort(() => 0.5 - Math.random()).slice(0, 4).map(q => ({
+                    ...q, category: `Static GK (${randomSubject.charAt(0).toUpperCase() + randomSubject.slice(1)})`
+                }));
+            } else { throw new Error(`Status ${gkRes.status} on GK`); }
+
+            // Current Affairs Sync
+            const caUrl = `https://raw.githubusercontent.com/nishantniraj007/nish-logic-gk-database/master/current_affairs/latest.json`;
+            const caRes = await globalThis.fetch(caUrl);
+            let downloadedCa = [];
+            if (caRes.ok) {
+                const rawCa = await caRes.json();
+                downloadedCa = rawCa.sort(() => 0.5 - Math.random()).slice(0, 6);
+            } else { throw new Error(`Status ${caRes.status} on CA`); }
+
+            allQuestions = allQuestions.concat(downloadedGk, downloadedCa);
+            console.log(`[${new Date().toISOString()}] Successfully synced ${downloadedGk.length} GK and ${downloadedCa.length} CA questions.`);
+        } catch (dbErr) {
+            console.warn(`WARNING: Headless DB sync failed (${dbErr.message}). Inserting Fallback placeholders.`);
+
+            const backupGk = Array(4).fill(null).map((_, i) => ({
+                category: "Static GK", question: `[Fallback GK] Default Question ${i + 1}?`, correct_answer: "Option 1", options: ["Option 1", "Option 2", "Option 3", "Option 4"], explanation: "DB Offline", trick: ""
+            }));
+            const backupCa = Array(6).fill(null).map((_, i) => ({
+                category: "Current Affairs", question: `[Fallback CA] Default News ${i + 1}?`, correct_answer: "Option 1", options: ["Option 1", "Option 2", "Option 3", "Option 4"], explanation: "DB Offline", trick: ""
+            }));
+            allQuestions = allQuestions.concat(backupGk, backupCa);
+        }
+
+        // Final shuffle so QA/LR/GK/CA are mixed nicely
+        allQuestions = allQuestions.sort(() => 0.5 - Math.random());
 
         if (allQuestions.length > 18) {
             console.warn(`WARNING: Total questions generated is ${allQuestions.length}. Truncating to 18.`);
