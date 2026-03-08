@@ -2,234 +2,174 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 9,
-    "generated_at": "2026-03-08T08:38:55.043Z",
+    "generated_at": "2026-03-08T19:41:54.127Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "A can complete a piece of work in 160 days while B can complete the same work in 224 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "93.33 days",
+      "question": "What is the average of the following 5 consecutive even numbers: 47, 49, 51, 53, 55?",
+      "correct_answer": "51",
       "options": [
-        "92.33 days",
-        "95.33 days",
-        "97.33 days",
-        "93.33 days"
+        "53",
+        "51",
+        "55",
+        "49"
       ],
-      "explanation": "Work = 160 * 224 = 35840. Rate = 160 + 224 = 384. Time = Work / Rate = 93.33 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
-      "correct_answer": "32",
-      "options": [
-        "30",
-        "32",
-        "34",
-        "64"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #2 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 3",
-        "Option 1",
-        "Option 2",
-        "Option 4"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Jawaharlal Nehru",
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "B.R. Ambedkar"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Saturn",
-        "Earth",
-        "Neptune",
-        "Jupiter"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #6 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 3",
-        "Option 2",
-        "Option 4"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "A train travels at an average speed of 110 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "660 km",
-      "options": [
-        "770 km",
-        "550 km",
-        "660 km",
-        "680 km"
-      ],
-      "explanation": "Distance = Speed * Time = 110 * 6 = 660 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Sum = 255. Average = Sum / 5 = 51.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
       "question": "Who wrote the national anthem of India?",
       "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Mahatma Gandhi",
-        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
         "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee"
+        "Mahatma Gandhi",
+        "Sarojini Naidu"
       ],
       "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #4 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 4",
-        "Option 2",
-        "Option 3"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
-      "options": [
-        "MBK",
-        "TIR",
-        "PEN",
-        "SHQ"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 36000 at an interest rate of 7% per annum over 2 years?",
-      "correct_answer": "Rs. 5040",
-      "options": [
-        "Rs. 4990",
-        "Rs. 5040",
-        "Rs. 6840",
-        "Rs. 5140"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (36000 * 7 * 2) / 100 = 5040.",
-      "trick": "Treat percentage as decimal visually: 360 * 7 * 2 = 5040.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Amazon",
-        "Yangtze",
-        "Mississippi",
-        "Nile"
-      ],
-      "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
       "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
       "correct_answer": "All Apples are Foods.",
       "options": [
-        "Some Foods are not Apples.",
+        "All Apples are Foods.",
         "No Apples are Foods.",
         "None of the above.",
-        "All Apples are Foods."
+        "Some Foods are not Apples."
       ],
       "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
       "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "If an article is bought for Rs. 880 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 968.0000000000001",
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
       "options": [
-        "Rs. 880.0000000000001",
-        "Rs. 1056",
-        "Rs. 1144",
-        "Rs. 968.0000000000001"
+        "Mississippi",
+        "Yangtze",
+        "Nile",
+        "Amazon"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 880 * 1.10 = Rs. 968.0000000000001.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
     },
     {
-      "question": "[FALLBACK] Recent news Item #1 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
+      "question": "Sample CA?",
       "options": [
-        "Option 3",
-        "Option 2",
-        "Option 1",
-        "Option 4"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "explanation": "Remote Database sync failed temporarily.",
+      "correct_answer": "A",
+      "explanation": "test",
       "category": "Current Affairs"
     },
     {
-      "question": "Find the odd one out among the following numbers: 50, 4, 16, 9",
-      "correct_answer": "50",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "50",
-        "4",
-        "16",
-        "9"
+        "Neptune",
+        "Earth",
+        "Saturn",
+        "Jupiter"
       ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 18, -7, -32, -57, -82, ?",
+      "correct_answer": "-107",
+      "options": [
+        "-105",
+        "-132",
+        "-107",
+        "-82"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -25. So, -82 + (-25) = -107.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 122, 36, 64, 49",
+      "correct_answer": "122",
+      "options": [
+        "122",
+        "36",
+        "64",
+        "49"
+      ],
+      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
       "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "[FALLBACK] Recent news Item #3 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
+      "question": "A train travels at an average speed of 89 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "267 km",
       "options": [
-        "Option 4",
-        "Option 3",
-        "Option 2",
-        "Option 1"
+        "267 km",
+        "287 km",
+        "356 km",
+        "178 km"
       ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
+      "explanation": "Distance = Speed * Time = 89 * 3 = 267 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
     },
     {
-      "question": "[FALLBACK] Recent news Item #5 regarding events for upsc difficulty?",
-      "correct_answer": "Option 1",
+      "question": "If an article is bought for Rs. 3840 and sold at a profit of 25%, what is the selling price?",
+      "correct_answer": "Rs. 4800",
       "options": [
-        "Option 1",
-        "Option 4",
-        "Option 3",
-        "Option 2"
+        "Rs. 5184",
+        "Rs. 4416",
+        "Rs. 4800",
+        "Rs. 5568"
       ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
+      "explanation": "SP = CP * (1 + Profit/100) = 3840 * 1.25 = Rs. 4800.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A can complete a piece of work in 136 days while B can complete the same work in 136 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "68 days",
+      "options": [
+        "72.00 days",
+        "67.00 days",
+        "70.00 days",
+        "68 days"
+      ],
+      "explanation": "Work = 136 * 136 = 18496. Rate = 136 + 136 = 272. Time = Work / Rate = 68 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If CAT is coded as DBU, how will PEN be coded in that same language?",
+      "correct_answer": "QFO",
+      "options": [
+        "PEN",
+        "RGP",
+        "ODM",
+        "QFO"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
     }
   ]
 }

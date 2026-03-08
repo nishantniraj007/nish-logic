@@ -2,108 +2,58 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 4,
-    "generated_at": "2026-03-08T08:38:55.043Z",
+    "generated_at": "2026-03-08T19:41:54.127Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "[FALLBACK] Recent news Item #4 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Option 2",
-        "Option 3",
-        "Option 4",
-        "Option 1"
+        "Dr. Rajendra Prasad",
+        "Sardar Patel",
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar"
       ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Mahatma Gandhi",
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu"
-      ],
-      "explanation": "Jana Gana Mana.",
+      "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "Rs. 440 is divided between A and B in the ratio 2:3. What is A's share?",
-      "correct_answer": "Rs. 176",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 5200 at an interest rate of 7% per annum over 5 years?",
+      "correct_answer": "Rs. 1820",
       "options": [
-        "Rs. 132",
-        "Rs. 220",
-        "Rs. 176",
-        "Rs. 264"
+        "Rs. 1920",
+        "Rs. 1820",
+        "Rs. 2080",
+        "Rs. 1770"
       ],
-      "explanation": "Total parts = 2 + 3 = 5. Value of 1 part = 440/5 = 88. A's share = 2 * 88 = 176.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "SI = (P * R * T) / 100 = (5200 * 7 * 5) / 100 = 1820.",
+      "trick": "Treat percentage as decimal visually: 52 * 7 * 5 = 1820.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #6 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 3",
-        "Option 1",
-        "Option 2",
-        "Option 4"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 25, 9, 16, 65",
-      "correct_answer": "65",
-      "options": [
-        "25",
-        "9",
-        "16",
-        "65"
-      ],
-      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #1 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 2",
-        "Option 3",
-        "Option 4",
-        "Option 1"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
-      "correct_answer": "162",
-      "options": [
-        "162",
-        "486",
-        "160",
-        "165"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Yangtze",
         "Nile",
-        "Mississippi",
-        "Amazon"
+        "Yangtze",
+        "Amazon",
+        "Mississippi"
       ],
       "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Sarojini Naidu",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee"
+      ],
+      "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
@@ -111,124 +61,114 @@
       "correct_answer": "Jupiter",
       "options": [
         "Earth",
-        "Saturn",
         "Neptune",
-        "Jupiter"
+        "Jupiter",
+        "Saturn"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
+      "question": "Find the odd one out among the following numbers: 9, 4, 16, 50",
+      "correct_answer": "50",
       "options": [
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "Sardar Patel",
-        "B.R. Ambedkar"
+        "9",
+        "4",
+        "16",
+        "50"
       ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #3 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 4",
-        "Option 1",
-        "Option 3",
-        "Option 2"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #5 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 4",
-        "Option 1",
-        "Option 3",
-        "Option 2"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "If CAT is coded as ECV, how will MAN be coded in that same language?",
-      "correct_answer": "OCP",
-      "options": [
-        "OCP",
-        "MAN",
-        "K?L",
-        "PDQ"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 3000 at an interest rate of 5% per annum over 4 years?",
-      "correct_answer": "Rs. 600",
+      "question": "Sample CA?",
       "options": [
-        "Rs. 700",
-        "Rs. 550",
-        "Rs. 750",
-        "Rs. 600"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (3000 * 5 * 4) / 100 = 600.",
-      "trick": "Treat percentage as decimal visually: 30 * 5 * 4 = 600.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "[FALLBACK] Recent news Item #2 regarding events for medium difficulty?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 4",
-        "Option 3",
-        "Option 2"
-      ],
-      "explanation": "Remote Database sync failed temporarily.",
+      "correct_answer": "A",
+      "explanation": "test",
       "category": "Current Affairs"
     },
     {
-      "question": "A can complete a piece of work in 38 days while B can complete the same work in 38 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "19 days",
+      "question": "Find the next number in the series: 9, 25, 41, 57, 73, ?",
+      "correct_answer": "89",
       "options": [
-        "23.00 days",
-        "18.00 days",
-        "21.00 days",
-        "19 days"
+        "105",
+        "89",
+        "73",
+        "91"
       ],
-      "explanation": "Work = 38 * 38 = 1444. Rate = 38 + 38 = 76. Time = Work / Rate = 19 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 9, 13, 17, 21, 25, ?",
-      "correct_answer": "29",
-      "options": [
-        "25",
-        "31",
-        "33",
-        "29"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 4. So, 25 + (4) = 29.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 16. So, 73 + (16) = 89.",
       "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "If an article is bought for Rs. 660 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 726.0000000000001",
+      "question": "What is the average of the following 5 consecutive even numbers: 39, 41, 43, 45, 47?",
+      "correct_answer": "43",
       "options": [
-        "Rs. 660.0000000000001",
-        "Rs. 858.0000000000001",
-        "Rs. 726.0000000000001",
-        "Rs. 792.0000000000001"
+        "43",
+        "45",
+        "41",
+        "47"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 660 * 1.10 = Rs. 726.0000000000001.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "explanation": "Sum = 215. Average = Sum / 5 = 43.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
+      "options": [
+        "Some Stationery are not Pens.",
+        "None of the above.",
+        "All Pens are Stationery.",
+        "No Pens are Stationery."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
+      "correct_answer": "162",
+      "options": [
+        "165",
+        "486",
+        "160",
+        "162"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 24 days while B can complete the same work in 52 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "16.42 days",
+      "options": [
+        "16.42 days",
+        "18.42 days",
+        "15.42 days",
+        "20.42 days"
+      ],
+      "explanation": "Work = 24 * 52 = 1248. Rate = 24 + 52 = 76. Time = Work / Rate = 16.42 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Rs. 700 is divided between A and B in the ratio 4:6. What is A's share?",
+      "correct_answer": "Rs. 280",
+      "options": [
+        "Rs. 420",
+        "Rs. 350",
+        "Rs. 280",
+        "Rs. 210"
+      ],
+      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 700/10 = 70. A's share = 4 * 70 = 280.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     }
   ]
