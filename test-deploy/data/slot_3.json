@@ -2,150 +2,149 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 3,
-    "generated_at": "2026-03-08T19:41:54.127Z",
+    "generated_at": "2026-03-09T20:02:07.599Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "All Pens are Stationery.",
-        "Some Stationery are not Pens.",
-        "None of the above.",
-        "No Pens are Stationery."
+        "Mahatma Gandhi",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If CAT is coded as FDW, how will MAN be coded in that same language?",
-      "correct_answer": "PDQ",
-      "options": [
-        "MAN",
-        "J>K",
-        "QER",
-        "PDQ"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 49, 51, 53, 55, 57?",
-      "correct_answer": "53",
-      "options": [
-        "55",
-        "53",
-        "51",
-        "57"
-      ],
-      "explanation": "Sum = 265. Average = Sum / 5 = 53.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Sardar Patel",
-        "B.R. Ambedkar",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru"
-      ],
-      "explanation": "He served from 1950 to 1962.",
+      "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
-      "correct_answer": "324",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 4400 at an interest rate of 12% per annum over 2 years?",
+      "correct_answer": "Rs. 1056",
       "options": [
-        "324",
-        "327",
-        "972",
-        "320"
+        "Rs. 1156",
+        "Rs. 1276",
+        "Rs. 1056",
+        "Rs. 1006"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 65, 9, 16, 25",
-      "correct_answer": "65",
-      "options": [
-        "65",
-        "9",
-        "16",
-        "25"
-      ],
-      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 26 days while B can complete the same work in 58 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "17.95 days",
-      "options": [
-        "21.95 days",
-        "16.95 days",
-        "17.95 days",
-        "19.95 days"
-      ],
-      "explanation": "Work = 26 * 58 = 1508. Rate = 26 + 58 = 84. Time = Work / Rate = 17.95 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
+      "explanation": "SI = (P * R * T) / 100 = (4400 * 12 * 2) / 100 = 1056.",
+      "trick": "Treat percentage as decimal visually: 44 * 12 * 2 = 1056.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Rs. 294 is divided between A and B in the ratio 2:5. What is A's share?",
-      "correct_answer": "Rs. 84",
+      "question": "If an article is bought for Rs. 620 and sold at a profit of 10%, what is the selling price?",
+      "correct_answer": "Rs. 682",
       "options": [
-        "Rs. 210",
-        "Rs. 84",
-        "Rs. 113.4",
-        "Rs. 54.599999999999994"
+        "Rs. 620",
+        "Rs. 682",
+        "Rs. 744",
+        "Rs. 806"
       ],
-      "explanation": "Total parts = 2 + 5 = 7. Value of 1 part = 294/7 = 42. A's share = 2 * 42 = 84.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "SP = CP * (1 + Profit/100) = 620 * 1.10 = Rs. 682.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
       "category": "Quantitative Aptitude"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Amazon",
         "Mississippi",
         "Yangtze",
-        "Nile"
+        "Nile",
+        "Amazon"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "What is the average of the following 5 consecutive even numbers: 38, 40, 42, 44, 46?",
+      "correct_answer": "42",
       "options": [
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu",
-        "Mahatma Gandhi"
+        "40",
+        "46",
+        "44",
+        "42"
       ],
-      "explanation": "Jana Gana Mana.",
+      "explanation": "Sum = 210. Average = Sum / 5 = 42.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Neptune",
+        "Jupiter",
+        "Earth",
+        "Saturn"
+      ],
+      "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "If an article is bought for Rs. 420 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 462.00000000000006",
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Rs. 546",
-        "Rs. 420.00000000000006",
-        "Rs. 504.00000000000006",
-        "Rs. 462.00000000000006"
+        "Sardar Patel",
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 420 * 1.10 = Rs. 462.00000000000006.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Rs. 420 is divided between A and B in the ratio 4:6. What is A's share?",
+      "correct_answer": "Rs. 168",
+      "options": [
+        "Rs. 126",
+        "Rs. 210",
+        "Rs. 168",
+        "Rs. 252"
+      ],
+      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 420/10 = 42. A's share = 4 * 42 = 168.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 17, 25, 33, 41, 49, ?",
+      "correct_answer": "57",
+      "options": [
+        "49",
+        "59",
+        "65",
+        "57"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 8. So, 49 + (8) = 57.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 25, 49, 36, 101",
+      "correct_answer": "101",
+      "options": [
+        "25",
+        "49",
+        "36",
+        "101"
+      ],
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
+      "correct_answer": "48",
+      "options": [
+        "50",
+        "48",
+        "96",
+        "45"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -160,16 +159,17 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
       "options": [
-        "Saturn",
-        "Earth",
-        "Jupiter",
-        "Neptune"
+        "All Apples are Foods.",
+        "Some Foods are not Apples.",
+        "None of the above.",
+        "No Apples are Foods."
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
     }
   ]
 }

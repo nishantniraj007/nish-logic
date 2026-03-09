@@ -2,59 +2,123 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 9,
-    "generated_at": "2026-03-08T19:41:54.127Z",
+    "generated_at": "2026-03-09T20:02:07.599Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 47, 49, 51, 53, 55?",
-      "correct_answer": "51",
+      "question": "A can complete a piece of work in 160 days while B can complete the same work in 144 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "75.79 days",
       "options": [
-        "53",
-        "51",
-        "55",
-        "49"
+        "75.79 days",
+        "79.79 days",
+        "74.79 days",
+        "77.79 days"
       ],
-      "explanation": "Sum = 255. Average = Sum / 5 = 51.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "Work = 160 * 144 = 23040. Rate = 160 + 144 = 304. Time = Work / Rate = 75.79 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "Find the odd one out among the following numbers: 50, 4, 16, 9",
+      "correct_answer": "50",
       "options": [
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore",
-        "Mahatma Gandhi",
-        "Sarojini Naidu"
+        "50",
+        "4",
+        "16",
+        "9"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
     },
     {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
+      "question": "A train travels at an average speed of 154 km/hr. How much distance will it cover in 2 hours?",
+      "correct_answer": "308 km",
       "options": [
-        "All Apples are Foods.",
-        "No Apples are Foods.",
-        "None of the above.",
-        "Some Foods are not Apples."
+        "308 km",
+        "154 km",
+        "462 km",
+        "328 km"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "Distance = Speed * Time = 154 * 2 = 308 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 7, -38, -83, -128, -173, ?",
+      "correct_answer": "-218",
+      "options": [
+        "-216",
+        "-173",
+        "-263",
+        "-218"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -45. So, -173 + (-45) = -218.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 54, 56, 58, 60, 62?",
+      "correct_answer": "58",
+      "options": [
+        "56",
+        "60",
+        "62",
+        "58"
+      ],
+      "explanation": "Sum = 290. Average = Sum / 5 = 58.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
         "Mississippi",
-        "Yangtze",
         "Nile",
+        "Yangtze",
         "Amazon"
       ],
       "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Earth",
+        "Jupiter",
+        "Saturn",
+        "Neptune"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 4, 8, 16, 32, ?",
+      "correct_answer": "64",
+      "options": [
+        "66",
+        "64",
+        "60",
+        "128"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 32 * 2 = 64.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad",
+        "Sardar Patel",
+        "B.R. Ambedkar"
+      ],
+      "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
@@ -70,106 +134,42 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Rs. 1872 is divided between A and B in the ratio 4:5. What is A's share?",
+      "correct_answer": "Rs. 832",
       "options": [
-        "Neptune",
-        "Earth",
-        "Saturn",
-        "Jupiter"
+        "Rs. 644.8",
+        "Rs. 1040",
+        "Rs. 1019.2",
+        "Rs. 832"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 18, -7, -32, -57, -82, ?",
-      "correct_answer": "-107",
-      "options": [
-        "-105",
-        "-132",
-        "-107",
-        "-82"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -25. So, -82 + (-25) = -107.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 122, 36, 64, 49",
-      "correct_answer": "122",
-      "options": [
-        "122",
-        "36",
-        "64",
-        "49"
-      ],
-      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 89 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "267 km",
-      "options": [
-        "267 km",
-        "287 km",
-        "356 km",
-        "178 km"
-      ],
-      "explanation": "Distance = Speed * Time = 89 * 3 = 267 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 1872/9 = 208. A's share = 4 * 208 = 832.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "If an article is bought for Rs. 3840 and sold at a profit of 25%, what is the selling price?",
-      "correct_answer": "Rs. 4800",
-      "options": [
-        "Rs. 5184",
-        "Rs. 4416",
-        "Rs. 4800",
-        "Rs. 5568"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 3840 * 1.25 = Rs. 4800.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "A can complete a piece of work in 136 days while B can complete the same work in 136 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "68 days",
-      "options": [
-        "72.00 days",
-        "67.00 days",
-        "70.00 days",
-        "68 days"
-      ],
-      "explanation": "Work = 136 * 136 = 18496. Rate = 136 + 136 = 272. Time = Work / Rate = 68 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If CAT is coded as DBU, how will PEN be coded in that same language?",
-      "correct_answer": "QFO",
+      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
       "options": [
         "PEN",
-        "RGP",
-        "ODM",
-        "QFO"
+        "MBK",
+        "SHQ",
+        "TIR"
       ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Rabindranath Tagore",
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     }
   ]
 }

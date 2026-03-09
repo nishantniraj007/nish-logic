@@ -2,112 +2,36 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 8,
-    "generated_at": "2026-03-08T19:41:54.127Z",
+    "generated_at": "2026-03-09T20:02:07.599Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
       "options": [
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu",
-        "Mahatma Gandhi"
+        "MBK",
+        "SHQ",
+        "TIR",
+        "PEN"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 5, 10, 20, 40, ?",
-      "correct_answer": "80",
-      "options": [
-        "80",
-        "160",
-        "75",
-        "82"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 40 * 2 = 80.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 136 days while B can complete the same work in 216 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "83.45 days",
-      "options": [
-        "83.45 days",
-        "82.45 days",
-        "85.45 days",
-        "87.45 days"
-      ],
-      "explanation": "Work = 136 * 216 = 29376. Rate = 136 + 216 = 352. Time = Work / Rate = 83.45 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Earth",
-        "Neptune",
-        "Saturn",
-        "Jupiter"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "If an article is bought for Rs. 3760 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 4136",
-      "options": [
-        "Rs. 3760",
-        "Rs. 4888",
-        "Rs. 4136",
-        "Rs. 4512"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 3760 * 1.10 = Rs. 4136.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 11, -34, -79, -124, -169, ?",
-      "correct_answer": "-214",
-      "options": [
-        "-214",
-        "-212",
-        "-259",
-        "-169"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -45. So, -169 + (-45) = -214.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Cars are Vehicles.",
-      "options": [
-        "None of the above.",
-        "All Cars are Vehicles.",
-        "Some Vehicles are not Cars.",
-        "No Cars are Vehicles."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If CAT is coded as ECV, how will MAN be coded in that same language?",
-      "correct_answer": "OCP",
-      "options": [
-        "OCP",
-        "K?L",
-        "MAN",
-        "PDQ"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Rs. 1280 is divided between A and B in the ratio 4:6. What is A's share?",
+      "correct_answer": "Rs. 512",
+      "options": [
+        "Rs. 384",
+        "Rs. 768",
+        "Rs. 512",
+        "Rs. 640"
+      ],
+      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 1280/10 = 128. A's share = 4 * 128 = 512.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -122,28 +46,65 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Rs. 3072 is divided between A and B in the ratio 5:7. What is A's share?",
-      "correct_answer": "Rs. 1280",
+      "question": "A train travels at an average speed of 150 km/hr. How much distance will it cover in 6 hours?",
+      "correct_answer": "900 km",
       "options": [
-        "Rs. 1280",
-        "Rs. 972.8",
-        "Rs. 1587.2",
-        "Rs. 1792"
+        "750 km",
+        "920 km",
+        "1050 km",
+        "900 km"
       ],
-      "explanation": "Total parts = 5 + 7 = 12. Value of 1 part = 3072/12 = 256. A's share = 5 * 256 = 1280.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "Distance = Speed * Time = 150 * 6 = 900 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 42, 44, 46, 48, 50?",
-      "correct_answer": "46",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "44",
-        "48",
-        "46",
-        "50"
+        "Earth",
+        "Saturn",
+        "Jupiter",
+        "Neptune"
       ],
-      "explanation": "Sum = 230. Average = Sum / 5 = 46.",
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 19, -11, -41, -71, -101, ?",
+      "correct_answer": "-131",
+      "options": [
+        "-101",
+        "-131",
+        "-161",
+        "-129"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -30. So, -101 + (-30) = -131.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Rabindranath Tagore",
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 38, 40, 42, 44, 46?",
+      "correct_answer": "42",
+      "options": [
+        "46",
+        "42",
+        "44",
+        "40"
+      ],
+      "explanation": "Sum = 210. Average = Sum / 5 = 42.",
       "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
@@ -151,25 +112,64 @@
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Sardar Patel",
         "Dr. Rajendra Prasad",
-        "B.R. Ambedkar",
-        "Jawaharlal Nehru"
+        "Jawaharlal Nehru",
+        "Sardar Patel",
+        "B.R. Ambedkar"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
+      "question": "If an article is bought for Rs. 3920 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 5096",
+      "options": [
+        "Rs. 5880",
+        "Rs. 5488",
+        "Rs. 5096",
+        "Rs. 4704"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 3920 * 1.30 = Rs. 5096.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
+      "correct_answer": "32",
+      "options": [
+        "30",
+        "64",
+        "34",
+        "32"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Yangtze",
-        "Nile",
+        "Mississippi",
         "Amazon",
-        "Mississippi"
+        "Yangtze",
+        "Nile"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
+    },
+    {
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
+      "options": [
+        "Some Vehicles are not Cars.",
+        "None of the above.",
+        "All Cars are Vehicles.",
+        "No Cars are Vehicles."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
     }
   ]
 }

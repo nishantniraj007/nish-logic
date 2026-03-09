@@ -2,62 +2,11 @@
   "metadata": {
     "difficulty": "easy",
     "slot": 1,
-    "generated_at": "2026-03-08T19:41:54.127Z",
+    "generated_at": "2026-03-09T20:02:07.599Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Saturn",
-        "Neptune",
-        "Earth",
-        "Jupiter"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 11, 20, 29, 38, 47, ?",
-      "correct_answer": "56",
-      "options": [
-        "56",
-        "47",
-        "58",
-        "65"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 9. So, 47 + (9) = 56.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 10 days while B can complete the same work in 28 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "7.37 days",
-      "options": [
-        "11.37 days",
-        "9.37 days",
-        "7.37 days",
-        "6.37 days"
-      ],
-      "explanation": "Work = 10 * 28 = 280. Rate = 10 + 28 = 38. Time = Work / Rate = 7.37 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Rs. 187 is divided between A and B in the ratio 5:6. What is A's share?",
-      "correct_answer": "Rs. 85",
-      "options": [
-        "Rs. 103.7",
-        "Rs. 85",
-        "Rs. 102",
-        "Rs. 66.3"
-      ],
-      "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 187/11 = 17. A's share = 5 * 17 = 85.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
     {
       "question": "Sample CA?",
       "options": [
@@ -71,77 +20,13 @@
       "category": "Current Affairs"
     },
     {
-      "question": "If MAT is coded as PDW, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
-      "options": [
-        "MBK",
-        "TIR",
-        "SHQ",
-        "PEN"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 35, 37, 39, 41, 43?",
-      "correct_answer": "39",
-      "options": [
-        "37",
-        "41",
-        "39",
-        "43"
-      ],
-      "explanation": "Sum = 195. Average = Sum / 5 = 39.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 4, 50, 9, 16",
-      "correct_answer": "50",
-      "options": [
-        "4",
-        "50",
-        "9",
-        "16"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "B.R. Ambedkar",
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 2800 at an interest rate of 9% per annum over 5 years?",
-      "correct_answer": "Rs. 1260",
-      "options": [
-        "Rs. 1210",
-        "Rs. 1400",
-        "Rs. 1260",
-        "Rs. 1360"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (2800 * 9 * 5) / 100 = 1260.",
-      "trick": "Treat percentage as decimal visually: 28 * 9 * 5 = 1260.",
-      "category": "Quantitative Aptitude"
-    },
-    {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Mississippi",
-        "Yangtze",
+        "Amazon",
         "Nile",
-        "Amazon"
+        "Yangtze",
+        "Mississippi"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
@@ -150,26 +35,141 @@
       "question": "Who wrote the national anthem of India?",
       "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Mahatma Gandhi",
-        "Rabindranath Tagore",
         "Bankim Chandra Chatterjee",
-        "Sarojini Naidu"
+        "Sarojini Naidu",
+        "Rabindranath Tagore",
+        "Mahatma Gandhi"
       ],
       "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 2300 at an interest rate of 10% per annum over 4 years?",
+      "correct_answer": "Rs. 920",
+      "options": [
+        "Rs. 1020",
+        "Rs. 920",
+        "Rs. 870",
+        "Rs. 1035"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (2300 * 10 * 4) / 100 = 920.",
+      "trick": "Treat percentage as decimal visually: 23 * 10 * 4 = 920.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 11, 13, 15, 17, 19, ?",
+      "correct_answer": "21",
+      "options": [
+        "19",
+        "23",
+        "21",
+        "23"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 2. So, 19 + (2) = 21.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Rs. 341 is divided between A and B in the ratio 4:7. What is A's share?",
+      "correct_answer": "Rs. 124",
+      "options": [
+        "Rs. 89.9",
+        "Rs. 158.1",
+        "Rs. 217",
+        "Rs. 124"
+      ],
+      "explanation": "Total parts = 4 + 7 = 11. Value of 1 part = 341/11 = 31. A's share = 4 * 31 = 124.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 28, 30, 32, 34, 36?",
       "correct_answer": "32",
       "options": [
         "30",
         "32",
         "34",
-        "64"
+        "36"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
+      "explanation": "Sum = 160. Average = Sum / 5 = 32.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
+      "options": [
+        "243",
+        "246",
+        "729",
+        "240"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
       "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 49, 101, 25, 36",
+      "correct_answer": "101",
+      "options": [
+        "49",
+        "101",
+        "25",
+        "36"
+      ],
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Jupiter",
+        "Neptune",
+        "Earth",
+        "Saturn"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar",
+        "Sardar Patel"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If BAT is coded as DCV, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
+      "options": [
+        "OCP",
+        "K?L",
+        "MAN",
+        "PDQ"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 110 km/hr. How much distance will it cover in 5 hours?",
+      "correct_answer": "550 km",
+      "options": [
+        "440 km",
+        "550 km",
+        "660 km",
+        "570 km"
+      ],
+      "explanation": "Distance = Speed * Time = 110 * 5 = 550 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }

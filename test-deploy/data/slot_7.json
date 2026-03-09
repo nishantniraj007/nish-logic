@@ -2,72 +2,60 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 7,
-    "generated_at": "2026-03-08T19:41:54.127Z",
+    "generated_at": "2026-03-09T20:02:07.599Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Find the odd one out among the following numbers: 25, 16, 36, 82",
-      "correct_answer": "82",
+      "question": "Find the next number in the series: 11, 35, 59, 83, 107, ?",
+      "correct_answer": "131",
       "options": [
-        "25",
-        "16",
-        "36",
-        "82"
+        "131",
+        "107",
+        "155",
+        "133"
       ],
-      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 24. So, 107 + (24) = 131.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Jupiter",
-        "Saturn",
-        "Earth",
-        "Neptune"
+        "Dr. Rajendra Prasad",
+        "Sardar Patel",
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar"
       ],
-      "explanation": "Jupiter is a gas giant.",
+      "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "A can complete a piece of work in 64 days while B can complete the same work in 112 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "40.73 days",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 5600 at an interest rate of 6% per annum over 2 years?",
+      "correct_answer": "Rs. 672",
       "options": [
-        "39.73 days",
-        "42.73 days",
-        "44.73 days",
-        "40.73 days"
+        "Rs. 772",
+        "Rs. 622",
+        "Rs. 672",
+        "Rs. 952"
       ],
-      "explanation": "Work = 64 * 112 = 7168. Rate = 64 + 112 = 176. Time = Work / Rate = 40.73 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
+      "explanation": "SI = (P * R * T) / 100 = (5600 * 6 * 2) / 100 = 672.",
+      "trick": "Treat percentage as decimal visually: 56 * 6 * 2 = 672.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "Rs. 880 is divided between A and B in the ratio 4:6. What is A's share?",
+      "correct_answer": "Rs. 352",
       "options": [
-        "Mississippi",
-        "Yangtze",
-        "Amazon",
-        "Nile"
+        "Rs. 352",
+        "Rs. 528",
+        "Rs. 264",
+        "Rs. 440"
       ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 47, 49, 51, 53, 55?",
-      "correct_answer": "51",
-      "options": [
-        "55",
-        "51",
-        "49",
-        "53"
-      ],
-      "explanation": "Sum = 255. Average = Sum / 5 = 51.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 880/10 = 88. A's share = 4 * 88 = 352.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
@@ -83,17 +71,28 @@
       "category": "Current Affairs"
     },
     {
-      "question": "A train travels at an average speed of 83 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "498 km",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "518 km",
-        "415 km",
-        "498 km",
-        "581 km"
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi",
+        "Sarojini Naidu"
       ],
-      "explanation": "Distance = Speed * Time = 83 * 6 = 498 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Jupiter",
+        "Earth",
+        "Neptune",
+        "Saturn"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     },
     {
       "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
@@ -109,67 +108,68 @@
       "category": "Logical Reasoning"
     },
     {
-      "question": "Rs. 840 is divided between A and B in the ratio 4:3. What is A's share?",
-      "correct_answer": "Rs. 480",
+      "question": "Find the odd one out among the following numbers: 25, 49, 36, 101",
+      "correct_answer": "101",
       "options": [
-        "Rs. 564",
-        "Rs. 396",
-        "Rs. 480",
-        "Rs. 360"
+        "25",
+        "49",
+        "36",
+        "101"
       ],
-      "explanation": "Total parts = 4 + 3 = 7. Value of 1 part = 840/7 = 120. A's share = 4 * 120 = 480.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 95 km/hr. How much distance will it cover in 6 hours?",
+      "correct_answer": "570 km",
+      "options": [
+        "475 km",
+        "590 km",
+        "665 km",
+        "570 km"
+      ],
+      "explanation": "Distance = Speed * Time = 95 * 6 = 570 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
       "options": [
-        "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad",
-        "B.R. Ambedkar",
-        "Sardar Patel"
+        "Mississippi",
+        "Yangtze",
+        "Amazon",
+        "Nile"
       ],
-      "explanation": "He served from 1950 to 1962.",
+      "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "If DOG is coded as EPH, how will CUP be coded in that same language?",
-      "correct_answer": "DVQ",
+      "question": "If CAT is coded as FDW, how will MAN be coded in that same language?",
+      "correct_answer": "PDQ",
       "options": [
-        "DVQ",
-        "BTO",
-        "CUP",
-        "EWR"
+        "QER",
+        "MAN",
+        "J>K",
+        "PDQ"
       ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "What is the average of the following 5 consecutive even numbers: 41, 43, 45, 47, 49?",
+      "correct_answer": "45",
       "options": [
-        "Mahatma Gandhi",
-        "Sarojini Naidu",
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee"
+        "49",
+        "47",
+        "43",
+        "45"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
-      "correct_answer": "162",
-      "options": [
-        "160",
-        "162",
-        "486",
-        "165"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
+      "explanation": "Sum = 225. Average = Sum / 5 = 45.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }

@@ -2,23 +2,22 @@
   "metadata": {
     "difficulty": "easy",
     "slot": 0,
-    "generated_at": "2026-03-08T19:41:54.127Z",
+    "generated_at": "2026-03-09T20:02:07.599Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Find the odd one out among the following numbers: 101, 25, 36, 49",
-      "correct_answer": "101",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "101",
-        "25",
-        "36",
-        "49"
+        "Earth",
+        "Neptune",
+        "Saturn",
+        "Jupiter"
       ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     },
     {
       "question": "Who wrote the national anthem of India?",
@@ -33,16 +32,30 @@
       "category": "Static GK"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 2200 at an interest rate of 11% per annum over 5 years?",
+      "correct_answer": "Rs. 1210",
       "options": [
-        "Nile",
-        "Mississippi",
-        "Yangtze",
-        "Amazon"
+        "Rs. 1210",
+        "Rs. 1310",
+        "Rs. 1320",
+        "Rs. 1160"
       ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
+      "explanation": "SI = (P * R * T) / 100 = (2200 * 11 * 5) / 100 = 1210.",
+      "trick": "Treat percentage as decimal visually: 22 * 11 * 5 = 1210.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If an article is bought for Rs. 310 and sold at a profit of 10%, what is the selling price?",
+      "correct_answer": "Rs. 341",
+      "options": [
+        "Rs. 341",
+        "Rs. 403",
+        "Rs. 372",
+        "Rs. 310"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 310 * 1.10 = Rs. 341.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -57,79 +70,79 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Rs. 200 is divided between A and B in the ratio 3:5. What is A's share?",
-      "correct_answer": "Rs. 75",
+      "question": "What is the average of the following 5 consecutive even numbers: 45, 47, 49, 51, 53?",
+      "correct_answer": "49",
       "options": [
-        "Rs. 125",
-        "Rs. 55",
-        "Rs. 95",
-        "Rs. 75"
+        "47",
+        "53",
+        "51",
+        "49"
       ],
-      "explanation": "Total parts = 3 + 5 = 8. Value of 1 part = 200/8 = 25. A's share = 3 * 25 = 75.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 2, 5, 8, 11, 14, ?",
-      "correct_answer": "17",
-      "options": [
-        "14",
-        "19",
-        "17",
-        "20"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 3. So, 14 + (3) = 17.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 2400 at an interest rate of 12% per annum over 3 years?",
-      "correct_answer": "Rs. 864",
-      "options": [
-        "Rs. 814",
-        "Rs. 984",
-        "Rs. 964",
-        "Rs. 864"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (2400 * 12 * 3) / 100 = 864.",
-      "trick": "Treat percentage as decimal visually: 24 * 12 * 3 = 864.",
+      "explanation": "Sum = 245. Average = Sum / 5 = 49.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar",
         "Sardar Patel",
-        "Dr. Rajendra Prasad"
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
+      "question": "Find the next number in the series: 10, 15, 20, 25, 30, ?",
+      "correct_answer": "35",
       "options": [
-        "No Dogs are Animals.",
-        "None of the above.",
-        "Some Animals are not Dogs.",
-        "All Dogs are Animals."
+        "37",
+        "30",
+        "40",
+        "35"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 5. So, 30 + (5) = 35.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Find the odd one out among the following numbers: 25, 16, 9, 65",
+      "correct_answer": "65",
       "options": [
-        "Earth",
-        "Saturn",
-        "Neptune",
-        "Jupiter"
+        "25",
+        "16",
+        "9",
+        "65"
       ],
-      "explanation": "Jupiter is a gas giant.",
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 10 days while B can complete the same work in 20 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "6.67 days",
+      "options": [
+        "10.67 days",
+        "6.67 days",
+        "5.67 days",
+        "8.67 days"
+      ],
+      "explanation": "Work = 10 * 20 = 200. Rate = 10 + 20 = 30. Time = Work / Rate = 6.67 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Mississippi",
+        "Nile",
+        "Yangtze",
+        "Amazon"
+      ],
+      "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
@@ -146,30 +159,17 @@
       "category": "Logical Reasoning"
     },
     {
-      "question": "A train travels at an average speed of 45 km/hr. How much distance will it cover in 5 hours?",
-      "correct_answer": "225 km",
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
       "options": [
-        "270 km",
-        "245 km",
-        "225 km",
-        "180 km"
+        "None of the above.",
+        "No Cars are Vehicles.",
+        "All Cars are Vehicles.",
+        "Some Vehicles are not Cars."
       ],
-      "explanation": "Distance = Speed * Time = 45 * 5 = 225 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "A can complete a piece of work in 10 days while B can complete the same work in 18 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "6.43 days",
-      "options": [
-        "8.43 days",
-        "5.43 days",
-        "10.43 days",
-        "6.43 days"
-      ],
-      "explanation": "Work = 10 * 18 = 180. Rate = 10 + 18 = 28. Time = Work / Rate = 6.43 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
     }
   ]
 }

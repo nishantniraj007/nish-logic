@@ -2,99 +2,110 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 5,
-    "generated_at": "2026-03-08T19:41:54.127Z",
+    "generated_at": "2026-03-09T20:02:07.599Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Sample History?",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Rabindranath Tagore",
+        "Mahatma Gandhi",
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Static GK (History)"
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
-      "question": "Rs. 1440 is divided between A and B in the ratio 2:6. What is A's share?",
-      "correct_answer": "Rs. 360",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "Rs. 504",
-        "Rs. 216",
-        "Rs. 1080",
-        "Rs. 360"
+        "Saturn",
+        "Jupiter",
+        "Neptune",
+        "Earth"
       ],
-      "explanation": "Total parts = 2 + 6 = 8. Value of 1 part = 1440/8 = 180. A's share = 2 * 180 = 360.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     },
     {
-      "question": "A can complete a piece of work in 40 days while B can complete the same work in 88 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "27.50 days",
+      "question": "A can complete a piece of work in 76 days while B can complete the same work in 64 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "34.74 days",
       "options": [
-        "27.50 days",
-        "26.50 days",
-        "29.50 days",
-        "31.50 days"
+        "36.74 days",
+        "33.74 days",
+        "38.74 days",
+        "34.74 days"
       ],
-      "explanation": "Work = 40 * 88 = 3520. Rate = 40 + 88 = 128. Time = Work / Rate = 27.50 days.",
+      "explanation": "Work = 76 * 64 = 4864. Rate = 76 + 64 = 140. Time = Work / Rate = 34.74 days.",
       "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "If BAT is coded as EDW, how will MAN be coded in that same language?",
-      "correct_answer": "PDQ",
+      "question": "If MAT is coded as NBU, how will MAN be coded in that same language?",
+      "correct_answer": "NBO",
       "options": [
         "MAN",
-        "QER",
-        "PDQ",
-        "J>K"
+        "NBO",
+        "L@M",
+        "OCP"
       ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Cars are Vehicles.",
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "None of the above.",
-        "All Cars are Vehicles.",
-        "No Cars are Vehicles.",
-        "Some Vehicles are not Cars."
+        "Jawaharlal Nehru",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
     },
     {
-      "question": "If an article is bought for Rs. 840 and sold at a profit of 25%, what is the selling price?",
-      "correct_answer": "Rs. 1050",
+      "question": "What is the average of the following 5 consecutive even numbers: 30, 32, 34, 36, 38?",
+      "correct_answer": "34",
       "options": [
-        "Rs. 966",
-        "Rs. 1050",
-        "Rs. 1218",
-        "Rs. 1134"
+        "38",
+        "32",
+        "36",
+        "34"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 840 * 1.25 = Rs. 1050.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "explanation": "Sum = 170. Average = Sum / 5 = 34.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 39, 41, 43, 45, 47?",
-      "correct_answer": "43",
+      "question": "Find the next number in the series: 9, 18, 27, 36, 45, ?",
+      "correct_answer": "54",
       "options": [
-        "41",
+        "63",
+        "54",
         "45",
-        "43",
-        "47"
+        "56"
       ],
-      "explanation": "Sum = 215. Average = Sum / 5 = 43.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 9. So, 45 + (9) = 54.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 140 km/hr. How much distance will it cover in 5 hours?",
+      "correct_answer": "700 km",
+      "options": [
+        "560 km",
+        "840 km",
+        "720 km",
+        "700 km"
+      ],
+      "explanation": "Distance = Speed * Time = 140 * 5 = 700 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
     },
     {
@@ -110,30 +121,55 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Find the odd one out among the following numbers: 64, 122, 49, 36",
-      "correct_answer": "122",
+      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
+      "correct_answer": "162",
       "options": [
-        "64",
-        "122",
-        "49",
-        "36"
+        "165",
+        "162",
+        "160",
+        "486"
       ],
-      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Find the next number in the series: 19, 40, 61, 82, 103, ?",
-      "correct_answer": "124",
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
       "options": [
-        "126",
-        "145",
-        "103",
-        "124"
+        "Some Stationery are not Pens.",
+        "All Pens are Stationery.",
+        "None of the above.",
+        "No Pens are Stationery."
       ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 21. So, 103 + (21) = 124.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Mississippi",
+        "Nile",
+        "Yangtze"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Rs. 1824 is divided between A and B in the ratio 5:7. What is A's share?",
+      "correct_answer": "Rs. 760",
+      "options": [
+        "Rs. 577.6",
+        "Rs. 760",
+        "Rs. 1064",
+        "Rs. 942.4"
+      ],
+      "explanation": "Total parts = 5 + 7 = 12. Value of 1 part = 1824/12 = 152. A's share = 5 * 152 = 760.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }
