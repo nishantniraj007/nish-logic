@@ -1,163 +1,163 @@
 {
     "metadata": {
         "difficulty": "upsc",
-        "generated_at": "2026-03-08T21:03:30.072304",
+        "generated_at": "2026-03-09T05:13:25.922960",
         "type": "Hybrid TBG + Live DB Sync",
         "total_questions": 18
     },
     "questions": [
         {
+            "question": "Find the missing number in the series: 10, 16, 22, 28, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "35",
+                "34",
+                "25",
+                "33"
+            ],
+            "correct_answer": "34",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 6. Next term: 28 + 6 = 34."
+        },
+        {
             "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.",
             "category": "Logical Reasoning",
             "options": [
-                "Some Stationery are not Pens.",
-                "No Pens are Stationery.",
+                "All Stationery are Pens.",
                 "All Pens are Stationery.",
-                "All Stationery are Pens."
+                "No Pens are Stationery.",
+                "Some Stationery are not Pens."
             ],
             "correct_answer": "All Pens are Stationery.",
             "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Pens are Stationery.' is the logically certain conclusion."
         },
         {
+            "question": "A can complete a piece of work in 30 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "24",
+                "22",
+                "20",
+                "19"
+            ],
+            "correct_answer": "20",
+            "explanation": "1/A + 1/B = 1/30 + 1/60 = (60+30)/(30*60) = 1/20. So they complete it in 20 days."
+        },
+        {
             "question": "A can complete a piece of work in 10 days while B can complete the same work in 15 days. If they work together, in how many days will they complete the work?",
             "category": "Quantitative Aptitude",
             "options": [
-                "8",
                 "6",
-                "5",
-                "10"
+                "8",
+                "10",
+                "5"
             ],
             "correct_answer": "6",
             "explanation": "1/A + 1/B = 1/10 + 1/15 = (15+10)/(10*15) = 1/6. So they complete it in 6 days."
         },
         {
-            "question": "A can complete a piece of work in 12 days while B can complete the same work in 24 days. If they work together, in how many days will they complete the work?",
+            "question": "Find the missing number in the series: 2, 5, 8, 11, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "14",
+                "15",
+                "28",
+                "6"
+            ],
+            "correct_answer": "14",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 3. Next term: 11 + 3 = 14."
+        },
+        {
+            "question": "Find the missing number in the series: 3, 6, 9, 12, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "15",
+                "26",
+                "1",
+                "6"
+            ],
+            "correct_answer": "15",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 3. Next term: 12 + 3 = 15."
+        },
+        {
+            "question": "A can complete a piece of work in 20 days while B can complete the same work in 30 days. If they work together, in how many days will they complete the work?",
             "category": "Quantitative Aptitude",
             "options": [
                 "12",
-                "7",
-                "8",
-                "10"
+                "11",
+                "16",
+                "14"
             ],
-            "correct_answer": "8",
-            "explanation": "1/A + 1/B = 1/12 + 1/24 = (24+12)/(12*24) = 1/8. So they complete it in 8 days."
-        },
-        {
-            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Doctors are Engineers.\n2. All Engineers are Professionals.",
-            "category": "Logical Reasoning",
-            "options": [
-                "All Professionals are Doctors.",
-                "Some Professionals are not Doctors.",
-                "No Doctors are Professionals.",
-                "All Doctors are Professionals."
-            ],
-            "correct_answer": "All Doctors are Professionals.",
-            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Doctors are Professionals.' is the logically certain conclusion."
-        },
-        {
-            "question": "A can complete a piece of work in 12 days while B can complete the same work in 24 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "8",
-                "10",
-                "12",
-                "7"
-            ],
-            "correct_answer": "8",
-            "explanation": "1/A + 1/B = 1/12 + 1/24 = (24+12)/(12*24) = 1/8. So they complete it in 8 days."
-        },
-        {
-            "question": "If an article is bought for Rs. 450 and sold at a profit of 25%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "542",
-                "562",
-                "607",
-                "572"
-            ],
-            "correct_answer": "562",
-            "explanation": "SP = CP * (1 + Profit%/100) = 450 * (1 + 25/100) = Rs. 562."
-        },
-        {
-            "question": "Find the missing number in the series: 2, 6, 18, 54, ?",
-            "category": "Logical Reasoning",
-            "options": [
-                "182",
-                "167",
-                "177",
-                "162"
-            ],
-            "correct_answer": "162",
-            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 54 * 3 = 162."
-        },
-        {
-            "question": "If an article is bought for Rs. 310 and sold at a profit of 50%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "445",
-                "465",
-                "475",
-                "496"
-            ],
-            "correct_answer": "465",
-            "explanation": "SP = CP * (1 + Profit%/100) = 310 * (1 + 50/100) = Rs. 465."
-        },
-        {
-            "question": "Find the missing number in the series: 4, 8, 16, 32, ?",
-            "category": "Logical Reasoning",
-            "options": [
-                "71",
-                "52",
-                "66",
-                "64"
-            ],
-            "correct_answer": "64",
-            "explanation": "The series is a Geometric Progression with a common ratio of 2. Next term: 32 * 2 = 64."
-        },
-        {
-            "question": "If an article is bought for Rs. 410 and sold at a profit of 30%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "543",
-                "513",
-                "533",
-                "574"
-            ],
-            "correct_answer": "533",
-            "explanation": "SP = CP * (1 + Profit%/100) = 410 * (1 + 30/100) = Rs. 533."
+            "correct_answer": "12",
+            "explanation": "1/A + 1/B = 1/20 + 1/30 = (30+20)/(20*30) = 1/12. So they complete it in 12 days."
         },
         {
             "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.",
             "category": "Logical Reasoning",
             "options": [
-                "All Apples are Foods.",
                 "Some Foods are not Apples.",
+                "All Foods are Apples.",
                 "No Apples are Foods.",
-                "All Foods are Apples."
+                "All Apples are Foods."
             ],
             "correct_answer": "All Apples are Foods.",
             "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Apples are Foods.' is the logically certain conclusion."
         },
         {
-            "question": "Find the missing number in the series: 2, 6, 18, 54, ?",
+            "question": "If an article is bought for Rs. 390 and sold at a profit of 40%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "585",
+                "556",
+                "546",
+                "526"
+            ],
+            "correct_answer": "546",
+            "explanation": "SP = CP * (1 + Profit%/100) = 390 * (1 + 40/100) = Rs. 546."
+        },
+        {
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.",
             "category": "Logical Reasoning",
             "options": [
-                "152",
-                "162",
-                "179",
-                "156"
+                "All Vehicles are Cars.",
+                "Some Vehicles are not Cars.",
+                "All Cars are Vehicles.",
+                "No Cars are Vehicles."
             ],
-            "correct_answer": "162",
-            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 54 * 3 = 162."
+            "correct_answer": "All Cars are Vehicles.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Cars are Vehicles.' is the logically certain conclusion."
+        },
+        {
+            "question": "If an article is bought for Rs. 220 and sold at a profit of 20%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "244",
+                "286",
+                "274",
+                "264"
+            ],
+            "correct_answer": "264",
+            "explanation": "SP = CP * (1 + Profit%/100) = 220 * (1 + 20/100) = Rs. 264."
+        },
+        {
+            "question": "If an article is bought for Rs. 320 and sold at a profit of 30%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "426",
+                "396",
+                "448",
+                "416"
+            ],
+            "correct_answer": "416",
+            "explanation": "SP = CP * (1 + Profit%/100) = 320 * (1 + 30/100) = Rs. 416."
         },
         {
             "question": "Sample CA?",
             "category": "Current Affairs",
             "options": [
-                "D",
-                "C",
+                "B",
                 "A",
-                "B"
+                "D",
+                "C"
             ],
             "correct_answer": "A",
             "explanation": "test",
@@ -167,10 +167,10 @@
             "question": "Who won the ICC Men's Cricket World Cup 2023?",
             "category": "Current Affairs",
             "options": [
-                "South Africa",
+                "India",
                 "Australia",
-                "England",
-                "India"
+                "South Africa",
+                "England"
             ],
             "correct_answer": "Australia",
             "explanation": "Australia defeated India in the final to win the 2023 ICC World Cup.",
@@ -180,10 +180,10 @@
             "question": "Which city hosted the G20 Summit in 2023?",
             "category": "Current Affairs",
             "options": [
-                "Rome",
-                "Riyadh",
                 "New Delhi",
-                "Bali"
+                "Bali",
+                "Rome",
+                "Riyadh"
             ],
             "correct_answer": "New Delhi",
             "explanation": "The 2023 G20 New Delhi summit was the eighteenth meeting of G20.",
@@ -193,10 +193,10 @@
             "question": "What is the name of India's first solar mission?",
             "category": "Current Affairs",
             "options": [
-                "Surya-1",
-                "Chandrayaan-3",
+                "Bhaskara-L",
                 "Aditya-L1",
-                "Bhaskara-L"
+                "Surya-1",
+                "Chandrayaan-3"
             ],
             "correct_answer": "Aditya-L1",
             "explanation": "Aditya-L1 is a coronalography spacecraft designed to study the solar atmosphere.",
@@ -206,8 +206,8 @@
             "question": "Which film won the Best Picture at the 96th Academy Awards?",
             "category": "Current Affairs",
             "options": [
-                "Oppenheimer",
                 "Killers of the Flower Moon",
+                "Oppenheimer",
                 "Barbie",
                 "Poor Things"
             ],
@@ -219,10 +219,10 @@
             "question": "Which country officially became the 32nd member of NATO in 2024?",
             "category": "Current Affairs",
             "options": [
-                "Georgia",
                 "Finland",
                 "Sweden",
-                "Ukraine"
+                "Ukraine",
+                "Georgia"
             ],
             "correct_answer": "Sweden",
             "explanation": "Sweden officially became the 32nd member of NATO in March 2024.",
