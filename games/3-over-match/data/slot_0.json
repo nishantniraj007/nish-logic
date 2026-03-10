@@ -3,243 +3,243 @@
     "batch_index": 0,
     "day_index": 0,
     "slot_index": 0,
-    "difficulty": "Easy",
-    "generated_at": "2026-03-05T13:40:41.675Z"
+    "difficulty": "Medium",
+    "generated_at": "2026-03-10T20:02:08.207Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost Rs. 100, then how much do 7 apples cost?",
+      "question": "A shopkeeper marks an item 20% above its cost price. He then offers a discount of 10% on the marked price. What is his profit percentage?",
       "options": [
-        "Rs. 120",
-        "Rs. 140",
-        "Rs. 160",
-        "Rs. 180"
+        "A) 8%",
+        "B) 10%",
+        "C) 12%",
+        "D) 15%"
       ],
-      "correct_answer": "Rs. 140",
-      "explanation": "First, find the cost of one apple: Rs. 100 / 5 = Rs. 20. Then, multiply the cost of one apple by 7: Rs. 20 * 7 = Rs. 140.",
-      "trick": "Unitary Method: Find cost of 1, then multiply by desired quantity."
+      "correct_answer": "A) 8%",
+      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 20% of CP = 100 + (0.20 * 100) = 100 + 20 = Rs. 120.\nDiscount = 10% of MP = 0.10 * 120 = Rs. 12.\nSelling Price (SP) = MP - Discount = 120 - 12 = Rs. 108.\nProfit = SP - CP = 108 - 100 = Rs. 8.\nProfit Percentage = (Profit / CP) * 100 = (8 / 100) * 100 = 8%.",
+      "trick": "Use the successive percentage change formula: a + b + (ab/100). Here, 'a' is the markup (+20%) and 'b' is the discount (-10%).\nProfit % = 20 + (-10) + (20 * -10 / 100) = 10 + (-200 / 100) = 10 - 2 = 8%."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Pointing to a photograph, a man says, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+      "options": [
+        "A. His son",
+        "B. His father",
+        "C. His nephew",
+        "D. His uncle"
+      ],
+      "correct_answer": "A. His son",
+      "explanation": "Let's break down the statement:\n1. 'I have no brother or sister' means the man speaking is an only child.\n2. 'my father's son' – Since the speaker has no brother, his father's son must be himself.\n3. Substituting this into the main statement: 'that man's father is myself'.\nTherefore, the man in the photograph is the speaker's son.",
+      "trick": "Start from the end of the relative clause ('my father's son') and substitute it with the direct relation to the speaker. Then work backwards through the sentence."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
+      "question": "A can do a piece of work in 10 days, and B can do the same work in 15 days. If they work together, in how many days will they complete the work?",
       "options": [
-        "40",
-        "50",
-        "60",
-        "70"
+        "A) 5 days",
+        "B) 6 days",
+        "C) 7.5 days",
+        "D) 8 days"
       ],
-      "correct_answer": "50",
-      "explanation": "To find 25% of 200, you can multiply 200 by 0.25 (which is 25/100). 200 * 0.25 = 50.",
-      "trick": "25% is equivalent to 1/4. So, 200 / 4 = 50."
+      "correct_answer": "B) 6 days",
+      "explanation": "A's one day work = 1/10 of the total work.\nB's one day work = 1/15 of the total work.\nIf they work together, their combined one day work = (1/10) + (1/15).\nTo add fractions, find a common denominator, which is 30.\n(3/30) + (2/30) = 5/30 = 1/6 of the total work.\nIf they complete 1/6 of the work in one day, they will complete the entire work in 6 days.",
+      "trick": "For two people working together, if one takes 'x' days and the other takes 'y' days, the time taken to complete the work together is (x * y) / (x + y) days.\nTime = (10 * 15) / (10 + 15) = 150 / 25 = 6 days."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Five friends A, B, C, D, E are sitting in a row facing North.\n1. B is sitting between A and C.\n2. D is immediately to the right of E.\n3. C is immediately to the left of D.\n\nWho is sitting in the middle of the row?",
+      "options": [
+        "A. A",
+        "B. B",
+        "C. C",
+        "D. D"
+      ],
+      "correct_answer": "C. C",
+      "explanation": "Let's deduce the arrangement step-by-step:\nFrom statement 3: 'C is immediately to the left of D' -> _ C D _\nFrom statement 2: 'D is immediately to the right of E' -> E D. Combining with the previous, we get E C D (wait, this is E D C). Let's re-evaluate. If D is to the right of E, then E D. If C is to the left of D, then C must be before D. So, E D C is incorrect. It should be E C D. No, C is left of D, so C D. D is right of E, so E D. Therefore, E C D is wrong. It should be E D C. No, it is E C D.\n\nLet's restart the arrangement:\n1. C is immediately to the left of D. This means the sequence is `CD`.\n2. D is immediately to the right of E. This means the sequence is `ED`. Combining with `CD`, we get `ECD`. (E is to the left of C, C is to the left of D).\n3. B is sitting between A and C. This means `ABC` or `CBA`. Since we have `ECD`, and C is present, we must fit A and B around C.\n\nLet's combine `ECD` and `ABC`.\nIf we have `ECD`, and B is between A and C, then `A B C D E` is the only way to fit all conditions.\nLet's verify:\n- B is between A and C: Yes (A B C)\n- D is immediately to the right of E: Yes (E D)\n- C is immediately to the left of D: Yes (C D)\n\nThe complete arrangement is A B C D E. With 5 friends, the middle position is the 3rd person. Therefore, C is sitting in the middle.",
+      "trick": "Draw empty slots for the number of people. Place the most restrictive conditions first. Combine segments of the arrangement as you deduce them. For 'A is between B and C', remember it could be BCA or ACB. For 'A is to the left of B', it means A...B. For 'A is immediately to the left of B', it means AB."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A train travels at a speed of 60 km/hr. How long will it take to cover a distance of 180 km?",
+      "question": "The sum of two numbers is 30 and their difference is 10. What is the product of the two numbers?",
       "options": [
-        "2 hours",
-        "3 hours",
-        "4 hours",
-        "5 hours"
+        "A) 150",
+        "B) 200",
+        "C) 250",
+        "D) 300"
       ],
-      "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/hr = 3 hours.",
-      "trick": "Formula: Time = Distance / Speed."
+      "correct_answer": "B) 200",
+      "explanation": "Let the two numbers be x and y.\nGiven: x + y = 30 (Equation 1)\nGiven: x - y = 10 (Equation 2)\nAdd Equation 1 and Equation 2:\n(x + y) + (x - y) = 30 + 10\n2x = 40\nx = 40 / 2 = 20\nSubstitute x = 20 into Equation 1:\n20 + y = 30\ny = 30 - 20 = 10\nThe two numbers are 20 and 10.\nProduct of the numbers = x * y = 20 * 10 = 200.",
+      "trick": "If the sum (S) and difference (D) of two numbers are known, the numbers are (S+D)/2 and (S-D)/2.\nFirst number = (30 + 10) / 2 = 40 / 2 = 20.\nSecond number = (30 - 10) / 2 = 20 / 2 = 10.\nProduct = 20 * 10 = 200."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+      "question": "If the radius of a circle is increased by 50%, what is the percentage increase in its area?",
       "options": [
-        "9",
-        "10",
-        "11",
-        "12"
+        "A) 25%",
+        "B) 50%",
+        "C) 100%",
+        "D) 125%"
       ],
-      "correct_answer": "10",
-      "explanation": "This is a sequence of even numbers. Each number is obtained by adding 2 to the previous number. 8 + 2 = 10.",
-      "trick": "Add 2 to the previous term."
+      "correct_answer": "D) 125%",
+      "explanation": "Let the original radius be 'r'.\nOriginal Area (A1) = πr².\nIf the radius is increased by 50%, the new radius (r') = r + 0.50r = 1.5r.\nNew Area (A2) = π(r')² = π(1.5r)² = π(2.25r²) = 2.25πr².\nIncrease in Area = A2 - A1 = 2.25πr² - πr² = 1.25πr².\nPercentage Increase = (Increase in Area / Original Area) * 100\n= (1.25πr² / πr²) * 100 = 1.25 * 100 = 125%.",
+      "trick": "For percentage change in area of a circle (or square) when its radius (or side) is changed by P%, the percentage change in area is given by the formula (2P + P²/100)%.\nHere, P = 50%.\nPercentage Increase = (2 * 50 + 50² / 100)% = (100 + 2500 / 100)% = (100 + 25)% = 125%."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If CAT is coded as 3120, how is DOG coded?",
+      "question": "Read the following statements and choose the conclusion that logically follows:\n\nStatements:\n1. All books are papers.\n2. Some papers are pens.",
       "options": [
-        "4157",
-        "4167",
-        "5167",
-        "5177"
+        "A. All books are pens.",
+        "B. Some books are pens.",
+        "C. No book is a pen.",
+        "D. No definite conclusion can be drawn."
       ],
-      "correct_answer": "4157",
-      "explanation": "The code is derived by assigning the alphabetical position of each letter (A=1, B=2, ...). C=3, A=1, T=20. So CAT = 3120. For DOG, D=4, O=15, G=7. So DOG = 4157.",
-      "trick": "Use alphabetical positions of letters."
+      "correct_answer": "D. No definite conclusion can be drawn.",
+      "explanation": "From statement 1, 'All books are papers', we know that books are a subset of papers. From statement 2, 'Some papers are pens', we know there's an overlap between papers and pens. However, this overlap might be with the papers that are not books, or it might include some papers that are also books. There is no direct link established between 'books' and 'pens' that allows for a definite conclusion about their relationship. Therefore, no definite conclusion can be drawn.",
+      "trick": "Visualize with Venn diagrams. Draw 'Books' completely inside 'Papers'. Then draw 'Pens' overlapping with 'Papers'. The overlap of 'Pens' and 'Papers' might or might not include the 'Books' circle. Since it's not guaranteed, no definite conclusion can be made."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong with the others?",
+      "question": "What will come in place of the question mark (?) in the following series?\n2, 5, 10, 17, 26, ?",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "A. 35",
+        "B. 36",
+        "C. 37",
+        "D. 38"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Identify the outlier based on common category."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If 'Sun' is to 'Day', then 'Moon' is to?",
-      "options": [
-        "Morning",
-        "Evening",
-        "Night",
-        "Dawn"
-      ],
-      "correct_answer": "Night",
-      "explanation": "The Sun is associated with daylight, and the Moon is primarily associated with nighttime.",
-      "trick": "Analogy based on common association."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "A is taller than B. C is shorter than A. D is shorter than C. Who is the tallest?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct_answer": "A",
-      "explanation": "From the statements, we know A > B, A > C, and C > D. Therefore, A is the tallest.",
-      "trick": "Visualize or list out the comparisons: A > B, A > C, C > D. A is at the top."
+      "correct_answer": "C. 37",
+      "explanation": "Let's find the difference between consecutive terms:\n5 - 2 = 3\n10 - 5 = 5\n17 - 10 = 7\n26 - 17 = 9\n\nThe differences are consecutive odd numbers: 3, 5, 7, 9. The next difference in this sequence should be 11.\nSo, the next term in the series will be 26 + 11 = 37.",
+      "trick": "Look for patterns in the differences between consecutive numbers. If the first set of differences doesn't reveal a pattern, look at the differences of those differences (second-order differences). Another common trick for this type of series is n^2 + 1 (1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26, so 6^2+1=37)."
     },
     {
       "category": "Static GK",
-      "question": "What is the capital of France?",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
       "options": [
-        "Berlin",
-        "Madrid",
-        "Paris",
-        "Rome"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Paris",
-      "explanation": "Paris is the capital and most populous city of France.",
-      "trick": "Memorization of world capitals."
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Which is the largest planet in our solar system?",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
       "options": [
-        "Earth",
-        "Mars",
-        "Jupiter",
-        "Saturn"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Jupiter",
-      "explanation": "Jupiter is the largest planet in our solar system by both mass and volume.",
-      "trick": "Remember the order of planets or their relative sizes."
-    },
-    {
-      "category": "Static GK",
-      "question": "Who painted the Mona Lisa?",
-      "options": [
-        "Vincent van Gogh",
-        "Pablo Picasso",
-        "Leonardo da Vinci",
-        "Claude Monet"
-      ],
-      "correct_answer": "Leonardo da Vinci",
-      "explanation": "The Mona Lisa is a world-famous painting by the Italian artist Leonardo da Vinci.",
-      "trick": "Associate famous artworks with their artists."
-    },
-    {
-      "category": "Static GK",
-      "question": "Which continent is known as the 'Dark Continent'?",
-      "options": [
-        "Asia",
-        "Africa",
-        "South America",
-        "Australia"
-      ],
-      "correct_answer": "Africa",
-      "explanation": "Africa has historically been referred to as the 'Dark Continent' due to its limited exploration and understanding by Europeans in earlier times.",
-      "trick": "Learn common nicknames for continents."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which country recently hosted the G7 Summit in June 2024?",
-      "options": [
-        "Italy",
-        "Germany",
-        "Japan",
-        "Canada"
-      ],
-      "correct_answer": "Italy",
-      "explanation": "Italy hosted the G7 Summit in Puglia from June 13-15, 2024.",
-      "trick": "Keep track of major international summits and their hosts."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the men's singles title at Wimbledon 2024?",
-      "options": [
-        "Novak Djokovic",
-        "Carlos Alcaraz",
-        "Roger Federer",
-        "Andy Murray"
-      ],
-      "correct_answer": "Carlos Alcaraz",
-      "explanation": "Carlos Alcaraz won the men's singles title at Wimbledon 2024.",
-      "trick": "Follow major sporting events and their outcomes."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which Indian state recently launched the 'Mukhyamantri Yuva Campaign' to promote entrepreneurship?",
-      "options": [
-        "Uttar Pradesh",
-        "Rajasthan",
-        "Madhya Pradesh",
-        "Gujarat"
-      ],
-      "correct_answer": "Uttar Pradesh",
-      "explanation": "Uttar Pradesh launched the 'Mukhyamantri Yuva Abhiyan' (Chief Minister's Youth Campaign) to foster entrepreneurship among the youth.",
-      "trick": "Stay updated on government schemes and initiatives in India."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "What is the name of the new AI model launched by Google in late 2023/early 2024 that is considered a successor to LaMDA and PaLM?",
-      "options": [
-        "Bard",
-        "Gemini",
-        "Meena",
-        "LaMDA 2"
-      ],
-      "correct_answer": "Gemini",
-      "explanation": "Google officially launched its Gemini AI model family in December 2023.",
-      "trick": "Follow advancements in AI and technology companies."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which nation successfully conducted the first-ever private astronaut mission to the International Space Station in early 2024?",
-      "options": [
-        "United States",
-        "Russia",
-        "China",
-        "India"
-      ],
-      "correct_answer": "United States",
-      "explanation": "Axiom Mission 3 (Ax-3), a private astronaut mission, was launched in January 2024, with all astronauts being from NATO member countries, primarily sponsored by the United States.",
-      "trick": "Keep an eye on developments in space exploration and private space companies."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "What major global sporting event is scheduled to take place in Paris in the summer of 2024?",
-      "options": [
-        "FIFA World Cup",
-        "UEFA European Championship",
-        "Summer Olympics",
-        "Commonwealth Games"
-      ],
-      "correct_answer": "Summer Olympics",
-      "explanation": "The 2024 Summer Olympics are scheduled to be held in Paris, France.",
-      "trick": "Know about upcoming major international sporting events."
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
