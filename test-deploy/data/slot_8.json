@@ -2,36 +2,86 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 8,
-    "generated_at": "2026-03-09T20:02:07.599Z",
+    "generated_at": "2026-03-10T20:02:10.651Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
+      "question": "If an article is bought for Rs. 800 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 1040",
       "options": [
-        "MBK",
-        "SHQ",
-        "TIR",
-        "PEN"
+        "Rs. 1200",
+        "Rs. 1120",
+        "Rs. 960",
+        "Rs. 1040"
       ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "SP = CP * (1 + Profit/100) = 800 * 1.30 = Rs. 1040.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 36, 82, 16, 25",
+      "correct_answer": "82",
+      "options": [
+        "36",
+        "82",
+        "16",
+        "25"
+      ],
+      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Rs. 1280 is divided between A and B in the ratio 4:6. What is A's share?",
-      "correct_answer": "Rs. 512",
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
       "options": [
-        "Rs. 384",
-        "Rs. 768",
-        "Rs. 512",
-        "Rs. 640"
+        "None of the above.",
+        "All Pens are Stationery.",
+        "Some Stationery are not Pens.",
+        "No Pens are Stationery."
       ],
-      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 1280/10 = 128. A's share = 4 * 128 = 512.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 5, 10, 20, 40, ?",
+      "correct_answer": "80",
+      "options": [
+        "160",
+        "75",
+        "80",
+        "82"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 40 * 2 = 80.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Neptune",
+        "Saturn",
+        "Jupiter",
+        "Earth"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     },
     {
       "question": "Sample CA?",
@@ -46,130 +96,80 @@
       "category": "Current Affairs"
     },
     {
-      "question": "A train travels at an average speed of 150 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "900 km",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 28000 at an interest rate of 9% per annum over 4 years?",
+      "correct_answer": "Rs. 10080",
       "options": [
-        "750 km",
-        "920 km",
-        "1050 km",
-        "900 km"
+        "Rs. 10080",
+        "Rs. 11480",
+        "Rs. 10180",
+        "Rs. 10030"
       ],
-      "explanation": "Distance = Speed * Time = 150 * 6 = 900 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "SI = (P * R * T) / 100 = (28000 * 9 * 4) / 100 = 10080.",
+      "trick": "Treat percentage as decimal visually: 280 * 9 * 4 = 10080.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "What is the average of the following 5 consecutive even numbers: 35, 37, 39, 41, 43?",
+      "correct_answer": "39",
       "options": [
-        "Earth",
-        "Saturn",
-        "Jupiter",
-        "Neptune"
+        "37",
+        "41",
+        "39",
+        "43"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 19, -11, -41, -71, -101, ?",
-      "correct_answer": "-131",
-      "options": [
-        "-101",
-        "-131",
-        "-161",
-        "-129"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -30. So, -101 + (-30) = -131.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Rabindranath Tagore",
-        "Sarojini Naidu",
-        "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 38, 40, 42, 44, 46?",
-      "correct_answer": "42",
-      "options": [
-        "46",
-        "42",
-        "44",
-        "40"
-      ],
-      "explanation": "Sum = 210. Average = Sum / 5 = 42.",
+      "explanation": "Sum = 195. Average = Sum / 5 = 39.",
       "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "Sardar Patel",
-        "B.R. Ambedkar"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "If an article is bought for Rs. 3920 and sold at a profit of 30%, what is the selling price?",
-      "correct_answer": "Rs. 5096",
-      "options": [
-        "Rs. 5880",
-        "Rs. 5488",
-        "Rs. 5096",
-        "Rs. 4704"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 3920 * 1.30 = Rs. 5096.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
-      "correct_answer": "32",
-      "options": [
-        "30",
-        "64",
-        "34",
-        "32"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Mississippi",
-        "Amazon",
         "Yangtze",
-        "Nile"
+        "Nile",
+        "Amazon",
+        "Mississippi"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Cars are Vehicles.",
+      "question": "A can complete a piece of work in 128 days while B can complete the same work in 240 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "83.48 days",
       "options": [
-        "Some Vehicles are not Cars.",
-        "None of the above.",
-        "All Cars are Vehicles.",
-        "No Cars are Vehicles."
+        "82.48 days",
+        "83.48 days",
+        "87.48 days",
+        "85.48 days"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "Work = 128 * 240 = 30720. Rate = 128 + 240 = 368. Time = Work / Rate = 83.48 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If MAT is coded as OCV, how will PEN be coded in that same language?",
+      "correct_answer": "RGP",
+      "options": [
+        "RGP",
+        "SHQ",
+        "PEN",
+        "NCL"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Jawaharlal Nehru",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
     }
   ]
 }

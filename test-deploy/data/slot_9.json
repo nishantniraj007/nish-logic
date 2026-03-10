@@ -2,124 +2,149 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 9,
-    "generated_at": "2026-03-09T20:02:07.599Z",
+    "generated_at": "2026-03-10T20:02:10.651Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "A can complete a piece of work in 160 days while B can complete the same work in 144 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "75.79 days",
+      "question": "A can complete a piece of work in 136 days while B can complete the same work in 192 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "79.61 days",
       "options": [
-        "75.79 days",
-        "79.79 days",
-        "74.79 days",
-        "77.79 days"
+        "81.61 days",
+        "83.61 days",
+        "78.61 days",
+        "79.61 days"
       ],
-      "explanation": "Work = 160 * 144 = 23040. Rate = 160 + 144 = 304. Time = Work / Rate = 75.79 days.",
+      "explanation": "Work = 136 * 192 = 26112. Rate = 136 + 192 = 328. Time = Work / Rate = 79.61 days.",
       "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 50, 4, 16, 9",
-      "correct_answer": "50",
-      "options": [
-        "50",
-        "4",
-        "16",
-        "9"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 154 km/hr. How much distance will it cover in 2 hours?",
-      "correct_answer": "308 km",
-      "options": [
-        "308 km",
-        "154 km",
-        "462 km",
-        "328 km"
-      ],
-      "explanation": "Distance = Speed * Time = 154 * 2 = 308 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 7, -38, -83, -128, -173, ?",
-      "correct_answer": "-218",
-      "options": [
-        "-216",
-        "-173",
-        "-263",
-        "-218"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -45. So, -173 + (-45) = -218.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 54, 56, 58, 60, 62?",
-      "correct_answer": "58",
-      "options": [
-        "56",
-        "60",
-        "62",
-        "58"
-      ],
-      "explanation": "Sum = 290. Average = Sum / 5 = 58.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Mississippi",
-        "Nile",
-        "Yangtze",
-        "Amazon"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Earth",
-        "Jupiter",
-        "Saturn",
-        "Neptune"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 4, 8, 16, 32, ?",
-      "correct_answer": "64",
-      "options": [
-        "66",
-        "64",
-        "60",
-        "128"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 32 * 2 = 64.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
         "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar",
         "Sardar Patel",
-        "B.R. Ambedkar"
+        "Dr. Rajendra Prasad"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
+    },
+    {
+      "question": "Rs. 1224 is divided between A and B in the ratio 4:5. What is A's share?",
+      "correct_answer": "Rs. 544",
+      "options": [
+        "Rs. 666.4",
+        "Rs. 544",
+        "Rs. 680",
+        "Rs. 421.6"
+      ],
+      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 1224/9 = 136. A's share = 4 * 136 = 544.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Earth",
+        "Neptune",
+        "Jupiter",
+        "Saturn"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 16, 9, 25, 65",
+      "correct_answer": "65",
+      "options": [
+        "16",
+        "9",
+        "25",
+        "65"
+      ],
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Nile",
+        "Mississippi",
+        "Amazon"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A train travels at an average speed of 91 km/hr. How much distance will it cover in 2 hours?",
+      "correct_answer": "182 km",
+      "options": [
+        "202 km",
+        "182 km",
+        "273 km",
+        "91 km"
+      ],
+      "explanation": "Distance = Speed * Time = 91 * 2 = 182 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If BAT is coded as CBU, how will CUP be coded in that same language?",
+      "correct_answer": "DVQ",
+      "options": [
+        "CUP",
+        "EWR",
+        "BTO",
+        "DVQ"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 37, 39, 41, 43, 45?",
+      "correct_answer": "41",
+      "options": [
+        "43",
+        "41",
+        "39",
+        "45"
+      ],
+      "explanation": "Sum = 205. Average = Sum / 5 = 41.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Mahatma Gandhi",
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Sarojini Naidu"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
+      "options": [
+        "Some Foods are not Apples.",
+        "None of the above.",
+        "No Apples are Foods.",
+        "All Apples are Foods."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -134,42 +159,17 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Rs. 1872 is divided between A and B in the ratio 4:5. What is A's share?",
-      "correct_answer": "Rs. 832",
+      "question": "Find the next number in the series: 3, -27, -57, -87, -117, ?",
+      "correct_answer": "-147",
       "options": [
-        "Rs. 644.8",
-        "Rs. 1040",
-        "Rs. 1019.2",
-        "Rs. 832"
+        "-147",
+        "-145",
+        "-177",
+        "-117"
       ],
-      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 1872/9 = 208. A's share = 4 * 208 = 832.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If BAT is coded as EDW, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
-      "options": [
-        "PEN",
-        "MBK",
-        "SHQ",
-        "TIR"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -30. So, -117 + (-30) = -147.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Rabindranath Tagore",
-        "Sarojini Naidu",
-        "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
     }
   ]
 }

@@ -2,71 +2,34 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 3,
-    "generated_at": "2026-03-09T20:02:07.599Z",
+    "generated_at": "2026-03-10T20:02:10.651Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "Find the odd one out among the following numbers: 122, 36, 64, 49",
+      "correct_answer": "122",
       "options": [
-        "Mahatma Gandhi",
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu"
+        "122",
+        "36",
+        "64",
+        "49"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
+      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 4400 at an interest rate of 12% per annum over 2 years?",
-      "correct_answer": "Rs. 1056",
+      "question": "What is the average of the following 5 consecutive even numbers: 30, 32, 34, 36, 38?",
+      "correct_answer": "34",
       "options": [
-        "Rs. 1156",
-        "Rs. 1276",
-        "Rs. 1056",
-        "Rs. 1006"
+        "38",
+        "32",
+        "36",
+        "34"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (4400 * 12 * 2) / 100 = 1056.",
-      "trick": "Treat percentage as decimal visually: 44 * 12 * 2 = 1056.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If an article is bought for Rs. 620 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 682",
-      "options": [
-        "Rs. 620",
-        "Rs. 682",
-        "Rs. 744",
-        "Rs. 806"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 620 * 1.10 = Rs. 682.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Mississippi",
-        "Yangtze",
-        "Nile",
-        "Amazon"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 38, 40, 42, 44, 46?",
-      "correct_answer": "42",
-      "options": [
-        "40",
-        "46",
-        "44",
-        "42"
-      ],
-      "explanation": "Sum = 210. Average = Sum / 5 = 42.",
+      "explanation": "Sum = 170. Average = Sum / 5 = 34.",
       "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
@@ -74,77 +37,76 @@
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Neptune",
         "Jupiter",
+        "Saturn",
         "Earth",
-        "Saturn"
+        "Neptune"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
       "options": [
-        "Sardar Patel",
-        "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad",
-        "B.R. Ambedkar"
+        "Amazon",
+        "Nile",
+        "Mississippi",
+        "Yangtze"
       ],
-      "explanation": "He served from 1950 to 1962.",
+      "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "Rs. 420 is divided between A and B in the ratio 4:6. What is A's share?",
-      "correct_answer": "Rs. 168",
+      "question": "If MAT is coded as PDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
       "options": [
-        "Rs. 126",
-        "Rs. 210",
-        "Rs. 168",
-        "Rs. 252"
+        "PEN",
+        "SHQ",
+        "TIR",
+        "MBK"
       ],
-      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 420/10 = 42. A's share = 4 * 42 = 168.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 40 days while B can complete the same work in 56 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "23.33 days",
+      "options": [
+        "22.33 days",
+        "23.33 days",
+        "27.33 days",
+        "25.33 days"
+      ],
+      "explanation": "Work = 40 * 56 = 2240. Rate = 40 + 56 = 96. Time = Work / Rate = 23.33 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Find the next number in the series: 17, 25, 33, 41, 49, ?",
-      "correct_answer": "57",
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
       "options": [
-        "49",
-        "59",
-        "65",
-        "57"
+        "243",
+        "729",
+        "240",
+        "246"
       ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 8. So, 49 + (8) = 57.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 25, 49, 36, 101",
-      "correct_answer": "101",
-      "options": [
-        "25",
-        "49",
-        "36",
-        "101"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
-      "correct_answer": "48",
-      "options": [
-        "50",
-        "48",
-        "96",
-        "45"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
       "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Mahatma Gandhi",
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu",
+        "Rabindranath Tagore"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
       "question": "Sample CA?",
@@ -159,17 +121,55 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
+      "question": "Find the next number in the series: 3, 15, 27, 39, 51, ?",
+      "correct_answer": "63",
       "options": [
-        "All Apples are Foods.",
-        "Some Foods are not Apples.",
-        "None of the above.",
-        "No Apples are Foods."
+        "65",
+        "75",
+        "51",
+        "63"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 51 + (12) = 63.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "If an article is bought for Rs. 940 and sold at a profit of 15%, what is the selling price?",
+      "correct_answer": "Rs. 1081",
+      "options": [
+        "Rs. 1269",
+        "Rs. 987",
+        "Rs. 1081",
+        "Rs. 1175"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 940 * 1.15 = Rs. 1081.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A train travels at an average speed of 101 km/hr. How much distance will it cover in 6 hours?",
+      "correct_answer": "606 km",
+      "options": [
+        "707 km",
+        "505 km",
+        "626 km",
+        "606 km"
+      ],
+      "explanation": "Distance = Speed * Time = 101 * 6 = 606 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Dr. Rajendra Prasad",
+        "Sardar Patel",
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
     }
   ]
 }

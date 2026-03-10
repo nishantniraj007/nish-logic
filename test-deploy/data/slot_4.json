@@ -2,36 +2,124 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 4,
-    "generated_at": "2026-03-09T20:02:07.599Z",
+    "generated_at": "2026-03-10T20:02:10.651Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "A can complete a piece of work in 26 days while B can complete the same work in 52 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "17.33 days",
+      "question": "What is the average of the following 5 consecutive even numbers: 43, 45, 47, 49, 51?",
+      "correct_answer": "47",
       "options": [
-        "19.33 days",
-        "21.33 days",
-        "17.33 days",
-        "16.33 days"
+        "47",
+        "45",
+        "49",
+        "51"
       ],
-      "explanation": "Work = 26 * 52 = 1352. Rate = 26 + 52 = 78. Time = Work / Rate = 17.33 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
+      "explanation": "Sum = 235. Average = Sum / 5 = 47.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "If DOG is coded as GRJ, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "SHQ",
-        "PEN",
-        "MBK",
-        "TIR"
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Sarojini Naidu",
+        "Mahatma Gandhi"
       ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 18, 30, 42, 54, 66, ?",
+      "correct_answer": "78",
+      "options": [
+        "78",
+        "80",
+        "66",
+        "90"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 66 + (12) = 78.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
+      "options": [
+        "No Apples are Foods.",
+        "Some Foods are not Apples.",
+        "None of the above.",
+        "All Apples are Foods."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad",
+        "Sardar Patel",
+        "B.R. Ambedkar"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If an article is bought for Rs. 460 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 598",
+      "options": [
+        "Rs. 690",
+        "Rs. 644",
+        "Rs. 598",
+        "Rs. 552"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 460 * 1.30 = Rs. 598.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 50, 16, 4, 9",
+      "correct_answer": "50",
+      "options": [
+        "50",
+        "16",
+        "4",
+        "9"
+      ],
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If DOG is coded as FQI, how will PEN be coded in that same language?",
+      "correct_answer": "RGP",
+      "options": [
+        "RGP",
+        "SHQ",
+        "NCL",
+        "PEN"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Earth",
+        "Saturn",
+        "Neptune",
+        "Jupiter"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     },
     {
       "question": "Which is the longest river in the world?",
@@ -39,36 +127,37 @@
       "options": [
         "Amazon",
         "Mississippi",
-        "Yangtze",
-        "Nile"
+        "Nile",
+        "Yangtze"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
+      "question": "Rs. 414 is divided between A and B in the ratio 5:4. What is A's share?",
+      "correct_answer": "Rs. 230",
       "options": [
-        "Some Stationery are not Pens.",
-        "None of the above.",
-        "No Pens are Stationery.",
-        "All Pens are Stationery."
+        "Rs. 271.4",
+        "Rs. 184",
+        "Rs. 188.6",
+        "Rs. 230"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
+      "explanation": "Total parts = 5 + 4 = 9. Value of 1 part = 414/9 = 46. A's share = 5 * 46 = 230.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "A can complete a piece of work in 22 days while B can complete the same work in 32 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "13.04 days",
       "options": [
-        "Jupiter",
-        "Neptune",
-        "Earth",
-        "Saturn"
+        "13.04 days",
+        "17.04 days",
+        "15.04 days",
+        "12.04 days"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
+      "explanation": "Work = 22 * 32 = 704. Rate = 22 + 32 = 54. Time = Work / Rate = 13.04 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -81,95 +170,6 @@
       "correct_answer": "A",
       "explanation": "test",
       "category": "Current Affairs"
-    },
-    {
-      "question": "Find the next number in the series: 7, 17, 27, 37, 47, ?",
-      "correct_answer": "57",
-      "options": [
-        "59",
-        "67",
-        "47",
-        "57"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 47 + (10) = 57.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 57 km/hr. How much distance will it cover in 5 hours?",
-      "correct_answer": "285 km",
-      "options": [
-        "305 km",
-        "342 km",
-        "285 km",
-        "228 km"
-      ],
-      "explanation": "Distance = Speed * Time = 57 * 5 = 285 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If an article is bought for Rs. 900 and sold at a profit of 25%, what is the selling price?",
-      "correct_answer": "Rs. 1125",
-      "options": [
-        "Rs. 1215",
-        "Rs. 1125",
-        "Rs. 1035",
-        "Rs. 1305"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 900 * 1.25 = Rs. 1125.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Sarojini Naidu",
-        "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Rs. 396 is divided between A and B in the ratio 5:6. What is A's share?",
-      "correct_answer": "Rs. 180",
-      "options": [
-        "Rs. 140.4",
-        "Rs. 219.6",
-        "Rs. 180",
-        "Rs. 216"
-      ],
-      "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 396/11 = 36. A's share = 5 * 36 = 180.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 4, 50, 16, 9",
-      "correct_answer": "50",
-      "options": [
-        "4",
-        "50",
-        "16",
-        "9"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
     }
   ]
 }

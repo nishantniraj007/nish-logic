@@ -2,125 +2,22 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 2,
-    "generated_at": "2026-03-09T20:02:07.599Z",
+    "generated_at": "2026-03-10T20:02:10.651Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
-      "correct_answer": "OCP",
+      "question": "What is the average of the following 5 consecutive even numbers: 29, 31, 33, 35, 37?",
+      "correct_answer": "33",
       "options": [
-        "PDQ",
-        "MAN",
-        "K?L",
-        "OCP"
+        "33",
+        "37",
+        "35",
+        "31"
       ],
-      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 25, 36, 101, 49",
-      "correct_answer": "101",
-      "options": [
-        "25",
-        "36",
-        "101",
-        "49"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 30 days while B can complete the same work in 58 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "19.77 days",
-      "options": [
-        "23.77 days",
-        "18.77 days",
-        "19.77 days",
-        "21.77 days"
-      ],
-      "explanation": "Work = 30 * 58 = 1740. Rate = 30 + 58 = 88. Time = Work / Rate = 19.77 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If an article is bought for Rs. 500 and sold at a profit of 50%, what is the selling price?",
-      "correct_answer": "Rs. 750",
-      "options": [
-        "Rs. 850",
-        "Rs. 750",
-        "Rs. 700",
-        "Rs. 800"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 500 * 1.50 = Rs. 750.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 8000 at an interest rate of 7% per annum over 4 years?",
-      "correct_answer": "Rs. 2240",
-      "options": [
-        "Rs. 2240",
-        "Rs. 2640",
-        "Rs. 2340",
-        "Rs. 2190"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (8000 * 7 * 4) / 100 = 2240.",
-      "trick": "Treat percentage as decimal visually: 80 * 7 * 4 = 2240.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 14, 24, 34, 44, 54, ?",
-      "correct_answer": "64",
-      "options": [
-        "66",
-        "54",
-        "74",
-        "64"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 54 + (10) = 64.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Sample History?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Static GK (History)"
-    },
-    {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
-      "options": [
-        "All Apples are Foods.",
-        "None of the above.",
-        "Some Foods are not Apples.",
-        "No Apples are Foods."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 94 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "282 km",
-      "options": [
-        "188 km",
-        "302 km",
-        "282 km",
-        "376 km"
-      ],
-      "explanation": "Distance = Speed * Time = 94 * 3 = 282 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Sum = 165. Average = Sum / 5 = 33.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
@@ -134,6 +31,145 @@
       "correct_answer": "A",
       "explanation": "test",
       "category": "Current Affairs"
+    },
+    {
+      "question": "If CAT is coded as FDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
+      "options": [
+        "TIR",
+        "SHQ",
+        "MBK",
+        "PEN"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 9, 50, 16, 4",
+      "correct_answer": "50",
+      "options": [
+        "9",
+        "50",
+        "16",
+        "4"
+      ],
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "Some Animals are not Dogs.",
+        "No Dogs are Animals.",
+        "All Dogs are Animals.",
+        "None of the above."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 38 days while B can complete the same work in 44 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "20.39 days",
+      "options": [
+        "24.39 days",
+        "22.39 days",
+        "20.39 days",
+        "19.39 days"
+      ],
+      "explanation": "Work = 38 * 44 = 1672. Rate = 38 + 44 = 82. Time = Work / Rate = 20.39 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A train travels at an average speed of 95 km/hr. How much distance will it cover in 6 hours?",
+      "correct_answer": "570 km",
+      "options": [
+        "665 km",
+        "570 km",
+        "590 km",
+        "475 km"
+      ],
+      "explanation": "Distance = Speed * Time = 95 * 6 = 570 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Mississippi",
+        "Yangtze",
+        "Nile"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Rs. 644 is divided between A and B in the ratio 2:5. What is A's share?",
+      "correct_answer": "Rs. 184",
+      "options": [
+        "Rs. 248.4",
+        "Rs. 119.6",
+        "Rs. 184",
+        "Rs. 460"
+      ],
+      "explanation": "Total parts = 2 + 5 = 7. Value of 1 part = 644/7 = 92. A's share = 2 * 92 = 184.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar",
+        "Sardar Patel"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 18, 30, 42, 54, 66, ?",
+      "correct_answer": "78",
+      "options": [
+        "80",
+        "90",
+        "78",
+        "66"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 66 + (12) = 78.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Saturn",
+        "Jupiter",
+        "Neptune",
+        "Earth"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     }
   ]
 }
