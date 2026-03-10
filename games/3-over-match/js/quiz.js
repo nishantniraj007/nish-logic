@@ -65,71 +65,65 @@ async function startGame() {
     isTimerEnabled = timerToggle.checked;
     const diff = document.querySelector('input[name="difficulty"]:checked').value;
 
-    let batchRange = [0, 0];
-    if (diff === 'medium') batchRange = [0, 2];
-    else if (diff === 'easy') batchRange = [3, 4];
-    else if (diff === 'ssc') batchRange = [5, 7];
-    else if (diff === 'upsc') batchRange = [8, 9];
-
-    // Rolling Pool Selection:
-    // We have 5 days of data (0-4). 
-    // Instead of one random slot, we'll try up to 3 random slots from the pool before falling back.
-    const maxAttempts = 3;
-    let success = false;
-    const cacheBuster = Date.now();
-
-    for (let i = 0; i < maxAttempts; i++) {
-        const randomDay = Math.floor(Math.random() * 5);
-        const selectedBatch = batchRange[0] + Math.floor(Math.random() * (batchRange[1] - batchRange[0] + 1));
-        const poolSlot = (randomDay * 10) + selectedBatch;
-
-        try {
-            console.log(`Attempting to load slot_${poolSlot}...`);
-            const res = await fetch(`data/slot_${poolSlot}.json?t=${cacheBuster}`);
-            if (res.ok) {
-                const data = await res.json();
-                quizData = data.questions || data;
-                success = true;
-                break;
-            }
-        } catch (e) {
-            console.warn(`Failed to load slot_${poolSlot}`, e);
-        }
-    }
-
-    if (!success) {
-        // Robust Online Fallback: Try EVERY single valid batch for this difficulty
-        // If the pool is still building up on day 1, this guarantees we find the newly generated AI data
-        for (let batch = batchRange[0]; batch <= batchRange[1]; batch++) {
-            try {
-                console.log(`Attempting fallback to batch_${batch}...`);
-                const res = await fetch(`data/batch_${batch}.json?t=${cacheBuster}`);
-                if (res.ok) {
-                    const data = await res.json();
-                    quizData = data.questions || data;
-                    success = true;
-
-                    // Shuffle the questions slightly so even if we hit the same fallback repeatedly, it feels fresh
-                    quizData.sort(() => Math.random() - 0.5);
-                    break;
-                }
-            } catch (e) {
-                console.warn(`Fallback batch_${batch} failed`, e);
-            }
-        }
-    }
-
-    if (!success) {
-        // Fall to the 72-question static fallback file based on difficulty
-        if (fallbackData && fallbackData[diff]) {
-            quizData = [...fallbackData[diff]];
-            console.warn(`Using local offline fallback for difficulty: ${diff}`);
-        } else {
-            console.error("Fatal: failed to load JSON and offline defaults are missing.");
-        }
-    }
-
+    loadingState.style.display = 'flex';
     introScreen.style.display = 'none';
+
+    try {
+        console.log(`Procuring ${diff} pool from Firestore...`);
+        const url = `https://firestore.googleapis.com/v1/projects/nish-logic/databases/(default)/documents:runQuery`;
+        const query = {
+            structuredQuery: {
+                from: [{ collectionId: 'vault' }],
+                where: {
+                    fieldFilter: {
+                        field: { fieldPath: 'vault_difficulty' },
+                        op: 'EQUAL',
+                        value: { stringValue: diff }
+                    }
+                }
+            }
+        };
+
+        const res = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify(query)
+        });
+
+        if (!res.ok) throw new Error("Database offline");
+
+        const results = await res.json();
+        quizData = results
+            .filter(r => r.document)
+            .map(r => {
+                const f = r.document.fields;
+                return {
+                    id: f.id ? f.id.stringValue : 'N/A',
+                    category: f.category.stringValue,
+                    topic: f.topic.stringValue,
+                    question: f.question.stringValue,
+                    options: f.options.arrayValue.values.map(v => v.stringValue),
+                    correct_answer: f.correct_answer.stringValue,
+                    explanation: f.explanation.stringValue,
+                    trick: f.trick ? f.trick.stringValue : null
+                };
+            });
+
+        if (quizData.length === 0) throw new Error(`No live data for ${diff}`);
+
+        // Scramble and limit to 18 (the game loop expects 18)
+        quizData = quizData.sort(() => 0.5 - Math.random()).slice(0, 18);
+        console.log(`Successfully loaded ${quizData.length} live questions.`);
+
+    } catch (e) {
+        console.warn("Firestore fetch failed, using local fallback.", e);
+        if (typeof fallbackData !== 'undefined' && fallbackData[diff]) {
+            quizData = [...fallbackData[diff]].sort(() => 0.5 - Math.random());
+        } else {
+            console.error("Fatal: No live data and fallback data is missing.");
+        }
+    }
+
+    loadingState.style.display = 'none';
     gameScreen.style.display = 'flex';
     startTime = Date.now();
 
