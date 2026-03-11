@@ -4,77 +4,25 @@
     "day_index": 1,
     "slot_index": 13,
     "difficulty": "Easy",
-    "generated_at": "2026-03-06T08:50:06.078Z"
+    "generated_at": "2026-03-11T20:59:00.548Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much would 12 apples cost?",
+      "question": "What is the sum of the first 5 even numbers?",
       "options": [
-        "$20",
-        "$24",
-        "$30",
-        "$36"
-      ],
-      "correct_answer": "$24",
-      "explanation": "The cost of one apple is $10 / 5 = $2. Therefore, 12 apples would cost 12 * $2 = $24.",
-      "trick": "Find the cost of one item first, then multiply by the desired quantity."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
-      "options": [
+        "20",
         "25",
-        "50",
-        "75",
-        "100"
+        "30",
+        "35"
       ],
-      "correct_answer": "50",
-      "explanation": "To find 25% of 200, you can multiply 200 by 0.25 (which is 25/100). 200 * 0.25 = 50.",
-      "trick": "25% is the same as 1/4. So, divide the number by 4."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A train travels at a speed of 60 km/h. How long will it take to travel 180 km?",
-      "options": [
-        "1 hour",
-        "2 hours",
-        "3 hours",
-        "4 hours"
-      ],
-      "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. So, Time = 180 km / 60 km/h = 3 hours.",
-      "trick": "Think of it as: how many times does 60 fit into 180? 60+60+60 = 180, which is 3 times."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
-      "options": [
-        "9",
-        "10",
-        "11",
-        "12"
-      ],
-      "correct_answer": "10",
-      "explanation": "This is a sequence of even numbers. Each number is 2 more than the previous one. So, 8 + 2 = 10.",
-      "trick": "Look for a constant difference between consecutive numbers."
+      "correct_answer": "30",
+      "explanation": "The first 5 even numbers are 2, 4, 6, 8, and 10. Their sum is 2 + 4 + 6 + 8 + 10 = 30.",
+      "trick": "The sum of the first 'n' even numbers is given by the formula n * (n + 1). For n=5, 5 * (5 + 1) = 5 * 6 = 30."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all cats are animals, and Mittens is a cat, then Mittens is an:",
-      "options": [
-        "Mammal",
-        "Animal",
-        "Pet",
-        "Feline"
-      ],
-      "correct_answer": "Animal",
-      "explanation": "The statement 'all cats are animals' is a premise. Since Mittens is a cat, it logically follows that Mittens must also be an animal.",
-      "trick": "Identify the broadest category that the specific item belongs to based on the given rules."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "question": "Which word does NOT belong with the others?",
       "options": [
         "Apple",
         "Banana",
@@ -83,163 +31,215 @@
       ],
       "correct_answer": "Carrot",
       "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Look for a common characteristic among most items and find the one that doesn't fit."
+      "trick": "Identify the common category for most items. The outlier will be the one that doesn't fit."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a train travels at a speed of 60 kilometers per hour, how far will it travel in 3 hours?",
+      "options": [
+        "120 km",
+        "180 km",
+        "200 km",
+        "240 km"
+      ],
+      "correct_answer": "180 km",
+      "explanation": "Distance = Speed × Time. So, Distance = 60 km/hour × 3 hours = 180 km.",
+      "trick": "Simply multiply the speed by the number of hours. No complex steps needed."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If 5 apples cost $10, how much would 12 apples cost?",
+      "options": [
+        "$20",
+        "$24",
+        "$28",
+        "$30"
+      ],
+      "correct_answer": "$24",
+      "explanation": "First, find the cost of one apple: $10 / 5 apples = $2 per apple. Then, multiply the cost per apple by the desired number of apples: $2/apple * 12 apples = $24.",
+      "trick": "Set up a proportion: (5 apples / $10) = (12 apples / x). Cross-multiply: 5x = 120. Solve for x: x = 120 / 5 = 24."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A rectangle has a length of 10 cm and a width of 5 cm. What is its area?",
+      "options": [
+        "15 sq cm",
+        "25 sq cm",
+        "50 sq cm",
+        "100 sq cm"
+      ],
+      "correct_answer": "50 sq cm",
+      "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = Length × Width. So, Area = 10 cm × 5 cm = 50 sq cm.",
+      "trick": "Visualize the rectangle. It's like counting squares. 10 rows of 5 squares each make 50 squares."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'A' is the brother of 'B', and 'C' is the father of 'A', then 'C' is the ______ of 'B'.",
+      "question": "If you are in a race and you overtake the person in second place, what place are you in now?",
+      "options": [
+        "First place",
+        "Second place",
+        "Third place",
+        "Last place"
+      ],
+      "correct_answer": "Second place",
+      "explanation": "If you overtake the person in second place, you take their position. The person you overtook is now in third place, and the person in first place is still ahead of you.",
+      "trick": "Think about the positions. You were behind the second-place person. When you pass them, you become second."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'A' is the brother of 'B', and 'B' is the sister of 'C', and 'C' is the father of 'D', then how is 'A' related to 'D'?",
       "options": [
         "Uncle",
-        "Father",
+        "Brother",
         "Grandfather",
-        "Brother"
+        "Father"
       ],
-      "correct_answer": "Father",
-      "explanation": "Since C is the father of A, and A is the brother of B, C is also the father of B.",
-      "trick": "Trace the lineage directly."
+      "correct_answer": "Uncle",
+      "explanation": "A is the brother of B. B is the sister of C. This means A, B, and C are siblings. C is the father of D. Therefore, A is the brother of D's father, making A the uncle of D.",
+      "trick": "Visualize the family tree. A -> B (sibling), B -> C (sibling), C -> D (parent-child). A is two generations up from D and in the sibling line of the parent."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "question": "A farmer has 17 sheep. All but 9 die. How many sheep are left?",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "8",
+        "9",
+        "17",
+        "0"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits, while Carrot is a vegetable.",
-      "trick": "Identify the outlier based on a common characteristic."
+      "correct_answer": "9",
+      "explanation": "The phrase 'all but 9' means that only 9 sheep did not die. Therefore, 9 sheep are left.",
+      "trick": "Focus on the phrase 'all but'. It directly tells you the number that remains."
     },
     {
       "category": "Static GK",
-      "question": "What is the capital of India?",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
       "options": [
-        "Mumbai",
-        "Kolkata",
-        "New Delhi",
-        "Chennai"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "New Delhi",
-      "explanation": "New Delhi is the capital city of India.",
-      "trick": "Direct recall of common knowledge."
-    },
-    {
-      "category": "Static GK",
-      "question": "Which planet is known as the Red Planet?",
-      "options": [
-        "Earth",
-        "Mars",
-        "Jupiter",
-        "Venus"
-      ],
-      "correct_answer": "Mars",
-      "explanation": "Mars is often called the Red Planet due to its reddish appearance caused by iron oxide on its surface.",
-      "trick": "Associate the color with the planet's name."
-    },
-    {
-      "category": "Static GK",
-      "question": "Who wrote the famous play 'Romeo and Juliet'?",
-      "options": [
-        "Charles Dickens",
-        "William Shakespeare",
-        "Jane Austen",
-        "Mark Twain"
-      ],
-      "correct_answer": "William Shakespeare",
-      "explanation": "William Shakespeare is the renowned English playwright who penned 'Romeo and Juliet'.",
-      "trick": "Recall famous authors and their works."
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the largest ocean on Earth?",
-      "options": [
-        "Atlantic Ocean",
-        "Indian Ocean",
-        "Arctic Ocean",
-        "Pacific Ocean"
-      ],
-      "correct_answer": "Pacific Ocean",
-      "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth, covering about one-third of the surface of the planet.",
-      "trick": "Remember the 'P' for 'Pacific' and 'Planet' (largest)."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which country recently hosted the G7 Summit in June 2024?",
-      "options": [
-        "France",
-        "Italy",
-        "Germany",
-        "Japan"
-      ],
-      "correct_answer": "Italy",
-      "explanation": "The G7 Summit in 2024 was held in Apulia, Italy.",
-      "trick": "G7 summits usually rotate among member countries. Remembering the host country for recent summits can help."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The Indian Premier League (IPL) 2024 was won by which team?",
-      "options": [
-        "Chennai Super Kings",
-        "Kolkata Knight Riders",
-        "Rajasthan Royals",
-        "Sunrisers Hyderabad"
-      ],
-      "correct_answer": "Kolkata Knight Riders",
-      "explanation": "Kolkata Knight Riders defeated Sunrisers Hyderabad in the IPL 2024 final.",
-      "trick": "Follow major sporting events and their winners for quick recall."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who was appointed as the new Prime Minister of India in June 2024?",
-      "options": [
-        "Narendra Modi",
-        "Rahul Gandhi",
-        "Amit Shah",
-        "Sonia Gandhi"
-      ],
-      "correct_answer": "Narendra Modi",
-      "explanation": "Narendra Modi was sworn in as Prime Minister for his third consecutive term.",
-      "trick": "Keep track of major political appointments in your country."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which major space agency successfully launched the first crewed mission to the Moon in decades in late 2024?",
-      "options": [
-        "ESA (European Space Agency)",
-        "NASA (National Aeronautics and Space Administration)",
-        "ISRO (Indian Space Research Organisation)",
-        "Roscosmos (Russian Space Agency)"
-      ],
-      "correct_answer": "NASA (National Aeronautics and Space Administration)",
-      "explanation": "Artemis II, NASA's first crewed mission to the Moon since Apollo, is scheduled for late 2024.",
-      "trick": "Major space missions are often announced well in advance, so looking for upcoming events is key."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The COP29 climate summit is scheduled to be held in which country in November 2024?",
-      "options": [
-        "Brazil",
-        "Azerbaijan",
-        "United Arab Emirates",
-        "Egypt"
-      ],
-      "correct_answer": "Azerbaijan",
-      "explanation": "Baku, Azerbaijan will host the COP29 climate summit.",
-      "trick": "Note the host countries for significant international conferences like COP."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which popular social media platform underwent a significant rebranding to 'X' in mid-2024?",
-      "options": [
-        "Facebook",
-        "Instagram",
-        "Twitter",
-        "TikTok"
-      ],
-      "correct_answer": "Twitter",
-      "explanation": "Elon Musk rebranded Twitter to X in July 2023, and the transition continued into 2024.",
-      "trick": "Major company rebrands are usually widely reported and easy to remember."
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
