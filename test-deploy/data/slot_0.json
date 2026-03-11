@@ -2,74 +2,22 @@
   "metadata": {
     "difficulty": "easy",
     "slot": 0,
-    "generated_at": "2026-03-10T20:02:10.651Z",
+    "generated_at": "2026-03-11T20:02:54.721Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 43, 45, 47, 49, 51?",
-      "correct_answer": "47",
-      "options": [
-        "51",
-        "49",
-        "47",
-        "45"
-      ],
-      "explanation": "Sum = 235. Average = Sum / 5 = 47.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
-      "options": [
-        "None of the above.",
-        "All Pens are Stationery.",
-        "Some Stationery are not Pens.",
-        "No Pens are Stationery."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 16, 21, 26, 31, 36, ?",
-      "correct_answer": "41",
-      "options": [
-        "43",
-        "46",
-        "36",
-        "41"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 5. So, 36 + (5) = 41.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
       "question": "Who wrote the national anthem of India?",
       "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Mahatma Gandhi",
+        "Sarojini Naidu",
         "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore",
-        "Sarojini Naidu"
+        "Mahatma Gandhi",
+        "Rabindranath Tagore"
       ],
       "explanation": "Jana Gana Mana.",
       "category": "Static GK"
-    },
-    {
-      "question": "A can complete a piece of work in 18 days while B can complete the same work in 24 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "10.29 days",
-      "options": [
-        "9.29 days",
-        "12.29 days",
-        "10.29 days",
-        "14.29 days"
-      ],
-      "explanation": "Work = 18 * 24 = 432. Rate = 18 + 24 = 42. Time = Work / Rate = 10.29 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -84,92 +32,144 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "If an article is bought for Rs. 340 and sold at a profit of 25%, what is the selling price?",
+      "correct_answer": "Rs. 425",
       "options": [
-        "Nile",
-        "Yangtze",
-        "Mississippi",
-        "Amazon"
+        "Rs. 425",
+        "Rs. 459",
+        "Rs. 391",
+        "Rs. 493"
       ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
+      "explanation": "SP = CP * (1 + Profit/100) = 340 * 1.25 = Rs. 425.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Find the odd one out among the following numbers: 82, 16, 25, 36",
+      "correct_answer": "82",
       "options": [
-        "Neptune",
-        "Jupiter",
-        "Earth",
-        "Saturn"
+        "82",
+        "16",
+        "25",
+        "36"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
+      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Rs. 429 is divided between A and B in the ratio 4:7. What is A's share?",
+      "correct_answer": "Rs. 156",
+      "options": [
+        "Rs. 198.9",
+        "Rs. 156",
+        "Rs. 113.1",
+        "Rs. 273"
+      ],
+      "explanation": "Total parts = 4 + 7 = 11. Value of 1 part = 429/11 = 39. A's share = 4 * 39 = 156.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 15, 21, 27, 33, 39, ?",
+      "correct_answer": "45",
+      "options": [
+        "51",
+        "47",
+        "39",
+        "45"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 6. So, 39 + (6) = 45.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
     },
     {
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
         "Sardar Patel",
-        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad",
         "B.R. Ambedkar",
-        "Dr. Rajendra Prasad"
+        "Jawaharlal Nehru"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "Rs. 588 is divided between A and B in the ratio 5:7. What is A's share?",
-      "correct_answer": "Rs. 245",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "Rs. 343",
-        "Rs. 245",
-        "Rs. 303.8",
-        "Rs. 186.2"
+        "Jupiter",
+        "Neptune",
+        "Saturn",
+        "Earth"
       ],
-      "explanation": "Total parts = 5 + 7 = 12. Value of 1 part = 588/12 = 49. A's share = 5 * 49 = 245.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
+      "options": [
+        "PDQ",
+        "MAN",
+        "K?L",
+        "OCP"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Mississippi",
+        "Nile",
+        "Yangtze"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 4100 at an interest rate of 8% per annum over 5 years?",
+      "correct_answer": "Rs. 1640",
+      "options": [
+        "Rs. 1590",
+        "Rs. 1640",
+        "Rs. 1740",
+        "Rs. 1845"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (4100 * 8 * 5) / 100 = 1640.",
+      "trick": "Treat percentage as decimal visually: 41 * 8 * 5 = 1640.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "If an article is bought for Rs. 140 and sold at a profit of 15%, what is the selling price?",
-      "correct_answer": "Rs. 161",
+      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
+      "correct_answer": "48",
       "options": [
-        "Rs. 175",
-        "Rs. 147",
-        "Rs. 161",
-        "Rs. 189"
+        "45",
+        "50",
+        "96",
+        "48"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 140 * 1.15 = Rs. 161.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
-      "correct_answer": "162",
-      "options": [
-        "162",
-        "160",
-        "486",
-        "165"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
       "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "If DOG is coded as EPH, how will MAN be coded in that same language?",
-      "correct_answer": "NBO",
+      "question": "A can complete a piece of work in 17 days while B can complete the same work in 21 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "9.39 days",
       "options": [
-        "NBO",
-        "L@M",
-        "MAN",
-        "OCP"
+        "11.39 days",
+        "8.39 days",
+        "9.39 days",
+        "13.39 days"
       ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
+      "explanation": "Work = 17 * 21 = 357. Rate = 17 + 21 = 38. Time = Work / Rate = 9.39 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
     }
   ]
 }

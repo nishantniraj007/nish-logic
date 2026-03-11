@@ -2,49 +2,36 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 6,
-    "generated_at": "2026-03-10T20:02:10.651Z",
+    "generated_at": "2026-03-11T20:02:54.721Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "If CAT is coded as DBU, how will CUP be coded in that same language?",
-      "correct_answer": "DVQ",
+      "question": "What is the average of the following 5 consecutive even numbers: 27, 29, 31, 33, 35?",
+      "correct_answer": "31",
       "options": [
-        "DVQ",
-        "BTO",
-        "EWR",
-        "CUP"
+        "31",
+        "29",
+        "35",
+        "33"
       ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "Sum = 155. Average = Sum / 5 = 31.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
+      "options": [
+        "None of the above.",
+        "Some Foods are not Apples.",
+        "No Apples are Foods.",
+        "All Apples are Foods."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 114 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "684 km",
-      "options": [
-        "570 km",
-        "684 km",
-        "704 km",
-        "798 km"
-      ],
-      "explanation": "Distance = Speed * Time = 114 * 6 = 684 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If an article is bought for Rs. 1680 and sold at a profit of 15%, what is the selling price?",
-      "correct_answer": "Rs. 1931.9999999999998",
-      "options": [
-        "Rs. 1931.9999999999998",
-        "Rs. 2268",
-        "Rs. 1763.9999999999998",
-        "Rs. 2100"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 1680 * 1.15 = Rs. 1931.9999999999998.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -59,117 +46,94 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
+      "question": "A train travels at an average speed of 74 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "222 km",
       "options": [
-        "No Pens are Stationery.",
-        "Some Stationery are not Pens.",
-        "None of the above.",
-        "All Pens are Stationery."
+        "148 km",
+        "296 km",
+        "242 km",
+        "222 km"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "Distance = Speed * Time = 74 * 3 = 222 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
+      "options": [
+        "K?L",
+        "OCP",
+        "PDQ",
+        "MAN"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "Find the odd one out among the following numbers: 36, 122, 64, 49",
+      "correct_answer": "122",
       "options": [
-        "Mississippi",
-        "Amazon",
-        "Nile",
-        "Yangtze"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 13, 37, 61, 85, 109, ?",
-      "correct_answer": "133",
-      "options": [
-        "135",
-        "157",
-        "109",
-        "133"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 24. So, 109 + (24) = 133.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
-      "correct_answer": "32",
-      "options": [
-        "32",
-        "30",
+        "36",
+        "122",
         "64",
-        "34"
+        "49"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Rs. 864 is divided between A and B in the ratio 4:5. What is A's share?",
+      "correct_answer": "Rs. 384",
       "options": [
-        "Earth",
-        "Neptune",
-        "Jupiter",
-        "Saturn"
+        "Rs. 384",
+        "Rs. 480",
+        "Rs. 297.6",
+        "Rs. 470.4"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Rs. 1760 is divided between A and B in the ratio 3:7. What is A's share?",
-      "correct_answer": "Rs. 528",
-      "options": [
-        "Rs. 528",
-        "Rs. 704",
-        "Rs. 1232",
-        "Rs. 352"
-      ],
-      "explanation": "Total parts = 3 + 7 = 10. Value of 1 part = 1760/10 = 176. A's share = 3 * 176 = 528.",
+      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 864/9 = 96. A's share = 4 * 96 = 384.",
       "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "A can complete a piece of work in 52 days while B can complete the same work in 104 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "34.67 days",
       "options": [
-        "Sarojini Naidu",
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore",
-        "Mahatma Gandhi"
+        "34.67 days",
+        "36.67 days",
+        "38.67 days",
+        "33.67 days"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "A can complete a piece of work in 52 days while B can complete the same work in 88 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "32.69 days",
-      "options": [
-        "32.69 days",
-        "34.69 days",
-        "36.69 days",
-        "31.69 days"
-      ],
-      "explanation": "Work = 52 * 88 = 4576. Rate = 52 + 88 = 140. Time = Work / Rate = 32.69 days.",
+      "explanation": "Work = 52 * 104 = 5408. Rate = 52 + 104 = 156. Time = Work / Rate = 34.67 days.",
       "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
+      "question": "Find the next number in the series: 16, 46, 76, 106, 136, ?",
+      "correct_answer": "166",
       "options": [
-        "B.R. Ambedkar",
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru"
+        "196",
+        "166",
+        "168",
+        "136"
       ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 30. So, 136 + (30) = 166.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Sample Geography?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_answer": "A",
+      "explanation": "test",
+      "category": "Static GK (Geography)"
     }
   ]
 }

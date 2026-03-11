@@ -2,111 +2,87 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 3,
-    "generated_at": "2026-03-10T20:02:10.651Z",
+    "generated_at": "2026-03-11T20:02:54.721Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Find the odd one out among the following numbers: 122, 36, 64, 49",
-      "correct_answer": "122",
+      "question": "Rs. 648 is divided between A and B in the ratio 5:4. What is A's share?",
+      "correct_answer": "Rs. 360",
       "options": [
-        "122",
-        "36",
-        "64",
-        "49"
+        "Rs. 288",
+        "Rs. 424.8",
+        "Rs. 295.2",
+        "Rs. 360"
       ],
-      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 30, 32, 34, 36, 38?",
-      "correct_answer": "34",
-      "options": [
-        "38",
-        "32",
-        "36",
-        "34"
-      ],
-      "explanation": "Sum = 170. Average = Sum / 5 = 34.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "Total parts = 5 + 4 = 9. Value of 1 part = 648/9 = 72. A's share = 5 * 72 = 360.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Find the next number in the series: 5, 15, 45, 135, ?",
+      "correct_answer": "405",
       "options": [
-        "Jupiter",
-        "Saturn",
-        "Earth",
-        "Neptune"
+        "405",
+        "1215",
+        "408",
+        "400"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Amazon",
-        "Nile",
-        "Mississippi",
-        "Yangtze"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "If MAT is coded as PDW, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
-      "options": [
-        "PEN",
-        "SHQ",
-        "TIR",
-        "MBK"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 40 days while B can complete the same work in 56 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "23.33 days",
-      "options": [
-        "22.33 days",
-        "23.33 days",
-        "27.33 days",
-        "25.33 days"
-      ],
-      "explanation": "Work = 40 * 56 = 2240. Rate = 40 + 56 = 96. Time = Work / Rate = 23.33 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
-      "correct_answer": "243",
-      "options": [
-        "243",
-        "729",
-        "240",
-        "246"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
       "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "Sample Geography?",
       "options": [
-        "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu",
-        "Rabindranath Tagore"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
+      "correct_answer": "A",
+      "explanation": "test",
+      "category": "Static GK (Geography)"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "Some Animals are not Dogs.",
+        "All Dogs are Animals.",
+        "None of the above.",
+        "No Dogs are Animals."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 8600 at an interest rate of 12% per annum over 3 years?",
+      "correct_answer": "Rs. 3096",
+      "options": [
+        "Rs. 3046",
+        "Rs. 3196",
+        "Rs. 3526",
+        "Rs. 3096"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (8600 * 12 * 3) / 100 = 3096.",
+      "trick": "Treat percentage as decimal visually: 86 * 12 * 3 = 3096.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A can complete a piece of work in 38 days while B can complete the same work in 34 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "17.94 days",
+      "options": [
+        "17.94 days",
+        "16.94 days",
+        "19.94 days",
+        "21.94 days"
+      ],
+      "explanation": "Work = 38 * 34 = 1292. Rate = 38 + 34 = 72. Time = Work / Rate = 17.94 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -121,55 +97,43 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Find the next number in the series: 3, 15, 27, 39, 51, ?",
-      "correct_answer": "63",
+      "question": "Find the odd one out among the following numbers: 9, 25, 65, 16",
+      "correct_answer": "65",
       "options": [
+        "9",
+        "25",
         "65",
-        "75",
-        "51",
-        "63"
+        "16"
       ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 51 + (12) = 63.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "If an article is bought for Rs. 940 and sold at a profit of 15%, what is the selling price?",
-      "correct_answer": "Rs. 1081",
+      "question": "If an article is bought for Rs. 340 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 442",
       "options": [
-        "Rs. 1269",
-        "Rs. 987",
-        "Rs. 1081",
-        "Rs. 1175"
+        "Rs. 510",
+        "Rs. 408",
+        "Rs. 476",
+        "Rs. 442"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 940 * 1.15 = Rs. 1081.",
+      "explanation": "SP = CP * (1 + Profit/100) = 340 * 1.30 = Rs. 442.",
       "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "A train travels at an average speed of 101 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "606 km",
+      "question": "If MAT is coded as PDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
       "options": [
-        "707 km",
-        "505 km",
-        "626 km",
-        "606 km"
+        "MBK",
+        "PEN",
+        "SHQ",
+        "TIR"
       ],
-      "explanation": "Distance = Speed * Time = 101 * 6 = 606 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Dr. Rajendra Prasad",
-        "Sardar Patel",
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
     }
   ]
 }

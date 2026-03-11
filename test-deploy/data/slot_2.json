@@ -2,23 +2,124 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 2,
-    "generated_at": "2026-03-10T20:02:10.651Z",
+    "generated_at": "2026-03-11T20:02:54.721Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 29, 31, 33, 35, 37?",
-      "correct_answer": "33",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "33",
-        "37",
-        "35",
+        "Earth",
+        "Neptune",
+        "Jupiter",
+        "Saturn"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A can complete a piece of work in 40 days while B can complete the same work in 34 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "18.38 days",
+      "options": [
+        "20.38 days",
+        "17.38 days",
+        "18.38 days",
+        "22.38 days"
+      ],
+      "explanation": "Work = 40 * 34 = 1360. Rate = 40 + 34 = 74. Time = Work / Rate = 18.38 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 16, 50, 4, 9",
+      "correct_answer": "50",
+      "options": [
+        "16",
+        "50",
+        "4",
+        "9"
+      ],
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 23, 25, 27, 29, 31?",
+      "correct_answer": "27",
+      "options": [
+        "29",
+        "27",
+        "25",
         "31"
       ],
-      "explanation": "Sum = 165. Average = Sum / 5 = 33.",
+      "explanation": "Sum = 135. Average = Sum / 5 = 27.",
       "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "B.R. Ambedkar",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A train travels at an average speed of 59 km/hr. How much distance will it cover in 5 hours?",
+      "correct_answer": "295 km",
+      "options": [
+        "295 km",
+        "315 km",
+        "236 km",
+        "354 km"
+      ],
+      "explanation": "Distance = Speed * Time = 59 * 5 = 295 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Rs. 320 is divided between A and B in the ratio 5:3. What is A's share?",
+      "correct_answer": "Rs. 200",
+      "options": [
+        "Rs. 168",
+        "Rs. 120",
+        "Rs. 232",
+        "Rs. 200"
+      ],
+      "explanation": "Total parts = 5 + 3 = 8. Value of 1 part = 320/8 = 40. A's share = 5 * 40 = 200.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If MAT is coded as OCV, how will BOX be coded in that same language?",
+      "correct_answer": "DQZ",
+      "options": [
+        "DQZ",
+        "BOX",
+        "@MV",
+        "ER["
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi",
+        "Sarojini Naidu",
+        "Rabindranath Tagore"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
       "question": "Sample CA?",
@@ -33,143 +134,42 @@
       "category": "Current Affairs"
     },
     {
-      "question": "If CAT is coded as FDW, how will PEN be coded in that same language?",
-      "correct_answer": "SHQ",
+      "question": "Find the next number in the series: 5, 15, 45, 135, ?",
+      "correct_answer": "405",
       "options": [
-        "TIR",
-        "SHQ",
-        "MBK",
-        "PEN"
+        "1215",
+        "408",
+        "400",
+        "405"
       ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu",
-        "Mahatma Gandhi",
-        "Rabindranath Tagore"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 9, 50, 16, 4",
-      "correct_answer": "50",
-      "options": [
-        "9",
-        "50",
-        "16",
-        "4"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
-      "options": [
-        "Some Animals are not Dogs.",
-        "No Dogs are Animals.",
-        "All Dogs are Animals.",
-        "None of the above."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 38 days while B can complete the same work in 44 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "20.39 days",
-      "options": [
-        "24.39 days",
-        "22.39 days",
-        "20.39 days",
-        "19.39 days"
-      ],
-      "explanation": "Work = 38 * 44 = 1672. Rate = 38 + 44 = 82. Time = Work / Rate = 20.39 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "A train travels at an average speed of 95 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "570 km",
-      "options": [
-        "665 km",
-        "570 km",
-        "590 km",
-        "475 km"
-      ],
-      "explanation": "Distance = Speed * Time = 95 * 6 = 570 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Amazon",
+        "Nile",
         "Mississippi",
-        "Yangtze",
-        "Nile"
+        "Amazon",
+        "Yangtze"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "Rs. 644 is divided between A and B in the ratio 2:5. What is A's share?",
-      "correct_answer": "Rs. 184",
-      "options": [
-        "Rs. 248.4",
-        "Rs. 119.6",
-        "Rs. 184",
-        "Rs. 460"
-      ],
-      "explanation": "Total parts = 2 + 5 = 7. Value of 1 part = 644/7 = 92. A's share = 2 * 92 = 184.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad",
-        "B.R. Ambedkar",
-        "Sardar Patel"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 18, 30, 42, 54, 66, ?",
+      "question": "Find the next number in the series: 8, 22, 36, 50, 64, ?",
       "correct_answer": "78",
       "options": [
-        "80",
-        "90",
+        "64",
         "78",
-        "66"
+        "92",
+        "80"
       ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 66 + (12) = 78.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 14. So, 64 + (14) = 78.",
       "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Saturn",
-        "Jupiter",
-        "Neptune",
-        "Earth"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
     }
   ]
 }

@@ -9290,5 +9290,1537 @@
     "explanation": "The series follows an Arithmetic Progression with a constant difference of -30. So, -117 + (-30) = -147.",
     "trick": "Always check the difference between the first and second terms and verify across the series.",
     "category": "Logical Reasoning"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "correct_answer": "Rabindranath Tagore",
+    "options": [
+      "Sarojini Naidu",
+      "Bankim Chandra Chatterjee",
+      "Mahatma Gandhi",
+      "Rabindranath Tagore"
+    ],
+    "explanation": "Jana Gana Mana.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "If an article is bought for Rs. 340 and sold at a profit of 25%, what is the selling price?",
+    "correct_answer": "Rs. 425",
+    "options": [
+      "Rs. 425",
+      "Rs. 459",
+      "Rs. 391",
+      "Rs. 493"
+    ],
+    "explanation": "SP = CP * (1 + Profit/100) = 340 * 1.25 = Rs. 425.",
+    "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the odd one out among the following numbers: 82, 16, 25, 36",
+    "correct_answer": "82",
+    "options": [
+      "82",
+      "16",
+      "25",
+      "36"
+    ],
+    "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+    "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Rs. 429 is divided between A and B in the ratio 4:7. What is A's share?",
+    "correct_answer": "Rs. 156",
+    "options": [
+      "Rs. 198.9",
+      "Rs. 156",
+      "Rs. 113.1",
+      "Rs. 273"
+    ],
+    "explanation": "Total parts = 4 + 7 = 11. Value of 1 part = 429/11 = 39. A's share = 4 * 39 = 156.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the next number in the series: 15, 21, 27, 33, 39, ?",
+    "correct_answer": "45",
+    "options": [
+      "51",
+      "47",
+      "39",
+      "45"
+    ],
+    "explanation": "The series follows an Arithmetic Progression with a constant difference of 6. So, 39 + (6) = 45.",
+    "trick": "Always check the difference between the first and second terms and verify across the series.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "correct_answer": "Dr. Rajendra Prasad",
+    "options": [
+      "Sardar Patel",
+      "Dr. Rajendra Prasad",
+      "B.R. Ambedkar",
+      "Jawaharlal Nehru"
+    ],
+    "explanation": "He served from 1950 to 1962.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "correct_answer": "Jupiter",
+    "options": [
+      "Jupiter",
+      "Neptune",
+      "Saturn",
+      "Earth"
+    ],
+    "explanation": "Jupiter is a gas giant.",
+    "category": "Static GK"
+  },
+  {
+    "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
+    "correct_answer": "OCP",
+    "options": [
+      "PDQ",
+      "MAN",
+      "K?L",
+      "OCP"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "correct_answer": "Nile",
+    "options": [
+      "Amazon",
+      "Mississippi",
+      "Nile",
+      "Yangtze"
+    ],
+    "explanation": "Length approx 6,650 km.",
+    "category": "Static GK"
+  },
+  {
+    "question": "What will be the Simple Interest on a principal amount of Rs. 4100 at an interest rate of 8% per annum over 5 years?",
+    "correct_answer": "Rs. 1640",
+    "options": [
+      "Rs. 1590",
+      "Rs. 1640",
+      "Rs. 1740",
+      "Rs. 1845"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (4100 * 8 * 5) / 100 = 1640.",
+    "trick": "Treat percentage as decimal visually: 41 * 8 * 5 = 1640.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the next number in the series: 3, 6, 12, 24, ?",
+    "correct_answer": "48",
+    "options": [
+      "45",
+      "50",
+      "96",
+      "48"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "A can complete a piece of work in 17 days while B can complete the same work in 21 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "9.39 days",
+    "options": [
+      "11.39 days",
+      "8.39 days",
+      "9.39 days",
+      "13.39 days"
+    ],
+    "explanation": "Work = 17 * 21 = 357. Rate = 17 + 21 = 38. Time = Work / Rate = 9.39 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "What is the average of the following 5 consecutive even numbers: 26, 28, 30, 32, 34?",
+    "correct_answer": "30",
+    "options": [
+      "34",
+      "32",
+      "28",
+      "30"
+    ],
+    "explanation": "Sum = 150. Average = Sum / 5 = 30.",
+    "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the next number in the series: 2, 4, 8, 16, ?",
+    "correct_answer": "32",
+    "options": [
+      "34",
+      "32",
+      "64",
+      "30"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "What will be the Simple Interest on a principal amount of Rs. 3900 at an interest rate of 10% per annum over 4 years?",
+    "correct_answer": "Rs. 1560",
+    "options": [
+      "Rs. 1560",
+      "Rs. 1510",
+      "Rs. 1660",
+      "Rs. 1755"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (3900 * 10 * 4) / 100 = 1560.",
+    "trick": "Treat percentage as decimal visually: 39 * 10 * 4 = 1560.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "correct_answer": "Nile",
+    "options": [
+      "Nile",
+      "Mississippi",
+      "Amazon",
+      "Yangtze"
+    ],
+    "explanation": "Length approx 6,650 km.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Find the next number in the series: 9, 19, 29, 39, 49, ?",
+    "correct_answer": "59",
+    "options": [
+      "49",
+      "61",
+      "59",
+      "69"
+    ],
+    "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 49 + (10) = 59.",
+    "trick": "Always check the difference between the first and second terms and verify across the series.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "correct_answer": "Jupiter",
+    "options": [
+      "Jupiter",
+      "Earth",
+      "Neptune",
+      "Saturn"
+    ],
+    "explanation": "Jupiter is a gas giant.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "correct_answer": "Dr. Rajendra Prasad",
+    "options": [
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "Dr. Rajendra Prasad",
+      "B.R. Ambedkar"
+    ],
+    "explanation": "He served from 1950 to 1962.",
+    "category": "Static GK"
+  },
+  {
+    "question": "A train travels at an average speed of 48 km/hr. How much distance will it cover in 5 hours?",
+    "correct_answer": "240 km",
+    "options": [
+      "260 km",
+      "192 km",
+      "288 km",
+      "240 km"
+    ],
+    "explanation": "Distance = Speed * Time = 48 * 5 = 240 km.",
+    "trick": "Basic multiplication rule: D = S * T.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If BAT is coded as EDW, how will BOX be coded in that same language?",
+    "correct_answer": "ER[",
+    "options": [
+      "ER[",
+      "FS\\",
+      "?LU",
+      "BOX"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Dogs are Animals.",
+    "options": [
+      "No Dogs are Animals.",
+      "Some Animals are not Dogs.",
+      "All Dogs are Animals.",
+      "None of the above."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "If an article is bought for Rs. 340 and sold at a profit of 15%, what is the selling price?",
+    "correct_answer": "Rs. 390.99999999999994",
+    "options": [
+      "Rs. 390.99999999999994",
+      "Rs. 424.99999999999994",
+      "Rs. 458.99999999999994",
+      "Rs. 356.99999999999994"
+    ],
+    "explanation": "SP = CP * (1 + Profit/100) = 340 * 1.15 = Rs. 390.99999999999994.",
+    "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "correct_answer": "Rabindranath Tagore",
+    "options": [
+      "Sarojini Naidu",
+      "Rabindranath Tagore",
+      "Mahatma Gandhi",
+      "Bankim Chandra Chatterjee"
+    ],
+    "explanation": "Jana Gana Mana.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "correct_answer": "Jupiter",
+    "options": [
+      "Earth",
+      "Neptune",
+      "Jupiter",
+      "Saturn"
+    ],
+    "explanation": "Jupiter is a gas giant.",
+    "category": "Static GK"
+  },
+  {
+    "question": "A can complete a piece of work in 40 days while B can complete the same work in 34 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "18.38 days",
+    "options": [
+      "20.38 days",
+      "17.38 days",
+      "18.38 days",
+      "22.38 days"
+    ],
+    "explanation": "Work = 40 * 34 = 1360. Rate = 40 + 34 = 74. Time = Work / Rate = 18.38 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the odd one out among the following numbers: 16, 50, 4, 9",
+    "correct_answer": "50",
+    "options": [
+      "16",
+      "50",
+      "4",
+      "9"
+    ],
+    "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+    "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "What is the average of the following 5 consecutive even numbers: 23, 25, 27, 29, 31?",
+    "correct_answer": "27",
+    "options": [
+      "29",
+      "27",
+      "25",
+      "31"
+    ],
+    "explanation": "Sum = 135. Average = Sum / 5 = 27.",
+    "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "correct_answer": "Dr. Rajendra Prasad",
+    "options": [
+      "B.R. Ambedkar",
+      "Sardar Patel",
+      "Dr. Rajendra Prasad",
+      "Jawaharlal Nehru"
+    ],
+    "explanation": "He served from 1950 to 1962.",
+    "category": "Static GK"
+  },
+  {
+    "question": "A train travels at an average speed of 59 km/hr. How much distance will it cover in 5 hours?",
+    "correct_answer": "295 km",
+    "options": [
+      "295 km",
+      "315 km",
+      "236 km",
+      "354 km"
+    ],
+    "explanation": "Distance = Speed * Time = 59 * 5 = 295 km.",
+    "trick": "Basic multiplication rule: D = S * T.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Rs. 320 is divided between A and B in the ratio 5:3. What is A's share?",
+    "correct_answer": "Rs. 200",
+    "options": [
+      "Rs. 168",
+      "Rs. 120",
+      "Rs. 232",
+      "Rs. 200"
+    ],
+    "explanation": "Total parts = 5 + 3 = 8. Value of 1 part = 320/8 = 40. A's share = 5 * 40 = 200.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If MAT is coded as OCV, how will BOX be coded in that same language?",
+    "correct_answer": "DQZ",
+    "options": [
+      "DQZ",
+      "BOX",
+      "@MV",
+      "ER["
+    ],
+    "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "correct_answer": "Rabindranath Tagore",
+    "options": [
+      "Bankim Chandra Chatterjee",
+      "Mahatma Gandhi",
+      "Sarojini Naidu",
+      "Rabindranath Tagore"
+    ],
+    "explanation": "Jana Gana Mana.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "Find the next number in the series: 5, 15, 45, 135, ?",
+    "correct_answer": "405",
+    "options": [
+      "1215",
+      "408",
+      "400",
+      "405"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "correct_answer": "Nile",
+    "options": [
+      "Nile",
+      "Mississippi",
+      "Amazon",
+      "Yangtze"
+    ],
+    "explanation": "Length approx 6,650 km.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Find the next number in the series: 8, 22, 36, 50, 64, ?",
+    "correct_answer": "78",
+    "options": [
+      "64",
+      "78",
+      "92",
+      "80"
+    ],
+    "explanation": "The series follows an Arithmetic Progression with a constant difference of 14. So, 64 + (14) = 78.",
+    "trick": "Always check the difference between the first and second terms and verify across the series.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Rs. 648 is divided between A and B in the ratio 5:4. What is A's share?",
+    "correct_answer": "Rs. 360",
+    "options": [
+      "Rs. 288",
+      "Rs. 424.8",
+      "Rs. 295.2",
+      "Rs. 360"
+    ],
+    "explanation": "Total parts = 5 + 4 = 9. Value of 1 part = 648/9 = 72. A's share = 5 * 72 = 360.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the next number in the series: 5, 15, 45, 135, ?",
+    "correct_answer": "405",
+    "options": [
+      "405",
+      "1215",
+      "408",
+      "400"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Sample Geography?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Static GK (Geography)"
+  },
+  {
+    "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Dogs are Animals.",
+    "options": [
+      "Some Animals are not Dogs.",
+      "All Dogs are Animals.",
+      "None of the above.",
+      "No Dogs are Animals."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "What will be the Simple Interest on a principal amount of Rs. 8600 at an interest rate of 12% per annum over 3 years?",
+    "correct_answer": "Rs. 3096",
+    "options": [
+      "Rs. 3046",
+      "Rs. 3196",
+      "Rs. 3526",
+      "Rs. 3096"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (8600 * 12 * 3) / 100 = 3096.",
+    "trick": "Treat percentage as decimal visually: 86 * 12 * 3 = 3096.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "A can complete a piece of work in 38 days while B can complete the same work in 34 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "17.94 days",
+    "options": [
+      "17.94 days",
+      "16.94 days",
+      "19.94 days",
+      "21.94 days"
+    ],
+    "explanation": "Work = 38 * 34 = 1292. Rate = 38 + 34 = 72. Time = Work / Rate = 17.94 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "Find the odd one out among the following numbers: 9, 25, 65, 16",
+    "correct_answer": "65",
+    "options": [
+      "9",
+      "25",
+      "65",
+      "16"
+    ],
+    "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+    "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "If an article is bought for Rs. 340 and sold at a profit of 30%, what is the selling price?",
+    "correct_answer": "Rs. 442",
+    "options": [
+      "Rs. 510",
+      "Rs. 408",
+      "Rs. 476",
+      "Rs. 442"
+    ],
+    "explanation": "SP = CP * (1 + Profit/100) = 340 * 1.30 = Rs. 442.",
+    "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If MAT is coded as PDW, how will PEN be coded in that same language?",
+    "correct_answer": "SHQ",
+    "options": [
+      "MBK",
+      "PEN",
+      "SHQ",
+      "TIR"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "A can complete a piece of work in 38 days while B can complete the same work in 50 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "21.59 days",
+    "options": [
+      "25.59 days",
+      "23.59 days",
+      "21.59 days",
+      "20.59 days"
+    ],
+    "explanation": "Work = 38 * 50 = 1900. Rate = 38 + 50 = 88. Time = Work / Rate = 21.59 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If an article is bought for Rs. 880 and sold at a profit of 40%, what is the selling price?",
+    "correct_answer": "Rs. 1232",
+    "options": [
+      "Rs. 1320",
+      "Rs. 1232",
+      "Rs. 1408",
+      "Rs. 1144"
+    ],
+    "explanation": "SP = CP * (1 + Profit/100) = 880 * 1.40 = Rs. 1232.",
+    "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If CAT is coded as FDW, how will MAN be coded in that same language?",
+    "correct_answer": "PDQ",
+    "options": [
+      "QER",
+      "PDQ",
+      "J>K",
+      "MAN"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Find the next number in the series: 3, 11, 19, 27, 35, ?",
+    "correct_answer": "43",
+    "options": [
+      "51",
+      "43",
+      "45",
+      "35"
+    ],
+    "explanation": "The series follows an Arithmetic Progression with a constant difference of 8. So, 35 + (8) = 43.",
+    "trick": "Always check the difference between the first and second terms and verify across the series.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "correct_answer": "Dr. Rajendra Prasad",
+    "options": [
+      "Sardar Patel",
+      "Dr. Rajendra Prasad",
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar"
+    ],
+    "explanation": "He served from 1950 to 1962.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Find the next number in the series: 3, 6, 12, 24, ?",
+    "correct_answer": "48",
+    "options": [
+      "96",
+      "45",
+      "48",
+      "50"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Dogs are Animals.",
+    "options": [
+      "No Dogs are Animals.",
+      "Some Animals are not Dogs.",
+      "All Dogs are Animals.",
+      "None of the above."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "What is the average of the following 5 consecutive even numbers: 42, 44, 46, 48, 50?",
+    "correct_answer": "46",
+    "options": [
+      "48",
+      "46",
+      "50",
+      "44"
+    ],
+    "explanation": "Sum = 230. Average = Sum / 5 = 46.",
+    "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "correct_answer": "Jupiter",
+    "options": [
+      "Neptune",
+      "Jupiter",
+      "Saturn",
+      "Earth"
+    ],
+    "explanation": "Jupiter is a gas giant.",
+    "category": "Static GK"
+  },
+  {
+    "question": "A train travels at an average speed of 106 km/hr. How much distance will it cover in 3 hours?",
+    "correct_answer": "318 km",
+    "options": [
+      "318 km",
+      "338 km",
+      "424 km",
+      "212 km"
+    ],
+    "explanation": "Distance = Speed * Time = 106 * 3 = 318 km.",
+    "trick": "Basic multiplication rule: D = S * T.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "correct_answer": "Rabindranath Tagore",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chatterjee",
+      "Sarojini Naidu",
+      "Mahatma Gandhi"
+    ],
+    "explanation": "Jana Gana Mana.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "correct_answer": "Nile",
+    "options": [
+      "Mississippi",
+      "Nile",
+      "Amazon",
+      "Yangtze"
+    ],
+    "explanation": "Length approx 6,650 km.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Rs. 1936 is divided between A and B in the ratio 5:6. What is A's share?",
+    "correct_answer": "Rs. 880",
+    "options": [
+      "Rs. 1073.6",
+      "Rs. 686.4",
+      "Rs. 880",
+      "Rs. 1056"
+    ],
+    "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 1936/11 = 176. A's share = 5 * 176 = 880.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If an article is bought for Rs. 800 and sold at a profit of 10%, what is the selling price?",
+    "correct_answer": "Rs. 880.0000000000001",
+    "options": [
+      "Rs. 880.0000000000001",
+      "Rs. 1040",
+      "Rs. 800.0000000000001",
+      "Rs. 960.0000000000001"
+    ],
+    "explanation": "SP = CP * (1 + Profit/100) = 800 * 1.10 = Rs. 880.0000000000001.",
+    "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Pens are Stationery.",
+    "options": [
+      "All Pens are Stationery.",
+      "None of the above.",
+      "No Pens are Stationery.",
+      "Some Stationery are not Pens."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Sample Geography?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Static GK (Geography)"
+  },
+  {
+    "question": "Find the odd one out among the following numbers: 9, 16, 4, 50",
+    "correct_answer": "50",
+    "options": [
+      "9",
+      "16",
+      "4",
+      "50"
+    ],
+    "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+    "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "A can complete a piece of work in 68 days while B can complete the same work in 108 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "41.73 days",
+    "options": [
+      "45.73 days",
+      "43.73 days",
+      "40.73 days",
+      "41.73 days"
+    ],
+    "explanation": "Work = 68 * 108 = 7344. Rate = 68 + 108 = 176. Time = Work / Rate = 41.73 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "If CAT is coded as ECV, how will CUP be coded in that same language?",
+    "correct_answer": "EWR",
+    "options": [
+      "EWR",
+      "CUP",
+      "FXS",
+      "ASN"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Find the next number in the series: 5, 10, 20, 40, ?",
+    "correct_answer": "80",
+    "options": [
+      "80",
+      "75",
+      "82",
+      "160"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 40 * 2 = 80.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "What will be the Simple Interest on a principal amount of Rs. 12800 at an interest rate of 11% per annum over 3 years?",
+    "correct_answer": "Rs. 4224",
+    "options": [
+      "Rs. 4224",
+      "Rs. 4864",
+      "Rs. 4324",
+      "Rs. 4174"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (12800 * 11 * 3) / 100 = 4224.",
+    "trick": "Treat percentage as decimal visually: 128 * 11 * 3 = 4224.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "What is the average of the following 5 consecutive even numbers: 27, 29, 31, 33, 35?",
+    "correct_answer": "31",
+    "options": [
+      "31",
+      "29",
+      "35",
+      "33"
+    ],
+    "explanation": "Sum = 155. Average = Sum / 5 = 31.",
+    "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Apples are Foods.",
+    "options": [
+      "None of the above.",
+      "Some Foods are not Apples.",
+      "No Apples are Foods.",
+      "All Apples are Foods."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "A train travels at an average speed of 74 km/hr. How much distance will it cover in 3 hours?",
+    "correct_answer": "222 km",
+    "options": [
+      "148 km",
+      "296 km",
+      "242 km",
+      "222 km"
+    ],
+    "explanation": "Distance = Speed * Time = 74 * 3 = 222 km.",
+    "trick": "Basic multiplication rule: D = S * T.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
+    "correct_answer": "OCP",
+    "options": [
+      "K?L",
+      "OCP",
+      "PDQ",
+      "MAN"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Find the odd one out among the following numbers: 36, 122, 64, 49",
+    "correct_answer": "122",
+    "options": [
+      "36",
+      "122",
+      "64",
+      "49"
+    ],
+    "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
+    "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Rs. 864 is divided between A and B in the ratio 4:5. What is A's share?",
+    "correct_answer": "Rs. 384",
+    "options": [
+      "Rs. 384",
+      "Rs. 480",
+      "Rs. 297.6",
+      "Rs. 470.4"
+    ],
+    "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 864/9 = 96. A's share = 4 * 96 = 384.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "A can complete a piece of work in 52 days while B can complete the same work in 104 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "34.67 days",
+    "options": [
+      "34.67 days",
+      "36.67 days",
+      "38.67 days",
+      "33.67 days"
+    ],
+    "explanation": "Work = 52 * 104 = 5408. Rate = 52 + 104 = 156. Time = Work / Rate = 34.67 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the next number in the series: 16, 46, 76, 106, 136, ?",
+    "correct_answer": "166",
+    "options": [
+      "196",
+      "166",
+      "168",
+      "136"
+    ],
+    "explanation": "The series follows an Arithmetic Progression with a constant difference of 30. So, 136 + (30) = 166.",
+    "trick": "Always check the difference between the first and second terms and verify across the series.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Sample Geography?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Static GK (Geography)"
+  },
+  {
+    "question": "Find the next number in the series: 2, 4, 8, 16, ?",
+    "correct_answer": "32",
+    "options": [
+      "32",
+      "34",
+      "64",
+      "30"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "correct_answer": "Dr. Rajendra Prasad",
+    "options": [
+      "B.R. Ambedkar",
+      "Sardar Patel",
+      "Dr. Rajendra Prasad",
+      "Jawaharlal Nehru"
+    ],
+    "explanation": "He served from 1950 to 1962.",
+    "category": "Static GK"
+  },
+  {
+    "question": "A can complete a piece of work in 48 days while B can complete the same work in 120 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "34.29 days",
+    "options": [
+      "33.29 days",
+      "34.29 days",
+      "38.29 days",
+      "36.29 days"
+    ],
+    "explanation": "Work = 48 * 120 = 5760. Rate = 48 + 120 = 168. Time = Work / Rate = 34.29 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "What is the average of the following 5 consecutive even numbers: 32, 34, 36, 38, 40?",
+    "correct_answer": "36",
+    "options": [
+      "36",
+      "40",
+      "34",
+      "38"
+    ],
+    "explanation": "Sum = 180. Average = Sum / 5 = 36.",
+    "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "correct_answer": "Jupiter",
+    "options": [
+      "Neptune",
+      "Earth",
+      "Jupiter",
+      "Saturn"
+    ],
+    "explanation": "Jupiter is a gas giant.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "correct_answer": "Nile",
+    "options": [
+      "Mississippi",
+      "Nile",
+      "Yangtze",
+      "Amazon"
+    ],
+    "explanation": "Length approx 6,650 km.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Rs. 1312 is divided between A and B in the ratio 3:5. What is A's share?",
+    "correct_answer": "Rs. 492",
+    "options": [
+      "Rs. 820",
+      "Rs. 623.2",
+      "Rs. 492",
+      "Rs. 360.79999999999995"
+    ],
+    "explanation": "Total parts = 3 + 5 = 8. Value of 1 part = 1312/8 = 164. A's share = 3 * 164 = 492.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the odd one out among the following numbers: 36, 25, 101, 49",
+    "correct_answer": "101",
+    "options": [
+      "36",
+      "25",
+      "101",
+      "49"
+    ],
+    "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+    "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "What will be the Simple Interest on a principal amount of Rs. 17200 at an interest rate of 12% per annum over 2 years?",
+    "correct_answer": "Rs. 4128",
+    "options": [
+      "Rs. 4988",
+      "Rs. 4128",
+      "Rs. 4078",
+      "Rs. 4228"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (17200 * 12 * 2) / 100 = 4128.",
+    "trick": "Treat percentage as decimal visually: 172 * 12 * 2 = 4128.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "correct_answer": "Rabindranath Tagore",
+    "options": [
+      "Sarojini Naidu",
+      "Bankim Chandra Chatterjee",
+      "Mahatma Gandhi",
+      "Rabindranath Tagore"
+    ],
+    "explanation": "Jana Gana Mana.",
+    "category": "Static GK"
+  },
+  {
+    "question": "If MAT is coded as NBU, how will MAN be coded in that same language?",
+    "correct_answer": "NBO",
+    "options": [
+      "MAN",
+      "NBO",
+      "OCP",
+      "L@M"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Apples are Foods.",
+    "options": [
+      "All Apples are Foods.",
+      "None of the above.",
+      "Some Foods are not Apples.",
+      "No Apples are Foods."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Find the next number in the series: 5, 10, 20, 40, ?",
+    "correct_answer": "80",
+    "options": [
+      "82",
+      "75",
+      "80",
+      "160"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 40 * 2 = 80.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "correct_answer": "Rabindranath Tagore",
+    "options": [
+      "Sarojini Naidu",
+      "Mahatma Gandhi",
+      "Rabindranath Tagore",
+      "Bankim Chandra Chatterjee"
+    ],
+    "explanation": "Jana Gana Mana.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "correct_answer": "Jupiter",
+    "options": [
+      "Neptune",
+      "Saturn",
+      "Earth",
+      "Jupiter"
+    ],
+    "explanation": "Jupiter is a gas giant.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "correct_answer": "Nile",
+    "options": [
+      "Nile",
+      "Mississippi",
+      "Yangtze",
+      "Amazon"
+    ],
+    "explanation": "Length approx 6,650 km.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Find the odd one out among the following numbers: 82, 25, 16, 36",
+    "correct_answer": "82",
+    "options": [
+      "82",
+      "25",
+      "16",
+      "36"
+    ],
+    "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+    "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "A can complete a piece of work in 96 days while B can complete the same work in 184 days. If they work together, in how many days will they complete the work?",
+    "correct_answer": "63.09 days",
+    "options": [
+      "65.09 days",
+      "67.09 days",
+      "62.09 days",
+      "63.09 days"
+    ],
+    "explanation": "Work = 96 * 184 = 17664. Rate = 96 + 184 = 280. Time = Work / Rate = 63.09 days.",
+    "trick": "Use formula: (A * B) / (A + B).",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "correct_answer": "Dr. Rajendra Prasad",
+    "options": [
+      "Sardar Patel",
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar",
+      "Dr. Rajendra Prasad"
+    ],
+    "explanation": "He served from 1950 to 1962.",
+    "category": "Static GK"
+  },
+  {
+    "question": "What will be the Simple Interest on a principal amount of Rs. 32800 at an interest rate of 7% per annum over 4 years?",
+    "correct_answer": "Rs. 9184",
+    "options": [
+      "Rs. 9134",
+      "Rs. 9184",
+      "Rs. 9284",
+      "Rs. 10824"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (32800 * 7 * 4) / 100 = 9184.",
+    "trick": "Treat percentage as decimal visually: 328 * 7 * 4 = 9184.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Apples are Foods.",
+    "options": [
+      "None of the above.",
+      "All Apples are Foods.",
+      "No Apples are Foods.",
+      "Some Foods are not Apples."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Find the next number in the series: 2, -38, -78, -118, -158, ?",
+    "correct_answer": "-198",
+    "options": [
+      "-238",
+      "-198",
+      "-158",
+      "-196"
+    ],
+    "explanation": "The series follows an Arithmetic Progression with a constant difference of -40. So, -158 + (-40) = -198.",
+    "trick": "Always check the difference between the first and second terms and verify across the series.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "A train travels at an average speed of 133 km/hr. How much distance will it cover in 5 hours?",
+    "correct_answer": "665 km",
+    "options": [
+      "665 km",
+      "532 km",
+      "685 km",
+      "798 km"
+    ],
+    "explanation": "Distance = Speed * Time = 133 * 5 = 665 km.",
+    "trick": "Basic multiplication rule: D = S * T.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Rs. 1568 is divided between A and B in the ratio 3:4. What is A's share?",
+    "correct_answer": "Rs. 672",
+    "options": [
+      "Rs. 515.2",
+      "Rs. 896",
+      "Rs. 672",
+      "Rs. 828.8"
+    ],
+    "explanation": "Total parts = 3 + 4 = 7. Value of 1 part = 1568/7 = 224. A's share = 3 * 224 = 672.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Find the next number in the series: 10, -5, -20, -35, -50, ?",
+    "correct_answer": "-65",
+    "options": [
+      "-65",
+      "-80",
+      "-50",
+      "-63"
+    ],
+    "explanation": "The series follows an Arithmetic Progression with a constant difference of -15. So, -50 + (-15) = -65.",
+    "trick": "Always check the difference between the first and second terms and verify across the series.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Rs. 1968 is divided between A and B in the ratio 2:4. What is A's share?",
+    "correct_answer": "Rs. 656",
+    "options": [
+      "Rs. 459.2",
+      "Rs. 656",
+      "Rs. 852.8",
+      "Rs. 1312"
+    ],
+    "explanation": "Total parts = 2 + 4 = 6. Value of 1 part = 1968/6 = 328. A's share = 2 * 328 = 656.",
+    "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "correct_answer": "Rabindranath Tagore",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chatterjee",
+      "Mahatma Gandhi",
+      "Sarojini Naidu"
+    ],
+    "explanation": "Jana Gana Mana.",
+    "category": "Static GK"
+  },
+  {
+    "question": "What will be the Simple Interest on a principal amount of Rs. 14400 at an interest rate of 12% per annum over 5 years?",
+    "correct_answer": "Rs. 8640",
+    "options": [
+      "Rs. 8640",
+      "Rs. 9360",
+      "Rs. 8740",
+      "Rs. 8590"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (14400 * 12 * 5) / 100 = 8640.",
+    "trick": "Treat percentage as decimal visually: 144 * 12 * 5 = 8640.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "If MAT is coded as NBU, how will CUP be coded in that same language?",
+    "correct_answer": "DVQ",
+    "options": [
+      "BTO",
+      "DVQ",
+      "EWR",
+      "CUP"
+    ],
+    "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+    "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Find the next number in the series: 4, 12, 36, 108, ?",
+    "correct_answer": "324",
+    "options": [
+      "324",
+      "327",
+      "320",
+      "972"
+    ],
+    "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
+    "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "correct_answer": "Jupiter",
+    "options": [
+      "Neptune",
+      "Earth",
+      "Saturn",
+      "Jupiter"
+    ],
+    "explanation": "Jupiter is a gas giant.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "correct_answer": "Nile",
+    "options": [
+      "Nile",
+      "Mississippi",
+      "Yangtze",
+      "Amazon"
+    ],
+    "explanation": "Length approx 6,650 km.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+    "correct_answer": "All Apples are Foods.",
+    "options": [
+      "Some Foods are not Apples.",
+      "No Apples are Foods.",
+      "None of the above.",
+      "All Apples are Foods."
+    ],
+    "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+    "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+    "category": "Logical Reasoning"
+  },
+  {
+    "question": "If an article is bought for Rs. 3120 and sold at a profit of 25%, what is the selling price?",
+    "correct_answer": "Rs. 3900",
+    "options": [
+      "Rs. 4212",
+      "Rs. 4524",
+      "Rs. 3588",
+      "Rs. 3900"
+    ],
+    "explanation": "SP = CP * (1 + Profit/100) = 3120 * 1.25 = Rs. 3900.",
+    "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+    "category": "Quantitative Aptitude"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "correct_answer": "Dr. Rajendra Prasad",
+    "options": [
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar",
+      "Dr. Rajendra Prasad",
+      "Sardar Patel"
+    ],
+    "explanation": "He served from 1950 to 1962.",
+    "category": "Static GK"
+  },
+  {
+    "question": "Sample CA?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "A",
+    "explanation": "test",
+    "category": "Current Affairs"
+  },
+  {
+    "question": "What is the average of the following 5 consecutive even numbers: 42, 44, 46, 48, 50?",
+    "correct_answer": "46",
+    "options": [
+      "44",
+      "46",
+      "50",
+      "48"
+    ],
+    "explanation": "Sum = 230. Average = Sum / 5 = 46.",
+    "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+    "category": "Quantitative Aptitude"
   }
 ]
