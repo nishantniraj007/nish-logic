@@ -4,241 +4,241 @@
     "day_index": 1,
     "slot_index": 15,
     "difficulty": "SSC/Bank",
-    "generated_at": "2026-03-06T08:51:49.444Z"
+    "generated_at": "2026-03-11T21:04:28.659Z"
   },
   "questions": [
     {
       "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an item 40% above its cost price. He offers a discount of 25% on the marked price. What is his profit percentage?",
+      "question": "A shopkeeper marks an item 40% above its cost price. He then sells it after giving a discount of 25% on the marked price. What is his net profit percentage?",
       "options": [
-        "5%",
-        "10%",
-        "12.5%",
-        "15%"
+        "A) 5%",
+        "B) 7.5%",
+        "C) 10%",
+        "D) 12.5%"
       ],
-      "correct_answer": "5%",
-      "explanation": "Assume Cost Price (CP) = ₹100. Marked Price (MP) = CP + 40% of CP = 100 + 40 = ₹140. Discount = 25% of MP = 0.25 * 140 = ₹35. Selling Price (SP) = MP - Discount = 140 - 35 = ₹105. Profit = SP - CP = 105 - 100 = ₹5. Profit Percentage = (Profit/CP) * 100 = (5/100) * 100 = 5%.",
-      "trick": "Net change formula: A + B + (AB/100). Here, A = +40 (markup), B = -25 (discount). So, 40 - 25 + (40 * -25 / 100) = 15 - 10 = 5%."
+      "correct_answer": "A) 5%",
+      "explanation": "Let the Cost Price (CP) be ₹100.\nMarked Price (MP) = CP + 40% of CP = 100 + (40/100)*100 = ₹140.\nDiscount = 25% of MP = (25/100)*140 = ₹35.\nSelling Price (SP) = MP - Discount = 140 - 35 = ₹105.\nProfit = SP - CP = 105 - 100 = ₹5.\nProfit Percentage = (Profit / CP) * 100 = (5 / 100) * 100 = 5%.",
+      "trick": "Use the formula for successive percentage changes relative to the base price. If an item is marked up by M% and then discounted by D%, the net change (profit/loss) can be found by (1 + M/100) * (1 - D/100) - 1. \nHere, M = 40, D = 25.\nNet change factor = (1 + 40/100) * (1 - 25/100) = (1.40) * (0.75) = 1.05.\nSince the factor is 1.05, it means the SP is 1.05 times the CP. The profit is (1.05 - 1) * 100 = 5%."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A can complete a work in 20 days, and B can complete the same work in 30 days. If they work together, in how many days will they complete the work?",
+      "question": "A, B, and C can complete a piece of work in 10, 12, and 15 days respectively. They start working together. After 1 day, A leaves. B and C continue to work. In how many days will the remaining work be completed by B and C?",
       "options": [
-        "10 days",
-        "12 days",
-        "15 days",
-        "25 days"
+        "A) 3 days",
+        "B) 4 days",
+        "C) 5 days",
+        "D) 6 days"
       ],
-      "correct_answer": "12 days",
-      "explanation": "A's 1 day work = 1/20. B's 1 day work = 1/30. When they work together, their combined 1 day work = 1/20 + 1/30 = (3+2)/60 = 5/60 = 1/12. Therefore, they will complete the work together in 12 days.",
-      "trick": "For two people A and B completing a work in X and Y days respectively, together they complete it in (X * Y) / (X + Y) days. So, (20 * 30) / (20 + 30) = 600 / 50 = 12 days."
+      "correct_answer": "C) 5 days",
+      "explanation": "Let the total work be the LCM of 10, 12, and 15, which is 60 units.\nIndividual daily work (efficiency):\nA's 1-day work = 60/10 = 6 units.\nB's 1-day work = 60/12 = 5 units.\nC's 1-day work = 60/15 = 4 units.\n\nWork done by (A+B+C) in 1 day = 6 + 5 + 4 = 15 units.\nAfter 1 day, A leaves. So, 15 units of work are completed.\nRemaining work = Total work - Work done = 60 - 15 = 45 units.\n\nNow, B and C work together.\nCombined 1-day work of (B+C) = 5 + 4 = 9 units.\nDays to complete the remaining work = Remaining work / (B+C)'s 1-day work = 45 / 9 = 5 days.",
+      "trick": "Using the LCM method (also known as the 'unit work' method) simplifies calculations by converting fractions into whole numbers representing 'units' of work. This avoids complex fractional arithmetic and makes the problem straightforward for competitive exams."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\nI. All pens are pencils.\nII. Some pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\nI. Some pencils are not sharpeners.\nII. Some pens are erasers.",
+      "options": [
+        "A) Only conclusion I follows.",
+        "B) Only conclusion II follows.",
+        "C) Both conclusion I and II follow.",
+        "D) Neither conclusion I nor II follows."
+      ],
+      "correct_answer": "A) Only conclusion I follows.",
+      "explanation": "Let's analyze each conclusion:\nFor Conclusion I: From Statement II (Some pencils are erasers) and Statement III (No eraser is a sharpener), we can deduce that 'Some pencils are not sharpeners'. If no eraser is a sharpener, then the part of pencils that are erasers cannot be sharpeners. This conclusion follows.\nFor Conclusion II: From Statement I (All pens are pencils) and Statement II (Some pencils are erasers), there is no definite direct relation between pens and erasers. It is possible, but not certain. The relationship 'All A are B' and 'Some B are C' does not guarantee 'Some A are C'. This conclusion does not follow.",
+      "trick": "Use Venn diagrams or the A-E-I-O rules for syllogisms. For (Some Pencils are Erasers) + (No Eraser is a Sharpener), it's an I + E type combination, which yields 'Some Pencils are not Sharpeners' (Conclusion I). For (All Pens are Pencils) + (Some Pencils are Erasers), it's an A + I type. No definite conclusion about 'Pens' and 'Erasers' can be drawn here (Conclusion II)."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What will come in place of the question mark (?) in the following equation?\n(25% of 400) + (15% of 600) = ?",
+      "question": "A shopkeeper marks an article 40% above its cost price. He then sells it after giving a discount of 20%. If the profit earned is ₹48, what is the cost price of the article?",
       "options": [
-        "180",
-        "190",
-        "200",
-        "210"
+        "A) ₹300",
+        "B) ₹400",
+        "C) ₹500",
+        "D) ₹600"
       ],
-      "correct_answer": "190",
-      "explanation": "25% of 400 = (25/100) * 400 = 1/4 * 400 = 100.\n15% of 600 = (15/100) * 600 = 15 * 6 = 90.\nSo, 100 + 90 = 190.",
-      "trick": "Calculate mentally: 25% is one-fourth. 15% is (10% + 5%). 10% of 600 is 60, 5% is 30. 60+30=90."
+      "correct_answer": "B) ₹400",
+      "explanation": "Let the Cost Price (CP) of the article be ₹100x.\nMarked Price (MP) = CP + 40% of CP = 100x + 40x = ₹140x.\nDiscount = 20% of MP = 20% of 140x = (20/100) * 140x = ₹28x.\nSelling Price (SP) = MP - Discount = 140x - 28x = ₹112x.\nProfit = SP - CP = 112x - 100x = ₹12x.\nGiven, Profit = ₹48.\nSo, 12x = 48 => x = 4.\nCost Price (CP) = 100x = 100 * 4 = ₹400.",
+      "trick": "Assume CP = ₹100. Then MP = ₹100 + 40% of 100 = ₹140. SP = MP - 20% of MP = 140 - (20/100)*140 = 140 - 28 = ₹112. Profit = SP - CP = 112 - 100 = ₹12. If a profit of ₹12 corresponds to a CP of ₹100, then a profit of ₹48 (which is 4 times ₹12) will correspond to a CP of 4 * ₹100 = ₹400."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "Find the missing number in the series: 3, 7, 15, 31, 63, ?",
+      "question": "A, B, and C can complete a piece of work in 10, 12, and 15 days respectively. They all start working together. After 2 days, A leaves. After another 2 days, B also leaves. In how many days from the start will the total work be completed?",
       "options": [
-        "125",
-        "127",
-        "129",
-        "131"
+        "A) 6 days",
+        "B) 7 days",
+        "C) 8 days",
+        "D) 9 days"
       ],
-      "correct_answer": "127",
-      "explanation": "The pattern in the series is (Previous Number * 2) + 1.\n3 * 2 + 1 = 7\n7 * 2 + 1 = 15\n15 * 2 + 1 = 31\n31 * 2 + 1 = 63\nFollowing this pattern, 63 * 2 + 1 = 126 + 1 = 127.",
-      "trick": "Look for multiplication or exponential patterns when numbers grow quickly. Check if it's (N*X)+Y."
+      "correct_answer": "B) 7 days",
+      "explanation": "Let the total work be the LCM of 10, 12, and 15, which is 60 units.\nEfficiency of A = 60/10 = 6 units/day.\nEfficiency of B = 60/12 = 5 units/day.\nEfficiency of C = 60/15 = 4 units/day.\n\nPhase 1: A, B, and C work together for 2 days.\nCombined efficiency (A+B+C) = 6 + 5 + 4 = 15 units/day.\nWork done in 2 days = 15 * 2 = 30 units.\nRemaining work = 60 - 30 = 30 units.\n\nPhase 2: A leaves. B and C work together for another 2 days.\nCombined efficiency (B+C) = 5 + 4 = 9 units/day.\nWork done in 2 days = 9 * 2 = 18 units.\nRemaining work = 30 - 18 = 12 units.\n\nPhase 3: B leaves. C works alone to complete the remaining work.\nEfficiency of C = 4 units/day.\nDays taken by C to complete 12 units = 12 / 4 = 3 days.\n\nTotal days to complete the work from the start = Days in Phase 1 + Days in Phase 2 + Days in Phase 3 = 2 + 2 + 3 = 7 days.",
+      "trick": "Use the LCM method to find the total work and individual efficiencies. Break the problem into chronological phases: calculate work done in each phase and the remaining work. The sum of days from all phases gives the total time. This systematic approach prevents errors and is faster than fractional methods for such problems."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, if 'SIMPLE' is coded as 'TJNQMF', how is 'PUBLIC' coded in that language?",
+      "question": "Read the following information carefully and answer the question below:\n'A + B' means 'A is the father of B'.\n'A - B' means 'A is the mother of B'.\n'A * B' means 'A is the brother of B'.\n'A / B' means 'A is the sister of B'.\n\nIf P + Q - R * S / T, how is P related to T?",
       "options": [
-        "QVCMJD",
-        "QVCKJC",
-        "QVCNJD",
-        "QVCMJE"
+        "A. Father",
+        "B. Grandfather",
+        "C. Uncle",
+        "D. Brother"
       ],
-      "correct_answer": "QVCMJD",
-      "explanation": "In the given code, each letter of the word 'SIMPLE' is shifted one position forward in the English alphabet to form 'TJNQMF'.\nS (+1) -> T\nI (+1) -> J\nM (+1) -> N\nP (+1) -> Q\nL (+1) -> M\nE (+1) -> F\nApplying the same rule to 'PUBLIC':\nP (+1) -> Q\nU (+1) -> V\nB (+1) -> C\nL (+1) -> M\nI (+1) -> J\nC (+1) -> D\nThus, 'PUBLIC' is coded as 'QVCMJD'.",
-      "trick": "Quickly compare the first few letters of the original and coded word to identify the shift pattern (+1, -1, alternating, etc.)."
+      "correct_answer": "B. Grandfather",
+      "explanation": "Let's decode the given expression step-by-step:\n1.  P + Q: 'P is the father of Q'. (P is male, Q is P's child).\n2.  Q - R: 'Q is the mother of R'. (Q is female, R is Q's child. Since P is father of Q, P is the father of Q's child R, meaning P is the grandfather of R).\n3.  R * S: 'R is the brother of S'. (R is male, S is R's sibling. So Q is also the mother of S, and P is the grandfather of S).\n4.  S / T: 'S is the sister of T'. (S is female, T is S's sibling. So R, S, T are siblings. Q is the mother of T, and P is the grandfather of T).\n\nTherefore, P is the grandfather of T.",
+      "trick": "Create a quick family tree diagram using symbols:\n- Use '+' for male, '-' for female.\n- Use vertical lines for parent-child relationships (up for parent, down for child).\n- Use horizontal lines for siblings.\n\nP (+) -- (Father of) -- Q (-)\n       |              |\n       (Mother of) -- R (+) -- (Brother of) -- S (-) -- (Sister of) -- T (?)\n\nFrom this diagram, P is the father of Q, and Q is the mother of R, S, and T. This means P is two generations above T and is male (father of mother). Thus, P is the Grandfather of T. This visual representation quickly clarifies relationships and avoids confusion."
     },
     {
       "category": "Logical Reasoning",
-      "question": "A person walks 10 km North, then turns right and walks 5 km. Then he turns right and walks 10 km. In which direction is he from the starting point?",
+      "question": "Pointing to a photograph, a woman says, 'He is the only son of the father of my sister's brother.' How is the man in the photograph related to the woman?",
       "options": [
-        "North",
-        "South",
-        "East",
-        "West"
+        "A) Brother",
+        "B) Father",
+        "C) Uncle",
+        "D) Cousin"
       ],
-      "correct_answer": "East",
-      "explanation": "1.  Starts at point O. Walks 10 km North to point A.\n2.  From A, turns right (which is East) and walks 5 km to point B.\n3.  From B, turns right again (which is South) and walks 10 km to point C.\nSince he walked 10 km North and then 10 km South, his North-South displacement is zero. He is 5 km East from his starting point O.",
-      "trick": "Visualize or draw a quick sketch. North is usually 'up', East is 'right'. Trace the path mentally or on paper."
+      "correct_answer": "A) Brother",
+      "explanation": "Let's break down the statement from the end:\n1. 'my sister's brother' -> This refers to the woman's brother.\n2. 'the father of my sister's brother' -> This means the father of the woman's brother, which is the woman's father.\n3. 'He is the only son of the father of my sister's brother' -> This means he is the only son of the woman's father. Since the woman herself has a brother (from point 1), that 'only son' must be her brother.",
+      "trick": "Start decoding the statement from the end, working backwards towards the speaker. 'My sister's brother' immediately simplifies to 'My brother'. Then, 'Father of my brother' simplifies to 'My father'. Finally, 'The only son of my father' simplifies to 'My brother', as the speaker is a woman."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Find the missing number in the series: 3, 7, 15, ?, 63, 127",
+      "question": "Statements:\nI. Some pens are pencils.\nII. All pencils are erasers.\nIII. All erasers are sharpners.\n\nConclusions:\n1. Some pens are erasers.\n2. Some pencils are sharpners.\n3. Some sharpners are pens.\n\nWhich of the following conclusions logically follow from the given statements?",
       "options": [
-        "30",
-        "31",
-        "32",
-        "33"
+        "A. Only conclusion I and II follow.",
+        "B. Only conclusion II and III follow.",
+        "C. Only conclusion I and III follow.",
+        "D. All conclusions I, II and III follow."
       ],
-      "correct_answer": "31",
-      "explanation": "The pattern is (previous number * 2) + 1. \n3*2+1 = 7\n7*2+1 = 15\n15*2+1 = 31\n31*2+1 = 63\n63*2+1 = 127",
-      "trick": "Identify the arithmetic or geometric progression. Here, it's (x*2)+1."
+      "correct_answer": "D. All conclusions I, II and III follow.",
+      "explanation": "Let's analyze each conclusion based on the statements:\nStatement I: Some pens are pencils.\nStatement II: All pencils are erasers.\nStatement III: All erasers are sharpners.\n\nConclusion 1: Some pens are erasers.\nFrom (I) Some pens are pencils + (II) All pencils are erasers => Some pens are erasers. (Valid deduction: Some A are B + All B are C => Some A are C). So, Conclusion 1 follows.\n\nConclusion 2: Some pencils are sharpners.\nFrom (II) All pencils are erasers + (III) All erasers are sharpners => All pencils are sharpners. (Valid deduction: All A are B + All B are C => All A are C). If 'All pencils are sharpners' is true, then 'Some pencils are sharpners' must also be true. So, Conclusion 2 follows.\n\nConclusion 3: Some sharpners are pens.\nFrom (I) Some pens are pencils + (II) All pencils are erasers => Some pens are erasers.\nFrom 'Some pens are erasers' and (III) All erasers are sharpners => Some pens are sharpners. (Valid deduction: Some A are B + All B are C => Some A are C). If 'Some pens are sharpners' is true, then 'Some sharpners are pens' must also be true. So, Conclusion 3 follows.\n\nSince all three conclusions follow, the correct option is D.",
+      "trick": "For Syllogism, quickly draw Venn Diagrams.\n1. Draw 'Pens' overlapping 'Pencils'.\n2. Draw 'Pencils' fully inside 'Erasers'.\n3. Draw 'Erasers' fully inside 'Sharpners'.\n\nNow visually check:\n- 'Pens' and 'Erasers' overlap (Conclusion 1: Some pens are erasers - TRUE).\n- 'Pencils' are completely within 'Sharpners' (Conclusion 2: Some pencils are sharpners - TRUE).\n- 'Pens' and 'Sharpners' overlap (Conclusion 3: Some sharpners are pens - TRUE).\nThis visual method helps quickly verify conclusions without complex rules."
     },
     {
-      "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, \"I have no brother or sister, but that man's father is my father's son.\" Whose photograph was it?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
       "options": [
-        "His own son",
-        "His father",
-        "His uncle",
-        "His nephew"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "His own son",
-      "explanation": "Since the man has no brother or sister, 'my father's son' refers to the man himself. So, the statement becomes 'that man's father is me'. Therefore, the man in the photograph is his son.",
-      "trick": "Break down blood relations from the end of the statement towards the beginning, substituting relationships step-by-step."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "The Battle of Plassey was fought in which year?",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
       "options": [
-        "1757",
-        "1764",
-        "1773",
-        "1784"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "1757",
-      "explanation": "The Battle of Plassey was a decisive victory of the British East India Company over the Nawab of Bengal and his French allies on June 23, 1757, marking a significant turning point in Indian history.",
-      "trick": "Memorize key dates for pivotal historical events, especially those marking the beginning of major shifts in power."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Which one of the following is the longest river in Asia?",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
       "options": [
-        "Yangtze",
-        "Yellow River",
-        "Mekong",
-        "Ganges"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Yangtze",
-      "explanation": "The Yangtze River, flowing entirely within China, is the longest river in Asia and the third-longest river in the world, stretching approximately 6,300 kilometers.",
-      "trick": "Associate continents with their most prominent geographical features. For Asia, Yangtze is the longest river."
-    },
-    {
-      "category": "Static GK",
-      "question": "Which vitamin is primarily responsible for blood clotting?",
-      "options": [
-        "Vitamin A",
-        "Vitamin B",
-        "Vitamin C",
-        "Vitamin K"
-      ],
-      "correct_answer": "Vitamin K",
-      "explanation": "Vitamin K plays a crucial role in blood coagulation (clotting) by helping the body produce proteins that cause blood to clot.",
-      "trick": "Remember 'K' for 'Koagulation' (German spelling for Coagulation), linking it directly to blood clotting."
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the chemical symbol for Sodium?",
-      "options": [
-        "So",
-        "Na",
-        "Sd",
-        "Nm"
-      ],
-      "correct_answer": "Na",
-      "explanation": "The chemical symbol for Sodium is 'Na', which is derived from its Latin name 'Natrium'.",
-      "trick": "Many chemical symbols are derived from Latin names (e.g., Na for Natrium/Sodium, K for Kalium/Potassium, Fe for Ferrum/Iron)."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "In 2024, how many individuals, including both living and posthumous recipients, were announced to be conferred with the Bharat Ratna, India's highest civilian award?",
-      "options": [
-        "A) 3",
-        "B) 4",
-        "C) 5",
-        "D) 6"
-      ],
-      "correct_answer": "C) 5",
-      "explanation": "Five individuals were announced for the Bharat Ratna in 2024: Karpoori Thakur, L.K. Advani, P.V. Narasimha Rao, Chaudhary Charan Singh, and M.S. Swaminathan.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "What is the name of India's first human spaceflight mission, currently targeted for launch in 2024-25, which aims to send astronauts into low Earth orbit?",
-      "options": [
-        "A) Chandrayaan-3",
-        "B) Mangalyaan-2",
-        "C) Gaganyaan",
-        "D) Aditya-L1"
-      ],
-      "correct_answer": "C) Gaganyaan",
-      "explanation": "Gaganyaan is ISRO's ambitious mission to demonstrate human spaceflight capability by sending a crew of three members to an orbit of 400 km for a 3-day mission and bringing them back safely to Earth.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who was recently sworn in as the President of Indonesia for a five-year term starting October 2024, following his victory in the February 2024 elections?",
-      "options": [
-        "A) Joko Widodo",
-        "B) Prabowo Subianto",
-        "C) Anies Baswedan",
-        "D) Ganjar Pranowo"
-      ],
-      "correct_answer": "B) Prabowo Subianto",
-      "explanation": "Prabowo Subianto won the Indonesian presidential election held in February 2024 and is set to take office in October 2024, succeeding Joko Widodo.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the men's singles title at the Australian Open 2024, marking his maiden Grand Slam victory?",
-      "options": [
-        "A) Novak Djokovic",
-        "B) Carlos Alcaraz",
-        "C) Jannik Sinner",
-        "D) Daniil Medvedev"
-      ],
-      "correct_answer": "C) Jannik Sinner",
-      "explanation": "Jannik Sinner of Italy defeated Daniil Medvedev in a thrilling final to win his first-ever Grand Slam title at the Australian Open 2024.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "What is the current Repo Rate (as of April 2024) announced by the Reserve Bank of India (RBI) in its latest Monetary Policy Committee meeting?",
-      "options": [
-        "A) 6.00%",
-        "B) 6.25%",
-        "C) 6.50%",
-        "D) 6.75%"
-      ],
-      "correct_answer": "C) 6.50%",
-      "explanation": "The RBI's Monetary Policy Committee, in its April 2024 meeting, decided to keep the repo rate unchanged at 6.50% for the seventh consecutive time.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which Indian state recently launched the 'Chief Minister's Street Vendor's Credit Card Scheme' to provide financial assistance and interest-free loans to street vendors?",
-      "options": [
-        "A) Uttar Pradesh",
-        "B) Rajasthan",
-        "C) Madhya Pradesh",
-        "D) Odisha"
-      ],
-      "correct_answer": "B) Rajasthan",
-      "explanation": "The Rajasthan government launched the 'Chief Minister's Street Vendor's Credit Card Scheme' to provide interest-free loans up to ₹50,000 to street vendors, aiming to support their livelihood.",
+      "explanation": "DB Offline",
       "trick": ""
     }
   ]
