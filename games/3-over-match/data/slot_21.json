@@ -4,241 +4,241 @@
     "day_index": 2,
     "slot_index": 21,
     "difficulty": "Medium",
-    "generated_at": "2026-03-07T19:40:32.717Z"
+    "generated_at": "2026-03-12T19:33:44.739Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper sells an item for $480 after giving a 20% discount on its marked price. What is the marked price of the item?",
+      "category": "Logical Reasoning",
+      "question": "Read the following statements and determine which conclusion(s) logically follow:\nStatements:\n1. All books are pens.\n2. All pens are papers.\nConclusions:\nI. All books are papers.\nII. Some papers are books.",
       "options": [
-        "$576",
-        "$600",
-        "$640",
-        "$720"
+        "Only conclusion I follows.",
+        "Only conclusion II follows.",
+        "Both conclusion I and II follow.",
+        "Neither conclusion I nor II follows."
       ],
-      "correct_answer": "$600",
-      "explanation": "If the item is sold for $480 after a 20% discount, then $480 represents 80% of the marked price. Let the marked price be MP. So, 0.80 * MP = $480. MP = $480 / 0.80 = $600.",
-      "trick": "M.P. = S.P. * 100 / (100 - Discount%)"
+      "correct_answer": "Both conclusion I and II follow.",
+      "explanation": "Let's analyze using Venn Diagrams or basic syllogistic rules:\nStatement 1: All books are pens. (Books are a subset of Pens)\nStatement 2: All pens are papers. (Pens are a subset of Papers)\n\nFrom these, we can infer:\nIf Books are inside Pens, and Pens are inside Papers, then Books must also be inside Papers.\n\nConclusion I: All books are papers. This logically follows. If every book is a pen, and every pen is a paper, then every book must be a paper.\nConclusion II: Some papers are books. If 'All books are papers' is true, it implies that there is at least one book, and that book is a paper. Therefore, 'Some papers are books' is also logically true. (A universal affirmative statement implies its corresponding particular affirmative, assuming the subject class is not empty, which is standard in these problems).",
+      "trick": "For 'All A are B' and 'All B are C', it always follows that 'All A are C'. Also, if 'All A are C' is true, then 'Some C are A' is also true. Visualize concentric circles: the smallest for 'Books', the next larger for 'Pens', and the largest for 'Papers'."
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "If 3x + 7 = 22, what is the value of 6x - 5?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
       "options": [
-        "25",
-        "30",
-        "35",
-        "40"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "25",
-      "explanation": "First, solve for x: 3x + 7 = 22 => 3x = 15 => x = 5. Then substitute x = 5 into 6x - 5: 6(5) - 5 = 30 - 5 = 25.",
+      "explanation": "DB Offline",
       "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "The perimeter of a square is 64 cm. What is the area of the square?",
-      "options": [
-        "16 cm²",
-        "64 cm²",
-        "128 cm²",
-        "256 cm²"
-      ],
-      "correct_answer": "256 cm²",
-      "explanation": "If the perimeter of a square is 64 cm, then each side (s) is 64/4 = 16 cm. The area of a square is side * side (s²). So, Area = 16 * 16 = 256 cm².",
-      "trick": "Area = (Perimeter/4)²"
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "The average age of three friends, A, B, and C, is 25 years. If the average age of A and B is 22 years, what is the age of C?",
+      "question": "A can do a piece of work in 10 days and B can do the same work in 15 days. If they work together, in how many days will they complete the work?",
       "options": [
-        "28 years",
-        "31 years",
-        "34 years",
-        "37 years"
+        "A) 5 days",
+        "B) 6 days",
+        "C) 7.5 days",
+        "D) 8 days"
       ],
-      "correct_answer": "31 years",
-      "explanation": "Total age of A, B, and C = 3 * 25 = 75 years. Total age of A and B = 2 * 22 = 44 years. Age of C = 75 - 44 = 31 years.",
-      "trick": "C's age = (Total sum of 3 members) - (Total sum of 2 members)"
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What comes next in the sequence: 2, 5, 10, 17, 26, ?",
-      "options": [
-        "35",
-        "37",
-        "39",
-        "41"
-      ],
-      "correct_answer": "37",
-      "explanation": "The differences between consecutive terms are: 5-2=3, 10-5=5, 17-10=7, 26-17=9. The differences are consecutive odd numbers. The next difference should be 11. So, 26 + 11 = 37.",
-      "trick": "Look for patterns in the differences between terms."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Pen is to Write as Knife is to _____.",
-      "options": [
-        "Cut",
-        "Sharp",
-        "Blade",
-        "Food"
-      ],
-      "correct_answer": "Cut",
-      "explanation": "A pen is used for the action of writing. Similarly, a knife is used for the action of cutting.",
-      "trick": "Identify the primary function or purpose relationship."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Complete the series: 2, 6, 12, 20, 30, ?",
-      "options": [
-        "40",
-        "42",
-        "44",
-        "46"
-      ],
-      "correct_answer": "42",
-      "explanation": "The pattern involves adding consecutive even numbers: 2+4=6, 6+6=12, 12+8=20, 20+10=30. The next number to add would be 12, so 30+12=42.",
-      "trick": "Look for differences between consecutive terms; if not constant, look for differences of differences."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "A person walks 10 km North, then 20 km East, and then 10 km South. How far is he from his starting point?",
-      "options": [
-        "10 km",
-        "20 km",
-        "30 km",
-        "40 km"
-      ],
-      "correct_answer": "20 km",
-      "explanation": "The person walks 10 km North and then 10 km South, which means their North-South displacement cancels out. They are effectively 20 km East from their starting point.",
-      "trick": "Visualize or draw the path; opposite directions cancel out."
+      "correct_answer": "B) 6 days",
+      "explanation": "A's 1-day work = 1/10 of the total work.\nB's 1-day work = 1/15 of the total work.\nWhen they work together, their combined 1-day work = (1/10) + (1/15).\nTo add these fractions, find a common denominator, which is 30.\nCombined 1-day work = (3/30) + (2/30) = 5/30 = 1/6 of the total work.\nIf they complete 1/6 of the work in one day, then they will complete the entire work in 6 days.",
+      "trick": "For two people A and B completing a work in 'x' and 'y' days respectively, the time taken to complete the work together is (x * y) / (x + y) days.\nHere, x = 10 days and y = 15 days.\nTime together = (10 * 15) / (10 + 15) = 150 / 25 = 6 days."
     },
     {
       "category": "Static GK",
-      "question": "Who is known as the 'Father of the Indian Nation'?",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
       "options": [
-        "Jawaharlal Nehru",
-        "Sardar Vallabhbhai Patel",
-        "Mahatma Gandhi",
-        "Subhas Chandra Bose"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Mahatma Gandhi",
-      "explanation": "Mahatma Gandhi is widely revered as the 'Father of the Indian Nation' for his pivotal role in India's independence movement through non-violent civil disobedience.",
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Pointing to a man, a woman said, \"His mother is the only daughter of my mother.\"\nHow is the man related to the woman?",
+      "options": [
+        "Brother",
+        "Son",
+        "Nephew",
+        "Husband"
+      ],
+      "correct_answer": "Son",
+      "explanation": "Let's break down the statement:\n1. 'My mother': Refers to the woman's own mother.\n2. 'Only daughter of my mother': Since the woman is speaking, and she is the daughter of her mother, and it's stated 'only daughter', this phrase refers to the woman herself.\n3. 'His mother is [the woman herself]': This means the man's mother is the woman who is speaking.\nTherefore, the man is the woman's son.",
+      "trick": "Start solving from the end of the sentence (e.g., 'my mother') and work backward. Replace phrases with the actual person or relationship as you go. Visualizing a small family tree can also help."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an item 20% above its cost price. He then offers a discount of 10% on the marked price. What is his profit percentage?",
+      "options": [
+        "A) 8%",
+        "B) 10%",
+        "C) 12%",
+        "D) 15%"
+      ],
+      "correct_answer": "A) 8%",
+      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 20% of CP = 100 + (0.20 * 100) = Rs. 120.\nDiscount = 10% of MP = 0.10 * 120 = Rs. 12.\nSelling Price (SP) = MP - Discount = 120 - 12 = Rs. 108.\nProfit = SP - CP = 108 - 100 = Rs. 8.\nProfit Percentage = (Profit / CP) * 100 = (8 / 100) * 100 = 8%.",
+      "trick": "Use the net percentage change formula: A + B + (AB/100). Here, A = +20% (markup) and B = -10% (discount).\nNet change = 20 + (-10) + (20 * -10 / 100) = 10 - (200/100) = 10 - 2 = 8%. So, the profit percentage is 8%."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The length of a rectangular field is twice its width. If the perimeter of the field is 90 meters, what is its area?",
+      "options": [
+        "A) 450 sq m",
+        "B) 300 sq m",
+        "C) 200 sq m",
+        "D) 150 sq m"
+      ],
+      "correct_answer": "A) 450 sq m",
+      "explanation": "Let the width of the field be 'w' meters.\nAccording to the problem, the length (l) is twice its width, so l = 2w.\nThe perimeter of a rectangle is given by P = 2(l + w).\nGiven P = 90 meters, so 90 = 2(2w + w).\n90 = 2(3w)\n90 = 6w\nw = 90 / 6 = 15 meters.\nNow, calculate the length: l = 2w = 2 * 15 = 30 meters.\nThe area of the field is A = l * w = 30 * 15 = 450 square meters.",
+      "trick": "If length (L) is twice the width (W), then L=2W. Perimeter P = 2(L+W) = 2(2W+W) = 2(3W) = 6W. So, W = P/6. Given P=90m, W = 90/6 = 15m. L = 2*15 = 30m. Area = L*W = 30*15 = 450 sq m."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "What will come in place of the question mark (?) in the following series?\n2, 5, 10, 17, ?",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30"
+      ],
+      "correct_answer": "26",
+      "explanation": "The pattern involves adding consecutive odd numbers to the previous term:\n2 + 3 = 5\n5 + 5 = 10\n10 + 7 = 17\nFollowing this pattern, the next number to be added is 9.\n17 + 9 = 26",
+      "trick": "Look for differences between consecutive terms. If the first differences don't reveal a pattern, look for differences of differences (second-order differences). In this case, the differences (3, 5, 7) form an arithmetic progression (odd numbers)."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Read the following statements and choose the correct conclusion:\nStatements:\n1. All birds can fly.\n2. My pet is a bird.\nConclusion:",
+      "options": [
+        "My pet cannot fly.",
+        "My pet can fly.",
+        "Only some birds can fly.",
+        "The statements are contradictory."
+      ],
+      "correct_answer": "My pet can fly.",
+      "explanation": "From statement 1, we know that the characteristic 'can fly' applies to all members of the category 'birds'.\nFrom statement 2, we know that 'my pet' is a member of the category 'birds'.\nTherefore, it logically follows that 'my pet' possesses the characteristic 'can fly'. This is a direct application of deductive reasoning (Modus Ponens).",
+      "trick": "In deductive reasoning, if the premises are true, the conclusion must be true. Visualize it with Venn diagrams: a larger circle for 'things that can fly' containing a smaller circle for 'birds', and a point for 'my pet' inside the 'birds' circle."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
       "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Which continent is home to the Amazon Rainforest?",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
       "options": [
-        "Africa",
-        "Asia",
-        "South America",
-        "North America"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "South America",
-      "explanation": "The Amazon Rainforest, the largest tropical rainforest in the world, is primarily located in South America, covering parts of Brazil, Peru, Ecuador, and other countries.",
-      "trick": "Associate major geographical features with their continents."
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The ratio of apples to oranges in a basket is 5:3. If there are 24 more apples than oranges, how many fruits are there in total in the basket?",
+      "options": [
+        "A) 96",
+        "B) 120",
+        "C) 144",
+        "D) 168"
+      ],
+      "correct_answer": "A) 96",
+      "explanation": "Let the number of apples be 5x and the number of oranges be 3x.\nThe difference between the number of apples and oranges is 5x - 3x = 2x.\nAccording to the problem, this difference is 24, so 2x = 24.\nSolving for x, we get x = 24 / 2 = 12.\nNumber of apples = 5x = 5 * 12 = 60.\nNumber of oranges = 3x = 3 * 12 = 36.\nTotal number of fruits in the basket = 60 (apples) + 36 (oranges) = 96 fruits.",
+      "trick": "The difference in ratio parts is 5 - 3 = 2 parts. This difference of 2 parts corresponds to 24 fruits. So, 1 part = 24 / 2 = 12 fruits. The total number of parts in the ratio is 5 + 3 = 8 parts. Therefore, the total number of fruits = 8 parts * 12 fruits/part = 96 fruits."
     },
     {
       "category": "Static GK",
-      "question": "Which organ is responsible for pumping blood throughout the human body?",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
       "options": [
-        "Lungs",
-        "Brain",
-        "Heart",
-        "Liver"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Heart",
-      "explanation": "The heart is a muscular organ that pumps blood through the circulatory system, supplying oxygen and nutrients to the body's tissues and removing carbon dioxide and other waste products.",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the SI unit of electric current?",
-      "options": [
-        "Volt",
-        "Ohm",
-        "Ampere",
-        "Watt"
-      ],
-      "correct_answer": "Ampere",
-      "explanation": "The Ampere (A) is the SI unit of electric current. Volt is for electric potential, Ohm for resistance, and Watt for power.",
-      "trick": "Memorize fundamental SI units."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which of the following personalities was NOT among the five recipients of the Bharat Ratna, India's highest civilian award, announced in early 2024?",
-      "options": [
-        "L.K. Advani",
-        "M.S. Swaminathan",
-        "Atal Bihari Vajpayee",
-        "P.V. Narasimha Rao"
-      ],
-      "correct_answer": "Atal Bihari Vajpayee",
-      "explanation": "In 2024, the Bharat Ratna was posthumously awarded to Karpoori Thakur, P.V. Narasimha Rao, Chaudhary Charan Singh, and M.S. Swaminathan, and to L.K. Advani. Atal Bihari Vajpayee received the award in 2015.",
+      "explanation": "DB Offline",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Which country successfully landed its Smart Lander for Investigating Moon (SLIM) spacecraft on the lunar surface in January 2024, becoming the fifth nation to achieve this feat?",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
       "options": [
-        "China",
-        "Japan",
-        "India",
-        "Russia"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Japan",
-      "explanation": "Japan's SLIM spacecraft successfully landed on the Moon on January 20, 2024, making Japan the fifth country to achieve a soft landing on the lunar surface.",
+      "explanation": "DB Offline",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "The 19th Non-Aligned Movement (NAM) Summit was held in January 2024. Which city hosted this significant international event?",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
       "options": [
-        "New Delhi, India",
-        "Kampala, Uganda",
-        "Jakarta, Indonesia",
-        "Cairo, Egypt"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Kampala, Uganda",
-      "explanation": "The 19th Non-Aligned Movement (NAM) Summit took place in Kampala, Uganda, from January 15-20, 2024.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who clinched the Men's Singles title at the Australian Open 2024, marking his first Grand Slam victory?",
-      "options": [
-        "Novak Djokovic",
-        "Daniil Medvedev",
-        "Carlos Alcaraz",
-        "Jannik Sinner"
-      ],
-      "correct_answer": "Jannik Sinner",
-      "explanation": "Jannik Sinner defeated Daniil Medvedev in the final to win the Men's Singles title at the Australian Open 2024, securing his maiden Grand Slam trophy.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The Indian government recently launched a new scheme aimed at promoting solar energy adoption in households by providing free electricity up to a certain limit. What is the name of this scheme?",
-      "options": [
-        "PM-Kisan Urja Yojana",
-        "PM-Surya Ghar Muft Bijli Yojana",
-        "National Solar Mission",
-        "Har Ghar Bijli Yojana"
-      ],
-      "correct_answer": "PM-Surya Ghar Muft Bijli Yojana",
-      "explanation": "Prime Minister Narendra Modi launched the 'PM-Surya Ghar Muft Bijli Yojana' in February 2024, aiming to provide free electricity to 1 crore households through rooftop solar installations.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Google launched its most capable and general AI model in December 2023, designed to be multimodal, understanding and operating across text, images, audio, and video. What is this AI model called?",
-      "options": [
-        "Bard",
-        "ChatGPT-5",
-        "Gemini",
-        "Copilot"
-      ],
-      "correct_answer": "Gemini",
-      "explanation": "Google introduced Gemini in December 2023 as its latest and most advanced AI model, built from the ground up to be multimodal and highly efficient.",
+      "explanation": "DB Offline",
       "trick": ""
     }
   ]
