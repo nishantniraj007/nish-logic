@@ -4,21 +4,151 @@
     "day_index": 2,
     "slot_index": 23,
     "difficulty": "Easy",
-    "generated_at": "2026-03-07T19:51:12.594Z"
+    "generated_at": "2026-03-12T19:59:00.294Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "If a train travels at 60 km/h, how far will it travel in 3 hours?",
+      "category": "Logical Reasoning",
+      "question": "If 'A' is taller than 'B', and 'B' is taller than 'C', who is the tallest?",
       "options": [
-        "120 km",
-        "180 km",
-        "240 km",
-        "300 km"
+        "A",
+        "B",
+        "C",
+        "Cannot be determined"
       ],
-      "correct_answer": "180 km",
-      "explanation": "Distance = Speed × Time. So, Distance = 60 km/h × 3 hours = 180 km.",
-      "trick": "Multiply speed by time directly."
+      "correct_answer": "A",
+      "explanation": "The problem states A > B and B > C. By transitive property, if A is greater than B and B is greater than C, then A must be greater than C. Therefore, A is the tallest.",
+      "trick": "Think of it like stacking blocks. If block A is on top of block B, and block B is on top of block C, then block A is at the very top."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If 5 apples cost $10, how much will 15 apples cost?",
+      "options": [
+        "$20",
+        "$30",
+        "$40",
+        "$50"
+      ],
+      "correct_answer": "$30",
+      "explanation": "First, find the cost of one apple. If 5 apples cost $10, then 1 apple costs $10 / 5 = $2. Now, multiply the cost of one apple by 15 to find the cost of 15 apples. So, 15 apples will cost 15 * $2 = $30.",
+      "trick": "Recognize that 15 apples is 3 times the number of 5 apples. Therefore, the cost will also be 3 times the original cost: $10 * 3 = $30."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct_answer": "10",
+      "explanation": "This is an arithmetic sequence where each number is obtained by adding 2 to the previous number. The pattern is +2. So, 8 + 2 = 10.",
+      "trick": "The sequence consists of even numbers in increasing order. The next even number after 8 is 10."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A train travels at a speed of 60 kilometers per hour. How long will it take to travel 180 kilometers?",
+      "options": [
+        "1 hour",
+        "2 hours",
+        "3 hours",
+        "4 hours"
+      ],
+      "correct_answer": "3 hours",
+      "explanation": "The formula relating distance, speed, and time is: Time = Distance / Speed. In this case, Distance = 180 km and Speed = 60 km/hour. So, Time = 180 km / 60 km/hour = 3 hours.",
+      "trick": "Think of how many times 60 fits into 180. 60 + 60 + 60 = 180, which is 3 times. So it takes 3 hours."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Which word does not belong in the following group: Apple, Banana, Carrot, Orange?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
+      "trick": "Categorize the items. Most are fruits, one is a vegetable."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
@@ -30,216 +160,86 @@
         "100"
       ],
       "correct_answer": "50",
-      "explanation": "25% can be written as 25/100 or 0.25. So, 0.25 × 200 = 50.",
-      "trick": "25% is 1/4. Divide 200 by 4."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If a shirt costs $50 and is on sale for 20% off, what is the sale price?",
-      "options": [
-        "$30",
-        "$35",
-        "$40",
-        "$45"
-      ],
-      "correct_answer": "$40",
-      "explanation": "The discount amount is 20% of $50, which is (20/100) * 50 = $10. The sale price is $50 - $10 = $40.",
-      "trick": "Calculate 80% of the original price (100% - 20% discount)."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is the sum of the first 5 positive even numbers?",
-      "options": [
-        "20",
-        "25",
-        "30",
-        "35"
-      ],
-      "correct_answer": "30",
-      "explanation": "The first 5 positive even numbers are 2, 4, 6, 8, and 10. Their sum is 2 + 4 + 6 + 8 + 10 = 30.",
-      "trick": "The sum of the first n even numbers is n * (n + 1). For n=5, 5 * (5 + 1) = 5 * 6 = 30."
+      "explanation": "To find 25% of 200, you can convert the percentage to a decimal or a fraction. 25% as a decimal is 0.25. Multiply 0.25 by 200: 0.25 * 200 = 50. Alternatively, 25% is the same as 1/4. So, 1/4 of 200 is 200 / 4 = 50.",
+      "trick": "25% is equivalent to dividing by 4. So, 200 / 4 = 50."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does not belong with the others?",
+      "question": "If today is Monday, what day will it be in 3 days?",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits, while Carrot is a vegetable.",
-      "trick": "Look for the item that belongs to a different category."
+      "correct_answer": "Thursday",
+      "explanation": "Starting from Monday: 1 day after is Tuesday, 2 days after is Wednesday, and 3 days after is Thursday.",
+      "trick": "Count on your fingers or visualize the days of the week."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all dogs are mammals, and Fido is a dog, then Fido is a:",
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
       "options": [
-        "Cat",
-        "Bird",
-        "Mammal",
-        "Reptile"
+        "9",
+        "10",
+        "11",
+        "12"
       ],
-      "correct_answer": "Mammal",
-      "explanation": "This is a deductive reasoning problem. If Fido belongs to the group 'dogs', and all 'dogs' belong to the group 'mammals', then Fido must also belong to the group 'mammals'.",
-      "trick": "Apply the rule: If A is a type of B, and C is an A, then C is a B."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If all cats are mammals, and all mammals are animals, what can be concluded about cats?",
-      "options": [
-        "All cats are reptiles.",
-        "All cats are birds.",
-        "All cats are animals.",
-        "Some cats are not animals."
-      ],
-      "correct_answer": "All cats are animals.",
-      "explanation": "This is a classic syllogism. If A is a subset of B, and B is a subset of C, then A is a subset of C. Here, Cats (A) are a subset of Mammals (B), and Mammals (B) are a subset of Animals (C).",
-      "trick": "Think of it like nested boxes: Cats inside Mammals, Mammals inside Animals. So Cats are definitely inside Animals."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Which word does NOT belong in the following group: Apple, Banana, Carrot, Orange?",
-      "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
-      ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are fruits. Carrot is a vegetable.",
-      "trick": "Identify the odd one out by its common classification (fruit vs. vegetable)."
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the capital city of France?",
-      "options": [
-        "Berlin",
-        "Madrid",
-        "Paris",
-        "Rome"
-      ],
-      "correct_answer": "Paris",
-      "explanation": "Paris is the capital and largest city of France.",
-      "trick": "Associate famous landmarks with countries (Eiffel Tower -> France -> Paris)."
-    },
-    {
-      "category": "Static GK",
-      "question": "Which planet is known as the Red Planet?",
-      "options": [
-        "Earth",
-        "Mars",
-        "Jupiter",
-        "Venus"
-      ],
-      "correct_answer": "Mars",
-      "explanation": "Mars is often called the Red Planet due to its reddish appearance, caused by iron oxide on its surface.",
-      "trick": "Remember common nicknames for planets."
-    },
-    {
-      "category": "Static GK",
-      "question": "Who painted the Mona Lisa?",
-      "options": [
-        "Vincent van Gogh",
-        "Pablo Picasso",
-        "Leonardo da Vinci",
-        "Claude Monet"
-      ],
-      "correct_answer": "Leonardo da Vinci",
-      "explanation": "Leonardo da Vinci was an Italian Renaissance artist who painted the iconic Mona Lisa.",
-      "trick": "Link famous artworks to their renowned artists."
-    },
-    {
-      "category": "Static GK",
-      "question": "In which continent is the Amazon Rainforest primarily located?",
-      "options": [
-        "Africa",
-        "Asia",
-        "North America",
-        "South America"
-      ],
-      "correct_answer": "South America",
-      "explanation": "The Amazon Rainforest is a vast tropical rainforest located in the Amazon basin of South America.",
-      "trick": "Associate major geographical features with continents."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which country recently hosted the COP28 climate summit?",
-      "options": [
-        "India",
-        "United Arab Emirates",
-        "Brazil",
-        "Egypt"
-      ],
-      "correct_answer": "United Arab Emirates",
-      "explanation": "The 28th Conference of the Parties (COP28) to the UNFCCC was held in Dubai, United Arab Emirates, from November 30 to December 13, 2023.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Who won the men's singles title at the Australian Open in January 2024?",
-      "options": [
-        "Novak Djokovic",
-        "Carlos Alcaraz",
-        "Jannik Sinner",
-        "Daniil Medvedev"
-      ],
-      "correct_answer": "Jannik Sinner",
-      "explanation": "Jannik Sinner won his first Grand Slam title by defeating Daniil Medvedev in the men's singles final of the 2024 Australian Open.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The G20 Summit in 2023 was hosted by which country?",
-      "options": [
-        "Japan",
-        "South Africa",
-        "India",
-        "Indonesia"
-      ],
-      "correct_answer": "India",
-      "explanation": "India hosted the G20 Summit in New Delhi from September 9-10, 2023.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which Indian state recently celebrated the 'Kambala' festival, a traditional buffalo race?",
-      "options": [
-        "Kerala",
-        "Tamil Nadu",
-        "Karnataka",
-        "Andhra Pradesh"
-      ],
-      "correct_answer": "Karnataka",
-      "explanation": "Kambala is an annual buffalo race held in the coastal districts of Karnataka.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which Indian spacecraft successfully landed on the Moon's south pole in August 2023?",
-      "options": [
-        "Chandrayaan-2",
-        "Mangalyaan",
-        "Chandrayaan-3",
-        "Aditya-L1"
-      ],
-      "correct_answer": "Chandrayaan-3",
-      "explanation": "ISRO's Chandrayaan-3 mission successfully landed on the lunar south pole on August 23, 2023, making India the first country to achieve this feat.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "The 2024 Summer Olympics are scheduled to be held in which city?",
-      "options": [
-        "Los Angeles",
-        "Paris",
-        "Tokyo",
-        "London"
-      ],
-      "correct_answer": "Paris",
-      "explanation": "The 2024 Summer Olympics will be held in Paris, France.",
-      "trick": ""
+      "correct_answer": "10",
+      "explanation": "This is a sequence of even numbers. Each number is obtained by adding 2 to the previous number (2+2=4, 4+2=6, 6+2=8). Therefore, the next number is 8 + 2 = 10.",
+      "trick": "Look for a simple pattern of addition or subtraction between consecutive numbers."
     }
   ]
 }
