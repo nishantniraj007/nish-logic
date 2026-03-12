@@ -4,90 +4,77 @@
     "day_index": 2,
     "slot_index": 22,
     "difficulty": "Medium",
-    "generated_at": "2026-03-07T19:45:29.228Z"
+    "generated_at": "2026-03-12T19:51:33.708Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an item 20% above its cost price. If he offers a discount of 10% on the marked price, what is his profit percentage?",
+      "category": "Logical Reasoning",
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
       "options": [
-        "A) 8%",
-        "B) 10%",
-        "C) 12%",
-        "D) 15%"
+        "His father",
+        "His son",
+        "His uncle",
+        "His nephew"
       ],
-      "correct_answer": "A) 8%",
-      "explanation": "Let the cost price (CP) be ₹100. Marked price (MP) = CP + 20% of CP = 100 + 20 = ₹120. Discount = 10% of MP = 10% of 120 = ₹12. Selling price (SP) = MP - Discount = 120 - 12 = ₹108. Profit = SP - CP = 108 - 100 = ₹8. Profit percentage = (Profit / CP) * 100 = (8 / 100) * 100 = 8%.",
-      "trick": "Assume CP=100, then calculate MP and SP sequentially."
+      "correct_answer": "His son",
+      "explanation": "Let's break down the statement:\n1.  'I have no brother or sister' - This means the man speaking is an only child.\n2.  'my father's son' - Since the speaker is an only child, 'my father's son' can only be the speaker himself.\n3.  Now substitute this back into the main statement: 'that man's father is [the speaker himself]'.\n\nThis implies that the father of the man in the photograph is the speaker. Therefore, the man in the photograph is the speaker's son.",
+      "trick": "When solving blood relation puzzles, always break down complex phrases like 'my father's son' or 'her mother's husband' into simpler relationships relative to the speaker first. Drawing a small family tree can also help visualize the connections."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "The sum of two numbers is 30, and their difference is 6. What is the larger number?",
+      "question": "The sum of the ages of a father and his son is 60 years. Six years ago, the father's age was five times the son's age. What are their current ages?",
       "options": [
-        "A) 12",
-        "B) 18",
-        "C) 20",
-        "D) 24"
+        "A) Father: 46 years, Son: 14 years",
+        "B) Father: 45 years, Son: 15 years",
+        "C) Father: 48 years, Son: 12 years",
+        "D) Father: 42 years, Son: 18 years"
       ],
-      "correct_answer": "B) 18",
-      "explanation": "Let the two numbers be x and y. We are given: x + y = 30 (Equation 1) and x - y = 6 (Equation 2). Adding Equation 1 and Equation 2: (x + y) + (x - y) = 30 + 6 => 2x = 36 => x = 18. Substituting x=18 into Equation 1: 18 + y = 30 => y = 12. The larger number is 18.",
-      "trick": "Larger number = (Sum + Difference) / 2"
+      "correct_answer": "A) Father: 46 years, Son: 14 years",
+      "explanation": "Let the current age of the father be F and the son be S.\n1. F + S = 60 (Equation 1)\nSix years ago:\nFather's age = F - 6\nSon's age = S - 6\n2. F - 6 = 5 * (S - 6)\nF - 6 = 5S - 30\nF = 5S - 24 (Equation 2)\nSubstitute Equation 2 into Equation 1:\n(5S - 24) + S = 60\n6S - 24 = 60\n6S = 84\nS = 14 years\nSubstitute S = 14 into Equation 1:\nF + 14 = 60\nF = 46 years\nSo, the father's current age is 46 years and the son's current age is 14 years.",
+      "trick": "Test the options. All options sum to 60. Check the second condition:\nA) Father=46, Son=14. Six years ago: Father=40, Son=8. Is 40 = 5 * 8? Yes."
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "A rectangular garden has a length of 15 meters and a width of 10 meters. What is the area of the garden?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
       "options": [
-        "A) 25 sq m",
-        "B) 50 sq m",
-        "C) 150 sq m",
-        "D) 300 sq m"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "C) 150 sq m",
-      "explanation": "The area of a rectangle is calculated by the formula: Area = Length × Width. Given Length = 15 meters and Width = 10 meters. Area = 15 m × 10 m = 150 square meters.",
+      "explanation": "DB Offline",
       "trick": ""
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "The average of five numbers is 25. If four of the numbers are 20, 30, 22, and 28, what is the fifth number?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
       "options": [
-        "A) 20",
-        "B) 25",
-        "C) 30",
-        "D) 35"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "B) 25",
-      "explanation": "The sum of five numbers = Average × Number of items = 25 × 5 = 125. The sum of the four given numbers = 20 + 30 + 22 + 28 = 100. The fifth number = Total sum - Sum of four numbers = 125 - 100 = 25.",
-      "trick": "Sum = Average × Count"
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "What comes next in the sequence: 2, 5, 10, 17, 26, ___?",
-      "options": [
-        "A) 35",
-        "B) 37",
-        "C) 39",
-        "D) 41"
-      ],
-      "correct_answer": "B) 37",
-      "explanation": "Let's find the differences between consecutive terms: 5-2=3, 10-5=5, 17-10=7, 26-17=9. The differences are consecutive odd numbers (3, 5, 7, 9). The next difference in this pattern should be 11. Therefore, the next term in the sequence is 26 + 11 = 37.",
-      "trick": "Look for patterns in differences (first, second-order)."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Lion is to Roar as Snake is to ___?",
-      "options": [
-        "A) Hiss",
-        "B) Bark",
-        "C) Meow",
-        "D) Trumpet"
-      ],
-      "correct_answer": "A) Hiss",
-      "explanation": "This is an analogy based on the characteristic sound made by an animal. A lion makes a 'roar' sound, and similarly, a snake makes a 'hiss' sound.",
-      "trick": "Identify the relationship between the first pair (animal and its sound)."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
+      "question": "Look at this series: 2, 6, 12, 20, 30, ? What number should come next?",
       "options": [
         "38",
         "40",
@@ -95,151 +82,164 @@
         "44"
       ],
       "correct_answer": "42",
-      "explanation": "The differences between consecutive terms are 4, 6, 8, 10. Following this pattern, the next difference should be 12. So, 30 + 12 = 42.",
-      "trick": "Look for patterns in the differences between consecutive numbers."
+      "explanation": "Let's find the difference between consecutive numbers:\n- 6 - 2 = 4\n- 12 - 6 = 6\n- 20 - 12 = 8\n- 30 - 20 = 10\n\nThe differences are 4, 6, 8, 10. This is an arithmetic progression where each difference increases by 2.\nThe next difference should be 10 + 2 = 12.\nSo, the next number in the series is 30 + 12 = 42.",
+      "trick": "Always look for patterns in the differences between consecutive terms first. If the first-level differences don't show a clear pattern, check the differences of the differences (second-level differences), which might reveal an arithmetic progression or a constant value. Also, consider patterns involving squares, cubes, or multiplication."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'Cloud' is called 'White', 'White' is called 'Rain', 'Rain' is called 'Green', 'Green' is called 'Air', and 'Air' is called 'Blue', then what is the color of the sky?",
+      "question": "Statements:\n1. All pens are pencils.\n2. All pencils are erasers.\n\nConclusions:\nI. Some erasers are pens.\nII. All pens are erasers.\n\nWhich of the following conclusions logically follows from the given statements?",
       "options": [
-        "White",
-        "Rain",
-        "Green",
-        "Blue"
+        "Only conclusion I follows",
+        "Only conclusion II follows",
+        "Both conclusion I and II follow",
+        "Neither conclusion I nor II follows"
       ],
-      "correct_answer": "Blue",
-      "explanation": "The actual color of the sky is blue. In this code, 'Air' is called 'Blue'. Since the sky is 'Air', its coded color is 'Blue'.",
-      "trick": "Identify the real object first, then find its direct coded name."
+      "correct_answer": "Both conclusion I and II follow",
+      "explanation": "We can use Venn diagrams or direct deduction:\nFrom statement 1: All Pens are within the Pencils circle.\nFrom statement 2: All Pencils are within the Erasers circle.\n\nThis implies that all Pens are also within the Erasers circle.\n\nConclusion I: 'Some erasers are pens.' Since all pens are erasers, it logically follows that some erasers must be pens. (If the set of pens is entirely inside the set of erasers, then there are pens that are also erasers).\n\nConclusion II: 'All pens are erasers.' This directly follows from the combined statements. If every pen is a pencil, and every pencil is an eraser, then every pen must be an eraser.\n\nTherefore, both conclusions I and II logically follow.",
+      "trick": "For syllogisms, drawing Venn diagrams can quickly clarify the relationships between categories. For 'All A are B' and 'All B are C', it always implies 'All A are C' and 'Some C are A'."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks up an item by 20% above its cost price. He then offers a discount of 15% on the marked price. If the cost price of the item is ₹400, what is the selling price and the net profit or loss percentage?",
+      "options": [
+        "A) Selling Price: ₹408, Profit: 2%",
+        "B) Selling Price: ₹408, Loss: 2%",
+        "C) Selling Price: ₹420, Profit: 5%",
+        "D) Selling Price: ₹420, Loss: 5%"
+      ],
+      "correct_answer": "A) Selling Price: ₹408, Profit: 2%",
+      "explanation": "Cost Price (CP) = ₹400.\nMarked Price (MP) = CP + 20% of CP = 400 + (0.20 * 400) = 400 + 80 = ₹480.\nSelling Price (SP) = MP - 15% of MP = 480 - (0.15 * 480) = 480 - 72 = ₹408.\nProfit/Loss = SP - CP = 408 - 400 = ₹8 (Profit).\nProfit Percentage = (Profit / CP) * 100 = (8 / 400) * 100 = 2%.",
+      "trick": "Use the net percentage change formula: A + B + (AB/100). Here, A = +20% (markup), B = -15% (discount).\nNet change = 20 - 15 + (20 * -15 / 100) = 5 - (300 / 100) = 5 - 3 = 2%. This is a net profit of 2%.\nSelling Price = Cost Price * (1 + Net Profit %) = 400 * (1 + 0.02) = 400 * 1.02 = ₹408."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Static GK",
-      "question": "Which ancient civilization is known for building the Pyramids?",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
       "options": [
-        "Mesopotamian",
-        "Indus Valley",
-        "Egyptian",
-        "Roman"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Egyptian",
-      "explanation": "The ancient Egyptian civilization is renowned for constructing monumental pyramids, primarily as tombs for their pharaohs.",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "Which of the following is generally considered the longest river in the world?",
-      "options": [
-        "Amazon River",
-        "Nile River",
-        "Yangtze River",
-        "Mississippi River"
-      ],
-      "correct_answer": "Nile River",
-      "explanation": "The Nile River, flowing through northeastern Africa, is widely recognized as the longest river globally.",
-      "trick": "Memorize geographical superlatives (longest, largest, highest)."
-    },
-    {
-      "category": "Static GK",
-      "question": "What is the SI unit of electric current?",
-      "options": [
-        "Volt",
-        "Ohm",
-        "Ampere",
-        "Watt"
-      ],
-      "correct_answer": "Ampere",
-      "explanation": "The Ampere (A) is the SI unit for measuring electric current. Volt measures electric potential, Ohm measures electrical resistance, and Watt measures power.",
-      "trick": "Associate units with their respective physical quantities."
-    },
-    {
-      "category": "Static GK",
-      "question": "Which gas do plants primarily absorb from the atmosphere for photosynthesis?",
-      "options": [
-        "Oxygen",
-        "Nitrogen",
-        "Carbon Dioxide",
-        "Hydrogen"
-      ],
-      "correct_answer": "Carbon Dioxide",
-      "explanation": "During photosynthesis, plants take in carbon dioxide from the atmosphere along with water and sunlight to produce glucose (food) and oxygen.",
-      "trick": "Understand the basic inputs and outputs of key biological processes."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "Which private American company successfully landed its Odysseus spacecraft on the Moon in February 2024, marking the first U.S. lunar landing since Apollo 17?",
-      "options": [
-        "SpaceX",
-        "Blue Origin",
-        "Intuitive Machines",
-        "Astrobotic Technology"
-      ],
-      "correct_answer": "Intuitive Machines",
-      "explanation": "Intuitive Machines' Odysseus lander, part of NASA's CLPS program, made history by successfully landing on the Moon's south polar region in February 2024, becoming the first private American company to achieve this feat.",
+      "explanation": "DB Offline",
       "trick": ""
     },
     {
       "category": "Current Affairs",
-      "question": "Who was declared the winner of the Indonesian presidential election held in February 2024, succeeding Joko Widodo?",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
       "options": [
-        "Anies Baswedan",
-        "Ganjar Pranowo",
-        "Prabowo Subianto",
-        "Muhaimin Iskandar"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Prabowo Subianto",
-      "explanation": "Prabowo Subianto, the former Minister of Defense, secured a landslide victory in the Indonesian presidential election held on February 14, 2024, and is set to become the next president.",
+      "explanation": "DB Offline",
       "trick": ""
     },
     {
-      "category": "Current Affairs",
-      "question": "According to the International Monetary Fund's (IMF) World Economic Outlook update released in April 2024, what is the projected global economic growth rate for 2024?",
+      "category": "Quantitative Aptitude",
+      "question": "A rectangular park has a length that is twice its width. If the perimeter of the park is 120 meters, what is the area of the park?",
       "options": [
-        "2.8%",
-        "3.2%",
-        "3.5%",
-        "3.0%"
+        "A) 800 sq meters",
+        "B) 600 sq meters",
+        "C) 750 sq meters",
+        "D) 900 sq meters"
       ],
-      "correct_answer": "3.2%",
-      "explanation": "In its April 2024 World Economic Outlook, the IMF maintained its global growth projection for 2024 at 3.2%, the same as its January forecast.",
-      "trick": ""
+      "correct_answer": "A) 800 sq meters",
+      "explanation": "Let the width of the park be 'w' meters.\nAccording to the problem, the length 'l' is twice its width, so l = 2w.\nThe perimeter of a rectangle is given by P = 2(l + w).\nGiven P = 120 meters.\n120 = 2(2w + w)\n120 = 2(3w)\n120 = 6w\nw = 120 / 6\nw = 20 meters\nNow, calculate the length: l = 2w = 2 * 20 = 40 meters.\nThe area of a rectangle is given by A = l * w.\nA = 40 * 20 = 800 sq meters.",
+      "trick": "If length is 2w and width is w, the perimeter is 2(2w+w) = 6w. So, w = Perimeter / 6. For P=120, w = 120/6 = 20m. Then l = 2*20 = 40m. Area = 40*20 = 800 sq meters."
     },
     {
-      "category": "Current Affairs",
-      "question": "Which international organization released its 'State of the Global Climate 2023' report in March 2024, confirming that 2023 was the warmest year on record?",
+      "category": "Logical Reasoning",
+      "question": "If 'APPLE' is coded as 'BQQMF', then how is 'GRAPE' coded using the same pattern?",
       "options": [
-        "Intergovernmental Panel on Climate Change (IPCC)",
-        "United Nations Environment Programme (UNEP)",
-        "World Meteorological Organization (WMO)",
-        "Greenpeace"
+        "HSBQF",
+        "HQBPE",
+        "HSBPF",
+        "HSRQE"
       ],
-      "correct_answer": "World Meteorological Organization (WMO)",
-      "explanation": "The World Meteorological Organization (WMO) published its flagship 'State of the Global Climate 2023' report in March 2024, highlighting record-breaking temperatures, ocean heat, and ice loss.",
-      "trick": ""
+      "correct_answer": "HSBQF",
+      "explanation": "The coding pattern is a simple shift of +1 for each letter in the word.\n- A becomes B (+1)\n- P becomes Q (+1)\n- P becomes Q (+1)\n- L becomes M (+1)\n- E becomes F (+1)\nApplying the same pattern to 'GRAPE':\n- G becomes H (+1)\n- R becomes S (+1)\n- A becomes B (+1)\n- P becomes Q (+1)\n- E becomes F (+1)\nSo, 'GRAPE' is coded as 'HSBQF'.",
+      "trick": "For simple letter coding, write down the letters and their codes vertically. Look for consistent shifts (+1, -1, +2, etc.) or alphabetical positions to identify the pattern quickly. Sometimes, it might involve skipping letters or reversing the alphabet."
     },
     {
-      "category": "Current Affairs",
-      "question": "Who won the Men's Singles title at the Australian Open in January 2024?",
+      "category": "Quantitative Aptitude",
+      "question": "A can complete a piece of work in 10 days, and B can complete the same work in 15 days. If they work together, how many days will it take them to complete the work?",
       "options": [
-        "Novak Djokovic",
-        "Jannik Sinner",
-        "Daniil Medvedev",
-        "Carlos Alcaraz"
+        "A) 5 days",
+        "B) 6 days",
+        "C) 8 days",
+        "D) 12.5 days"
       ],
-      "correct_answer": "Jannik Sinner",
-      "explanation": "Italy's Jannik Sinner won his first Grand Slam title by defeating Daniil Medvedev in a thrilling five-set final at the Australian Open 2024.",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "In February 2024, which company unveiled 'Sora', a groundbreaking artificial intelligence model capable of generating realistic and imaginative videos from text instructions?",
-      "options": [
-        "Google",
-        "Meta",
-        "OpenAI",
-        "Microsoft"
-      ],
-      "correct_answer": "OpenAI",
-      "explanation": "OpenAI, known for ChatGPT, introduced Sora in February 2024, showcasing its advanced capabilities in creating high-quality videos from text prompts.",
-      "trick": ""
+      "correct_answer": "B) 6 days",
+      "explanation": "A's one day work = 1/10 of the total work.\nB's one day work = 1/15 of the total work.\nWhen they work together, their combined one day work is the sum of their individual one day works:\nCombined work per day = 1/10 + 1/15\nTo add these fractions, find a common denominator, which is 30.\nCombined work per day = (3/30) + (2/30) = 5/30 = 1/6 of the total work.\nIf they complete 1/6 of the work in one day, then they will complete the entire work in 6 days.",
+      "trick": "For two people working together, the combined time T = (Time1 * Time2) / (Time1 + Time2).\nT = (10 * 15) / (10 + 15) = 150 / 25 = 6 days."
     }
   ]
 }
