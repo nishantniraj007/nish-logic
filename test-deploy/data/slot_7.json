@@ -2,23 +2,74 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 7,
-    "generated_at": "2026-03-11T20:02:54.721Z",
+    "generated_at": "2026-03-12T19:35:36.243Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
-      "correct_answer": "32",
+      "question": "If DOG is coded as FQI, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
       "options": [
-        "32",
-        "34",
-        "64",
-        "30"
+        "K?L",
+        "OCP",
+        "PDQ",
+        "MAN"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Nile",
+        "Yangtze",
+        "Mississippi"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 9, 4, 16, 50",
+      "correct_answer": "50",
+      "options": [
+        "9",
+        "4",
+        "16",
+        "50"
+      ],
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 80 days while B can complete the same work in 96 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "43.64 days",
+      "options": [
+        "43.64 days",
+        "42.64 days",
+        "47.64 days",
+        "45.64 days"
+      ],
+      "explanation": "Work = 80 * 96 = 7680. Rate = 80 + 96 = 176. Time = Work / Rate = 43.64 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Rs. 1080 is divided between A and B in the ratio 5:4. What is A's share?",
+      "correct_answer": "Rs. 600",
+      "options": [
+        "Rs. 708",
+        "Rs. 480",
+        "Rs. 492",
+        "Rs. 600"
+      ],
+      "explanation": "Total parts = 5 + 4 = 9. Value of 1 part = 1080/9 = 120. A's share = 5 * 120 = 600.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Who was the first President of India?",
@@ -33,30 +84,67 @@
       "category": "Static GK"
     },
     {
-      "question": "A can complete a piece of work in 48 days while B can complete the same work in 120 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "34.29 days",
+      "question": "What is the average of the following 5 consecutive even numbers: 50, 52, 54, 56, 58?",
+      "correct_answer": "54",
       "options": [
-        "33.29 days",
-        "34.29 days",
-        "38.29 days",
-        "36.29 days"
+        "54",
+        "52",
+        "58",
+        "56"
       ],
-      "explanation": "Work = 48 * 120 = 5760. Rate = 48 + 120 = 168. Time = Work / Rate = 34.29 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
+      "explanation": "Sum = 270. Average = Sum / 5 = 54.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 32, 34, 36, 38, 40?",
-      "correct_answer": "36",
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
       "options": [
-        "36",
-        "40",
-        "34",
-        "38"
+        "240",
+        "729",
+        "246",
+        "243"
       ],
-      "explanation": "Sum = 180. Average = Sum / 5 = 36.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Earth",
+        "Neptune",
+        "Saturn",
+        "Jupiter"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Mahatma Gandhi",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 13, 37, 61, 85, 109, ?",
+      "correct_answer": "133",
+      "options": [
+        "135",
+        "157",
+        "133",
+        "109"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 24. So, 109 + (24) = 133.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -71,105 +159,17 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 7600 at an interest rate of 9% per annum over 3 years?",
+      "correct_answer": "Rs. 2052",
       "options": [
-        "Neptune",
-        "Earth",
-        "Jupiter",
-        "Saturn"
+        "Rs. 2432",
+        "Rs. 2052",
+        "Rs. 2152",
+        "Rs. 2002"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Mississippi",
-        "Nile",
-        "Yangtze",
-        "Amazon"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Rs. 1312 is divided between A and B in the ratio 3:5. What is A's share?",
-      "correct_answer": "Rs. 492",
-      "options": [
-        "Rs. 820",
-        "Rs. 623.2",
-        "Rs. 492",
-        "Rs. 360.79999999999995"
-      ],
-      "explanation": "Total parts = 3 + 5 = 8. Value of 1 part = 1312/8 = 164. A's share = 3 * 164 = 492.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "SI = (P * R * T) / 100 = (7600 * 9 * 3) / 100 = 2052.",
+      "trick": "Treat percentage as decimal visually: 76 * 9 * 3 = 2052.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 36, 25, 101, 49",
-      "correct_answer": "101",
-      "options": [
-        "36",
-        "25",
-        "101",
-        "49"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 17200 at an interest rate of 12% per annum over 2 years?",
-      "correct_answer": "Rs. 4128",
-      "options": [
-        "Rs. 4988",
-        "Rs. 4128",
-        "Rs. 4078",
-        "Rs. 4228"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (17200 * 12 * 2) / 100 = 4128.",
-      "trick": "Treat percentage as decimal visually: 172 * 12 * 2 = 4128.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Sarojini Naidu",
-        "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi",
-        "Rabindranath Tagore"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "If MAT is coded as NBU, how will MAN be coded in that same language?",
-      "correct_answer": "NBO",
-      "options": [
-        "MAN",
-        "NBO",
-        "OCP",
-        "L@M"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
-      "options": [
-        "All Apples are Foods.",
-        "None of the above.",
-        "Some Foods are not Apples.",
-        "No Apples are Foods."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
     }
   ]
 }

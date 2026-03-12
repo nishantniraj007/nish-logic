@@ -2,99 +2,72 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 4,
-    "generated_at": "2026-03-11T20:02:54.721Z",
+    "generated_at": "2026-03-12T19:35:36.243Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "A can complete a piece of work in 38 days while B can complete the same work in 50 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "21.59 days",
+      "question": "A train travels at an average speed of 126 km/hr. How much distance will it cover in 5 hours?",
+      "correct_answer": "630 km",
       "options": [
-        "25.59 days",
-        "23.59 days",
-        "21.59 days",
-        "20.59 days"
+        "504 km",
+        "630 km",
+        "756 km",
+        "650 km"
       ],
-      "explanation": "Work = 38 * 50 = 1900. Rate = 38 + 50 = 88. Time = Work / Rate = 21.59 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
+      "explanation": "Distance = Speed * Time = 126 * 5 = 630 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If an article is bought for Rs. 880 and sold at a profit of 40%, what is the selling price?",
-      "correct_answer": "Rs. 1232",
-      "options": [
-        "Rs. 1320",
-        "Rs. 1232",
-        "Rs. 1408",
-        "Rs. 1144"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 880 * 1.40 = Rs. 1232.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If CAT is coded as FDW, how will MAN be coded in that same language?",
-      "correct_answer": "PDQ",
-      "options": [
-        "QER",
-        "PDQ",
-        "J>K",
-        "MAN"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 3, 11, 19, 27, 35, ?",
-      "correct_answer": "43",
-      "options": [
-        "51",
-        "43",
-        "45",
-        "35"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 8. So, 35 + (8) = 43.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Sardar Patel",
         "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar"
+        "B.R. Ambedkar",
+        "Sardar Patel",
+        "Jawaharlal Nehru"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
-      "correct_answer": "48",
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
       "options": [
-        "96",
-        "45",
-        "48",
-        "50"
+        "243",
+        "240",
+        "729",
+        "246"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
       "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "No Dogs are Animals.",
-        "Some Animals are not Dogs.",
-        "All Dogs are Animals.",
-        "None of the above."
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 11, 29, 47, 65, 83, ?",
+      "correct_answer": "101",
+      "options": [
+        "83",
+        "119",
+        "103",
+        "101"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 18. So, 83 + (18) = 101.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
@@ -110,15 +83,41 @@
       "category": "Current Affairs"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 42, 44, 46, 48, 50?",
-      "correct_answer": "46",
+      "question": "Rs. 608 is divided between A and B in the ratio 2:6. What is A's share?",
+      "correct_answer": "Rs. 152",
       "options": [
-        "48",
-        "46",
-        "50",
-        "44"
+        "Rs. 212.8",
+        "Rs. 456",
+        "Rs. 152",
+        "Rs. 91.19999999999999"
       ],
-      "explanation": "Sum = 230. Average = Sum / 5 = 46.",
+      "explanation": "Total parts = 2 + 6 = 8. Value of 1 part = 608/8 = 76. A's share = 2 * 76 = 152.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If an article is bought for Rs. 480 and sold at a profit of 10%, what is the selling price?",
+      "correct_answer": "Rs. 528",
+      "options": [
+        "Rs. 528",
+        "Rs. 480",
+        "Rs. 624",
+        "Rs. 576"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 480 * 1.10 = Rs. 528.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 40, 42, 44, 46, 48?",
+      "correct_answer": "44",
+      "options": [
+        "46",
+        "48",
+        "44",
+        "42"
+      ],
+      "explanation": "Sum = 220. Average = Sum / 5 = 44.",
       "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
     },
@@ -127,46 +126,47 @@
       "correct_answer": "Jupiter",
       "options": [
         "Neptune",
-        "Jupiter",
         "Saturn",
+        "Jupiter",
         "Earth"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "A train travels at an average speed of 106 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "318 km",
+      "question": "Find the odd one out among the following numbers: 50, 9, 16, 4",
+      "correct_answer": "50",
       "options": [
-        "318 km",
-        "338 km",
-        "424 km",
-        "212 km"
+        "50",
+        "9",
+        "16",
+        "4"
       ],
-      "explanation": "Distance = Speed * Time = 106 * 3 = 318 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
       "options": [
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu",
-        "Mahatma Gandhi"
+        "All Cars are Vehicles.",
+        "No Cars are Vehicles.",
+        "None of the above.",
+        "Some Vehicles are not Cars."
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Mississippi",
-        "Nile",
         "Amazon",
-        "Yangtze"
+        "Nile",
+        "Yangtze",
+        "Mississippi"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"

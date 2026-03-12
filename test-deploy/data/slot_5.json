@@ -2,87 +2,48 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 5,
-    "generated_at": "2026-03-11T20:02:54.721Z",
+    "generated_at": "2026-03-12T19:35:36.243Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Rs. 1936 is divided between A and B in the ratio 5:6. What is A's share?",
-      "correct_answer": "Rs. 880",
+      "question": "Find the next number in the series: 13, 37, 61, 85, 109, ?",
+      "correct_answer": "133",
       "options": [
-        "Rs. 1073.6",
-        "Rs. 686.4",
-        "Rs. 880",
-        "Rs. 1056"
+        "135",
+        "157",
+        "133",
+        "109"
       ],
-      "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 1936/11 = 176. A's share = 5 * 176 = 880.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 24. So, 109 + (24) = 133.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
     },
     {
-      "question": "If an article is bought for Rs. 800 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 880.0000000000001",
+      "question": "If an article is bought for Rs. 480 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 624",
       "options": [
-        "Rs. 880.0000000000001",
-        "Rs. 1040",
-        "Rs. 800.0000000000001",
-        "Rs. 960.0000000000001"
+        "Rs. 624",
+        "Rs. 576",
+        "Rs. 720",
+        "Rs. 672"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 800 * 1.10 = Rs. 880.0000000000001.",
+      "explanation": "SP = CP * (1 + Profit/100) = 480 * 1.30 = Rs. 624.",
       "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "All Pens are Stationery.",
-        "None of the above.",
-        "No Pens are Stationery.",
-        "Some Stationery are not Pens."
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi",
+        "Sarojini Naidu",
+        "Rabindranath Tagore"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Sample Geography?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Static GK (Geography)"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 9, 16, 4, 50",
-      "correct_answer": "50",
-      "options": [
-        "9",
-        "16",
-        "4",
-        "50"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 68 days while B can complete the same work in 108 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "41.73 days",
-      "options": [
-        "45.73 days",
-        "43.73 days",
-        "40.73 days",
-        "41.73 days"
-      ],
-      "explanation": "Work = 68 * 108 = 7344. Rate = 68 + 108 = 176. Time = Work / Rate = 41.73 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
       "question": "Sample CA?",
@@ -97,42 +58,117 @@
       "category": "Current Affairs"
     },
     {
-      "question": "If CAT is coded as ECV, how will CUP be coded in that same language?",
-      "correct_answer": "EWR",
+      "question": "Rs. 1188 is divided between A and B in the ratio 3:6. What is A's share?",
+      "correct_answer": "Rs. 396",
       "options": [
-        "EWR",
-        "CUP",
-        "FXS",
-        "ASN"
+        "Rs. 514.8",
+        "Rs. 277.2",
+        "Rs. 396",
+        "Rs. 792"
+      ],
+      "explanation": "Total parts = 3 + 6 = 9. Value of 1 part = 1188/9 = 132. A's share = 3 * 132 = 396.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If MAT is coded as OCV, how will BOX be coded in that same language?",
+      "correct_answer": "DQZ",
+      "options": [
+        "@MV",
+        "ER[",
+        "BOX",
+        "DQZ"
       ],
       "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Find the next number in the series: 5, 10, 20, 40, ?",
-      "correct_answer": "80",
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
       "options": [
-        "80",
-        "75",
-        "82",
-        "160"
+        "Nile",
+        "Amazon",
+        "Yangtze",
+        "Mississippi"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 40 * 2 = 80.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 12400 at an interest rate of 5% per annum over 5 years?",
+      "correct_answer": "Rs. 3100",
+      "options": [
+        "Rs. 3720",
+        "Rs. 3200",
+        "Rs. 3100",
+        "Rs. 3050"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (12400 * 5 * 5) / 100 = 3100.",
+      "trick": "Treat percentage as decimal visually: 124 * 5 * 5 = 3100.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Earth",
+        "Neptune",
+        "Jupiter",
+        "Saturn"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
+      "options": [
+        "None of the above.",
+        "No Apples are Foods.",
+        "All Apples are Foods.",
+        "Some Foods are not Apples."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 12800 at an interest rate of 11% per annum over 3 years?",
-      "correct_answer": "Rs. 4224",
+      "question": "Find the odd one out among the following numbers: 4, 16, 50, 9",
+      "correct_answer": "50",
       "options": [
-        "Rs. 4224",
-        "Rs. 4864",
-        "Rs. 4324",
-        "Rs. 4174"
+        "4",
+        "16",
+        "50",
+        "9"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (12800 * 11 * 3) / 100 = 4224.",
-      "trick": "Treat percentage as decimal visually: 128 * 11 * 3 = 4224.",
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 64 days while B can complete the same work in 100 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "39.02 days",
+      "options": [
+        "38.02 days",
+        "41.02 days",
+        "43.02 days",
+        "39.02 days"
+      ],
+      "explanation": "Work = 64 * 100 = 6400. Rate = 64 + 100 = 164. Time = Work / Rate = 39.02 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     }
   ]

@@ -2,86 +2,60 @@
   "metadata": {
     "difficulty": "easy",
     "slot": 1,
-    "generated_at": "2026-03-11T20:02:54.721Z",
+    "generated_at": "2026-03-12T19:35:36.243Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 26, 28, 30, 32, 34?",
-      "correct_answer": "30",
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
       "options": [
-        "34",
-        "32",
-        "28",
-        "30"
+        "None of the above.",
+        "No Apples are Foods.",
+        "Some Foods are not Apples.",
+        "All Apples are Foods."
       ],
-      "explanation": "Sum = 150. Average = Sum / 5 = 30.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 2, 4, 8, 16, ?",
-      "correct_answer": "32",
-      "options": [
-        "34",
-        "32",
-        "64",
-        "30"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 16 * 2 = 32.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 3900 at an interest rate of 10% per annum over 4 years?",
-      "correct_answer": "Rs. 1560",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Rs. 1560",
-        "Rs. 1510",
-        "Rs. 1660",
-        "Rs. 1755"
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (3900 * 10 * 4) / 100 = 1560.",
-      "trick": "Treat percentage as decimal visually: 39 * 10 * 4 = 1560.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Nile",
-        "Mississippi",
-        "Amazon",
-        "Yangtze"
-      ],
-      "explanation": "Length approx 6,650 km.",
+      "explanation": "Jana Gana Mana.",
       "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 9, 19, 29, 39, 49, ?",
-      "correct_answer": "59",
-      "options": [
-        "49",
-        "61",
-        "59",
-        "69"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 49 + (10) = 59.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Jupiter",
-        "Earth",
+        "Saturn",
         "Neptune",
-        "Saturn"
+        "Jupiter",
+        "Earth"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
+    },
+    {
+      "question": "A can complete a piece of work in 13 days while B can complete the same work in 22 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "8.17 days",
+      "options": [
+        "10.17 days",
+        "7.17 days",
+        "12.17 days",
+        "8.17 days"
+      ],
+      "explanation": "Work = 13 * 22 = 286. Rate = 13 + 22 = 35. Time = Work / Rate = 8.17 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Who was the first President of India?",
@@ -96,68 +70,94 @@
       "category": "Static GK"
     },
     {
-      "question": "A train travels at an average speed of 48 km/hr. How much distance will it cover in 5 hours?",
-      "correct_answer": "240 km",
+      "question": "If CAT is coded as FDW, how will MAN be coded in that same language?",
+      "correct_answer": "PDQ",
       "options": [
-        "260 km",
-        "192 km",
-        "288 km",
-        "240 km"
-      ],
-      "explanation": "Distance = Speed * Time = 48 * 5 = 240 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If BAT is coded as EDW, how will BOX be coded in that same language?",
-      "correct_answer": "ER[",
-      "options": [
-        "ER[",
-        "FS\\",
-        "?LU",
-        "BOX"
+        "PDQ",
+        "J>K",
+        "MAN",
+        "QER"
       ],
       "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
+      "question": "A train travels at an average speed of 106 km/hr. How much distance will it cover in 2 hours?",
+      "correct_answer": "212 km",
       "options": [
-        "No Dogs are Animals.",
-        "Some Animals are not Dogs.",
-        "All Dogs are Animals.",
-        "None of the above."
+        "232 km",
+        "318 km",
+        "106 km",
+        "212 km"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If an article is bought for Rs. 340 and sold at a profit of 15%, what is the selling price?",
-      "correct_answer": "Rs. 390.99999999999994",
-      "options": [
-        "Rs. 390.99999999999994",
-        "Rs. 424.99999999999994",
-        "Rs. 458.99999999999994",
-        "Rs. 356.99999999999994"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 340 * 1.15 = Rs. 390.99999999999994.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "explanation": "Distance = Speed * Time = 106 * 2 = 212 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "What is the average of the following 5 consecutive even numbers: 25, 27, 29, 31, 33?",
+      "correct_answer": "29",
       "options": [
-        "Sarojini Naidu",
-        "Rabindranath Tagore",
-        "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee"
+        "31",
+        "29",
+        "33",
+        "27"
       ],
-      "explanation": "Jana Gana Mana.",
+      "explanation": "Sum = 145. Average = Sum / 5 = 29.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Mississippi",
+        "Nile",
+        "Amazon",
+        "Yangtze"
+      ],
+      "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 82, 16, 36, 25",
+      "correct_answer": "82",
+      "options": [
+        "82",
+        "16",
+        "36",
+        "25"
+      ],
+      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
+      "options": [
+        "243",
+        "240",
+        "729",
+        "246"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 3500 at an interest rate of 8% per annum over 5 years?",
+      "correct_answer": "Rs. 1400",
+      "options": [
+        "Rs. 1350",
+        "Rs. 1500",
+        "Rs. 1575",
+        "Rs. 1400"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (3500 * 8 * 5) / 100 = 1400.",
+      "trick": "Treat percentage as decimal visually: 35 * 8 * 5 = 1400.",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",

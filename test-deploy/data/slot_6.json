@@ -2,36 +2,88 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 6,
-    "generated_at": "2026-03-11T20:02:54.721Z",
+    "generated_at": "2026-03-12T19:35:36.243Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 27, 29, 31, 33, 35?",
-      "correct_answer": "31",
+      "question": "If an article is bought for Rs. 920 and sold at a profit of 25%, what is the selling price?",
+      "correct_answer": "Rs. 1150",
       "options": [
-        "31",
-        "29",
-        "35",
-        "33"
+        "Rs. 1334",
+        "Rs. 1058",
+        "Rs. 1242",
+        "Rs. 1150"
       ],
-      "explanation": "Sum = 155. Average = Sum / 5 = 31.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "SP = CP * (1 + Profit/100) = 920 * 1.25 = Rs. 1150.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
+      "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
       "options": [
+        "MAN",
+        "PDQ",
+        "OCP",
+        "K?L"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Rs. 1200 is divided between A and B in the ratio 2:4. What is A's share?",
+      "correct_answer": "Rs. 400",
+      "options": [
+        "Rs. 520",
+        "Rs. 280",
+        "Rs. 800",
+        "Rs. 400"
+      ],
+      "explanation": "Total parts = 2 + 4 = 6. Value of 1 part = 1200/6 = 200. A's share = 2 * 200 = 400.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
+      "options": [
+        "240",
+        "243",
+        "729",
+        "246"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
+      "options": [
+        "All Pens are Stationery.",
+        "Some Stationery are not Pens.",
         "None of the above.",
-        "Some Foods are not Apples.",
-        "No Apples are Foods.",
-        "All Apples are Foods."
+        "No Pens are Stationery."
       ],
       "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
       "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 16000 at an interest rate of 12% per annum over 5 years?",
+      "correct_answer": "Rs. 9600",
+      "options": [
+        "Rs. 9550",
+        "Rs. 9700",
+        "Rs. 10400",
+        "Rs. 9600"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (16000 * 12 * 5) / 100 = 9600.",
+      "trick": "Treat percentage as decimal visually: 160 * 12 * 5 = 9600.",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -46,82 +98,30 @@
       "category": "Current Affairs"
     },
     {
-      "question": "A train travels at an average speed of 74 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "222 km",
+      "question": "Find the odd one out among the following numbers: 25, 65, 9, 16",
+      "correct_answer": "65",
       "options": [
-        "148 km",
-        "296 km",
-        "242 km",
-        "222 km"
+        "25",
+        "65",
+        "9",
+        "16"
       ],
-      "explanation": "Distance = Speed * Time = 74 * 3 = 222 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
-      "correct_answer": "OCP",
-      "options": [
-        "K?L",
-        "OCP",
-        "PDQ",
-        "MAN"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 36, 122, 64, 49",
-      "correct_answer": "122",
-      "options": [
-        "36",
-        "122",
-        "64",
-        "49"
-      ],
-      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
       "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Rs. 864 is divided between A and B in the ratio 4:5. What is A's share?",
-      "correct_answer": "Rs. 384",
+      "question": "A train travels at an average speed of 125 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "375 km",
       "options": [
-        "Rs. 384",
-        "Rs. 480",
-        "Rs. 297.6",
-        "Rs. 470.4"
+        "375 km",
+        "500 km",
+        "250 km",
+        "395 km"
       ],
-      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 864/9 = 96. A's share = 4 * 96 = 384.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "Distance = Speed * Time = 125 * 3 = 375 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "A can complete a piece of work in 52 days while B can complete the same work in 104 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "34.67 days",
-      "options": [
-        "34.67 days",
-        "36.67 days",
-        "38.67 days",
-        "33.67 days"
-      ],
-      "explanation": "Work = 52 * 104 = 5408. Rate = 52 + 104 = 156. Time = Work / Rate = 34.67 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 16, 46, 76, 106, 136, ?",
-      "correct_answer": "166",
-      "options": [
-        "196",
-        "166",
-        "168",
-        "136"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 30. So, 136 + (30) = 166.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Sample Geography?",

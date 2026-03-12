@@ -2,121 +2,83 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 2,
-    "generated_at": "2026-03-11T20:02:54.721Z",
+    "generated_at": "2026-03-12T19:35:36.243Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
+      "question": "What is the average of the following 5 consecutive even numbers: 32, 34, 36, 38, 40?",
+      "correct_answer": "36",
+      "options": [
+        "36",
+        "34",
+        "38",
+        "40"
+      ],
+      "explanation": "Sum = 180. Average = Sum / 5 = 36.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 16, 20, 24, 28, 32, ?",
+      "correct_answer": "36",
+      "options": [
+        "32",
+        "36",
+        "40",
+        "38"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 4. So, 32 + (4) = 36.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 7800 at an interest rate of 12% per annum over 4 years?",
+      "correct_answer": "Rs. 3744",
+      "options": [
+        "Rs. 4134",
+        "Rs. 3744",
+        "Rs. 3844",
+        "Rs. 3694"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (7800 * 12 * 4) / 100 = 3744.",
+      "trick": "Treat percentage as decimal visually: 78 * 12 * 4 = 3744.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A can complete a piece of work in 32 days while B can complete the same work in 48 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "19.20 days",
+      "options": [
+        "18.20 days",
+        "21.20 days",
+        "23.20 days",
+        "19.20 days"
+      ],
+      "explanation": "Work = 32 * 48 = 1536. Rate = 32 + 48 = 80. Time = Work / Rate = 19.20 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Earth",
         "Neptune",
-        "Jupiter",
-        "Saturn"
+        "Earth",
+        "Saturn",
+        "Jupiter"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "A can complete a piece of work in 40 days while B can complete the same work in 34 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "18.38 days",
-      "options": [
-        "20.38 days",
-        "17.38 days",
-        "18.38 days",
-        "22.38 days"
-      ],
-      "explanation": "Work = 40 * 34 = 1360. Rate = 40 + 34 = 74. Time = Work / Rate = 18.38 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 16, 50, 4, 9",
-      "correct_answer": "50",
-      "options": [
-        "16",
-        "50",
-        "4",
-        "9"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 23, 25, 27, 29, 31?",
-      "correct_answer": "27",
-      "options": [
-        "29",
-        "27",
-        "25",
-        "31"
-      ],
-      "explanation": "Sum = 135. Average = Sum / 5 = 27.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "B.R. Ambedkar",
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "A train travels at an average speed of 59 km/hr. How much distance will it cover in 5 hours?",
-      "correct_answer": "295 km",
-      "options": [
-        "295 km",
-        "315 km",
-        "236 km",
-        "354 km"
-      ],
-      "explanation": "Distance = Speed * Time = 59 * 5 = 295 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Rs. 320 is divided between A and B in the ratio 5:3. What is A's share?",
-      "correct_answer": "Rs. 200",
-      "options": [
-        "Rs. 168",
-        "Rs. 120",
-        "Rs. 232",
-        "Rs. 200"
-      ],
-      "explanation": "Total parts = 5 + 3 = 8. Value of 1 part = 320/8 = 40. A's share = 5 * 40 = 200.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If MAT is coded as OCV, how will BOX be coded in that same language?",
-      "correct_answer": "DQZ",
-      "options": [
-        "DQZ",
-        "BOX",
-        "@MV",
-        "ER["
-      ],
-      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
       "question": "Who wrote the national anthem of India?",
       "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi",
         "Sarojini Naidu",
-        "Rabindranath Tagore"
+        "Rabindranath Tagore",
+        "Mahatma Gandhi",
+        "Bankim Chandra Chatterjee"
       ],
       "explanation": "Jana Gana Mana.",
       "category": "Static GK"
@@ -134,16 +96,16 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Find the next number in the series: 5, 15, 45, 135, ?",
-      "correct_answer": "405",
+      "question": "If CAT is coded as FDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
       "options": [
-        "1215",
-        "408",
-        "400",
-        "405"
+        "PEN",
+        "MBK",
+        "TIR",
+        "SHQ"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
@@ -151,25 +113,63 @@
       "correct_answer": "Nile",
       "options": [
         "Nile",
-        "Mississippi",
         "Amazon",
+        "Mississippi",
         "Yangtze"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "Find the next number in the series: 8, 22, 36, 50, 64, ?",
-      "correct_answer": "78",
+      "question": "Find the odd one out among the following numbers: 36, 49, 122, 64",
+      "correct_answer": "122",
       "options": [
-        "64",
-        "78",
-        "92",
-        "80"
+        "36",
+        "49",
+        "122",
+        "64"
       ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 14. So, 64 + (14) = 78.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
+      "options": [
+        "None of the above.",
+        "No Cars are Vehicles.",
+        "Some Vehicles are not Cars.",
+        "All Cars are Vehicles."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If an article is bought for Rs. 720 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 936",
+      "options": [
+        "Rs. 936",
+        "Rs. 1080",
+        "Rs. 864",
+        "Rs. 1008"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 720 * 1.30 = Rs. 936.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }
