@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "batch_index": 8,
+    "day_index": 2,
+    "slot_index": 28,
+    "difficulty": "UPSC/CAT",
+    "generated_at": "2026-03-12T21:26:19.320Z"
+  },
+  "questions": [
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "Let N be a natural number such that when N is divided by 5, the remainder is R1, and when N is divided by 7, the remainder is R2. If R1 + R2 = 8, and N leaves a remainder of R3 when divided by 35, what is the maximum possible value of R3?",
+      "options": [
+        "A) 27",
+        "B) 33",
+        "C) 34",
+        "D) 31"
+      ],
+      "correct_answer": "B) 33",
+      "explanation": "We are given:\n1. N = 5k + R1, where 0 ≤ R1 < 5.\n2. N = 7m + R2, where 0 ≤ R2 < 7.\n3. R1 + R2 = 8.\n4. N = 35j + R3, where 0 ≤ R3 < 35.\n\nFrom R1 + R2 = 8 and the bounds for R1 and R2, we list possible pairs (R1, R2):\n\nCase 1: R1 = 2, R2 = 6\n(Since R1 < 5, R1 can be 2, 3, 4. If R1 = 1, R2 = 7, which is not allowed as R2 < 7. If R1 = 0, R2 = 8, not allowed.)\nWe have N ≡ 2 (mod 5) and N ≡ 6 (mod 7).\nWe are looking for N ≡ R3 (mod 35).\nTo find N, we can test values: N = 7m + 6.\nIf m=0, N=6 (6 mod 5 = 1, not 2)\nIf m=1, N=13 (13 mod 5 = 3, not 2)\nIf m=2, N=20 (20 mod 5 = 0, not 2)\nIf m=3, N=27 (27 mod 5 = 2, which matches R1=2). So N=27 is a possible value.\nFor N=27, R3 = 27 mod 35 = 27.\n\nCase 2: R1 = 3, R2 = 5\nWe have N ≡ 3 (mod 5) and N ≡ 5 (mod 7).\nTo find N, we can test values: N = 7m + 5.\nIf m=0, N=5 (5 mod 5 = 0, not 3)\nIf m=1, N=12 (12 mod 5 = 2, not 3)\nIf m=2, N=19 (19 mod 5 = 4, not 3)\nIf m=3, N=26 (26 mod 5 = 1, not 3)\nIf m=4, N=33 (33 mod 5 = 3, which matches R1=3). So N=33 is a possible value.\nFor N=33, R3 = 33 mod 35 = 33.\n\nCase 3: R1 = 4, R2 = 4\nWe have N ≡ 4 (mod 5) and N ≡ 4 (mod 7).\nSince N leaves the same remainder when divided by 5 and 7, N must leave that remainder when divided by LCM(5,7) = 35.\nSo, N ≡ 4 (mod 35).\nFor N=4 (or 35k+4), R3 = 4.\n\nComparing the possible values for R3 (27, 33, 4), the maximum possible value of R3 is 33.",
+      "trick": "The problem can be solved systematically by listing possible (R1, R2) pairs and then using the Chinese Remainder Theorem logic (or simple enumeration) to find the corresponding N values modulo 35. The key is to realize that R3 depends on the specific combination of R1 and R2 satisfying R1+R2=8, and to test all valid combinations to find the maximum R3."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A square ABCD is inscribed in a circle C1. Another circle C2 is inscribed in the square ABCD. A third circle C3 is inscribed in one of the segments formed by the side AB of the square and the arc AB of circle C1. If the radius of C1 is R, what is the ratio of the area of C3 to the area of C2?",
+      "options": [
+        "A) (sqrt(2) - 1) / 2",
+        "B) (3 - 2*sqrt(2)) / 4",
+        "C) (2 - sqrt(2)) / 2",
+        "D) (4 - 3*sqrt(2)) / 8"
+      ],
+      "correct_answer": "B) (3 - 2*sqrt(2)) / 4",
+      "explanation": "Let R1 be the radius of circle C1. So, R1 = R.\n\n1.  **Circle C2 (inscribed in square ABCD):**\n    The square ABCD is inscribed in C1. The diagonal of the square is equal to the diameter of C1, which is 2R.\n    Let 's' be the side length of the square. Then s√2 = 2R, so s = 2R/√2 = R√2.\n    Circle C2 is inscribed in the square. Its diameter is equal to the side of the square, s.\n    Radius of C2, R2 = s/2 = (R√2)/2 = R/√2.\n    Area of C2 = π * (R2)^2 = π * (R/√2)^2 = πR^2 / 2.\n\n2.  **Circle C3 (inscribed in the segment):**\n    Consider the segment formed by chord AB and arc AB of circle C1. Let the center of C1 be O (0,0).\n    The side AB of the square is a chord of C1. The distance from O to the chord AB (let's call it 'h') can be found using Pythagoras theorem.\n    h = √(R1^2 - (s/2)^2) = √(R^2 - (R√2/2)^2) = √(R^2 - R^2/2) = √(R^2/2) = R/√2.\n    Let the line representing chord AB be y = R/√2 (assuming the center of C1 is at origin and AB is horizontal).\n\n    Circle C3 is inscribed in this segment. It will be tangent to the chord AB and the arc AB of C1.\n    Let r3 be the radius of C3 and its center be (0, y_c3) due to symmetry.\n    Since C3 is tangent to the chord y = R/√2, its lowest point (0, y_c3 - r3) must lie on this line. So, y_c3 - r3 = R/√2. (Equation 1)\n    Since C3 is tangent to the arc of C1 (x^2 + y^2 = R^2), its highest point (0, y_c3 + r3) must lie on the arc of C1. So, y_c3 + r3 = R. (Equation 2)\n\n    Add (Equation 1) and (Equation 2):\n    (y_c3 - r3) + (y_c3 + r3) = R/√2 + R\n    2 * y_c3 = R(1 + 1/√2)\n    y_c3 = R/2 * (1 + 1/√2)\n\n    Subtract (Equation 1) from (Equation 2):\n    (y_c3 + r3) - (y_c3 - r3) = R - R/√2\n    2 * r3 = R(1 - 1/√2)\n    r3 = R/2 * (1 - 1/√2) = R/2 * (√2 - 1)/√2 = R * (√2 - 1) / (2√2)\n    To rationalize, multiply numerator and denominator by √2:\n    r3 = R * (2 - √2) / 4.\n\n    Area of C3 = π * (r3)^2 = π * [R * (2 - √2) / 4]^2\n    Area of C3 = π * R^2 * (2 - √2)^2 / 16\n    Area of C3 = π * R^2 * (4 - 4√2 + 2) / 16\n    Area of C3 = π * R^2 * (6 - 4√2) / 16\n    Area of C3 = π * R^2 * (3 - 2√2) / 8.\n\n3.  **Ratio of Area C3 to Area C2:**\n    Ratio = (Area of C3) / (Area of C2)\n    Ratio = [π * R^2 * (3 - 2√2) / 8] / [π * R^2 / 2]\n    Ratio = [(3 - 2√2) / 8] / [1 / 2]\n    Ratio = (3 - 2√2) / 4.\n\nThe final answer is (3 - 2√2) / 4.",
+      "trick": "The key to solving this problem efficiently is accurately determining the radius of C3. This involves correctly setting up the equations based on tangency conditions: one with the chord (a straight line) and another with the arc of C1 (part of a larger circle). Visualizing the geometry and placing the center of C1 at the origin simplifies the coordinate geometry involved. A common mistake is miscalculating the distance of the chord from the center of C1 or incorrectly applying tangency conditions for C3."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "P is a positive integer such that when P is divided by 5, the remainder is 3. When P is divided by 7, the remainder is 5. When P is divided by 9, the remainder is 7. What is the sum of the digits of the smallest such P that is greater than 1000?",
+      "options": [
+        "A) 12",
+        "B) 14",
+        "C) 16",
+        "D) 18"
+      ],
+      "correct_answer": "C) 16",
+      "explanation": "From the given conditions:\n1. P ≡ 3 (mod 5)\n2. P ≡ 5 (mod 7)\n3. P ≡ 7 (mod 9)\n\nNotice a pattern in the remainders: each remainder is 2 less than its respective divisor. This can be expressed as:\n1. P ≡ -2 (mod 5)\n2. P ≡ -2 (mod 7)\n3. P ≡ -2 (mod 9)\n\nSince P leaves the same remainder (-2) when divided by 5, 7, and 9, P must be of the form (LCM of 5, 7, 9) * q - 2, where q is a positive integer.\n\nSince 5, 7, and 9 are pairwise coprime, their LCM is simply their product:\nLCM(5, 7, 9) = 5 × 7 × 9 = 315.\n\nSo, P = 315q - 2.\n\nWe need to find the smallest P that is greater than 1000:\n315q - 2 > 1000\n315q > 1002\nq > 1002 / 315\nq > 3.18...\n\nThe smallest integer value for q that satisfies this condition is 4.\n\nSubstitute q = 4 into the expression for P:\nP = 315 × 4 - 2\nP = 1260 - 2\nP = 1258.\n\nFinally, we need to find the sum of the digits of P:\nSum of digits = 1 + 2 + 5 + 8 = 16.",
+      "trick": "The key trick is to observe the pattern (remainder = divisor - 2), which immediately simplifies the problem to P ≡ -2 (mod LCM(divisors)). This bypasses the more involved general Chinese Remainder Theorem calculations, making it much faster. Once P = LCM * q - 2 is established, finding the smallest P > 1000 is a simple inequality."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A solid metallic sphere of radius R is melted and recast into N identical smaller solid spheres. If the surface area of each smaller sphere is 1/9th of the surface area of the original sphere, what is the value of N?",
+      "options": [
+        "A) 9",
+        "B) 27",
+        "C) 81",
+        "D) 243"
+      ],
+      "correct_answer": "B) 27",
+      "explanation": "Let the original sphere have radius R. Its surface area is A = 4πR² and its volume is V = (4/3)πR³.\nLet each smaller sphere have radius r. Its surface area is a = 4πr² and its volume is v = (4/3)πr³.\n\nAccording to the problem, the surface area of each smaller sphere is 1/9th of the surface area of the original sphere:\na = A / 9\n4πr² = (4πR²) / 9\nDivide both sides by 4π:\nr² = R² / 9\nTaking the square root of both sides (radii must be positive):\nr = R / 3.\n\nWhen a solid is melted and recast, its total volume remains constant. Therefore, the total volume of N smaller spheres must be equal to the volume of the original sphere:\nN × v = V\nN × (4/3)πr³ = (4/3)πR³\nDivide both sides by (4/3)π:\nN × r³ = R³\n\nNow, substitute the relationship r = R/3 into this equation:\nN × (R/3)³ = R³\nN × (R³/27) = R³\n\nDivide both sides by R³ (since R is a radius, R ≠ 0):\nN / 27 = 1\nN = 27.\n\nThus, 27 smaller spheres can be formed.",
+      "trick": "The trick lies in understanding the scaling relationships for spheres: surface area scales with the square of the radius (A ∝ R²) and volume scales with the cube of the radius (V ∝ R³). If the surface area decreases by a factor of k² (here, 9, so k=3), then the radius decreases by a factor of k (r = R/3). Since the total volume is conserved, the number of smaller spheres N will be the ratio of the original volume to the smaller sphere's volume. As volume decreases by k³ (here, 3³ = 27), N must be k³ (N = 27)."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Seven friends P, Q, R, S, T, U, and V are sitting around a circular table, facing the center. Each of them has a different profession: Doctor, Engineer, Architect, Pilot, Journalist, Teacher, and Chef. Each also belongs to a different city: Delhi, Mumbai, Kolkata, Chennai, Bangalore, Hyderabad, and Pune.\n\nConsider the following conditions:\n1. The Journalist is from Bangalore and sits third to the right of P.\n2. The person from Mumbai is an Engineer and sits immediately to the left of the Journalist.\n3. V is the Teacher and is not from Delhi or Pune.\n4. R is from Kolkata and is neither a Doctor nor a Pilot.\n5. U is the Architect and sits fourth to the right of the person from Chennai.\n6. Q is not the Engineer and does not sit next to P.\n7. The Doctor is from Hyderabad.\n8. S is not the Journalist and does not sit next to the Engineer.\n9. The person from Pune is not P or U.\n10. T is not the Chef.\n\nWhich of the following statements is definitely true?",
+      "options": [
+        "A) R is the Teacher.",
+        "B) The Pilot is from Pune.",
+        "C) S is the Doctor.",
+        "D) P is the Chef."
+      ],
+      "correct_answer": "B) The Pilot is from Pune.",
+      "explanation": "Let's denote the positions 1 to 7 clockwise. We place P at position 1 for reference.\n\n1.  **Placement of P, Journalist, Engineer:**\n    *   P is at 1.\n    *   Journalist (Bangalore) is 3rd to the right of P (1 -> 2 -> 3 -> 4). So, Journalist (Bangalore) is at 4.\n    *   Engineer (Mumbai) is immediately left of Journalist. So, Engineer (Mumbai) is at 3.\n    Partial Table:\n    Pos: 1   2   3           4             5   6   7\n    Person: P       Eng (Mumbai) Jour (Bangalore)\n\n2.  **Placement of U and Chennai person (Condition 5):**\n    *   U is Architect and sits 4th right of Chennai person. This means if Chennai person is at X, U is at X+4 (mod 7, adjusted to 1-7).\n    *   Possible spots for U (Architect): 2, 5, 6, 7 (cannot be 1(P), 3(Eng), 4(Jour)).\n    *   If U is at 2, Chennai person is 4th right of 2 -> 6. (U(2) Architect, Chennai(6))\n    *   If U is at 5, Chennai person is 4th right of 5 -> 2. (U(5) Architect, Chennai(2))\n    *   If U is at 6, Chennai person is 4th right of 6 -> 3. But 3 is Engineer (Mumbai). Contradiction. So U cannot be at 6.\n    *   If U is at 7, Chennai person is 4th right of 7 -> 4. But 4 is Journalist (Bangalore). Contradiction. So U cannot be at 7.\n    *   So, U (Architect) is at 2 (Chennai at 6) OR U (Architect) is at 5 (Chennai at 2).\n\n3.  **Let's try U at 2, Chennai at 6:**\n    Pos: 1(P) 2(U, Architect) 3(Eng, Mumbai) 4(Jour, Bangalore) 5   6(Chennai) 7\n    *   Remaining people: Q, R, S, T, V for positions 3, 4, 5, 7. (P is at 1, U is at 2). The person at 3 is Engineer, person at 4 is Journalist. Person at 6 is from Chennai. So people Q, R, S, T, V need to be assigned to positions 3, 4, 5, 6, 7.\n    *   From (6): Q not Eng (3), not next to P (1). So Q is not at 2 or 7. (U is at 2, so Q not at 2). Thus Q is not at 3, 7.\n    *   From (8): S not Jour (4), not next to Eng (3). So S is not at 2 or 4. (U is at 2, so S not at 2). Thus S is not at 4.\n    *   From (4): R is Kolkata, not Doctor/Pilot. R cannot be at 1(P), 2(U), 3(Eng), 4(Jour), 6(Chennai). So R must be at 5 or 7. If R is at 6, it would be Kolkata and Chennai, impossible.\n    *   If R is at 5 (Kolkata):\n        *   Q (not 3, 7). Q cannot be 2 (U), 5 (R). So Q can be at 4 (Journalist) or 6 (Chennai).\n        *   S (not 4). S cannot be 2 (U), 5 (R). So S can be at 6 (Chennai) or 7.\n        *   If Q is at 4 (Journalist), then S must be at 6 (Chennai) or 7. If S is at 6 (Chennai), then remaining people T, V for 3, 7. T is Eng (3), V is Jour (7). But (3) V is Teacher. So V cannot be Jour. This path leads to contradiction.\n\n4.  **Let's try U at 5, Chennai at 2:**\n    Pos: 1(P) 2(Chennai) 3(Eng, Mumbai) 4(Jour, Bangalore) 5(U, Architect) 6   7\n    *   Remaining people: Q, R, S, T, V for positions 2, 3, 4, 6, 7.\n    *   From (6): Q not Eng (3), not next to P (1). So Q is not at 2 or 7.\n    *   From (8): S not Jour (4), not next to Eng (3). So S is not at 2 or 4.\n    *   From (4): R is Kolkata, not Doctor/Pilot. R cannot be at 1(P), 2(Chennai), 3(Eng), 4(Jour), 5(U). So R must be at 6 or 7.\n\n5.  **If R is at 6 (Kolkata):**\n    Pos: 1(P) 2(Chennai) 3(Eng, Mumbai) 4(Jour, Bangalore) 5(U, Architect) 6(R, Kolkata) 7\n    *   Q (not 2, 3, 7). So Q can be at 4 (Journalist). If Q is at 4, then S (not 2, 4) can be at 7.\n    *   This forces Q at 4 (Journalist), S at 7. Remaining T, V for 2, 3. T is Eng (3), V is Chennai (2).\n    *   So: P(1), V(2, Chennai), T(3, Eng, Mumbai), Q(4, Jour, Bangalore), U(5, Arch), R(6, Kolkata), S(7).\n    *   Check (3): V is Teacher, not Delhi/Pune. V is at 2, from Chennai. So V is Teacher from Chennai. This is consistent.\n    *   Check (4): R is Kolkata, not Doctor/Pilot. R is at 6, from Kolkata. Consistent.\n    *   Remaining professions for P(1), R(6), S(7): Doctor, Pilot, Chef.\n    *   Remaining cities for P(1), S(7): Delhi, Hyderabad, Pune.\n    *   From (4), R is not Doctor/Pilot. So R must be Chef. R (Chef, Kolkata).\n    *   From (7), Doctor is Hyderabad.\n    *   From (9), Pune person is not P or U. U is at 5 (Architect). P is at 1.\n    *   If P is Doctor (Hyderabad), then S is Pilot.\n        *   P(1) is Doctor, Hyderabad. S(7) is Pilot.\n        *   Remaining cities: Delhi, Pune for S(7) and P(1). We have Hyderabad for P(1). So Delhi, Pune for S(7).\n        *   This means S (Pilot) is from Delhi or Pune. But S is from Pune (as P is from Hyderabad, so Pune must be for S).\n        *   If S (Pilot) is from Pune, then (9) 'Pune person is not P or U' is satisfied (S is not P or U).\n        *   Remaining city Delhi for P.\n        *   This leads to: P(Doctor, Hyderabad), V(Teacher, Chennai), T(Engineer, Mumbai), Q(Journalist, Bangalore), U(Architect, Delhi), R(Chef, Kolkata), S(Pilot, Pune).\n\nLet's verify this final arrangement:\n1.  P(Doctor) sits 3rd right of Q(Journalist, Bangalore)? No, Q is 3rd right of P. (P1 -> Q4). Yes.\n2.  T(Engineer, Mumbai) immediately left of Q(Journalist, Bangalore)? (T3 -> Q4). Yes.\n3.  V(Teacher) is from Chennai, not Delhi/Pune. Yes.\n4.  R(Chef) is from Kolkata, not Doctor/Pilot. Yes.\n5.  U(Architect, Delhi) sits 4th right of V(Teacher, Chennai). (V2 -> U5). Yes.\n6.  Q(Journalist) is not Engineer, not next to P. Yes.\n7.  P(Doctor) is from Hyderabad. Yes.\n8.  S(Pilot) is not Journalist, not next to T(Engineer). (S7, T3). Yes.\n9.  S(Pilot, Pune) is not P or U. Yes.\n10. T(Engineer) is not Chef. Yes.\n\nAll conditions satisfied.\n\nFinal Arrangement:\nPos | Person | Profession | City\n----|--------|------------|--------\n1   | P      | Doctor     | Hyderabad\n2   | V      | Teacher    | Chennai\n3   | T      | Engineer   | Mumbai\n4   | Q      | Journalist | Bangalore\n5   | U      | Architect  | Delhi\n6   | R      | Chef       | Kolkata\n7   | S      | Pilot      | Pune\n\nChecking the options:\nA) R is the Teacher. (False, R is Chef)\nB) The Pilot is from Pune. (True, S is Pilot from Pune)\nC) S is the Doctor. (False, S is Pilot)\nD) P is the Chef. (False, P is Doctor)\n\nTherefore, statement B is definitely true.",
+      "trick": "The key to solving complex circular arrangement puzzles is a systematic approach. Start with the most restrictive conditions or those that link multiple elements. Use a table to track assignments for Person, Profession, City, and Position. When facing 'opposite' for an odd number of people, interpret it as 'farthest apart' or '4th to the right/left' (i.e., 3 people in between). Carefully eliminate possibilities and check for contradictions at each step. Don't be afraid to backtrack if a path leads to a dead end."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Four friends, A, B, C, D, are discussing their recent travel plans. Each person makes two statements.\n\n1.  A: \"B went to Paris. C did not go to Rome.\"\n2.  B: \"A went to London. D went to Berlin.\"\n3.  C: \"A did not go to Paris. D did not go to Rome.\"\n4.  D: \"B went to Rome. C went to London.\"\n\nIt is known that each person went to exactly one city among Paris, Rome, London, Berlin. Also, exactly two of the friends are telling the truth (both their statements are true), and exactly two are lying (both their statements are false).\n\nWhich city did B visit?",
+      "options": [
+        "A) Paris",
+        "B) Rome",
+        "C) London",
+        "D) Berlin"
+      ],
+      "correct_answer": "A) Paris",
+      "explanation": "Let T denote a truth-teller and L denote a liar. We know there are exactly two T and two L.\n\nFirst, identify contradictory statements about a single fact:\n-   A1: \"B went to Paris.\" vs D1: \"B went to Rome.\" (B can only go to one city, so exactly one of A1/D1 is true). This implies A and D cannot both be T, and they cannot both be L. So, one of A, D is T and the other is L.\n\nLet's analyze the two possibilities for (A, D):\n\n**Case 1: A is T, D is L.**\n*   If A is T: A1 (\"B went to Paris\") is True, A2 (\"C did not go to Rome\") is True.\n    *   Deduction: B went to Paris.\n    *   Deduction: C did not go to Rome.\n*   If D is L: D1 (\"B went to Rome\") is False, D2 (\"C went to London\") is False.\n    *   Deduction: B did not go to Rome (consistent with B went to Paris).\n    *   Deduction: C did not go to London.\n    *   From C's city: C did not go to Rome and C did not go to London. Since C went to exactly one city, C must have gone to Paris or Berlin.\n\nNow we have A=T, D=L. The remaining two (B, C) must be one T and one L.\n\n*   **Subcase 1.1: B is T, C is L.**\n    *   If B is T: B1 (\"A went to London\") is True, B2 (\"D went to Berlin\") is True.\n        *   Deduction: A went to London.\n        *   Deduction: D went to Berlin.\n    *   If C is L: C1 (\"A did not go to Paris\") is False, C2 (\"D did not go to Rome\") is False.\n        *   Deduction: A went to Paris (contradicts A went to London).\n        *   This subcase leads to a contradiction (A cannot go to both London and Paris). So, Subcase 1.1 is impossible.\n\n*   **Subcase 1.2: B is L, C is T.**\n    *   If B is L: B1 (\"A went to London\") is False, B2 (\"D went to Berlin\") is False.\n        *   Deduction: A did not go to London.\n        *   Deduction: D did not go to Berlin.\n    *   If C is T: C1 (\"A did not go to Paris\") is True, C2 (\"D did not go to Rome\") is True.\n        *   Deduction: A did not go to Paris.\n        *   Deduction: D did not go to Rome.\n\n    Let's combine the consistent deductions for (A=T, B=L, C=T, D=L):\n    *   A (T): B->Paris (T), C->not Rome (T).\n    *   B (L): A->London (F) => A not London; D->Berlin (F) => D not Berlin.\n    *   C (T): A->not Paris (T); D->not Rome (T).\n    *   D (L): B->Rome (F) => B not Rome; C->London (F) => C not London.\n\n    Combining city information for each person:\n    *   B: Went to Paris (from A's statement). (Consistent with B not Rome from D's false statement).\n    *   C: Not Rome (from A's statement), Not London (from D's false statement). So C went to Paris or Berlin.\n    *   A: Not London (from B's false statement), Not Paris (from C's statement). So A went to Rome or Berlin.\n    *   D: Not Berlin (from B's false statement), Not Rome (from C's statement). So D went to Paris or London.\n    This set of assignments is internally consistent with all statements and conditions.\n\n**Case 2: A is L, D is T.**\n*   If A is L: A1 (\"B went to Paris\") is False, A2 (\"C did not go to Rome\") is False.\n    *   Deduction: B did not go to Paris.\n    *   Deduction: C went to Rome.\n*   If D is T: D1 (\"B went to Rome\") is True, D2 (\"C went to London\") is True.\n    *   Deduction: B went to Rome.\n    *   Deduction: C went to London.\n    *   This leads to a contradiction: C went to Rome (from A's false statement) AND C went to London (from D's statement). A person can only visit one city. So, Case 2 is impossible.\n\nSince only Case 1 (Subcase 1.2) provides a consistent solution, it is unique.\nIn this consistent solution, B went to Paris.\n\nTherefore, B visited Paris.",
+      "trick": "The key is to identify mutually exclusive statements first (like A1 and D1 regarding B's city) to narrow down the truth-teller/liar assignments. Once a core assignment (like A=T, D=L) is made, systematically check all other statements for consistency, especially looking for contradictions regarding a person's single city visit. If a contradiction arises, that initial core assumption is false."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Consider the following sequence of numbers generated by a specific set of rules:\n1. Start with a positive integer N.\n2. If N is even, divide it by 2.\n3. If N is odd, subtract 1 from it.\n4. Repeat steps 2 and 3 until the number 1 is reached.\n5. The 'modified length' is the number of terms generated until 1 is reached (inclusive of N and 1).\n\nWhat is the sum of the modified lengths for N = 15 and N = 20?",
+      "options": [
+        "A) 11",
+        "B) 12",
+        "C) 13",
+        "D) 14"
+      ],
+      "correct_answer": "C) 13",
+      "explanation": "We need to calculate the 'modified length' for N=15 and N=20 using the given rules.\n\n**For N = 15:**\n1.  N = 15 (odd) -> 15 - 1 = 14\n2.  N = 14 (even) -> 14 / 2 = 7\n3.  N = 7 (odd) -> 7 - 1 = 6\n4.  N = 6 (even) -> 6 / 2 = 3\n5.  N = 3 (odd) -> 3 - 1 = 2\n6.  N = 2 (even) -> 2 / 2 = 1\n\nThe sequence for N=15 is: 15, 14, 7, 6, 3, 2, 1.\nCounting the terms, the modified length for N=15 is 7.\n\n**For N = 20:**\n1.  N = 20 (even) -> 20 / 2 = 10\n2.  N = 10 (even) -> 10 / 2 = 5\n3.  N = 5 (odd) -> 5 - 1 = 4\n4.  N = 4 (even) -> 4 / 2 = 2\n5.  N = 2 (even) -> 2 / 2 = 1\n\nThe sequence for N=20 is: 20, 10, 5, 4, 2, 1.\nCounting the terms, the modified length for N=20 is 6.\n\n**Sum of modified lengths:**\nSum = (Modified length for N=15) + (Modified length for N=20)\nSum = 7 + 6 = 13.\n\nThe final answer is 13.",
+      "trick": "The 'trick' here is to carefully follow the specific rules given for the sequence, especially noting the difference between the 'odd' rule (subtract 1) from the more common Collatz conjecture (3N+1). A common mistake would be to apply the wrong rule or miscount the terms in the sequence. List out each step to avoid errors."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Eight persons P, Q, R, S, T, U, V, W are sitting around a circular table facing the center. Each person has a unique profession from the set: Doctor, Engineer, Architect, Pilot, Teacher, Manager, Journalist, Artist. \n\nGiven the following information:\n1.  P sits third to the right of the Journalist.\n2.  Only two people sit between the Journalist and R.\n3.  The Engineer sits to the immediate left of P.\n4.  Q sits second to the right of S.\n5.  S is not the Journalist.\n6.  The Doctor sits opposite to R.\n7.  U is the Pilot and sits between V and S.\n8.  T is the Teacher and sits to the immediate right of the Architect.\n9.  W is not the Engineer.\n10. The Manager is not an immediate neighbor of P.\n\nWho is the Journalist?",
+      "options": [
+        "A) P",
+        "B) Q",
+        "C) T",
+        "D) W"
+      ],
+      "correct_answer": "D) W",
+      "explanation": "Let's assign positions 1 to 8 clockwise around the table.\n\n1.  **P sits third to the right of the Journalist.**\n    Let the Journalist be at Pos 1. Then P is at Pos (1+3-1)%8+1 = 4.\n    *Journalist: Pos 1, P: Pos 4*\n\n2.  **Only two people sit between the Journalist and R.**\n    For 8 people, 'two people between' implies they are 3 positions apart. If Journalist is at Pos 1, R can be at Pos 4 (clockwise, but P is there) or Pos 6 (anticlockwise).\n    *R: Pos 6*\n\n3.  **The Engineer sits to the immediate left of P.**\n    P is at Pos 4. Its immediate left is Pos 3. So, the person at Pos 3 is the Engineer.\n    *Engineer: Pos 3*\n\n6.  **The Doctor sits opposite to R.**\n    R is at Pos 6. Its opposite position is Pos 2. So, the person at Pos 2 is the Doctor.\n    *Doctor: Pos 2*\n\nSo far, we have:\nPos 1: (Person, Journalist)\nPos 2: (Person, Doctor)\nPos 3: (Person, Engineer)\nPos 4: (P, ?)\nPos 5: (?, ?)\nPos 6: (R, ?)\nPos 7: (?, ?)\nPos 8: (?, ?)\n\n7.  **U is the Pilot and sits between V and S.**\n    This means U, V, S occupy three consecutive positions. The only available consecutive positions are 5, 7, 8. U's profession is Pilot.\n\n4.  **Q sits second to the right of S.**\n    Let's test possibilities for {U, V, S} at {5, 7, 8}:\n    *   **Case A: V at 5, U at 7 (Pilot), S at 8.**\n        If S is at Pos 8, Q sits 2nd right of S. Pos (8+2-1)%8+1 = 2. So Q is at Pos 2.\n        The person at Pos 2 is the Doctor. So, **Q is the Doctor.** This is consistent.\n    *   **Case B: S at 5, U at 7 (Pilot), V at 8.**\n        If S is at Pos 5, Q sits 2nd right of S. Pos (5+2-1)%8+1 = 7. So Q is at Pos 7.\n        But U (Pilot) is at Pos 7. Since Q and U are distinct persons, this is impossible. So Case B is ruled out.\n    Therefore, Case A is correct: **V at 5, U at 7 (Pilot), S at 8.**\n\nUpdated assignments:\nPos 1: (Person, Journalist)\nPos 2: (Q, Doctor)\nPos 3: (Person, Engineer)\nPos 4: (P, ?)\nPos 5: (V, ?)\nPos 6: (R, ?)\nPos 7: (U, Pilot)\nPos 8: (S, ?)\n\nFrom the list of 8 persons {P, Q, R, S, T, U, V, W}, we have assigned Q, U, V. P, R, S are at their positions. So, the persons at positions 1 and 3 must be T and W (in some order).\n\n8.  **T is the Teacher and sits to the immediate right of the Architect.**\n    This means the person T is the Teacher. The Teacher sits immediately right of the Architect.\n    The only adjacent positions in our current setup for (Architect, Teacher) are (V at 5, R at 6). So, V is the Architect, and R is the Teacher. This also implies that the person R is T.\n    *V: Architect (Pos 5), R: Teacher (Pos 6)* (So, R is the person T. We can write (T, Teacher) at Pos 6).\n\nUpdated assignments:\nPos 1: (Person, Journalist)\nPos 2: (Q, Doctor)\nPos 3: (Person, Engineer)\nPos 4: (P, ?)\nPos 5: (V, Architect)\nPos 6: (T, Teacher)\nPos 7: (U, Pilot)\nPos 8: (S, ?)\n\nNow, the persons at Pos 1 and Pos 3 must be R and W (since T is at Pos 6, Q at 2, U at 7, V at 5, P at 4, S at 8).\n\n9.  **W is not the Engineer.**\n    The Engineer is at Pos 3. So, the person at Pos 3 is not W. This means the person at Pos 3 must be R.\n    Therefore, **R is the Engineer (at Pos 3).**\n    Since R is at Pos 3, the person at Pos 1 (Journalist) must be W. Therefore, **W is the Journalist (at Pos 1).**\n\nRemaining professions for P (Pos 4) and S (Pos 8) are Manager and Artist.\n\n10. **The Manager is not an immediate neighbor of P.**\n    P is at Pos 4. P's immediate neighbors are R (Engineer at Pos 3) and V (Architect at Pos 5).\n    This means P's profession is not Manager. So, P must be the Artist.\n    Therefore, **P is the Artist (at Pos 4).**\n    This leaves **S as the Manager (at Pos 8).**\n\nFinal arrangement:\nPos 1: (W, Journalist)\nPos 2: (Q, Doctor)\nPos 3: (R, Engineer)\nPos 4: (P, Artist)\nPos 5: (V, Architect)\nPos 6: (T, Teacher)\nPos 7: (U, Pilot)\nPos 8: (S, Manager)\n\nAll conditions are satisfied. The Journalist is W.\n",
+      "trick": "In complex circular arrangement puzzles, start by fixing one position (e.g., Journalist at Pos 1) and deduce direct consequences. Systematically use the 'between' and 'opposite' rules to fill in initial positions and roles. Crucially, pay attention to the *people* (P, Q, R...) vs. *professions* (Journalist, Doctor...) and how they are assigned. When faced with multiple possibilities (like V-U-S vs S-U-V), test each one and eliminate those that lead to contradictions with other rules. The 'U sits between V and S' and 'Q sits 2nd right of S' was a critical step in fixing U, V, S and Q's position early in the deduction."
+    }
+  ]
+}
