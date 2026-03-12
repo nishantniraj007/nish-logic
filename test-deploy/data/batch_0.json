@@ -2,35 +2,9 @@
   "metadata": {
     "batch_index": 0,
     "type": "Clone (Internal Logic)",
-    "generated_at": "2026-03-11T17:38:43.259Z"
+    "generated_at": "2026-03-12T05:07:22.623Z"
   },
   "questions": [
-    {
-      "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #11?",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D"
-      ],
-      "correct_answer": "Option A",
-      "explanation": "Review based on session difficulty.",
-      "trick": ""
-    },
-    {
-      "question": "The average of 1 numbers is 2. What is their sum?",
-      "options": [
-        "2",
-        "2",
-        "3",
-        "4"
-      ],
-      "correct_answer": "2",
-      "explanation": "Sum = Average * Count",
-      "trick": "Multiply average by the total numbers.",
-      "category": "Quantitative Aptitude"
-    },
     {
       "question": "A man sells an article at a gain of 6%. If he had bought it for $100, what would be the selling price?",
       "options": [
@@ -43,19 +17,6 @@
       "explanation": "SP = CP * (100 + Gain%) / 100",
       "trick": "Directly add gain% to 100 for base $100.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #13?",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D"
-      ],
-      "correct_answer": "Option A",
-      "explanation": "Review based on session difficulty.",
-      "trick": ""
     },
     {
       "question": "Find the missing number in the series: 1, 2, 4, ?",
@@ -71,19 +32,6 @@
       "category": "Logical Reasoning"
     },
     {
-      "question": "If 'APPLE' is coded as 'BQQMF', what is 'ORANGE' coded as?",
-      "options": [
-        "PSBOHF",
-        "PSBOGE",
-        "QSCOHF",
-        "PTBPIF"
-      ],
-      "correct_answer": "PSBOHF",
-      "explanation": "Each letter is replaced by the next letter in the alphabet.",
-      "trick": "Shift each character by +1.",
-      "category": "Logical Reasoning"
-    },
-    {
       "question": "The average of 1 numbers is 2. What is their sum?",
       "options": [
         "2",
@@ -98,7 +46,59 @@
     },
     {
       "category": "General Awareness",
+      "question": "[INTERNAL] Supplementary review question #14?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct_answer": "Option A",
+      "explanation": "Review based on session difficulty.",
+      "trick": ""
+    },
+    {
+      "question": "If 'APPLE' is coded as 'BQQMF', what is 'ORANGE' coded as?",
+      "options": [
+        "PSBOHF",
+        "PSBOGE",
+        "QSCOHF",
+        "PTBPIF"
+      ],
+      "correct_answer": "PSBOHF",
+      "explanation": "Each letter is replaced by the next letter in the alphabet.",
+      "trick": "Shift each character by +1.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "category": "General Awareness",
+      "question": "[INTERNAL] Supplementary review question #11?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct_answer": "Option A",
+      "explanation": "Review based on session difficulty.",
+      "trick": ""
+    },
+    {
+      "category": "General Awareness",
       "question": "[INTERNAL] Supplementary review question #16?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct_answer": "Option A",
+      "explanation": "Review based on session difficulty.",
+      "trick": ""
+    },
+    {
+      "category": "General Awareness",
+      "question": "[INTERNAL] Supplementary review question #18?",
       "options": [
         "Option A",
         "Option B",
@@ -124,7 +124,7 @@
     },
     {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #15?",
+      "question": "[INTERNAL] Supplementary review question #12?",
       "options": [
         "Option A",
         "Option B",
@@ -147,32 +147,6 @@
       "correct_answer": "Option A",
       "explanation": "Review based on session difficulty.",
       "trick": ""
-    },
-    {
-      "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #12?",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D"
-      ],
-      "correct_answer": "Option A",
-      "explanation": "Review based on session difficulty.",
-      "trick": ""
-    },
-    {
-      "question": "If 'APPLE' is coded as 'BQQMF', what is 'ORANGE' coded as?",
-      "options": [
-        "PSBOHF",
-        "PSBOGE",
-        "QSCOHF",
-        "PTBPIF"
-      ],
-      "correct_answer": "PSBOHF",
-      "explanation": "Each letter is replaced by the next letter in the alphabet.",
-      "trick": "Shift each character by +1.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Find the missing number in the series: 1, 2, 4, ?",
@@ -202,19 +176,6 @@
     },
     {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #18?",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D"
-      ],
-      "correct_answer": "Option A",
-      "explanation": "Review based on session difficulty.",
-      "trick": ""
-    },
-    {
-      "category": "General Awareness",
       "question": "[INTERNAL] Supplementary review question #9?",
       "options": [
         "Option A",
@@ -227,8 +188,47 @@
       "trick": ""
     },
     {
+      "question": "If 'APPLE' is coded as 'BQQMF', what is 'ORANGE' coded as?",
+      "options": [
+        "PSBOHF",
+        "PSBOGE",
+        "QSCOHF",
+        "PTBPIF"
+      ],
+      "correct_answer": "PSBOHF",
+      "explanation": "Each letter is replaced by the next letter in the alphabet.",
+      "trick": "Shift each character by +1.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "The average of 1 numbers is 2. What is their sum?",
+      "options": [
+        "2",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "2",
+      "explanation": "Sum = Average * Count",
+      "trick": "Multiply average by the total numbers.",
+      "category": "Quantitative Aptitude"
+    },
+    {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #14?",
+      "question": "[INTERNAL] Supplementary review question #13?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct_answer": "Option A",
+      "explanation": "Review based on session difficulty.",
+      "trick": ""
+    },
+    {
+      "category": "General Awareness",
+      "question": "[INTERNAL] Supplementary review question #15?",
       "options": [
         "Option A",
         "Option B",
