@@ -4,47 +4,47 @@
     "day_index": 3,
     "slot_index": 30,
     "difficulty": "Medium",
-    "generated_at": "2026-03-08T19:37:53.213Z"
+    "generated_at": "2026-03-13T19:19:48.540Z"
   },
   "questions": [
     {
+      "category": "Quantitative Aptitude",
+      "question": "A sum of money is to be distributed among P, Q, and R in the ratio 3:5:7. If Q receives Rs. 1200, what is the total sum of money?",
+      "options": [
+        "A) Rs. 3000",
+        "B) Rs. 3600",
+        "C) Rs. 4200",
+        "D) Rs. 4500"
+      ],
+      "correct_answer": "B) Rs. 3600",
+      "explanation": "Let the shares of P, Q, and R be 3x, 5x, and 7x respectively.\nGiven that Q receives Rs. 1200.\nSo, 5x = 1200.\nTo find the value of x, divide 1200 by 5:\nx = 1200 / 5 = 240.\nThe total sum of money is the sum of all shares: 3x + 5x + 7x = 15x.\nSubstitute the value of x into the total sum:\nTotal sum = 15 * 240 = Rs. 3600.",
+      "trick": "The ratio parts are 3 (P), 5 (Q), 7 (R). Total parts = 3 + 5 + 7 = 15 parts.\nIf Q's 5 parts correspond to Rs. 1200, then 1 part = 1200 / 5 = Rs. 240.\nThe total sum is 15 parts. So, Total sum = 15 * 240 = Rs. 3600."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
       "category": "Logical Reasoning",
-      "question": "Five friends A, B, C, D, E are sitting in a row facing North.\n1. C is to the immediate right of B.\n2. D is to the immediate left of E.\n3. A is at the extreme left end.\n4. E is not next to A.\n5. B is to the right of D.\nWho is sitting exactly in the middle of the row?",
+      "question": "In a row of 5 students, A is to the left of B. C is to the right of B. D is to the right of C. E is to the left of A. Who is in the middle of the row?",
       "options": [
-        "A) A",
-        "B) B",
-        "C) C",
-        "D) E"
+        "A. A",
+        "B. B",
+        "C. C",
+        "D. D"
       ],
-      "correct_answer": "D) E",
-      "explanation": "Let the five positions be [1] [2] [3] [4] [5] from left to right.\n1.  From (3), A is at the extreme left: A _ _ _ _\n2.  From (1), C is to the immediate right of B: (BC) block.\n3.  From (2), D is to the immediate left of E: (DE) block.\n4.  From (4), E is not next to A. This means E cannot be in position [2].\n5.  From (5), B is to the right of D.\n\nNow, let's place the blocks (DE) and (BC) in the remaining positions [2], [3], [4], [5].\n\n**Case 1: (DE) block starts at position [2].**\n-   If D is at [2], then E is at [3]. Arrangement: A D E _ _.\n-   This satisfies condition (4) as E is not next to A (D is between them).\n-   The remaining positions are [4] and [5] for (BC). So, B is at [4], C is at [5].\n-   Resulting arrangement: A D E B C.\n-   Let's check all conditions for A D E B C:\n    1.  C is to the immediate right of B (Yes).\n    2.  D is to the immediate left of E (Yes).\n    3.  A is at the extreme left end (Yes).\n    4.  E is not next to A (Yes, D is between A and E).\n    5.  B is to the right of D (Yes, D is at [2], B is at [4]).\n-   This arrangement is valid. The person in the middle (position [3]) is E.\n\n**Case 2: (DE) block starts at position [3].**\n-   If D is at [3], then E is at [4]. Arrangement: A _ D E _.\n-   The remaining positions are [2] and [5] for (BC).\n-   If B is at [2], C must be at [3], but [3] is occupied by D. So (BC) cannot start at [2].\n-   If B is at [5], C would be at position [6], which doesn't exist. So (BC) cannot be placed here.\n-   Therefore, this case is not possible.\n\n**Case 3: (DE) block starts at position [4].**\n-   If D is at [4], then E is at [5]. Arrangement: A _ _ D E.\n-   The remaining positions are [2] and [3] for (BC). So, B is at [2], C is at [3].\n-   Resulting arrangement: A B C D E.\n-   Let's check all conditions for A B C D E:\n    1.  C is to the immediate right of B (Yes).\n    2.  D is to the immediate left of E (Yes).\n    3.  A is at the extreme left end (Yes).\n    4.  E is not next to A (Yes, B, C, D are between A and E).\n    5.  B is to the right of D (No, B is at [2], D is at [4], so B is to the left of D). This condition is violated.\n-   Therefore, this arrangement is invalid.\n\nSince A D E B C is the only valid arrangement, the person in the middle (position [3]) is E.",
-      "trick": "Use placeholders for positions. Treat 'immediate right/left' as blocks (e.g., (BC), (DE)). Systematically try placing these blocks while checking all conditions. Eliminate arrangements that violate any condition. The 'not next to' condition usually implies 'not immediately adjacent'."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "The average of 5 consecutive odd numbers is 27. What is the product of the smallest and the largest of these numbers?",
-      "options": [
-        "A) 713",
-        "B) 729",
-        "C) 759",
-        "D) 783"
-      ],
-      "correct_answer": "A) 713",
-      "explanation": "For any set of consecutive odd numbers (an arithmetic progression), the average is equal to the middle number.\nSince there are 5 consecutive odd numbers, the 3rd number is the average, which is 27.\nSo, the sequence of 5 consecutive odd numbers is:\n(27 - 4), (27 - 2), 27, (27 + 2), (27 + 4)\nWhich are: 23, 25, 27, 29, 31.\nThe smallest number is 23.\nThe largest number is 31.\nThe product of the smallest and the largest number = 23 * 31.\n23 * 31 = 713.",
-      "trick": "Recognize that for an odd number of consecutive terms in an arithmetic progression, the average is the middle term. This directly gives you the middle number, from which you can find the smallest and largest by adding/subtracting multiples of the common difference (which is 2 for consecutive odd numbers)."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If the length of a rectangle is increased by 20% and its width is decreased by 10%, what is the percentage change in its area?",
-      "options": [
-        "A) 8% increase",
-        "B) 10% increase",
-        "C) 8% decrease",
-        "D) 10% decrease"
-      ],
-      "correct_answer": "A) 8% increase",
-      "explanation": "Let the original length be L and the original width be W.\nOriginal Area (A_orig) = L * W\nNew length (L_new) = L + 20% of L = L * (1 + 20/100) = 1.2 L\nNew width (W_new) = W - 10% of W = W * (1 - 10/100) = 0.9 W\nNew Area (A_new) = L_new * W_new = (1.2 L) * (0.9 W) = 1.08 LW\nPercentage change in area = ((A_new - A_orig) / A_orig) * 100\n= ((1.08 LW - LW) / LW) * 100\n= (0.08 LW / LW) * 100\n= 0.08 * 100 = 8%\nSince the value is positive, it's an 8% increase.",
-      "trick": "Use the net percentage change formula for successive changes: A + B + (AB/100), where A is the percentage change in length and B is the percentage change in width. Increase is positive, decrease is negative.\nA = +20 (for 20% increase)\nB = -10 (for 10% decrease)\nNet change = 20 + (-10) + (20 * -10 / 100)\n= 10 + (-200 / 100)\n= 10 - 2 = 8%\nSince the result is positive, it's an 8% increase."
+      "correct_answer": "B. B",
+      "explanation": "Let's arrange the students step-by-step:\n1. 'A is to the left of B': _ A B _\n2. 'C is to the right of B': _ A B C _\n3. 'D is to the right of C': _ A B C D\n4. 'E is to the left of A': E A B C D\n\nThe complete arrangement from left to right is E, A, B, C, D. In a row of 5 students, the middle position is the 3rd student from either end. Counting from the left, B is the 3rd student.",
+      "trick": "Draw a simple line or use placeholders to visualize the positions. Start with the most concrete or connecting clues first. For example, place A and B, then add C relative to B, then D relative to C, and finally E relative to A. This builds the sequence logically."
     },
     {
       "category": "Current Affairs",
@@ -60,19 +60,6 @@
       "trick": ""
     },
     {
-      "category": "Logical Reasoning",
-      "question": "What comes next in the sequence: 3, 7, 13, 21, 31, ?",
-      "options": [
-        "A) 41",
-        "B) 43",
-        "C) 45",
-        "D) 47"
-      ],
-      "correct_answer": "B) 43",
-      "explanation": "1. Observe the differences between consecutive terms:\n   - 7 - 3 = 4\n   - 13 - 7 = 6\n   - 21 - 13 = 8\n   - 31 - 21 = 10\n2. The differences form an arithmetic progression (4, 6, 8, 10), increasing by 2 each time.\n3. The next difference in this sequence should be 12.\n4. Therefore, the next term in the original sequence is 31 + 12 = 43.",
-      "trick": "For number sequences, always start by checking the differences between consecutive terms. If the first differences don't show a clear pattern, check the differences of the differences (second-level differences), or look for patterns involving squares, cubes, or multiplication."
-    },
-    {
       "category": "Static GK",
       "question": "[Fallback GK] Default Question 2?",
       "correct_answer": "Option 1",
@@ -86,8 +73,21 @@
       "trick": ""
     },
     {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an item 40% above its cost price. He then offers a discount of 25% on the marked price. What is the profit percentage?",
+      "options": [
+        "A) 10%",
+        "B) 15%",
+        "C) 5%",
+        "D) 20%"
+      ],
+      "correct_answer": "C) 5%",
+      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 40% of CP = 100 + (0.40 * 100) = 100 + 40 = Rs. 140.\nDiscount = 25% of MP = 0.25 * 140 = Rs. 35.\nSelling Price (SP) = MP - Discount = 140 - 35 = Rs. 105.\nProfit = SP - CP = 105 - 100 = Rs. 5.\nProfit Percentage = (Profit / CP) * 100 = (5 / 100) * 100 = 5%.",
+      "trick": "Use the successive percentage change formula: Net Change = x + y + (xy/100), where x is the markup percentage (+40%) and y is the discount percentage (-25%).\nNet Change = 40 + (-25) + (40 * -25) / 100\n= 15 + (-1000 / 100)\n= 15 - 10 = 5%.\nSince the result is positive, it's a 5% profit."
+    },
+    {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
+      "question": "[Fallback CA] Default News 6?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -113,32 +113,6 @@
     },
     {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "All birds can fly. All sparrows are birds. Which of the following statements must be true?",
-      "options": [
-        "A) All sparrows can fly.",
-        "B) Some birds are sparrows.",
-        "C) No sparrows can fly.",
-        "D) All flying creatures are sparrows."
-      ],
-      "correct_answer": "A) All sparrows can fly.",
-      "explanation": "1. Premise 1: All birds can fly.\n2. Premise 2: All sparrows are birds (meaning sparrows are a subset of birds).\n3. If all members of a larger group (birds) have a certain property (can fly), then all members of a subset of that group (sparrows) must also have that property.\n4. Therefore, it must be true that all sparrows can fly.",
-      "trick": "Visualize using Venn diagrams. Draw a large circle for 'Flying Creatures', a smaller circle inside for 'Birds', and an even smaller circle inside 'Birds' for 'Sparrows'. This clearly shows that Sparrows are within Birds, which are within Flying Creatures, implying sparrows can fly."
-    },
-    {
-      "category": "Current Affairs",
       "question": "[Fallback CA] Default News 2?",
       "correct_answer": "Option 1",
       "options": [
@@ -151,8 +125,8 @@
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -164,17 +138,17 @@
       "trick": ""
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper buys an item for Rs. 800. He marks it up by 25% and then offers a discount of 10% on the marked price. What is the shopkeeper's profit percentage?",
+      "category": "Logical Reasoning",
+      "question": "What is the next number in the following series?\n2, 6, 12, 20, 30, ?",
       "options": [
-        "A) 12.5%",
-        "B) 15%",
-        "C) 18%",
-        "D) 20%"
+        "A. 40",
+        "B. 42",
+        "C. 44",
+        "D. 46"
       ],
-      "correct_answer": "A) 12.5%",
-      "explanation": "Cost Price (CP) = Rs. 800\nMarked Price (MP) = CP + 25% of CP\nMP = 800 + (25/100) * 800\nMP = 800 + 200 = Rs. 1000\nSelling Price (SP) = MP - 10% discount on MP\nSP = 1000 - (10/100) * 1000\nSP = 1000 - 100 = Rs. 900\nProfit = SP - CP = 900 - 800 = Rs. 100\nProfit Percentage = (Profit / CP) * 100\nProfit Percentage = (100 / 800) * 100 = (1/8) * 100 = 12.5%",
-      "trick": "Assume CP = 100 for percentage calculation. Marked price is 100 * (1 + 25/100) = 125. Selling price after 10% discount is 125 * (1 - 10/100) = 125 * 0.9 = 112.5. The net profit is 112.5 - 100 = 12.5. So, the profit percentage is 12.5%."
+      "correct_answer": "B. 42",
+      "explanation": "Let's look at the differences between consecutive numbers:\n6 - 2 = 4\n12 - 6 = 6\n20 - 12 = 8\n30 - 20 = 10\nThe differences are increasing by 2 each time (4, 6, 8, 10). The next difference should be 12.\nSo, 30 + 12 = 42.",
+      "trick": "When analyzing number series, first check for simple arithmetic or geometric progressions. If not obvious, look at the differences between consecutive terms. If those differences form a pattern, you've likely found the rule. This specific series also follows the pattern n*(n+1) for n=1, 2, 3... (1*2=2, 2*3=6, 3*4=12, 4*5=20, 5*6=30). So the next term would be 6*7=42."
     },
     {
       "category": "Current Affairs",
@@ -191,20 +165,59 @@
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "The sum of the ages of a father and his son is 60 years. Six years ago, the father's age was five times the son's age. What is the current age of the son?",
+      "question": "The sum of two numbers is 35 and their difference is 13. What is the product of the two numbers?",
       "options": [
-        "A) 12 years",
-        "B) 14 years",
-        "C) 16 years",
-        "D) 18 years"
+        "A) 242",
+        "B) 256",
+        "C) 264",
+        "D) 273"
       ],
-      "correct_answer": "B) 14 years",
-      "explanation": "Let F be the current age of the father and S be the current age of the son.\nFrom the first statement: F + S = 60  (Equation 1)\nSix years ago, their ages were (F-6) and (S-6).\nFrom the second statement: F - 6 = 5(S - 6)\nF - 6 = 5S - 30\nF = 5S - 24 (Equation 2)\nSubstitute Equation 2 into Equation 1:\n(5S - 24) + S = 60\n6S - 24 = 60\n6S = 60 + 24\n6S = 84\nS = 84 / 6\nS = 14 years.\nSo, the current age of the son is 14 years.",
-      "trick": "You can test the options. If the son's current age is 14 (Option B), then the father's age is 60 - 14 = 46. Six years ago, the son was 14 - 6 = 8, and the father was 46 - 6 = 40. Since 40 = 5 * 8, this option is correct."
+      "correct_answer": "C) 264",
+      "explanation": "Let the two numbers be x and y.\nGiven, x + y = 35  (Equation 1)\nGiven, x - y = 13  (Equation 2)\nAdding Equation 1 and Equation 2:\n(x + y) + (x - y) = 35 + 13\n2x = 48\nx = 48 / 2 = 24\nSubstitute x = 24 into Equation 1:\n24 + y = 35\ny = 35 - 24 = 11\nThe two numbers are 24 and 11.\nTheir product = 24 * 11 = 264.",
+      "trick": "For two numbers with sum 'S' and difference 'D':\nLarger number = (S + D) / 2\nSmaller number = (S - D) / 2\nHere, S = 35, D = 13.\nLarger number = (35 + 13) / 2 = 48 / 2 = 24.\nSmaller number = (35 - 13) / 2 = 22 / 2 = 11.\nProduct = 24 * 11 = 264."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A can do a piece of work in 12 days and B can do the same work in 18 days. They work together for 4 days, and then A leaves. In how many more days will B complete the remaining work?",
+      "options": [
+        "A) 6 days",
+        "B) 7 days",
+        "C) 8 days",
+        "D) 9 days"
+      ],
+      "correct_answer": "C) 8 days",
+      "explanation": "A's 1-day work = 1/12 of the total work.\nB's 1-day work = 1/18 of the total work.\nTogether, their 1-day work = (1/12) + (1/18) = (3/36) + (2/36) = 5/36 of the total work.\nWork done in 4 days by A and B together = 4 * (5/36) = 20/36 = 5/9 of the total work.\nRemaining work = 1 - (5/9) = 4/9 of the total work.\nNow, B has to complete the remaining 4/9 work alone. Since B does 1/18 of the work per day, the number of days B will take = (Remaining Work) / (B's 1-day work) = (4/9) / (1/18) = (4/9) * 18 = 4 * 2 = 8 days.",
+      "trick": "Assume total work as the LCM of 12 and 18, which is 36 units.\nA's efficiency = 36 units / 12 days = 3 units/day.\nB's efficiency = 36 units / 18 days = 2 units/day.\nCombined efficiency = 3 + 2 = 5 units/day.\nWork done in 4 days = 5 units/day * 4 days = 20 units.\nRemaining work = 36 - 20 = 16 units.\nDays B takes to complete remaining work = 16 units / (2 units/day) = 8 days."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Pointing to a photograph, a man says, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph is it?",
+      "options": [
+        "A. His own son",
+        "B. His nephew",
+        "C. His father",
+        "D. His uncle"
+      ],
+      "correct_answer": "A. His own son",
+      "explanation": "Let's break down the statement:\n1. 'I have no brother or sister' - This means the man is an only child.\n2. 'my father's son' - Since the man has no brother or sister, 'my father's son' must be the man himself.\n3. So, the statement becomes: 'that man's father is *me*'.\nIf the man in the photograph's father is the speaker, then the man in the photograph must be the speaker's son.",
+      "trick": "Start from the end of the statement or the most direct relation to the speaker and work backward. Replace phrases with their simpler equivalents (e.g., 'my father's son' becomes 'me' in this context) to simplify the deduction."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Read the following statements and choose the conclusion that logically follows:\n\nPremise 1: All dogs are animals.\nPremise 2: Some animals are pets.",
+      "options": [
+        "A. All dogs are pets.",
+        "B. Some pets are dogs.",
+        "C. No dogs are pets.",
+        "D. None of the above conclusions logically follow."
+      ],
+      "correct_answer": "D. None of the above conclusions logically follow.",
+      "explanation": "From Premise 1, we know that the set of 'dogs' is a subset of 'animals'. From Premise 2, we know that there is an overlap between 'animals' and 'pets'. However, we cannot conclude anything definitive about the relationship between 'dogs' and 'pets'. Dogs could be among the animals that are pets, or they could be among the animals that are not pets. Therefore, none of the given conclusions (A, B, C) necessarily follow.",
+      "trick": "In syllogisms, only conclude what *must* be true based on the premises, not what *might* be true. If the conclusion is not guaranteed, it does not logically follow. Using Venn diagrams can help visualize the relationships and avoid common fallacies."
     },
     {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
+      "question": "[Fallback CA] Default News 1?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -214,19 +227,6 @@
       ],
       "explanation": "DB Offline",
       "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Pointing to a man in a photograph, a woman says, \"He is the son of the only son of my mother.\" How is the man in the photograph related to the woman?",
-      "options": [
-        "A) Brother",
-        "B) Son",
-        "C) Father",
-        "D) Nephew"
-      ],
-      "correct_answer": "D) Nephew",
-      "explanation": "1. Start by identifying the speaker: 'my mother' refers to the woman's mother.\n2. 'The only son of my mother' refers to the woman's brother (since she is a woman and her mother has only one son).\n3. The statement then says, 'He is the son of [the woman's brother]'.\n4. Therefore, the man in the photograph is the son of the woman's brother, which makes him the woman's nephew.",
-      "trick": "Break down the statement from the end or from the 'my' reference. 'My mother' -> 'only son of my mother' (the woman's brother) -> 'son of (her brother)' (her nephew). Drawing a quick family tree can also help."
     },
     {
       "category": "Static GK",
