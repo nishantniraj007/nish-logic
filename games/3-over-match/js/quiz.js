@@ -3,7 +3,7 @@ let quizData = [];
 let userAnswers = new Array(18).fill(null);
 let currentQuestionIndex = 0;
 let timerInterval = null;
-let timeRemaining = 15 * 60; // 15 minutes in seconds
+let timeRemaining = 15 * 60;
 let isTimerEnabled = false;
 let startTime = null;
 
@@ -13,7 +13,6 @@ const gameScreen = document.getElementById('game-screen');
 const resultScreen = document.getElementById('result-screen');
 const loadingState = document.getElementById('loading-state');
 const timerToggle = document.getElementById('timer-toggle');
-
 const qText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 const qCounter = document.getElementById('q-counter');
@@ -23,16 +22,16 @@ const nextBtn = document.getElementById('next-btn');
 const submitBtn = document.getElementById('submit-btn');
 const timerDisplay = document.getElementById('timer');
 
-// Dummy Data Fallback for Development/Testing
-// 72 full-length questions are injected by fallback_data.js before this script runs.
+const DIFF_MAP = { easy: 'e', medium: 'm', ssc: 's', upsc: 'u' };
+const CHUNK_TYPES = ['qa', 'lr', 'sgk', 'ca'];
+const PROJECT = 'nish-logic';
+const BASE_URL = `https://firestore.googleapis.com/v1/projects/${PROJECT}/databases/(default)/documents`;
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Attempt to load current data based on difficulty
-    // For now, bypass actual fetch unless server is running, use fallback.
     setTimeout(() => {
         loadingState.style.display = 'none';
         introScreen.style.display = 'flex';
-    }, 1000); // simulated load
+    }, 1000);
 
     document.getElementById('start-btn').addEventListener('click', startGame);
     prevBtn.addEventListener('click', () => navigate(-1));
@@ -48,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     select.value = e.target.checked ? 'hi' : 'en';
                     select.dispatchEvent(new Event('change'));
                 } else {
-                    // If widget not ready, retry in 500ms
                     setTimeout(tryTranslate, 500);
                 }
             };
@@ -56,78 +54,74 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    document.getElementById('print-btn').addEventListener('click', () => {
-        window.print();
-    });
+    document.getElementById('print-btn').addEventListener('click', () => { window.print(); });
 });
+
+async function fetchCollection(collectionId) {
+    const url = `${BASE_URL}/${collectionId}?pageSize=300`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to fetch ${collectionId}`);
+    const data = await res.json();
+    if (!data.documents) return [];
+    return data.documents.map(doc => {
+        const f = doc.fields;
+        return {
+            id: f.id ? f.id.stringValue : 'N/A',
+            category: f.category ? f.category.stringValue : collectionId,
+            topic: f.topic ? f.topic.stringValue : '',
+            question: f.question.stringValue,
+            options: f.options.arrayValue.values.map(v => v.stringValue),
+            correct_answer: f.correct_answer.stringValue,
+            explanation: f.explanation ? f.explanation.stringValue : '',
+            trick: f.trick ? f.trick.stringValue : null
+        };
+    });
+}
 
 async function startGame() {
     isTimerEnabled = timerToggle.checked;
     const diff = document.querySelector('input[name="difficulty"]:checked').value;
+    const suffix = DIFF_MAP[diff];
 
     loadingState.style.display = 'flex';
     introScreen.style.display = 'none';
 
     try {
-        console.log(`Procuring ${diff} pool from Firestore...`);
-        const url = `https://firestore.googleapis.com/v1/projects/nish-logic/databases/(default)/documents:runQuery`;
-        const query = {
-            structuredQuery: {
-                from: [{ collectionId: 'vault' }],
-                where: {
-                    fieldFilter: {
-                        field: { fieldPath: 'vault_difficulty' },
-                        op: 'EQUAL',
-                        value: { stringValue: diff }
-                    }
-                }
-            }
-        };
+        console.log(`Loading ${diff} questions from 4 collections...`);
+        const allChunks = await Promise.all(
+            CHUNK_TYPES.map(type => fetchCollection(`${type}_${suffix}`))
+        );
 
-        const res = await fetch(url, {
-            method: 'POST',
-            body: JSON.stringify(query)
+        // Pick questions from each chunk: 6 QA, 6 LR, 3 SGK, 3 CA = 18
+        const picks = [6, 6, 3, 3];
+        quizData = [];
+        allChunks.forEach((chunk, i) => {
+            const shuffled = chunk.sort(() => 0.5 - Math.random());
+            quizData.push(...shuffled.slice(0, picks[i]));
         });
 
-        if (!res.ok) throw new Error("Database offline");
+        // Final shuffle so categories are mixed
+        quizData = quizData.sort(() => 0.5 - Math.random());
 
-        const results = await res.json();
-        quizData = results
-            .filter(r => r.document)
-            .map(r => {
-                const f = r.document.fields;
-                return {
-                    id: f.id ? f.id.stringValue : 'N/A',
-                    category: f.category.stringValue,
-                    topic: f.topic.stringValue,
-                    question: f.question.stringValue,
-                    options: f.options.arrayValue.values.map(v => v.stringValue),
-                    correct_answer: f.correct_answer.stringValue,
-                    explanation: f.explanation.stringValue,
-                    trick: f.trick ? f.trick.stringValue : null
-                };
-            });
-
-        if (quizData.length === 0) throw new Error(`No live data for ${diff}`);
-
-        // Scramble and limit to 18 (the game loop expects 18)
-        quizData = quizData.sort(() => 0.5 - Math.random()).slice(0, 18);
-        console.log(`Successfully loaded ${quizData.length} live questions.`);
+        if (quizData.length === 0) throw new Error('No questions loaded');
+        console.log(`✅ Loaded ${quizData.length} questions for ${diff}`);
 
     } catch (e) {
-        console.warn("Firestore fetch failed, using local fallback.", e);
+        console.warn('Firestore fetch failed, using local fallback.', e);
         if (typeof fallbackData !== 'undefined' && fallbackData[diff]) {
             quizData = [...fallbackData[diff]].sort(() => 0.5 - Math.random());
         } else {
-            console.error("Fatal: No live data and fallback data is missing.");
+            console.error('Fatal: No live data and fallback missing.');
         }
     }
 
+    userAnswers = new Array(quizData.length).fill(null);
     loadingState.style.display = 'none';
     gameScreen.style.display = 'flex';
     startTime = Date.now();
 
     if (isTimerEnabled) {
+        timeRemaining = 15 * 60;
         timerDisplay.classList.remove('hidden');
         startTimer();
     }
@@ -140,11 +134,7 @@ function startTimer() {
     timerInterval = setInterval(() => {
         timeRemaining--;
         updateTimerDisplay();
-
-        if (timeRemaining <= 0) {
-            clearInterval(timerInterval);
-            finishGame();
-        }
+        if (timeRemaining <= 0) { clearInterval(timerInterval); finishGame(); }
     }, 1000);
 }
 
@@ -152,8 +142,6 @@ function updateTimerDisplay() {
     const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
     const s = (timeRemaining % 60).toString().padStart(2, '0');
     timerDisplay.innerText = `${m}:${s}`;
-
-    // Pulse red when less than 1 min
     if (timeRemaining < 60) {
         timerDisplay.style.color = '#ff3333';
         timerDisplay.style.animation = 'pulse 1s infinite';
@@ -165,23 +153,16 @@ function renderQuestion() {
     qCounter.innerText = `Q: ${currentQuestionIndex + 1}/${quizData.length}`;
     categoryBadge.innerText = q.category;
     qText.innerText = q.question;
-
     optionsContainer.innerHTML = '';
-
     q.options.forEach(opt => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        if (userAnswers[currentQuestionIndex] === opt) {
-            btn.classList.add('selected');
-        }
+        if (userAnswers[currentQuestionIndex] === opt) btn.classList.add('selected');
         btn.innerText = opt;
         btn.onclick = () => selectOption(opt);
         optionsContainer.appendChild(btn);
     });
-
-    // Nav button states
     prevBtn.disabled = currentQuestionIndex === 0;
-
     if (currentQuestionIndex === quizData.length - 1) {
         nextBtn.style.display = 'none';
         submitBtn.style.display = 'block';
@@ -193,7 +174,7 @@ function renderQuestion() {
 
 function selectOption(selected) {
     userAnswers[currentQuestionIndex] = selected;
-    renderQuestion(); // Re-render to show selected visually
+    renderQuestion();
 }
 
 function navigate(dir) {
@@ -203,20 +184,16 @@ function navigate(dir) {
 
 function finishGame() {
     if (timerInterval) clearInterval(timerInterval);
-
     let score = 0;
     const timeTakenMs = Date.now() - startTime;
     const m = Math.floor(timeTakenMs / 60000);
     const s = Math.floor((timeTakenMs % 60000) / 1000);
-
     const ansSheet = document.getElementById('answer-sheet');
     ansSheet.innerHTML = '';
-
     quizData.forEach((q, i) => {
         const userA = userAnswers[i];
         const isCorrect = userA === q.correct_answer;
         if (isCorrect) score++;
-
         const card = document.createElement('div');
         card.className = `answer-card ${isCorrect ? 'correct' : 'incorrect'}`;
         card.innerHTML = `
@@ -228,17 +205,13 @@ function finishGame() {
         `;
         ansSheet.appendChild(card);
     });
-
-    // Populate Certificate
     document.getElementById('final-score').innerText = `${score}/${quizData.length}`;
     document.getElementById('cert-date').innerText = new Date().toLocaleDateString();
     document.getElementById('cert-time').innerText = isTimerEnabled ? `${m}m ${s}s` : 'Untimed';
-
     let msg = 'Keep Practicing!';
     if (score > 14) msg = 'Excellent Performance!';
     else if (score > 10) msg = 'Good Job!';
     document.getElementById('cert-message').innerText = msg;
-
     gameScreen.style.display = 'none';
     resultScreen.style.display = 'flex';
 }
