@@ -40,22 +40,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const langToggle = document.getElementById('lang-toggle');
     if (langToggle) {
+        // Restore toggle state from cookie on page load
+        const currentLang = getCookie('googtrans');
+        if (currentLang === '/en/hi') langToggle.checked = true;
+
         langToggle.addEventListener('change', (e) => {
-            const tryTranslate = () => {
-                const select = document.querySelector('.goog-te-combo');
-                if (select) {
-                    select.value = e.target.checked ? 'hi' : 'en';
-                    select.dispatchEvent(new Event('change'));
-                } else {
-                    setTimeout(tryTranslate, 500);
-                }
-            };
-            tryTranslate();
+            if (e.target.checked) {
+                setCookie('googtrans', '/en/hi');
+            } else {
+                setCookie('googtrans', '/en/en');
+            }
+            location.reload();
         });
     }
 
     document.getElementById('print-btn').addEventListener('click', () => { window.print(); });
 });
+
+function setCookie(name, value) {
+    document.cookie = `${name}=${value};path=/`;
+    document.cookie = `${name}=${value};domain=.github.io;path=/`;
+    document.cookie = `${name}=${value};domain=.web.app;path=/`;
+}
+
+function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+}
 
 async function fetchCollection(collectionId) {
     const url = `${BASE_URL}/${collectionId}?pageSize=300`;
@@ -92,7 +103,7 @@ async function startGame() {
             CHUNK_TYPES.map(type => fetchCollection(`${type}_${suffix}`))
         );
 
-        // Pick questions from each chunk: 6 QA, 6 LR, 3 SGK, 3 CA = 18
+        // Pick: 6 QA, 6 LR, 3 SGK, 3 CA = 18
         const picks = [6, 6, 3, 3];
         quizData = [];
         allChunks.forEach((chunk, i) => {
@@ -104,7 +115,7 @@ async function startGame() {
         quizData = quizData.sort(() => 0.5 - Math.random());
 
         if (quizData.length === 0) throw new Error('No questions loaded');
-        console.log(`✅ Loaded ${quizData.length} questions for ${diff}`);
+        console.log(`✅ Loaded ${quizData.length} live questions for ${diff}`);
 
     } catch (e) {
         console.warn('Firestore fetch failed, using local fallback.', e);
