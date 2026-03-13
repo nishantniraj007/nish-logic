@@ -4,86 +4,34 @@
     "day_index": 3,
     "slot_index": 36,
     "difficulty": "SSC/Bank",
-    "generated_at": "2026-03-08T20:59:19.579Z"
+    "generated_at": "2026-03-13T20:57:33.529Z"
   },
   "questions": [
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
+      "category": "Logical Reasoning",
+      "question": "If A + B means A is the father of B; A - B means A is the wife of B; A × B means A is the brother of B; A ÷ B means A is the daughter of B.\n\nWhich of the following expressions indicates that R is the mother of S?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "A. R - M + S",
+        "B. R + M × S",
+        "C. R ÷ M + S",
+        "D. S + M ÷ R"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 15 days, and B can do the same work in 20 days. With the help of C, they complete the work in 6 days. If they earn ₹1200 for the entire work, what is C's share?",
-      "options": [
-        "₹300",
-        "₹360",
-        "₹400",
-        "₹450"
-      ],
-      "correct_answer": "₹360",
-      "explanation": "Work rate of A = 1/15 per day\nWork rate of B = 1/20 per day\nWork rate of (A + B + C) = 1/6 per day\nWork rate of C = (Work rate of A+B+C) - (Work rate of A + Work rate of B)\nWork rate of C = 1/6 - (1/15 + 1/20)\nTo sum the fractions, find the LCM of 6, 15, 20, which is 60.\nWork rate of C = 10/60 - (4/60 + 3/60)\nWork rate of C = 10/60 - 7/60 = 3/60 = 1/20 per day.\n\nEarnings are distributed in the ratio of the work done by each person, which is proportional to their daily work rates.\nRatio of daily work rates A:B:C = 1/15 : 1/20 : 1/20\nMultiply by LCM(15, 20) = 60 to clear denominators:\n(1/15)*60 : (1/20)*60 : (1/20)*60 = 4 : 3 : 3\nTotal parts in the ratio = 4 + 3 + 3 = 10\nC's share = (C's ratio part / Total ratio parts) * Total earnings\nC's share = (3 / 10) * ₹1200 = ₹360.",
-      "trick": "Assume a 'Total Work' value as the LCM of the individual days taken.\nLCM(15, 20, 6) = 60 units of work.\nEfficiency of A = Total Work / Days taken by A = 60 / 15 = 4 units/day.\nEfficiency of B = Total Work / Days taken by B = 60 / 20 = 3 units/day.\nCombined efficiency of (A + B + C) = Total Work / Days taken by (A+B+C) = 60 / 6 = 10 units/day.\nEfficiency of C = (Efficiency of A+B+C) - (Efficiency of A + Efficiency of B)\nEfficiency of C = 10 - (4 + 3) = 10 - 7 = 3 units/day.\nEarnings are distributed in the ratio of their efficiencies: A:B:C = 4:3:3.\nTotal parts = 4 + 3 + 3 = 10.\nC's share = (3 / 10) * ₹1200 = ₹360."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "A. R - M + S",
+      "explanation": "We need to find an expression where R is the mother of S. This implies two conditions:\n1. R must be female.\n2. R must be one generation above S, with a parental relationship.\n\nLet's check each option:\n\nA. R - M + S:\n   - R - M means R is the wife of M. (R is female, M is male)\n   - M + S means M is the father of S. (M is male)\n   - Combining these: R is the wife of M, and M is the father of S. Therefore, R is the mother of S. This option correctly indicates that R is the mother of S.\n\nB. R + M × S:\n   - R + M means R is the father of M. (R is male)\n   - This immediately fails the condition that R must be female to be a mother. So, this option is incorrect.\n\nC. R ÷ M + S:\n   - R ÷ M means R is the daughter of M. (R is female)\n   - M + S means M is the father of S. (M is male)\n   - Combining these: R is the daughter of M, and M is the father of S. This means R and S are siblings (R is the sister of S). This does not make R the mother of S. So, this option is incorrect.\n\nD. S + M ÷ R:\n   - S + M means S is the father of M. (S is male)\n   - M ÷ R means M is the daughter of R. (M is female)\n   - Combining these: S is the father of M, and M is the daughter of R. This implies S and R are the parents of M. So, R is the mother of M, and S is the father of M (meaning R is the wife of S). This does not make R the mother of S. So, this option is incorrect.\n\nTherefore, only option A correctly establishes R as the mother of S.",
+      "trick": "The fastest way to solve these is to first check the gender of the person whose relationship is sought (R must be female for 'mother'). Eliminate options where R's gender is male. Then, check the generation gap. For 'mother of S', R must be one generation above S. Quickly trace the relationships in the remaining options by assigning gender and relative generation levels. For example, if R is 'father' (+), it's male. If R is 'wife' (-), it's female. If R is 'daughter' (÷), it's female. This eliminates options quickly without drawing full family trees."
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, if 'TABLE' is coded as 'XEFPI', then how will 'CHAIR' be coded in the same language?",
+      "question": "What will come in place of the question mark (?) in the following series?\n\n3, 7, 16, 35, ?, 153",
       "options": [
-        "A. GLEMV",
-        "B. GLEMP",
-        "C. GFLMV",
-        "D. GHMVW"
+        "72",
+        "74",
+        "78",
+        "82"
       ],
-      "correct_answer": "A. GLEMV",
-      "explanation": "Let's analyze the pattern used to code 'TABLE' as 'XEFPI' by looking at the positional values of the letters:\n\nT (20) → X (24) : +4\nA (1) → E (5) : +4\nB (2) → F (6) : +4\nL (12) → P (16) : +4\nE (5) → I (9) : +4\n\nThe pattern observed is a consistent shift of +4 for each letter in the word.\n\nNow, we apply the same pattern to the word 'CHAIR':\nC (3) → C + 4 = G (7)\nH (8) → H + 4 = L (12)\nA (1) → A + 4 = E (5)\nI (9) → I + 4 = M (13)\nR (18) → R + 4 = V (22)\n\nThus, 'CHAIR' will be coded as 'GLEMV'.",
-      "trick": "Always write down the alphabet with their positional values (A=1, B=2, ..., Z=26) on your rough sheet at the start of the exam. This saves crucial time during calculations. For coding-decoding, first check for simple, consistent patterns like a fixed positional shift (+N or -N) for all letters, as it's the most common type. If not, look for alternating shifts, reverse alphabet coding, or letter-pair swaps."
+      "correct_answer": "74",
+      "explanation": "Let's analyze the pattern between consecutive terms:\n\n1.  From 3 to 7: (3 × 2) + 1 = 7\n2.  From 7 to 16: (7 × 2) + 2 = 16\n3.  From 16 to 35: (16 × 2) + 3 = 35\n\nThe pattern observed is (Previous Number × 2) + N, where N starts from 1 and increments by 1 for each subsequent term.\n\nFollowing this pattern, for the next term (after 35):\n\n4.  From 35 to ?: (35 × 2) + 4 = 70 + 4 = 74\n\nTo verify this, let's check the next step with the calculated number:\n\n5.  From 74 to 153: (74 × 2) + 5 = 148 + 5 = 153 (This matches the given last term in the series).\n\nTherefore, the missing number is 74.",
+      "trick": "When differences between consecutive numbers in a series don't immediately reveal a simple arithmetic progression, consider patterns involving multiplication or division combined with addition or subtraction. Look for a multiplier/divisor that remains constant, and an adder/subtracter that follows a sequence (e.g., +1, +2, +3... or +2, +4, +6...). Always test your derived pattern with the subsequent terms to confirm."
     },
     {
       "category": "Static GK",
@@ -99,60 +47,8 @@
       "trick": ""
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an item 60% above its cost price. He then offers a discount of 25% on the marked price. If the profit earned is ₹300, what is the cost price of the item?",
-      "options": [
-        "₹1200",
-        "₹1500",
-        "₹1800",
-        "₹2000"
-      ],
-      "correct_answer": "₹1500",
-      "explanation": "Let the Cost Price (CP) be 'x'.\nMarked Price (MP) = CP + 60% of CP = x + 0.60x = 1.60x\nDiscount = 25% of MP = 0.25 * (1.60x) = 0.40x\nSelling Price (SP) = MP - Discount = 1.60x - 0.40x = 1.20x\nProfit = SP - CP = 1.20x - x = 0.20x\nGiven profit = ₹300\nSo, 0.20x = 300\nx = 300 / 0.20 = 300 * (100/20) = 300 * 5 = ₹1500\nThus, the Cost Price of the item is ₹1500.",
-      "trick": "The net percentage change in price from Cost Price to Selling Price can be calculated using the formula for successive percentage changes: A + B + (AB/100).\nHere, A = +60% (markup) and B = -25% (discount).\nNet change = 60 - 25 + (60 * -25)/100\n= 35 - (1500/100)\n= 35 - 15 = 20%\nThis 20% represents the profit percentage on the Cost Price.\nIf 20% of CP = ₹300,\nCP = (300 / 20) * 100 = 15 * 100 = ₹1500."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an item 40% above its cost price. He then sells it after giving a discount of 25% on the marked price. What is his profit percentage?",
-      "options": [
-        "10%",
-        "15%",
-        "5%",
-        "20%"
-      ],
-      "correct_answer": "5%",
-      "explanation": "Let the Cost Price (CP) be ₹100.\nMarked Price (MP) = CP + 40% of CP = 100 + 40 = ₹140.\nDiscount = 25% of MP = 0.25 × 140 = ₹35.\nSelling Price (SP) = MP - Discount = 140 - 35 = ₹105.\nProfit = SP - CP = 105 - 100 = ₹5.\nProfit Percentage = (Profit / CP) × 100 = (5 / 100) × 100 = 5%.",
-      "trick": "Use the net effect formula: (X + Y + XY/100), where X is the percentage markup and Y is the percentage discount (as a negative value). \nX = +40% (markup)\nY = -25% (discount)\nNet effect = 40 - 25 + (40 * -25 / 100)\n= 15 + (-1000 / 100)\n= 15 - 10 = 5%. \nSince the result is positive, it's a 5% profit."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\nI. Some pens are pencils.\nII. All pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\n1. Some pens are erasers.\n2. No pencil is a sharpener.\n3. Some erasers are pencils.\n4. Some sharpeners are pens.\n\nWhich of the following conclusions logically follow from the given statements?",
-      "options": [
-        "A. Only conclusions 1 and 2 follow.",
-        "B. Only conclusions 2 and 3 follow.",
-        "C. Only conclusions 1, 2 and 3 follow.",
-        "D. All conclusions follow."
-      ],
-      "correct_answer": "C. Only conclusions 1, 2 and 3 follow.",
-      "explanation": "Let's analyze each conclusion based on the given statements:\n\nStatements:\nI. Some Pens are Pencils.\nII. All Pencils are Erasers.\nIII. No Eraser is a Sharpener.\n\nConclusions:\n1. Some pens are erasers.\n   - From (I) Some Pens are Pencils and (II) All Pencils are Erasers, we can combine these two. If 'Some A are B' and 'All B are C', then 'Some A are C'. Thus, 'Some Pens are Erasers' is a valid conclusion. (Valid)\n\n2. No pencil is a sharpener.\n   - From (II) All Pencils are Erasers and (III) No Eraser is a Sharpener, we can combine these. If 'All A are B' and 'No B is C', then 'No A is C'. Thus, 'No Pencil is a Sharpener' is a valid conclusion. (Valid)\n\n3. Some erasers are pencils.\n   - This is the immediate conversion of statement (II) 'All Pencils are Erasers'. The conversion of 'All A are B' is 'Some B are A'. So, 'Some Erasers are Pencils' is a valid conclusion. (Valid)\n\n4. Some sharpeners are pens.\n   - We know 'No Eraser is a Sharpener' (from III) and 'Some Pens are Erasers' (from I & II). There is no definite relationship established between 'Pens' and 'Sharpeners'. It is possible that some pens are sharpeners, but it is not a definite conclusion. Hence, this conclusion does not necessarily follow. (Invalid)\n\nTherefore, only conclusions 1, 2, and 3 follow.",
-      "trick": "For syllogism, visualize with minimal overlapping Venn Diagrams. For A+E type, if A is a subset of B and B has no overlap with C, then A has no overlap with C. For I+A type, if some A are B and all B are C, then some A are C. Remember conversion rules: 'All A are B' converts to 'Some B are A'. 'No A is B' converts to 'No B is A'. 'Some A are B' converts to 'Some B are A'. 'Some A are not B' has no valid simple conversion."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -177,47 +73,138 @@
       "trick": ""
     },
     {
-      "category": "Logical Reasoning",
-      "question": "If `DELHI` is coded as `73541` and `CALCUTTA` is coded as `82589662`, then how will `CALICUT` be coded?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
       "options": [
-        "A. 8251896",
-        "B. 8258196",
-        "C. 521896",
-        "D. 8543697"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A. 8251896",
-      "explanation": "This is a direct substitution coding problem. We need to find the numerical code for each letter based on the given examples.\n\nFrom `DELHI` = `73541`:\nD = 7\nE = 3\nL = 5\nH = 4\nI = 1\n\nFrom `CALCUTTA` = `82589662`:\nC = 8\nA = 2\nL = 5 (consistent with DELHI)\nU = 9\nT = 6\n\nNow, let's code `CALICUT` using these mappings:\nC = 8\nA = 2\nL = 5\nI = 1\nC = 8\nU = 9\nT = 6\n\nCombining these, `CALICUT` is coded as `8251896`.",
-      "trick": "Identify the pattern as direct substitution. Write down the letter-to-digit mapping for all unique letters from the given words. Then, simply substitute the digits for the letters in the target word. Double-check for consistency if a letter appears in both examples."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is the value of (√2401 + √1681) / (√1369 - √961)?",
+      "question": "Pipe A can fill a tank in 12 hours. Pipe B can empty the same tank in 18 hours. If both pipes are opened simultaneously, in how many hours will the tank be full?",
       "options": [
-        "12",
-        "15",
-        "18",
-        "20"
+        "30 hours",
+        "36 hours",
+        "24 hours",
+        "40 hours"
       ],
-      "correct_answer": "15",
-      "explanation": "First, find the square roots:\n√2401 = 49\n√1681 = 41\n√1369 = 37\n√961 = 31\n\nSubstitute these values into the expression:\n(49 + 41) / (37 - 31)\n= 90 / 6\n= 15",
-      "trick": "To quickly find square roots of perfect squares up to 4 digits:\n1.  **Look at the unit digit:** This tells you the unit digit of the square root (e.g., ends in 1 means root ends in 1 or 9; ends in 9 means root ends in 3 or 7).\n2.  **Estimate the tens digit:** Ignore the last two digits of the number and find the largest integer whose square is less than or equal to the remaining number. This gives the tens digit.\n    *   For √2401: Ends in 1 (root ends in 1 or 9). 24 (ignore 01), 4^2=16, 5^2=25. So tens digit is 4. Now choose between 41 and 49. Since 2401 is closer to 50^2 (2500) than 40^2 (1600), it's 49.\n    *   For √1681: Ends in 1 (root ends in 1 or 9). 16 (ignore 81), 4^2=16. So tens digit is 4. Choose between 41 and 49. Since 1681 is closer to 40^2 (1600), it's 41.\n    *   For √1369: Ends in 9 (root ends in 3 or 7). 13 (ignore 69), 3^2=9, 4^2=16. So tens digit is 3. Choose between 33 and 37. Since 1369 is closer to 40^2 (1600) than 30^2 (900), it's 37.\n    *   For √961: Ends in 1 (root ends in 1 or 9). 9 (ignore 61), 3^2=9. So tens digit is 3. Choose between 31 and 39. Since 961 is closer to 30^2 (900), it's 31.\nMastering this estimation significantly speeds up square root calculations."
+      "correct_answer": "36 hours",
+      "explanation": "Rate of Pipe A (filling) = 1/12 tank per hour.\nRate of Pipe B (emptying) = 1/18 tank per hour.\nWhen both pipes are opened simultaneously, their combined rate is:\nCombined Rate = Rate of A - Rate of B (since B is emptying)\n= (1/12) - (1/18)\nTo subtract, find a common denominator, which is LCM of 12 and 18, which is 36.\n= (3/36) - (2/36)\n= 1/36 tank per hour.\nTime taken to fill the tank = 1 / (Combined Rate) = 1 / (1/36) = 36 hours.",
+      "trick": "Use the LCM method for total work.\nAssume the total capacity of the tank is the LCM of the times taken by A and B.\nLCM(12, 18) = 36 units.\nEfficiency of Pipe A (filling) = Total Capacity / Time taken by A = 36 units / 12 hours = 3 units/hour.\nEfficiency of Pipe B (emptying) = Total Capacity / Time taken by B = 36 units / 18 hours = 2 units/hour.\nSince Pipe B is emptying, its efficiency is negative relative to filling.\nNet efficiency when both are open = Efficiency of A - Efficiency of B = 3 - 2 = 1 unit/hour.\nTime taken to fill the tank = Total Capacity / Net Efficiency = 36 units / 1 unit/hour = 36 hours."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Statements:\n1. All pens are pencils.\n2. Some pencils are erasers.\n3. No eraser is a sharpener.\n\nConclusions:\nI. Some pencils are not sharpeners.\nII. Some pens are erasers.",
+      "question": "Statements:\nI. All pens are pencils.\nII. Some pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\nI. Some pencils are sharpeners.\nII. Some pens are erasers.\nIII. No pen is an eraser.\nIV. Some erasers are pens.\n\nWhich of the following conclusions logically follows from the given statements?",
       "options": [
-        "A. Only conclusion I follows.",
-        "B. Only conclusion II follows.",
-        "C. Both conclusion I and II follow.",
-        "D. Neither conclusion I nor II follows."
+        "A. Only I and II follow",
+        "B. Only II and III follow",
+        "C. Only IV follows",
+        "D. None follows"
       ],
-      "correct_answer": "A. Only conclusion I follows.",
-      "explanation": "Let's analyze each conclusion based on the given statements:\n\nStatement 1: All Pens (P) are Pencils (PL).\nStatement 2: Some Pencils (PL) are Erasers (E).\nStatement 3: No Eraser (E) is a Sharpener (S).\n\nFor Conclusion I: Some pencils are not sharpeners.\nFrom statement 2, we know that some part of Pencils are Erasers (PL ∩ E ≠ ∅). From statement 3, we know that No Eraser is a Sharpener (E ∩ S = ∅). This means the portion of pencils that are erasers cannot be sharpeners. Therefore, it is definite that 'Some pencils are not sharpeners'. This conclusion follows.\n\nFor Conclusion II: Some pens are erasers.\nFrom statement 1, All pens are pencils (P ⊆ PL). From statement 2, Some pencils are erasers (PL ∩ E ≠ ∅). However, we cannot definitively conclude that the 'some pencils' that are erasers include any 'pens'. It's possible that the erasers overlap with the part of pencils that are not pens. Thus, this is a possibility, not a definite conclusion. This conclusion does not follow.\n\nTherefore, only conclusion I follows.",
-      "trick": "Use Venn Diagrams to visualize the relationships. For 'Some X are not Y' conclusions, look for a definite overlap (Some) with a 'No' relationship to definitively prove the 'not' part."
+      "correct_answer": "D. None follows",
+      "explanation": "Let's analyze each conclusion based on the statements:\n\nStatements:\n1. All Pens are Pencils (P ⊆ Pc)\n2. Some Pencils are Erasers (Pc ∩ E ≠ ∅)\n3. No Eraser is a Sharpener (E ∩ S = ∅)\n\nConclusions:\nI. Some pencils are sharpeners: From (II) and (III), we know some pencils are erasers, and no eraser is a sharpener. The pencils that are not erasers *could* be sharpeners, or *could not* be. There is no definite relation. Hence, this conclusion does not logically follow.\n\nII. Some pens are erasers: From (I), pens are a subset of pencils. From (II), some pencils are erasers. It is possible that the 'some pencils' that are erasers include pens, or it's possible they don't. There is no definite relation between pens and erasers. Hence, this conclusion does not logically follow.\n\nIII. No pen is an eraser: Similar to conclusion II, we cannot definitively say this. It is possible some pens are erasers, and it is possible no pen is an eraser. This is a possibility, not a definite conclusion. Hence, this conclusion does not logically follow.\n\nIV. Some erasers are pens: This is the converse of conclusion II. If 'Some pens are erasers' does not follow definitely, then 'Some erasers are pens' also does not follow definitely.\n\nSince none of the individual conclusions are definitely true, the correct answer is 'None follows'. Note that conclusions II and III form a complementary pair (Some X are Y / No X are Y), meaning one of them must be true, but neither is *definitely* true based on the given statements, making it an 'either-or' case if that option was available. However, since the question asks what 'logically follows' (i.e., is definitely true), and no such option is given or applicable, the answer is 'None follows'.",
+      "trick": "For syllogism questions, draw the minimum possible Venn diagrams. For 'Some A are B' and 'No B are C', you can conclude nothing definite about A and C. For 'All A are B' and 'Some B are C', you can conclude nothing definite about A and C. When conclusions involve elements that have no direct or indirect definite relation, they are usually 'does not follow' unless they form an 'either-or' pair which is explicitly an option. Always check for definitive truth, not mere possibility."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an article 40% above its cost price and offers a discount of 25% on the marked price. If the selling price of the article is Rs. 1050, what is the cost price of the article?",
+      "options": [
+        "A) Rs. 900",
+        "B) Rs. 1000",
+        "C) Rs. 1100",
+        "D) Rs. 1200"
+      ],
+      "correct_answer": "B) Rs. 1000",
+      "explanation": "Let the Cost Price (CP) be 'C'.\nMarked Price (MP) = CP + 40% of CP = C * (1 + 0.40) = 1.4C.\nSelling Price (SP) = MP - 25% of MP = MP * (1 - 0.25) = MP * 0.75.\nSubstitute MP: SP = (1.4C) * 0.75 = 1.05C.\nGiven SP = Rs. 1050.\nSo, 1.05C = 1050.\nC = 1050 / 1.05 = 105000 / 105 = Rs. 1000.",
+      "trick": "Use the net percentage change formula for successive percentages: A + B + (AB/100).\nHere, A = +40% (markup) and B = -25% (discount).\nNet change = 40 - 25 + (40 * -25 / 100) = 15 - (1000 / 100) = 15 - 10 = 5%.\nThis means the Selling Price is 5% more than the Cost Price.\nSo, SP = CP + 5% of CP = 1.05 * CP.\nGiven SP = 1050.\n1.05 * CP = 1050 => CP = 1050 / 1.05 = 1000.\nAlternatively, use fractions: 40% = 2/5, 25% = 1/4.\nCP = C. MP = C * (1 + 2/5) = C * (7/5).\nSP = MP * (1 - 1/4) = C * (7/5) * (3/4) = C * (21/20).\nGiven SP = 1050.\nC * (21/20) = 1050 => C = 1050 * (20/21) = 50 * 20 = Rs. 1000."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "Simplify: √1225 + ³√2744 - (15)²",
+      "options": [
+        "A) -176",
+        "B) -186",
+        "C) 176",
+        "D) 186"
+      ],
+      "correct_answer": "A) -176",
+      "explanation": "Step 1: Calculate √1225.\nSince the number ends in 25, its square root must end in 5. Remove '25'. The remaining number is 12. Find two consecutive integers whose product is 12: 3 * 4 = 12. Take the smaller integer, 3. So, √1225 = 35.\n\nStep 2: Calculate ³√2744.\nThe last digit of 2744 is 4, so the last digit of its cube root must be 4 (since 4³ = 64). Now, ignore the last three digits (744). The remaining number is 2. Find the largest integer whose cube is less than or equal to 2: 1³ = 1. So the tens digit is 1. Thus, ³√2744 = 14 (Check: 14 * 14 * 14 = 2744).\n\nStep 3: Calculate (15)².\n(15)² = 225.\n\nStep 4: Substitute the values into the expression:\n35 + 14 - 225\n= 49 - 225\n= -176.",
+      "trick": "Memorization and pattern recognition are key for roots and squares.\nFor √1225: Ends in 5. The number '12' is 3x4, so the root is 35.\nFor ³√2744: Ends in 4, so the cube root ends in 4. Ignore 744, consider 2. 1³=1, 2³=8. So the tens digit is 1. Thus, the root is 14.\nFor (15)²: Any number ending in 5, its square ends in 25. The preceding digits are found by multiplying the tens digit by (tens digit + 1). For 15, (1 * (1+1)) = 1*2 = 2. So, 225.\nCalculation: 35 + 14 - 225 = 49 - 225 = -176."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks his goods 40% above the cost price. He allows a discount of 20% on the marked price. What is his profit percentage?",
+      "options": [
+        "12%",
+        "16%",
+        "20%",
+        "18%"
+      ],
+      "correct_answer": "12%",
+      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 40% of CP = 100 + 40 = Rs. 140.\nDiscount = 20% of MP = 20% of 140 = (20/100) * 140 = Rs. 28.\nSelling Price (SP) = MP - Discount = 140 - 28 = Rs. 112.\nProfit = SP - CP = 112 - 100 = Rs. 12.\nProfit Percentage = (Profit / CP) * 100 = (12 / 100) * 100 = 12%.",
+      "trick": "Use the successive percentage change formula: A + B + (AB/100).\nHere, A = +40% (markup) and B = -20% (discount).\nNet change = 40 + (-20) + (40 * -20 / 100)\n= 20 + (-800 / 100)\n= 20 - 8 = 12%.\nThis net change directly represents the profit percentage."
     },
     {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'TIGER' is coded as 2097518 and 'LION' is coded as 1291514, then how is 'ZEBRA' coded?",
+      "options": [
+        "2652181",
+        "2652180",
+        "265218",
+        "26521811"
+      ],
+      "correct_answer": "2652181",
+      "explanation": "The coding pattern used is to replace each letter with its corresponding position in the English alphabet (A=1, B=2, C=3, ..., Z=26).\n\nLet's apply this to the given examples:\n\nFor TIGER:\nT is the 20th letter.\nI is the 9th letter.\nG is the 7th letter.\nE is the 5th letter.\nR is the 18th letter.\nConcatenating these positions gives 2097518.\n\nFor LION:\nL is the 12th letter.\nI is the 9th letter.\nO is the 15th letter.\nN is the 14th letter.\nConcatenating these positions gives 1291514.\n\nFollowing the same pattern for ZEBRA:\nZ is the 26th letter.\nE is the 5th letter.\nB is the 2nd letter.\nR is the 18th letter.\nA is the 1st letter.\nConcatenating these positions gives 2652181.",
+      "trick": "For letter-to-number coding, always first check the most common patterns: direct alphabetical position (A=1, B=2...), reverse alphabetical position (A=26, B=25...), or sum of digits of the position (e.g., K=11 -> 1+1=2). Quickly writing down A-Z with their numbers can save time if you're unsure."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -230,7 +217,20 @@
     },
     {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
