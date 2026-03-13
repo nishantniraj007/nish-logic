@@ -4,87 +4,9 @@
     "day_index": 3,
     "slot_index": 34,
     "difficulty": "Easy",
-    "generated_at": "2026-03-08T19:58:03.970Z"
+    "generated_at": "2026-03-13T20:02:21.618Z"
   },
   "questions": [
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A train travels at a speed of 60 kilometers per hour. How long will it take to travel 180 kilometers?",
-      "options": [
-        "2 hours",
-        "3 hours",
-        "4 hours",
-        "1.5 hours"
-      ],
-      "correct_answer": "3 hours",
-      "explanation": "Time = Distance / Speed. Time = 180 km / 60 km/hour = 3 hours.",
-      "trick": "Think of it as 'how many 60s fit into 180'. 180 / 60 = 3."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If 3 apples cost $6, how much would 7 apples cost?",
-      "options": [
-        "$14",
-        "$12",
-        "$16",
-        "$10"
-      ],
-      "correct_answer": "$14",
-      "explanation": "First, find the cost of one apple: $6 / 3 apples = $2 per apple. Then, multiply the cost per apple by the desired number of apples: $2/apple * 7 apples = $14.",
-      "trick": "Set up a proportion: (3 apples / $6) = (7 apples / x). Cross-multiply: 3x = 6 * 7. Solve for x: x = 42 / 3 = 14."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What is the next letter in the sequence: A, C, E, G, ?",
-      "options": [
-        "H",
-        "I",
-        "J",
-        "K"
-      ],
-      "correct_answer": "I",
-      "explanation": "The sequence consists of letters that skip one letter in the alphabet. A (skip B) C (skip D) E (skip F) G (skip H) I.",
-      "trick": "Notice the pattern of skipping one letter each time: A (+2 letters) C (+2 letters) E (+2 letters) G (+2 letters) I."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
     {
       "category": "Static GK",
       "question": "[Fallback GK] Default Question 1?",
@@ -100,20 +22,20 @@
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does NOT belong in the following group: Apple, Banana, Carrot, Orange?",
+      "question": "Which word does NOT belong in the following group: apple, banana, carrot, orange?",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "apple",
+        "banana",
+        "carrot",
+        "orange"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
-      "trick": "Identify the common characteristic of most items and find the outlier."
+      "correct_answer": "carrot",
+      "explanation": "Apple, banana, and orange are all fruits. A carrot is a vegetable.",
+      "trick": "Think about the common category. Most items fit into a single, obvious group (fruits)."
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -125,8 +47,34 @@
       "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
+      "category": "Logical Reasoning",
+      "question": "Look at this series: 2, 4, 6, 8, ___. What number should come next?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct_answer": "10",
+      "explanation": "The pattern is adding 2 to the previous number. 2 + 2 = 4, 4 + 2 = 6, 6 + 2 = 8. Therefore, 8 + 2 = 10.",
+      "trick": "Identify the difference between consecutive numbers. If it's constant, you've found the pattern."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the value of 3/4 as a decimal?",
+      "options": [
+        "0.25",
+        "0.50",
+        "0.75",
+        "1.33"
+      ],
+      "correct_answer": "0.75",
+      "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator. 3 ÷ 4 = 0.75.",
+      "trick": "Think of dividing a dollar into 4 equal parts. Each part is $0.25. So, 3 parts would be 3 * $0.25 = $0.75."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -151,8 +99,60 @@
       "trick": ""
     },
     {
+      "category": "Quantitative Aptitude",
+      "question": "If a shirt costs $25 and is on sale for 20% off, what is the sale price?",
+      "options": [
+        "$20",
+        "$22",
+        "$23",
+        "$18"
+      ],
+      "correct_answer": "20",
+      "explanation": "A 20% discount on $25 is 0.20 * $25 = $5. The sale price is $25 - $5 = $20.",
+      "trick": "If there is a 20% discount, you pay 80% of the original price. 80% of $25 is 0.80 * $25 = $20."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the sum of the first 5 positive even numbers?",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct_answer": "30",
+      "explanation": "The first 5 positive even numbers are 2, 4, 6, 8, and 10. Their sum is 2 + 4 + 6 + 8 + 10 = 30.",
+      "trick": "The sum of the first 'n' even numbers is n * (n + 1). For n=5, the sum is 5 * (5 + 1) = 5 * 6 = 30."
+    },
+    {
       "category": "Current Affairs",
       "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -177,17 +177,17 @@
       "trick": ""
     },
     {
-      "category": "Logical Reasoning",
-      "question": "If 'A' is taller than 'B', and 'B' is taller than 'C', who is the tallest?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
       "options": [
-        "A",
-        "B",
-        "C",
-        "Cannot be determined"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A",
-      "explanation": "The question states that A > B and B > C. This implies a transitive relationship where A is also greater than C. Therefore, A is the tallest.",
-      "trick": "Visualize it as a simple height ranking: A > B > C. The first one is the tallest."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
@@ -200,24 +200,11 @@
       ],
       "correct_answer": "Thursday",
       "explanation": "Starting from Monday: 1 day after is Tuesday, 2 days after is Wednesday, and 3 days after is Thursday.",
-      "trick": "Count forward on your fingers or mentally: Monday + 1 = Tuesday, +2 = Wednesday, +3 = Thursday."
+      "trick": "Count on your fingers or quickly visualize the week's days."
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "If a shirt costs $20 and is on sale for 25% off, what is the sale price of the shirt?",
-      "options": [
-        "$15",
-        "$16",
-        "$18",
-        "$12"
-      ],
-      "correct_answer": "$15",
-      "explanation": "Calculate the discount amount: 25% of $20 = 0.25 * $20 = $5. Subtract the discount from the original price: $20 - $5 = $15.",
-      "trick": "Instead of calculating the discount and then subtracting, calculate the remaining percentage. If there's a 25% discount, you pay 75% of the price. 75% of $20 = 0.75 * $20 = $15."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -229,17 +216,30 @@
       "trick": ""
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "What is the sum of the first 5 positive even numbers?",
+      "category": "Logical Reasoning",
+      "question": "If all cats are mammals, and all mammals are animals, what can we conclude about cats?",
       "options": [
-        "20",
-        "25",
-        "30",
-        "15"
+        "All cats are reptiles",
+        "All cats are birds",
+        "All cats are animals",
+        "Some cats are not animals"
       ],
-      "correct_answer": "30",
-      "explanation": "The first 5 positive even numbers are 2, 4, 6, 8, and 10. Their sum is 2 + 4 + 6 + 8 + 10 = 30.",
-      "trick": "The sum of the first 'n' positive even numbers is given by the formula n * (n + 1). For n=5, the sum is 5 * (5 + 1) = 5 * 6 = 30."
+      "correct_answer": "All cats are animals",
+      "explanation": "This is a syllogism. If A is part of B, and B is part of C, then A must be part of C. In this case, cats (A) are mammals (B), and mammals (B) are animals (C). Therefore, cats (A) are animals (C).",
+      "trick": "Visualize it as nested circles. The 'cats' circle is inside the 'mammals' circle, which is inside the 'animals' circle."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A rectangular garden has a length of 10 meters and a width of 5 meters. What is its area?",
+      "options": [
+        "15 sq meters",
+        "25 sq meters",
+        "50 sq meters",
+        "100 sq meters"
+      ],
+      "correct_answer": "50 sq meters",
+      "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = Length × Width = 10 m × 5 m = 50 sq meters.",
+      "trick": "Visualize the garden as a grid. You can fit 10 squares of 1 meter each along the length and 5 squares along the width, making a total of 10 * 5 = 50 squares."
     }
   ]
 }
