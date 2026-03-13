@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nish-Logic | User Manual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: #00ff41;
+            --dark-green: #00cc33;
+            --bg: #0a0a0a;
+            --glass: rgba(0, 255, 65, 0.05);
+            --border: rgba(0, 255, 65, 0.2);
+            --text: #ccffcc;
+            --dim: #557755;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .site-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .site-header h1 {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 2.4rem;
+            color: var(--green);
+            letter-spacing: 4px;
+        }
+        .site-header p {
+            color: var(--dim);
+            font-size: 0.9rem;
+            margin-top: 0.4rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--green);
+            text-decoration: none;
+            border: 1px solid var(--border);
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            transition: all 0.2s;
+        }
+        .back-btn:hover { background: var(--glass); }
+        .app-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .app-card h2 {
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--green);
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+            margin-bottom: 0.3rem;
+        }
+        .app-card .tag {
+            font-size: 0.75rem;
+            color: var(--dim);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .app-card p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        .app-card .launch-link {
+            display: inline-block;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--green);
+            border: 1px solid var(--green);
+            padding: 0.4rem 1.2rem;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: all 0.2s;
+            margin-top: 0.5rem;
+        }
+        .app-card .launch-link:hover { background: rgba(0,255,65,0.1); }
+        .steps {
+            background: rgba(0,0,0,0.4);
+            border-left: 3px solid var(--green);
+            padding: 1.2rem 1.5rem;
+            margin-top: 1rem;
+            border-radius: 0 4px 4px 0;
+        }
+        .steps h3 {
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--green);
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+        }
+        .steps ol {
+            padding-left: 1.2rem;
+        }
+        .steps ol li {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 0.3rem;
+        }
+        .steps ol li a {
+            color: var(--green);
+        }
+        .steps ol li code {
+            background: rgba(0,255,65,0.1);
+            padding: 0.1rem 0.4rem;
+            border-radius: 2px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--green);
+        }
+        .badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 1px;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+        .badge.free { background: rgba(0,255,65,0.15); color: var(--green); border: 1px solid var(--green); }
+        .badge.hosted { background: rgba(0,100,255,0.15); color: #66aaff; border: 1px solid #66aaff; }
+        .section-divider {
+            text-align: center;
+            color: var(--dim);
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            margin: 1rem 0 2rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--dim);
+            font-size: 0.8rem;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="../index.html" class="back-btn">&lt; BACK TO HOME</a>
+
+    <div class="site-header">
+        <h1>NISH-LOGIC</h1>
+        <p>User Manual &mdash; App Guide</p>
+    </div>
+
+    <!-- 3 OVER MATCH -->
+    <div class="app-card">
+        <h2>3 OVER MATCH <span class="badge free">FREE</span> <span class="badge hosted">GitHub Pages</span></h2>
+        <span class="tag">// Games Vault &mdash; Competitive Exam Drill</span>
+        <p>
+            3 Over Match is Nish-Logic's flagship exam drill engine. Built for serious aspirants preparing for SSC, Bank, UPSC, and CAT, it fires 18 live questions pulled directly from the Nish-Logic Firestore vault — a mix of Quantitative Aptitude, Logical Reasoning, Static GK, and Current Affairs — all calibrated to your chosen difficulty level.
+        </p>
+        <p>
+            Each match is 3 overs of 6 questions — hence the name. You get a randomised set every time, a 15-minute optional timer to simulate exam pressure, Hindi translation for regional accessibility, and a Certificate of Performance at the end with full answer explanations and memory tricks.
+        </p>
+        <p>
+            No login. No install. No cost. Just open and play.
+        </p>
+        <a href="https://nishantniraj007.github.io/nish-logic/games/3-over-match/index.html" class="launch-link" target="_blank">LAUNCH 3 OVER MATCH &rarr;</a>
+    </div>
+
+    <!-- EXPERT ANALYSER -->
+    <div class="app-card">
+        <h2>EXPERT ANALYSER <span class="badge free">FREE</span> <span class="badge hosted">GitHub Pages</span></h2>
+        <span class="tag">// Games Vault &mdash; Deep Reasoning Trainer</span>
+        <p>
+            Expert Analyser is Nish-Logic's advanced reasoning module. Designed for UPSC and CAT-level thinkers who want to go beyond standard MCQs and stress-test their analytical thinking with complex, multi-layered problems.
+        </p>
+        <a href="https://nishantniraj007.github.io/nish-logic/games/expert-analyser/index.html" class="launch-link" target="_blank">LAUNCH EXPERT ANALYSER &rarr;</a>
+    </div>
+
+    <!-- STUDY PORTAL -->
+    <div class="app-card">
+        <h2>STUDY PORTAL <span class="badge hosted">Zoho Catalyst</span></h2>
+        <span class="tag">// GK / GS / CA Marathon &mdash; Zoho Hosted</span>
+        <p>
+            The Nish-Logic Study Portal is a full-length GK, General Science, and Current Affairs marathon engine hosted on Zoho Catalyst. It fetches live question data from the Nish-Logic Firestore vault and serves it based on your selected exam level. Ideal for daily revision sessions before competitive exams.
+        </p>
+        <a href="https://nish-logic-60066876988.development.catalystserverless.in/app/index.html" class="launch-link" target="_blank">OPEN STUDY PORTAL &rarr;</a>
+    </div>
+
+    <!-- AI NOVEL WRITER -->
+    <div class="app-card">
+        <h2>AI NOVEL WRITER <span class="badge free">BYOK</span> <span class="badge hosted">Firebase Hosting</span></h2>
+        <span class="tag">// Tools &mdash; Bring Your Own Key</span>
+        <p>
+            The Nish-Logic AI Novel Writer is a browser-based creative writing tool powered by Google Gemini. It runs entirely in your browser — no server, no subscription. You bring your own Gemini API key and the tool handles the rest. Write chapters, generate story continuations, and build full narratives without paying for any SaaS.
+        </p>
+
+        <div class="steps">
+            <h3>// HOW TO GET YOUR FREE GEMINI API KEY</h3>
+            <ol>
+                <li>Open <a href="https://aistudio.google.com" target="_blank">aistudio.google.com</a> in your browser</li>
+                <li>Sign in with your Google account</li>
+                <li>Click <code>Get API Key</code> in the left sidebar</li>
+                <li>Click <code>Create API Key</code></li>
+                <li>Select <code>Create API key in new project</code></li>
+                <li>Your API key will be generated — copy it immediately</li>
+                <li>Paste it into the API Key field in the AI Novel Writer tool</li>
+                <li>Your key is stored only in your browser — never sent to any server</li>
+            </ol>
+        </div>
+
+        <br>
+        <p style="font-size:0.85rem; color: var(--dim);">
+            Note: Google AI Studio free tier gives you generous daily limits. No billing required for personal use.
+        </p>
+        <a href="../tools/ai-novel-writer/index.html" class="launch-link">OPEN AI NOVEL WRITER &rarr;</a>
+    </div>
+
+    <div class="section-divider">--- END OF MANUAL ---</div>
+
+    <footer>
+        NISH-LOGIC ECOSYSTEM &mdash; BUILT BY NISHANT NIRAJ &mdash; MARCH 2026
+    </footer>
+</div>
+</body>
+</html>
