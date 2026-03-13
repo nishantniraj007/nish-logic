@@ -2,137 +2,47 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 3,
-    "generated_at": "2026-03-12T19:35:36.243Z",
+    "generated_at": "2026-03-13T19:24:35.626Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 43, 45, 47, 49, 51?",
-      "correct_answer": "47",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "47",
-        "51",
-        "45",
-        "49"
+        "Mahatma Gandhi",
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore"
       ],
-      "explanation": "Sum = 235. Average = Sum / 5 = 47.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "A can complete a piece of work in 34 days while B can complete the same work in 46 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "19.55 days",
-      "options": [
-        "21.55 days",
-        "23.55 days",
-        "18.55 days",
-        "19.55 days"
-      ],
-      "explanation": "Work = 34 * 46 = 1564. Rate = 34 + 46 = 80. Time = Work / Rate = 19.55 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Saturn",
-        "Earth",
-        "Jupiter",
-        "Neptune"
-      ],
-      "explanation": "Jupiter is a gas giant.",
+      "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
-      "correct_answer": "324",
+      "question": "Find the odd one out among the following numbers: 36, 101, 49, 25",
+      "correct_answer": "101",
       "options": [
-        "320",
-        "327",
-        "972",
-        "324"
+        "36",
+        "101",
+        "49",
+        "25"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Sardar Patel",
         "B.R. Ambedkar",
+        "Sardar Patel",
         "Dr. Rajendra Prasad",
         "Jawaharlal Nehru"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Amazon",
-        "Nile",
-        "Yangtze",
-        "Mississippi"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 12, 28, 44, 60, 76, ?",
-      "correct_answer": "92",
-      "options": [
-        "92",
-        "108",
-        "94",
-        "76"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 16. So, 76 + (16) = 92.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If an article is bought for Rs. 300 and sold at a profit of 25%, what is the selling price?",
-      "correct_answer": "Rs. 375",
-      "options": [
-        "Rs. 345",
-        "Rs. 375",
-        "Rs. 435",
-        "Rs. 405"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 300 * 1.25 = Rs. 375.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
-      "options": [
-        "None of the above.",
-        "Some Foods are not Apples.",
-        "All Apples are Foods.",
-        "No Apples are Foods."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 25, 16, 36, 82",
-      "correct_answer": "82",
-      "options": [
-        "25",
-        "16",
-        "36",
-        "82"
-      ],
-      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -147,29 +57,119 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "A train travels at an average speed of 103 km/hr. How much distance will it cover in 6 hours?",
+      "correct_answer": "618 km",
       "options": [
-        "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi",
-        "Sarojini Naidu",
-        "Rabindranath Tagore"
+        "721 km",
+        "638 km",
+        "618 km",
+        "515 km"
       ],
-      "explanation": "Jana Gana Mana.",
+      "explanation": "Distance = Speed * Time = 103 * 6 = 618 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 43, 45, 47, 49, 51?",
+      "correct_answer": "47",
+      "options": [
+        "45",
+        "51",
+        "47",
+        "49"
+      ],
+      "explanation": "Sum = 235. Average = Sum / 5 = 47.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
+      "correct_answer": "48",
+      "options": [
+        "45",
+        "96",
+        "50",
+        "48"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Mississippi",
+        "Yangtze",
+        "Nile"
+      ],
+      "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "A train travels at an average speed of 89 km/hr. How much distance will it cover in 2 hours?",
-      "correct_answer": "178 km",
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
       "options": [
-        "267 km",
-        "198 km",
-        "89 km",
-        "178 km"
+        "Saturn",
+        "Earth",
+        "Neptune",
+        "Jupiter"
       ],
-      "explanation": "Distance = Speed * Time = 89 * 2 = 178 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 16, 26, 36, 46, 56, ?",
+      "correct_answer": "66",
+      "options": [
+        "76",
+        "68",
+        "56",
+        "66"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 56 + (10) = 66.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 2200 at an interest rate of 5% per annum over 2 years?",
+      "correct_answer": "Rs. 220",
+      "options": [
+        "Rs. 220",
+        "Rs. 330",
+        "Rs. 170",
+        "Rs. 320"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (2200 * 5 * 2) / 100 = 220.",
+      "trick": "Treat percentage as decimal visually: 22 * 5 * 2 = 220.",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If an article is bought for Rs. 660 and sold at a profit of 15%, what is the selling price?",
+      "correct_answer": "Rs. 758.9999999999999",
+      "options": [
+        "Rs. 824.9999999999999",
+        "Rs. 758.9999999999999",
+        "Rs. 890.9999999999999",
+        "Rs. 692.9999999999999"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 660 * 1.15 = Rs. 758.9999999999999.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If DOG is coded as FQI, how will CUP be coded in that same language?",
+      "correct_answer": "EWR",
+      "options": [
+        "FXS",
+        "CUP",
+        "ASN",
+        "EWR"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
     }
   ]
 }

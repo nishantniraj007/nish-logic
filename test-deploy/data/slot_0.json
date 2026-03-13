@@ -2,7 +2,7 @@
   "metadata": {
     "difficulty": "easy",
     "slot": 0,
-    "generated_at": "2026-03-12T19:35:36.243Z",
+    "generated_at": "2026-03-13T19:24:35.626Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
@@ -11,39 +11,140 @@
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Dr. Rajendra Prasad",
-        "B.R. Ambedkar",
         "Jawaharlal Nehru",
-        "Sardar Patel"
+        "B.R. Ambedkar",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
+      "question": "Find the odd one out among the following numbers: 9, 65, 16, 25",
+      "correct_answer": "65",
       "options": [
-        "No Pens are Stationery.",
-        "All Pens are Stationery.",
-        "Some Stationery are not Pens.",
-        "None of the above."
+        "9",
+        "65",
+        "16",
+        "25"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "If BAT is coded as CBU, how will CUP be coded in that same language?",
-      "correct_answer": "DVQ",
+      "question": "A train travels at an average speed of 101 km/hr. How much distance will it cover in 4 hours?",
+      "correct_answer": "404 km",
       "options": [
-        "CUP",
-        "BTO",
-        "DVQ",
-        "EWR"
+        "303 km",
+        "424 km",
+        "505 km",
+        "404 km"
       ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "explanation": "Distance = Speed * Time = 101 * 4 = 404 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Sarojini Naidu",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
+      "options": [
+        "240",
+        "243",
+        "729",
+        "246"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the next number in the series: 14, 16, 18, 20, 22, ?",
+      "correct_answer": "24",
+      "options": [
+        "24",
+        "26",
+        "26",
+        "22"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 2. So, 22 + (2) = 24.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 3900 at an interest rate of 6% per annum over 5 years?",
+      "correct_answer": "Rs. 1170",
+      "options": [
+        "Rs. 1170",
+        "Rs. 1365",
+        "Rs. 1270",
+        "Rs. 1120"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (3900 * 6 * 5) / 100 = 1170.",
+      "trick": "Treat percentage as decimal visually: 39 * 6 * 5 = 1170.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Nile",
+        "Yangtze",
+        "Mississippi"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A can complete a piece of work in 18 days while B can complete the same work in 20 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "9.47 days",
+      "options": [
+        "11.47 days",
+        "13.47 days",
+        "8.47 days",
+        "9.47 days"
+      ],
+      "explanation": "Work = 18 * 20 = 360. Rate = 18 + 20 = 38. Time = Work / Rate = 9.47 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Rs. 423 is divided between A and B in the ratio 4:5. What is A's share?",
+      "correct_answer": "Rs. 188",
+      "options": [
+        "Rs. 188",
+        "Rs. 235",
+        "Rs. 145.7",
+        "Rs. 230.3"
+      ],
+      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 423/9 = 47. A's share = 4 * 47 = 188.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Neptune",
+        "Saturn",
+        "Earth",
+        "Jupiter"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     },
     {
       "question": "Sample CA?",
@@ -58,118 +159,17 @@
       "category": "Current Affairs"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 3300 at an interest rate of 7% per annum over 4 years?",
-      "correct_answer": "Rs. 924",
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
       "options": [
-        "Rs. 1024",
-        "Rs. 924",
-        "Rs. 874",
-        "Rs. 1089"
+        "All Dogs are Animals.",
+        "No Dogs are Animals.",
+        "None of the above.",
+        "Some Animals are not Dogs."
       ],
-      "explanation": "SI = (P * R * T) / 100 = (3300 * 7 * 4) / 100 = 924.",
-      "trick": "Treat percentage as decimal visually: 33 * 7 * 4 = 924.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Jupiter",
-        "Neptune",
-        "Saturn",
-        "Earth"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Yangtze",
-        "Nile",
-        "Mississippi",
-        "Amazon"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Rs. 320 is divided between A and B in the ratio 4:6. What is A's share?",
-      "correct_answer": "Rs. 128",
-      "options": [
-        "Rs. 128",
-        "Rs. 160",
-        "Rs. 192",
-        "Rs. 96"
-      ],
-      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 320/10 = 32. A's share = 4 * 32 = 128.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 16, 4, 9, 50",
-      "correct_answer": "50",
-      "options": [
-        "16",
-        "4",
-        "9",
-        "50"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 70 km/hr. How much distance will it cover in 4 hours?",
-      "correct_answer": "280 km",
-      "options": [
-        "350 km",
-        "210 km",
-        "300 km",
-        "280 km"
-      ],
-      "explanation": "Distance = Speed * Time = 70 * 4 = 280 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
-      "correct_answer": "48",
-      "options": [
-        "48",
-        "50",
-        "45",
-        "96"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 12 days while B can complete the same work in 25 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "8.11 days",
-      "options": [
-        "8.11 days",
-        "10.11 days",
-        "7.11 days",
-        "12.11 days"
-      ],
-      "explanation": "Work = 12 * 25 = 300. Rate = 12 + 25 = 37. Time = Work / Rate = 8.11 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Sarojini Naidu",
-        "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
     }
   ]
 }

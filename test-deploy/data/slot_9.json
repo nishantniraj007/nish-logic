@@ -2,86 +2,97 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 9,
-    "generated_at": "2026-03-12T19:35:36.243Z",
+    "generated_at": "2026-03-13T19:24:35.626Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "A train travels at an average speed of 95 km/hr. How much distance will it cover in 2 hours?",
-      "correct_answer": "190 km",
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "190 km",
-        "285 km",
-        "210 km",
-        "95 km"
+        "B.R. Ambedkar",
+        "Sardar Patel",
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad"
       ],
-      "explanation": "Distance = Speed * Time = 95 * 2 = 190 km.",
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If DOG is coded as EPH, how will MAN be coded in that same language?",
+      "correct_answer": "NBO",
+      "options": [
+        "MAN",
+        "NBO",
+        "L@M",
+        "OCP"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
+      "correct_answer": "48",
+      "options": [
+        "96",
+        "48",
+        "50",
+        "45"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 96 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "288 km",
+      "options": [
+        "288 km",
+        "384 km",
+        "308 km",
+        "192 km"
+      ],
+      "explanation": "Distance = Speed * Time = 96 * 3 = 288 km.",
       "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "If an article is bought for Rs. 1280 and sold at a profit of 10%, what is the selling price?",
-      "correct_answer": "Rs. 1408",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Rs. 1664",
-        "Rs. 1536",
-        "Rs. 1280",
-        "Rs. 1408"
+        "Sarojini Naidu",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Mahatma Gandhi"
       ],
-      "explanation": "SP = CP * (1 + Profit/100) = 1280 * 1.10 = Rs. 1408.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
         "Mississippi",
-        "Amazon",
         "Nile",
+        "Amazon",
         "Yangtze"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "If DOG is coded as GRJ, how will CUP be coded in that same language?",
-      "correct_answer": "FXS",
+      "question": "Find the next number in the series: 2, -18, -38, -58, -78, ?",
+      "correct_answer": "-98",
       "options": [
-        "FXS",
-        "@RM",
-        "CUP",
-        "GYT"
+        "-78",
+        "-118",
+        "-96",
+        "-98"
       ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
-      "options": [
-        "Some Foods are not Apples.",
-        "All Apples are Foods.",
-        "None of the above.",
-        "No Apples are Foods."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 4, 8, 16, 32, ?",
-      "correct_answer": "64",
-      "options": [
-        "128",
-        "60",
-        "66",
-        "64"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 32 * 2 = 64.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -20. So, -78 + (-20) = -98.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
@@ -97,79 +108,68 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 28800 at an interest rate of 11% per annum over 2 years?",
+      "correct_answer": "Rs. 6336",
       "options": [
-        "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi",
-        "Sarojini Naidu",
-        "Rabindranath Tagore"
+        "Rs. 7776",
+        "Rs. 6436",
+        "Rs. 6286",
+        "Rs. 6336"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
+      "explanation": "SI = (P * R * T) / 100 = (28800 * 11 * 2) / 100 = 6336.",
+      "trick": "Treat percentage as decimal visually: 288 * 11 * 2 = 6336.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
+      "options": [
+        "Some Foods are not Apples.",
+        "All Apples are Foods.",
+        "None of the above.",
+        "No Apples are Foods."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 152 days while B can complete the same work in 184 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "83.24 days",
+      "options": [
+        "83.24 days",
+        "82.24 days",
+        "87.24 days",
+        "85.24 days"
+      ],
+      "explanation": "Work = 152 * 184 = 27968. Rate = 152 + 184 = 336. Time = Work / Rate = 83.24 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Jupiter",
-        "Neptune",
         "Earth",
-        "Saturn"
+        "Saturn",
+        "Neptune",
+        "Jupiter"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 21600 at an interest rate of 11% per annum over 5 years?",
-      "correct_answer": "Rs. 11880",
+      "question": "What is the average of the following 5 consecutive even numbers: 58, 60, 62, 64, 66?",
+      "correct_answer": "62",
       "options": [
-        "Rs. 11980",
-        "Rs. 11880",
-        "Rs. 12960",
-        "Rs. 11830"
+        "64",
+        "60",
+        "62",
+        "66"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (21600 * 11 * 5) / 100 = 11880.",
-      "trick": "Treat percentage as decimal visually: 216 * 11 * 5 = 11880.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Sardar Patel",
-        "B.R. Ambedkar",
-        "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 45, 47, 49, 51, 53?",
-      "correct_answer": "49",
-      "options": [
-        "49",
-        "47",
-        "53",
-        "51"
-      ],
-      "explanation": "Sum = 245. Average = Sum / 5 = 49.",
+      "explanation": "Sum = 310. Average = Sum / 5 = 62.",
       "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 101, 25, 49, 36",
-      "correct_answer": "101",
-      "options": [
-        "101",
-        "25",
-        "49",
-        "36"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
     }
   ]
 }

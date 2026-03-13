@@ -2,107 +2,18 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 7,
-    "generated_at": "2026-03-12T19:35:36.243Z",
+    "generated_at": "2026-03-13T19:24:35.626Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "If DOG is coded as FQI, how will MAN be coded in that same language?",
-      "correct_answer": "OCP",
-      "options": [
-        "K?L",
-        "OCP",
-        "PDQ",
-        "MAN"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Amazon",
-        "Nile",
-        "Yangtze",
-        "Mississippi"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 9, 4, 16, 50",
-      "correct_answer": "50",
-      "options": [
-        "9",
-        "4",
-        "16",
-        "50"
-      ],
-      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 80 days while B can complete the same work in 96 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "43.64 days",
-      "options": [
-        "43.64 days",
-        "42.64 days",
-        "47.64 days",
-        "45.64 days"
-      ],
-      "explanation": "Work = 80 * 96 = 7680. Rate = 80 + 96 = 176. Time = Work / Rate = 43.64 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Rs. 1080 is divided between A and B in the ratio 5:4. What is A's share?",
-      "correct_answer": "Rs. 600",
-      "options": [
-        "Rs. 708",
-        "Rs. 480",
-        "Rs. 492",
-        "Rs. 600"
-      ],
-      "explanation": "Total parts = 5 + 4 = 9. Value of 1 part = 1080/9 = 120. A's share = 5 * 120 = 600.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "B.R. Ambedkar",
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 50, 52, 54, 56, 58?",
-      "correct_answer": "54",
-      "options": [
-        "54",
-        "52",
-        "58",
-        "56"
-      ],
-      "explanation": "Sum = 270. Average = Sum / 5 = 54.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
       "question": "Find the next number in the series: 3, 9, 27, 81, ?",
       "correct_answer": "243",
       "options": [
+        "246",
         "240",
         "729",
-        "246",
         "243"
       ],
       "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
@@ -110,40 +21,106 @@
       "category": "Logical Reasoning"
     },
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Rs. 1440 is divided between A and B in the ratio 3:7. What is A's share?",
+      "correct_answer": "Rs. 432",
       "options": [
-        "Earth",
-        "Neptune",
-        "Saturn",
-        "Jupiter"
+        "Rs. 288",
+        "Rs. 432",
+        "Rs. 576",
+        "Rs. 1008"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
+      "explanation": "Total parts = 3 + 7 = 10. Value of 1 part = 1440/10 = 144. A's share = 3 * 144 = 432.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "Sample History?",
       "options": [
-        "Mahatma Gandhi",
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Sarojini Naidu"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
+      "correct_answer": "A",
+      "explanation": "test",
+      "category": "Static GK (History)"
     },
     {
-      "question": "Find the next number in the series: 13, 37, 61, 85, 109, ?",
-      "correct_answer": "133",
+      "question": "Find the odd one out among the following numbers: 49, 25, 36, 101",
+      "correct_answer": "101",
       "options": [
-        "135",
-        "157",
-        "133",
-        "109"
+        "49",
+        "25",
+        "36",
+        "101"
       ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 24. So, 109 + (24) = 133.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If an article is bought for Rs. 1800 and sold at a profit of 20%, what is the selling price?",
+      "correct_answer": "Rs. 2160",
+      "options": [
+        "Rs. 2340",
+        "Rs. 2160",
+        "Rs. 1980",
+        "Rs. 2520"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 1800 * 1.20 = Rs. 2160.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If CAT is coded as FDW, how will CUP be coded in that same language?",
+      "correct_answer": "FXS",
+      "options": [
+        "CUP",
+        "GYT",
+        "FXS",
+        "@RM"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 116 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "348 km",
+      "options": [
+        "368 km",
+        "232 km",
+        "348 km",
+        "464 km"
+      ],
+      "explanation": "Distance = Speed * Time = 116 * 3 = 348 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 4400 at an interest rate of 10% per annum over 3 years?",
+      "correct_answer": "Rs. 1320",
+      "options": [
+        "Rs. 1420",
+        "Rs. 1320",
+        "Rs. 1270",
+        "Rs. 1540"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (4400 * 10 * 3) / 100 = 1320.",
+      "trick": "Treat percentage as decimal visually: 44 * 10 * 3 = 1320.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "All Dogs are Animals.",
+        "None of the above.",
+        "No Dogs are Animals.",
+        "Some Animals are not Dogs."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
@@ -157,19 +134,6 @@
       "correct_answer": "A",
       "explanation": "test",
       "category": "Current Affairs"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 7600 at an interest rate of 9% per annum over 3 years?",
-      "correct_answer": "Rs. 2052",
-      "options": [
-        "Rs. 2432",
-        "Rs. 2052",
-        "Rs. 2152",
-        "Rs. 2002"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (7600 * 9 * 3) / 100 = 2052.",
-      "trick": "Treat percentage as decimal visually: 76 * 9 * 3 = 2052.",
-      "category": "Quantitative Aptitude"
     }
   ]
 }
