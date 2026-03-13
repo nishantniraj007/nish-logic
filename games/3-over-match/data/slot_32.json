@@ -4,25 +4,38 @@
     "day_index": 3,
     "slot_index": 32,
     "difficulty": "Medium",
-    "generated_at": "2026-03-08T19:47:26.181Z"
+    "generated_at": "2026-03-13T19:46:21.931Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper sells an item for ₹500, making a profit of 25%. What was the cost price of the item?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
       "options": [
-        "A) ₹375",
-        "B) ₹400",
-        "C) ₹425",
-        "D) ₹450"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "B) ₹400",
-      "explanation": "Let CP be the cost price. Selling Price (SP) = Cost Price (CP) + Profit.\nProfit = 25% of CP = 0.25 * CP.\nSo, SP = CP + 0.25 * CP = 1.25 * CP.\nGiven SP = ₹500.\nTherefore, 1.25 * CP = 500.\nCP = 500 / 1.25 = 500 / (5/4) = 500 * 4 / 5 = 100 * 4 = ₹400.",
-      "trick": "If the selling price (SP) includes a profit of P%, the cost price (CP) can be found using the formula: CP = SP / (1 + P/100).\nCP = 500 / (1 + 25/100) = 500 / (1 + 0.25) = 500 / 1.25 = ₹400."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -48,46 +61,20 @@
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If the length of a rectangle is increased by 20% and its width is decreased by 10%, what is the percentage change in its area?",
+      "question": "Father's age is three times his son's age. Ten years later, the father's age will be twice his son's age. What is the current age of the son?",
       "options": [
-        "A) 8% increase",
-        "B) 8% decrease",
-        "C) 10% increase",
-        "D) 12% increase"
+        "10 years",
+        "15 years",
+        "20 years",
+        "25 years"
       ],
-      "correct_answer": "A) 8% increase",
-      "explanation": "Let the original length (L) be 10 units and the original width (W) be 10 units for easy calculation.\nOriginal Area (A) = L * W = 10 * 10 = 100 square units.\nNew length (L') = L + 20% of L = 10 + (0.20 * 10) = 10 + 2 = 12 units.\nNew width (W') = W - 10% of W = 10 - (0.10 * 10) = 10 - 1 = 9 units.\nNew Area (A') = L' * W' = 12 * 9 = 108 square units.\nPercentage change in area = ((New Area - Original Area) / Original Area) * 100.\nPercentage change = ((108 - 100) / 100) * 100 = (8 / 100) * 100 = 8%.\nSince the new area (108) is greater than the original area (100), it's an 8% increase.",
-      "trick": "For successive percentage changes in two dimensions (like length and width of a rectangle), the net percentage change can be calculated using the formula: (x + y + (xy/100))%, where x is the percentage change in length and y is the percentage change in width. Use positive for increase and negative for decrease.\nHere, x = +20% (increase) and y = -10% (decrease).\nNet change = (20 + (-10) + (20 * -10 / 100))%\nNet change = (10 + (-200 / 100))%\nNet change = (10 - 2)% = 8%.\nSince the result is positive, it's an 8% increase."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "In a certain code, if 'PAPER' is written as 'QBQFS', how would 'PENCIL' be written in that code?",
-      "options": [
-        "A. QFODJM",
-        "B. QDMBJK",
-        "C. QDMBIK",
-        "D. QEOBJM"
-      ],
-      "correct_answer": "A. QFODJM",
-      "explanation": "Let's analyze the coding pattern from 'PAPER' to 'QBQFS':\nP (16th letter) -> Q (17th letter) : +1\nA (1st letter) -> B (2nd letter)   : +1\nP (16th letter) -> Q (17th letter) : +1\nE (5th letter) -> F (6th letter)   : +1\nR (18th letter) -> S (19th letter) : +1\n\nThe pattern is that each letter in the original word is replaced by the next letter in the English alphabet.\n\nNow, apply this same pattern to the word 'PENCIL':\nP -> Q\nE -> F\nN -> O\nC -> D\nI -> J\nL -> M\n\nTherefore, 'PENCIL' would be coded as 'QFODJM'.",
-      "trick": "For coding-decoding questions, write the original word and its coded form one below the other. Then, look for a consistent shift (e.g., +1, -1, +2, -2) for each letter, or a reversal of the word, or a pattern involving only vowels/consonants. Assigning numerical positions to letters (A=1, B=2, etc.) can often help reveal the pattern faster."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A alone can complete a piece of work in 10 days, and B alone can complete the same work in 15 days. If they work together, in how many days will they complete the work?",
-      "options": [
-        "A) 5 days",
-        "B) 6 days",
-        "C) 7.5 days",
-        "D) 12.5 days"
-      ],
-      "correct_answer": "B) 6 days",
-      "explanation": "A's 1-day work = 1/10 of the total work.\nB's 1-day work = 1/15 of the total work.\nWhen they work together, their combined 1-day work = (1/10) + (1/15).\nTo add fractions, find a common denominator, which is 30.\n(1/10) + (1/15) = (3/30) + (2/30) = 5/30 = 1/6 of the total work.\nIf they complete 1/6 of the work in one day, they will complete the entire work in 6 days.",
-      "trick": "For two people working together, if A takes 'x' days and B takes 'y' days to complete a work individually, then working together they will complete it in (x * y) / (x + y) days.\nDays = (10 * 15) / (10 + 15) = 150 / 25 = 6 days."
+      "correct_answer": "10 years",
+      "explanation": "Let the son's current age be S and the father's current age be F.\nFrom the first statement: F = 3S (Equation 1)\nFrom the second statement: (F + 10) = 2 * (S + 10) (Equation 2)\nSubstitute Equation 1 into Equation 2:\n3S + 10 = 2S + 20\n3S - 2S = 20 - 10\nS = 10\nSo, the son's current age is 10 years.",
+      "trick": "You can quickly test the options. If the son is 10, the father is 30. In 10 years, the son will be 20 and the father will be 40. Since 40 is twice 20, the condition is met."
     },
     {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
+      "question": "[Fallback CA] Default News 6?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -100,20 +87,46 @@
     },
     {
       "category": "Logical Reasoning",
-      "question": "Find the missing number in the series: 3, 7, 15, 31, ?, 127",
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
       "options": [
-        "A. 61",
-        "B. 63",
-        "C. 65",
-        "D. 67"
+        "A) His own",
+        "B) His father's",
+        "C) His son's",
+        "D) His nephew's"
       ],
-      "correct_answer": "B. 63",
-      "explanation": "Let's find the pattern in the given series:\n7 = (3 * 2) + 1\n15 = (7 * 2) + 1\n31 = (15 * 2) + 1\n\nThe pattern is that each subsequent number is obtained by multiplying the previous number by 2 and then adding 1.\n\nApplying this pattern to find the missing number:\nMissing number = (31 * 2) + 1 = 62 + 1 = 63.\n\nLet's verify with the next number in the series:\n127 = (63 * 2) + 1 = 126 + 1 = 127. The pattern holds true.",
-      "trick": "When identifying number series patterns, first look for common arithmetic operations (addition, subtraction, multiplication, division). If not direct, look for a constant difference, or a difference that forms another series. In this case, it's a consistent (x2 + 1) operation, which is a common type of series."
+      "correct_answer": "C) His son's",
+      "explanation": "Let's break down the statement:\n1.  'I have no brother or sister' means the man speaking is an only child.\n2.  'my father's son' - Since the man has no brother, his father's son can only be himself.\n3.  Substitute this back into the main statement: 'that man's father is *me* (the speaker).'\n4.  If the father of the man in the photograph is the speaker, then the man in the photograph must be the speaker's son.",
+      "trick": "Start from the end of the possessive phrase ('my father's son') and resolve it in relation to the speaker. Then substitute that resolved relationship back into the rest of the sentence."
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The average of three numbers is 20. If two of the numbers are 16 and 22, what is the third number?",
+      "options": [
+        "18",
+        "20",
+        "22",
+        "24"
+      ],
+      "correct_answer": "22",
+      "explanation": "Let the three numbers be a, b, and c.\nThe average of three numbers is given by (a + b + c) / 3.\nGiven that the average is 20, so (a + b + c) / 3 = 20.\nThis means the sum of the three numbers (a + b + c) = 20 × 3 = 60.\nWe are given two numbers: 16 and 22.\nSo, 16 + 22 + c = 60.\n38 + c = 60.\nc = 60 - 38.\nc = 22.\nThe third number is 22.",
+      "trick": "Think about the deviations from the average. The sum of deviations from the average must be zero. (16 - 20) + (22 - 20) + (x - 20) = 0. This simplifies to -4 + 2 + x - 20 = 0, which means x - 22 = 0, so x = 22."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -139,29 +152,29 @@
     },
     {
       "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, \"I have no brother or sister, but that man's father is my father's son.\" Whose photograph was it?",
+      "question": "Find the next number in the series: 3, 7, 15, 31, 63, ...",
       "options": [
-        "A. His own son",
-        "B. His father",
-        "C. His uncle",
-        "D. His nephew"
+        "A) 125",
+        "B) 127",
+        "C) 129",
+        "D) 131"
       ],
-      "correct_answer": "A. His own son",
-      "explanation": "Let's break down the man's statement step-by-step:\n1.  \"I have no brother or sister\": This crucial piece of information means the man speaking is an only child.\n2.  \"my father's son\": Since the man is an only child, his father's only son must be the man himself.\n3.  Now substitute this back into the main statement: \"that man's father is *me* (the speaker).\".\n4.  If the man in the photograph's father is the speaker, then the man in the photograph must be the speaker's son.",
-      "trick": "Always start decoding complex blood relation statements from the end of the relative clause (e.g., 'my father's son'). Substitute the simplified relationship back into the sentence. Pay special attention to phrases like 'no brother or sister' or 'only child' as they significantly simplify family ties."
+      "correct_answer": "B) 127",
+      "explanation": "Let's observe the pattern between consecutive numbers:\n7 = (3 * 2) + 1\n15 = (7 * 2) + 1\n31 = (15 * 2) + 1\n63 = (31 * 2) + 1\nFollowing this pattern, the next number will be:\n(63 * 2) + 1 = 126 + 1 = 127.",
+      "trick": "When numbers increase rapidly, consider multiplication or exponential patterns. Look for common differences or ratios first, then try operations like (n*x)+y or (n+x)*y."
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
-      "correct_answer": "Option 1",
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an item 40% above its cost price. He then offers a discount of 20% on the marked price. What is his profit percentage?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "8%",
+        "12%",
+        "16%",
+        "20%"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "12%",
+      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 40% of CP = 100 + (0.40 * 100) = 100 + 40 = Rs. 140.\nDiscount = 20% of MP = 0.20 * 140 = Rs. 28.\nSelling Price (SP) = MP - Discount = 140 - 28 = Rs. 112.\nProfit = SP - CP = 112 - 100 = Rs. 12.\nProfit Percentage = (Profit / CP) * 100 = (12 / 100) * 100 = 12%.",
+      "trick": "Assume CP = 100 for easy calculation. Or use the formula: Net Change = (1 + Markup) * (1 - Discount) - 1. So, (1 + 0.40) * (1 - 0.20) - 1 = 1.4 * 0.8 - 1 = 1.12 - 1 = 0.12 or 12% profit."
     },
     {
       "category": "Static GK",
@@ -178,68 +191,55 @@
     },
     {
       "category": "Logical Reasoning",
-      "question": "Statements:\nI. All pencils are pens.\nII. Some pens are erasers.\nConclusions:\n1. Some pencils are erasers.\n2. No pencil is an eraser.\nWhich of the following is correct?",
+      "question": "Five friends P, Q, R, S, T are sitting in a row. R is to the left of Q and to the right of S. T is to the right of Q. P is to the left of S. Who is sitting in the middle?",
       "options": [
-        "A. Only conclusion 1 follows.",
-        "B. Only conclusion 2 follows.",
-        "C. Either 1 or 2 follows.",
-        "D. Neither 1 nor 2 follows."
+        "A) P",
+        "B) Q",
+        "C) R",
+        "D) S"
       ],
-      "correct_answer": "C. Either 1 or 2 follows.",
-      "explanation": "Let's analyze the statements using Venn diagrams or logical deductions:\nStatement I: All Pencils (P) are inside Pens (N).\nStatement II: Some Pens (N) are Erasers (E). This means there's an overlap between Pens and Erasers, but it doesn't specify which part of the pens. \n\nConsider the conclusions:\nConclusion 1: Some pencils are erasers.\nThis is possible if the 'some pens' that are erasers include some of the pencils. (e.g., if the overlap between Pens and Erasers happens to include the Pencils circle).\n\nConclusion 2: No pencil is an eraser.\nThis is also possible if the 'some pens' that are erasers are only those pens that are not pencils (i.e., the overlap happens outside the Pencils circle).\n\nSince both conclusions are possible but not definite, and they form a complementary pair (Some X are Y / No X are Y), the correct inference is 'Either 1 or 2 follows'.",
-      "trick": "For 'some' and 'no' conclusions from 'all' and 'some' statements, if the elements (pencils, erasers) are not directly connected in the statements, consider complementary pairs. If both individual conclusions are 'possible' but not 'definite', and they form a complementary pair, then the answer is 'Either or'."
+      "correct_answer": "C) R",
+      "explanation": "Let's arrange the friends step-by-step based on the given clues:\n1.  'R is to the left of Q':  _ R Q _\n2.  'R is ... to the right of S': _ S R Q _\n3.  'T is to the right of Q': _ S R Q T\n4.  'P is to the left of S': P S R Q T\nSo, the final arrangement from left to right is P, S, R, Q, T. With five friends, the middle position is the 3rd person, which is R.",
+      "trick": "Draw a simple line or use placeholders to visualize the positions. Build the sequence incrementally, adding friends one by one, ensuring each new piece of information fits without contradiction. For 'left' and 'right', assume a standard viewing perspective."
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
+      "category": "Logical Reasoning",
+      "question": "All birds can fly. Some birds are eagles. Therefore, which of the following statements is logically certain?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "A) All eagles can fly.",
+        "B) Some eagles can fly.",
+        "C) No eagles can fly.",
+        "D) Flying animals are always birds."
       ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "B) Some eagles can fly.",
+      "explanation": "The first premise states 'All birds can fly.' The second premise states 'Some birds are eagles.' This means there is an intersection between the set of birds and the set of eagles. Since all members of the 'birds' set possess the ability to fly, and some eagles are members of the 'birds' set, it logically follows that those specific eagles (which are birds) must possess the ability to fly. We cannot conclude 'All eagles can fly' because the premises only state 'Some birds are eagles', not that all eagles are birds.",
+      "trick": "Visualize using Venn diagrams. Draw a large circle for 'Flying' containing a smaller circle for 'Birds'. Then draw a circle for 'Eagles' that partially overlaps with 'Birds'. The overlapping section of 'Eagles' is within 'Birds', and thus within 'Flying'."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "The sum of three consecutive integers is 84. What is the largest of these integers?",
+      "question": "A rectangular park is 60 meters long and 40 meters wide. A path of uniform width 2 meters runs along the inside of the park. What is the area of the path?",
       "options": [
-        "A) 27",
-        "B) 28",
-        "C) 29",
-        "D) 30"
+        "384 sq m",
+        "392 sq m",
+        "396 sq m",
+        "400 sq m"
       ],
-      "correct_answer": "C) 29",
-      "explanation": "Let the first integer be x.\nThe three consecutive integers are x, x+1, and x+2.\nTheir sum is x + (x+1) + (x+2) = 84.\n3x + 3 = 84.\n3x = 84 - 3.\n3x = 81.\nx = 81 / 3.\nx = 27.\nThe three integers are 27, 28, and 29. The largest integer is 29.",
-      "trick": "For a series of consecutive integers, the average is equal to the middle integer. Since there are three integers, the middle integer is the average.\nMiddle integer = Sum / Number of integers = 84 / 3 = 28.\nSo, the integers are 27 (28-1), 28, and 29 (28+1). The largest is 29."
+      "correct_answer": "384 sq m",
+      "explanation": "Area of the outer rectangle (park) = Length × Width = 60 m × 40 m = 2400 sq m.\nSince the path runs along the inside, the dimensions of the inner rectangle (area without path) will be reduced by twice the path width (2m on each side for both length and width).\nNew Length = 60 - (2 × 2) = 60 - 4 = 56 meters.\nNew Width = 40 - (2 × 2) = 40 - 4 = 36 meters.\nArea of the inner rectangle = 56 m × 36 m = 2016 sq m.\nArea of the path = Area of outer rectangle - Area of inner rectangle = 2400 - 2016 = 384 sq m.",
+      "trick": "Remember that a path of uniform width 'w' inside a rectangle reduces both the length and width by '2w', not 'w'."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
