@@ -4,242 +4,136 @@
     "day_index": 3,
     "slot_index": 35,
     "difficulty": "SSC/Bank",
-    "generated_at": "2026-03-08T20:56:07.940Z"
+    "generated_at": "2026-03-13T20:43:25.697Z"
   },
   "questions": [
     {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
+      "category": "Quantitative Aptitude",
+      "question": "Pipe A can fill a tank in 12 hours. Pipe B can fill the same tank in 18 hours. If both pipes are opened simultaneously, but Pipe A is closed after 4 hours, how much more time will Pipe B alone take to fill the remaining part of the tank?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "A) 7 hours",
+        "B) 8 hours",
+        "C) 9 hours",
+        "D) 10 hours"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "B) 8 hours",
+      "explanation": "Let the total capacity of the tank be the LCM of 12 and 18, which is 36 units.\nEfficiency of Pipe A = 36 units / 12 hours = 3 units/hour.\nEfficiency of Pipe B = 36 units / 18 hours = 2 units/hour.\nCombined efficiency of A and B = 3 + 2 = 5 units/hour.\nWork done by (A+B) in 4 hours = 5 units/hour * 4 hours = 20 units.\nRemaining work = Total capacity - Work done = 36 - 20 = 16 units.\nPipe A is closed. Pipe B alone will fill the remaining 16 units.\nTime taken by Pipe B to fill the remaining part = Remaining work / Efficiency of B = 16 units / 2 units/hour = 8 hours.",
+      "trick": "Use the LCM method (Total Work method) to avoid fractions. This method directly gives 'units of work' per hour, making calculations intuitive and faster.\nAlternatively, in terms of fractions:\nPipe A's 1-hour work = 1/12. Pipe B's 1-hour work = 1/18.\n(A+B)'s 1-hour work = 1/12 + 1/18 = (3+2)/36 = 5/36.\nWork done in 4 hours = 4 * (5/36) = 20/36 = 5/9 of the tank.\nRemaining work = 1 - 5/9 = 4/9 of the tank.\nTime taken by B to fill 4/9 of the tank = (4/9) / (1/18) = (4/9) * 18 = 4 * 2 = 8 hours."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A sum of money doubles itself at compound interest in 5 years. In how many years will it become 8 times itself?",
+      "question": "A sum of money becomes 2.25 times itself in 2 years when compounded annually. What is the annual rate of interest?",
       "options": [
-        "10 years",
-        "12 years",
-        "15 years",
-        "20 years"
+        "A) 25%",
+        "B) 50%",
+        "C) 75%",
+        "D) 125%"
       ],
-      "correct_answer": "15 years",
-      "explanation": "Let the principal be P. \nAfter 5 years, Amount = 2P.\nThis means P(1 + R/100)^5 = 2P, so (1 + R/100)^5 = 2.\nWe want to find the time 't' when the amount becomes 8 times the principal, i.e., 8P.\nP(1 + R/100)^t = 8P\n(1 + R/100)^t = 8\nSince 8 = 2^3, we can write:\n(1 + R/100)^t = (2)^3\nSubstitute 2 = (1 + R/100)^5:\n(1 + R/100)^t = ((1 + R/100)^5)^3\n(1 + R/100)^t = (1 + R/100)^(5*3)\nSo, t = 15 years.",
-      "trick": "If a sum of money doubles itself in 'T' years at compound interest, then to become '2^n' times, it will take 'n*T' years. Here, the sum doubles in T = 5 years. We want it to become 8 times, which is 2^3 times. So, n = 3. The total time taken will be n * T = 3 * 5 = 15 years."
+      "correct_answer": "B) 50%",
+      "explanation": "Let the principal be P and the rate of interest be R% per annum.\nAmount (A) = P * (1 + R/100)^T\nGiven, A = 2.25P and T = 2 years.\n2.25P = P * (1 + R/100)^2\n2.25 = (1 + R/100)^2\nTake the square root on both sides:\n√(2.25) = 1 + R/100\n1.5 = 1 + R/100\n1.5 - 1 = R/100\n0.5 = R/100\nR = 0.5 * 100\nR = 50%",
+      "trick": "For compound interest, if an amount becomes 'x' times in 'n' years, the rate factor (1 + R/100) is the nth root of 'x'.\nHere, x = 2.25, n = 2.\nRate factor = √(2.25) = 1.5.\nThis means the amount becomes 1.5 times the principal each year effectively, or there is a 0.5 (or 50%) increase. So, R = 50%."
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
-      "correct_answer": "Option 1",
+      "question": "Sample History?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "A",
+      "explanation": "test",
+      "category": "Static GK (History)"
     },
     {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
-      "correct_answer": "Option 1",
+      "category": "Quantitative Aptitude",
+      "question": "A train crosses a pole in 12 seconds and a platform 170 meters long in 20 seconds. Find the speed of the train in km/hr.",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "A) 64.5 km/hr",
+        "B) 72.5 km/hr",
+        "C) 76.5 km/hr",
+        "D) 78.5 km/hr"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "C) 76.5 km/hr",
+      "explanation": "Let the length of the train be L meters and its speed be S m/s.\n\nWhen the train crosses a pole, it covers its own length:\nTime = Distance / Speed\n12 = L / S  => L = 12S  (Equation 1)\n\nWhen the train crosses a platform, it covers its own length plus the length of the platform:\nTime = (Length of Train + Length of Platform) / Speed\n20 = (L + 170) / S  (Equation 2)\n\nSubstitute L from Equation 1 into Equation 2:\n20 = (12S + 170) / S\n20S = 12S + 170\n8S = 170\nS = 170 / 8 = 85 / 4 = 21.25 m/s.\n\nTo convert speed from m/s to km/hr, multiply by (18/5):\nSpeed in km/hr = 21.25 * (18/5) = (85/4) * (18/5) = (17/4) * 18 = 17 * (9/2) = 153 / 2 = 76.5 km/hr.",
+      "trick": "The extra distance covered (platform length) is covered in the extra time taken. \nExtra distance = 170 meters.\nExtra time = 20 seconds - 12 seconds = 8 seconds.\nSpeed = Extra Distance / Extra Time = 170 m / 8 s = 21.25 m/s.\nThen convert to km/hr: 21.25 * (18/5) = 76.5 km/hr."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Statements:\nI. Some pens are pencils.\nII. All pencils are erasers.\nIII. No eraser is a scale.\n\nConclusions:\nI. Some pens are erasers.\nII. Some erasers are pencils.\nIII. No pencil is a scale.\n\nWhich of the following conclusions logically follows from the given statements?",
+      "question": "Statements:\nI. Some A are B.\nII. All B are C.\nIII. No C is D.\n\nConclusions:\nI. Some A are C.\nII. Some C are B.\nIII. No B is D.\nIV. Some A are not D.",
       "options": [
         "A. Only I and II follow",
-        "B. Only II and III follow",
-        "C. Only I and III follow",
-        "D. All I, II and III follow"
+        "B. Only I, II and III follow",
+        "C. Only I, II and IV follow",
+        "D. All I, II, III and IV follow"
       ],
-      "correct_answer": "D. All I, II and III follow",
-      "explanation": "Let's analyze each conclusion based on the statements using Venn diagrams or logical deduction:\n\nStatements:\n1. Some Pens are Pencils (P ∩ Pc ≠ ∅)\n2. All Pencils are Erasers (Pc ⊆ E)\n3. No Eraser is a Scale (E ∩ S = ∅)\n\nConclusion I: Some pens are erasers.\nFrom (1) 'Some pens are pencils' and (2) 'All pencils are erasers', it logically follows that 'Some pens are erasers'. If some part of pens is within pencils, and all pencils are within erasers, then that part of pens must also be within erasers. (Valid)\n\nConclusion II: Some erasers are pencils.\nFrom (2) 'All pencils are erasers', it implies that 'Some erasers are pencils'. This is a direct conversion (if All A are B, then Some B are A). (Valid)\n\nConclusion III: No pencil is a scale.\nFrom (2) 'All pencils are erasers' and (3) 'No eraser is a scale'. If all pencils are part of erasers, and no part of erasers is a scale, then no part of pencils can be a scale. Therefore, 'No pencil is a scale'. (Valid)\n\nSince all three conclusions are valid, the correct option is 'All I, II and III follow'.",
-      "trick": "For syllogism, quickly sketch Venn diagrams. For 'All A are B', draw A completely inside B. For 'Some A are B', draw overlapping circles. For 'No A is B', draw separate circles. Then, visually check if conclusions hold. For example, 'All Pencils are Erasers' implies 'Some Erasers are Pencils' (direct inference). 'All Pencils are Erasers' and 'No Eraser is Scale' implies 'No Pencil is Scale' (transitive property of exclusion)."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "D. All I, II, III and IV follow",
+      "explanation": "Let's analyze each conclusion based on the given statements:\n\nStatement I: Some A are B.\nStatement II: All B are C.\nStatement III: No C is D.\n\nConclusion I: Some A are C.\nFrom 'Some A are B' and 'All B are C', it logically follows that 'Some A are C'. (If some part of A is B, and all of B is C, then that part of A which is B is also C). This conclusion follows.\n\nConclusion II: Some C are B.\nFrom 'All B are C', it is a direct conversion that 'Some C are B'. (If all B are C, then some part of C must be B). This conclusion follows.\n\nConclusion III: No B is D.\nFrom 'All B are C' and 'No C is D', it logically follows that 'No B is D'. (If all B are part of C, and no part of C is D, then no part of B can be D). This conclusion follows.\n\nConclusion IV: Some A are not D.\nFrom 'Some A are B' and 'No B is D' (derived from Conclusion III), the part of A that is B cannot be D. Therefore, 'Some A are not D'. This conclusion follows.\n\nSince all conclusions I, II, III, and IV follow, the correct option is D.",
+      "trick": "Use Venn diagrams or the rules of syllogism. For 'Some A are not D', combine 'Some A are B' and 'No B is D'. If some A are B, and those B are definitely not D, then those specific A's are not D. Hence, 'Some A are not D' is valid."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Read the following information carefully and answer the question below:\n\nP + Q means P is the father of Q\nP - Q means P is the wife of Q\nP * Q means P is the brother of Q\nP / Q means P is the daughter of Q\n\nWhich of the following expressions indicates that 'A' is the mother of 'D'?",
+      "question": "Six friends A, B, C, D, E, F are sitting in a row facing North. Their positions are as follows:\n1. C is sitting third to the left of D.\n2. A is sitting at one of the extreme ends.\n3. B is sitting second to the right of A.\n4. E is not an immediate neighbour of C.\n\nWho is sitting exactly between F and D?",
       "options": [
-        "A. A - B + C * D",
-        "B. A + B - C / D",
-        "C. A / B + C - D",
-        "D. A - B / C * D"
+        "A. A",
+        "B. B",
+        "C. C",
+        "D. E"
       ],
-      "correct_answer": "A. A - B + C * D",
-      "explanation": "Let's analyze each option by determining the gender and relationship of each person:\n\nImplicit Gender Rules:\n- P + Q: P is male (father)\n- P - Q: P is female (wife), Q is male (husband)\n- P * Q: P is male (brother)\n- P / Q: P is female (daughter)\n\nWe need to find the expression where 'A' is the mother of 'D'. This means A must be female and one generation above D.\n\nOption A: A - B + C * D\n1. A - B: A is the wife of B (A is female, B is male). This establishes A's gender correctly.\n2. B + C: B is the father of C (B is male). This is consistent with B being A's husband.\n3. C * D: C is the brother of D (C is male). This means C and D are siblings, and B is their father.\nCombining these, A is the wife of B, and B is the father of C and D. Therefore, A is the mother of C and D. This means 'A' is the mother of 'D'. (Correct)\n\nOption B: A + B - C / D\n1. A + B: A is the father of B (A is male). 'A' cannot be the mother if A is male. (Incorrect)\n\nOption C: A / B + C - D\n1. A / B: A is the daughter of B (A is female).\n2. B + C: B is the father of C (B is male). This is consistent with B being A's father.\n3. C - D: C is the wife of D (C is female, D is male). Here, A is the daughter of B, and B is the father of C. So, A and C are siblings. C is married to D. A is D's sister-in-law. Not mother. (Incorrect)\n\nOption D: A - B / C * D\n1. A - B: A is the wife of B (A is female, B is male).\n2. B / C: B is the daughter of C (B is female). This creates a contradiction. B cannot be both male (husband of A) and female (daughter of C) simultaneously. Therefore, this option is invalid/impossible. (Incorrect)\n\nThus, Option A is the correct expression.",
-      "trick": "First, establish the gender of the person indicated by the first letter in each symbol (P in P+Q, P-Q, etc.). Then, immediately eliminate options where 'A's gender doesn't match 'mother' (i.e., A must be female). For the remaining options, quickly trace the relationships generation by generation, drawing a mental or quick family tree. Also, watch out for gender contradictions within an expression, as seen in Option D, which can be a quick way to eliminate."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A, B, and C can complete a piece of work in 10, 12, and 15 days respectively. They started the work together. After 2 days, A left. After another 2 days, B left. In how many days was the work completed?",
-      "options": [
-        "6 days",
-        "7 days",
-        "8 days",
-        "9 days"
-      ],
-      "correct_answer": "7 days",
-      "explanation": "1.  Find the Total Work (LCM method):\n    LCM of 10, 12, 15 = 60 units. (This is our total work)\n2.  Calculate individual efficiencies (work per day):\n    A's efficiency = 60/10 = 6 units/day\n    B's efficiency = 60/12 = 5 units/day\n    C's efficiency = 60/15 = 4 units/day\n3.  Work in phases:\n    Phase 1 (Day 1-2): A, B, C work together.\n    Combined efficiency = 6 + 5 + 4 = 15 units/day.\n    Work done in 2 days = 15 * 2 = 30 units.\n    Remaining work = 60 - 30 = 30 units.\n    A leaves.\n    Phase 2 (Day 3-4): B and C work together.\n    Combined efficiency = 5 + 4 = 9 units/day.\n    Work done in next 2 days = 9 * 2 = 18 units.\n    Remaining work = 30 - 18 = 12 units.\n    B leaves.\n    Phase 3 (From Day 5 onwards): Only C works.\n    C's efficiency = 4 units/day.\n    Time taken by C to complete 12 units = 12 / 4 = 3 days.\n4.  Total time taken:\n    Total days = 2 (Phase 1) + 2 (Phase 2) + 3 (Phase 3) = 7 days.",
-      "trick": "The LCM method is the most efficient. Break down the problem into distinct phases based on who is working. Calculate work done in each phase and subtract from total work. Then find the time for the remaining work by the remaining workers. This step-by-step approach avoids complex fractional equations."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks up an item by 40% above its cost price. He then offers a discount of 25% on the marked price. If the shopkeeper makes a profit of ₹105, what is the cost price of the item?",
-      "options": [
-        "A) ₹2000",
-        "B) ₹2100",
-        "C) ₹2200",
-        "D) ₹2500"
-      ],
-      "correct_answer": "B) ₹2100",
-      "explanation": "Let the Cost Price (CP) of the item be 'x'.\nMarked Price (MP) = CP + 40% of CP = x * (1 + 40/100) = 1.4x.\nSelling Price (SP) = MP - 25% of MP = 1.4x * (1 - 25/100) = 1.4x * (3/4) = 1.05x.\nProfit = SP - CP = 1.05x - x = 0.05x.\nGiven that the profit is ₹105.\nSo, 0.05x = 105.\nx = 105 / 0.05 = 105 / (5/100) = 105 * (100/5) = 105 * 20 = ₹2100.\nThus, the cost price of the item is ₹2100.",
-      "trick": "Use the net percentage change formula for successive changes: A + B + (AB/100).\nHere, the markup is +40% (A) and the discount is -25% (B).\nNet percentage change = 40 - 25 + (40 * -25 / 100)\n= 15 + (-1000 / 100)\n= 15 - 10 = 5%.\nThis 5% represents the overall profit percentage on the Cost Price.\nIf 5% of CP = ₹105,\nCP = (105 / 5) * 100 = 21 * 100 = ₹2100."
+      "correct_answer": "B. B",
+      "explanation": "Let's deduce the arrangement step-by-step for the 6 positions:\n_ _ _ _ _ _\n\n1.  **A is sitting at one of the extreme ends.**\n    A _ _ _ _ _  OR  _ _ _ _ _ A\n\n2.  **B is sitting second to the right of A.**\n    If A is at the right end, B cannot be to its right. So A must be at the left end.\n    A _ B _ _ _\n    (Positions: A(1) _(2) B(3) _(4) _(5) _(6))\n\n3.  **C is sitting third to the left of D.**\n    This means there are two people between C and D (C _ _ D).\n    Let's try to fit this into our current arrangement (A _ B _ _ _):\n    *   If C is at position 1 (A=C), then D must be at position 4. This fits: A _ B D _ _.\n        (Current: A(1) _(2) B(3) D(4) _(5) _(6))\n    *   If C is at position 2, then D must be at position 5. This would mean A C B _ D _. This contradicts B being at position 3. (A is at 1, C at 2, B at 3 - this is valid so far. A C B _ D _. But B is not 2nd right of A here, C is 2nd right of A). So this is not possible.\n    *   If C is at position 3 (C=B), then D must be at position 6. This fits: A _ B _ _ D.\n        (Current: A(1) _(2) B(3) _(4) _(5) D(6))\n\nLet's test the first possibility: **A _ B D _ _**\n    *   Remaining people: E, F.\n    *   Remaining positions: 2, 5, 6.\n\n4.  **E is not an immediate neighbour of C.**\n    In the arrangement A _ B D _ _, C is A (position 1).\n    So E cannot be at position 2.\n    This leaves positions 5 and 6 for E.\n    *   If E is at position 5, then F must be at position 2.\n        Arrangement: A F B D E _ (F at 2, E at 5).\n        The last position (6) must be F. But F is already at 2. This is incorrect. There are two remaining slots, 5 and 6, for E and F.\n        So, if E is at position 5, F is at position 6. Arrangement: A F B D E F.\n        Let's verify this arrangement:\n        1. C (A) is third to the left of D. (A is 1st, D is 4th). Correct.\n        2. A is at extreme end. Correct.\n        3. B is second to the right of A. (A is 1st, B is 3rd). Correct.\n        4. E is not an immediate neighbour of C (A). (E is 5th, A is 1st). Correct.\n        This arrangement A F B D E F is valid.\n\nLet's test the second possibility: **A _ B _ _ D**\n    *   Here C is B (position 3).\n    *   Remaining people: E, F.\n    *   Remaining positions: 2, 4, 5.\n    *   E is not an immediate neighbour of C (B).\n        So E cannot be at position 2 or 4.\n        This leaves position 5 for E.\n        Arrangement: A _ B _ E D.\n        Now F must be at position 2 or 4. If F is at position 2: A F B _ E D.\n        Then position 4 is empty. This means one person is missing. This case does not work as we have 6 people and 6 positions.\n\nSo, the only valid arrangement is **A F B D E F**.\n\nNow, answer the question: Who is sitting exactly between F and D?\nIn the arrangement A F B D E F:\nF is at position 2.\nD is at position 4.\nThe person at position 3 is **B**.\nTherefore, B is sitting exactly between F and D.",
+      "trick": "Start with the most definite statements (like 'A is at an extreme end' combined with 'B is second to the right of A' which fixes A's position). Build the arrangement step-by-step, eliminating possibilities as you go. Visualizing with dashes (like _ _ _ _ _ _) helps keep track of positions and remaining slots."
     },
     {
       "category": "Logical Reasoning",
-      "question": "Statements:\nI. Some books are pens.\nII. All pens are pencils.\nIII. No pencil is a marker.\n\nConclusions:\nI. Some books are pencils.\nII. No pen is a marker.\n\nWhich of the given conclusions logically follow from the given statements?",
+      "question": "Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.\n\nStatements:\n1. All pens are pencils.\n2. Some pencils are erasers.\n3. No eraser is a sharpener.\n\nConclusions:\nI. Some pens are erasers.\nII. Some pencils are sharpeners.\nIII. No pen is a sharpener.\nIV. Some erasers are pencils.",
       "options": [
-        "A. Only conclusion I follows.",
-        "B. Only conclusion II follows.",
-        "C. Both I and II follow.",
-        "D. Neither I nor II follows."
+        "A. Only conclusion I follows",
+        "B. Only conclusion IV follows",
+        "C. Only conclusions I and III follow",
+        "D. Only conclusions II and IV follow"
       ],
-      "correct_answer": "C. Both I and II follow.",
-      "explanation": "Let's analyze each conclusion:\nFor Conclusion I: We combine Statement I ('Some books are pens') and Statement II ('All pens are pencils').\nSome A are B + All B are C => Some A are C.\nApplying this rule: Some books are pens + All pens are pencils => Some books are pencils. Thus, Conclusion I follows.\n\nFor Conclusion II: We combine Statement II ('All pens are pencils') and Statement III ('No pencil is a marker').\nAll A are B + No B is C => No A is C.\nApplying this rule: All pens are pencils + No pencil is a marker => No pen is a marker. Thus, Conclusion II follows.\n\nSince both Conclusion I and Conclusion II logically follow from the given statements, the correct option is C.",
-      "trick": "To quickly solve syllogism questions, focus on the connecting terms and the 'distribution' of terms. For 'Some A are B' and 'All B are C', the common term 'B' is distributed in the second premise, allowing a direct inference of 'Some A are C'. For 'All A are B' and 'No B is C', the common term 'B' is distributed in both premises, allowing a direct inference of 'No A is C'. Visualizing simple Venn diagrams or applying these direct rules avoids lengthy drawing for each option."
+      "correct_answer": "B. Only conclusion IV follows",
+      "explanation": "Let's analyze each conclusion based on the statements:\n\nStatements:\n1. All pens are pencils. (PENS ⊂ PENCILS)\n2. Some pencils are erasers. (PENCILS ∩ ERASERS ≠ ∅)\n3. No eraser is a sharpener. (ERASERS ∩ SHARPENERS = ∅)\n\nConclusions:\nI. Some pens are erasers. (PENS ∩ ERASERS ≠ ∅)\n   - From (1) and (2), we know PENS ⊂ PENCILS and PENCILS ∩ ERASERS ≠ ∅. This means some pencils are erasers, but these erasers might or might not be pens. There is no definite link between pens and erasers. Thus, this conclusion does not necessarily follow.\n\nII. Some pencils are sharpeners. (PENCILS ∩ SHARPENERS ≠ ∅)\n   - From (2), Some pencils are erasers. From (3), No eraser is a sharpener. This means the part of pencils that are erasers cannot be sharpeners. However, there might be other pencils (not erasers) that are sharpeners, or there might not be. There is no definite link to conclude 'Some pencils are sharpeners'. Thus, this conclusion does not necessarily follow.\n\nIII. No pen is a sharpener. (PENS ∩ SHARPENERS = ∅)\n    - From (1), All pens are pencils. From (2), Some pencils are erasers. From (3), No eraser is a sharpener. We know pens are a subset of pencils. Erasers and sharpeners are disjoint. The relationship between pens and sharpeners is not directly given or deducible. It's possible for some pencils (which are not erasers) to be sharpeners, and these pencils could potentially contain pens. So, a pen could potentially be a sharpener. Thus, this conclusion does not necessarily follow.\n\nIV. Some erasers are pencils. (ERASERS ∩ PENCILS ≠ ∅)\n    - This is a direct converse of Statement 2: 'Some pencils are erasers'. If 'Some A are B', then 'Some B are A' is always a valid conclusion. Thus, this conclusion logically follows.\n\nTherefore, only conclusion IV follows.",
+      "trick": "For 'Some A are B' statements, its converse 'Some B are A' is always true. For 'All A are B', 'Some A are B' is true. For 'No A is B', 'No B is A' is true. Use Venn diagrams or a quick mental check of these basic syllogism rules to quickly eliminate or confirm conclusions."
+    },
+    {
+      "question": "Sample CA?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_answer": "A",
+      "explanation": "test",
+      "category": "Current Affairs"
     },
     {
       "category": "Logical Reasoning",
-      "question": "If 'BAT' is coded as '40' and 'CAT' is coded as '60', then how will 'RAT' be coded?",
+      "question": "In a row of 40 students, R is 15th from the left end and M is 20th from the right end. How many students are there between R and M?",
       "options": [
-        "A. 300",
-        "B. 320",
-        "C. 360",
-        "D. 400"
+        "A. 5",
+        "B. 6",
+        "C. 7",
+        "D. 8"
       ],
-      "correct_answer": "C. 360",
-      "explanation": "Let's find the pattern by assigning numerical positions to each letter in the English alphabet (A=1, B=2, C=3, ..., Z=26).\n\nFor 'BAT':\nB = 2\nA = 1\nT = 20\nThe code is 40. If we multiply the positional values: 2 * 1 * 20 = 40. This matches.\n\nFor 'CAT':\nC = 3\nA = 1\nT = 20\nThe code is 60. If we multiply the positional values: 3 * 1 * 20 = 60. This also matches.\n\nThe pattern is to multiply the positional values of the letters in the word.\n\nNow, apply the same pattern to 'RAT':\nR = 18\nA = 1\nT = 20\nCode = 18 * 1 * 20 = 360.",
-      "trick": "When words are coded into numbers, especially in competitive exams, common patterns include: sum of positional values, product of positional values, sum/product after a fixed shift, or a combination involving vowels/consonants. Notice that 'AT' is common in 'BAT' and 'CAT', and its product (1*20=20) is multiplied by the first letter's value (2 for B, 3 for C). This immediately suggests multiplication of individual letter values. Quickly calculate for 'RAT' by finding R's position (18) and multiplying by 20."
+      "correct_answer": "A. 5",
+      "explanation": "Total number of students in the row = 40.\nR's position from the left end = 15th.\nM's position from the right end = 20th.\n\nTo find the number of students between R and M, we first check if they overlap or not.\n\nMethod 1: Sum of ranks from opposite ends\nSum of R's rank from left and M's rank from right = 15 + 20 = 35.\nSince this sum (35) is less than the total number of students (40), the students R and M do not overlap. They are distinct positions within the row.\nNumber of students between R and M = Total students - (R's rank from left + M's rank from right)\n= 40 - (15 + 20)\n= 40 - 35\n= 5.\n\nMethod 2: Convert one rank\nLet's convert M's rank from the right end to its rank from the left end:\nM's rank from left = Total students - M's rank from right + 1\n= 40 - 20 + 1\n= 21st.\nNow we have R at 15th from the left and M at 21st from the left.\nNumber of students between R and M = M's rank from left - R's rank from left - 1\n= 21 - 15 - 1\n= 6 - 1\n= 5.",
+      "trick": "For non-overlapping cases (when sum of ranks from opposite ends < total students), the number of students between two individuals is simply: Total Students - (Rank from Left + Rank from Right). Here, 15 + 20 = 35, which is less than 40. So, 40 - 35 = 5 students."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A, B, and C can complete a piece of work in 10, 12, and 15 days respectively. They start the work together, but A leaves after 2 days. B leaves 3 days before the completion of the work. In how many days is the total work completed?",
+      "question": "A shopkeeper sells an article at a profit of 20%. If he had bought it for 10% less and sold it for Rs. 18 less, he would have gained 30%. Find the original cost price of the article.",
       "options": [
-        "A) 7 days",
-        "B) 6 days",
-        "C) 8 days",
-        "D) 9 days"
+        "A) Rs. 400",
+        "B) Rs. 500",
+        "C) Rs. 600",
+        "D) Rs. 700"
       ],
-      "correct_answer": "A) 7 days",
-      "explanation": "Let the total work be the LCM of 10, 12, and 15, which is 60 units.\nEfficiency of A = 60/10 = 6 units/day.\nEfficiency of B = 60/12 = 5 units/day.\nEfficiency of C = 60/15 = 4 units/day.\n\n1.  **Work done by A, B, C together for the first 2 days:**\n    Combined efficiency of A, B, C = 6 + 5 + 4 = 15 units/day.\n    Work done in 2 days = 15 units/day * 2 days = 30 units.\n2.  **Remaining work:**\n    Total work - Work done = 60 - 30 = 30 units.\n    After 2 days, A leaves.\n\n3.  **Work done by C in the last 3 days:**\n    B leaves 3 days before the completion of the work, meaning C works alone for the last 3 days.\n    Work done by C = 4 units/day * 3 days = 12 units.\n\n4.  **Work done by B and C together:**\n    The remaining work after A left and C finished the last 3 days = 30 - 12 = 18 units.\n    This 18 units of work was done by B and C together.\n    Combined efficiency of B and C = 5 + 4 = 9 units/day.\n    Days B and C worked together = 18 units / 9 units/day = 2 days.\n\n5.  **Total time for completion:**\n    Total time = (Days A,B,C worked) + (Days B,C worked) + (Days C worked alone)\n    Total time = 2 days + 2 days + 3 days = 7 days.",
-      "trick": "Use the 'Adjusted Work' or 'Virtual Work' method for the person leaving before completion.\nTotal work = 60 units (LCM of 10, 12, 15).\nA's efficiency = 6, B's efficiency = 5, C's efficiency = 4.\n\n1.  **Work done by A, B, C in the first 2 days:**\n    (6+5+4) * 2 = 15 * 2 = 30 units.\n    Remaining work = 60 - 30 = 30 units.\n    A leaves after 2 days.\n\n2.  **Adjust for B leaving early:**\n    B leaves 3 days before completion. To simplify, assume B worked till the end, and add the work B would have done in those 3 days to the remaining work.\n    Work B would have done = 5 units/day * 3 days = 15 units.\n    Adjusted remaining work = 30 + 15 = 45 units.\n\n3.  **Work done by B and C (assuming B did not leave early):**\n    After A leaves, B and C work. With the adjustment, we can consider B and C working together for the entire remaining period.\n    Combined efficiency of B and C = 5 + 4 = 9 units/day.\n    Time taken by B and C for adjusted remaining work = 45 units / 9 units/day = 5 days.\n\n4.  **Total time for completion:**\n    Total time = (Days A,B,C worked) + (Days B,C worked for adjusted remaining work)\n    Total time = 2 days + 5 days = 7 days."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "C) Rs. 600",
+      "explanation": "Let the original Cost Price (CP) be 100x.\nOriginal Selling Price (SP) = CP + 20% of CP = 100x + 20x = 120x.\n\nIf he had bought it for 10% less:\nNew CP = 100x - 10% of 100x = 100x - 10x = 90x.\n\nIf he would have gained 30% on the New CP:\nNew SP = New CP + 30% of New CP = 90x + (0.30 * 90x) = 90x + 27x = 117x.\n\nAccording to the problem, the New SP is Rs. 18 less than the Original SP:\nNew SP = Original SP - 18\n117x = 120x - 18\n18 = 120x - 117x\n18 = 3x\nx = 6.\n\nOriginal Cost Price = 100x = 100 * 6 = Rs. 600.",
+      "trick": "Representing the initial Cost Price as 100x simplifies percentage calculations, avoiding fractions or decimals until the final step. This systematic approach is often the fastest for such multi-step percentage problems."
     }
   ]
 }
