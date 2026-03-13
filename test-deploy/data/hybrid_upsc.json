@@ -1,163 +1,163 @@
 {
     "metadata": {
         "difficulty": "upsc",
-        "generated_at": "2026-03-13T21:11:44.190159",
+        "generated_at": "2026-03-13T21:28:45.913406",
         "type": "Hybrid TBG + Live DB Sync",
         "total_questions": 18
     },
     "questions": [
         {
-            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Doctors are Engineers.\n2. All Engineers are Professionals.",
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.",
             "category": "Logical Reasoning",
             "options": [
-                "Some Professionals are not Doctors.",
-                "No Doctors are Professionals.",
-                "All Professionals are Doctors.",
-                "All Doctors are Professionals."
+                "No Apples are Foods.",
+                "All Apples are Foods.",
+                "All Foods are Apples.",
+                "Some Foods are not Apples."
             ],
-            "correct_answer": "All Doctors are Professionals.",
-            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Doctors are Professionals.' is the logically certain conclusion."
-        },
-        {
-            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.",
-            "category": "Logical Reasoning",
-            "options": [
-                "Some Vehicles are not Cars.",
-                "All Cars are Vehicles.",
-                "No Cars are Vehicles.",
-                "All Vehicles are Cars."
-            ],
-            "correct_answer": "All Cars are Vehicles.",
-            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Cars are Vehicles.' is the logically certain conclusion."
-        },
-        {
-            "question": "A can complete a piece of work in 30 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "20",
-                "22",
-                "24",
-                "19"
-            ],
-            "correct_answer": "20",
-            "explanation": "1/A + 1/B = 1/30 + 1/60 = (60+30)/(30*60) = 1/20. So they complete it in 20 days."
-        },
-        {
-            "question": "If an article is bought for Rs. 400 and sold at a profit of 10%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "420",
-                "440",
-                "450",
-                "480"
-            ],
-            "correct_answer": "440",
-            "explanation": "SP = CP * (1 + Profit%/100) = 400 * (1 + 10/100) = Rs. 440."
-        },
-        {
-            "question": "If an article is bought for Rs. 310 and sold at a profit of 20%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "372",
-                "352",
-                "382",
-                "403"
-            ],
-            "correct_answer": "372",
-            "explanation": "SP = CP * (1 + Profit%/100) = 310 * (1 + 20/100) = Rs. 372."
-        },
-        {
-            "question": "A can complete a piece of work in 20 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "15",
-                "14",
-                "19",
-                "17"
-            ],
-            "correct_answer": "15",
-            "explanation": "1/A + 1/B = 1/20 + 1/60 = (60+20)/(20*60) = 1/15. So they complete it in 15 days."
-        },
-        {
-            "question": "If an article is bought for Rs. 400 and sold at a profit of 20%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "480",
-                "520",
-                "490",
-                "460"
-            ],
-            "correct_answer": "480",
-            "explanation": "SP = CP * (1 + Profit%/100) = 400 * (1 + 20/100) = Rs. 480."
-        },
-        {
-            "question": "A can complete a piece of work in 12 days while B can complete the same work in 24 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "7",
-                "10",
-                "12",
-                "8"
-            ],
-            "correct_answer": "8",
-            "explanation": "1/A + 1/B = 1/12 + 1/24 = (24+12)/(12*24) = 1/8. So they complete it in 8 days."
+            "correct_answer": "All Apples are Foods.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Apples are Foods.' is the logically certain conclusion."
         },
         {
             "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.",
             "category": "Logical Reasoning",
             "options": [
+                "No Pens are Stationery.",
                 "Some Stationery are not Pens.",
                 "All Stationery are Pens.",
-                "All Pens are Stationery.",
-                "No Pens are Stationery."
+                "All Pens are Stationery."
             ],
             "correct_answer": "All Pens are Stationery.",
             "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Pens are Stationery.' is the logically certain conclusion."
         },
         {
+            "question": "A can complete a piece of work in 10 days while B can complete the same work in 40 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "12",
+                "10",
+                "7",
+                "8"
+            ],
+            "correct_answer": "8",
+            "explanation": "1/A + 1/B = 1/10 + 1/40 = (40+10)/(10*40) = 1/8. So they complete it in 8 days."
+        },
+        {
             "question": "Find the missing number in the series: 3, 6, 12, 24, ?",
             "category": "Logical Reasoning",
             "options": [
-                "38",
-                "47",
+                "67",
                 "48",
-                "68"
+                "33",
+                "43"
             ],
             "correct_answer": "48",
             "explanation": "The series is a Geometric Progression with a common ratio of 2. Next term: 24 * 2 = 48."
         },
         {
-            "question": "Find the missing number in the series: 4, 9, 14, 19, ?",
+            "question": "Find the missing number in the series: 5, 10, 20, 40, ?",
             "category": "Logical Reasoning",
             "options": [
-                "24",
-                "22",
-                "13",
-                "16"
+                "85",
+                "80",
+                "87",
+                "75"
             ],
-            "correct_answer": "24",
-            "explanation": "The series is an Arithmetic Progression with a common difference of 5. Next term: 19 + 5 = 24."
+            "correct_answer": "80",
+            "explanation": "The series is a Geometric Progression with a common ratio of 2. Next term: 40 * 2 = 80."
         },
         {
-            "question": "Find the missing number in the series: 3, 9, 27, 81, ?",
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Dogs are Cats.\n2. All Cats are Animals.",
             "category": "Logical Reasoning",
             "options": [
-                "240",
-                "243",
-                "238",
-                "228"
+                "No Dogs are Animals.",
+                "All Animals are Dogs.",
+                "All Dogs are Animals.",
+                "Some Animals are not Dogs."
             ],
-            "correct_answer": "243",
-            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 81 * 3 = 243."
+            "correct_answer": "All Dogs are Animals.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Dogs are Animals.' is the logically certain conclusion."
+        },
+        {
+            "question": "Find the missing number in the series: 2, 6, 18, 54, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "170",
+                "159",
+                "162",
+                "154"
+            ],
+            "correct_answer": "162",
+            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 54 * 3 = 162."
+        },
+        {
+            "question": "If an article is bought for Rs. 100 and sold at a profit of 20%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "125",
+                "100",
+                "130",
+                "120"
+            ],
+            "correct_answer": "120",
+            "explanation": "SP = CP * (1 + Profit%/100) = 100 * (1 + 20/100) = Rs. 120."
+        },
+        {
+            "question": "A can complete a piece of work in 15 days while B can complete the same work in 30 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "14",
+                "10",
+                "9",
+                "12"
+            ],
+            "correct_answer": "10",
+            "explanation": "1/A + 1/B = 1/15 + 1/30 = (30+15)/(15*30) = 1/10. So they complete it in 10 days."
+        },
+        {
+            "question": "If an article is bought for Rs. 360 and sold at a profit of 10%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "376",
+                "396",
+                "432",
+                "406"
+            ],
+            "correct_answer": "396",
+            "explanation": "SP = CP * (1 + Profit%/100) = 360 * (1 + 10/100) = Rs. 396."
+        },
+        {
+            "question": "If an article is bought for Rs. 100 and sold at a profit of 40%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "120",
+                "150",
+                "140",
+                "155"
+            ],
+            "correct_answer": "140",
+            "explanation": "SP = CP * (1 + Profit%/100) = 100 * (1 + 40/100) = Rs. 140."
+        },
+        {
+            "question": "A can complete a piece of work in 20 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "14",
+                "19",
+                "17",
+                "15"
+            ],
+            "correct_answer": "15",
+            "explanation": "1/A + 1/B = 1/20 + 1/60 = (60+20)/(20*60) = 1/15. So they complete it in 15 days."
         },
         {
             "question": "Sample CA?",
             "category": "Current Affairs",
             "options": [
+                "B",
                 "D",
                 "C",
-                "A",
-                "B"
+                "A"
             ],
             "correct_answer": "A",
             "explanation": "test",
@@ -167,10 +167,10 @@
             "question": "Who won the ICC Men's Cricket World Cup 2023?",
             "category": "Current Affairs",
             "options": [
-                "Australia",
+                "South Africa",
                 "England",
                 "India",
-                "South Africa"
+                "Australia"
             ],
             "correct_answer": "Australia",
             "explanation": "Australia defeated India in the final to win the 2023 ICC World Cup.",
@@ -180,9 +180,9 @@
             "question": "Which city hosted the G20 Summit in 2023?",
             "category": "Current Affairs",
             "options": [
-                "New Delhi",
-                "Bali",
                 "Rome",
+                "Bali",
+                "New Delhi",
                 "Riyadh"
             ],
             "correct_answer": "New Delhi",
@@ -194,8 +194,8 @@
             "category": "Current Affairs",
             "options": [
                 "Aditya-L1",
-                "Bhaskara-L",
                 "Chandrayaan-3",
+                "Bhaskara-L",
                 "Surya-1"
             ],
             "correct_answer": "Aditya-L1",
@@ -206,10 +206,10 @@
             "question": "Which film won the Best Picture at the 96th Academy Awards?",
             "category": "Current Affairs",
             "options": [
-                "Oppenheimer",
-                "Barbie",
                 "Poor Things",
-                "Killers of the Flower Moon"
+                "Killers of the Flower Moon",
+                "Barbie",
+                "Oppenheimer"
             ],
             "correct_answer": "Oppenheimer",
             "explanation": "Oppenheimer won the Academy Award for Best Picture in 2024.",
@@ -219,10 +219,10 @@
             "question": "Which country officially became the 32nd member of NATO in 2024?",
             "category": "Current Affairs",
             "options": [
-                "Sweden",
-                "Georgia",
                 "Ukraine",
-                "Finland"
+                "Sweden",
+                "Finland",
+                "Georgia"
             ],
             "correct_answer": "Sweden",
             "explanation": "Sweden officially became the 32nd member of NATO in March 2024.",
