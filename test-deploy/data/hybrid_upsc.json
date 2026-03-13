@@ -1,163 +1,163 @@
 {
     "metadata": {
         "difficulty": "upsc",
-        "generated_at": "2026-03-13T20:57:34.101925",
+        "generated_at": "2026-03-13T21:11:44.190159",
         "type": "Hybrid TBG + Live DB Sync",
         "total_questions": 18
     },
     "questions": [
         {
-            "question": "Find the missing number in the series: 5, 15, 45, 135, ?",
-            "category": "Logical Reasoning",
-            "options": [
-                "414",
-                "391",
-                "405",
-                "404"
-            ],
-            "correct_answer": "405",
-            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 135 * 3 = 405."
-        },
-        {
-            "question": "Find the missing number in the series: 3, 6, 12, 24, ?",
-            "category": "Logical Reasoning",
-            "options": [
-                "40",
-                "33",
-                "48",
-                "39"
-            ],
-            "correct_answer": "48",
-            "explanation": "The series is a Geometric Progression with a common ratio of 2. Next term: 24 * 2 = 48."
-        },
-        {
-            "question": "A can complete a piece of work in 20 days while B can complete the same work in 30 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "14",
-                "16",
-                "12",
-                "11"
-            ],
-            "correct_answer": "12",
-            "explanation": "1/A + 1/B = 1/20 + 1/30 = (30+20)/(20*30) = 1/12. So they complete it in 12 days."
-        },
-        {
             "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Doctors are Engineers.\n2. All Engineers are Professionals.",
             "category": "Logical Reasoning",
             "options": [
+                "Some Professionals are not Doctors.",
                 "No Doctors are Professionals.",
                 "All Professionals are Doctors.",
-                "Some Professionals are not Doctors.",
                 "All Doctors are Professionals."
             ],
             "correct_answer": "All Doctors are Professionals.",
             "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Doctors are Professionals.' is the logically certain conclusion."
+        },
+        {
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.",
+            "category": "Logical Reasoning",
+            "options": [
+                "Some Vehicles are not Cars.",
+                "All Cars are Vehicles.",
+                "No Cars are Vehicles.",
+                "All Vehicles are Cars."
+            ],
+            "correct_answer": "All Cars are Vehicles.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Cars are Vehicles.' is the logically certain conclusion."
+        },
+        {
+            "question": "A can complete a piece of work in 30 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "20",
+                "22",
+                "24",
+                "19"
+            ],
+            "correct_answer": "20",
+            "explanation": "1/A + 1/B = 1/30 + 1/60 = (60+30)/(30*60) = 1/20. So they complete it in 20 days."
+        },
+        {
+            "question": "If an article is bought for Rs. 400 and sold at a profit of 10%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "420",
+                "440",
+                "450",
+                "480"
+            ],
+            "correct_answer": "440",
+            "explanation": "SP = CP * (1 + Profit%/100) = 400 * (1 + 10/100) = Rs. 440."
+        },
+        {
+            "question": "If an article is bought for Rs. 310 and sold at a profit of 20%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "372",
+                "352",
+                "382",
+                "403"
+            ],
+            "correct_answer": "372",
+            "explanation": "SP = CP * (1 + Profit%/100) = 310 * (1 + 20/100) = Rs. 372."
+        },
+        {
+            "question": "A can complete a piece of work in 20 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "15",
+                "14",
+                "19",
+                "17"
+            ],
+            "correct_answer": "15",
+            "explanation": "1/A + 1/B = 1/20 + 1/60 = (60+20)/(20*60) = 1/15. So they complete it in 15 days."
+        },
+        {
+            "question": "If an article is bought for Rs. 400 and sold at a profit of 20%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "480",
+                "520",
+                "490",
+                "460"
+            ],
+            "correct_answer": "480",
+            "explanation": "SP = CP * (1 + Profit%/100) = 400 * (1 + 20/100) = Rs. 480."
         },
         {
             "question": "A can complete a piece of work in 12 days while B can complete the same work in 24 days. If they work together, in how many days will they complete the work?",
             "category": "Quantitative Aptitude",
             "options": [
-                "10",
                 "7",
-                "8",
-                "12"
+                "10",
+                "12",
+                "8"
             ],
             "correct_answer": "8",
             "explanation": "1/A + 1/B = 1/12 + 1/24 = (24+12)/(12*24) = 1/8. So they complete it in 8 days."
         },
         {
-            "question": "If an article is bought for Rs. 310 and sold at a profit of 25%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "418",
-                "367",
-                "397",
-                "387"
-            ],
-            "correct_answer": "387",
-            "explanation": "SP = CP * (1 + Profit%/100) = 310 * (1 + 25/100) = Rs. 387."
-        },
-        {
-            "question": "A can complete a piece of work in 20 days while B can complete the same work in 30 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "12",
-                "11",
-                "16",
-                "14"
-            ],
-            "correct_answer": "12",
-            "explanation": "1/A + 1/B = 1/20 + 1/30 = (30+20)/(20*30) = 1/12. So they complete it in 12 days."
-        },
-        {
-            "question": "If an article is bought for Rs. 380 and sold at a profit of 40%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "570",
-                "512",
-                "542",
-                "532"
-            ],
-            "correct_answer": "532",
-            "explanation": "SP = CP * (1 + Profit%/100) = 380 * (1 + 40/100) = Rs. 532."
-        },
-        {
-            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.",
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.",
             "category": "Logical Reasoning",
             "options": [
-                "Some Foods are not Apples.",
-                "All Foods are Apples.",
-                "No Apples are Foods.",
-                "All Apples are Foods."
+                "Some Stationery are not Pens.",
+                "All Stationery are Pens.",
+                "All Pens are Stationery.",
+                "No Pens are Stationery."
             ],
-            "correct_answer": "All Apples are Foods.",
-            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Apples are Foods.' is the logically certain conclusion."
+            "correct_answer": "All Pens are Stationery.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Pens are Stationery.' is the logically certain conclusion."
         },
         {
-            "question": "If an article is bought for Rs. 110 and sold at a profit of 10%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "101",
-                "132",
-                "121",
-                "131"
-            ],
-            "correct_answer": "121",
-            "explanation": "SP = CP * (1 + Profit%/100) = 110 * (1 + 10/100) = Rs. 121."
-        },
-        {
-            "question": "Find the missing number in the series: 5, 9, 13, 17, ?",
+            "question": "Find the missing number in the series: 3, 6, 12, 24, ?",
             "category": "Logical Reasoning",
             "options": [
-                "25",
-                "21",
-                "29",
-                "34"
+                "38",
+                "47",
+                "48",
+                "68"
             ],
-            "correct_answer": "21",
-            "explanation": "The series is an Arithmetic Progression with a common difference of 4. Next term: 17 + 4 = 21."
+            "correct_answer": "48",
+            "explanation": "The series is a Geometric Progression with a common ratio of 2. Next term: 24 * 2 = 48."
         },
         {
-            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Doctors are Engineers.\n2. All Engineers are Professionals.",
+            "question": "Find the missing number in the series: 4, 9, 14, 19, ?",
             "category": "Logical Reasoning",
             "options": [
-                "No Doctors are Professionals.",
-                "Some Professionals are not Doctors.",
-                "All Professionals are Doctors.",
-                "All Doctors are Professionals."
+                "24",
+                "22",
+                "13",
+                "16"
             ],
-            "correct_answer": "All Doctors are Professionals.",
-            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Doctors are Professionals.' is the logically certain conclusion."
+            "correct_answer": "24",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 5. Next term: 19 + 5 = 24."
+        },
+        {
+            "question": "Find the missing number in the series: 3, 9, 27, 81, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "240",
+                "243",
+                "238",
+                "228"
+            ],
+            "correct_answer": "243",
+            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 81 * 3 = 243."
         },
         {
             "question": "Sample CA?",
             "category": "Current Affairs",
             "options": [
-                "A",
-                "B",
                 "D",
-                "C"
+                "C",
+                "A",
+                "B"
             ],
             "correct_answer": "A",
             "explanation": "test",
@@ -169,8 +169,8 @@
             "options": [
                 "Australia",
                 "England",
-                "South Africa",
-                "India"
+                "India",
+                "South Africa"
             ],
             "correct_answer": "Australia",
             "explanation": "Australia defeated India in the final to win the 2023 ICC World Cup.",
@@ -181,9 +181,9 @@
             "category": "Current Affairs",
             "options": [
                 "New Delhi",
-                "Riyadh",
+                "Bali",
                 "Rome",
-                "Bali"
+                "Riyadh"
             ],
             "correct_answer": "New Delhi",
             "explanation": "The 2023 G20 New Delhi summit was the eighteenth meeting of G20.",
@@ -193,10 +193,10 @@
             "question": "What is the name of India's first solar mission?",
             "category": "Current Affairs",
             "options": [
-                "Surya-1",
-                "Bhaskara-L",
                 "Aditya-L1",
-                "Chandrayaan-3"
+                "Bhaskara-L",
+                "Chandrayaan-3",
+                "Surya-1"
             ],
             "correct_answer": "Aditya-L1",
             "explanation": "Aditya-L1 is a coronalography spacecraft designed to study the solar atmosphere.",
@@ -207,9 +207,9 @@
             "category": "Current Affairs",
             "options": [
                 "Oppenheimer",
-                "Killers of the Flower Moon",
                 "Barbie",
-                "Poor Things"
+                "Poor Things",
+                "Killers of the Flower Moon"
             ],
             "correct_answer": "Oppenheimer",
             "explanation": "Oppenheimer won the Academy Award for Best Picture in 2024.",
@@ -220,9 +220,9 @@
             "category": "Current Affairs",
             "options": [
                 "Sweden",
-                "Finland",
+                "Georgia",
                 "Ukraine",
-                "Georgia"
+                "Finland"
             ],
             "correct_answer": "Sweden",
             "explanation": "Sweden officially became the 32nd member of NATO in March 2024.",
