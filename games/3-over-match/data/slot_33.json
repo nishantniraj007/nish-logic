@@ -4,194 +4,12 @@
     "day_index": 3,
     "slot_index": 33,
     "difficulty": "Easy",
-    "generated_at": "2026-03-08T19:53:19.834Z"
+    "generated_at": "2026-03-13T19:55:59.840Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "A train travels at a speed of 60 kilometers per hour. How far will it travel in 3 hours?",
-      "options": [
-        "120 km",
-        "150 km",
-        "180 km",
-        "200 km"
-      ],
-      "correct_answer": "180 km",
-      "explanation": "The formula for distance is Distance = Speed × Time. Given Speed = 60 km/h and Time = 3 hours, Distance = 60 km/h × 3 hours = 180 km.",
-      "trick": "Since the speed is 60 km per hour, in 3 hours, it will simply be 3 times 60. You can think of it as 6 times 3, which is 18, and then add the zero back."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If 'CAT' is coded as '3120', what is 'DOG' coded as?",
-      "options": [
-        "4157",
-        "4187",
-        "4159",
-        "4189"
-      ],
-      "correct_answer": "4157",
-      "explanation": "The code assigns each letter its position in the alphabet. C is the 3rd letter, A is the 1st, and T is the 20th. So, CAT = 3120. Applying this to DOG: D is the 4th letter, O is the 15th, and G is the 7th. Therefore, DOG = 4157.",
-      "trick": "Recognize the pattern of alphabetical position mapping. This is a common and straightforward coding technique."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If a shirt costs $50 and is on sale for 20% off, what is the sale price?",
-      "options": [
-        "$30",
-        "$35",
-        "$40",
-        "$45"
-      ],
-      "correct_answer": "$40",
-      "explanation": "First, calculate the discount amount. 20% of $50 is (20/100) * $50 = 0.20 * $50 = $10. Then, subtract the discount from the original price: $50 - $10 = $40.",
-      "trick": "If there's a 20% discount, you are paying 80% of the original price. 80% of $50 is the same as 8 times $5, which is $40."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
-      "options": [
-        "25",
-        "50",
-        "75",
-        "100"
-      ],
-      "correct_answer": "50",
-      "explanation": "To find 25% of a number, you can multiply the number by 0.25 (or 1/4). So, 200 * 0.25 = 50. Alternatively, 25% is the same as 1/4, so 200 / 4 = 50.",
-      "trick": "25% is the same as 1/4. Dividing by 4 is often quicker than multiplying by 0.25. 200 divided by 2 is 100, and divided by 2 again is 50."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
       "category": "Current Affairs",
       "question": "[Fallback CA] Default News 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much will 12 apples cost?",
-      "options": [
-        "$20",
-        "$24",
-        "$30",
-        "$36"
-      ],
-      "correct_answer": "$24",
-      "explanation": "First, find the cost of one apple. If 5 apples cost $10, then 1 apple costs $10 / 5 = $2. Then, multiply the cost of one apple by the desired number of apples: $2/apple * 12 apples = $24.",
-      "trick": "Notice that 12 apples is slightly more than double 5 apples. So the cost should be slightly more than double $10 ($20). $24 fits this."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What is the next number in the sequence: 2, 4, 8, 16, ...?",
-      "options": [
-        "20",
-        "24",
-        "32",
-        "36"
-      ],
-      "correct_answer": "32",
-      "explanation": "Each number in the sequence is double the previous number. 2 * 2 = 4, 4 * 2 = 8, 8 * 2 = 16. Therefore, the next number is 16 * 2 = 32.",
-      "trick": "Check for simple arithmetic progressions (addition/subtraction) or geometric progressions (multiplication/division). Doubling is a common pattern."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If all dogs are mammals, and all mammals are animals, then which of the following must be true?",
-      "options": [
-        "All animals are dogs.",
-        "All dogs are animals.",
-        "Some animals are not dogs.",
-        "No dogs are animals."
-      ],
-      "correct_answer": "All dogs are animals.",
-      "explanation": "This is a syllogism. If A is a subset of B, and B is a subset of C, then A must be a subset of C. Dogs (A) are mammals (B), and mammals (B) are animals (C). Therefore, dogs (A) are animals (C).",
-      "trick": "Visualize the relationships using Venn diagrams. Dogs are inside the mammal circle, which is inside the animal circle."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -216,17 +34,134 @@
       "trick": ""
     },
     {
-      "category": "Logical Reasoning",
-      "question": "Which word does NOT belong with the others?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
-      "trick": "Identify the common category for most items and find the outlier. Look for the most general classification."
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If 5 apples cost 100 rupees, how much will 12 apples cost?",
+      "options": [
+        "200 rupees",
+        "240 rupees",
+        "220 rupees",
+        "260 rupees"
+      ],
+      "correct_answer": "240 rupees",
+      "explanation": "First, find the cost of one apple. If 5 apples cost 100 rupees, then 1 apple costs 100 / 5 = 20 rupees. Next, calculate the cost of 12 apples. If 1 apple costs 20 rupees, then 12 apples will cost 12 * 20 = 240 rupees.",
+      "trick": "The cost is directly proportional. If you increase the number of apples by a factor, the cost increases by the same factor. 12 apples is 12/5 times the number of 5 apples. So, the cost will be (12/5) * 100 = 12 * 20 = 240."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is 25% of 80?",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct_answer": "20",
+      "explanation": "To find 25% of 80, you can convert the percentage to a decimal or a fraction. As a decimal, 25% is 0.25. So, 0.25 * 80 = 20. As a fraction, 25% is 1/4. So, (1/4) * 80 = 80 / 4 = 20.",
+      "trick": "25% is the same as dividing by 4. So, 80 / 4 = 20."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a shirt costs 500 rupees and is sold at a discount of 10%, what is the selling price?",
+      "options": [
+        "400 rupees",
+        "450 rupees",
+        "475 rupees",
+        "500 rupees"
+      ],
+      "correct_answer": "450 rupees",
+      "explanation": "First, calculate the amount of the discount. 10% of 500 rupees is (10/100) * 500 = 50 rupees. Then, subtract the discount from the original price to find the selling price: 500 rupees - 50 rupees = 450 rupees.",
+      "trick": "If there's a 10% discount, you are paying 90% of the original price. Calculate 90% of 500: 0.90 * 500 = 450."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A train travels at a speed of 60 kilometers per hour. How long will it take to travel 180 kilometers?",
+      "options": [
+        "2 hours",
+        "3 hours",
+        "4 hours",
+        "5 hours"
+      ],
+      "correct_answer": "3 hours",
+      "explanation": "The formula relating distance, speed, and time is: Time = Distance / Speed. In this case, Distance = 180 kilometers and Speed = 60 kilometers per hour. So, Time = 180 km / 60 km/h = 3 hours.",
+      "trick": "Think of it as 'how many 60s fit into 180?'. 60 * 3 = 180, so it takes 3 hours."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Current Affairs",
@@ -240,6 +175,71 @@
       ],
       "explanation": "DB Offline",
       "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'A' is the brother of 'B', and 'B' is the sister of 'C', and 'C' is the father of 'D', then how is 'D' related to 'A'?",
+      "options": [
+        "Niece",
+        "Nephew",
+        "Grandchild",
+        "Cousin"
+      ],
+      "correct_answer": "Grandchild",
+      "explanation": "A is B's brother. B is C's sister. So A, B, and C are siblings. C is the father of D. Therefore, D is the child of C. Since A is C's sibling, A is D's uncle or aunt. This makes D the grandchild of A's parents, and therefore D is the grandchild of A's generation.",
+      "trick": "Trace the relationships step-by-step. Focus on the direct links: A -> B, B -> C, C -> D. Identify the generation gap."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If you are in a race and you overtake the person in second place, what place are you in now?",
+      "options": [
+        "First place",
+        "Second place",
+        "Third place",
+        "Last place"
+      ],
+      "correct_answer": "Second place",
+      "explanation": "If you overtake the person in second place, you take their position. The person who was in first place is still ahead of you.",
+      "trick": "Visualize the race. If you were behind the second-place runner, and you pass them, you are now where they were."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "A farmer has 17 sheep. All but 9 die. How many sheep are left?",
+      "options": [
+        "8",
+        "9",
+        "17",
+        "0"
+      ],
+      "correct_answer": "9",
+      "explanation": "The phrase 'all but 9 die' means that exactly 9 sheep survived. The rest (17 - 9 = 8) died.",
+      "trick": "The word 'but' in this context signifies exclusion. 'All but 9' means 'all except 9'."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Which word does NOT belong with the others?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are all fruits. A Carrot is a vegetable.",
+      "trick": "Look for a common category that three of the words share, and one word does not fit."
     }
   ]
 }
