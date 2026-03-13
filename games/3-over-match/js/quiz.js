@@ -40,10 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const langToggle = document.getElementById('lang-toggle');
     if (langToggle) {
-        // Restore toggle state from cookie on page load
         const currentLang = getCookie('googtrans');
         if (currentLang === '/en/hi') langToggle.checked = true;
-
         langToggle.addEventListener('change', (e) => {
             if (e.target.checked) {
                 setCookie('googtrans', '/en/hi');
@@ -68,25 +66,46 @@ function getCookie(name) {
     return match ? match[2] : null;
 }
 
+function parseField(field) {
+    if (!field) return null;
+    if (field.stringValue !== undefined) return field.stringValue;
+    if (field.integerValue !== undefined) return field.integerValue;
+    if (field.booleanValue !== undefined) return field.booleanValue;
+    if (field.arrayValue !== undefined) {
+        const vals = field.arrayValue.values || [];
+        return vals.map(v => parseField(v));
+    }
+    return null;
+}
+
 async function fetchCollection(collectionId) {
     const url = `${BASE_URL}/${collectionId}?pageSize=300`;
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Failed to fetch ${collectionId}`);
+    if (!res.ok) throw new Error(`Failed to fetch ${collectionId} — status ${res.status}`);
     const data = await res.json();
     if (!data.documents) return [];
-    return data.documents.map(doc => {
-        const f = doc.fields;
-        return {
-            id: f.id ? f.id.stringValue : 'N/A',
-            category: f.category ? f.category.stringValue : collectionId,
-            topic: f.topic ? f.topic.stringValue : '',
-            question: f.question.stringValue,
-            options: f.options.arrayValue.values.map(v => v.stringValue),
-            correct_answer: f.correct_answer.stringValue,
-            explanation: f.explanation ? f.explanation.stringValue : '',
-            trick: f.trick ? f.trick.stringValue : null
-        };
-    });
+    const parsed = [];
+    for (const doc of data.documents) {
+        try {
+            const f = doc.fields;
+            const options = parseField(f.options);
+            if (!options || !Array.isArray(options) || options.length === 0) continue;
+            if (!f.question || !f.correct_answer) continue;
+            parsed.push({
+                id: parseField(f.id) || 'N/A',
+                category: parseField(f.category) || collectionId,
+                topic: parseField(f.topic) || '',
+                question: parseField(f.question),
+                options: options,
+                correct_answer: parseField(f.correct_answer),
+                explanation: parseField(f.explanation) || '',
+                trick: parseField(f.trick) || null
+            });
+        } catch (err) {
+            console.warn(`Skipped malformed doc in ${collectionId}`, err);
+        }
+    }
+    return parsed;
 }
 
 async function startGame() {
@@ -111,7 +130,6 @@ async function startGame() {
             quizData.push(...shuffled.slice(0, picks[i]));
         });
 
-        // Final shuffle so categories are mixed
         quizData = quizData.sort(() => 0.5 - Math.random());
 
         if (quizData.length === 0) throw new Error('No questions loaded');
