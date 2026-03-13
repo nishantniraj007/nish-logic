@@ -4,76 +4,194 @@
     "day_index": 3,
     "slot_index": 31,
     "difficulty": "Medium",
-    "generated_at": "2026-03-08T19:41:36.412Z"
+    "generated_at": "2026-03-13T19:23:21.175Z"
   },
   "questions": [
     {
+      "category": "Quantitative Aptitude",
+      "question": "If an item is sold at a 20% profit, and if it had been sold for Rs. 100 less, there would have been a 5% loss. Find the cost price of the item.",
+      "options": [
+        "Rs. 400",
+        "Rs. 500",
+        "Rs. 600",
+        "Rs. 700"
+      ],
+      "correct_answer": "Rs. 400",
+      "explanation": "Let the Cost Price (CP) be 'x'.\nInitial Selling Price (SP1) = CP + 20% of CP = x + 0.20x = 1.20x\nIf sold for Rs. 100 less, the new Selling Price (SP2) = 1.20x - 100\nAccording to the problem, SP2 would result in a 5% loss on CP.\nSo, SP2 = CP - 5% of CP = x - 0.05x = 0.95x\nEquating the two expressions for SP2: 1.20x - 100 = 0.95x\n1.20x - 0.95x = 100\n0.25x = 100\nx = 100 / 0.25 = 400\nThus, the Cost Price is Rs. 400.",
+      "trick": "The difference in percentage from 20% profit to 5% loss is 20% - (-5%) = 25%. This 25% change in price corresponds to Rs. 100. So, if 25% of CP = Rs. 100, then 100% of CP (the full cost price) = (100 / 25) * 100 = Rs. 400."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The sum of the squares of two consecutive odd numbers is 394. Find the numbers.",
+      "options": [
+        "11, 13",
+        "13, 15",
+        "15, 17",
+        "17, 19"
+      ],
+      "correct_answer": "13, 15",
+      "explanation": "Let the two consecutive odd numbers be (2n-1) and (2n+1) for some integer n.\nAccording to the problem: (2n-1)^2 + (2n+1)^2 = 394\nExpand the squares: (4n^2 - 4n + 1) + (4n^2 + 4n + 1) = 394\nCombine like terms: 8n^2 + 2 = 394\nSubtract 2 from both sides: 8n^2 = 392\nDivide by 8: n^2 = 49\nTake the square root: n = 7 (since we are looking for positive numbers).\nSubstitute n=7 back into the expressions for the numbers:\nFirst number = 2(7) - 1 = 14 - 1 = 13\nSecond number = 2(7) + 1 = 14 + 1 = 15\nThe numbers are 13 and 15.",
+      "trick": "Quickly check the options by squaring and summing:\nA) 11^2 + 13^2 = 121 + 169 = 290 (Too low)\nB) 13^2 + 15^2 = 169 + 225 = 394 (Matches the condition)\nThis method is often faster than setting up and solving the quadratic equation."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A rectangular garden has a length of 20 meters and a width of 15 meters. A path of uniform width 'x' meters is built around it, inside the garden. If the area of the path is 124 square meters, what is the width 'x' of the path?",
+      "options": [
+        "1 m",
+        "2 m",
+        "3 m",
+        "4 m"
+      ],
+      "correct_answer": "2 m",
+      "explanation": "Area of the entire rectangular garden = Length × Width = 20 m × 15 m = 300 sq m.\nA path of uniform width 'x' is built inside. The inner rectangular area (excluding the path) will have reduced dimensions.\nThe new length of the inner rectangle = 20 - 2x\nThe new width of the inner rectangle = 15 - 2x\nArea of the inner rectangle = (20 - 2x)(15 - 2x)\nArea of the path = Area of garden - Area of inner rectangle\n124 = 300 - (20 - 2x)(15 - 2x)\n(20 - 2x)(15 - 2x) = 300 - 124\n(20 - 2x)(15 - 2x) = 176\nExpand: 300 - 40x - 30x + 4x^2 = 176\n4x^2 - 70x + 300 = 176\n4x^2 - 70x + 124 = 0\nDivide by 2: 2x^2 - 35x + 62 = 0\nWe can test the given options:\nIf x = 1: (20 - 2)(15 - 2) = 18 × 13 = 234 ≠ 176\nIf x = 2: (20 - 4)(15 - 4) = 16 × 11 = 176. This matches!\nThus, the width of the path 'x' is 2 meters.",
+      "trick": "Substitute the options into the equation for the inner area: (20 - 2x)(15 - 2x) = 176. The option that satisfies this equation is the correct answer, avoiding the need to solve the quadratic equation."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
       "category": "Logical Reasoning",
-      "question": "Two statements are given followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements.\n\nStatements:\n1. All books are pens.\n2. Some pens are pencils.\n\nConclusions:\nI. Some books are pencils.\nII. Some pencils are pens.",
+      "question": "Statements:\n1. All pencils are pens.\n2. Some pens are erasers.\n\nConclusions:\nI. Some pencils are erasers.\nII. Some erasers are pens.",
       "options": [
-        "Only conclusion I follows",
-        "Only conclusion II follows",
-        "Both I and II follow",
-        "Neither I nor II follows"
+        "Only conclusion I follows.",
+        "Only conclusion II follows.",
+        "Both I and II follow.",
+        "Neither I nor II follows."
       ],
-      "correct_answer": "Only conclusion II follows",
-      "explanation": "Let's analyze the statements and conclusions:\nStatement 1: All books are pens. (This means the set of books is entirely contained within the set of pens).\nStatement 2: Some pens are pencils. (This means there is an overlap between the set of pens and the set of pencils).\n\nConclusion I: Some books are pencils. From the statements, we know books are pens, and some pens are pencils. However, the 'some pens' that are pencils might not be the specific pens that are also books. There is no definite connection established between books and pencils. Therefore, Conclusion I does not necessarily follow.\n\nConclusion II: Some pencils are pens. If 'some pens are pencils' (Statement 2), it logically implies that 'some pencils are pens'. This is a direct and valid inference. Therefore, Conclusion II follows.",
-      "trick": "For syllogisms involving 'Some A are B', it always implies 'Some B are A'. For 'All A are B', it does NOT imply 'All B are A' or 'Some A are not B'. Use Venn diagrams or immediate inferences to quickly check the validity of conclusions."
+      "correct_answer": "Only conclusion II follows.",
+      "explanation": "Let's analyze each conclusion based on the given statements:\nStatement 1: All Pencils are Pens (All P are N)\nStatement 2: Some Pens are Erasers (Some N are E)\n\nConclusion I: Some pencils are erasers (Some P are E).\nFrom the statements, we know that all pencils are a subset of pens. Some pens are erasers. However, it's not guaranteed that the 'some pens' that are erasers include any of the 'pencils'. The set of pencils might be entirely separate from the set of pens that are erasers. Therefore, this conclusion does not necessarily follow.\n\nConclusion II: Some erasers are pens (Some E are N).\nThis is a direct conversion of Statement 2 ('Some pens are erasers'). If some pens are erasers, it logically follows that some erasers must also be pens. This conclusion definitely follows.\n\nThus, only conclusion II follows.",
+      "trick": "Use Venn diagrams to visualize the relationships. For 'Some A are B', it always implies 'Some B are A'. For 'All A are B', it does NOT imply 'All B are A', nor does it imply 'Some B are A' (unless A is not empty). Be careful with 'some' statements, as they only indicate existence, not necessarily overlap with other sets unless explicitly stated or derivable."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "The sum of the current ages of a father and his son is 60 years. Six years ago, the father's age was seven times the son's age. What is the current age of the son?",
+      "question": "The average weight of 30 students in a class is 45 kg. If the weight of the teacher is included, the average weight increases by 1 kg. What is the weight of the teacher?",
       "options": [
-        "12 years",
-        "15 years",
-        "18 years",
-        "20 years"
+        "75 kg",
+        "76 kg",
+        "77 kg",
+        "78 kg"
       ],
-      "correct_answer": "12 years",
-      "explanation": "Let the current age of the father be F and the son be S.\n1. F + S = 60\nSix years ago:\nFather's age = F - 6\nSon's age = S - 6\nAccording to the problem, F - 6 = 7 * (S - 6).\nF - 6 = 7S - 42\n2. F = 7S - 36\nSubstitute F from equation (2) into equation (1):\n(7S - 36) + S = 60\n8S - 36 = 60\n8S = 96\nS = 96 / 8\nS = 12 years.\nThe current age of the son is 12 years.",
-      "trick": "Test the options. If the son's current age is 12 (Option A):\nFather's current age = 60 - 12 = 48.\nSix years ago: Son's age = 12 - 6 = 6. Father's age = 48 - 6 = 42.\nCheck the condition: Is father's age (42) seven times the son's age (6)? Yes, 42 = 7 * 6. So, 12 years is the correct answer."
+      "correct_answer": "76 kg",
+      "explanation": "Total weight of 30 students = Number of students × Average weight = 30 × 45 kg = 1350 kg.\nWhen the teacher's weight is included, the total number of people becomes 30 + 1 = 31.\nThe new average weight increases by 1 kg, so the new average = 45 kg + 1 kg = 46 kg.\nTotal weight of (30 students + 1 teacher) = New number of people × New average weight = 31 × 46 kg.\n31 × 46 = 1426 kg.\nThe weight of the teacher = (Total weight of students and teacher) - (Total weight of students)\nWeight of teacher = 1426 kg - 1350 kg = 76 kg.",
+      "trick": "The teacher's weight must be the original average plus the total increase in weight for all members (including the teacher).\nTeacher's weight = Original Average + (Increase in Average per person × New Total Number of People)\nTeacher's weight = 45 kg + (1 kg/person × 31 people)\nTeacher's weight = 45 + 31 = 76 kg."
     },
     {
-      "question": "Sample CA?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Current Affairs"
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "Three numbers are in the ratio 2:3:5. If the sum of their squares is 608, what is the smallest of the three numbers?",
-      "options": [
-        "8",
-        "12",
-        "16",
-        "20"
-      ],
-      "correct_answer": "8",
-      "explanation": "Let the three numbers be 2x, 3x, and 5x.\nThe sum of their squares is 608.\n(2x)^2 + (3x)^2 + (5x)^2 = 608\n4x^2 + 9x^2 + 25x^2 = 608\n38x^2 = 608\nx^2 = 608 / 38\nx^2 = 16\nx = √16 = 4 (since the numbers are positive).\nThe three numbers are:\nSmallest number = 2x = 2 * 4 = 8\nSecond number = 3x = 3 * 4 = 12\nLargest number = 5x = 5 * 4 = 20\nThe smallest of the three numbers is 8.",
-      "trick": "You can test the options. If the smallest number is 8, then the common multiplier 'x' (from 2x) would be 4. This means the numbers are 2*4=8, 3*4=12, and 5*4=20.\nNow, check the sum of their squares: 8^2 + 12^2 + 20^2 = 64 + 144 + 400 = 608.\nThis matches the given condition, so 8 is the correct answer."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper sold an article for ₹840, making a profit of 20%. What was the cost price of the article?",
-      "options": [
-        "₹700",
-        "₹672",
-        "₹720",
-        "₹1008"
-      ],
-      "correct_answer": "₹700",
-      "explanation": "Let the Cost Price (CP) be 'x'.\nProfit = 20% of CP = 0.20x.\nSelling Price (SP) = CP + Profit = x + 0.20x = 1.20x.\nGiven SP = ₹840.\nSo, 1.20x = 840.\nx = 840 / 1.20\nx = 8400 / 12\nx = 700.\nThe cost price of the article was ₹700.",
-      "trick": "If there's a 20% profit, the Selling Price (SP) is 120% of the Cost Price (CP). So, 120% of CP = ₹840.\nCP = (840 / 120) * 100 = 7 * 100 = ₹700."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "Find the next number in the series: 2, 5, 10, 17, 26, ?",
+      "question": "Pointing to a photograph, a woman says, \"He is the only son of my father-in-law's only daughter.\" How is the person in the photograph related to the woman?",
+      "options": [
+        "Brother",
+        "Son",
+        "Nephew",
+        "Husband"
+      ],
+      "correct_answer": "Nephew",
+      "explanation": "Let's break down the statement from the perspective of the woman:\n1. 'My father-in-law': This refers to the woman's husband's father.\n2. 'My father-in-law's only daughter': Since her father-in-law has only one daughter, and that daughter is not her husband (who is a son), this refers to her husband's sister. Therefore, this person is the woman's sister-in-law.\n3. 'He is the only son of my father-in-law's only daughter': This means the person in the photograph is the only son of the woman's sister-in-law.\n4. The son of one's sister-in-law is one's nephew.\nThus, the person in the photograph is the woman's nephew.",
+      "trick": "When solving blood relation puzzles, start by identifying the 'my' or 'your' reference point. Then, work backward or forward through the relations step-by-step, simplifying each phrase. Drawing a quick family tree or diagram can be very helpful for complex relations."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Find the next term in the series: 2, 5, 10, 17, 26, ?",
       "options": [
         "35",
         "37",
@@ -81,59 +199,47 @@
         "41"
       ],
       "correct_answer": "37",
-      "explanation": "The pattern involves adding consecutive odd numbers to the previous term. The differences between consecutive terms are:\n5 - 2 = 3\n10 - 5 = 5\n17 - 10 = 7\n26 - 17 = 9\nThe next difference should be the next odd number in the sequence (3, 5, 7, 9...), which is 11. So, 26 + 11 = 37.",
-      "trick": "Always start by looking at the differences between consecutive terms. If the first set of differences doesn't reveal a pattern, look at the differences of the differences (second-order differences). This quickly identifies arithmetic progressions or quadratic series."
+      "explanation": "Let's find the difference between consecutive terms:\n5 - 2 = 3\n10 - 5 = 5\n17 - 10 = 7\n26 - 17 = 9\nWe can observe a pattern in the differences: 3, 5, 7, 9. These are consecutive odd numbers. The next odd number in this sequence would be 11.\nTherefore, the next term in the series will be 26 + 11 = 37.",
+      "trick": "When analyzing number series, first check for simple arithmetic progressions (constant difference) or geometric progressions (constant ratio). If not obvious, then look at the differences between terms. If the differences form a pattern, that's often the key. Also, consider squares or cubes and their adjustments (e.g., n^2 + 1)."
     },
     {
-      "question": "Sample Geography?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Static GK (Geography)"
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "The length of a rectangle is 15 cm and its width is 8 cm. If the length is increased by 20% and the width is decreased by 25%, what is the percentage change in the area of the rectangle?",
-      "options": [
-        "5% decrease",
-        "10% decrease",
-        "No change",
-        "5% increase"
-      ],
-      "correct_answer": "10% decrease",
-      "explanation": "Original length (L1) = 15 cm, Original width (W1) = 8 cm.\nOriginal Area (A1) = L1 * W1 = 15 * 8 = 120 sq cm.\n\nNew length (L2) = 15 + (20% of 15) = 15 + (0.20 * 15) = 15 + 3 = 18 cm.\nNew width (W2) = 8 - (25% of 8) = 8 - (0.25 * 8) = 8 - 2 = 6 cm.\nNew Area (A2) = L2 * W2 = 18 * 6 = 108 sq cm.\n\nChange in Area = A2 - A1 = 108 - 120 = -12 sq cm (a decrease).\nPercentage Change = (Change in Area / Original Area) * 100\n= (-12 / 120) * 100 = (-1/10) * 100 = -10%.\nThe area decreases by 10%.",
-      "trick": "Let the original length be L and width be W. Original Area = LW.\nNew length = L * (1 + 0.20) = 1.2L.\nNew width = W * (1 - 0.25) = 0.75W.\nNew Area = (1.2L) * (0.75W) = (1.2 * 0.75) * LW = 0.9LW.\nSince the New Area is 0.9 times the Original Area, it means the area is 90% of the original. This is a 10% decrease (100% - 90%)."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, if 'TIGER' is coded as 'UJHFS', how would 'ZEBRA' be coded in the same language?",
+      "question": "If 'APPLE' is coded as 'BQQMF', how would 'MANGO' be coded?",
       "options": [
-        "AFCSB",
-        "YBDAQ",
-        "AFSBC",
-        "ADCSB"
+        "NBOHP",
+        "NBPGO",
+        "MBOHP",
+        "NBQHO"
       ],
-      "correct_answer": "AFCSB",
-      "explanation": "Let's analyze the pattern in the given code:\nT (+1) -> U\nI (+1) -> J\nG (+1) -> H\nE (+1) -> F\nR (+1) -> S\n\nEach letter in the word 'TIGER' is shifted one position forward in the alphabet to get the corresponding letter in the coded word.\n\nApplying the same rule to 'ZEBRA':\nZ (+1) -> A (The alphabet wraps around, so after Z comes A)\nE (+1) -> F\nB (+1) -> C\nR (+1) -> S\nA (+1) -> B\n\nTherefore, 'ZEBRA' is coded as 'AFCSB'.",
-      "trick": "When dealing with letter coding, quickly check the relationship between the first letter of the word and its code. This often reveals the shift pattern (+1, -1, +2, etc.). Apply this pattern to the target word's first letter to eliminate options quickly, then confirm with other letters."
+      "correct_answer": "NBOHP",
+      "explanation": "Let's analyze the coding pattern for 'APPLE' to 'BQQMF':\nA (+1) -> B\nP (+1) -> Q\nP (+1) -> Q\nL (+1) -> M\nE (+1) -> F\nIt's a simple substitution cipher where each letter is replaced by the next letter in the English alphabet.\nApplying the same rule to 'MANGO':\nM (+1) -> N\nA (+1) -> B\nN (+1) -> O\nG (+1) -> H\nO (+1) -> P\nSo, 'MANGO' would be coded as 'NBOHP'.",
+      "trick": "For coding-decoding questions, always check the shift or pattern for the first and last letters first. This can often eliminate several options quickly without needing to decode the entire word. Also, look for patterns beyond simple shifts, such as reverse alphabetical order, skipping letters, or a combination of operations."
     },
     {
-      "category": "Logical Reasoning",
-      "question": "Choose the pair that has the same relationship as 'Tree : Forest'.",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
       "options": [
-        "Ant : Colony",
-        "Fish : Ocean",
-        "Book : Library",
-        "Star : Galaxy"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "Ant : Colony",
-      "explanation": "The relationship between 'Tree : Forest' is that a 'Tree' is an individual member, and 'Forest' is a collection or group of trees.\n\nLet's examine the options:\nA. Ant : Colony - An 'Ant' is an individual insect, and a 'Colony' is a collection or group of ants. This matches the relationship.\nB. Fish : Ocean - 'Fish' is an individual, but 'Ocean' is a habitat, not specifically a collection of fish (a collection of fish is a 'school' or 'shoal').\nC. Book : Library - 'Book' is an individual item, and 'Library' is a place where books are kept, not primarily a collection name for books (a collection of books could be a 'stack' or 'collection').\nD. Star : Galaxy - 'Star' is an individual, and 'Galaxy' is a collection of stars. This is also a strong candidate. However, 'Ant : Colony' represents an individual living organism and its specific collective noun, which is a very direct and common type of analogy. While 'Star : Galaxy' is similar, 'Ant : Colony' often appears in this exact form in analogies testing collective nouns for animals. In many contexts, 'colony' is the defining collective noun for ants, while 'galaxy' is a broader astronomical structure. 'Ant : Colony' is the most direct and specific 'individual : collective noun' relationship among the options for a living organism.",
-      "trick": "Identify the precise nature of the relationship (e.g., individual-group, part-whole, cause-effect, tool-user). If multiple options seem plausible, look for the most direct, specific, or common representation of that relationship. For collective nouns, ensure the group name is specific to the individual."
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
