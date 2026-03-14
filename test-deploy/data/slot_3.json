@@ -2,47 +2,23 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 3,
-    "generated_at": "2026-03-13T19:24:35.626Z",
+    "generated_at": "2026-03-14T19:20:02.640Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
+      "correct_answer": "162",
       "options": [
-        "Mahatma Gandhi",
-        "Sarojini Naidu",
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore"
+        "165",
+        "162",
+        "486",
+        "160"
       ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 36, 101, 49, 25",
-      "correct_answer": "101",
-      "options": [
-        "36",
-        "101",
-        "49",
-        "25"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "B.R. Ambedkar",
-        "Sardar Patel",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
     },
     {
       "question": "Sample CA?",
@@ -57,119 +33,107 @@
       "category": "Current Affairs"
     },
     {
-      "question": "A train travels at an average speed of 103 km/hr. How much distance will it cover in 6 hours?",
-      "correct_answer": "618 km",
+      "question": "Rs. 846 is divided between A and B in the ratio 5:4. What is A's share?",
+      "correct_answer": "Rs. 470",
       "options": [
-        "721 km",
-        "638 km",
-        "618 km",
-        "515 km"
+        "Rs. 470",
+        "Rs. 376",
+        "Rs. 385.4",
+        "Rs. 554.6"
       ],
-      "explanation": "Distance = Speed * Time = 103 * 6 = 618 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Total parts = 5 + 4 = 9. Value of 1 part = 846/9 = 94. A's share = 5 * 94 = 470.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 43, 45, 47, 49, 51?",
-      "correct_answer": "47",
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
       "options": [
-        "45",
-        "51",
-        "47",
-        "49"
+        "No Apples are Foods.",
+        "Some Foods are not Apples.",
+        "None of the above.",
+        "All Apples are Foods."
       ],
-      "explanation": "Sum = 235. Average = Sum / 5 = 47.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
-      "correct_answer": "48",
-      "options": [
-        "45",
-        "96",
-        "50",
-        "48"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "Find the next number in the series: 3, 13, 23, 33, 43, ?",
+      "correct_answer": "53",
       "options": [
-        "Amazon",
-        "Mississippi",
-        "Yangtze",
-        "Nile"
+        "63",
+        "53",
+        "43",
+        "55"
       ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Saturn",
-        "Earth",
-        "Neptune",
-        "Jupiter"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 16, 26, 36, 46, 56, ?",
-      "correct_answer": "66",
-      "options": [
-        "76",
-        "68",
-        "56",
-        "66"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 56 + (10) = 66.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 10. So, 43 + (10) = 53.",
       "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 2200 at an interest rate of 5% per annum over 2 years?",
-      "correct_answer": "Rs. 220",
+      "question": "If MAT is coded as OCV, how will MAN be coded in that same language?",
+      "correct_answer": "OCP",
       "options": [
-        "Rs. 220",
-        "Rs. 330",
-        "Rs. 170",
-        "Rs. 320"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (2200 * 5 * 2) / 100 = 220.",
-      "trick": "Treat percentage as decimal visually: 22 * 5 * 2 = 220.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If an article is bought for Rs. 660 and sold at a profit of 15%, what is the selling price?",
-      "correct_answer": "Rs. 758.9999999999999",
-      "options": [
-        "Rs. 824.9999999999999",
-        "Rs. 758.9999999999999",
-        "Rs. 890.9999999999999",
-        "Rs. 692.9999999999999"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 660 * 1.15 = Rs. 758.9999999999999.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If DOG is coded as FQI, how will CUP be coded in that same language?",
-      "correct_answer": "EWR",
-      "options": [
-        "FXS",
-        "CUP",
-        "ASN",
-        "EWR"
+        "OCP",
+        "MAN",
+        "K?L",
+        "PDQ"
       ],
       "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "If an article is bought for Rs. 260 and sold at a profit of 50%, what is the selling price?",
+      "correct_answer": "Rs. 390",
+      "options": [
+        "Rs. 416",
+        "Rs. 442",
+        "Rs. 390",
+        "Rs. 364"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 260 * 1.50 = Rs. 390.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A train travels at an average speed of 98 km/hr. How much distance will it cover in 4 hours?",
+      "correct_answer": "392 km",
+      "options": [
+        "490 km",
+        "392 km",
+        "412 km",
+        "294 km"
+      ],
+      "explanation": "Distance = Speed * Time = 98 * 4 = 392 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Sample History?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_answer": "A",
+      "explanation": "test",
+      "category": "Static GK (History)"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 7200 at an interest rate of 11% per annum over 3 years?",
+      "correct_answer": "Rs. 2376",
+      "options": [
+        "Rs. 2376",
+        "Rs. 2736",
+        "Rs. 2476",
+        "Rs. 2326"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (7200 * 11 * 3) / 100 = 2376.",
+      "trick": "Treat percentage as decimal visually: 72 * 11 * 3 = 2376.",
+      "category": "Quantitative Aptitude"
     }
   ]
 }

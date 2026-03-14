@@ -2,120 +2,32 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 5,
-    "generated_at": "2026-03-13T19:24:35.626Z",
+    "generated_at": "2026-03-14T19:20:02.640Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
+      "question": "Find the odd one out among the following numbers: 16, 25, 9, 65",
+      "correct_answer": "65",
       "options": [
-        "Saturn",
-        "Earth",
-        "Jupiter",
-        "Neptune"
+        "16",
+        "25",
+        "9",
+        "65"
       ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 5, 14, 23, 32, 41, ?",
-      "correct_answer": "50",
-      "options": [
-        "59",
-        "41",
-        "50",
-        "52"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 9. So, 41 + (9) = 50.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
+      "question": "If BAT is coded as CBU, how will MAN be coded in that same language?",
+      "correct_answer": "NBO",
       "options": [
-        "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore",
-        "Sarojini Naidu"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 41, 43, 45, 47, 49?",
-      "correct_answer": "45",
-      "options": [
-        "43",
-        "47",
-        "45",
-        "49"
-      ],
-      "explanation": "Sum = 225. Average = Sum / 5 = 45.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "A can complete a piece of work in 56 days while B can complete the same work in 76 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "32.24 days",
-      "options": [
-        "31.24 days",
-        "34.24 days",
-        "32.24 days",
-        "36.24 days"
-      ],
-      "explanation": "Work = 56 * 76 = 4256. Rate = 56 + 76 = 132. Time = Work / Rate = 32.24 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Sardar Patel",
-        "B.R. Ambedkar",
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "If an article is bought for Rs. 1200 and sold at a profit of 15%, what is the selling price?",
-      "correct_answer": "Rs. 1380",
-      "options": [
-        "Rs. 1260",
-        "Rs. 1380",
-        "Rs. 1620",
-        "Rs. 1500"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 1200 * 1.15 = Rs. 1380.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
-      "options": [
-        "Some Stationery are not Pens.",
-        "All Pens are Stationery.",
-        "None of the above.",
-        "No Pens are Stationery."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If DOG is coded as EPH, how will CUP be coded in that same language?",
-      "correct_answer": "DVQ",
-      "options": [
-        "EWR",
-        "CUP",
-        "BTO",
-        "DVQ"
+        "NBO",
+        "MAN",
+        "OCP",
+        "L@M"
       ],
       "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
@@ -134,41 +46,129 @@
       "category": "Current Affairs"
     },
     {
-      "question": "A train travels at an average speed of 113 km/hr. How much distance will it cover in 4 hours?",
-      "correct_answer": "452 km",
+      "question": "Rs. 440 is divided between A and B in the ratio 2:3. What is A's share?",
+      "correct_answer": "Rs. 176",
       "options": [
-        "565 km",
-        "472 km",
-        "452 km",
-        "339 km"
+        "Rs. 220",
+        "Rs. 264",
+        "Rs. 132",
+        "Rs. 176"
       ],
-      "explanation": "Distance = Speed * Time = 113 * 4 = 452 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Total parts = 2 + 3 = 5. Value of 1 part = 440/5 = 88. A's share = 2 * 88 = 176.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "All Dogs are Animals.",
+        "No Dogs are Animals.",
+        "Some Animals are not Dogs.",
+        "None of the above."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Jupiter",
+        "Saturn",
+        "Earth",
+        "Neptune"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     },
     {
       "question": "Which is the longest river in the world?",
       "correct_answer": "Nile",
       "options": [
-        "Nile",
-        "Amazon",
         "Yangtze",
-        "Mississippi"
+        "Mississippi",
+        "Nile",
+        "Amazon"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
     },
     {
-      "question": "Find the odd one out among the following numbers: 36, 49, 122, 64",
-      "correct_answer": "122",
+      "question": "A train travels at an average speed of 98 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "294 km",
       "options": [
-        "36",
-        "49",
-        "122",
-        "64"
+        "294 km",
+        "196 km",
+        "392 km",
+        "314 km"
       ],
-      "explanation": "36, 49, and 64 are perfect squares. 122 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "explanation": "Distance = Speed * Time = 98 * 3 = 294 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar",
+        "Sardar Patel"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A can complete a piece of work in 68 days while B can complete the same work in 116 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "42.87 days",
+      "options": [
+        "46.87 days",
+        "44.87 days",
+        "41.87 days",
+        "42.87 days"
+      ],
+      "explanation": "Work = 68 * 116 = 7888. Rate = 68 + 116 = 184. Time = Work / Rate = 42.87 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 51, 53, 55, 57, 59?",
+      "correct_answer": "55",
+      "options": [
+        "59",
+        "55",
+        "57",
+        "53"
+      ],
+      "explanation": "Sum = 275. Average = Sum / 5 = 55.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Sarojini Naidu",
+        "Mahatma Gandhi",
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
+      "correct_answer": "324",
+      "options": [
+        "324",
+        "327",
+        "320",
+        "972"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
     }
   ]

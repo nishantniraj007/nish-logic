@@ -2,39 +2,26 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 7,
-    "generated_at": "2026-03-13T19:24:35.626Z",
+    "generated_at": "2026-03-14T19:20:02.640Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
-      "correct_answer": "243",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 10400 at an interest rate of 5% per annum over 5 years?",
+      "correct_answer": "Rs. 2600",
       "options": [
-        "246",
-        "240",
-        "729",
-        "243"
+        "Rs. 3120",
+        "Rs. 2550",
+        "Rs. 2700",
+        "Rs. 2600"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Rs. 1440 is divided between A and B in the ratio 3:7. What is A's share?",
-      "correct_answer": "Rs. 432",
-      "options": [
-        "Rs. 288",
-        "Rs. 432",
-        "Rs. 576",
-        "Rs. 1008"
-      ],
-      "explanation": "Total parts = 3 + 7 = 10. Value of 1 part = 1440/10 = 144. A's share = 3 * 144 = 432.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "SI = (P * R * T) / 100 = (10400 * 5 * 5) / 100 = 2600.",
+      "trick": "Treat percentage as decimal visually: 104 * 5 * 5 = 2600.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Sample History?",
+      "question": "Sample Geography?",
       "options": [
         "A",
         "B",
@@ -43,84 +30,58 @@
       ],
       "correct_answer": "A",
       "explanation": "test",
-      "category": "Static GK (History)"
+      "category": "Static GK (Geography)"
     },
     {
-      "question": "Find the odd one out among the following numbers: 49, 25, 36, 101",
+      "question": "What is the average of the following 5 consecutive even numbers: 40, 42, 44, 46, 48?",
+      "correct_answer": "44",
+      "options": [
+        "44",
+        "42",
+        "48",
+        "46"
+      ],
+      "explanation": "Sum = 220. Average = Sum / 5 = 44.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 12, 18, 24, 30, 36, ?",
+      "correct_answer": "42",
+      "options": [
+        "44",
+        "36",
+        "48",
+        "42"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 6. So, 36 + (6) = 42.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Rs. 1472 is divided between A and B in the ratio 2:6. What is A's share?",
+      "correct_answer": "Rs. 368",
+      "options": [
+        "Rs. 368",
+        "Rs. 1104",
+        "Rs. 220.79999999999998",
+        "Rs. 515.2"
+      ],
+      "explanation": "Total parts = 2 + 6 = 8. Value of 1 part = 1472/8 = 184. A's share = 2 * 184 = 368.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 101, 36, 25, 49",
       "correct_answer": "101",
       "options": [
-        "49",
-        "25",
+        "101",
         "36",
-        "101"
+        "25",
+        "49"
       ],
       "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
       "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If an article is bought for Rs. 1800 and sold at a profit of 20%, what is the selling price?",
-      "correct_answer": "Rs. 2160",
-      "options": [
-        "Rs. 2340",
-        "Rs. 2160",
-        "Rs. 1980",
-        "Rs. 2520"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 1800 * 1.20 = Rs. 2160.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If CAT is coded as FDW, how will CUP be coded in that same language?",
-      "correct_answer": "FXS",
-      "options": [
-        "CUP",
-        "GYT",
-        "FXS",
-        "@RM"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 116 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "348 km",
-      "options": [
-        "368 km",
-        "232 km",
-        "348 km",
-        "464 km"
-      ],
-      "explanation": "Distance = Speed * Time = 116 * 3 = 348 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 4400 at an interest rate of 10% per annum over 3 years?",
-      "correct_answer": "Rs. 1320",
-      "options": [
-        "Rs. 1420",
-        "Rs. 1320",
-        "Rs. 1270",
-        "Rs. 1540"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (4400 * 10 * 3) / 100 = 1320.",
-      "trick": "Treat percentage as decimal visually: 44 * 10 * 3 = 1320.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
-      "options": [
-        "All Dogs are Animals.",
-        "None of the above.",
-        "No Dogs are Animals.",
-        "Some Animals are not Dogs."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
@@ -134,6 +95,45 @@
       "correct_answer": "A",
       "explanation": "test",
       "category": "Current Affairs"
+    },
+    {
+      "question": "A can complete a piece of work in 52 days while B can complete the same work in 104 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "34.67 days",
+      "options": [
+        "38.67 days",
+        "34.67 days",
+        "33.67 days",
+        "36.67 days"
+      ],
+      "explanation": "Work = 52 * 104 = 5408. Rate = 52 + 104 = 156. Time = Work / Rate = 34.67 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
+      "options": [
+        "All Pens are Stationery.",
+        "None of the above.",
+        "No Pens are Stationery.",
+        "Some Stationery are not Pens."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If DOG is coded as GRJ, how will MAN be coded in that same language?",
+      "correct_answer": "PDQ",
+      "options": [
+        "MAN",
+        "J>K",
+        "QER",
+        "PDQ"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
     }
   ]
 }

@@ -2,149 +2,86 @@
   "metadata": {
     "difficulty": "easy",
     "slot": 0,
-    "generated_at": "2026-03-13T19:24:35.626Z",
+    "generated_at": "2026-03-14T19:20:02.640Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
+      "question": "If MAT is coded as PDW, how will BOX be coded in that same language?",
+      "correct_answer": "ER[",
+      "options": [
+        "?LU",
+        "BOX",
+        "FS\\",
+        "ER["
+      ],
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If an article is bought for Rs. 280 and sold at a profit of 10%, what is the selling price?",
+      "correct_answer": "Rs. 308",
+      "options": [
+        "Rs. 336",
+        "Rs. 280",
+        "Rs. 308",
+        "Rs. 364"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 280 * 1.10 = Rs. 308.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar",
         "Sardar Patel",
-        "Dr. Rajendra Prasad"
+        "B.R. Ambedkar",
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "Find the odd one out among the following numbers: 9, 65, 16, 25",
-      "correct_answer": "65",
+      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Pens are Stationery.",
       "options": [
-        "9",
-        "65",
-        "16",
-        "25"
+        "Some Stationery are not Pens.",
+        "None of the above.",
+        "All Pens are Stationery.",
+        "No Pens are Stationery."
       ],
-      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 101 km/hr. How much distance will it cover in 4 hours?",
-      "correct_answer": "404 km",
-      "options": [
-        "303 km",
-        "424 km",
-        "505 km",
-        "404 km"
-      ],
-      "explanation": "Distance = Speed * Time = 101 * 4 = 404 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
     },
     {
       "question": "Who wrote the national anthem of India?",
       "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Sarojini Naidu",
-        "Mahatma Gandhi",
+        "Bankim Chandra Chatterjee",
         "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee"
+        "Sarojini Naidu",
+        "Mahatma Gandhi"
       ],
       "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
-      "correct_answer": "243",
+      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
+      "correct_answer": "324",
       "options": [
-        "240",
-        "243",
-        "729",
-        "246"
+        "320",
+        "324",
+        "327",
+        "972"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
       "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "Find the next number in the series: 14, 16, 18, 20, 22, ?",
-      "correct_answer": "24",
-      "options": [
-        "24",
-        "26",
-        "26",
-        "22"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 2. So, 22 + (2) = 24.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 3900 at an interest rate of 6% per annum over 5 years?",
-      "correct_answer": "Rs. 1170",
-      "options": [
-        "Rs. 1170",
-        "Rs. 1365",
-        "Rs. 1270",
-        "Rs. 1120"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (3900 * 6 * 5) / 100 = 1170.",
-      "trick": "Treat percentage as decimal visually: 39 * 6 * 5 = 1170.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Amazon",
-        "Nile",
-        "Yangtze",
-        "Mississippi"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "A can complete a piece of work in 18 days while B can complete the same work in 20 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "9.47 days",
-      "options": [
-        "11.47 days",
-        "13.47 days",
-        "8.47 days",
-        "9.47 days"
-      ],
-      "explanation": "Work = 18 * 20 = 360. Rate = 18 + 20 = 38. Time = Work / Rate = 9.47 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Rs. 423 is divided between A and B in the ratio 4:5. What is A's share?",
-      "correct_answer": "Rs. 188",
-      "options": [
-        "Rs. 188",
-        "Rs. 235",
-        "Rs. 145.7",
-        "Rs. 230.3"
-      ],
-      "explanation": "Total parts = 4 + 5 = 9. Value of 1 part = 423/9 = 47. A's share = 4 * 47 = 188.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Which is the largest planet in our solar system?",
-      "correct_answer": "Jupiter",
-      "options": [
-        "Neptune",
-        "Saturn",
-        "Earth",
-        "Jupiter"
-      ],
-      "explanation": "Jupiter is a gas giant.",
-      "category": "Static GK"
     },
     {
       "question": "Sample CA?",
@@ -159,17 +96,80 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
+      "question": "Find the odd one out among the following numbers: 9, 65, 25, 16",
+      "correct_answer": "65",
       "options": [
-        "All Dogs are Animals.",
-        "No Dogs are Animals.",
-        "None of the above.",
-        "Some Animals are not Dogs."
+        "9",
+        "65",
+        "25",
+        "16"
       ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 2800 at an interest rate of 7% per annum over 2 years?",
+      "correct_answer": "Rs. 392",
+      "options": [
+        "Rs. 342",
+        "Rs. 392",
+        "Rs. 532",
+        "Rs. 492"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (2800 * 7 * 2) / 100 = 392.",
+      "trick": "Treat percentage as decimal visually: 28 * 7 * 2 = 392.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A train travels at an average speed of 100 km/hr. How much distance will it cover in 5 hours?",
+      "correct_answer": "500 km",
+      "options": [
+        "500 km",
+        "600 km",
+        "400 km",
+        "520 km"
+      ],
+      "explanation": "Distance = Speed * Time = 100 * 5 = 500 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Nile",
+        "Mississippi",
+        "Amazon"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Rs. 105 is divided between A and B in the ratio 3:4. What is A's share?",
+      "correct_answer": "Rs. 45",
+      "options": [
+        "Rs. 55.5",
+        "Rs. 60",
+        "Rs. 34.5",
+        "Rs. 45"
+      ],
+      "explanation": "Total parts = 3 + 4 = 7. Value of 1 part = 105/7 = 15. A's share = 3 * 15 = 45.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Saturn",
+        "Jupiter",
+        "Neptune",
+        "Earth"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
     }
   ]
 }

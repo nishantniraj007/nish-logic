@@ -2,7 +2,7 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 9,
-    "generated_at": "2026-03-13T19:24:35.626Z",
+    "generated_at": "2026-03-14T19:20:02.640Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
@@ -11,61 +11,87 @@
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "B.R. Ambedkar",
-        "Sardar Patel",
         "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad"
+        "Dr. Rajendra Prasad",
+        "B.R. Ambedkar",
+        "Sardar Patel"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "If DOG is coded as EPH, how will MAN be coded in that same language?",
-      "correct_answer": "NBO",
+      "question": "Find the next number in the series: 17, -33, -83, -133, -183, ?",
+      "correct_answer": "-233",
       "options": [
-        "MAN",
-        "NBO",
-        "L@M",
-        "OCP"
+        "-183",
+        "-283",
+        "-231",
+        "-233"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -50. So, -183 + (-50) = -233.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "No Dogs are Animals.",
+        "None of the above.",
+        "All Dogs are Animals.",
+        "Some Animals are not Dogs."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 155 km/hr. How much distance will it cover in 2 hours?",
+      "correct_answer": "310 km",
+      "options": [
+        "155 km",
+        "310 km",
+        "330 km",
+        "465 km"
+      ],
+      "explanation": "Distance = Speed * Time = 155 * 2 = 310 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If DOG is coded as EPH, how will BOX be coded in that same language?",
+      "correct_answer": "CPY",
+      "options": [
+        "ANW",
+        "CPY",
+        "BOX",
+        "DQZ"
       ],
       "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
-      "correct_answer": "48",
+      "question": "A can complete a piece of work in 96 days while B can complete the same work in 168 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "61.09 days",
       "options": [
-        "96",
-        "48",
-        "50",
-        "45"
+        "60.09 days",
+        "63.09 days",
+        "61.09 days",
+        "65.09 days"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 96 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "288 km",
-      "options": [
-        "288 km",
-        "384 km",
-        "308 km",
-        "192 km"
-      ],
-      "explanation": "Distance = Speed * Time = 96 * 3 = 288 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Work = 96 * 168 = 16128. Rate = 96 + 168 = 264. Time = Work / Rate = 61.09 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
       "question": "Who wrote the national anthem of India?",
       "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Sarojini Naidu",
-        "Rabindranath Tagore",
+        "Mahatma Gandhi",
         "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi"
+        "Rabindranath Tagore",
+        "Sarojini Naidu"
       ],
       "explanation": "Jana Gana Mana.",
       "category": "Static GK"
@@ -75,25 +101,12 @@
       "correct_answer": "Nile",
       "options": [
         "Mississippi",
+        "Yangtze",
         "Nile",
-        "Amazon",
-        "Yangtze"
+        "Amazon"
       ],
       "explanation": "Length approx 6,650 km.",
       "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 2, -18, -38, -58, -78, ?",
-      "correct_answer": "-98",
-      "options": [
-        "-78",
-        "-118",
-        "-96",
-        "-98"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -20. So, -78 + (-20) = -98.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -108,50 +121,24 @@
       "category": "Current Affairs"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 28800 at an interest rate of 11% per annum over 2 years?",
-      "correct_answer": "Rs. 6336",
+      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
+      "correct_answer": "324",
       "options": [
-        "Rs. 7776",
-        "Rs. 6436",
-        "Rs. 6286",
-        "Rs. 6336"
+        "972",
+        "324",
+        "320",
+        "327"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (28800 * 11 * 2) / 100 = 6336.",
-      "trick": "Treat percentage as decimal visually: 288 * 11 * 2 = 6336.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Apples are Foods.",
-      "options": [
-        "Some Foods are not Apples.",
-        "All Apples are Foods.",
-        "None of the above.",
-        "No Apples are Foods."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
       "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 152 days while B can complete the same work in 184 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "83.24 days",
-      "options": [
-        "83.24 days",
-        "82.24 days",
-        "87.24 days",
-        "85.24 days"
-      ],
-      "explanation": "Work = 152 * 184 = 27968. Rate = 152 + 184 = 336. Time = Work / Rate = 83.24 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
     },
     {
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Earth",
         "Saturn",
+        "Earth",
         "Neptune",
         "Jupiter"
       ],
@@ -159,16 +146,29 @@
       "category": "Static GK"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 58, 60, 62, 64, 66?",
-      "correct_answer": "62",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 10400 at an interest rate of 10% per annum over 5 years?",
+      "correct_answer": "Rs. 5200",
       "options": [
-        "64",
-        "60",
-        "62",
-        "66"
+        "Rs. 5300",
+        "Rs. 5150",
+        "Rs. 5200",
+        "Rs. 5720"
       ],
-      "explanation": "Sum = 310. Average = Sum / 5 = 62.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "SI = (P * R * T) / 100 = (10400 * 10 * 5) / 100 = 5200.",
+      "trick": "Treat percentage as decimal visually: 104 * 10 * 5 = 5200.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Rs. 1672 is divided between A and B in the ratio 5:6. What is A's share?",
+      "correct_answer": "Rs. 760",
+      "options": [
+        "Rs. 760",
+        "Rs. 592.8",
+        "Rs. 912",
+        "Rs. 927.2"
+      ],
+      "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 1672/11 = 152. A's share = 5 * 152 = 760.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     }
   ]
