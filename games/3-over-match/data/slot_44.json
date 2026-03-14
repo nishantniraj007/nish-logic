@@ -4,168 +4,12 @@
     "day_index": 4,
     "slot_index": 44,
     "difficulty": "Easy",
-    "generated_at": "2026-03-09T21:02:27.394Z"
+    "generated_at": "2026-03-14T19:58:48.958Z"
   },
   "questions": [
     {
-      "category": "Logical Reasoning",
-      "question": "If all cats are mammals, and some mammals are pets, what can we logically conclude?",
-      "options": [
-        "All pets are cats.",
-        "Some cats are pets.",
-        "All mammals are pets.",
-        "No cats are pets."
-      ],
-      "correct_answer": "Some cats are pets.",
-      "explanation": "We know that cats are a subset of mammals. We also know that pets are a subset of mammals. However, the overlap between cats and pets is not guaranteed. It's possible some cats are pets, but it's not a certainty. The statement 'Some cats are pets' is the most logically sound conclusion that can be drawn from the given premises, as it acknowledges the possibility of an overlap without asserting it as a definite fact for all cases.",
-      "trick": "Visualize this using Venn diagrams. Draw a large circle for 'Mammals'. Inside it, draw a circle for 'Cats'. Then draw another circle for 'Pets' that overlaps with 'Mammals'. The overlap between 'Cats' and 'Pets' is not guaranteed to be complete or empty."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Which word does NOT belong with the others?",
-      "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
-      ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
-      "trick": "Identify the common category for most items. The outlier is the one that doesn't fit."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If today is Monday, what day will it be in 10 days?",
-      "options": [
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "correct_answer": "Thursday",
-      "explanation": "There are 7 days in a week. After 7 days, it will be Monday again. So, in 10 days, it will be 7 days + 3 days. Therefore, it will be Monday + 3 days, which is Thursday.",
-      "trick": "Calculate the remainder when the number of days is divided by 7. 10 divided by 7 has a remainder of 3. So, count 3 days forward from Monday."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "A farmer has 17 sheep. All but 9 die. How many sheep are left?",
-      "options": [
-        "8",
-        "9",
-        "17",
-        "26"
-      ],
-      "correct_answer": "9",
-      "explanation": "The phrase 'all but 9 die' means that 9 sheep survived. Therefore, 9 sheep are left.",
-      "trick": "Focus on the phrase 'all but'. This phrase directly tells you the number of items remaining."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is the sum of 15 and 27?",
-      "options": [
-        "32",
-        "42",
-        "52",
-        "62"
-      ],
-      "correct_answer": "42",
-      "explanation": "To find the sum, you add the two numbers together: 15 + 27 = 42.",
-      "trick": "You can add the tens place first (10 + 20 = 30) and then the ones place (5 + 7 = 12), and finally add those results (30 + 12 = 42)."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If the cost of 5 apples is $10, what is the cost of 1 apple?",
-      "options": [
-        "$1",
-        "$2",
-        "$3",
-        "$5"
-      ],
-      "correct_answer": "$2",
-      "explanation": "To find the cost of one apple, divide the total cost by the number of apples. Total cost is $10, and there are 5 apples. So, Cost per apple = $10 / 5 = $2.",
-      "trick": "This is a simple division. Think of it as sharing $10 equally among 5 people."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
-      "options": [
-        "25",
-        "50",
-        "75",
-        "100"
-      ],
-      "correct_answer": "50",
-      "explanation": "To find 25% of 200, you can multiply 200 by 0.25 (which is 25/100). So, 200 * 0.25 = 50. Alternatively, 25% is equivalent to 1/4, so 1/4 of 200 is 200 / 4 = 50.",
-      "trick": "25% is the same as dividing by 4. 200 divided by 4 is a quick mental calculation."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
       "category": "Current Affairs",
       "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -190,6 +34,136 @@
       "trick": ""
     },
     {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "What is the next number in the sequence: 2, 4, 8, 16, ...?",
+      "options": [
+        "20",
+        "24",
+        "32",
+        "36"
+      ],
+      "correct_answer": "32",
+      "explanation": "Each number in the sequence is double the previous number. 2 * 2 = 4, 4 * 2 = 8, 8 * 2 = 16. Therefore, the next number is 16 * 2 = 32.",
+      "trick": "Look for simple arithmetic progressions like addition, subtraction, multiplication, or division. Doubling is a common pattern."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a train travels at a speed of 60 kilometers per hour, how long will it take to travel 180 kilometers?",
+      "options": [
+        "2 hours",
+        "3 hours",
+        "4 hours",
+        "5 hours"
+      ],
+      "correct_answer": "3 hours",
+      "explanation": "Time = Distance / Speed. In this case, Time = 180 km / 60 km/hr = 3 hours.",
+      "trick": "Notice that 180 is exactly 3 times 60. So, it will take 3 hours."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is 25% of 200?",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "correct_answer": "50",
+      "explanation": "To find 25% of a number, you can divide the number by 4. So, 200 / 4 = 50. Alternatively, 25% = 25/100 = 1/4. So, (1/4) * 200 = 50.",
+      "trick": "25% is the same as one-quarter. One-quarter of 200 is 50."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'CAT' is coded as '3120', what is 'DOG' coded as?",
+      "options": [
+        "4157",
+        "4158",
+        "4167",
+        "4168"
+      ],
+      "correct_answer": "4157",
+      "explanation": "Each letter is replaced by its position in the alphabet. C is the 3rd letter, A is the 1st, and T is the 20th. So, CAT becomes 3120. For DOG, D is the 4th letter, O is the 15th, and G is the 7th. Therefore, DOG becomes 4157.",
+      "trick": "Recognize the pattern of letter-to-alphabetical-position encoding immediately. Don't try to find complex arithmetic operations."
+    },
+    {
       "category": "Current Affairs",
       "question": "[Fallback CA] Default News 3?",
       "correct_answer": "Option 1",
@@ -204,33 +178,33 @@
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If a train travels 120 kilometers in 2 hours, what is its average speed in kilometers per hour?",
+      "question": "A shopkeeper buys an item for $100 and sells it for $120. What is his profit percentage?",
       "options": [
-        "50 km/h",
-        "60 km/h",
-        "70 km/h",
-        "80 km/h"
+        "10%",
+        "20%",
+        "25%",
+        "30%"
       ],
-      "correct_answer": "60 km/h",
-      "explanation": "Speed is calculated by dividing distance by time. In this case, the distance is 120 km and the time is 2 hours. So, Speed = 120 km / 2 hours = 60 km/h.",
-      "trick": "Directly divide the distance by the time. No complex steps are needed for this basic calculation."
+      "correct_answer": "20%",
+      "explanation": "Profit = Selling Price - Cost Price = $120 - $100 = $20. Profit Percentage = (Profit / Cost Price) * 100 = ($20 / $100) * 100 = 20%.",
+      "trick": "The profit is $20 on a cost of $100. This means the profit is 20 out of 100, which is directly 20%."
     },
     {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
-      "correct_answer": "Option 1",
+      "category": "Logical Reasoning",
+      "question": "Which word does NOT belong with the others?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
+      "trick": "Look for the most general category that most items fit into. The outlier will be the one that doesn't fit that category."
     },
     {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
+      "question": "[Fallback CA] Default News 5?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -240,6 +214,32 @@
       ],
       "explanation": "DB Offline",
       "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If the sum of two numbers is 15 and their difference is 3, what are the two numbers?",
+      "options": [
+        "9 and 6",
+        "10 and 5",
+        "8 and 7",
+        "11 and 4"
+      ],
+      "correct_answer": "9 and 6",
+      "explanation": "Let the two numbers be x and y. We have x + y = 15 and x - y = 3. Adding these two equations gives 2x = 18, so x = 9. Substituting x = 9 into x + y = 15 gives 9 + y = 15, so y = 6. The numbers are 9 and 6.",
+      "trick": "Quickly check the options. For '9 and 6': 9 + 6 = 15 and 9 - 6 = 3. This matches the conditions."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If all cats are black, and my pet is a cat, what color is my pet?",
+      "options": [
+        "White",
+        "Black",
+        "Brown",
+        "Cannot be determined"
+      ],
+      "correct_answer": "Black",
+      "explanation": "The premise states that 'all cats are black'. If your pet is a cat, it must follow this rule and therefore be black.",
+      "trick": "This is a simple deductive reasoning problem. Accept the given premise as true, even if it's not true in reality."
     }
   ]
 }
