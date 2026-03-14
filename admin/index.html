@@ -77,8 +77,19 @@
       <button class="type-btn" data-type="ca">CA — Current Affairs</button>
     </div>
     <div class="target-label" id="target-label">Select level and type to see target collection</div>
-    <h2>3. Paste Questions (Toon Format)</h2>
+    <h2>3. Generate with AI</h2>
+    <div style="background:#0f0f1a; border:1px solid #444; border-radius:8px; padding:12px; margin-bottom:16px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span style="color:#a89fff; font-size:0.9rem;">📋 Copy this prompt into any AI (Gemini, ChatGPT, Claude)</span>
+        <button onclick="copyPrompt()" style="background:#2a2a3e; color:#ccc; border:1px solid #444; border-radius:6px; padding:6px 14px; font-size:0.8rem;">Copy</button>
+      </div>
+      <textarea id="ai-prompt" readonly style="width:100%; height:160px; background:#0a0a14; color:#88ff88; border:1px solid #333; border-radius:6px; padding:10px; font-size:0.78rem; font-family:monospace; resize:none;"></textarea>
+    </div>
+
+    <h2>4. Paste Questions (Toon Format)</h2>
     <textarea id="questions-input" placeholder="ca_u_001&#9;UPSC&#9;IR&#9;Question&#9;A, B, C, D&#9;Answer&#9;Explanation"></textarea>
+    <button onclick="validateQuestions()" style="background:#2a2a3e; color:#a89fff; border:1px solid #a89fff; border-radius:8px; padding:12px; width:100%; font-size:1rem; cursor:pointer; margin-bottom:8px;">🔍 Validate Format</button>
+    <div id="validation-result" style="margin-bottom:12px; font-size:0.85rem; font-family:monospace;"></div>
     <button class="btn-primary" id="btn-sync">⬆ Sync to Firestore</button>
     <p class="status" id="sync-status"></p>
   </div>
@@ -156,6 +167,7 @@
       btn.classList.add('selected');
       selectedLevel = btn.dataset.level;
       updateTargetLabel();
+      updateAiPrompt();
     };
   });
 
@@ -165,8 +177,123 @@
       btn.classList.add('selected');
       selectedType = btn.dataset.type;
       updateTargetLabel();
+      updateAiPrompt();
     };
   });
+
+  // AI Prompt generator
+  function updateAiPrompt() {
+    const l = selectedLevel || 'e';
+    const t = selectedType || 'ca';
+
+    const levelProfiles = {
+      e: {
+        name: 'Easy',
+        profile: 'a Class 10 student scoring 90%+ in board exams (IQ 90-109)',
+        style: 'Direct factual recall. Single concept per question. No tricks. Clear and unambiguous language. Options should be obviously different from each other.',
+        example_q: 'What is the capital of France?',
+        avoid: 'Do not use tricky distractors. Avoid multi-concept questions.'
+      },
+      m: {
+        name: 'Medium',
+        profile: 'a Class 12 student scoring 80%+ in board exams (IQ 110-119)',
+        style: 'Application based questions. Mild inference required. Options are plausible but one is clearly correct on analysis. Tests understanding not just memory.',
+        example_q: 'If the price elasticity of demand is greater than 1, the demand is considered?',
+        avoid: 'Avoid purely factual questions. Push for applied understanding.'
+      },
+      s: {
+        name: 'SSC-Bank',
+        profile: 'an Engineering graduate with high IQ appearing for SSC CGL or IBPS PO (IQ 120-139)',
+        style: 'Tricky close distractors. Real exam pattern. Tests conceptual clarity under pressure. Options should include common misconceptions as wrong answers. Multi-step reasoning preferred.',
+        example_q: 'Which of the following is NOT a feature of a perfectly competitive market?',
+        avoid: 'Avoid simple recall. All 4 options must seem plausible at first glance.'
+      },
+      u: {
+        name: 'UPSC-CAT',
+        profile: 'a UPSC or CAT topper with abstract reasoning ability (IQ 140+)',
+        style: 'Deep conceptual and analytical questions. Tests ability to eliminate near-correct options. Questions may involve current affairs analysis, data interpretation or interconnected concepts. Requires systemic thinking.',
+        example_q: 'Consider the following statements about the Monetary Policy Committee and identify which are correct.',
+        avoid: 'No straightforward factual questions. Every option must require genuine analysis to eliminate.'
+      }
+    };
+
+    const typeMap = { qa: 'Quantitative Aptitude', lr: 'Logical Reasoning', sgk: 'Static General Knowledge', ca: 'Current Affairs' };
+    const typeIdMap = { qa: 'qa', lr: 'lr', sgk: 'sgk', ca: 'ca' };
+
+    const lp = levelProfiles[l];
+    const typeName = typeMap[t] || t;
+    const typeId = typeIdMap[t] || t;
+
+    const prompt = `You are an expert question paper setter for competitive exams in India (SSC, IBPS, UPSC, CAT).
+
+TASK: Generate 10 high-quality ${typeName} questions.
+
+TARGET STUDENT PROFILE:
+The questions must be perfectly calibrated for ${lp.profile}.
+Cognitive style: ${lp.style}
+
+STRICT RULES:
+${lp.avoid}
+1. Each question must be on EXACTLY ONE LINE — no line breaks inside a question
+2. Fields separated by TAB only
+3. Format: ID[TAB]${lp.name}[TAB]Topic[TAB]Question[TAB]Option1, Option2, Option3, Option4[TAB]CorrectAnswer[TAB]Explanation
+4. ID format: ${typeId}_${l}_NNN (e.g. ${typeId}_${l}_001)
+5. Exactly 4 options, comma separated
+6. CorrectAnswer must exactly match one of the 4 options word for word
+7. NO blank lines, NO headers, NO numbering, NO markdown, NO quotes
+8. Explanation: one precise sentence — no commas inside it
+
+EXAMPLE LINE:
+ca_e_001	Easy	Economy	Which body sets repo rate in India?	RBI, SEBI, NABARD, SIDBI	RBI	RBI is India central bank responsible for monetary policy.
+
+Output ONLY the tab-separated lines. Nothing else.`;
+
+    const el = document.getElementById('ai-prompt');
+    if (el) el.value = prompt;
+  }
+
+  window.copyPrompt = function() {
+    const el = document.getElementById('ai-prompt');
+    if (!el) return;
+    navigator.clipboard.writeText(el.value).then(() => {
+      const btn = document.querySelector('button[onclick="copyPrompt()"]');
+      btn.textContent = '✅ Copied!';
+      setTimeout(() => btn.textContent = 'Copy', 2000);
+    });
+  }
+
+  // Validator
+  window.validateQuestions = function() {
+    const raw = document.getElementById('questions-input').value.trim();
+    const result = document.getElementById('validation-result');
+    if (!raw) { result.innerHTML = '<span style="color:#f76a6a">⛔ Nothing to validate.</span>'; return; }
+    const lines = raw.split('\n').filter(l => l.trim());
+    const validIdPattern = /^(qa|lr|sgk|ca)_(e|m|s|u)_\d{3}$/;
+    let errors = [];
+    let good = 0;
+    lines.forEach((line, i) => {
+      const parts = line.split('\t');
+      const num = i + 1;
+      if (parts.length !== 7) {
+        errors.push(`Line ${num}: needs 7 tab-separated fields, found ${parts.length}`);
+        return;
+      }
+      const [id, level, topic, question, optionsRaw, answer, explanation] = parts;
+      if (!validIdPattern.test(id.trim())) errors.push(`Line ${num}: invalid ID format "${id.trim()}" (should be like ca_e_001)`);
+      const opts = optionsRaw.split(',').map(o => o.trim()).filter(o => o);
+      if (opts.length !== 4) errors.push(`Line ${num}: need exactly 4 options, found ${opts.length}`);
+      if (!opts.includes(answer.trim())) errors.push(`Line ${num}: answer "${answer.trim()}" does not match any option`);
+      if (!question.trim()) errors.push(`Line ${num}: question is empty`);
+      if (!explanation.trim()) errors.push(`Line ${num}: explanation is empty`);
+      if (errors.length === 0 || !errors.find(e => e.startsWith('Line ' + num))) good++;
+    });
+    if (errors.length === 0) {
+      result.innerHTML = '<span style="color:#6af7a2">✅ All ' + good + ' questions are valid! Ready to sync.</span>';
+    } else {
+      result.innerHTML = '<span style="color:#f7a26a">⚠️ ' + errors.length + ' issue(s) found:</span><br>' +
+        errors.map(e => '<span style="color:#f76a6a">• ' + e + '</span>').join('<br>');
+    }
+  }
 
   function updateTargetLabel() {
     if (selectedLevel && selectedType) {
