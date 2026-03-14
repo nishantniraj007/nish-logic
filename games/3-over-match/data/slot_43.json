@@ -4,7 +4,7 @@
     "day_index": 4,
     "slot_index": 43,
     "difficulty": "Easy",
-    "generated_at": "2026-03-09T21:01:21.519Z"
+    "generated_at": "2026-03-14T19:48:45.635Z"
   },
   "questions": [
     {
@@ -34,21 +34,8 @@
       "trick": ""
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "What is the sum of the first 5 even numbers?",
-      "options": [
-        "20",
-        "25",
-        "30",
-        "35"
-      ],
-      "correct_answer": "30",
-      "explanation": "The first 5 even numbers are 2, 4, 6, 8, and 10. Their sum is 2 + 4 + 6 + 8 + 10 = 30.",
-      "trick": "The sum of the first 'n' even numbers is n * (n + 1). For n=5, it's 5 * (5 + 1) = 5 * 6 = 30."
-    },
-    {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
+      "question": "[Fallback CA] Default News 1?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -58,32 +45,32 @@
       ],
       "explanation": "DB Offline",
       "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If 3 apples cost $6, how much do 7 apples cost?",
+      "options": [
+        "$12",
+        "$14",
+        "$16",
+        "$18"
+      ],
+      "correct_answer": "$14",
+      "explanation": "First, find the cost of one apple: $6 / 3 apples = $2 per apple. Then, multiply the cost per apple by the desired number of apples: $2/apple * 7 apples = $14.",
+      "trick": "Set up a proportion: (3 apples / $6) = (7 apples / x). Cross-multiply: 3x = 42. Solve for x: x = 14."
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all dogs are mammals, and all mammals have hearts, then which of the following must be true?",
+      "question": "Which word does NOT belong with the others?",
       "options": [
-        "All dogs have fur.",
-        "All mammals are dogs.",
-        "All dogs have hearts.",
-        "Some animals do not have hearts."
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
       ],
-      "correct_answer": "All dogs have hearts.",
-      "explanation": "This is a syllogism. The premises establish a chain: Dogs -> Mammals -> Hearts. Therefore, if something is a dog, it must also have a heart.",
-      "trick": "Visualize the relationships as nested sets. The set of dogs is inside the set of mammals, which is inside the set of things with hearts."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
+      "trick": "Identify the common category for most items. The outlier is the one that doesn't fit the category."
     },
     {
       "category": "Current Affairs",
@@ -99,69 +86,82 @@
       "trick": ""
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost ₹100, how much will 8 apples cost?",
+      "category": "Logical Reasoning",
+      "question": "Look at this series: 2, 1, 4, 3, 6, 5, ?, ? What number should come next?",
       "options": [
-        "₹150",
-        "₹160",
-        "₹170",
-        "₹180"
+        "7, 8",
+        "8, 7",
+        "7, 9",
+        "9, 7"
       ],
-      "correct_answer": "₹160",
-      "explanation": "First, find the cost of one apple: ₹100 / 5 apples = ₹20 per apple. Then, multiply the cost per apple by the number of apples: ₹20/apple × 8 apples = ₹160.",
-      "trick": "5 apples cost ₹100, so 1 apple costs ₹20.  8 apples will cost 8 times ₹20, which is ₹160."
+      "correct_answer": "7, 8",
+      "explanation": "The series alternates between subtracting 1 and adding 3.  Alternatively, it's two interleaved series: 2, 4, 6, ? and 1, 3, 5, ?. The first series increases by 2 each time (2, 4, 6, 8). The second series also increases by 2 each time (1, 3, 5, 7).  So the next two numbers are 8 and 7.",
+      "trick": "Notice the pattern of pairs: (2,1), (4,3), (6,5). Each pair has the second number one less than the first. The first numbers of the pairs are increasing by 2 (2, 4, 6). So the next first number is 8. The second number of the pair is one less than the first, so it's 7. Thus, the next pair is (8,7)."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "If a train travels at a speed of 60 kilometers per hour, how far will it travel in 3 hours?",
+      "question": "A car travels 120 miles in 2 hours. What is its average speed in miles per hour?",
       "options": [
-        "150 km",
-        "180 km",
-        "200 km",
-        "240 km"
+        "50 mph",
+        "60 mph",
+        "70 mph",
+        "80 mph"
       ],
-      "correct_answer": "180 km",
-      "explanation": "Distance = Speed × Time.  Speed is 60 km/h and Time is 3 hours. So, Distance = 60 km/h × 3 h = 180 km.",
-      "trick": "Multiplying the speed by the number of hours directly gives the distance."
+      "correct_answer": "60 mph",
+      "explanation": "Speed is calculated as distance divided by time. Speed = 120 miles / 2 hours = 60 miles per hour.",
+      "trick": "Just divide the distance by the time directly."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the sum of the first 5 even numbers starting from 2?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "30",
+      "explanation": "The first 5 even numbers starting from 2 are 2, 4, 6, 8, and 10. Their sum is 2 + 4 + 6 + 8 + 10 = 30.",
+      "trick": "The sum of the first 'n' even numbers is n * (n + 1). Here, n=5, so 5 * (5 + 1) = 5 * 6 = 30."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "Which word does NOT belong with the others?",
+      "question": "If 'A' is the brother of 'B', and 'B' is the sister of 'C', and 'C' is the father of 'D', then how is 'D' related to 'A'?",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "Son",
+        "Daughter",
+        "Nephew",
+        "Niece"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
-      "trick": "Look for the common category. If three items share a characteristic and one does not, that one is the odd one out."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper buys a book for ₹200 and sells it for ₹250. What is his profit percentage?",
-      "options": [
-        "20%",
-        "25%",
-        "30%",
-        "35%"
-      ],
-      "correct_answer": "25%",
-      "explanation": "Profit = Selling Price - Cost Price = ₹250 - ₹200 = ₹50. Profit Percentage = (Profit / Cost Price) × 100 = (₹50 / ₹200) × 100 = (1/4) × 100 = 25%.",
-      "trick": "The profit is ₹50, which is exactly one-fourth of the cost price (₹200). One-fourth is equivalent to 25%."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If 'CAT' is coded as '3120', how would 'DOG' be coded?",
-      "options": [
-        "4157",
-        "4197",
-        "4187",
-        "4167"
-      ],
-      "correct_answer": "4157",
-      "explanation": "Each letter is replaced by its position in the alphabet. C is the 3rd letter, A is the 1st, and T is the 20th. So, CAT becomes 3120. Applying this to DOG: D is the 4th, O is the 15th, and G is the 7th. Thus, DOG becomes 4157.",
-      "trick": "Recognize the pattern of direct alphabetical position mapping. This is a common and straightforward coding method."
+      "correct_answer": "Nephew",
+      "explanation": "1. A is the brother of B. This means A is male. 2. B is the sister of C. This means B is female. 3. C is the father of D. This means C is male. Since A is the brother of B, and B is the sibling of C (as B is sister of C), A is also the sibling of C. If C is the father of D, then A is the uncle of D. The question asks how D is related to A. If A is the uncle of D, then D is either the son or daughter of A's sibling. However, the question is 'how is D related to A'. Since A is the uncle, D is the nephew or niece. The options provided are Son, Daughter, Nephew, Niece. We know A is male (brother). C is the father of D. So A is the uncle of D. Therefore, D is the nephew or niece of A. Out of the given options, Nephew is the correct relationship from D's perspective to A.",
+      "trick": "Visualize the family tree: A (male) - brother - B (female) - sister - C (male) - father - D. A is C's sibling. C is D's father. So A is D's uncle. Thus, D is A's nephew or niece. Since 'Nephew' is an option, it fits the male sibling relationship."
     },
     {
       "category": "Static GK",
@@ -191,46 +191,46 @@
     },
     {
       "category": "Logical Reasoning",
-      "question": "What comes next in the sequence: 2, 4, 8, 16, ...",
+      "question": "If you are in a race and you overtake the person in second place, what position are you in now?",
       "options": [
-        "20",
-        "32",
-        "24",
-        "28"
+        "First",
+        "Second",
+        "Third",
+        "Last"
       ],
-      "correct_answer": "32",
-      "explanation": "Each number in the sequence is double the previous number. 2 * 2 = 4, 4 * 2 = 8, 8 * 2 = 16. So, the next number is 16 * 2 = 32.",
-      "trick": "Look for simple arithmetic operations (addition, subtraction, multiplication, division) between consecutive terms. Doubling is a common pattern."
+      "correct_answer": "Second",
+      "explanation": "If you overtake the person who is in second place, you take their position. Therefore, you are now in second place.",
+      "trick": "Focus on the position being overtaken, not the position you were in before."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a shirt costs $20 and is on sale for 25% off, what is the sale price?",
+      "options": [
+        "$15",
+        "$16",
+        "$18",
+        "$19"
+      ],
+      "correct_answer": "$15",
+      "explanation": "First, calculate the discount amount: 25% of $20 = 0.25 * $20 = $5. Then, subtract the discount from the original price: $20 - $5 = $15.",
+      "trick": "A 25% discount means you pay 75% of the original price. So, 0.75 * $20 = $15."
     },
     {
       "category": "Current Affairs",
       "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
