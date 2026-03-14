@@ -91,7 +91,9 @@ async function fetchCollection(collectionId) {
             const options = parseField(f.options);
             if (!options || !Array.isArray(options) || options.length === 0) continue;
             if (!f.question || !f.correct_answer) continue;
-            if (parseField(f.question).toLowerCase().includes('template')) continue;
+if (parseField(f.question).toLowerCase().includes('template')) continue;
+            if ((parseField(f.explanation) || '').toLowerCase().includes('template')) continue;
+            if ((parseField(f.correct_answer) || '').toLowerCase() === 'calculated') continue;
             parsed.push({
                 id: parseField(f.id) || 'N/A',
                 category: parseField(f.category) || collectionId,
@@ -127,12 +129,23 @@ async function startGame() {
         const picks = [6, 6, 3, 3];
         quizData = [];
         allChunks.forEach((chunk, i) => {
-            const shuffled = chunk.sort(() => 0.5 - Math.random());
-            quizData.push(...shuffled.slice(0, picks[i]));
+            for (let j = chunk.length - 1; j > 0; j--) {
+                const k = Math.floor(Math.random() * (j + 1));
+                [chunk[j], chunk[k]] = [chunk[k], chunk[j]];
+            }
+            quizData.push(...chunk.slice(0, picks[i]));
         });
 
-        quizData = quizData.sort(() => 0.5 - Math.random());
-
+        const seen = new Set();
+        quizData = quizData.filter(q => {
+            if (seen.has(q.question)) return false;
+            seen.add(q.question);
+            return true;
+        });
+        for (let j = quizData.length - 1; j > 0; j--) {
+            const k = Math.floor(Math.random() * (j + 1));
+            [quizData[j], quizData[k]] = [quizData[k], quizData[j]];
+        }
         if (quizData.length === 0) throw new Error('No questions loaded');
         console.log(`✅ Loaded ${quizData.length} live questions for ${diff}`);
 
