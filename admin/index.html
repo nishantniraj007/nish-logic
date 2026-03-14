@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nish-Logic Admin</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f0f1a; color: #eee; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .screen { display: none; width: 100%; max-width: 700px; padding: 24px; }
+    .screen.active { display: block; }
+    h1 { text-align: center; color: #7c6af7; margin-bottom: 24px; font-size: 1.8rem; }
+    h2 { color: #a89fff; margin-bottom: 16px; font-size: 1.2rem; }
+    .card { background: #1a1a2e; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+    button { cursor: pointer; border: none; border-radius: 8px; font-size: 1rem; padding: 12px 24px; transition: 0.2s; }
+    .btn-google { background: #fff; color: #333; display: flex; align-items: center; gap: 10px; margin: 0 auto; font-weight: 600; }
+    .btn-google:hover { background: #f0f0f0; }
+    .btn-primary { background: #7c6af7; color: #fff; width: 100%; margin-top: 12px; }
+    .btn-primary:hover { background: #6a58e0; }
+    .level-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+    .level-btn { background: #2a2a3e; color: #ccc; border: 2px solid transparent; border-radius: 10px; padding: 14px; font-size: 1rem; }
+    .level-btn.selected { border-color: #7c6af7; color: #fff; background: #3a2a5e; }
+    .level-btn:hover { border-color: #a89fff; }
+    .type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+    .type-btn { background: #2a2a3e; color: #ccc; border: 2px solid transparent; border-radius: 10px; padding: 12px; font-size: 0.95rem; }
+    .type-btn.selected { border-color: #f7a26a; color: #fff; background: #3e2a1a; }
+    .type-btn:hover { border-color: #f7c99a; }
+    textarea { width: 100%; height: 200px; background: #0f0f1a; color: #eee; border: 1px solid #444; border-radius: 8px; padding: 12px; font-size: 0.9rem; font-family: monospace; resize: vertical; }
+    .target-label { text-align: center; font-size: 0.95rem; color: #a89fff; margin-bottom: 12px; min-height: 22px; }
+    .status { text-align: center; margin-top: 12px; font-size: 0.9rem; min-height: 20px; }
+    .status.ok { color: #6af7a2; }
+    .status.err { color: #f76a6a; }
+    input[type="password"] { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #444; background: #0f0f1a; color: #eee; font-size: 1rem; margin-bottom: 12px; }
+    .logout { float: right; background: transparent; color: #888; font-size: 0.8rem; border: 1px solid #444; padding: 6px 12px; border-radius: 6px; }
+    .logout:hover { color: #fff; border-color: #888; }
+  </style>
+</head>
+<body>
+
+<div class="screen active" id="screen-login">
+  <div class="card" style="text-align:center;">
+    <h1>🔐 Nish-Logic Admin</h1>
+    <p style="color:#888; margin-bottom:24px;">Sign in with your authorized Google account</p>
+    <button class="btn-google" id="btn-google-login">
+      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20"/> Sign in with Google
+    </button>
+    <p class="status err" id="login-error"></p>
+  </div>
+</div>
+
+<div class="screen" id="screen-password">
+  <div class="card">
+    <h1>🔑 Admin Password</h1>
+    <p style="color:#888; margin-bottom:20px; text-align:center;">Enter the admin password to continue</p>
+    <input type="password" id="admin-password" placeholder="Enter password..." />
+    <button class="btn-primary" id="btn-password-submit">Unlock</button>
+    <p class="status err" id="password-error"></p>
+  </div>
+</div>
+
+<div class="screen" id="screen-admin">
+  <div class="card">
+    <button class="logout" id="btn-logout">Logout</button>
+    <h1>⚡ Admin Panel</h1>
+    <h2>1. Select Level</h2>
+    <div class="level-grid">
+      <button class="level-btn" data-level="e">Easy</button>
+      <button class="level-btn" data-level="m">Medium</button>
+      <button class="level-btn" data-level="s">SSC-Bank</button>
+      <button class="level-btn" data-level="u">UPSC-CAT</button>
+    </div>
+    <h2>2. Select Type</h2>
+    <div class="type-grid">
+      <button class="type-btn" data-type="qa">QA — Quant & Aptitude</button>
+      <button class="type-btn" data-type="lr">LR — Logical Reasoning</button>
+      <button class="type-btn" data-type="sgk">GK — General Knowledge</button>
+      <button class="type-btn" data-type="ca">CA — Current Affairs</button>
+    </div>
+    <div class="target-label" id="target-label">Select level and type to see target collection</div>
+    <h2>3. Paste Questions (Toon Format)</h2>
+    <textarea id="questions-input" placeholder="ca_u_001&#9;UPSC&#9;IR&#9;Question&#9;A, B, C, D&#9;Answer&#9;Explanation"></textarea>
+    <button class="btn-primary" id="btn-sync">⬆ Sync to Firestore</button>
+    <p class="status" id="sync-status"></p>
+  </div>
+</div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
+    from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+  import { getFirestore, collection, doc, setDoc }
+    from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC4LVCOG7sWN3SJS4-ygFeAlfocyBissTY",
+    authDomain: "nish-logic.firebaseapp.com",
+    projectId: "nish-logic",
+    storageBucket: "nish-logic.firebasestorage.app",
+    messagingSenderId: "673867776160",
+    appId: "1:673867776160:web:7d72b4e50c569fb55489c5"
+  };
+
+  const ALLOWED_EMAIL = "nishantneeraj007@gmail.com";
+  const ADMIN_PASSWORD = "nishlogic2024";
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+
+  onAuthStateChanged(auth, user => {
+    if (user && user.email === ALLOWED_EMAIL) {
+      showScreen('screen-password');
+    } else {
+      showScreen('screen-login');
+    }
+  });
+
+  document.getElementById('btn-google-login').onclick = async () => {
+    const provider = new GoogleAuthProvider();
+    try {
+      const result = await signInWithPopup(auth, provider);
+      if (result.user.email !== ALLOWED_EMAIL) {
+        await signOut(auth);
+        document.getElementById('login-error').textContent = '⛔ Unauthorized email.';
+      }
+    } catch(e) {
+      document.getElementById('login-error').textContent = '⛔ Login failed: ' + e.message;
+    }
+  };
+
+  document.getElementById('btn-password-submit').onclick = () => {
+    const val = document.getElementById('admin-password').value;
+    if (val === ADMIN_PASSWORD) {
+      showScreen('screen-admin');
+    } else {
+      document.getElementById('password-error').textContent = '⛔ Wrong password.';
+    }
+  };
+
+  document.getElementById('btn-logout').onclick = async () => {
+    await signOut(auth);
+    showScreen('screen-login');
+  };
+
+  let selectedLevel = null;
+  let selectedType = null;
+
+  document.querySelectorAll('.level-btn').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('.level-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedLevel = btn.dataset.level;
+      updateTargetLabel();
+    };
+  });
+
+  document.querySelectorAll('.type-btn').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedType = btn.dataset.type;
+      updateTargetLabel();
+    };
+  });
+
+  function updateTargetLabel() {
+    if (selectedLevel && selectedType) {
+      const col = selectedType + '_' + selectedLevel;
+      document.getElementById('target-label').textContent = '📦 Target collection: ' + col;
+    }
+  }
+
+  document.getElementById('btn-sync').onclick = async () => {
+    const status = document.getElementById('sync-status');
+    if (!selectedLevel || !selectedType) {
+      status.className = 'status err';
+      status.textContent = '⛔ Select a level and type first.';
+      return;
+    }
+    const raw = document.getElementById('questions-input').value.trim();
+    if (!raw) {
+      status.className = 'status err';
+      status.textContent = '⛔ No questions pasted.';
+      return;
+    }
+    const lines = raw.split('\n').filter(l => l.trim());
+    const colName = selectedType + '_' + selectedLevel;
+    status.className = 'status';
+    status.textContent = '⏳ Syncing...';
+    let saved = 0, failed = 0;
+    for (const line of lines) {
+      const parts = line.split('\t');
+      if (parts.length < 7) { failed++; continue; }
+      const [id, level, topic, question, optionsRaw, answer, explanation] = parts;
+      const options = optionsRaw.split(',').map(o => o.trim());
+      try {
+        await setDoc(doc(collection(db, colName), id.trim()), {
+          id: id.trim(), level, topic, question, options, answer, explanation,
+          createdAt: new Date().toISOString()
+        });
+        saved++;
+      } catch(e) {
+        failed++;
+      }
+    }
+    status.className = saved > 0 ? 'status ok' : 'status err';
+    status.textContent = '✅ Saved: ' + saved + ' | ❌ Failed: ' + failed;
+  };
+</script>
+</body>
+</html>
