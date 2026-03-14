@@ -4,25 +4,12 @@
     "day_index": 4,
     "slot_index": 42,
     "difficulty": "Medium",
-    "generated_at": "2026-03-09T20:03:27.438Z"
+    "generated_at": "2026-03-14T19:39:21.267Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "The average age of three friends A, B, and C is 25 years. If the ratio of their ages is 3:5:7, what is the age of the youngest friend?",
-      "options": [
-        "15 years",
-        "20 years",
-        "25 years",
-        "35 years"
-      ],
-      "correct_answer": "15 years",
-      "explanation": "1.  Calculate the total age of the three friends: Total Age = Average Age × Number of Friends = 25 years × 3 = 75 years.\n2.  Let the ages of A, B, and C be 3x, 5x, and 7x, respectively, based on their ratio.\n3.  The sum of their ages is 3x + 5x + 7x = 15x.\n4.  Equate the sum of ages to the total age: 15x = 75.\n5.  Solve for x: x = 75 / 15 = 5.\n6.  The age of the youngest friend (corresponding to the smallest ratio part) is 3x = 3 × 5 = 15 years.",
-      "trick": "Sum of ratio parts = 3 + 5 + 7 = 15. Total actual sum (total age) = 25 * 3 = 75. Value of one 'part' = Total actual sum / Sum of ratio parts = 75 / 15 = 5. Youngest friend's age = 3 parts = 3 * 5 = 15 years."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -47,147 +34,30 @@
       "trick": ""
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
       "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+      "question": "Choose the word which is least like the others in the group:",
       "options": [
-        "A. His son",
-        "B. His nephew",
-        "C. His father",
-        "D. His uncle"
+        "Lion",
+        "Tiger",
+        "Wolf",
+        "Elephant"
       ],
-      "correct_answer": "A. His son",
-      "explanation": "Let's break down the statement:\n1. 'I have no brother or sister' - This means the man speaking is an only child.\n2. 'my father's son' - Since the man has no brother or sister, 'my father's son' refers to the man himself.\n3. So, the statement becomes: 'that man's father is *me*'.\nTherefore, the man in the photograph is the son of the speaker.",
-      "trick": "Start from the end of the relative clause ('my father's son') and work backward. The 'no brother or sister' clause is crucial for identifying 'my father's son'."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statement: 'Many people have started using personal vehicles to commute to work, leading to increased traffic congestion and air pollution in the city.'\n\nConclusions:\nI. Public transport infrastructure needs significant improvement to encourage people to use it.\nII. The government should impose a congestion tax on personal vehicles during peak hours.",
-      "options": [
-        "A. Only conclusion I follows.",
-        "B. Only conclusion II follows.",
-        "C. Both conclusion I and II follow.",
-        "D. Neither conclusion I nor II follows."
-      ],
-      "correct_answer": "C. Both conclusion I and II follow.",
-      "explanation": "Let's analyze each conclusion based on the given statement:\n\nConclusion I: 'Public transport infrastructure needs significant improvement to encourage people to use it.'\nIf people are increasingly using personal vehicles, it suggests they might find public transport inadequate or inconvenient. Improving public transport could be a way to incentivize its use and reduce reliance on personal vehicles, thereby addressing congestion and pollution. This is a logical step to mitigate the problem.\n\nConclusion II: 'The government should impose a congestion tax on personal vehicles during peak hours.'\nIncreased personal vehicle usage is directly linked to congestion during peak hours. A congestion tax is a common measure designed to discourage the use of personal vehicles during busy periods, thus directly tackling traffic congestion and, indirectly, air pollution. This is also a logical step to mitigate the problem.\n\nBoth conclusions offer valid and logical solutions or inferences based on the problem described in the statement.",
-      "trick": "For 'Statement & Conclusion' questions, evaluate each conclusion independently to see if it is a direct and logical consequence or a reasonable course of action derived from the statement, without introducing external information or assumptions."
+      "correct_answer": "D",
+      "explanation": "Let's categorize the given animals:\nLion: A large carnivorous (meat-eating) mammal, a predator.\nTiger: A large carnivorous (meat-eating) mammal, a predator.\nWolf: A carnivorous (meat-eating) mammal, a predator.\nElephant: A large herbivorous (plant-eating) mammal.\n\nLion, Tiger, and Wolf are all predators and primarily carnivores. Elephant, on the other hand, is a herbivore. Therefore, 'Elephant' is the odd one out.",
+      "trick": "When identifying the odd one out, try to find a common characteristic or category that applies to at least three of the options. The option that does not fit this category is usually the answer. Consider attributes like type (mammal, bird, reptile), diet (carnivore, herbivore, omnivore), habitat, or function."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 10 days, and B can do the same work in 15 days. If they work together, in how many days will they complete the work?",
+      "question": "A father is currently three times as old as his son. In 10 years, the father will be twice as old as his son. What is the current age of the father?",
       "options": [
-        "5 days",
-        "6 days",
-        "8 days",
-        "12.5 days"
+        "A. 30 years",
+        "B. 40 years",
+        "C. 50 years",
+        "D. 60 years"
       ],
-      "correct_answer": "6 days",
-      "explanation": "1.  Calculate the amount of work A can do in one day (A's efficiency): 1/10 of the work.\n2.  Calculate the amount of work B can do in one day (B's efficiency): 1/15 of the work.\n3.  Calculate the combined amount of work A and B can do together in one day:\n    Combined work = (1/10) + (1/15)\n    Find a common denominator (LCM of 10 and 15 is 30):\n    Combined work = (3/30) + (2/30) = 5/30 = 1/6 of the work.\n4.  If they complete 1/6 of the work in one day, they will complete the entire work in 6 days (the reciprocal of 1/6).",
-      "trick": "For two people working together, the time taken is (Time1 × Time2) / (Time1 + Time2). So, (10 × 15) / (10 + 15) = 150 / 25 = 6 days."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A number when multiplied by 5 and then decreased by 13 is 52. What is the number?",
-      "options": [
-        "11",
-        "13",
-        "15",
-        "17"
-      ],
-      "correct_answer": "13",
-      "explanation": "1.  Let the unknown number be 'x'.\n2.  'A number when multiplied by 5' can be written as 5x.\n3.  'and then decreased by 13' means we subtract 13 from 5x, resulting in 5x - 13.\n4.  'is 52' means the expression equals 52: 5x - 13 = 52.\n5.  To solve for x, first add 13 to both sides of the equation: 5x = 52 + 13 => 5x = 65.\n6.  Next, divide both sides by 5: x = 65 / 5 => x = 13.\nTherefore, the number is 13.",
-      "trick": "Work backwards from the result: Start with 52. The last operation was 'decreased by 13', so reverse it by adding 13: 52 + 13 = 65. The operation before that was 'multiplied by 5', so reverse it by dividing by 5: 65 / 5 = 13. The number is 13."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. All pens are pencils.\n2. Some pencils are erasers.\n\nConclusions:\nI. Some pens are erasers.\nII. No pens are erasers.",
-      "options": [
-        "A. Only conclusion I follows.",
-        "B. Only conclusion II follows.",
-        "C. Either conclusion I or II follows.",
-        "D. Neither conclusion I nor II follows."
-      ],
-      "correct_answer": "C. Either conclusion I or II follows.",
-      "explanation": "Let's use Venn diagrams or basic deduction:\nStatement 1: All Pens (P) are Pencils (C). This means P is entirely inside C.\nStatement 2: Some Pencils (C) are Erasers (E). This means there's an overlap between C and E.\n\nNow, let's analyze the conclusions:\nConclusion I: Some pens are erasers. It's possible. The overlap between pencils and erasers might or might not include the pens (which are inside pencils). So, this is 'possibly true' but not 'definitely true'.\nConclusion II: No pens are erasers. It's also possible. The overlap between pencils and erasers might be only with the part of pencils that are not pens. So, this is also 'possibly true' but not 'definitely true'.\n\nSince conclusions I and II are complementary pairs (Some vs No), and both are possible but not certain, the rule is 'Either I or II follows'. They cannot both be false simultaneously if they cover all possibilities for the relationship between Pens and Erasers.",
-      "trick": "When two conclusions are complementary pairs (e.g., 'Some A are B' and 'No A are B'), and individually they are both 'possibly true' but not 'definitely true' based on the given statements, then the answer is 'Either or'."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper sells an item for $240 after giving a 20% discount on its marked price. If he still makes a profit of 20%, what is the cost price of the item?",
-      "options": [
-        "$180",
-        "$200",
-        "$220",
-        "$250"
-      ],
-      "correct_answer": "$200",
-      "explanation": "1.  Let the Selling Price (SP) be $240.\n2.  The shopkeeper makes a 20% profit. This means SP is 120% of the Cost Price (CP).\n    SP = CP + (20% of CP) = 1.20 * CP\n    $240 = 1.20 * CP\n    CP = $240 / 1.20 = $200.\n(Calculating the marked price is not necessary to find the cost price but can be done: $240 is 80% of MP, so MP = $240 / 0.80 = $300.)",
-      "trick": "To find CP from SP with profit: CP = SP / (1 + Profit%). So, CP = 240 / (1 + 0.20) = 240 / 1.2 = $200. You don't need to calculate the marked price unless explicitly asked."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "A. 30 years",
+      "explanation": "Let the current age of the son be 'S' and the current age of the father be 'F'.\nFrom the first statement: F = 3S (Equation 1)\nIn 10 years:\nSon's age will be S + 10\nFather's age will be F + 10\nFrom the second statement: F + 10 = 2(S + 10) (Equation 2)\nSubstitute F = 3S from Equation 1 into Equation 2:\n3S + 10 = 2(S + 10)\n3S + 10 = 2S + 20\n3S - 2S = 20 - 10\nS = 10\nSo, the current age of the son is 10 years.\nUsing Equation 1, the current age of the father F = 3 * 10 = 30 years.",
+      "trick": "You can test the options. If the father is 30 years old (Option A), then the son is 30/3 = 10 years old. In 10 years, the father will be 30+10 = 40 years old, and the son will be 10+10 = 20 years old. Since 40 is twice 20, this option is correct."
     },
     {
       "category": "Static GK",
@@ -201,6 +71,97 @@
       ],
       "explanation": "DB Offline",
       "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper sells an item for $600 after giving a 20% discount on its marked price. What was the original marked price of the item?",
+      "options": [
+        "A. $720",
+        "B. $750",
+        "C. $800",
+        "D. $900"
+      ],
+      "correct_answer": "B. $750",
+      "explanation": "Let the original marked price be 'M'.\nA 20% discount means the selling price is 100% - 20% = 80% of the marked price.\nSo, 80% of M = $600\n0.80 * M = 600\nM = 600 / 0.80\nM = 600 / (8/10)\nM = 600 * (10/8)\nM = 6000 / 8\nM = $750",
+      "trick": "If $600 represents 80% of the marked price, you can find 10% by dividing $600 by 8: $600 / 8 = $75. To find 100%, multiply 10% by 10: $75 * 10 = $750."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A rectangular garden is 20 meters long and 15 meters wide. A path of uniform width 2 meters is built around the garden. What is the area of the path?",
+      "options": [
+        "A. 140 sq m",
+        "B. 156 sq m",
+        "C. 168 sq m",
+        "D. 184 sq m"
+      ],
+      "correct_answer": "B. 156 sq m",
+      "explanation": "1.  Area of the garden (inner rectangle):\n    Length = 20 m, Width = 15 m\n    Area_inner = Length * Width = 20 * 15 = 300 sq m.\n2.  Dimensions of the garden including the path (outer rectangle):\n    The path is 2 meters wide on all sides. So, the length and width increase by 2m on each side (total 4m).\n    New Length = 20 + 2 + 2 = 24 m\n    New Width = 15 + 2 + 2 = 19 m\n3.  Area of the garden including the path (outer rectangle):\n    Area_outer = New Length * New Width = 24 * 19 = 456 sq m.\n4.  Area of the path:\n    Area_path = Area_outer - Area_inner\n    Area_path = 456 - 300 = 156 sq m.",
+      "trick": "Alternatively, you can calculate the area of the path by considering the four strips. Two strips along the length: 2 * (20 m * 2 m) = 80 sq m. Two strips along the width: 2 * (15 m * 2 m) = 60 sq m. And four corner squares: 4 * (2 m * 2 m) = 16 sq m. Total path area = 80 + 60 + 16 = 156 sq m."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All pens are pencils.\n2. Some pencils are erasers.\n\nConclusions:\nA. All pens are erasers.\nB. Some erasers are pens.\nC. Some erasers are pencils.\nD. No pen is an eraser.",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_answer": "C",
+      "explanation": "Let's analyze the statements:\n1. 'All pens are pencils' means the set of pens is a subset of the set of pencils.\n2. 'Some pencils are erasers' means there is an overlap between the set of pencils and the set of erasers.\n\nNow let's evaluate the conclusions:\nA. 'All pens are erasers.' This is not necessarily true. Pens are inside pencils, and only 'some' pencils are erasers. The pens might be in the part of pencils that are not erasers.\nB. 'Some erasers are pens.' This is also not necessarily true for the same reason as A.\nC. 'Some erasers are pencils.' This is a direct logical deduction from 'Some pencils are erasers.' If some pencils are erasers, it automatically implies that some erasers are pencils.\nD. 'No pen is an eraser.' This contradicts the possibility that some pens could also be erasers (if the overlap of pencils and erasers includes pens). Therefore, it cannot be concluded definitely.",
+      "trick": "For syllogism questions, drawing simple Venn diagrams can quickly help visualize the relationships and eliminate incorrect conclusions. Focus on what is DEFINITELY true based on the statements."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "In a certain code, 'APPLE' is written as 'BQQMF'. How is 'GRAPE' written in that code?",
+      "options": [
+        "HSBRF",
+        "HQBRF",
+        "HQBSF",
+        "HRBSF"
+      ],
+      "correct_answer": "A",
+      "explanation": "Let's decode the pattern from 'APPLE' to 'BQQMF':\nA -> B (A + 1 letter)\nP -> Q (P + 1 letter)\nP -> Q (P + 1 letter)\nL -> M (L + 1 letter)\nE -> F (E + 1 letter)\n\nThe rule is to shift each letter one position forward in the English alphabet.\n\nNow apply this rule to 'GRAPE':\nG -> H\nR -> S\nA -> B\nP -> Q\nE -> F\n\nSo, 'GRAPE' is coded as 'HSBRF'.",
+      "trick": "For coding-decoding questions, write down the original word and its coded word vertically to easily compare corresponding letters. Look for shifts (e.g., +1, -1, +2), reversals, or specific letter substitutions. Once you identify the pattern for a few letters, verify it with the rest of the word before applying it to the target word."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Find the next number in the series: 3, 7, 15, 31, 63, ?",
+      "options": [
+        "125",
+        "127",
+        "129",
+        "131"
+      ],
+      "correct_answer": "B",
+      "explanation": "Let's examine the pattern between consecutive numbers:\n7 = 3 * 2 + 1\n15 = 7 * 2 + 1\n31 = 15 * 2 + 1\n63 = 31 * 2 + 1\n\nThe pattern is (previous number * 2) + 1. Applying this to the last number:\nNext number = 63 * 2 + 1 = 126 + 1 = 127.",
+      "trick": "When analyzing number series, first check for simple arithmetic progressions (addition/subtraction). If not, look for multiplication/division patterns. Also, consider patterns involving squares, cubes, or alternating operations. Sometimes, the difference between consecutive terms forms a new recognizable series."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The average of 5 numbers is 30. If one number is removed, the average of the remaining 4 numbers becomes 28. What was the number that was removed?",
+      "options": [
+        "A. 38",
+        "B. 34",
+        "C. 42",
+        "D. 40"
+      ],
+      "correct_answer": "A. 38",
+      "explanation": "1.  Total sum of the 5 numbers:\n    Sum = Average * Number of terms = 30 * 5 = 150.\n2.  Total sum of the remaining 4 numbers:\n    Sum = Average * Number of terms = 28 * 4 = 112.\n3.  The removed number is the difference between the two sums:\n    Removed Number = (Sum of 5 numbers) - (Sum of 4 numbers)\n    Removed Number = 150 - 112 = 38.",
+      "trick": "The average dropped by 2 (from 30 to 28) for the 4 remaining numbers. This means the total sum of these 4 numbers decreased by 4 * 2 = 8 compared to if the average had remained 30. Therefore, the removed number must be 30 (the original average) + 8 (the total drop caused by its removal) = 38."
     },
     {
       "category": "Static GK",
@@ -229,17 +190,56 @@
       "trick": ""
     },
     {
-      "category": "Logical Reasoning",
-      "question": "Find the next number in the series: 2, 6, 12, 20, 30, ?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
       "options": [
-        "A. 40",
-        "B. 42",
-        "C. 44",
-        "D. 46"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "B. 42",
-      "explanation": "Let's find the difference between consecutive numbers:\n6 - 2 = 4\n12 - 6 = 6\n20 - 12 = 8\n30 - 20 = 10\n\nThe pattern of differences is 4, 6, 8, 10. This is an arithmetic progression where each difference increases by 2. The next difference should be 10 + 2 = 12.\nSo, the next number in the series will be 30 + 12 = 42.",
-      "trick": "Look for patterns in the differences between consecutive terms. If the first differences don't reveal a simple pattern, try looking at the differences of the differences (second-order differences)."
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
