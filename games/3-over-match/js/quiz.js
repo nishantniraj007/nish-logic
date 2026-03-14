@@ -91,6 +91,7 @@ async function fetchCollection(collectionId) {
             const options = parseField(f.options);
             if (!options || !Array.isArray(options) || options.length === 0) continue;
             if (!f.question || !f.correct_answer) continue;
+            if (parseField(f.question).toLowerCase().includes('template')) continue;
             parsed.push({
                 id: parseField(f.id) || 'N/A',
                 category: parseField(f.category) || collectionId,
