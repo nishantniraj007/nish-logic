@@ -4,191 +4,9 @@
     "day_index": 4,
     "slot_index": 41,
     "difficulty": "Medium",
-    "generated_at": "2026-03-09T20:02:29.228Z"
+    "generated_at": "2026-03-14T19:18:31.756Z"
   },
   "questions": [
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A father's current age is three times his son's current age. Ten years ago, the father's age was five times his son's age. What is the sum of their current ages?",
-      "options": [
-        "A) 70 years",
-        "B) 75 years",
-        "C) 80 years",
-        "D) 85 years"
-      ],
-      "correct_answer": "C) 80 years",
-      "explanation": "Let the son's current age be 'S' and the father's current age be 'F'.\nFrom the first statement: F = 3S  (Equation 1)\n\nTen years ago:\nSon's age = S - 10\nFather's age = F - 10\nFrom the second statement: F - 10 = 5(S - 10)  (Equation 2)\n\nSubstitute Equation 1 into Equation 2:\n3S - 10 = 5(S - 10)\n3S - 10 = 5S - 50\n50 - 10 = 5S - 3S\n40 = 2S\nS = 20 years (Son's current age)\n\nNow find the father's current age using Equation 1:\nF = 3 * S = 3 * 20 = 60 years (Father's current age)\n\nThe sum of their current ages = F + S = 60 + 20 = 80 years.",
-      "trick": "You can test the options. If the sum is 80 (option C), then possible ages are (20, 60). Check the conditions: 60 = 3 * 20 (True). 10 years ago: son was 10, father was 50. 50 = 5 * 10 (True). Thus, option C is correct."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper sells an item for Rs. 600, making a profit of 20%. What would be the selling price if he wanted to make a profit of 30% on the cost price?",
-      "options": [
-        "A) Rs. 625",
-        "B) Rs. 630",
-        "C) Rs. 650",
-        "D) Rs. 675"
-      ],
-      "correct_answer": "C) Rs. 650",
-      "explanation": "Let the Cost Price (CP) be 'x'.\nSelling Price (SP) = CP + Profit\n600 = x + 0.20x\n600 = 1.20x\nx = 600 / 1.20 = Rs. 500 (This is the Cost Price)\n\nNow, if the shopkeeper wants to make a profit of 30% on the cost price:\nNew Profit = 30% of Rs. 500 = 0.30 * 500 = Rs. 150\nNew Selling Price = CP + New Profit = 500 + 150 = Rs. 650",
-      "trick": "You can use the ratio method: If 120% of CP is Rs. 600, then 130% of CP will be (600 / 120) * 130 = 5 * 130 = Rs. 650."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "The perimeter of a rectangular field is 80 meters. If its length is 25 meters, what is the area of the field?",
-      "options": [
-        "A) 325 sq m",
-        "B) 350 sq m",
-        "C) 375 sq m",
-        "D) 400 sq m"
-      ],
-      "correct_answer": "C) 375 sq m",
-      "explanation": "The formula for the perimeter of a rectangle is P = 2 * (Length + Width).\nGiven: Perimeter (P) = 80 meters, Length (L) = 25 meters.\n\n80 = 2 * (25 + Width)\nDivide both sides by 2:\n40 = 25 + Width\nWidth = 40 - 25\nWidth = 15 meters\n\nThe formula for the area of a rectangle is Area = Length * Width.\nArea = 25 meters * 15 meters\nArea = 375 square meters.",
-      "trick": "Always remember the basic formulas for perimeter and area. Once you find the width, the area calculation is straightforward. No complex tricks needed beyond direct formula application."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A 60-litre mixture contains milk and water in the ratio 2:1. If 10 litres of water are added to the mixture, what will be the new ratio of milk to water?",
-      "options": [
-        "A) 3:2",
-        "B) 4:3",
-        "C) 5:3",
-        "D) 2:1"
-      ],
-      "correct_answer": "B) 4:3",
-      "explanation": "Initial total volume of mixture = 60 litres.\nInitial ratio of milk to water = 2:1.\n\nQuantity of Milk = (2 / (2+1)) * 60 = (2/3) * 60 = 40 litres.\nQuantity of Water = (1 / (2+1)) * 60 = (1/3) * 60 = 20 litres.\n\n10 litres of water are added to the mixture.\nNew Quantity of Milk = 40 litres (remains unchanged).\nNew Quantity of Water = 20 litres + 10 litres = 30 litres.\n\nThe new ratio of milk to water = New Milk : New Water = 40 : 30.\nSimplify the ratio by dividing both numbers by their greatest common divisor (10):\n40/10 : 30/10 = 4 : 3.",
-      "trick": "The key is to identify which component of the mixture remains constant (milk in this case) and which changes. Calculate the initial quantities, adjust the changing component, then form the new ratio."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "All birds can fly. Some birds are eagles. Therefore, which of the following conclusions is logically sound?",
-      "options": [
-        "A) All eagles can fly.",
-        "B) Some eagles can fly.",
-        "C) No eagles can fly.",
-        "D) Flying animals are always birds."
-      ],
-      "correct_answer": "B) Some eagles can fly.",
-      "explanation": "Let's break down the premises:\n1. 'All birds can fly' means that the set of all creatures that can fly includes all birds.\n2. 'Some birds are eagles' means that there is at least one creature that is both a bird and an eagle.\nIf there is at least one creature that is both a bird and an eagle, and all birds can fly, then that particular creature (which is an eagle) must also be able to fly. Thus, 'Some eagles can fly' is a direct and logically sound conclusion. We cannot conclude 'All eagles can fly' because the premises only state 'some birds are eagles', not that 'all eagles are birds'.",
-      "trick": "In syllogism problems, focus strictly on what is stated in the premises. Do not introduce outside knowledge or make assumptions beyond what is explicitly given. Use Venn diagrams if it helps visualize the sets and their relationships."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
-      "options": [
-        "A) 40",
-        "B) 42",
-        "C) 44",
-        "D) 46"
-      ],
-      "correct_answer": "B) 42",
-      "explanation": "Let's find the differences between consecutive terms:\n6 - 2 = 4\n12 - 6 = 6\n20 - 12 = 8\n30 - 20 = 10\nThe differences form a sequence: 4, 6, 8, 10. This is an arithmetic progression where each term increases by 2.\nFollowing this pattern, the next difference should be 10 + 2 = 12.\nTherefore, the next number in the original sequence is 30 + 12 = 42.\nAlternatively, the sequence can be represented by the formula n*(n+1) for n=1, 2, 3, ...\n1*2=2\n2*3=6\n3*4=12\n4*5=20\n5*6=30\nThe next term for n=6 would be 6*7=42.",
-      "trick": "For number sequences, first check for simple arithmetic or geometric progressions. If not evident, calculate the differences between consecutive terms. If those differences form a pattern, you've likely found the rule. Sometimes, looking at products or squares/cubes can also reveal the pattern."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Choose the word which is least like the other words in the group.",
-      "options": [
-        "A) Guitar",
-        "B) Piano",
-        "C) Flute",
-        "D) Violin"
-      ],
-      "correct_answer": "C) Flute",
-      "explanation": "Let's categorize the given musical instruments:\n-   Guitar: A string instrument.\n-   Piano: A string instrument (hammers strike strings to produce sound).\n-   Flute: A wind instrument (sound produced by air vibrating inside).\n-   Violin: A string instrument.\nAll options except 'Flute' are string instruments. 'Flute' is a wind instrument, making it the odd one out.",
-      "trick": "In 'odd one out' problems, look for a common characteristic or category that applies to most items. The item that doesn't fit this characteristic or belongs to a different primary category is usually the answer."
-    },
     {
       "category": "Static GK",
       "question": "[Fallback GK] Default Question 2?",
@@ -217,7 +35,7 @@
     },
     {
       "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
+      "question": "[Fallback CA] Default News 1?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -230,16 +48,198 @@
     },
     {
       "category": "Logical Reasoning",
-      "question": "Read the following statements and determine which conclusion(s) logically follow.\n\nStatements:\n1. All cars are vehicles.\n2. Some vehicles are trucks.\n\nConclusions:\nI. Some trucks are cars.\nII. All vehicles are cars.",
+      "question": "Find the next term in the series: 3, 7, 15, 31, 63, ?",
       "options": [
-        "A) Only conclusion I follows.",
-        "B) Only conclusion II follows.",
-        "C) Both I and II follow.",
-        "D) Neither I nor II follows."
+        "125",
+        "127",
+        "129",
+        "131"
       ],
-      "correct_answer": "D) Neither I nor II follows.",
-      "explanation": "Let's analyze each conclusion:\n\nConclusion I: 'Some trucks are cars.'\nFrom statement 1, we know that the set of 'Cars' is a subset of 'Vehicles'.\nFrom statement 2, we know that there is an overlap between 'Vehicles' and 'Trucks'.\nHowever, this overlap between 'Vehicles' and 'Trucks' might be entirely outside the 'Cars' subset. For example, there could be vehicles (like buses) that are trucks, but are not cars. Therefore, we cannot definitively conclude that 'Some trucks are cars'.\n\nConclusion II: 'All vehicles are cars.'\nStatement 1 says 'All cars are vehicles', which means 'Cars' are a type of 'Vehicle'. It does not mean that 'Vehicles' are a type of 'Car'. There can be many types of vehicles (e.g., motorcycles, buses) that are not cars. Therefore, this conclusion does not follow.",
-      "trick": "To test the validity of a conclusion, try to find a scenario where the statements are true but the conclusion is false. If you can find such a counter-example, the conclusion does not logically follow. Avoid making real-world assumptions that are not explicitly stated in the premises."
+      "correct_answer": "127",
+      "explanation": "Observe the pattern in the series:\n7 = 3 * 2 + 1\n15 = 7 * 2 + 1\n31 = 15 * 2 + 1\n63 = 31 * 2 + 1\nFollowing this pattern, the next term will be:\n63 * 2 + 1 = 126 + 1 = 127.",
+      "trick": "Alternatively, look at the difference between consecutive terms:\n7 - 3 = 4\n15 - 7 = 8\n31 - 15 = 16\n63 - 31 = 32\nThe differences are powers of 2 (4, 8, 16, 32). The next difference should be 32 * 2 = 64.\nSo, the next term is 63 + 64 = 127."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\n1. All pens are pencils.\n2. All pencils are erasers.\n\nConclusions:\nI. All pens are erasers.\nII. Some erasers are pens.\n\nWhich of the conclusions logically follow from the given statements?",
+      "options": [
+        "Only conclusion I follows",
+        "Only conclusion II follows",
+        "Both conclusion I and II follow",
+        "Neither conclusion I nor II follows"
+      ],
+      "correct_answer": "Both conclusion I and II follow",
+      "explanation": "Let's represent the statements using Venn diagrams or set theory:\nStatement 1: All pens are pencils. (Set of pens is entirely inside the set of pencils).\nStatement 2: All pencils are erasers. (Set of pencils is entirely inside the set of erasers).\n\nFrom these two statements, we can deduce:\n- If all pens are pencils, and all pencils are erasers, then it logically follows that all pens must also be erasers. So, Conclusion I ('All pens are erasers') is true.\n- If all pens are erasers, then it implies that there are some erasers that are pens (specifically, all the erasers that happen to be pens). So, Conclusion II ('Some erasers are pens') is also true.",
+      "trick": "Visualize it as nested containers: if 'Pens' are inside 'Pencils', and 'Pencils' are inside 'Erasers', then 'Pens' must be inside 'Erasers'. Therefore, 'All Pens are Erasers' is true. And if 'All Pens are Erasers', then it automatically means 'Some Erasers are Pens' (the ones that are also Pens)."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A father is currently three times as old as his son. In 10 years, the father will be twice as old as his son. What is the current age of the father?",
+      "options": [
+        "30 years",
+        "40 years",
+        "50 years",
+        "60 years"
+      ],
+      "correct_answer": "30 years",
+      "explanation": "Let the current age of the son be 'S' and the father be 'F'.\nFrom the first statement: F = 3S (Equation 1)\nIn 10 years, the son's age will be S+10 and the father's age will be F+10.\nFrom the second statement: F+10 = 2(S+10)\nF+10 = 2S+20\nF = 2S+10 (Equation 2)\nSubstitute F from Equation 1 into Equation 2:\n3S = 2S+10\nS = 10\nNow, find the father's current age using Equation 1:\nF = 3 * 10 = 30 years.",
+      "trick": "Test the options. If the father is 30, the son is 10. In 10 years, the father will be 40 and the son will be 20. Since 40 is twice 20, this option is correct."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper sells an item for $480 after giving a discount of 20% on its marked price. If he still makes a profit of 20% on the cost price, what is the cost price of the item?",
+      "options": [
+        "$320",
+        "$360",
+        "$400",
+        "$440"
+      ],
+      "correct_answer": "$400",
+      "explanation": "Let the Selling Price (SP) = $480.\nFirst, find the Marked Price (MP).\nSince there is a 20% discount on MP, SP = MP * (1 - 0.20) = 0.80 * MP.\n$480 = 0.80 * MP\nMP = $480 / 0.80 = $600.\n\nNext, find the Cost Price (CP).\nThe shopkeeper makes a profit of 20% on CP, so SP = CP * (1 + 0.20) = 1.20 * CP.\n$480 = 1.20 * CP\nCP = $480 / 1.20 = $400.\nThus, the cost price of the item is $400.",
+      "trick": "Work backward from the selling price. If SP is $480 and profit is 20% on CP, then CP = SP / 1.20 = $480 / 1.2 = $400. The discount information is for finding MP, which is not directly required for CP once SP and profit percentage are known relative to CP."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If 'APPLE' is coded as 'BQQMF', how would 'MANGO' be coded?",
+      "options": [
+        "NBOHP",
+        "NCQGP",
+        "MBOGN",
+        "NBPGO"
+      ],
+      "correct_answer": "NBOHP",
+      "explanation": "Let's analyze the coding pattern for 'APPLE' to 'BQQMF':\nA (1st letter) -> B (2nd letter) = +1 position\nP (16th letter) -> Q (17th letter) = +1 position\nP (16th letter) -> Q (17th letter) = +1 position\nL (12th letter) -> M (13th letter) = +1 position\nE (5th letter) -> F (6th letter) = +1 position\nEach letter in the word is shifted one position forward in the alphabet.\nApplying the same rule to 'MANGO':\nM (+1) -> N\nA (+1) -> B\nN (+1) -> O\nG (+1) -> H\nO (+1) -> P\nThus, 'MANGO' would be coded as 'NBOHP'.",
+      "trick": "Once you identify the simple +1 shift, apply it quickly to each letter of the target word without overthinking. Don't look for complex patterns if a simple one fits perfectly."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The perimeter of a rectangle is 60 cm. If its length is twice its width, what is the area of the rectangle?",
+      "options": [
+        "100 sq cm",
+        "150 sq cm",
+        "200 sq cm",
+        "250 sq cm"
+      ],
+      "correct_answer": "200 sq cm",
+      "explanation": "Let the width of the rectangle be 'W' cm.\nAccording to the problem, the length 'L' is twice its width, so L = 2W cm.\nThe perimeter of a rectangle is given by the formula P = 2(L + W).\nGiven P = 60 cm.\n60 = 2(2W + W)\n60 = 2(3W)\n60 = 6W\nW = 10 cm.\nNow, find the length:\nL = 2 * 10 = 20 cm.\nThe area of the rectangle is given by the formula A = L * W.\nA = 20 cm * 10 cm = 200 sq cm.",
+      "trick": "Once you find W=10 and L=20, quickly verify the perimeter: 2*(10+20) = 2*30 = 60 cm (correct). Then calculate area: 10*20 = 200 sq cm."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+      "options": [
+        "His son",
+        "His father",
+        "His nephew",
+        "His uncle"
+      ],
+      "correct_answer": "His son",
+      "explanation": "Let's break down the statement:\n1. 'I have no brother or sister': This means the man speaking is an only child.\n2. 'my father's son': Since the man is an only child, his father's son can only be himself.\n3. Combining these, the statement becomes 'that man's father is myself'.\nIf the man in the photograph's father is the speaker himself, then the man in the photograph must be the speaker's son.",
+      "trick": "Start from the innermost or most self-referential part of the statement. 'My father's son' is key. If the speaker has no siblings, then 'my father's son' can only refer to the speaker himself. This simplifies the relationship significantly."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The average of 5 numbers is 30. If one number is excluded, the average of the remaining 4 numbers becomes 28. What is the excluded number?",
+      "options": [
+        "38",
+        "32",
+        "40",
+        "42"
+      ],
+      "correct_answer": "38",
+      "explanation": "The sum of 5 numbers = Average * Number of terms\nSum of 5 numbers = 30 * 5 = 150.\n\nAfter excluding one number, there are 4 numbers remaining.\nThe average of the remaining 4 numbers = 28.\nSum of the remaining 4 numbers = Average * Number of terms\nSum of 4 numbers = 28 * 4 = 112.\n\nThe excluded number = (Sum of 5 numbers) - (Sum of 4 numbers)\nExcluded number = 150 - 112 = 38.",
+      "trick": "This problem is straightforward enough that direct calculation is often the fastest method. No complex trick is significantly faster than the two-step sum calculation."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
