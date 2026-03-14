@@ -2,9 +2,22 @@
   "metadata": {
     "batch_index": 0,
     "type": "Clone (Internal Logic)",
-    "generated_at": "2026-03-14T06:53:58.540Z"
+    "generated_at": "2026-03-14T09:38:11.482Z"
   },
   "questions": [
+    {
+      "question": "The average of 1 numbers is 2. What is their sum?",
+      "options": [
+        "2",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "2",
+      "explanation": "Sum = Average * Count",
+      "trick": "Multiply average by the total numbers.",
+      "category": "Quantitative Aptitude"
+    },
     {
       "question": "Find the missing number in the series: 1, 2, 4, ?",
       "options": [
@@ -33,7 +46,7 @@
     },
     {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #9?",
+      "question": "[INTERNAL] Supplementary review question #11?",
       "options": [
         "Option A",
         "Option B",
@@ -43,84 +56,6 @@
       "correct_answer": "Option A",
       "explanation": "Review based on session difficulty.",
       "trick": ""
-    },
-    {
-      "question": "The average of 1 numbers is 2. What is their sum?",
-      "options": [
-        "2",
-        "2",
-        "3",
-        "4"
-      ],
-      "correct_answer": "2",
-      "explanation": "Sum = Average * Count",
-      "trick": "Multiply average by the total numbers.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #13?",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D"
-      ],
-      "correct_answer": "Option A",
-      "explanation": "Review based on session difficulty.",
-      "trick": ""
-    },
-    {
-      "question": "Find the missing number in the series: 1, 2, 4, ?",
-      "options": [
-        "8",
-        "6",
-        "10",
-        "12"
-      ],
-      "correct_answer": "8",
-      "explanation": "Each number is multiplied by 2.",
-      "trick": "Check common ratio/difference.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #12?",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D"
-      ],
-      "correct_answer": "Option A",
-      "explanation": "Review based on session difficulty.",
-      "trick": ""
-    },
-    {
-      "question": "The average of 1 numbers is 2. What is their sum?",
-      "options": [
-        "2",
-        "2",
-        "3",
-        "4"
-      ],
-      "correct_answer": "2",
-      "explanation": "Sum = Average * Count",
-      "trick": "Multiply average by the total numbers.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If 'APPLE' is coded as 'BQQMF', what is 'ORANGE' coded as?",
-      "options": [
-        "PSBOHF",
-        "PSBOGE",
-        "QSCOHF",
-        "PTBPIF"
-      ],
-      "correct_answer": "PSBOHF",
-      "explanation": "Each letter is replaced by the next letter in the alphabet.",
-      "trick": "Shift each character by +1.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "If 'APPLE' is coded as 'BQQMF', what is 'ORANGE' coded as?",
@@ -149,8 +84,34 @@
       "trick": ""
     },
     {
+      "question": "If 'APPLE' is coded as 'BQQMF', what is 'ORANGE' coded as?",
+      "options": [
+        "PSBOHF",
+        "PSBOGE",
+        "QSCOHF",
+        "PTBPIF"
+      ],
+      "correct_answer": "PSBOHF",
+      "explanation": "Each letter is replaced by the next letter in the alphabet.",
+      "trick": "Shift each character by +1.",
+      "category": "Logical Reasoning"
+    },
+    {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #17?",
+      "question": "[INTERNAL] Supplementary review question #13?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct_answer": "Option A",
+      "explanation": "Review based on session difficulty.",
+      "trick": ""
+    },
+    {
+      "category": "General Awareness",
+      "question": "[INTERNAL] Supplementary review question #9?",
       "options": [
         "Option A",
         "Option B",
@@ -176,7 +137,7 @@
     },
     {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #18?",
+      "question": "[INTERNAL] Supplementary review question #12?",
       "options": [
         "Option A",
         "Option B",
@@ -202,7 +163,7 @@
     },
     {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #11?",
+      "question": "[INTERNAL] Supplementary review question #10?",
       "options": [
         "Option A",
         "Option B",
@@ -215,7 +176,20 @@
     },
     {
       "category": "General Awareness",
-      "question": "[INTERNAL] Supplementary review question #10?",
+      "question": "[INTERNAL] Supplementary review question #17?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct_answer": "Option A",
+      "explanation": "Review based on session difficulty.",
+      "trick": ""
+    },
+    {
+      "category": "General Awareness",
+      "question": "[INTERNAL] Supplementary review question #18?",
       "options": [
         "Option A",
         "Option B",
@@ -238,6 +212,32 @@
       "explanation": "SP = CP * (100 + Gain%) / 100",
       "trick": "Directly add gain% to 100 for base $100.",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "The average of 1 numbers is 2. What is their sum?",
+      "options": [
+        "2",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "2",
+      "explanation": "Sum = Average * Count",
+      "trick": "Multiply average by the total numbers.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the missing number in the series: 1, 2, 4, ?",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "12"
+      ],
+      "correct_answer": "8",
+      "explanation": "Each number is multiplied by 2.",
+      "trick": "Check common ratio/difference.",
+      "category": "Logical Reasoning"
     }
   ]
 }
