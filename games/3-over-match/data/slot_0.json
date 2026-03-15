@@ -4,207 +4,12 @@
     "day_index": 0,
     "slot_index": 0,
     "difficulty": "Medium",
-    "generated_at": "2026-03-10T20:02:08.207Z"
+    "generated_at": "2026-03-15T19:07:10.549Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an item 20% above its cost price. He then offers a discount of 10% on the marked price. What is his profit percentage?",
-      "options": [
-        "A) 8%",
-        "B) 10%",
-        "C) 12%",
-        "D) 15%"
-      ],
-      "correct_answer": "A) 8%",
-      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 20% of CP = 100 + (0.20 * 100) = 100 + 20 = Rs. 120.\nDiscount = 10% of MP = 0.10 * 120 = Rs. 12.\nSelling Price (SP) = MP - Discount = 120 - 12 = Rs. 108.\nProfit = SP - CP = 108 - 100 = Rs. 8.\nProfit Percentage = (Profit / CP) * 100 = (8 / 100) * 100 = 8%.",
-      "trick": "Use the successive percentage change formula: a + b + (ab/100). Here, 'a' is the markup (+20%) and 'b' is the discount (-10%).\nProfit % = 20 + (-10) + (20 * -10 / 100) = 10 + (-200 / 100) = 10 - 2 = 8%."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man says, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
-      "options": [
-        "A. His son",
-        "B. His father",
-        "C. His nephew",
-        "D. His uncle"
-      ],
-      "correct_answer": "A. His son",
-      "explanation": "Let's break down the statement:\n1. 'I have no brother or sister' means the man speaking is an only child.\n2. 'my father's son' – Since the speaker has no brother, his father's son must be himself.\n3. Substituting this into the main statement: 'that man's father is myself'.\nTherefore, the man in the photograph is the speaker's son.",
-      "trick": "Start from the end of the relative clause ('my father's son') and substitute it with the direct relation to the speaker. Then work backwards through the sentence."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 10 days, and B can do the same work in 15 days. If they work together, in how many days will they complete the work?",
-      "options": [
-        "A) 5 days",
-        "B) 6 days",
-        "C) 7.5 days",
-        "D) 8 days"
-      ],
-      "correct_answer": "B) 6 days",
-      "explanation": "A's one day work = 1/10 of the total work.\nB's one day work = 1/15 of the total work.\nIf they work together, their combined one day work = (1/10) + (1/15).\nTo add fractions, find a common denominator, which is 30.\n(3/30) + (2/30) = 5/30 = 1/6 of the total work.\nIf they complete 1/6 of the work in one day, they will complete the entire work in 6 days.",
-      "trick": "For two people working together, if one takes 'x' days and the other takes 'y' days, the time taken to complete the work together is (x * y) / (x + y) days.\nTime = (10 * 15) / (10 + 15) = 150 / 25 = 6 days."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Five friends A, B, C, D, E are sitting in a row facing North.\n1. B is sitting between A and C.\n2. D is immediately to the right of E.\n3. C is immediately to the left of D.\n\nWho is sitting in the middle of the row?",
-      "options": [
-        "A. A",
-        "B. B",
-        "C. C",
-        "D. D"
-      ],
-      "correct_answer": "C. C",
-      "explanation": "Let's deduce the arrangement step-by-step:\nFrom statement 3: 'C is immediately to the left of D' -> _ C D _\nFrom statement 2: 'D is immediately to the right of E' -> E D. Combining with the previous, we get E C D (wait, this is E D C). Let's re-evaluate. If D is to the right of E, then E D. If C is to the left of D, then C must be before D. So, E D C is incorrect. It should be E C D. No, C is left of D, so C D. D is right of E, so E D. Therefore, E C D is wrong. It should be E D C. No, it is E C D.\n\nLet's restart the arrangement:\n1. C is immediately to the left of D. This means the sequence is `CD`.\n2. D is immediately to the right of E. This means the sequence is `ED`. Combining with `CD`, we get `ECD`. (E is to the left of C, C is to the left of D).\n3. B is sitting between A and C. This means `ABC` or `CBA`. Since we have `ECD`, and C is present, we must fit A and B around C.\n\nLet's combine `ECD` and `ABC`.\nIf we have `ECD`, and B is between A and C, then `A B C D E` is the only way to fit all conditions.\nLet's verify:\n- B is between A and C: Yes (A B C)\n- D is immediately to the right of E: Yes (E D)\n- C is immediately to the left of D: Yes (C D)\n\nThe complete arrangement is A B C D E. With 5 friends, the middle position is the 3rd person. Therefore, C is sitting in the middle.",
-      "trick": "Draw empty slots for the number of people. Place the most restrictive conditions first. Combine segments of the arrangement as you deduce them. For 'A is between B and C', remember it could be BCA or ACB. For 'A is to the left of B', it means A...B. For 'A is immediately to the left of B', it means AB."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "The sum of two numbers is 30 and their difference is 10. What is the product of the two numbers?",
-      "options": [
-        "A) 150",
-        "B) 200",
-        "C) 250",
-        "D) 300"
-      ],
-      "correct_answer": "B) 200",
-      "explanation": "Let the two numbers be x and y.\nGiven: x + y = 30 (Equation 1)\nGiven: x - y = 10 (Equation 2)\nAdd Equation 1 and Equation 2:\n(x + y) + (x - y) = 30 + 10\n2x = 40\nx = 40 / 2 = 20\nSubstitute x = 20 into Equation 1:\n20 + y = 30\ny = 30 - 20 = 10\nThe two numbers are 20 and 10.\nProduct of the numbers = x * y = 20 * 10 = 200.",
-      "trick": "If the sum (S) and difference (D) of two numbers are known, the numbers are (S+D)/2 and (S-D)/2.\nFirst number = (30 + 10) / 2 = 40 / 2 = 20.\nSecond number = (30 - 10) / 2 = 20 / 2 = 10.\nProduct = 20 * 10 = 200."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If the radius of a circle is increased by 50%, what is the percentage increase in its area?",
-      "options": [
-        "A) 25%",
-        "B) 50%",
-        "C) 100%",
-        "D) 125%"
-      ],
-      "correct_answer": "D) 125%",
-      "explanation": "Let the original radius be 'r'.\nOriginal Area (A1) = πr².\nIf the radius is increased by 50%, the new radius (r') = r + 0.50r = 1.5r.\nNew Area (A2) = π(r')² = π(1.5r)² = π(2.25r²) = 2.25πr².\nIncrease in Area = A2 - A1 = 2.25πr² - πr² = 1.25πr².\nPercentage Increase = (Increase in Area / Original Area) * 100\n= (1.25πr² / πr²) * 100 = 1.25 * 100 = 125%.",
-      "trick": "For percentage change in area of a circle (or square) when its radius (or side) is changed by P%, the percentage change in area is given by the formula (2P + P²/100)%.\nHere, P = 50%.\nPercentage Increase = (2 * 50 + 50² / 100)% = (100 + 2500 / 100)% = (100 + 25)% = 125%."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Read the following statements and choose the conclusion that logically follows:\n\nStatements:\n1. All books are papers.\n2. Some papers are pens.",
-      "options": [
-        "A. All books are pens.",
-        "B. Some books are pens.",
-        "C. No book is a pen.",
-        "D. No definite conclusion can be drawn."
-      ],
-      "correct_answer": "D. No definite conclusion can be drawn.",
-      "explanation": "From statement 1, 'All books are papers', we know that books are a subset of papers. From statement 2, 'Some papers are pens', we know there's an overlap between papers and pens. However, this overlap might be with the papers that are not books, or it might include some papers that are also books. There is no direct link established between 'books' and 'pens' that allows for a definite conclusion about their relationship. Therefore, no definite conclusion can be drawn.",
-      "trick": "Visualize with Venn diagrams. Draw 'Books' completely inside 'Papers'. Then draw 'Pens' overlapping with 'Papers'. The overlap of 'Pens' and 'Papers' might or might not include the 'Books' circle. Since it's not guaranteed, no definite conclusion can be made."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
       "category": "Current Affairs",
       "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What will come in place of the question mark (?) in the following series?\n2, 5, 10, 17, 26, ?",
-      "options": [
-        "A. 35",
-        "B. 36",
-        "C. 37",
-        "D. 38"
-      ],
-      "correct_answer": "C. 37",
-      "explanation": "Let's find the difference between consecutive terms:\n5 - 2 = 3\n10 - 5 = 5\n17 - 10 = 7\n26 - 17 = 9\n\nThe differences are consecutive odd numbers: 3, 5, 7, 9. The next difference in this sequence should be 11.\nSo, the next term in the series will be 26 + 11 = 37.",
-      "trick": "Look for patterns in the differences between consecutive numbers. If the first set of differences doesn't reveal a pattern, look at the differences of those differences (second-order differences). Another common trick for this type of series is n^2 + 1 (1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26, so 6^2+1=37)."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -229,8 +34,203 @@
       "trick": ""
     },
     {
+      "category": "Logical Reasoning",
+      "question": "Statements: All pens are pencils. Some pencils are erasers.\nConclusions: \nI. Some pens are erasers.\nII. No pen is an eraser.",
+      "options": [
+        "A. Only conclusion I follows.",
+        "B. Only conclusion II follows.",
+        "C. Either I or II follows.",
+        "D. Neither I nor II follows."
+      ],
+      "correct_answer": "C. Either I or II follows.",
+      "explanation": "Let's analyze the statements using Venn diagrams or logical deduction:\n1.  **All pens are pencils:** This means the set of 'pens' is entirely contained within the set of 'pencils'.\n2.  **Some pencils are erasers:** This means there is an overlap between the set of 'pencils' and the set of 'erasers'.\n\nNow, let's evaluate the conclusions:\n*   **Conclusion I: Some pens are erasers.** It is possible that the 'erasers' that overlap with 'pencils' also overlap with the 'pens' (which are inside 'pencils'). However, it's also possible that the 'erasers' only overlap with the 'pencils' that are *not* pens. So, Conclusion I is possible but not definite.\n*   **Conclusion II: No pen is an eraser.** This means there is no overlap between the set of 'pens' and 'erasers'. This is also possible, as explained above (erasers only overlap with non-pen pencils). However, it's also possible that some pens *are* erasers.\n\nSince both conclusions (Some pens are erasers and No pen is an eraser) are individually possible but not definite, and they form a complementary pair (one states an overlap, the other states no overlap) involving the same two elements (pens and erasers), then 'Either I or II follows' is the correct logical deduction. One of them *must* be true, but we can't definitively say which one based on the given statements.",
+      "trick": "For syllogisms involving 'some' and 'no' conclusions on the same two entities, if the premises don't provide a definite link, and both conclusions are individually possible, then the answer is often 'Either/Or' because they cover all possibilities for that relationship."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A can complete a piece of work in 20 days and B can complete the same work in 30 days. They start working together. After 5 days, A leaves the work. In how many days will B complete the remaining work?",
+      "options": [
+        "A) 10 days",
+        "B) 12.5 days",
+        "C) 15 days",
+        "D) 17.5 days"
+      ],
+      "correct_answer": "D) 17.5 days",
+      "explanation": "1. A's 1-day work = 1/20 of the total work.\n2. B's 1-day work = 1/30 of the total work.\n3. (A + B)'s 1-day work = 1/20 + 1/30 = (3 + 2)/60 = 5/60 = 1/12 of the total work.\n4. Work done by (A + B) in 5 days = 5 * (1/12) = 5/12 of the total work.\n5. Remaining work = 1 - 5/12 = 7/12 of the total work.\n6. B completes the remaining work alone. Time taken by B = Remaining Work / B's 1-day work.\n7. Time = (7/12) / (1/30) = (7/12) * 30 = 7 * (30/12) = 7 * (5/2) = 35/2 = 17.5 days.",
+      "trick": "Use the LCM method (Total Work Units):\n1. Assume total work = LCM(20, 30) = 60 units.\n2. A's efficiency = 60 units / 20 days = 3 units/day.\n3. B's efficiency = 60 units / 30 days = 2 units/day.\n4. Combined efficiency (A+B) = 3 + 2 = 5 units/day.\n5. Work done by (A+B) in 5 days = 5 days * 5 units/day = 25 units.\n6. Remaining work = Total Work - Work done = 60 - 25 = 35 units.\n7. B completes the remaining work alone. Time taken by B = Remaining Work / B's efficiency.\n8. Time = 35 units / 2 units/day = 17.5 days."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The ratio of the ages of A and B is 3:5. Ten years ago, the ratio of their ages was 1:2. What is the sum of their current ages?",
+      "options": [
+        "A) 64 years",
+        "B) 72 years",
+        "C) 80 years",
+        "D) 96 years"
+      ],
+      "correct_answer": "C) 80 years",
+      "explanation": "1. Let the current ages of A and B be 3x and 5x respectively.\n2. Ten years ago, their ages were (3x - 10) and (5x - 10).\n3. According to the problem, the ratio of their ages ten years ago was 1:2:\n   (3x - 10) / (5x - 10) = 1/2\n4. Cross-multiply: 2 * (3x - 10) = 1 * (5x - 10)\n5. 6x - 20 = 5x - 10\n6. 6x - 5x = 20 - 10\n7. x = 10\n8. Current age of A = 3x = 3 * 10 = 30 years.\n9. Current age of B = 5x = 5 * 10 = 50 years.\n10. Sum of their current ages = 30 + 50 = 80 years.",
+      "trick": "Current ratio A:B = 3:5. Ratio 10 years ago A:B = 1:2.\nTo make the difference between ratio parts consistent, find the difference in present ratio (5-3=2) and past ratio (2-1=1). Multiply the past ratio by 2 to match the difference: 1:2 becomes 2:4.\nNow, Current ratio = 3:5, Past ratio = 2:4.\nThe difference in parts for A (3-2=1 unit) and for B (5-4=1 unit) is consistent. This 1 unit corresponds to 10 years (the time difference).\nSo, 1 unit = 10 years.\nCurrent age of A = 3 units = 3 * 10 = 30 years.\nCurrent age of B = 5 units = 5 * 10 = 50 years.\nSum of current ages = 30 + 50 = 80 years."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Six friends A, B, C, D, E, F are sitting in a circle facing the center. B is to the left of D. C is between E and F. A is to the right of E. Which of the following pairs has the first person sitting to the immediate left of the second person?",
+      "options": [
+        "A. F, C",
+        "B. B, A",
+        "C. D, B",
+        "D. E, A"
+      ],
+      "correct_answer": "D. E, A",
+      "explanation": "Let's deduce the seating arrangement step-by-step for a circular table, assuming everyone is facing the center (left is anti-clockwise, right is clockwise):\n\n1.  **B is to the left of D.** (Let's place D, then B is immediately anti-clockwise from D).\n    _ D _\n   /     \\\n  B       _\n   \\     /\n    _ _ _\n\n2.  **C is between E and F.** This means the sequence is E-C-F or F-C-E.\n\n3.  **A is to the right of E.** This means E is immediately to the left of A (E-A).\n\nCombining (2) and (3): Since A is to the right of E, and C is between E and F, the only way these pieces fit together is in the sequence F-C-E-A (anti-clockwise) or A-E-C-F (clockwise).\n\nLet's try to fit these into the circle with B and D. We have the block (F-C-E-A) and two individuals (B, D).\n\nLet's arrange them clockwise:\nPlace D. B is to its left (anti-clockwise).\n\n  (D)\n /   \\\n(B)   (F)\n |     |\n(A)   (C)\n \\   /\n  (E)\n\nClockwise order: D, F, C, E, A, B\nAnti-clockwise order: D, B, A, E, C, F\n\nLet's verify the conditions with the clockwise order (D, F, C, E, A, B):\n*   **B is to the left of D:** Yes, B is anti-clockwise from D.\n*   **C is between E and F:** Yes, C is between E and F in the clockwise sequence.\n*   **A is to the right of E:** Yes, A is clockwise from E.\n\nNow, let's check the options for the pair where the first person is to the immediate left of the second person (i.e., the first person is anti-clockwise from the second):\n*   **A. F, C:** Is F to the left of C? No, C is to the left of F.\n*   **B. B, A:** Is B to the left of A? No, A is to the left of B.\n*   **C. D, B:** Is D to the left of B? No, B is to the left of D.\n*   **D. E, A:** Is E to the left of A? Yes, E is immediately anti-clockwise from A.\n\nThus, E is to the immediate left of A.",
+      "trick": "For circular arrangements, draw a circle and mark positions. Use arrows for left/right. Combine conditions that form 'blocks' of people (like E-C-F and E-A forming F-C-E-A or A-E-C-F). Start placing the most restrictive conditions first. Remember: 'Left' is anti-clockwise and 'Right' is clockwise when facing the center."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "The sum of two numbers is 60 and their difference is 12. What is the product of the two numbers?",
+      "options": [
+        "A) 720",
+        "B) 864",
+        "C) 900",
+        "D) 1080"
+      ],
+      "correct_answer": "B) 864",
+      "explanation": "1. Let the two numbers be x and y.\n2. Given: x + y = 60 (Equation 1)\n3. Given: x - y = 12 (Equation 2)\n4. Add Equation 1 and Equation 2: (x + y) + (x - y) = 60 + 12 => 2x = 72 => x = 36.\n5. Substitute x = 36 into Equation 1: 36 + y = 60 => y = 60 - 36 => y = 24.\n6. The product of the two numbers = x * y = 36 * 24 = 864.",
+      "trick": "For two numbers with sum 'S' and difference 'D':\nLarger number = (S + D) / 2\nSmaller number = (S - D) / 2\nHere, S = 60, D = 12.\nLarger number = (60 + 12) / 2 = 72 / 2 = 36.\nSmaller number = (60 - 12) / 2 = 48 / 2 = 24.\nProduct = 36 * 24 = 864."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Pointing to a photograph, a man says, \"I have no brother or sister, but that man's father is my father's son.\" Whose photograph is it?",
+      "options": [
+        "A. His own",
+        "B. His son's",
+        "C. His father's",
+        "D. His nephew's"
+      ],
+      "correct_answer": "B. His son's",
+      "explanation": "Let's break down the statement from the man's perspective:\n1.  **\"I have no brother or sister\"**: This means the man is an only child.\n2.  **\"my father's son\"**: Since the man is an only child, his father's only son must be *himself*.\n\nNow substitute this back into the main statement:\n*   \"that man's father is *myself*.\"\n\nIf the man in the photograph has the speaker (the man pointing) as his father, then the man in the photograph must be the speaker's son.",
+      "trick": "In blood relation puzzles, start by identifying the speaker and simplifying phrases like 'my father's son' or 'my mother's only daughter' based on the speaker's family structure. Then, substitute the simplified phrase back into the main sentence."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper sells an article for ₹480, making a profit of 20%. What would be the profit percentage if he sold it for ₹520?",
+      "options": [
+        "A) 25%",
+        "B) 30%",
+        "C) 32.5%",
+        "D) 35%"
+      ],
+      "correct_answer": "B) 30%",
+      "explanation": "1. Let the Cost Price (CP) be 'x'.\n2. Selling Price (SP1) = ₹480, Profit = 20%.\n3. SP1 = CP + 20% of CP = 1.20 * CP.\n4. 480 = 1.20 * CP => CP = 480 / 1.20 = ₹400.\n5. New Selling Price (SP2) = ₹520.\n6. New Profit = SP2 - CP = 520 - 400 = ₹120.\n7. New Profit Percentage = (New Profit / CP) * 100 = (120 / 400) * 100 = (12/40) * 100 = (3/10) * 100 = 30%.",
+      "trick": "Since 20% profit means SP is 120% of CP. So, 120% of CP = ₹480. This implies 1% of CP = ₹4. Therefore, CP = 100 * ₹4 = ₹400. For a selling price of ₹520, the profit is ₹520 - ₹400 = ₹120. The profit percentage is (120/400) * 100 = 30%."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
       "category": "Static GK",
       "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Find the next term in the series: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "A. 40",
+        "B. 42",
+        "C. 44",
+        "D. 46"
+      ],
+      "correct_answer": "B. 42",
+      "explanation": "Let's find the differences between consecutive terms:\n*   6 - 2 = 4\n*   12 - 6 = 6\n*   20 - 12 = 8\n*   30 - 20 = 10\n\nThe pattern of differences is an arithmetic progression: 4, 6, 8, 10. Each difference is increasing by 2.\nFollowing this pattern, the next difference should be 10 + 2 = 12.\nTherefore, the next term in the series will be 30 + 12 = 42.",
+      "trick": "When analyzing number series, always look for patterns in the differences between consecutive terms first. If the first level of differences doesn't reveal a clear pattern, check the differences of those differences (second-level differences), and so on."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
