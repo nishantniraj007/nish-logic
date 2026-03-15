@@ -4,38 +4,77 @@
     "day_index": 0,
     "slot_index": 3,
     "difficulty": "Easy",
-    "generated_at": "2026-03-10T21:00:20.198Z"
+    "generated_at": "2026-03-15T19:50:19.450Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "If a shirt costs $40 and is on sale for 10% off, what is the sale price?",
+      "category": "Logical Reasoning",
+      "question": "Sarah is taller than John. John is taller than Emily. Who is the shortest?",
       "options": [
-        "$30",
-        "$32",
-        "$36",
-        "$44"
+        "Sarah",
+        "John",
+        "Emily",
+        "Cannot be determined"
       ],
-      "correct_answer": "$36",
-      "explanation": "First, calculate the amount of the discount. 10% of $40 is (10/100) * $40 = $4. Then, subtract the discount from the original price: $40 - $4 = $36.",
-      "trick": "If there's a 10% discount, you are paying 90% of the original price. Calculate 90% of $40: 0.90 * $40 = $36."
+      "correct_answer": "Emily",
+      "explanation": "From the statements, we can establish an order: Sarah > John > Emily. This means Emily is shorter than John, and John is shorter than Sarah, making Emily the shortest.",
+      "trick": "Write down the relationships as inequalities: S > J and J > E. Combine them: S > J > E."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "If today is Tuesday, what day will it be in 3 days?",
+      "question": "Look at this series: 2, 4, 8, 16, ___. What number should come next?",
       "options": [
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
+        "20",
+        "24",
+        "32",
+        "64"
       ],
-      "correct_answer": "Friday",
-      "explanation": "Starting from Tuesday: 1 day later is Wednesday, 2 days later is Thursday, and 3 days later is Friday.",
-      "trick": "Count on your fingers or mentally: Tuesday + 1 = Wednesday, Tuesday + 2 = Thursday, Tuesday + 3 = Friday."
+      "correct_answer": "32",
+      "explanation": "The pattern is that each number is double the previous number. 2 x 2 = 4, 4 x 2 = 8, 8 x 2 = 16. Therefore, 16 x 2 = 32.",
+      "trick": "Notice the rapid increase. Doubling is a common pattern in simple series."
     },
     {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 2?",
+      "category": "Logical Reasoning",
+      "question": "Which word does NOT belong with the others?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
+      "trick": "Think about the common category each word fits into. The one that doesn't fit is the outlier."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "If all cats are mammals, and all mammals are animals, what can you conclude about cats?",
+      "options": [
+        "All cats are reptiles.",
+        "All cats are birds.",
+        "All cats are animals.",
+        "Some cats are not animals."
+      ],
+      "correct_answer": "All cats are animals.",
+      "explanation": "This is a classic example of a syllogism. If A is a subset of B, and B is a subset of C, then A is a subset of C. In this case, Cats (A) are a subset of Mammals (B), and Mammals (B) are a subset of Animals (C). Therefore, Cats (A) are a subset of Animals (C).",
+      "trick": "Visualize it as nested circles: the smallest circle is 'cats', inside a larger circle 'mammals', which is inside the largest circle 'animals'."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -60,8 +99,8 @@
       "trick": ""
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -71,19 +110,6 @@
       ],
       "explanation": "DB Offline",
       "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A train travels at a speed of 60 kilometers per hour. How long will it take to travel 180 kilometers?",
-      "options": [
-        "2 hours",
-        "3 hours",
-        "4 hours",
-        "5 hours"
-      ],
-      "correct_answer": "3 hours",
-      "explanation": "The formula relating distance, speed, and time is: Time = Distance / Speed. In this case, Distance = 180 km and Speed = 60 km/h. So, Time = 180 km / 60 km/h = 3 hours.",
-      "trick": "Think of it as 'how many 60s fit into 180?' 60 + 60 + 60 = 180, which is 3 times 60. So, it takes 3 hours."
     },
     {
       "category": "Current Affairs",
@@ -99,8 +125,8 @@
       "trick": ""
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -112,17 +138,82 @@
       "trick": ""
     },
     {
-      "category": "Logical Reasoning",
-      "question": "Which word does NOT belong in the following group: Apple, Banana, Carrot, Orange?",
+      "category": "Quantitative Aptitude",
+      "question": "If a rectangle has a length of 8 cm and a width of 5 cm, what is its area?",
       "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
+        "13 sq cm",
+        "40 sq cm",
+        "26 sq cm",
+        "30 sq cm"
       ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
-      "trick": "Look for the common characteristic shared by most items. Three are fruits, one is a vegetable. The outlier is the answer."
+      "correct_answer": "40 sq cm",
+      "explanation": "The area of a rectangle is calculated by multiplying its length and width. Area = Length × Width. So, Area = 8 cm × 5 cm = 40 sq cm.",
+      "trick": "Visualize a grid. An 8x5 grid has 8 rows of 5 squares each (or 5 rows of 8 squares each), totaling 40 squares."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A car travels at a speed of 60 miles per hour. How long will it take to travel 180 miles?",
+      "options": [
+        "2 hours",
+        "3 hours",
+        "1.5 hours",
+        "4 hours"
+      ],
+      "correct_answer": "3 hours",
+      "explanation": "Time = Distance / Speed. So, Time = 180 miles / 60 miles per hour = 3 hours.",
+      "trick": "Think: How many 60s fit into 180? 60 + 60 + 60 = 180, which is 3 times."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the sum of 3/4 and 1/2?",
+      "options": [
+        "5/4",
+        "1",
+        "7/8",
+        "4/6"
+      ],
+      "correct_answer": "5/4",
+      "explanation": "To add fractions, they must have a common denominator. The common denominator for 4 and 2 is 4. So, 1/2 is equivalent to 2/4. Now, add the fractions: 3/4 + 2/4 = 5/4.",
+      "trick": "Think of 1/2 as 2 quarters. So, 3 quarters + 2 quarters equals 5 quarters."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Current Affairs",
@@ -139,107 +230,16 @@
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
+      "question": "If a shirt costs $20 and is on sale for 10% off, what is the sale price?",
       "options": [
-        "25",
-        "50",
-        "75",
-        "100"
+        "$18",
+        "$22",
+        "$19",
+        "$10"
       ],
-      "correct_answer": "50",
-      "explanation": "To find 25% of 200, you can convert the percentage to a decimal by dividing by 100: 25 / 100 = 0.25. Then, multiply this decimal by 200: 0.25 * 200 = 50.",
-      "trick": "25% is the same as 1/4. So, finding 25% of 200 is the same as dividing 200 by 4: 200 / 4 = 50."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much would 15 apples cost?",
-      "options": [
-        "$20",
-        "$25",
-        "$30",
-        "$35"
-      ],
-      "correct_answer": "$30",
-      "explanation": "First, find the cost of one apple. If 5 apples cost $10, then 1 apple costs $10 / 5 = $2. Then, multiply the cost of one apple by 15 to find the cost of 15 apples: $2 * 15 = $30.",
-      "trick": "Recognize that 15 apples is 3 times the quantity of 5 apples. Therefore, the cost will also be 3 times the original cost: $10 * 3 = $30."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Look at this series: 2, 4, 6, 8, ___. What number should come next?",
-      "options": [
-        "9",
-        "10",
-        "11",
-        "12"
-      ],
-      "correct_answer": "10",
-      "explanation": "The series is a sequence of even numbers, increasing by 2 each time. 2 + 2 = 4, 4 + 2 = 6, 6 + 2 = 8. Therefore, 8 + 2 = 10.",
-      "trick": "Identify the pattern. Each number is just 2 more than the previous one. It's simply counting by twos."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If all cats are mammals, and all mammals are animals, then what can we conclude about cats?",
-      "options": [
-        "All cats are not animals",
-        "All cats are animals",
-        "Some cats are animals",
-        "No cats are animals"
-      ],
-      "correct_answer": "All cats are animals",
-      "explanation": "This is a classic syllogism. If A is part of B, and B is part of C, then A must be part of C. Here, cats (A) are mammals (B), and mammals (B) are animals (C). Therefore, cats (A) are animals (C).",
-      "trick": "Visualize it as nested circles. The smallest circle is 'cats', inside a larger circle 'mammals', which is inside the largest circle 'animals'. If something is in the 'cats' circle, it must also be in the 'animals' circle."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "$18",
+      "explanation": "The discount amount is 10% of $20, which is (10/100) * $20 = $2. The sale price is the original price minus the discount: $20 - $2 = $18.",
+      "trick": "Mentally calculate 10% by moving the decimal one place to the left ($2.0). Then subtract this from the original price."
     }
   ]
 }
