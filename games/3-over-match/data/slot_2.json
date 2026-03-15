@@ -4,136 +4,242 @@
     "day_index": 0,
     "slot_index": 2,
     "difficulty": "Medium",
-    "generated_at": "2026-03-10T20:04:00.912Z"
+    "generated_at": "2026-03-15T19:41:09.490Z"
   },
   "questions": [
     {
-      "category": "Logical Reasoning",
-      "question": "Select the option that is related to the third word in the same way as the second word is related to the first word.\nPen : Write :: Knife : ?",
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper buys an article for ₹800 and sells it for ₹1000. What is the profit percentage?",
       "options": [
-        "Cut",
-        "Sharp",
-        "Blade",
-        "Steel"
+        "A) 20%",
+        "B) 25%",
+        "C) 30%",
+        "D) 15%"
       ],
-      "correct_answer": "Cut",
-      "explanation": "The relationship between 'Pen' and 'Write' is that a pen is an instrument used for the action of writing. Similarly, a knife is an instrument used for the action of cutting.",
-      "trick": "Identify the primary function or purpose of the first object. Apply that same type of functional relationship to the third object to find its corresponding action."
+      "correct_answer": "B) 25%",
+      "explanation": "Cost Price (CP) = ₹800\nSelling Price (SP) = ₹1000\nProfit = SP - CP = ₹1000 - ₹800 = ₹200\nProfit Percentage = (Profit / CP) * 100\nProfit Percentage = (200 / 800) * 100 = (1/4) * 100 = 25%",
+      "trick": "The profit is ₹200. ₹200 is 1/4th of the Cost Price ₹800. Therefore, the profit percentage is 25% directly."
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A can do a piece of work in 10 days, and B can do the same work in 15 days. How many days will they take to complete the work if they work together?",
+      "question": "The sum of two numbers is 60. If one number is thrice the other, what are the two numbers?",
+      "options": [
+        "A) 10 and 50",
+        "B) 15 and 45",
+        "C) 20 and 40",
+        "D) 25 and 35"
+      ],
+      "correct_answer": "B) 15 and 45",
+      "explanation": "Let the two numbers be x and y.\nGiven: x + y = 60\nGiven: y = 3x (one number is thrice the other)\nSubstitute y = 3x into the first equation: x + 3x = 60\n4x = 60\nx = 60 / 4\nx = 15\nNow find y: y = 3 * 15 = 45\nSo, the two numbers are 15 and 45.",
+      "trick": "Test the options. For option B, 15 + 45 = 60 (satisfies sum) and 45 = 3 * 15 (satisfies thrice condition). No need for algebraic setup if options are clear."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A can complete a piece of work in 10 days, and B can complete the same work in 15 days. If they work together, in how many days will they complete the work?",
       "options": [
         "A) 5 days",
         "B) 6 days",
-        "C) 7.5 days",
-        "D) 12.5 days"
+        "C) 8 days",
+        "D) 12 days"
       ],
       "correct_answer": "B) 6 days",
-      "explanation": "A's one day's work = 1/10 of the total work.\nB's one day's work = 1/15 of the total work.\n\nWhen they work together, their combined one day's work is:\n1/10 + 1/15\nTo add these fractions, find a common denominator, which is 30.\n= (3/30) + (2/30)\n= 5/30 = 1/6 of the total work.\n\nIf they complete 1/6 of the work in one day, they will take 6 days to complete the entire work.",
-      "trick": "If one person takes 'x' days and another takes 'y' days to complete a work, working together they will take (x * y) / (x + y) days. Here, (10 * 15) / (10 + 15) = 150 / 25 = 6 days."
+      "explanation": "A's one day work = 1/10 of the total work.\nB's one day work = 1/15 of the total work.\nWhen they work together, their combined one day work = (1/10) + (1/15)\nTo add these fractions, find a common denominator, which is 30.\n(3/30) + (2/30) = 5/30 = 1/6 of the total work per day.\nIf they complete 1/6 of the work per day, they will complete the entire work in 6 days.",
+      "trick": "For two people working together, the formula for combined days is (Product of days) / (Sum of days).\n(10 * 15) / (10 + 15) = 150 / 25 = 6 days."
     },
     {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, 'APPLE' is written as 'BQQMF'. How will 'MANGO' be written in that same code language?",
+      "question": "Read the following statements and choose the conclusion that logically follows:\n\nStatements:\n1. All cats are animals.\n2. Some animals are pets.\n\nConclusions:\nI. Some cats are pets.\nII. Some pets are animals.",
       "options": [
-        "NBNHP",
-        "NBPGO",
-        "OCQMP",
-        "MBMHP"
+        "Only conclusion I follows.",
+        "Only conclusion II follows.",
+        "Both conclusion I and II follow.",
+        "Neither conclusion I nor II follows."
       ],
-      "correct_answer": "NBNHP",
-      "explanation": "Let's analyze the coding pattern for 'APPLE' to 'BQQMF':\nEach letter in the original word is shifted forward by one position in the alphabet.\nA (+1) -> B\nP (+1) -> Q\nP (+1) -> Q\nL (+1) -> M\nE (+1) -> F\n\nApplying the same rule to 'MANGO':\nM (+1) -> N\nA (+1) -> B\nN (+1) -> O\nG (+1) -> H\nO (+1) -> P\nSo, 'MANGO' will be coded as 'NBNHP'.",
-      "trick": "Write the original word and its coded form one above the other. Compare each corresponding letter to quickly identify the consistent shift or transformation rule (e.g., +1, -1, reverse, etc.). Apply this rule consistently to the new word."
+      "correct_answer": "Only conclusion II follows.",
+      "explanation": "Let's analyze each conclusion:\nConclusion I: 'Some cats are pets.' From the statements, we know 'All cats are animals' and 'Some animals are pets'. While cats are animals, and some animals are pets, it doesn't necessarily mean that those animals that are pets are also cats. There could be other animals (e.g., dogs) that are pets, and no cats are pets. So, this conclusion does not necessarily follow.\nConclusion II: 'Some pets are animals.' This is a direct conversion of the second statement 'Some animals are pets'. If some animals are pets, it logically follows that some pets are animals. This conclusion definitely follows.\nTherefore, only conclusion II follows.",
+      "trick": "For 'Some A are B', the converse 'Some B are A' is always true. For 'All A are B', 'Some B are A' is also true. Use Venn diagrams to visualize overlapping sets and check for necessary inferences, not just possible ones."
     },
     {
-      "question": "Sample Geography?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Static GK (Geography)"
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "What will come in place of the question mark (?) in the following series?\nB, D, G, K, P, ?",
+      "question": "In a certain code language, if 'APPLE' is coded as 'BQQMF', how would 'GRAPE' be coded in the same language?",
       "options": [
-        "U",
-        "V",
-        "W",
-        "X"
+        "HSBQJ",
+        "HSBQG",
+        "HSBRF",
+        "HSBSF"
       ],
-      "correct_answer": "V",
-      "explanation": "The pattern involves increasing the gap between consecutive letters by 1, starting with a gap of 1 letter.\nB (+1 letter, C) -> D\nD (+2 letters, E, F) -> G\nG (+3 letters, H, I, J) -> K\nK (+4 letters, L, M, N, O) -> P\nP (+5 letters, Q, R, S, T, U) -> V\nTherefore, the next letter is V.",
-      "trick": "Write down the alphabet and mark the letters. Count the number of skipped letters between each term: 1, 2, 3, 4, 5. The next skip should be 6 letters."
+      "correct_answer": "HSBQG",
+      "explanation": "Let's analyze the pattern for 'APPLE' to 'BQQMF':\nA -> B ( +1 position in alphabet)\nP -> Q ( +1 position in alphabet)\nP -> Q ( +1 position in alphabet)\nL -> M ( +1 position in alphabet)\nE -> F ( +1 position in alphabet)\n\nThe pattern is that each letter in the word is shifted one position forward in the alphabet.\n\nApplying this pattern to 'GRAPE':\nG -> H\nR -> S\nA -> B\nP -> Q\nE -> F\n\nSo, 'GRAPE' would be coded as 'HSBQG'.",
+      "trick": "For coding-decoding questions, always write down the given word and its code vertically, letter by letter, to easily spot the transformation (e.g., +1, -1, reverse, skip letters, etc.). If it's not a simple shift, look for patterns like alternating shifts or positional changes."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "Two statements are given followed by two conclusions. You have to consider the statements to be true, even if they seem to be at variance from commonly known facts. You are to decide which of the given conclusions, if any, logically follows from the given statements.\nStatements:\n1. All books are pens.\n2. All pens are papers.\nConclusions:\nI. All books are papers.\nII. Some papers are books.",
+      "question": "Point A is 10m to the North of Point B. Point C is 15m to the East of Point B. Point D is 10m to the South of Point C. In which direction is Point D with respect to Point A?",
       "options": [
-        "Only conclusion I follows",
-        "Only conclusion II follows",
-        "Both conclusions I and II follow",
-        "Neither conclusion I nor II follows"
+        "North-East",
+        "South-East",
+        "South-West",
+        "North-West"
       ],
-      "correct_answer": "Both conclusions I and II follow",
-      "explanation": "Using Venn Diagrams or basic deductive logic:\nFrom Statement 1: All Books are Pens. (The set of Books is entirely contained within the set of Pens).\nFrom Statement 2: All Pens are Papers. (The set of Pens is entirely contained within the set of Papers).\n\nCombining these, it logically follows that the set of Books is also entirely contained within the set of Papers.\n\nConclusion I: 'All books are papers' is therefore true.\nConclusion II: If 'All books are papers' is true, it means that the entire set of books forms a part of the set of papers. This implies that 'Some papers are books' is also true (specifically, those papers that are books).",
-      "trick": "Visualize the relationships using nested circles. If A is inside B, and B is inside C, then A is inside C (Conclusion I). Also, if All A are B, then Some B are A is always true (Conclusion II)."
+      "correct_answer": "South-East",
+      "explanation": "Let's draw a mental map or sketch:\n1. A is 10m North of B. (A is above B)\n2. C is 15m East of B. (C is to the right of B)\n3. D is 10m South of C. (D is below C)\n\nConsider B as the origin (0,0).\nPoint A would be at (0, 10).\nPoint C would be at (15, 0).\nPoint D would be at (15, -10). (Since it's 10m South of C, which is at the same 'y' level as B, but 10m further South).\n\nNow, we need to find the direction of D with respect to A.\nPoint A is at (0, 10).\nPoint D is at (15, -10).\n\nTo go from A to D, you move 15 units to the East (positive x-direction) and 20 units to the South (negative y-direction). Therefore, D is to the South-East of A.",
+      "trick": "Always draw a quick sketch for direction and distance problems. Assign cardinal directions (North=Up, East=Right) and use coordinates if it helps visualize the relative positions. Remember that 'with respect to' means you are standing at the reference point and looking towards the other point."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A shopkeeper sold an item for $1800 at a profit of 20%. What would be his profit or loss percentage if he sold it for $1500?",
+      "question": "What is the area of the largest circle that can be inscribed in a square of side 14 cm? (Use π = 22/7)",
       "options": [
-        "A) 5% Loss",
-        "B) 4% Loss",
-        "C) 2% Profit",
-        "D) No Profit, No Loss"
+        "A) 154 sq cm",
+        "B) 49 sq cm",
+        "C) 196 sq cm",
+        "D) 77 sq cm"
       ],
-      "correct_answer": "D) No Profit, No Loss",
-      "explanation": "First, calculate the Cost Price (CP) of the item.\nGiven Selling Price (SP) = $1800 and Profit = 20%.\nSP = CP * (1 + Profit/100)\n1800 = CP * (1 + 20/100)\n1800 = CP * (1.20)\nCP = 1800 / 1.20 = $1500.\n\nNow, if the item is sold for $1500 (New SP = $1500).\nSince the New SP ($1500) is equal to the CP ($1500), there is no profit and no loss.",
-      "trick": "Recognize that the new selling price is identical to the calculated cost price, directly implying no profit or loss."
+      "correct_answer": "A) 154 sq cm",
+      "explanation": "When a circle is inscribed in a square, the diameter of the circle is equal to the side of the square.\nGiven, side of the square = 14 cm.\nSo, the diameter of the circle (d) = 14 cm.\nThe radius of the circle (r) = d / 2 = 14 / 2 = 7 cm.\nArea of a circle = π * r^2\nArea = (22/7) * (7)^2\nArea = (22/7) * 49\nArea = 22 * 7 = 154 sq cm.",
+      "trick": "Directly recognize that the radius will be half the side of the square (7 cm). Then, quickly calculate 22/7 * 7 * 7 = 22 * 7 = 154. This avoids potential errors in calculation steps."
     },
     {
-      "question": "Sample CA?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Current Affairs"
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "If the side of a square is increased by 20%, by what percentage does its area increase?",
+      "category": "Logical Reasoning",
+      "question": "Find the missing term in the following series:\n3, 7, 13, 21, ?, 43",
       "options": [
-        "A) 20%",
-        "B) 40%",
-        "C) 44%",
-        "D) 144%"
+        "29",
+        "31",
+        "33",
+        "35"
       ],
-      "correct_answer": "C) 44%",
-      "explanation": "Let the original side of the square be 's'.\nOriginal Area = s * s = s².\n\nIf the side is increased by 20%, the new side (s') will be:\ns' = s + 0.20s = 1.20s.\n\nNew Area = s' * s' = (1.20s) * (1.20s) = 1.44s².\n\nPercentage increase in area = ((New Area - Original Area) / Original Area) * 100\n= ((1.44s² - s²) / s²) * 100\n= (0.44s² / s²) * 100\n= 0.44 * 100 = 44%.",
-      "trick": "Use the successive percentage change formula: A + B + (AB/100). Here, both length and width (sides of a square) are increased by 20%. So, 20 + 20 + (20 * 20 / 100) = 40 + (400 / 100) = 40 + 4 = 44%."
+      "correct_answer": "31",
+      "explanation": "Let's find the difference between consecutive terms:\n7 - 3 = 4\n13 - 7 = 6\n21 - 13 = 8\nWe can observe a pattern where the difference increases by 2 each time (4, 6, 8...). Following this pattern, the next difference should be 10.\nSo, the missing term is 21 + 10 = 31.\nTo verify, the next difference after 10 should be 12. So, 31 + 12 = 43, which matches the last term in the series. The pattern holds true.",
+      "trick": "Always look for common differences, ratios, or sequential operations (e.g., add N, then add N+1, then add N+2, etc.) between terms. If the first-level differences don't show a clear pattern, check the differences of the differences (second-level differences)."
     },
     {
-      "category": "Quantitative Aptitude",
-      "question": "The sum of two numbers is 30, and their difference is 6. What is the product of the two numbers?",
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
       "options": [
-        "A) 200",
-        "B) 216",
-        "C) 225",
-        "D) 240"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "B) 216",
-      "explanation": "Let the two numbers be x and y.\nGiven:\n1) x + y = 30\n2) x - y = 6\n\nAdd equation (1) and equation (2):\n(x + y) + (x - y) = 30 + 6\n2x = 36\nx = 18\n\nSubstitute x = 18 into equation (1):\n18 + y = 30\ny = 30 - 18\ny = 12\n\nThe product of the two numbers is x * y = 18 * 12 = 216.",
-      "trick": "For two numbers with sum 'S' and difference 'D', the numbers are (S+D)/2 and (S-D)/2. Here, (30+6)/2 = 18 and (30-6)/2 = 12. Their product is 18 * 12 = 216."
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
