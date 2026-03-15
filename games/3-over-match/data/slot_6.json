@@ -4,113 +4,9 @@
     "day_index": 0,
     "slot_index": 6,
     "difficulty": "SSC/Bank",
-    "generated_at": "2026-03-10T21:45:44.753Z"
+    "generated_at": "2026-03-15T20:50:46.823Z"
   },
   "questions": [
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Statements:\n1. Some fruits are vegetables.\n2. All vegetables are roots.\n3. All roots are healthy.\n\nConclusions:\nI. Some fruits are roots.\nII. Some healthy are vegetables.\nIII. All roots are vegetables.\nIV. All healthy are fruits.\n\nWhich of the following conclusions logically follows from the given statements?",
-      "options": [
-        "A. Only I and II follow",
-        "B. Only I, II and III follow",
-        "C. Only I and III follow",
-        "D. All I, II, III and IV follow"
-      ],
-      "correct_answer": "A. Only I and II follow",
-      "explanation": "Let's analyze each conclusion:\nFrom statement 1 (Some fruits are vegetables) and statement 2 (All vegetables are roots):\nCombining 'Some A are B' and 'All B are C' leads to 'Some A are C'. Thus, 'Some fruits are roots' logically follows. (Conclusion I is TRUE)\n\nFrom statement 2 (All vegetables are roots) and statement 3 (All roots are healthy):\nCombining 'All B are C' and 'All C are D' leads to 'All B are D'. So, 'All vegetables are healthy'.\nIf 'All vegetables are healthy', then by conversion, 'Some healthy are vegetables' logically follows. (Conclusion II is TRUE)\n\nFrom statement 2 (All vegetables are roots):\nIt means that all vegetables are a subset of roots. We cannot conclude that 'All roots are vegetables'. For example, there can be roots that are not vegetables. (Conclusion III is FALSE)\n\nFrom statements 1, 2, and 3:\nWe derived 'Some fruits are healthy'. This means there are some fruits that are healthy, but not necessarily all healthy items are fruits. So, 'All healthy are fruits' does not logically follow. (Conclusion IV is FALSE)\n\nTherefore, only conclusions I and II follow.",
-      "trick": "For syllogism, use Venn diagrams or the A-E-I-O rule. Quickly identify positive/negative and universal/particular statements. For 'Some A are B' and 'All B are C', the conclusion is 'Some A are C'. For 'All B are C', the conversion is 'Some C are B'. This helps quickly validate conclusions like I and II."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "The difference between the compound interest and simple interest on a certain sum at 10% per annum for 2 years is ₹60. Find the sum.",
-      "options": [
-        "A) ₹5000",
-        "B) ₹6000",
-        "C) ₹7000",
-        "D) ₹8000"
-      ],
-      "correct_answer": "B) ₹6000",
-      "explanation": "Let the principal sum be P.\nSimple Interest (SI) for 2 years = (P * R * T) / 100 = (P * 10 * 2) / 100 = 0.2P.\nCompound Interest (CI) for 2 years = P * [(1 + R/100)^T - 1]\n= P * [(1 + 10/100)^2 - 1]\n= P * [(1.1)^2 - 1]\n= P * [1.21 - 1] = 0.21P.\nDifference (CI - SI) = 0.21P - 0.2P = 0.01P.\nGiven difference = ₹60.\nSo, 0.01P = 60.\nP = 60 / 0.01 = 60 * 100 = ₹6000.",
-      "trick": "For 2 years, the difference between Compound Interest (CI) and Simple Interest (SI) is given by the formula:\nDifference = P * (R/100)^2\nGiven Difference = ₹60, R = 10%.\n60 = P * (10/100)^2\n60 = P * (1/10)^2\n60 = P * (1/100)\nP = 60 * 100 = ₹6000."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks up an item by 40% above its cost price. He then offers a discount of 25% on the marked price. If the item is sold for Rs. 1050, what was the cost price of the item?",
-      "options": [
-        "A) Rs. 900",
-        "B) Rs. 1000",
-        "C) Rs. 1100",
-        "D) Rs. 1200"
-      ],
-      "correct_answer": "B) Rs. 1000",
-      "explanation": "Let the Cost Price (CP) be 'x'.\nMarked Price (MP) = CP + 40% of CP = x + 0.40x = 1.40x.\nSelling Price (SP) = MP - 25% of MP = 1.40x - (0.25 * 1.40x) = 1.40x - 0.35x = 1.05x.\nGiven SP = Rs. 1050.\nSo, 1.05x = 1050.\nx = 1050 / 1.05 = 105000 / 105 = 1000.\nThus, the Cost Price is Rs. 1000.",
-      "trick": "Use the successive percentage change formula. If an item is marked up by A% and discounted by B%, the net percentage change (profit/loss) is A - B - (AB/100)%.\nHere, A = 40%, B = 25%.\nNet change = 40 - 25 - (40 * 25 / 100)% = 15 - 10% = 5% profit.\nThis means the Selling Price (SP) is 105% of the Cost Price (CP).\n105% of CP = 1050\nCP = (1050 / 105) * 100 = 10 * 100 = Rs. 1000."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an item 50% above its cost price. He offers a discount of 20% on the marked price. If the profit earned is ₹120, what is the cost price of the item?",
-      "options": [
-        "A) ₹500",
-        "B) ₹600",
-        "C) ₹750",
-        "D) ₹800"
-      ],
-      "correct_answer": "B) ₹600",
-      "explanation": "Let the Cost Price (CP) be ₹C.\nMarked Price (MP) = CP + 50% of CP = C * (1 + 0.50) = 1.5C.\nSelling Price (SP) = MP - 20% of MP = 1.5C * (1 - 0.20) = 1.5C * 0.8 = 1.2C.\nProfit = SP - CP = 1.2C - C = 0.2C.\nGiven Profit = ₹120.\nSo, 0.2C = 120.\nC = 120 / 0.2 = 1200 / 2 = ₹600.",
-      "trick": "Use the successive percentage change formula for overall profit/loss percentage: (A + B + AB/100).\nHere, A = +50% (markup), B = -20% (discount).\nEffective change = 50 - 20 + (50 * -20 / 100)\n= 30 - 10 = +20%.\nThis means the profit percentage is 20% of the Cost Price.\nIf 20% of CP = ₹120, then CP = 120 * (100/20) = 120 * 5 = ₹600."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 2?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
     {
       "category": "Static GK",
       "question": "[Fallback GK] Default Question 4?",
@@ -125,69 +21,43 @@
       "trick": ""
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
+      "category": "Quantitative Aptitude",
+      "question": "A, B, and C can complete a piece of work in 10, 15, and 30 days respectively. A works for 4 days. Then B joins A, and they work together for 3 days. Finally, C completes the remaining work alone. How many days did C work?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "A) 1 day",
+        "B) 2 days",
+        "C) 3 days",
+        "D) 4 days"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "C) 3 days",
+      "explanation": "1.  Find the Total Work using the LCM method:\n    LCM of (10, 15, 30) = 30 units (This is our total work).\n2.  Calculate individual efficiencies:\n    A's efficiency = Total Work / A's days = 30 / 10 = 3 units/day.\n    B's efficiency = Total Work / B's days = 30 / 15 = 2 units/day.\n    C's efficiency = Total Work / C's days = 30 / 30 = 1 unit/day.\n3.  Calculate work done in phases:\n    Work done by A in 4 days = 4 days * 3 units/day = 12 units.\n    Work done by (A+B) together in 3 days = (A's efficiency + B's efficiency) * 3 days = (3 + 2) * 3 = 5 * 3 = 15 units.\n4.  Calculate total work done by A and B:\n    Total work done = 12 units (by A) + 15 units (by A+B) = 27 units.\n5.  Calculate remaining work:\n    Remaining work = Total Work - Work done = 30 - 27 = 3 units.\n6.  Calculate days C worked:\n    Days C worked = Remaining work / C's efficiency = 3 units / 1 unit/day = 3 days.",
+      "trick": "The LCM (Least Common Multiple) method is the most efficient way to solve Time & Work problems. It converts the problem into 'units of work' per day, simplifying calculations with fractions and allowing for direct calculation of work done in phases."
     },
     {
-      "category": "Logical Reasoning",
-      "question": "Find the missing term in the series: 3, 7, 16, 35, ?, 153",
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an article 40% above its cost price and offers a discount of 25% on the marked price. If the cost price of the article is Rs. 1200, what is the selling price of the article?",
       "options": [
-        "A. 72",
-        "B. 74",
-        "C. 76",
-        "D. 78"
+        "A) Rs. 1200",
+        "B) Rs. 1260",
+        "C) Rs. 1320",
+        "D) Rs. 1350"
       ],
-      "correct_answer": "B. 74",
-      "explanation": "Let's observe the pattern between consecutive terms:\n3 to 7: (3 * 2) + 1 = 6 + 1 = 7\n7 to 16: (7 * 2) + 2 = 14 + 2 = 16\n16 to 35: (16 * 2) + 3 = 32 + 3 = 35\n\nThe pattern is (previous term * 2) + N, where N increases by 1 for each step (1, 2, 3, ...).\n\nFollowing this pattern, the next term will be:\n35 to ?: (35 * 2) + 4 = 70 + 4 = 74\n\nTo verify, let's check the next step:\n74 to 153: (74 * 2) + 5 = 148 + 5 = 153 (This matches the given last term).\n\nSo, the missing term is 74.",
-      "trick": "When numbers increase rapidly but not exponentially, look for multiplication combined with addition/subtraction. Often, the multiplier is constant (e.g., *2) and the added/subtracted number follows a simple arithmetic progression (e.g., +1, +2, +3...) or a square/cube series. Test common multipliers like 2 or 3 first."
+      "correct_answer": "B) Rs. 1260",
+      "explanation": "1. Cost Price (CP) = Rs. 1200.\n2. Marked Price (MP) = CP + 40% of CP = 1200 + (0.40 * 1200) = 1200 + 480 = Rs. 1680.\n3. Discount = 25% of MP = 0.25 * 1680 = Rs. 420.\n4. Selling Price (SP) = MP - Discount = 1680 - 420 = Rs. 1260.",
+      "trick": "The net percentage change can be calculated using the successive percentage formula: A + B + (AB/100).\nHere, A = +40% (markup) and B = -25% (discount).\nNet change = 40 - 25 + (40 * -25 / 100) = 15 - (1000 / 100) = 15 - 10 = 5% profit.\nSo, Selling Price = Cost Price * (1 + Profit%) = 1200 * (1 + 0.05) = 1200 * 1.05 = Rs. 1260.\nAlternatively, SP = CP * (1 + Markup/100) * (1 - Discount/100) = 1200 * (140/100) * (75/100) = 1200 * 1.4 * 0.75 = 1200 * 1.05 = Rs. 1260."
     },
     {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks an item 40% above its cost price. He offers a discount of 25% on the marked price. If the cost price of the item is Rs. 800, what is the selling price and the profit percentage?",
       "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
+        "A) Rs. 840, 5% profit",
+        "B) Rs. 900, 12.5% profit",
+        "C) Rs. 720, 10% loss",
+        "D) Rs. 880, 10% profit"
       ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Find the missing term in the given series: 3, 7, 16, 35, ?, 153",
-      "options": [
-        "A. 72",
-        "B. 74",
-        "C. 76",
-        "D. 78"
-      ],
-      "correct_answer": "B. 74",
-      "explanation": "Let the series be denoted by a_n.\nThe given series is: 3, 7, 16, 35, ?, 153\n\nLet's analyze the pattern between consecutive terms:\n\n1.  From 3 to 7:  3 × 2 + 1 = 7\n2.  From 7 to 16: 7 × 2 + 2 = 16\n3.  From 16 to 35: 16 × 2 + 3 = 35\n\nThe pattern observed is that each term is generated by multiplying the previous term by 2 and then adding an incrementing number (1, 2, 3, ...).\n\nFollowing this pattern, the missing term (let's call it x) would be:\n4.  From 35 to ?: 35 × 2 + 4 = x\n    x = 70 + 4\n    x = 74\n\nTo verify, let's check the next term with our calculated value:\n5.  From 74 to 153: 74 × 2 + 5 = 148 + 5 = 153\n\nSince the pattern holds true for the subsequent term, the missing term is 74.",
-      "trick": "When simple differences don't reveal a pattern, look for multiplication-based patterns. A common type is (previous_term × N) + M, where N is a constant and M is a constant or an incrementing/decrementing series (e.g., +1, +2, +3... or +1, +3, +5...). Always verify the identified pattern with at least 3-4 terms and then with the next given term if available."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 5?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
+      "correct_answer": "A) Rs. 840, 5% profit",
+      "explanation": "Cost Price (CP) = Rs. 800\nMarked Price (MP) = CP + 40% of CP = 800 + (0.40 * 800) = 800 + 320 = Rs. 1120\nDiscount = 25% of MP = 0.25 * 1120 = Rs. 280\nSelling Price (SP) = MP - Discount = 1120 - 280 = Rs. 840\nProfit = SP - CP = 840 - 800 = Rs. 40\nProfit Percentage = (Profit / CP) * 100 = (40 / 800) * 100 = 5%",
+      "trick": "Use the net percentage change formula for successive percentage changes:\nNet % = A + B + (AB/100)\nHere, A = +40% (markup), B = -25% (discount)\nNet % = 40 - 25 + (40 * -25 / 100) = 15 - (1000 / 100) = 15 - 10 = 5%\nSo, the profit percentage is 5%.\nSelling Price (SP) = Cost Price * (1 + Profit%/100) = 800 * (1 + 0.05) = 800 * 1.05 = Rs. 840."
     },
     {
       "category": "Static GK",
@@ -204,30 +74,159 @@
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "Solve the following equations and determine the relation between x and y:\nI. x² - 21x + 108 = 0\nII. y² - 17y + 72 = 0",
+      "question": "The difference between Compound Interest and Simple Interest on a certain sum of money for 2 years at 10% per annum is Rs. 50. What is the principal sum?",
       "options": [
-        "A) x > y",
-        "B) x < y",
-        "C) x ≥ y",
-        "D) x ≤ y",
-        "E) x = y or No relation can be established"
+        "A) Rs. 4500",
+        "B) Rs. 5000",
+        "C) Rs. 5500",
+        "D) Rs. 6000"
       ],
-      "correct_answer": "C) x ≥ y",
-      "explanation": "For Equation I: x² - 21x + 108 = 0\nWe need two numbers whose product is 108 and sum is 21. These numbers are 9 and 12.\nSo, (x - 9)(x - 12) = 0.\nThe values of x are 9 and 12.\n\nFor Equation II: y² - 17y + 72 = 0\nWe need two numbers whose product is 72 and sum is 17. These numbers are 8 and 9.\nSo, (y - 8)(y - 9) = 0.\nThe values of y are 8 and 9.\n\nComparing the values:\nIf x = 9, y = 8 => x > y\nIf x = 9, y = 9 => x = y\nIf x = 12, y = 8 => x > y\nIf x = 12, y = 9 => x > y\nIn all cases, x is either greater than or equal to y.\nTherefore, the relation is x ≥ y.",
-      "trick": "For quadratic equations of the form ax² + bx + c = 0, if b is negative and c is positive, both roots will be positive. For equations with leading coefficient 1, quickly find two factors of 'c' that sum to '-b'. The roots will be the positive values of these factors. This reduces calculation time significantly.\nFor I: Factors of 108 that sum to 21 are 9 and 12. So x = 9, 12.\nFor II: Factors of 72 that sum to 17 are 8 and 9. So y = 8, 9.\nComparing (9,12) with (8,9) clearly shows x ≥ y."
+      "correct_answer": "B) Rs. 5000",
+      "explanation": "1. Let the Principal be P.\n2. Rate of Interest (R) = 10% per annum.\n3. Time (T) = 2 years.\n4. Simple Interest (SI) = (P * R * T) / 100 = (P * 10 * 2) / 100 = P / 5 = 0.20P.\n5. Compound Interest (CI) = P * [(1 + R/100)^T - 1] = P * [(1 + 10/100)^2 - 1] = P * [(1.1)^2 - 1] = P * [1.21 - 1] = P * 0.21.\n6. Difference (CI - SI) = 0.21P - 0.20P = 0.01P.\n7. Given difference = Rs. 50.\n8. So, 0.01P = 50 => P = 50 / 0.01 = 50 * 100 = Rs. 5000.",
+      "trick": "For 2 years, the difference between Compound Interest (CI) and Simple Interest (SI) is given by the formula:\nDifference = P * (R/100)^2\nGiven Difference = Rs. 50, R = 10%.\n50 = P * (10/100)^2\n50 = P * (1/10)^2\n50 = P * (1/100)\nP = 50 * 100 = Rs. 5000."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "In the following question, assuming the given statements to be true, find which of the conclusion(s) is/are definitely true.\nStatements: P > Q ≥ R = S; T ≤ R < U\nConclusions:\nI. P > S\nII. Q < U\nIII. T ≤ Q",
+      "question": "Find the next term in the given number series:\n5, 12, 26, 54, 110, ?",
       "options": [
-        "A. Only conclusion I is true",
-        "B. Only conclusion III is true",
-        "C. Only conclusion I and III are true",
-        "D. All conclusions I, II and III are true"
+        "A. 220",
+        "B. 222",
+        "C. 224",
+        "D. 226"
       ],
-      "correct_answer": "C. Only conclusion I and III are true",
-      "explanation": "From the given statements, we can combine them:\nP > Q ≥ R = S  ...(1)\nT ≤ R < U      ...(2)\n\nLet's check each conclusion:\n\nI. P > S:\nFrom statement (1): P > Q ≥ R = S. This clearly establishes that P is greater than S. So, Conclusion I is definitely true.\n\nII. Q < U:\nFrom statement (1) and (2): Q ≥ R and R < U.\nWe have Q ≥ R < U. This means Q can be greater than U, equal to U, or less than U. For example, if R=5, U=6, then Q can be 5 (Q<U) or Q can be 7 (Q>U). Since the relationship is not definite, Conclusion II is not definitely true.\n\nIII. T ≤ Q:\nFrom statement (1) and (2): T ≤ R and R ≤ Q (since Q ≥ R).\nCombining these, we get T ≤ R ≤ Q. This definitely means T is less than or equal to Q. So, Conclusion III is definitely true.\n\nTherefore, only conclusions I and III are definitely true.",
-      "trick": "For inequality questions, mentally or physically chain the relations. Focus on the direction of the signs. If you encounter opposite signs (e.g., > and <) between the two elements you're comparing, the relationship is ambiguous. A definite conclusion requires a consistent direction of signs (all > or all <, or a combination including ≥/≤ that doesn't contradict)."
+      "correct_answer": "B. 222",
+      "explanation": "Let's analyze the pattern between consecutive terms:\n\n1. From 5 to 12: 5 × 2 + 2 = 10 + 2 = 12\n2. From 12 to 26: 12 × 2 + 2 = 24 + 2 = 26\n3. From 26 to 54: 26 × 2 + 2 = 52 + 2 = 54\n4. From 54 to 110: 54 × 2 + 2 = 108 + 2 = 110\n\nThe pattern is (Previous Term × 2) + 2.\n\nFollowing this pattern, the next term will be:\n110 × 2 + 2 = 220 + 2 = 222.",
+      "trick": "When numbers increase rapidly, consider multiplication or exponential patterns. If they are roughly doubling, try 'xN +/- Y'. In this case, numbers are approximately doubling, so 'x2 + constant' is a good first hypothesis to test."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\nI. All pens are pencils.\nII. Some pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\nI. Some pens are erasers.\nII. No pen is a sharpener.\nIII. Some pencils are sharpeners.\nIV. Some erasers are pens.\n\nWhich of the following conclusions logically follows from the given statements?",
+      "options": [
+        "A. Only I and II follow",
+        "B. Only II and III follow",
+        "C. Only III and IV follow",
+        "D. None follows"
+      ],
+      "correct_answer": "D. None follows",
+      "explanation": "Let's analyze each conclusion based on the given statements using Venn diagrams or logical deductions:\nStatements:\n1. All Pens (P) are Pencils (Pc) => P ⊂ Pc\n2. Some Pencils (Pc) are Erasers (E) => Pc ∩ E ≠ Ø\n3. No Eraser (E) is a Sharpener (S) => E ∩ S = Ø\n\nConclusions:\nI. Some pens are erasers.\n   - From (1) and (2): Pens are a subset of Pencils, and some Pencils are Erasers. It is possible that the 'pens' subset is entirely outside the 'erasers' subset within Pencils. Thus, this conclusion is not necessarily true.\nII. No pen is a sharpener.\n   - From (1), (2), (3): Pens ⊂ Pencils, and Erasers ∩ Sharpeners = Ø. The relationship between Pencils and Sharpeners is not directly given, only that the part of Pencils that are Erasers cannot be Sharpeners. The 'pens' could be in the part of Pencils that are not Erasers, and that part *could* overlap with Sharpeners. Thus, this conclusion is not necessarily true.\nIII. Some pencils are sharpeners.\n   - From (2) and (3): Some Pencils are Erasers, and No Eraser is a Sharpener. This means the portion of Pencils that are Erasers cannot be Sharpeners. However, the statements do not provide any information about the relationship between the *remaining* portion of Pencils and Sharpeners. It's possible some Pencils are Sharpeners, or none are. Hence, this is not necessarily true.\nIV. Some erasers are pens.\n   - This is the converse of Conclusion I. Since Conclusion I does not necessarily follow, this also does not necessarily follow.\n\nSince none of the conclusions logically and definitely follow from the given statements, the correct option is D.",
+      "trick": "For Syllogism, always try to visualize or draw two alternative Venn diagrams for each conclusion: one where it seems to follow and one where it doesn't. If you can find even one scenario where the conclusion doesn't hold true, then it doesn't 'logically follow' as a definite conclusion. A quick check for 'definite' relationships will save time."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "In a certain code language, if `MASTER` is coded as `412597` and `RULER` is coded as `93859`, then how will `SUMMER` be coded?",
+      "options": [
+        "A. 234479",
+        "B. 234497",
+        "C. 234459",
+        "D. 234495"
+      ],
+      "correct_answer": "C. 234459",
+      "explanation": "Let's decode the given words:\nFrom `MASTER` (412597):\nM = 4\nA = 1\nS = 2\nT = 5\nE = 9\nR = 7\n\nFrom `RULER` (93859):\nR = 9 (first 'R')\nU = 3\nL = 8\nE = 5\nR = 9 (second 'R')\n\nWe observe conflicts for letters 'E' and 'R':\n- 'E' is coded as 9 in MASTER and 5 in RULER.\n- 'R' is coded as 7 in MASTER and 9 in RULER.\n\nIn competitive exams, when such conflicts arise in direct substitution coding, a common convention is to prioritize the code from the *more recent* or *more consistent* mapping. In 'RULER', the letter 'R' appears twice and is consistently coded as 9. Also, 'RULER' is the second example provided.\n\nTherefore, we will use the following mappings:\n- S = 2 (from MASTER)\n- U = 3 (from RULER)\n- M = 4 (from MASTER)\n- E = 5 (from RULER, prioritizing the second word's code)\n- R = 9 (from RULER, prioritizing the second word's consistent code)\n\nNow, let's code `SUMMER`:\nS = 2\nU = 3\nM = 4\nM = 4\nE = 5\nR = 9\n\nSo, `SUMMER` is coded as `234459`.",
+      "trick": "When faced with conflicting codes for the same letter in a direct substitution problem, first check if one code appears more consistently (e.g., 'R' in RULER appearing twice as 9). If not, a common heuristic is to prefer the code from the *second* (or last) given example word. This approach helps quickly resolve ambiguity and find the intended answer without overcomplicating the pattern."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Two statements are given followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts.\n\nStatements:\n1. All pens are pencils.\n2. Some pencils are erasers.\n3. No eraser is a sharpener.\n\nConclusions:\nI. Some pens are erasers.\nII. No pencil is a sharpener.\nIII. Some erasers are pencils.",
+      "options": [
+        "A. Only conclusion I follows.",
+        "B. Only conclusion III follows.",
+        "C. Only conclusions II and III follow.",
+        "D. None of the conclusions follow."
+      ],
+      "correct_answer": "B. Only conclusion III follows.",
+      "explanation": "Let's analyze each conclusion based on the statements:\n\nStatements:\n1. All pens are pencils. (P -> Pe)\n2. Some pencils are erasers. (Pe <-> E)\n3. No eraser is a sharpener. (E -/-> S)\n\nConclusion I: Some pens are erasers.\nFrom S1 (All P are Pe) and S2 (Some Pe are E), we cannot definitively conclude 'Some P are E'. The portion of pencils that are erasers might or might not include pens. So, Conclusion I does not follow.\n\nConclusion II: No pencil is a sharpener.\nFrom S2 (Some Pe are E) and S3 (No E is S), we know that the specific pencils that are erasers are not sharpeners. However, there might be other pencils that are not erasers, and those pencils could potentially be sharpeners. Therefore, we cannot conclude 'No pencil is a sharpener'. So, Conclusion II does not follow.\n\nConclusion III: Some erasers are pencils.\nThis is a direct conversion of Statement 2, 'Some pencils are erasers'. If 'Some A are B' then 'Some B are A' is always true. Thus, 'Some erasers are pencils' logically follows. So, Conclusion III follows.\n\nTherefore, only conclusion III follows.",
+      "trick": "For 'Some A are B', 'Some B are A' is always true (conversion). For other conclusions, use Venn diagrams for quick visual checks, especially for 'possible' vs 'definite' scenarios. Remember that 'No A is B' means 'No B is A', and 'All A are B' does NOT imply 'All B are A'."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Current Affairs",
