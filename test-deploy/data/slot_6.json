@@ -2,48 +2,162 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 6,
-    "generated_at": "2026-03-14T19:20:02.640Z",
+    "generated_at": "2026-03-15T19:21:16.999Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 19200 at an interest rate of 5% per annum over 3 years?",
-      "correct_answer": "Rs. 2880",
+      "question": "If MAT is coded as OCV, how will CUP be coded in that same language?",
+      "correct_answer": "EWR",
       "options": [
-        "Rs. 3840",
-        "Rs. 2980",
-        "Rs. 2830",
-        "Rs. 2880"
+        "CUP",
+        "ASN",
+        "FXS",
+        "EWR"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (19200 * 5 * 3) / 100 = 2880.",
-      "trick": "Treat percentage as decimal visually: 192 * 5 * 3 = 2880.",
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Yangtze",
+        "Mississippi",
+        "Nile",
+        "Amazon"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A train travels at an average speed of 80 km/hr. How much distance will it cover in 4 hours?",
+      "correct_answer": "320 km",
+      "options": [
+        "240 km",
+        "340 km",
+        "320 km",
+        "400 km"
+      ],
+      "explanation": "Distance = Speed * Time = 80 * 4 = 320 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Rs. 940 is divided between A and B in the ratio 2:3. What is A's share?",
+      "correct_answer": "Rs. 376",
+      "options": [
+        "Rs. 282",
+        "Rs. 376",
+        "Rs. 564",
+        "Rs. 470"
+      ],
+      "explanation": "Total parts = 2 + 3 = 5. Value of 1 part = 940/5 = 188. A's share = 2 * 188 = 376.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
+      "options": [
+        "729",
+        "246",
+        "243",
+        "240"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
+      "options": [
+        "All Cars are Vehicles.",
+        "Some Vehicles are not Cars.",
+        "None of the above.",
+        "No Cars are Vehicles."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If an article is bought for Rs. 1240 and sold at a profit of 30%, what is the selling price?",
+      "correct_answer": "Rs. 1612",
+      "options": [
+        "Rs. 1736",
+        "Rs. 1488",
+        "Rs. 1860",
+        "Rs. 1612"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 1240 * 1.30 = Rs. 1612.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu",
+        "Mahatma Gandhi"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
         "Saturn",
-        "Earth",
         "Jupiter",
+        "Earth",
         "Neptune"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "A train travels at an average speed of 76 km/hr. How much distance will it cover in 5 hours?",
-      "correct_answer": "380 km",
+      "question": "A can complete a piece of work in 44 days while B can complete the same work in 80 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "28.39 days",
       "options": [
-        "400 km",
-        "456 km",
-        "304 km",
-        "380 km"
+        "28.39 days",
+        "27.39 days",
+        "32.39 days",
+        "30.39 days"
       ],
-      "explanation": "Distance = Speed * Time = 76 * 5 = 380 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
+      "explanation": "Work = 44 * 80 = 3520. Rate = 44 + 80 = 124. Time = Work / Rate = 28.39 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 17, 23, 29, 35, 41, ?",
+      "correct_answer": "47",
+      "options": [
+        "49",
+        "41",
+        "47",
+        "53"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 6. So, 41 + (6) = 47.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -56,120 +170,6 @@
       "correct_answer": "A",
       "explanation": "test",
       "category": "Current Affairs"
-    },
-    {
-      "question": "If an article is bought for Rs. 1120 and sold at a profit of 15%, what is the selling price?",
-      "correct_answer": "Rs. 1288",
-      "options": [
-        "Rs. 1512",
-        "Rs. 1176",
-        "Rs. 1288",
-        "Rs. 1400"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 1120 * 1.15 = Rs. 1288.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Rs. 2256 is divided between A and B in the ratio 5:7. What is A's share?",
-      "correct_answer": "Rs. 940",
-      "options": [
-        "Rs. 940",
-        "Rs. 714.4",
-        "Rs. 1165.6",
-        "Rs. 1316"
-      ],
-      "explanation": "Total parts = 5 + 7 = 12. Value of 1 part = 2256/12 = 188. A's share = 5 * 188 = 940.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Sarojini Naidu",
-        "Rabindranath Tagore",
-        "Bankim Chandra Chatterjee",
-        "Mahatma Gandhi"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 7, 34, 61, 88, 115, ?",
-      "correct_answer": "142",
-      "options": [
-        "169",
-        "142",
-        "144",
-        "115"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 27. So, 115 + (27) = 142.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Nile",
-        "Amazon",
-        "Mississippi",
-        "Yangtze"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
-      "correct_answer": "162",
-      "options": [
-        "486",
-        "160",
-        "162",
-        "165"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 54 * 3 = 162.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
-      "options": [
-        "Some Stationery are not Pens.",
-        "All Pens are Stationery.",
-        "None of the above.",
-        "No Pens are Stationery."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar",
-        "Sardar Patel"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 49, 101, 36, 25",
-      "correct_answer": "101",
-      "options": [
-        "49",
-        "101",
-        "36",
-        "25"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
     }
   ]
 }

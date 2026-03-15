@@ -2,111 +2,35 @@
   "metadata": {
     "difficulty": "upsc",
     "slot": 9,
-    "generated_at": "2026-03-14T19:20:02.640Z",
+    "generated_at": "2026-03-15T19:21:16.999Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Jawaharlal Nehru",
-        "Dr. Rajendra Prasad",
-        "B.R. Ambedkar",
-        "Sardar Patel"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the next number in the series: 17, -33, -83, -133, -183, ?",
-      "correct_answer": "-233",
-      "options": [
-        "-183",
-        "-283",
-        "-231",
-        "-233"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of -50. So, -183 + (-50) = -233.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
-      "options": [
-        "No Dogs are Animals.",
-        "None of the above.",
-        "All Dogs are Animals.",
-        "Some Animals are not Dogs."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A train travels at an average speed of 155 km/hr. How much distance will it cover in 2 hours?",
-      "correct_answer": "310 km",
-      "options": [
-        "155 km",
-        "310 km",
-        "330 km",
-        "465 km"
-      ],
-      "explanation": "Distance = Speed * Time = 155 * 2 = 310 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If DOG is coded as EPH, how will BOX be coded in that same language?",
-      "correct_answer": "CPY",
-      "options": [
-        "ANW",
-        "CPY",
-        "BOX",
-        "DQZ"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
-      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "A can complete a piece of work in 96 days while B can complete the same work in 168 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "61.09 days",
-      "options": [
-        "60.09 days",
-        "63.09 days",
-        "61.09 days",
-        "65.09 days"
-      ],
-      "explanation": "Work = 96 * 168 = 16128. Rate = 96 + 168 = 264. Time = Work / Rate = 61.09 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
-    },
-    {
       "question": "Who wrote the national anthem of India?",
       "correct_answer": "Rabindranath Tagore",
       "options": [
-        "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee",
         "Rabindranath Tagore",
-        "Sarojini Naidu"
+        "Mahatma Gandhi",
+        "Sarojini Naidu",
+        "Bankim Chandra Chatterjee"
       ],
       "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
+      "question": "What is the average of the following 5 consecutive even numbers: 28, 30, 32, 34, 36?",
+      "correct_answer": "32",
       "options": [
-        "Mississippi",
-        "Yangtze",
-        "Nile",
-        "Amazon"
+        "34",
+        "30",
+        "36",
+        "32"
       ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
+      "explanation": "Sum = 160. Average = Sum / 5 = 32.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
     },
     {
       "question": "Sample CA?",
@@ -121,55 +45,131 @@
       "category": "Current Affairs"
     },
     {
-      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
-      "correct_answer": "324",
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
       "options": [
-        "972",
-        "324",
-        "320",
-        "327"
+        "B.R. Ambedkar",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
     },
     {
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Saturn",
-        "Earth",
+        "Jupiter",
         "Neptune",
-        "Jupiter"
+        "Earth",
+        "Saturn"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
     },
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 10400 at an interest rate of 10% per annum over 5 years?",
-      "correct_answer": "Rs. 5200",
+      "question": "Find the next number in the series: 4, -6, -16, -26, -36, ?",
+      "correct_answer": "-46",
       "options": [
-        "Rs. 5300",
-        "Rs. 5150",
-        "Rs. 5200",
-        "Rs. 5720"
+        "-56",
+        "-46",
+        "-44",
+        "-36"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (10400 * 10 * 5) / 100 = 5200.",
-      "trick": "Treat percentage as decimal visually: 104 * 10 * 5 = 5200.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of -10. So, -36 + (-10) = -46.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 121 km/hr. How much distance will it cover in 4 hours?",
+      "correct_answer": "484 km",
+      "options": [
+        "363 km",
+        "504 km",
+        "605 km",
+        "484 km"
+      ],
+      "explanation": "Distance = Speed * Time = 121 * 4 = 484 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Rs. 1672 is divided between A and B in the ratio 5:6. What is A's share?",
-      "correct_answer": "Rs. 760",
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
       "options": [
-        "Rs. 760",
-        "Rs. 592.8",
-        "Rs. 912",
-        "Rs. 927.2"
+        "Yangtze",
+        "Amazon",
+        "Mississippi",
+        "Nile"
       ],
-      "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 1672/11 = 152. A's share = 5 * 152 = 760.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
+      "correct_answer": "48",
+      "options": [
+        "50",
+        "96",
+        "45",
+        "48"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
+      "options": [
+        "None of the above.",
+        "All Dogs are Animals.",
+        "Some Animals are not Dogs.",
+        "No Dogs are Animals."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A can complete a piece of work in 112 days while B can complete the same work in 240 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "76.36 days",
+      "options": [
+        "80.36 days",
+        "76.36 days",
+        "78.36 days",
+        "75.36 days"
+      ],
+      "explanation": "Work = 112 * 240 = 26880. Rate = 112 + 240 = 352. Time = Work / Rate = 76.36 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If an article is bought for Rs. 1360 and sold at a profit of 25%, what is the selling price?",
+      "correct_answer": "Rs. 1700",
+      "options": [
+        "Rs. 1700",
+        "Rs. 1564",
+        "Rs. 1972",
+        "Rs. 1836"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 1360 * 1.25 = Rs. 1700.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 82, 25, 16, 36",
+      "correct_answer": "82",
+      "options": [
+        "82",
+        "25",
+        "16",
+        "36"
+      ],
+      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
     }
   ]
 }

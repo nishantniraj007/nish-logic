@@ -2,149 +2,74 @@
   "metadata": {
     "difficulty": "medium",
     "slot": 2,
-    "generated_at": "2026-03-14T19:20:02.640Z",
+    "generated_at": "2026-03-15T19:21:16.999Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "A can complete a piece of work in 40 days while B can complete the same work in 56 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "23.33 days",
+      "question": "What will be the Simple Interest on a principal amount of Rs. 9800 at an interest rate of 6% per annum over 5 years?",
+      "correct_answer": "Rs. 2940",
       "options": [
-        "25.33 days",
-        "27.33 days",
-        "23.33 days",
-        "22.33 days"
+        "Rs. 2940",
+        "Rs. 3430",
+        "Rs. 3040",
+        "Rs. 2890"
       ],
-      "explanation": "Work = 40 * 56 = 2240. Rate = 40 + 56 = 96. Time = Work / Rate = 23.33 days.",
+      "explanation": "SI = (P * R * T) / 100 = (9800 * 6 * 5) / 100 = 2940.",
+      "trick": "Treat percentage as decimal visually: 98 * 6 * 5 = 2940.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 25, 27, 29, 31, 33?",
+      "correct_answer": "29",
+      "options": [
+        "29",
+        "33",
+        "31",
+        "27"
+      ],
+      "explanation": "Sum = 145. Average = Sum / 5 = 29.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A can complete a piece of work in 30 days while B can complete the same work in 46 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "18.16 days",
+      "options": [
+        "22.16 days",
+        "17.16 days",
+        "20.16 days",
+        "18.16 days"
+      ],
+      "explanation": "Work = 30 * 46 = 1380. Rate = 30 + 46 = 76. Time = Work / Rate = 18.16 days.",
       "trick": "Use formula: (A * B) / (A + B).",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "Find the next number in the series: 18, 34, 50, 66, 82, ?",
-      "correct_answer": "98",
+      "question": "Rs. 462 is divided between A and B in the ratio 5:6. What is A's share?",
+      "correct_answer": "Rs. 210",
       "options": [
-        "114",
-        "100",
-        "82",
-        "98"
+        "Rs. 163.8",
+        "Rs. 210",
+        "Rs. 252",
+        "Rs. 256.2"
       ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 16. So, 82 + (16) = 98.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Mississippi",
-        "Amazon",
-        "Yangtze",
-        "Nile"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Rs. 290 is divided between A and B in the ratio 2:3. What is A's share?",
-      "correct_answer": "Rs. 116",
-      "options": [
-        "Rs. 116",
-        "Rs. 174",
-        "Rs. 87",
-        "Rs. 145"
-      ],
-      "explanation": "Total parts = 2 + 3 = 5. Value of 1 part = 290/5 = 58. A's share = 2 * 58 = 116.",
+      "explanation": "Total parts = 5 + 6 = 11. Value of 1 part = 462/11 = 42. A's share = 5 * 42 = 210.",
       "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "If an article is bought for Rs. 560 and sold at a profit of 30%, what is the selling price?",
-      "correct_answer": "Rs. 728",
-      "options": [
-        "Rs. 840",
-        "Rs. 784",
-        "Rs. 672",
-        "Rs. 728"
-      ],
-      "explanation": "SP = CP * (1 + Profit/100) = 560 * 1.30 = Rs. 728.",
-      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 3, 6, 12, 24, ?",
-      "correct_answer": "48",
-      "options": [
-        "48",
-        "50",
-        "45",
-        "96"
-      ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 24 * 2 = 48.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Who wrote the national anthem of India?",
-      "correct_answer": "Rabindranath Tagore",
-      "options": [
-        "Mahatma Gandhi",
-        "Sarojini Naidu",
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore"
-      ],
-      "explanation": "Jana Gana Mana.",
-      "category": "Static GK"
     },
     {
       "question": "Which is the largest planet in our solar system?",
       "correct_answer": "Jupiter",
       "options": [
-        "Saturn",
-        "Jupiter",
+        "Earth",
         "Neptune",
-        "Earth"
+        "Jupiter",
+        "Saturn"
       ],
       "explanation": "Jupiter is a gas giant.",
       "category": "Static GK"
-    },
-    {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 7600 at an interest rate of 10% per annum over 3 years?",
-      "correct_answer": "Rs. 2280",
-      "options": [
-        "Rs. 2660",
-        "Rs. 2380",
-        "Rs. 2230",
-        "Rs. 2280"
-      ],
-      "explanation": "SI = (P * R * T) / 100 = (7600 * 10 * 3) / 100 = 2280.",
-      "trick": "Treat percentage as decimal visually: 76 * 10 * 3 = 2280.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Who was the first President of India?",
-      "correct_answer": "Dr. Rajendra Prasad",
-      "options": [
-        "Dr. Rajendra Prasad",
-        "Jawaharlal Nehru",
-        "B.R. Ambedkar",
-        "Sardar Patel"
-      ],
-      "explanation": "He served from 1950 to 1962.",
-      "category": "Static GK"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 36, 82, 16, 25",
-      "correct_answer": "82",
-      "options": [
-        "36",
-        "82",
-        "16",
-        "25"
-      ],
-      "explanation": "16, 25, and 36 are perfect squares. 82 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -159,17 +84,92 @@
       "category": "Current Affairs"
     },
     {
-      "question": "If MAT is coded as PDW, how will BOX be coded in that same language?",
-      "correct_answer": "ER[",
+      "question": "Find the next number in the series: 11, 25, 39, 53, 67, ?",
+      "correct_answer": "81",
       "options": [
-        "ER[",
-        "?LU",
-        "BOX",
-        "FS\\"
+        "95",
+        "67",
+        "83",
+        "81"
       ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 14. So, 67 + (14) = 81.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "If BAT is coded as DCV, how will CUP be coded in that same language?",
+      "correct_answer": "EWR",
+      "options": [
+        "CUP",
+        "EWR",
+        "ASN",
+        "FXS"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Sardar Patel",
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Nile",
+        "Yangtze",
+        "Mississippi"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 101, 36, 25, 49",
+      "correct_answer": "101",
+      "options": [
+        "101",
+        "36",
+        "25",
+        "49"
+      ],
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the next number in the series: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
+      "options": [
+        "729",
+        "243",
+        "246",
+        "240"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 81 * 3 = 243.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Sarojini Naidu",
+        "Mahatma Gandhi"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     }
   ]
 }

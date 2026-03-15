@@ -2,74 +2,36 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 5,
-    "generated_at": "2026-03-14T19:20:02.640Z",
+    "generated_at": "2026-03-15T19:21:16.999Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "Find the odd one out among the following numbers: 16, 25, 9, 65",
-      "correct_answer": "65",
+      "question": "If CAT is coded as FDW, how will PEN be coded in that same language?",
+      "correct_answer": "SHQ",
       "options": [
-        "16",
-        "25",
-        "9",
-        "65"
+        "TIR",
+        "PEN",
+        "SHQ",
+        "MBK"
       ],
-      "explanation": "9, 16, and 25 are perfect squares. 65 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "If BAT is coded as CBU, how will MAN be coded in that same language?",
-      "correct_answer": "NBO",
-      "options": [
-        "NBO",
-        "MAN",
-        "OCP",
-        "L@M"
-      ],
-      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "Sample CA?",
+      "question": "What is the average of the following 5 consecutive even numbers: 40, 42, 44, 46, 48?",
+      "correct_answer": "44",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "44",
+        "42",
+        "48",
+        "46"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Current Affairs"
-    },
-    {
-      "question": "Rs. 440 is divided between A and B in the ratio 2:3. What is A's share?",
-      "correct_answer": "Rs. 176",
-      "options": [
-        "Rs. 220",
-        "Rs. 264",
-        "Rs. 132",
-        "Rs. 176"
-      ],
-      "explanation": "Total parts = 2 + 3 = 5. Value of 1 part = 440/5 = 88. A's share = 2 * 88 = 176.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "explanation": "Sum = 220. Average = Sum / 5 = 44.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Dogs are Animals.",
-      "options": [
-        "All Dogs are Animals.",
-        "No Dogs are Animals.",
-        "Some Animals are not Dogs.",
-        "None of the above."
-      ],
-      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
-      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Which is the largest planet in our solar system?",
@@ -84,66 +46,79 @@
       "category": "Static GK"
     },
     {
-      "question": "Which is the longest river in the world?",
-      "correct_answer": "Nile",
-      "options": [
-        "Yangtze",
-        "Mississippi",
-        "Nile",
-        "Amazon"
-      ],
-      "explanation": "Length approx 6,650 km.",
-      "category": "Static GK"
-    },
-    {
-      "question": "A train travels at an average speed of 98 km/hr. How much distance will it cover in 3 hours?",
-      "correct_answer": "294 km",
-      "options": [
-        "294 km",
-        "196 km",
-        "392 km",
-        "314 km"
-      ],
-      "explanation": "Distance = Speed * Time = 98 * 3 = 294 km.",
-      "trick": "Basic multiplication rule: D = S * T.",
-      "category": "Quantitative Aptitude"
-    },
-    {
       "question": "Who was the first President of India?",
       "correct_answer": "Dr. Rajendra Prasad",
       "options": [
         "Dr. Rajendra Prasad",
         "Jawaharlal Nehru",
-        "B.R. Ambedkar",
-        "Sardar Patel"
+        "Sardar Patel",
+        "B.R. Ambedkar"
       ],
       "explanation": "He served from 1950 to 1962.",
       "category": "Static GK"
     },
     {
-      "question": "A can complete a piece of work in 68 days while B can complete the same work in 116 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "42.87 days",
+      "question": "Find the next number in the series: 5, 15, 45, 135, ?",
+      "correct_answer": "405",
       "options": [
-        "46.87 days",
-        "44.87 days",
-        "41.87 days",
-        "42.87 days"
+        "400",
+        "405",
+        "1215",
+        "408"
       ],
-      "explanation": "Work = 68 * 116 = 7888. Rate = 68 + 116 = 184. Time = Work / Rate = 42.87 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 135 * 3 = 405.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Mississippi",
+        "Nile",
+        "Yangtze"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "A train travels at an average speed of 100 km/hr. How much distance will it cover in 3 hours?",
+      "correct_answer": "300 km",
+      "options": [
+        "400 km",
+        "320 km",
+        "300 km",
+        "200 km"
+      ],
+      "explanation": "Distance = Speed * Time = 100 * 3 = 300 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
       "category": "Quantitative Aptitude"
     },
     {
-      "question": "What is the average of the following 5 consecutive even numbers: 51, 53, 55, 57, 59?",
-      "correct_answer": "55",
+      "question": "Statements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Apples are Foods.",
       "options": [
-        "59",
-        "55",
-        "57",
-        "53"
+        "No Apples are Foods.",
+        "All Apples are Foods.",
+        "Some Foods are not Apples.",
+        "None of the above."
       ],
-      "explanation": "Sum = 275. Average = Sum / 5 = 55.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Rs. 1720 is divided between A and B in the ratio 4:6. What is A's share?",
+      "correct_answer": "Rs. 688",
+      "options": [
+        "Rs. 860",
+        "Rs. 688",
+        "Rs. 1032",
+        "Rs. 516"
+      ],
+      "explanation": "Total parts = 4 + 6 = 10. Value of 1 part = 1720/10 = 172. A's share = 4 * 172 = 688.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
       "category": "Quantitative Aptitude"
     },
     {
@@ -151,24 +126,49 @@
       "correct_answer": "Rabindranath Tagore",
       "options": [
         "Sarojini Naidu",
+        "Rabindranath Tagore",
         "Mahatma Gandhi",
-        "Bankim Chandra Chatterjee",
-        "Rabindranath Tagore"
+        "Bankim Chandra Chatterjee"
       ],
       "explanation": "Jana Gana Mana.",
       "category": "Static GK"
     },
     {
-      "question": "Find the next number in the series: 4, 12, 36, 108, ?",
-      "correct_answer": "324",
+      "question": "Sample CA?",
       "options": [
-        "324",
-        "327",
-        "320",
-        "972"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 3. So, 108 * 3 = 324.",
-      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "correct_answer": "A",
+      "explanation": "test",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 16400 at an interest rate of 10% per annum over 3 years?",
+      "correct_answer": "Rs. 4920",
+      "options": [
+        "Rs. 5740",
+        "Rs. 5020",
+        "Rs. 4920",
+        "Rs. 4870"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (16400 * 10 * 3) / 100 = 4920.",
+      "trick": "Treat percentage as decimal visually: 164 * 10 * 3 = 4920.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Find the next number in the series: 16, 28, 40, 52, 64, ?",
+      "correct_answer": "76",
+      "options": [
+        "64",
+        "88",
+        "78",
+        "76"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 12. So, 64 + (12) = 76.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
       "category": "Logical Reasoning"
     }
   ]

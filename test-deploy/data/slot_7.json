@@ -2,87 +2,23 @@
   "metadata": {
     "difficulty": "ssc",
     "slot": 7,
-    "generated_at": "2026-03-14T19:20:02.640Z",
+    "generated_at": "2026-03-15T19:21:16.999Z",
     "type": "Hybrid AI/TBG Engine",
     "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
   },
   "questions": [
     {
-      "question": "What will be the Simple Interest on a principal amount of Rs. 10400 at an interest rate of 5% per annum over 5 years?",
-      "correct_answer": "Rs. 2600",
+      "question": "If an article is bought for Rs. 520 and sold at a profit of 50%, what is the selling price?",
+      "correct_answer": "Rs. 780",
       "options": [
-        "Rs. 3120",
-        "Rs. 2550",
-        "Rs. 2700",
-        "Rs. 2600"
+        "Rs. 884",
+        "Rs. 832",
+        "Rs. 780",
+        "Rs. 728"
       ],
-      "explanation": "SI = (P * R * T) / 100 = (10400 * 5 * 5) / 100 = 2600.",
-      "trick": "Treat percentage as decimal visually: 104 * 5 * 5 = 2600.",
+      "explanation": "SP = CP * (1 + Profit/100) = 520 * 1.50 = Rs. 780.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
       "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Sample Geography?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Static GK (Geography)"
-    },
-    {
-      "question": "What is the average of the following 5 consecutive even numbers: 40, 42, 44, 46, 48?",
-      "correct_answer": "44",
-      "options": [
-        "44",
-        "42",
-        "48",
-        "46"
-      ],
-      "explanation": "Sum = 220. Average = Sum / 5 = 44.",
-      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the next number in the series: 12, 18, 24, 30, 36, ?",
-      "correct_answer": "42",
-      "options": [
-        "44",
-        "36",
-        "48",
-        "42"
-      ],
-      "explanation": "The series follows an Arithmetic Progression with a constant difference of 6. So, 36 + (6) = 42.",
-      "trick": "Always check the difference between the first and second terms and verify across the series.",
-      "category": "Logical Reasoning"
-    },
-    {
-      "question": "Rs. 1472 is divided between A and B in the ratio 2:6. What is A's share?",
-      "correct_answer": "Rs. 368",
-      "options": [
-        "Rs. 368",
-        "Rs. 1104",
-        "Rs. 220.79999999999998",
-        "Rs. 515.2"
-      ],
-      "explanation": "Total parts = 2 + 6 = 8. Value of 1 part = 1472/8 = 184. A's share = 2 * 184 = 368.",
-      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
-      "category": "Quantitative Aptitude"
-    },
-    {
-      "question": "Find the odd one out among the following numbers: 101, 36, 25, 49",
-      "correct_answer": "101",
-      "options": [
-        "101",
-        "36",
-        "25",
-        "49"
-      ],
-      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
-      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
-      "category": "Logical Reasoning"
     },
     {
       "question": "Sample CA?",
@@ -97,41 +33,141 @@
       "category": "Current Affairs"
     },
     {
-      "question": "A can complete a piece of work in 52 days while B can complete the same work in 104 days. If they work together, in how many days will they complete the work?",
-      "correct_answer": "34.67 days",
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
       "options": [
-        "38.67 days",
-        "34.67 days",
-        "33.67 days",
-        "36.67 days"
+        "Mahatma Gandhi",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu"
       ],
-      "explanation": "Work = 52 * 104 = 5408. Rate = 52 + 104 = 156. Time = Work / Rate = 34.67 days.",
-      "trick": "Use formula: (A * B) / (A + B).",
-      "category": "Quantitative Aptitude"
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
     },
     {
-      "question": "Statements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.\n\nWhich conclusion logically follows?",
-      "correct_answer": "All Pens are Stationery.",
+      "question": "Statements:\n1. All Dogs are Cats.\n2. All Cats are Animals.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Dogs are Animals.",
       "options": [
-        "All Pens are Stationery.",
         "None of the above.",
-        "No Pens are Stationery.",
-        "Some Stationery are not Pens."
+        "All Dogs are Animals.",
+        "Some Animals are not Dogs.",
+        "No Dogs are Animals."
       ],
       "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
       "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
       "category": "Logical Reasoning"
     },
     {
-      "question": "If DOG is coded as GRJ, how will MAN be coded in that same language?",
-      "correct_answer": "PDQ",
+      "question": "Find the odd one out among the following numbers: 101, 49, 25, 36",
+      "correct_answer": "101",
       "options": [
-        "MAN",
-        "J>K",
-        "QER",
-        "PDQ"
+        "101",
+        "49",
+        "25",
+        "36"
       ],
-      "explanation": "Each letter is shifted forward by exactly 3 positions in the English alphabet.",
+      "explanation": "25, 36, and 49 are perfect squares. 101 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "A train travels at an average speed of 120 km/hr. How much distance will it cover in 4 hours?",
+      "correct_answer": "480 km",
+      "options": [
+        "480 km",
+        "600 km",
+        "360 km",
+        "500 km"
+      ],
+      "explanation": "Distance = Speed * Time = 120 * 4 = 480 km.",
+      "trick": "Basic multiplication rule: D = S * T.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "Sardar Patel",
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru",
+        "Dr. Rajendra Prasad"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Amazon",
+        "Nile",
+        "Mississippi",
+        "Yangtze"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Find the next number in the series: 2, 17, 32, 47, 62, ?",
+      "correct_answer": "77",
+      "options": [
+        "77",
+        "92",
+        "62",
+        "79"
+      ],
+      "explanation": "The series follows an Arithmetic Progression with a constant difference of 15. So, 62 + (15) = 77.",
+      "trick": "Always check the difference between the first and second terms and verify across the series.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "What is the average of the following 5 consecutive even numbers: 37, 39, 41, 43, 45?",
+      "correct_answer": "41",
+      "options": [
+        "45",
+        "43",
+        "39",
+        "41"
+      ],
+      "explanation": "Sum = 205. Average = Sum / 5 = 41.",
+      "trick": "For a consecutive arithmetic sequence, the average is simply the exact middle term.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "A can complete a piece of work in 52 days while B can complete the same work in 84 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "32.12 days",
+      "options": [
+        "32.12 days",
+        "31.12 days",
+        "34.12 days",
+        "36.12 days"
+      ],
+      "explanation": "Work = 52 * 84 = 4368. Rate = 52 + 84 = 136. Time = Work / Rate = 32.12 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Saturn",
+        "Earth",
+        "Neptune",
+        "Jupiter"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If BAT is coded as DCV, how will BOX be coded in that same language?",
+      "correct_answer": "DQZ",
+      "options": [
+        "ER[",
+        "@MV",
+        "BOX",
+        "DQZ"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 2 positions in the English alphabet.",
       "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
       "category": "Logical Reasoning"
     }
