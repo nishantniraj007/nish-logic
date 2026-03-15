@@ -4,136 +4,242 @@
     "day_index": 0,
     "slot_index": 5,
     "difficulty": "SSC/Bank",
-    "generated_at": "2026-03-10T21:05:01.285Z"
+    "generated_at": "2026-03-15T20:36:25.268Z"
   },
   "questions": [
     {
-      "category": "Quantitative Aptitude",
-      "question": "A person travels from point A to point B at a speed of 60 km/hr and returns from B to A at a speed of 40 km/hr. What is the average speed of the person for the entire journey?",
-      "options": [
-        "A) 50 km/hr",
-        "B) 48 km/hr",
-        "C) 45 km/hr",
-        "D) 52 km/hr"
-      ],
-      "correct_answer": "B) 48 km/hr",
-      "explanation": "Let the distance between A and B be 'D' km.\nTime taken to travel from A to B (t1) = Distance / Speed = D/60 hours.\nTime taken to travel from B to A (t2) = Distance / Speed = D/40 hours.\n\nTotal Distance traveled = D (to B) + D (from B) = 2D km.\nTotal Time taken = t1 + t2 = (D/60) + (D/40) hours.\nTo add the fractions, find a common denominator, which is 120.\nTotal Time = (2D/120) + (3D/120) = 5D/120 = D/24 hours.\n\nAverage Speed = Total Distance / Total Time\nAverage Speed = (2D) / (D/24)\nAverage Speed = 2D * (24/D)\nAverage Speed = 48 km/hr.",
-      "trick": "When a person travels the same distance at two different speeds (S1 and S2), the average speed for the entire journey is given by the formula:\nAverage Speed = (2 * S1 * S2) / (S1 + S2)\n\nIn this case, S1 = 60 km/hr and S2 = 40 km/hr.\nAverage Speed = (2 * 60 * 40) / (60 + 40)\nAverage Speed = (2 * 60 * 40) / 100\nAverage Speed = (4800) / 100\nAverage Speed = 48 km/hr."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an article 40% above its cost price. He allows a discount of 20% on the marked price. If he gives an additional discount of 10% on the discounted price, what is his overall profit or loss percentage?",
-      "options": [
-        "A) 0.8% Loss",
-        "B) 0.8% Profit",
-        "C) 1.2% Loss",
-        "D) 1.2% Profit"
-      ],
-      "correct_answer": "B) 0.8% Profit",
-      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 40% of CP = 100 + 40 = Rs. 140.\nFirst Discount = 20% on MP = 20% of 140 = (20/100) * 140 = Rs. 28.\nPrice after first discount = 140 - 28 = Rs. 112.\nSecond (Additional) Discount = 10% on the discounted price (Rs. 112) = (10/100) * 112 = Rs. 11.20.\nSelling Price (SP) = 112 - 11.20 = Rs. 100.80.\n\nProfit = SP - CP = 100.80 - 100 = Rs. 0.80.\nProfit Percentage = (Profit / CP) * 100 = (0.80 / 100) * 100 = 0.8%.",
-      "trick": "Use multiplication factors for successive percentage changes.\nLet CP = 1.\nMarked up by 40% (factor 1.40).\nDiscounted by 20% (factor 0.80).\nDiscounted by 10% (factor 0.90).\n\nFinal SP relative to CP = 1 * (1 + 0.40) * (1 - 0.20) * (1 - 0.10)\n= 1 * 1.40 * 0.80 * 0.90\n= 1.12 * 0.90\n= 1.008\n\nSince SP = 1.008 * CP, the profit is 0.008 * 100% = 0.8%."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "The difference between the compound interest and simple interest on a sum of ₹15,000 for 2 years at the same rate of interest is ₹96. What is the rate of interest per annum?",
-      "options": [
-        "A) 6%",
-        "B) 8%",
-        "C) 10%",
-        "D) 12%"
-      ],
-      "correct_answer": "B) 8%",
-      "explanation": "Let P be the principal (₹15,000), R be the rate of interest per annum, and T be the time in years (2 years).\nSimple Interest (SI) for 2 years = (P * R * T) / 100 = (15000 * R * 2) / 100 = 300R.\nCompound Interest (CI) for 2 years = P * [(1 + R/100)^T - 1] = 15000 * [(1 + R/100)^2 - 1]\n= 15000 * [1 + 2R/100 + R^2/10000 - 1]\n= 15000 * [2R/100 + R^2/10000]\n= 300R + 15000 * R^2/10000\n= 300R + 1.5 R^2.\nDifference (CI - SI) = (300R + 1.5 R^2) - 300R = 1.5 R^2.\nGiven Difference = ₹96.\nSo, 1.5 R^2 = 96.\nR^2 = 96 / 1.5 = 960 / 15 = 64.\nR = √64 = 8%.",
-      "trick": "For 2 years, the difference between Compound Interest (CI) and Simple Interest (SI) is given by the formula: Difference = P * (R/100)^2.\nGiven: Difference = ₹96, Principal (P) = ₹15,000.\nSubstitute the values into the formula:\n96 = 15000 * (R/100)^2\n96 = 15000 * R^2 / 10000\n96 = 1.5 * R^2\nR^2 = 96 / 1.5 = 64\nR = √64 = 8%."
-    },
-    {
       "category": "Logical Reasoning",
-      "question": "In a certain code language, if 'MASTER' is coded as 'NCVXJX', then how will 'PENCIL' be coded in the same language?",
+      "question": "Pointing to a photograph, Mr. Sharma said, \"He is the son of the only daughter of my father.\" How is Mr. Sharma related to the man in the photograph?",
       "options": [
-        "A. QGQGNR",
-        "B. QGGQNR",
-        "C. QGQGNQ",
-        "D. QGRGNQ"
+        "(A) Brother",
+        "(B) Uncle",
+        "(C) Father",
+        "(D) Grandfather"
       ],
-      "correct_answer": "A. QGQGNR",
-      "explanation": "Let's decode the pattern used for 'MASTER' -> 'NCVXJX':\n\nOriginal word: M A S T E R\nAlphabet position: 13 1 19 20 5 18\n\nCoded word: N C V X J X\nAlphabet position: 14 3 22 24 10 24\n\nBy comparing the positions, we find the following increments:\n- M (13) + 1 = N (14)\n- A (1) + 2 = C (3)\n- S (19) + 3 = V (22)\n- T (20) + 4 = X (24)\n- E (5) + 5 = J (10)\n- R (18) + 6 = X (24)\n\nThe pattern is a progressive increment starting from +1 for the first letter, +2 for the second, +3 for the third, and so on.\n\nNow, let's apply this pattern to the word 'PENCIL':\n\nOriginal word: P E N C I L\nAlphabet position: 16 5 14 3 9 12\n\nApplying the increments (+1, +2, +3, +4, +5, +6):\n- P (16) + 1 = Q (17)\n- E (5) + 2 = G (7)\n- N (14) + 3 = Q (17)\n- C (3) + 4 = G (7)\n- I (9) + 5 = N (14)\n- L (12) + 6 = R (18)\n\nSo, 'PENCIL' will be coded as 'QGQGNR'.",
-      "trick": "For coding-decoding, quickly write down the alphabetical positions (1-26) for both the original and coded words. Look for consistent differences (addition/subtraction), alternating patterns, or progressive patterns (+1, +2, +3...). Once the pattern is identified, apply it systematically to the target word."
+      "correct_answer": "(B) Uncle",
+      "explanation": "Let's break down the statement step-by-step from the end:\n1.  \"My father\" refers to Mr. Sharma's father.\n2.  \"The only daughter of my father\" refers to Mr. Sharma's sister (since Mr. Sharma is a male, his father's only daughter must be his sister).\n3.  \"He is the son of the only daughter of my father\" means \"He is the son of Mr. Sharma's sister.\"\n4.  Therefore, the man in the photograph is Mr. Sharma's nephew. This means Mr. Sharma is the uncle (specifically, maternal uncle) of the man in the photograph.",
+      "trick": "Start decoding the statement from the 'speaker's perspective' part (e.g., 'my father') and work backward towards the person being pointed at. This simplifies complex blood relation statements by building the family tree incrementally."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Quantitative Aptitude",
-      "question": "A shopkeeper marks an item 40% above its cost price. He offers a discount of 25% on the marked price. If the profit earned is ₹210, what is the cost price of the item?",
+      "question": "A shopkeeper marks an article 30% above its cost price. He allows a discount of 15% on the marked price. What is his profit percentage?",
       "options": [
-        "A) ₹3800",
-        "B) ₹4000",
-        "C) ₹4200",
-        "D) ₹4500"
+        "A. 10.5%",
+        "B. 12.5%",
+        "C. 15%",
+        "D. 18%"
       ],
-      "correct_answer": "C) ₹4200",
-      "explanation": "Let the Cost Price (CP) be ₹X.\nMarked Price (MP) = CP * (1 + 40/100) = X * 1.40 = 1.4X.\nSelling Price (SP) = MP * (1 - 25/100) = 1.4X * 0.75 = 1.05X.\nProfit = SP - CP = 1.05X - X = 0.05X.\nGiven Profit = ₹210.\nSo, 0.05X = 210.\nX = 210 / 0.05 = 210 * (100/5) = 210 * 20 = ₹4200.",
-      "trick": "The net change from Cost Price to Selling Price can be found using successive percentages. If an item is marked up by M% and then discounted by D%, the selling price (SP) relative to cost price (CP) is: SP = CP * (1 + M/100) * (1 - D/100).\nHere, SP = CP * (1 + 40/100) * (1 - 25/100) = CP * (1.4) * (0.75) = 1.05 * CP.\nThis means the Selling Price is 105% of the Cost Price, implying a profit of 5%.\nSo, 5% of CP = ₹210.\nCP = (210 / 5) * 100 = 42 * 100 = ₹4200."
+      "correct_answer": "A. 10.5%",
+      "explanation": "Let the Cost Price (CP) be Rs. 100.\nMarked Price (MP) = CP + 30% of CP = 100 + 30 = Rs. 130.\nDiscount = 15% of MP = 15% of 130 = (15/100) * 130 = 1.5 * 13 = Rs. 19.5.\nSelling Price (SP) = MP - Discount = 130 - 19.5 = Rs. 110.5.\nProfit = SP - CP = 110.5 - 100 = Rs. 10.5.\nProfit Percentage = (Profit / CP) * 100 = (10.5 / 100) * 100 = 10.5%.",
+      "trick": "Use the net percentage change formula: A + B + (AB/100).\nHere, A = +30% (markup) and B = -15% (discount).\nNet change = 30 + (-15) + (30 * -15 / 100)\n= 15 + (-450 / 100)\n= 15 - 4.5 = 10.5%.\nThis net change represents the profit percentage."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow from the statements.\n\nStatements:\nI. All pens are pencils.\nII. Some pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\nI. Some pens are erasers.\nII. Some pencils are sharpeners.\nIII. No pen is a sharpener.",
+      "question": "Statements:\nI. Some pens are pencils.\nII. All pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\n1. Some pens are erasers.\n2. Some sharpeners are pencils.\n3. No pen is a sharpener.\n4. Some erasers are pens.\n\nWhich of the following conclusions logically follow from the given statements?",
       "options": [
-        "A. Only conclusion I follows.",
-        "B. Only conclusion II follows.",
-        "C. Only conclusion III follows.",
-        "D. None of the conclusions follow."
+        "A. Only 1 and 4 follow",
+        "B. Only 1, 3 and 4 follow",
+        "C. Only 1 and 3 follow",
+        "D. Only 1, 2 and 4 follow"
       ],
-      "correct_answer": "D. None of the conclusions follow.",
-      "explanation": "Let's analyze each conclusion based on the given statements using Venn diagrams or rules of syllogism:\n\nStatements:\n1. All pens (P) are pencils (PL).\n2. Some pencils (PL) are erasers (E).\n3. No eraser (E) is a sharpener (S).\n\nConclusion I: Some pens are erasers.\n- From (1) and (2): All P are PL, Some PL are E. This is an A + I type combination. No definite conclusion can be drawn between P and E. It's possible for P to overlap with E, but not necessarily. Hence, Conclusion I does not follow.\n\nConclusion II: Some pencils are sharpeners.\n- From (2) and (3): Some PL are E, No E is S. This is an I + E type combination. The valid conclusion is 'Some pencils are not sharpeners'. Therefore, 'Some pencils are sharpeners' does not necessarily follow. Hence, Conclusion II does not follow.\n\nConclusion III: No pen is a sharpener.\n- We need to establish a relation between P and S. We know All P are PL, and No E is S. From 'Some PL are E', we know there's a part of PL that isn't E. It's possible for pens (P, which are inside PL) to be in this non-E part of PL and also overlap with sharpeners (S). There is no direct or indirect definite negative relationship established between P and S. Hence, Conclusion III does not follow.\n\nSince none of the conclusions logically follow from the statements, option D is the correct answer.",
-      "trick": "For syllogism, visualize with minimum overlap Venn diagrams. If a conclusion is not necessarily true in ALL possible diagrams (consistent with statements), it does not follow. For I+E type (Some PL are E, No E is S), the only definite conclusion is 'Some PL are not S'."
+      "correct_answer": "A. Only 1 and 4 follow",
+      "explanation": "Let's analyze the statements using Venn Diagrams:\nStatement I: Some Pens are Pencils (Overlap between Pens and Pencils).\nStatement II: All Pencils are Erasers (Pencils circle completely inside Erasers circle).\nStatement III: No Eraser is a Sharpener (Erasers circle and Sharpeners circle are completely separate).\n\nNow, let's evaluate the conclusions:\n1. Some pens are erasers: From I (Some pens are pencils) and II (All pencils are erasers), it logically follows that the pens that are pencils must also be erasers. So, 'Some pens are erasers' follows.\n2. Some sharpeners are pencils: From II (All pencils are erasers) and III (No eraser is a sharpener), it means no pencil can be a sharpener. Therefore, 'Some sharpeners are pencils' does not follow.\n3. No pen is a sharpener: We know 'Some pens are erasers' (from conclusion 1) and 'No eraser is a sharpener' (from statement III). This implies that the 'pens that are erasers' cannot be sharpeners. However, there might be pens that are NOT erasers, and these pens could potentially be sharpeners. The statements do not provide enough information to conclude that 'No pen is a sharpener' for ALL pens. So, this conclusion does not necessarily follow.\n4. Some erasers are pens: This is the converse of conclusion 1. Since 'Some pens are erasers' follows, 'Some erasers are pens' also logically follows.\n\nTherefore, only Conclusions 1 and 4 follow.",
+      "trick": "For 'Some A are B' and 'All B are C', then 'Some A are C' and 'Some C are A' always follow. For 'All A are B' and 'No B is C', then 'No A is C' follows. Be cautious with 'No X is Y' conclusions when there's an 'Some' relationship involved; it might not apply to the entire set X."
     },
     {
-      "question": "Sample History?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 4?",
+      "correct_answer": "Option 1",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Static GK (History)"
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow from the statements.\n\nStatements:\nI. Some pens are pencils.\nII. All pencils are erasers.\nIII. No eraser is a sharpener.\n\nConclusions:\n1. Some pens are erasers.\n2. Some sharpeners are pencils.\n3. No pen is a sharpener.\n4. Some erasers are pens.",
-      "options": [
-        "(A) Only conclusion I and II follow",
-        "(B) Only conclusion I and IV follow",
-        "(C) Only conclusion I, III and IV follow",
-        "(D) Only conclusion II and III follow"
-      ],
-      "correct_answer": "(B) Only conclusion I and IV follow",
-      "explanation": "Let's analyze each conclusion based on the given statements:\nStatements: (P = Pens, Pc = Pencils, E = Erasers, S = Sharpeners)\nI. Some P are Pc.\nII. All Pc are E.\nIII. No E is S.\n\nConclusion 1: Some pens are erasers.\nFrom Statement I (Some P are Pc) and Statement II (All Pc are E), we can combine them. If 'Some P are Pc' and 'All Pc are E', then it logically follows that 'Some P are E'. (I + A type conversion). So, Conclusion 1 follows.\n\nConclusion 2: Some sharpeners are pencils.\nFrom Statement II (All Pc are E) and Statement III (No E is S), we can deduce 'No Pc is S'. (A + E type conversion). If 'No Pc is S', then 'Some S are Pc' is definitely false. So, Conclusion 2 does not follow.\n\nConclusion 3: No pen is a sharpener.\nFrom Statement I (Some P are Pc) and Statement II (All Pc are E), we get 'Some P are E'. From Statement III (No E is S). We have 'Some P are E' and 'No E is S'. This combination (I + E type) yields no definite conclusion regarding 'P' and 'S'. It is possible that some pens are not pencils and those pens could be sharpeners. Therefore, 'No pen is a sharpener' cannot be definitively concluded. So, Conclusion 3 does not follow.\n\nConclusion 4: Some erasers are pens.\nThis is the converse of Conclusion 1. If 'Some pens are erasers' (which we found to be true from Conclusion 1), then it logically follows that 'Some erasers are pens'. So, Conclusion 4 follows.\n\nTherefore, only conclusions I and IV follow.",
-      "trick": "Use Venn diagrams for quick visualization. For positive conclusions (Some/All), combine statements sequentially. For negative conclusions (No/Some Not), be careful about possibilities not covered by the statements. Remember that 'Some A are B' implies 'Some B are A'."
+      "explanation": "DB Offline",
+      "trick": ""
     },
     {
       "category": "Logical Reasoning",
-      "question": "Pointing to a photograph, a man said, \"I have no brother or sister, but that man's father is my father's son.\" Whose photograph was it?",
+      "question": "In a certain code language, `MARKET` is coded as `LBSJFU`. How will `PUBLIC` be coded in that same language?",
       "options": [
-        "(A) His own son",
-        "(B) His father",
-        "(C) His nephew",
-        "(D) His cousin"
+        "A. OVCKJD",
+        "B. QVCMID",
+        "C. OVCMJD",
+        "D. QVCKJD"
       ],
-      "correct_answer": "(A) His own son",
-      "explanation": "Let's break down the statement made by the man:\n1. \"I have no brother or sister\": This implies the man is an only child.\n2. \"my father's son\": Since the man is an only child, his father's only son must be the man himself.\n3. Now substitute this back into the main statement: \"that man's father is [the man himself]\".\nIf 'that man's father is the man himself', it means the man in the photograph is the son of the speaker.\nTherefore, the photograph was of his own son.",
-      "trick": "Start by identifying the speaker's relationship to 'my father's son'. Since the speaker has no siblings, 'my father's son' refers directly to the speaker himself. Then, substitute this back into the full sentence to find the relationship with 'that man'."
+      "correct_answer": "A. OVCKJD",
+      "explanation": "Let's decode the pattern from `MARKET` to `LBSJFU` by observing the change in each letter's position:\n- M (13) -> L (12): -1\n- A (1) -> B (2): +1\n- R (18) -> S (19): +1\n- K (11) -> J (10): -1\n- E (5) -> F (6): +1\n- T (20) -> U (21): +1\n\nThe pattern observed is a repeating sequence of changes: -1, +1, +1, -1, +1, +1.\n\nNow, let's apply this pattern to the word `PUBLIC`:\n- P (16) - 1 = O (15)\n- U (21) + 1 = V (22)\n- B (2) + 1 = C (3)\n- L (12) - 1 = K (11)\n- I (9) + 1 = J (10)\n- C (3) + 1 = D (4)\n\nCombining these, `PUBLIC` is coded as `OVCKJD`.",
+      "trick": "Quickly write down the alphabetical position (A=1, B=2, etc.) for the letters in both the original and coded words. Look for a consistent numerical difference or a repeating sequence of differences (+1, -1, +2, -2, etc.). Once the pattern is identified, apply it systematically to the new word."
     },
     {
-      "question": "Sample CA?",
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
       ],
-      "correct_answer": "A",
-      "explanation": "test",
-      "category": "Current Affairs"
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A shopkeeper marks his goods 40% above the cost price. He allows a discount of 25% on the marked price. If he sold the article for Rs. 840, what was the cost price?",
+      "options": [
+        "Rs. 750",
+        "Rs. 800",
+        "Rs. 850",
+        "Rs. 900"
+      ],
+      "correct_answer": "Rs. 800",
+      "explanation": "Let the Cost Price (CP) be 'x'.\nMarked Price (MP) = CP + 40% of CP = x + 0.40x = 1.40x\nDiscount = 25% of MP = 0.25 * (1.40x) = 0.35x\nSelling Price (SP) = MP - Discount = 1.40x - 0.35x = 1.05x\nGiven, SP = Rs. 840.\nSo, 1.05x = 840\nx = 840 / 1.05\nx = 84000 / 105\nx = 800\nTherefore, the Cost Price is Rs. 800.",
+      "trick": "Assume CP = 100 units.\nMarked Price (MP) = 100 + 40% of 100 = 140 units.\nSelling Price (SP) = MP - 25% of MP = 140 - (1/4 * 140) = 140 - 35 = 105 units.\nIf 105 units = Rs. 840,\nThen 1 unit = 840 / 105 = 8.\nCost Price (CP) = 100 units = 100 * 8 = Rs. 800."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "A sum of money becomes Rs. 1460 in 2 years and Rs. 1606 in 3 years at simple interest. Find the principal amount.",
+      "options": [
+        "Rs. 1000",
+        "Rs. 1100",
+        "Rs. 1168",
+        "Rs. 1200"
+      ],
+      "correct_answer": "Rs. 1168",
+      "explanation": "Let the principal amount be P and the annual simple interest rate be R.\nAmount after 2 years (A2) = P + (P * R * 2) / 100 = Rs. 1460  --- (1)\nAmount after 3 years (A3) = P + (P * R * 3) / 100 = Rs. 1606  --- (2)\n\nSubtracting (1) from (2) gives the Simple Interest for 1 year:\n(P + (P * R * 3) / 100) - (P + (P * R * 2) / 100) = 1606 - 1460\n(P * R * 1) / 100 = 146\nSo, Simple Interest for 1 year (SI1) = Rs. 146.\n\nSimple Interest for 2 years (SI2) = 2 * SI1 = 2 * 146 = Rs. 292.\n\nNow, we know Amount after 2 years = Principal + Simple Interest for 2 years.\nA2 = P + SI2\n1460 = P + 292\nP = 1460 - 292\nP = Rs. 1168.\nTherefore, the principal amount is Rs. 1168.",
+      "trick": "In simple interest, the interest earned each year is constant.\nInterest earned in (3 - 2) = 1 year = Amount in 3 years - Amount in 2 years\n1-year Simple Interest = Rs. 1606 - Rs. 1460 = Rs. 146.\n\nInterest for 2 years = 2 * (1-year Simple Interest) = 2 * 146 = Rs. 292.\n\nPrincipal = Amount after 2 years - Interest for 2 years\nPrincipal = Rs. 1460 - Rs. 292 = Rs. 1168."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "Find the compound interest on Rs. 8,000 for 2 years at 15% per annum, compounded annually.",
+      "options": [
+        "A. Rs. 2,400",
+        "B. Rs. 2,580",
+        "C. Rs. 2,640",
+        "D. Rs. 2,720"
+      ],
+      "correct_answer": "B. Rs. 2,580",
+      "explanation": "Principal (P) = Rs. 8,000\nRate (R) = 15% per annum\nTime (T) = 2 years\n\nFor the first year:\nInterest (I1) = P * R * T / 100 = 8000 * 15 * 1 / 100 = Rs. 1,200\nAmount after 1 year = P + I1 = 8000 + 1200 = Rs. 9,200\n\nFor the second year:\nPrincipal for the second year = Rs. 9,200\nInterest (I2) = 9200 * 15 * 1 / 100 = Rs. 1,380\n\nTotal Compound Interest = I1 + I2 = 1200 + 1380 = Rs. 2,580.",
+      "trick": "Calculate the effective compound interest rate for 2 years.\nEffective Rate = R + R + (R*R)/100\nHere, R = 15%.\nEffective Rate = 15 + 15 + (15*15)/100\n= 30 + 225/100\n= 30 + 2.25 = 32.25%.\n\nCompound Interest = Effective Rate % of Principal\nCI = 32.25% of 8000\nCI = (32.25 / 100) * 8000\nCI = 32.25 * 80 = Rs. 2,580."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Statements:\nI. All books are pens.\nII. Some pens are pencils.\nIII. No pencil is a rubber.\n\nConclusions:\nI. Some pens are not rubbers.\nII. Some books are pencils.\nIII. No book is a rubber.",
+      "options": [
+        "(A) Only conclusion I follows.",
+        "(B) Only conclusions I and II follow.",
+        "(C) Only conclusions I and III follow.",
+        "(D) All conclusions I, II and III follow."
+      ],
+      "correct_answer": "(A) Only conclusion I follows.",
+      "explanation": "Let's analyze each conclusion based on the given statements:\n\n**Statements:**\n1. All Books (B) are Pens (P). (B ⊂ P)\n2. Some Pens (P) are Pencils (Pc). (P ∩ Pc ≠ Ø)\n3. No Pencil (Pc) is a Rubber (R). (Pc ∩ R = Ø)\n\n**Conclusion I: Some pens are not rubbers.**\n*   From statement II, we know that some pens are pencils. Let's call this subset of pens 'X' (X = P ∩ Pc).\n*   From statement III, we know that no pencil is a rubber. This means the pens that are pencils (subset X) cannot be rubbers.\n*   Therefore, 'Some pens are not rubbers' (specifically, the pens that are pencils) is TRUE.\n\n**Conclusion II: Some books are pencils.**\n*   Books are entirely within Pens (Statement I). Pencils have an overlap with Pens (Statement II).\n*   However, there is no direct or indirect information linking Books to Pencils definitively. It is possible that the portion of pens that are pencils does not include any books, or it might. Since it's not a definite 'must be true' scenario, this conclusion does not necessarily follow.\n\n**Conclusion III: No book is a rubber.**\n*   Books are entirely within Pens. We know no pencil is a rubber.\n*   However, the part of pens that are NOT pencils could potentially be rubbers. Since books are just a type of pen, and we don't know if all books are pencils, we cannot conclude that no book is a rubber. This conclusion does not necessarily follow.\n\nThus, only conclusion I follows.",
+      "trick": "For 'Some A are not B' conclusions, look for a chain: if 'Some A are C' and 'No C is B', then 'Some A are not B' is always true. (Here, A=Pens, C=Pencils, B=Rubbers). For other conclusions, consider all possible Venn diagram configurations; if any configuration contradicts the conclusion, then it does not necessarily follow."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 2?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
     }
   ]
 }
