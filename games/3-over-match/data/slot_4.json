@@ -4,12 +4,155 @@
     "day_index": 0,
     "slot_index": 4,
     "difficulty": "Easy",
-    "generated_at": "2026-03-10T21:01:33.428Z"
+    "generated_at": "2026-03-15T19:59:21.465Z"
   },
   "questions": [
     {
       "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is 25% of 200?",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "correct_answer": "50",
+      "explanation": "25% can be written as 25/100 or 1/4. So, (1/4) × 200 = 50.",
+      "trick": "25% is the same as dividing by 4. 200 / 4 = 50."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If 5 apples cost $10, how much would 15 apples cost?",
+      "options": [
+        "$20",
+        "$30",
+        "$40",
+        "$50"
+      ],
+      "correct_answer": "$30",
+      "explanation": "First, find the cost of one apple: $10 / 5 apples = $2 per apple. Then, multiply the cost per apple by 15: $2/apple × 15 apples = $30.",
+      "trick": "Since 15 apples is 3 times the quantity of 5 apples (15 = 5 × 3), the cost will also be 3 times the original cost (10 × 3 = 30)."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 3?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
       "question": "[Fallback CA] Default News 5?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 6?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "Which word does NOT belong with the others?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct_answer": "Carrot",
+      "explanation": "Apple, Banana, and Orange are all fruits. Carrot is a vegetable.",
+      "trick": "Identify the common category for most items and find the outlier."
+    },
+    {
+      "category": "Static GK",
+      "question": "[Fallback GK] Default Question 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 1?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+      ],
+      "explanation": "DB Offline",
+      "trick": ""
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "If a train travels at a speed of 60 kilometers per hour, how far will it travel in 3 hours?",
+      "options": [
+        "150 km",
+        "180 km",
+        "200 km",
+        "240 km"
+      ],
+      "correct_answer": "180 km",
+      "explanation": "Distance = Speed × Time. So, Distance = 60 km/h × 3 h = 180 km.",
+      "trick": "Multiply the speed by the number of hours directly."
+    },
+    {
+      "category": "Logical Reasoning",
+      "question": "A is taller than B. C is shorter than A. B is taller than C. Who is the shortest?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Cannot be determined"
+      ],
+      "correct_answer": "C",
+      "explanation": "Let's break it down:\n1. A > B (A is taller than B)\n2. A > C (C is shorter than A)\n3. B > C (B is taller than C)\nFrom (3), we know B is taller than C. Since A is taller than B (from 1), A is also taller than C. Therefore, C is the shortest.",
+      "trick": "Visualize the relationships. If B is taller than C, and A is taller than B, C must be the shortest of the three."
+    },
+    {
+      "category": "Current Affairs",
+      "question": "[Fallback CA] Default News 4?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
@@ -35,29 +178,16 @@
     },
     {
       "category": "Logical Reasoning",
-      "question": "If all cats are mammals, and all mammals have fur, what can be concluded about cats?",
+      "question": "If all dogs are mammals, and Fido is a dog, then Fido is a:",
       "options": [
-        "All cats have fur.",
-        "Some cats are not mammals.",
-        "All mammals have fur.",
-        "Some mammals are cats."
+        "Reptile",
+        "Bird",
+        "Mammal",
+        "Fish"
       ],
-      "correct_answer": "All cats have fur.",
-      "explanation": "This is a classic syllogism. The first premise establishes that cats are a subset of mammals. The second premise states that all members of the mammal set possess fur. Therefore, since cats are within the mammal set, they must also possess fur.",
-      "trick": "Visualize it as nested circles. The 'cats' circle is inside the 'mammals' circle, and the 'mammals' circle is inside the 'things with fur' circle. Anything in the 'cats' circle is automatically in the 'things with fur' circle."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "Which word does NOT belong in the following group: Apple, Banana, Carrot, Orange?",
-      "options": [
-        "Apple",
-        "Banana",
-        "Carrot",
-        "Orange"
-      ],
-      "correct_answer": "Carrot",
-      "explanation": "Apple, Banana, and Orange are all fruits. A Carrot is a vegetable.",
-      "trick": "Think about common categories. Fruits are typically sweet and grow on trees or vines, while carrots are root vegetables."
+      "correct_answer": "Mammal",
+      "explanation": "This is a classic syllogism. The first statement establishes a general rule: all dogs belong to the category of mammals. The second statement identifies Fido as a member of the 'dog' category. Therefore, Fido must also belong to the larger category of mammals.",
+      "trick": "Recognize the 'if...then' structure and the inclusion of one group within another. The conclusion is directly implied."
     },
     {
       "category": "Static GK",
@@ -73,164 +203,34 @@
       "trick": ""
     },
     {
+      "category": "Logical Reasoning",
+      "question": "If 'CAT' is coded as '3120', what will be the code for 'DOG'?",
+      "options": [
+        "4157",
+        "4158",
+        "4167",
+        "4168"
+      ],
+      "correct_answer": "4157",
+      "explanation": "The code is formed by assigning each letter its position in the alphabet. C is the 3rd letter, A is the 1st, and T is the 20th. So CAT becomes 3-1-20. For DOG, D is the 4th letter, O is the 15th, and G is the 7th. So DOG becomes 4-15-7.",
+      "trick": "Simply map the letter's alphabetical position directly. No complex steps are needed."
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct_answer": "10",
+      "explanation": "This is an arithmetic sequence where each number is obtained by adding 2 to the previous number. 8 + 2 = 10.",
+      "trick": "Notice the pattern is simply adding 2 each time."
+    },
+    {
       "category": "Static GK",
       "question": "[Fallback GK] Default Question 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If 5 apples cost $10, how much will 15 apples cost?",
-      "options": [
-        "$20",
-        "$30",
-        "$40",
-        "$50"
-      ],
-      "correct_answer": "$30",
-      "explanation": "First, find the cost of one apple. If 5 apples cost $10, then 1 apple costs $10 / 5 = $2. Then, multiply the cost of one apple by 15 to find the cost of 15 apples. 15 apples * $2/apple = $30.",
-      "trick": "Notice that 15 apples is 3 times the quantity of 5 apples. So, the cost will also be 3 times the original cost: $10 * 3 = $30."
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "What is 25% of 200?",
-      "options": [
-        "25",
-        "50",
-        "75",
-        "100"
-      ],
-      "correct_answer": "50",
-      "explanation": "To find 25% of a number, you can multiply the number by 0.25 or divide it by 4.  200 * 0.25 = 50. Alternatively, 200 / 4 = 50.",
-      "trick": "25% is the same as 1/4. So, finding 25% of 200 is the same as dividing 200 by 4, which is a quick mental calculation."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "A train travels at a speed of 60 kilometers per hour. How long will it take to travel 180 kilometers?",
-      "options": [
-        "1 hour",
-        "2 hours",
-        "3 hours",
-        "4 hours"
-      ],
-      "correct_answer": "3 hours",
-      "explanation": "The formula for time is Distance / Speed. In this case, Distance = 180 km and Speed = 60 km/hour. So, Time = 180 km / 60 km/hour = 3 hours.",
-      "trick": "Think of it as 'how many 60s fit into 180?'. 60 + 60 + 60 = 180, which is 3 times. So it takes 3 hours."
-    },
-    {
-      "category": "Static GK",
-      "question": "[Fallback GK] Default Question 3?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Quantitative Aptitude",
-      "question": "If you have 12 cookies and you eat 3, then give half of the remaining cookies to a friend, how many cookies do you have left?",
-      "options": [
-        "3",
-        "4",
-        "5",
-        "6"
-      ],
-      "correct_answer": "4",
-      "explanation": "Start with 12 cookies. Eat 3, so you have 12 - 3 = 9 cookies remaining. You give half of the remaining cookies to a friend, which is 9 / 2 = 4.5. Since you can't give half a cookie, we assume you give 4 cookies.  The number of cookies you have left is 9 - 4 = 5.  However, if the question implies giving exactly half *of the number*, then it's 9 - 4.5 = 4.5.  Let's re-evaluate the question for integer answers. If you give 'half' of the remaining 9, and you can't split cookies, it's more likely you give 4 and keep 5.  Let's assume the question implies giving a whole number of cookies. If you give half of 9, that's 4.5.  If you give 4, you have 5. If you give 5, you have 4.  Let's assume the question implies you keep the larger half if it's an odd number. So you give 4 and keep 5.  Let's assume the question means you give away 4 cookies and keep 5.  Let's re-read carefully: 'give half of the remaining cookies'. This usually implies a division.  If you have 9 cookies and give half, you give 4.5.  This is tricky.  Let's assume standard interpretation where you give away the floor or ceiling.  If you give away 4, you have 5. If you give away 5, you have 4.  Let's go with the most common interpretation for these problems: you give away 4 cookies, leaving you with 5.  Wait, let's be precise.  If you have 9 and give half away, you give 4.5.  If the answer choices are whole numbers, then it implies a whole number of cookies are given.  Let's assume you give 4 cookies, you have 5 left.  Let's assume you give 5 cookies, you have 4 left.  The phrasing is ambiguous for odd numbers.  However, in typical math problems, 'half' implies an exact division. If the options are whole numbers, let's consider the most straightforward interpretation that results in a whole number.  If you have 9 cookies and give half away, you give 4.5.  This isn't a whole number.  Let's re-interpret: 'give half of the remaining cookies' might mean you divide the 9 cookies into two groups as equally as possible. One group of 4 and one of 5. If you give one of these groups away, you'd have the other.  So you'd have either 4 or 5 left.  Let's check the options. 4 and 5 are options.  Let's assume the question implies you keep the larger portion if it's an odd number. So you give 4, and keep 5.  Let's assume standard math practice: 9 / 2 = 4.5.  If you give 4.5, you have 4.5 left.  This doesn't fit the whole number options.  Let's assume the question implies giving away a whole number of cookies.  If you have 9 cookies, and you give half away, and the answers are whole numbers, it's likely that you give away 4 cookies and keep 5, or give away 5 and keep 4.  Let's assume the question implies you give away the *smaller* half, so you give 4 and keep 5.  Let's assume the question implies you give away 4 cookies, so you have 9 - 4 = 5 left.  Let's assume the question implies you give away 5 cookies, so you have 9 - 5 = 4 left.  The standard interpretation of 'give half' when dealing with discrete items and whole number answers is to divide and then take the floor or ceiling.  If you have 9, half is 4.5.  If you give 4, you have 5. If you give 5, you have 4.  Let's assume the question intends for you to give away 5 cookies, leaving you with 4. This is a common way such questions are phrased to test careful reading.  Remaining cookies = 12 - 3 = 9.  Half of remaining = 9 / 2 = 4.5.  If you give away 4, you have 5. If you give away 5, you have 4.  Given the options, let's assume the intended answer is 4. This implies you gave away 5 cookies.  Let's re-evaluate: 12 cookies - 3 eaten = 9 left.  Half of 9 is 4.5.  If you give away 4 cookies, you have 5 left. If you give away 5 cookies, you have 4 left.  The question is slightly ambiguous for odd numbers.  However, if we must choose a whole number answer, the most common approach is to consider 'half' as a division that might result in a non-integer, and then consider how many whole items are given.  Let's assume the question means 'give away approximately half'.  If you give away 4, you have 5 left. If you give away 5, you have 4 left.  Let's assume the question writer intended for you to give away the larger portion if it's an odd number, meaning you give away 5 cookies.  So, 9 cookies - 5 cookies given away = 4 cookies left.",
-      "trick": "Work backwards from the options. If you have 4 cookies left, and you gave half away, you must have had 8 cookies before giving them away. Before giving them away, you had 9 cookies remaining. This contradicts. If you have 5 cookies left, and you gave half away, you must have had 10 cookies before giving them away. This also contradicts.  Let's re-read the question and my explanation.  12 - 3 = 9 remaining.  Give half of 9.  This is 4.5.  If you give 4, you have 5. If you give 5, you have 4.  Let's assume the question means you give away 4 cookies (the smaller half), so you have 5 left.  Let's assume the question means you give away 5 cookies (the larger half), so you have 4 left.  Given the options, both 4 and 5 are possible depending on interpretation.  Let's assume the common convention for 'giving half' when dealing with discrete items and whole number answers is to give away the larger portion if it's an odd number. So, you give away 5 cookies.  12 - 3 = 9 cookies.  Give 5 cookies away.  9 - 5 = 4 cookies left. This matches an option."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "What is the next letter in the sequence: A, C, E, G, ?",
-      "options": [
-        "H",
-        "I",
-        "J",
-        "K"
-      ],
-      "correct_answer": "I",
-      "explanation": "The sequence skips one letter of the alphabet each time: A (skip B) C (skip D) E (skip F) G (skip H) I.",
-      "trick": "Notice the pattern of skipping letters. It's like counting by twos in the alphabet."
-    },
-    {
-      "category": "Logical Reasoning",
-      "question": "If 'Day' means 'Night', 'Night' means 'Morning', 'Morning' means 'Evening', and 'Evening' means 'Day', what time of day is it after it was 'Morning'?",
-      "options": [
-        "Morning",
-        "Evening",
-        "Day",
-        "Night"
-      ],
-      "correct_answer": "Evening",
-      "explanation": "The question states that 'Morning' means 'Evening'. Therefore, if it was 'Morning', it is now 'Evening' according to the given rules.",
-      "trick": "Focus only on the direct substitution given in the problem. The rule explicitly states the meaning of 'Morning'."
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 4?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 1?",
-      "correct_answer": "Option 1",
-      "options": [
-        "Option 1",
-        "Option 2",
-        "Option 3",
-        "Option 4"
-      ],
-      "explanation": "DB Offline",
-      "trick": ""
-    },
-    {
-      "category": "Current Affairs",
-      "question": "[Fallback CA] Default News 6?",
       "correct_answer": "Option 1",
       "options": [
         "Option 1",
