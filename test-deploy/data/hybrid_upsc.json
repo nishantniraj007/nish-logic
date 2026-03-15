@@ -1,70 +1,34 @@
 {
     "metadata": {
         "difficulty": "upsc",
-        "generated_at": "2026-03-15T19:07:10.831875",
+        "generated_at": "2026-03-15T19:19:18.126444",
         "type": "Hybrid TBG + Live DB Sync",
         "total_questions": 18
     },
     "questions": [
         {
-            "question": "A can complete a piece of work in 30 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "20",
-                "19",
-                "24",
-                "22"
-            ],
-            "correct_answer": "20",
-            "explanation": "1/A + 1/B = 1/30 + 1/60 = (60+30)/(30*60) = 1/20. So they complete it in 20 days."
-        },
-        {
-            "question": "Find the missing number in the series: 7, 10, 13, 16, ?",
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.",
             "category": "Logical Reasoning",
             "options": [
-                "38",
-                "19",
-                "8",
-                "24"
+                "All Foods are Apples.",
+                "All Apples are Foods.",
+                "No Apples are Foods.",
+                "Some Foods are not Apples."
             ],
-            "correct_answer": "19",
-            "explanation": "The series is an Arithmetic Progression with a common difference of 3. Next term: 16 + 3 = 19."
+            "correct_answer": "All Apples are Foods.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Apples are Foods.' is the logically certain conclusion."
         },
         {
-            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Pens are Pencils.\n2. All Pencils are Stationery.",
+            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.",
             "category": "Logical Reasoning",
             "options": [
-                "Some Stationery are not Pens.",
-                "All Pens are Stationery.",
-                "All Stationery are Pens.",
-                "No Pens are Stationery."
+                "All Vehicles are Cars.",
+                "All Cars are Vehicles.",
+                "Some Vehicles are not Cars.",
+                "No Cars are Vehicles."
             ],
-            "correct_answer": "All Pens are Stationery.",
-            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Pens are Stationery.' is the logically certain conclusion."
-        },
-        {
-            "question": "If an article is bought for Rs. 360 and sold at a profit of 40%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "503",
-                "513",
-                "483",
-                "539"
-            ],
-            "correct_answer": "503",
-            "explanation": "SP = CP * (1 + Profit%/100) = 360 * (1 + 40/100) = Rs. 503."
-        },
-        {
-            "question": "A can complete a piece of work in 30 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "19",
-                "22",
-                "20",
-                "24"
-            ],
-            "correct_answer": "20",
-            "explanation": "1/A + 1/B = 1/30 + 1/60 = (60+30)/(30*60) = 1/20. So they complete it in 20 days."
+            "correct_answer": "All Cars are Vehicles.",
+            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Cars are Vehicles.' is the logically certain conclusion."
         },
         {
             "question": "A can complete a piece of work in 15 days while B can complete the same work in 30 days. If they work together, in how many days will they complete the work?",
@@ -79,85 +43,121 @@
             "explanation": "1/A + 1/B = 1/15 + 1/30 = (30+15)/(15*30) = 1/10. So they complete it in 10 days."
         },
         {
-            "question": "Find the missing number in the series: 5, 15, 45, 135, ?",
-            "category": "Logical Reasoning",
-            "options": [
-                "405",
-                "417",
-                "420",
-                "413"
-            ],
-            "correct_answer": "405",
-            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 135 * 3 = 405."
-        },
-        {
-            "question": "If an article is bought for Rs. 210 and sold at a profit of 30%, what is the selling price?",
+            "question": "A can complete a piece of work in 12 days while B can complete the same work in 24 days. If they work together, in how many days will they complete the work?",
             "category": "Quantitative Aptitude",
-            "options": [
-                "283",
-                "294",
-                "273",
-                "253"
-            ],
-            "correct_answer": "273",
-            "explanation": "SP = CP * (1 + Profit%/100) = 210 * (1 + 30/100) = Rs. 273."
-        },
-        {
-            "question": "If an article is bought for Rs. 170 and sold at a profit of 40%, what is the selling price?",
-            "category": "Quantitative Aptitude",
-            "options": [
-                "247",
-                "217",
-                "237",
-                "254"
-            ],
-            "correct_answer": "237",
-            "explanation": "SP = CP * (1 + Profit%/100) = 170 * (1 + 40/100) = Rs. 237."
-        },
-        {
-            "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Apples are Fruits.\n2. All Fruits are Foods.",
-            "category": "Logical Reasoning",
-            "options": [
-                "All Foods are Apples.",
-                "All Apples are Foods.",
-                "No Apples are Foods.",
-                "Some Foods are not Apples."
-            ],
-            "correct_answer": "All Apples are Foods.",
-            "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Apples are Foods.' is the logically certain conclusion."
-        },
-        {
-            "question": "Find the missing number in the series: 6, 10, 14, 18, ?",
-            "category": "Logical Reasoning",
             "options": [
                 "8",
-                "22",
-                "32",
-                "14"
+                "10",
+                "7",
+                "12"
             ],
-            "correct_answer": "22",
-            "explanation": "The series is an Arithmetic Progression with a common difference of 4. Next term: 18 + 4 = 22."
+            "correct_answer": "8",
+            "explanation": "1/A + 1/B = 1/12 + 1/24 = (24+12)/(12*24) = 1/8. So they complete it in 8 days."
+        },
+        {
+            "question": "Find the missing number in the series: 7, 13, 19, 25, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "26",
+                "38",
+                "46",
+                "31"
+            ],
+            "correct_answer": "31",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 6. Next term: 25 + 6 = 31."
         },
         {
             "question": "Consider the following statements and decide which conclusion logically follows.\nStatements:\n1. All Dogs are Cats.\n2. All Cats are Animals.",
             "category": "Logical Reasoning",
             "options": [
                 "No Dogs are Animals.",
-                "All Animals are Dogs.",
                 "All Dogs are Animals.",
-                "Some Animals are not Dogs."
+                "Some Animals are not Dogs.",
+                "All Animals are Dogs."
             ],
             "correct_answer": "All Dogs are Animals.",
             "explanation": "If all A are B and all B are C, then all A must be C. Therefore, 'All Dogs are Animals.' is the logically certain conclusion."
         },
         {
+            "question": "If an article is bought for Rs. 330 and sold at a profit of 30%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "409",
+                "429",
+                "439",
+                "462"
+            ],
+            "correct_answer": "429",
+            "explanation": "SP = CP * (1 + Profit%/100) = 330 * (1 + 30/100) = Rs. 429."
+        },
+        {
+            "question": "If an article is bought for Rs. 460 and sold at a profit of 50%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "690",
+                "670",
+                "736",
+                "700"
+            ],
+            "correct_answer": "690",
+            "explanation": "SP = CP * (1 + Profit%/100) = 460 * (1 + 50/100) = Rs. 690."
+        },
+        {
+            "question": "Find the missing number in the series: 5, 15, 45, 135, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "390",
+                "408",
+                "414",
+                "405"
+            ],
+            "correct_answer": "405",
+            "explanation": "The series is a Geometric Progression with a common ratio of 3. Next term: 135 * 3 = 405."
+        },
+        {
+            "question": "If an article is bought for Rs. 150 and sold at a profit of 40%, what is the selling price?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "210",
+                "220",
+                "225",
+                "190"
+            ],
+            "correct_answer": "210",
+            "explanation": "SP = CP * (1 + Profit%/100) = 150 * (1 + 40/100) = Rs. 210."
+        },
+        {
+            "question": "A can complete a piece of work in 30 days while B can complete the same work in 60 days. If they work together, in how many days will they complete the work?",
+            "category": "Quantitative Aptitude",
+            "options": [
+                "22",
+                "20",
+                "24",
+                "19"
+            ],
+            "correct_answer": "20",
+            "explanation": "1/A + 1/B = 1/30 + 1/60 = (60+30)/(30*60) = 1/20. So they complete it in 20 days."
+        },
+        {
+            "question": "Find the missing number in the series: 5, 8, 11, 14, ?",
+            "category": "Logical Reasoning",
+            "options": [
+                "29",
+                "17",
+                "32",
+                "19"
+            ],
+            "correct_answer": "17",
+            "explanation": "The series is an Arithmetic Progression with a common difference of 3. Next term: 14 + 3 = 17."
+        },
+        {
             "question": "Sample CA?",
             "category": "Current Affairs",
             "options": [
-                "A",
+                "C",
                 "D",
-                "B",
-                "C"
+                "A",
+                "B"
             ],
             "correct_answer": "A",
             "explanation": "test",
@@ -167,10 +167,10 @@
             "question": "Who won the ICC Men's Cricket World Cup 2023?",
             "category": "Current Affairs",
             "options": [
-                "England",
-                "South Africa",
+                "Australia",
                 "India",
-                "Australia"
+                "South Africa",
+                "England"
             ],
             "correct_answer": "Australia",
             "explanation": "Australia defeated India in the final to win the 2023 ICC World Cup.",
@@ -180,10 +180,10 @@
             "question": "Which city hosted the G20 Summit in 2023?",
             "category": "Current Affairs",
             "options": [
-                "Rome",
+                "Riyadh",
                 "New Delhi",
                 "Bali",
-                "Riyadh"
+                "Rome"
             ],
             "correct_answer": "New Delhi",
             "explanation": "The 2023 G20 New Delhi summit was the eighteenth meeting of G20.",
@@ -193,9 +193,9 @@
             "question": "What is the name of India's first solar mission?",
             "category": "Current Affairs",
             "options": [
-                "Bhaskara-L",
-                "Chandrayaan-3",
                 "Surya-1",
+                "Chandrayaan-3",
+                "Bhaskara-L",
                 "Aditya-L1"
             ],
             "correct_answer": "Aditya-L1",
@@ -206,10 +206,10 @@
             "question": "Which film won the Best Picture at the 96th Academy Awards?",
             "category": "Current Affairs",
             "options": [
+                "Oppenheimer",
                 "Killers of the Flower Moon",
-                "Poor Things",
                 "Barbie",
-                "Oppenheimer"
+                "Poor Things"
             ],
             "correct_answer": "Oppenheimer",
             "explanation": "Oppenheimer won the Academy Award for Best Picture in 2024.",
@@ -219,8 +219,8 @@
             "question": "Which country officially became the 32nd member of NATO in 2024?",
             "category": "Current Affairs",
             "options": [
-                "Georgia",
                 "Ukraine",
+                "Georgia",
                 "Sweden",
                 "Finland"
             ],
