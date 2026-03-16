@@ -946,4 +946,4 @@ const fallbackData = {
   ]
 };
 
-export { fallbackData };
+export default fallbackData;

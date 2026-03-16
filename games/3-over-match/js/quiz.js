@@ -1,4 +1,4 @@
-import { fallbackData } from "./fallback_data.js";
+import fallbackData from "./fallback_data.js";
 // ── Firebase SDK (CDN module imports handled in index.html) ──────────────────
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
