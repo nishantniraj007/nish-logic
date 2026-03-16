@@ -1,4 +1,21 @@
-// Global game state
+import { fallbackData } from "./fallback_data.js";
+// ── Firebase SDK (CDN module imports handled in index.html) ──────────────────
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC4LVCOG7sWN3SJS4-ygFeAlfocyBissTY",
+  authDomain: "nish-logic.firebaseapp.com",
+  projectId: "nish-logic",
+  storageBucket: "nish-logic.firebasestorage.app",
+  messagingSenderId: "673867776160",
+  appId: "1:673867776160:web:7d72b4e50c569fb55489c5"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// ── Global game state ────────────────────────────────────────────────────────
 let quizData = [];
 let userAnswers = new Array(18).fill(null);
 let currentQuestionIndex = 0;
@@ -7,7 +24,7 @@ let timeRemaining = 15 * 60;
 let isTimerEnabled = false;
 let startTime = null;
 
-// DOM Elements
+// ── DOM Elements ─────────────────────────────────────────────────────────────
 const introScreen = document.getElementById('intro-screen');
 const gameScreen = document.getElementById('game-screen');
 const resultScreen = document.getElementById('result-screen');
@@ -24,9 +41,8 @@ const timerDisplay = document.getElementById('timer');
 
 const DIFF_MAP = { easy: 'e', medium: 'm', ssc: 's', upsc: 'u' };
 const CHUNK_TYPES = ['qa', 'lr', 'sgk', 'ca'];
-const PROJECT = 'nish-logic';
-const BASE_URL = `https://firestore.googleapis.com/v1/projects/${PROJECT}/databases/(default)/documents`;
 
+// ── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         loadingState.style.display = 'none';
@@ -43,11 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentLang = getCookie('googtrans');
         if (currentLang === '/en/hi') langToggle.checked = true;
         langToggle.addEventListener('change', (e) => {
-            if (e.target.checked) {
-                setCookie('googtrans', '/en/hi');
-            } else {
-                setCookie('googtrans', '/en/en');
-            }
+            if (e.target.checked) { setCookie('googtrans', '/en/hi'); }
+            else { setCookie('googtrans', '/en/en'); }
             location.reload();
         });
     }
@@ -55,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('print-btn').addEventListener('click', () => { window.print(); });
 });
 
+// ── Cookie helpers ────────────────────────────────────────────────────────────
 function setCookie(name, value) {
     document.cookie = `${name}=${value};path=/`;
     document.cookie = `${name}=${value};domain=.github.io;path=/`;
@@ -66,51 +80,49 @@ function getCookie(name) {
     return match ? match[2] : null;
 }
 
-function parseField(field) {
-    if (!field) return null;
-    if (field.stringValue !== undefined) return field.stringValue;
-    if (field.integerValue !== undefined) return field.integerValue;
-    if (field.booleanValue !== undefined) return field.booleanValue;
-    if (field.arrayValue !== undefined) {
-        const vals = field.arrayValue.values || [];
-        return vals.map(v => parseField(v));
-    }
-    return null;
+// ── Strip (a) (b) (c) (d) prefixes ───────────────────────────────────────────
+function strip(s) {
+    return (s || '').replace(/^\([a-d]\)\s*/i, '').trim();
 }
 
+// ── Fetch collection using Firebase SDK — NO 300 doc limit ───────────────────
 async function fetchCollection(collectionId) {
-    const url = `${BASE_URL}/${collectionId}?pageSize=1000`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`Failed to fetch ${collectionId} — status ${res.status}`);
-    const data = await res.json();
-    if (!data.documents) return [];
+    const snap = await getDocs(collection(db, collectionId));
     const parsed = [];
-    for (const doc of data.documents) {
+    snap.forEach(docSnap => {
         try {
-            const f = doc.fields;
-            const options = parseField(f.options);
-            if (!options || !Array.isArray(options) || options.length === 0) continue;
-            if (!f.question || !f.correct_answer) continue;
-if (parseField(f.question).toLowerCase().includes('template')) continue;
-            if ((parseField(f.explanation) || '').toLowerCase().includes('template')) continue;
-            if ((parseField(f.correct_answer) || '').toLowerCase() === 'calculated') continue;
+            const d = docSnap.data();
+            if (!d.question || (!d.correct_answer && !d.answer)) return;
+            if (d.question.toLowerCase().includes('template')) return;
+            if ((d.explanation || '').toLowerCase().includes('template')) return;
+            if ((d.correct_answer || d.answer || '').toLowerCase() === 'calculated') return;
+
+            let opts = [];
+            if (Array.isArray(d.options)) opts = d.options.map(o => strip(o));
+            else if (typeof d.options === 'string') opts = d.options.split(',').map(o => strip(o));
+            if (opts.length === 0) return;
+
+            const ans = strip(d.correct_answer || d.answer || '');
+
             parsed.push({
-                id: parseField(f.id) || 'N/A',
-                category: parseField(f.category) || collectionId,
-                topic: parseField(f.topic) || '',
-                question: parseField(f.question),
-                options: options,
-                correct_answer: parseField(f.correct_answer),
-                explanation: parseField(f.explanation) || '',
-                trick: parseField(f.trick) || null
+                id: d.id || 'N/A',
+                category: d.category || d.topic || collectionId,
+                topic: d.topic || '',
+                question: d.question,
+                options: opts,
+                correct_answer: ans,
+                explanation: d.explanation || '',
+                trick: d.trick || null
             });
         } catch (err) {
             console.warn(`Skipped malformed doc in ${collectionId}`, err);
         }
-    }
+    });
+    console.log(`  ${collectionId} → ${parsed.length} valid docs`);
     return parsed;
 }
 
+// ── Start Game ────────────────────────────────────────────────────────────────
 async function startGame() {
     isTimerEnabled = timerToggle.checked;
     const diff = document.querySelector('input[name="difficulty"]:checked').value;
@@ -142,10 +154,12 @@ async function startGame() {
             seen.add(q.question);
             return true;
         });
+
         for (let j = quizData.length - 1; j > 0; j--) {
             const k = Math.floor(Math.random() * (j + 1));
             [quizData[j], quizData[k]] = [quizData[k], quizData[j]];
         }
+
         if (quizData.length === 0) throw new Error('No questions loaded');
         console.log(`✅ Loaded ${quizData.length} live questions for ${diff}`);
 
@@ -172,6 +186,7 @@ async function startGame() {
     renderQuestion();
 }
 
+// ── Timer ─────────────────────────────────────────────────────────────────────
 function startTimer() {
     updateTimerDisplay();
     timerInterval = setInterval(() => {
@@ -191,6 +206,7 @@ function updateTimerDisplay() {
     }
 }
 
+// ── Render Question ───────────────────────────────────────────────────────────
 function renderQuestion() {
     const q = quizData[currentQuestionIndex];
     qCounter.innerText = `Q: ${currentQuestionIndex + 1}/${quizData.length}`;
@@ -225,6 +241,7 @@ function navigate(dir) {
     renderQuestion();
 }
 
+// ── Finish Game ───────────────────────────────────────────────────────────────
 function finishGame() {
     if (timerInterval) clearInterval(timerInterval);
     let score = 0;

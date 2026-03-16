@@ -945,3 +945,5 @@ const fallbackData = {
     }
   ]
 };
+
+export { fallbackData };
