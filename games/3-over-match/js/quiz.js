@@ -125,8 +125,8 @@ async function startGame() {
             CHUNK_TYPES.map(type => fetchCollection(`${type}_${suffix}`))
         );
 
-        // Pick: 6 QA, 6 LR, 3 SGK, 3 CA = 18
-        const picks = [6, 6, 3, 3];
+        // Pick: 4 QA, 4 LR, 4 SGK, 6 CA = 18
+        const picks = [4, 4, 4, 6];
         quizData = [];
         allChunks.forEach((chunk, i) => {
             for (let j = chunk.length - 1; j > 0; j--) {

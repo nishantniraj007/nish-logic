@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nish-Logic GK/GS/CA Marathon</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/lobby.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="matrixCanvas"></canvas>
+
+    <main class="quiz-container glass-container">
+        <!-- Custom Header -->
+        <header class="profile-section">
+            <h1 class="glitch small-glitch" data-text="GK/GS/CA Marathon">GK/GS/CA Marathon</h1>
+            <h2 class="subtitle">&lt; 10,000 Question Live Pool /&gt;</h2>
+        </header>
+
+        <!-- Configuration Form -->
+        <form id="marathon-config" class="config-form">
+            <!-- Language Toggle (Google Translate Target) -->
+            <div class="config-group">
+                <label>Language | भाषा</label>
+                <div class="toggle-container">
+                    <span class="toggle-label">English</span>
+                    <label class="switch">
+                        <input type="checkbox" id="lang-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label">हिंदी</span>
+                </div>
+            </div>
+
+            <!-- Exam Level -->
+            <div class="config-group">
+                <label for="exam-level">Exam Level</label>
+                <select id="exam-level" required class="cyber-select">
+                    <option value="bank_ssc">Bank / SSC (Level 13-15)</option>
+                    <option value="upsc_cse">UPSC / State CSE (Level 15-17)</option>
+                </select>
+            </div>
+
+            <!-- Marathon Length -->
+            <div class="config-group">
+                <label>Marathon Length</label>
+                <div class="radio-group" id="length-group">
+                    <input type="radio" id="len-25" name="length" value="25" checked>
+                    <label for="len-25">25 Qs</label>
+
+                    <input type="radio" id="len-50" name="length" value="50">
+                    <label for="len-50">50 Qs</label>
+
+                    <input type="radio" id="len-100" name="length" value="100">
+                    <label for="len-100">100 Qs</label>
+                </div>
+            </div>
+
+            <!-- Timer Mapping (Auto-updated based on Length) -->
+            <div class="config-group">
+                <label>Time Limit</label>
+                <div class="timer-display neon-text" id="time-display">10 Minutes</div>
+                <input type="hidden" id="timer-val" value="10">
+            </div>
+
+            <button type="submit" class="cyber-button submit-btn">
+                <span class="btn-text">START MARATHON</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </form>
+    </main>
+
+    <!-- Hidden element for standard Google Translate rendering -->
+    <div id="google_translate_element" style="display:none;"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../js/matrix.js?v=2.3"></script>
+    <script src="js/lobby.js"></script>
+</body>
+
+</html>

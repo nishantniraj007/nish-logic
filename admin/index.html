@@ -87,7 +87,7 @@
     </div>
 
     <h2>4. Paste Questions (Toon Format)</h2>
-    <textarea id="questions-input" placeholder="ca_u_001&#9;UPSC&#9;IR&#9;Question&#9;A, B, C, D&#9;Answer&#9;Explanation"></textarea>
+    <textarea id="questions-input" placeholder="ca_u_16.03.2026_15.20_01&#9;UPSC&#9;IR&#9;Question&#9;A, B, C, D&#9;Answer&#9;Explanation"></textarea>
     <button onclick="validateQuestions()" style="background:#2a2a3e; color:#a89fff; border:1px solid #a89fff; border-radius:8px; padding:12px; width:100%; font-size:1rem; cursor:pointer; margin-bottom:8px;">🔍 Validate Format</button>
     <div id="validation-result" style="margin-bottom:12px; font-size:0.85rem; font-family:monospace;"></div>
     <button class="btn-primary" id="btn-sync">⬆ Sync to Firestore</button>
@@ -223,6 +223,14 @@
     const lp = levelProfiles[l];
     const typeName = typeMap[t] || t;
     const typeId = typeIdMap[t] || t;
+    const now = new Date();
+    const dd = String(now.getDate()).padStart(2,'0');
+    const mm = String(now.getMonth()+1).padStart(2,'0');
+    const yyyy = now.getFullYear();
+    const hh = String(now.getHours()).padStart(2,'0');
+    const min = String(now.getMinutes()).padStart(2,'0');
+    const tsDate = `${dd}.${mm}.${yyyy}`;
+    const tsTime = `${hh}.${min}`;
 
     const prompt = `You are an expert question paper setter for competitive exams in India (SSC, IBPS, UPSC, CAT).
 
@@ -237,14 +245,14 @@ ${lp.avoid}
 1. Each question must be on EXACTLY ONE LINE — no line breaks inside a question
 2. Fields separated by TAB only
 3. Format: ID[TAB]${lp.name}[TAB]Topic[TAB]Question[TAB]Option1, Option2, Option3, Option4[TAB]CorrectAnswer[TAB]Explanation
-4. ID format: ${typeId}_${l}_NNN (e.g. ${typeId}_${l}_001)
+4. ID format: ${typeId}_${l}_DD.MM.YYYY_HH.MM_NN (e.g. ${typeId}_${l}_${tsDate}_${tsTime}_01)
 5. Exactly 4 options, comma separated
 6. CorrectAnswer must exactly match one of the 4 options word for word
 7. NO blank lines, NO headers, NO numbering, NO markdown, NO quotes
 8. Explanation: one precise sentence — no commas inside it
 
 EXAMPLE LINE:
-ca_e_001	Easy	Economy	Which body sets repo rate in India?	RBI, SEBI, NABARD, SIDBI	RBI	RBI is India central bank responsible for monetary policy.
+ca_e_${tsDate}_${tsTime}_01	Easy	Economy	Which body sets repo rate in India?	RBI, SEBI, NABARD, SIDBI	RBI	RBI is India central bank responsible for monetary policy.
 
 Output ONLY the tab-separated lines. Nothing else.`;
 
@@ -268,7 +276,7 @@ Output ONLY the tab-separated lines. Nothing else.`;
     const result = document.getElementById('validation-result');
     if (!raw) { result.innerHTML = '<span style="color:#f76a6a">⛔ Nothing to validate.</span>'; return; }
     const lines = raw.split('\n').filter(l => l.trim());
-    const validIdPattern = /^(qa|lr|sgk|ca)_(e|m|s|u)_\d{3}$/;
+    const validIdPattern = /^(qa|lr|sgk|ca)_(e|m|s|u)_\d{2}\.\d{2}\.\d{4}_\d{2}\.\d{2}_\d{2}$/;
     let errors = [];
     let good = 0;
     lines.forEach((line, i) => {
@@ -279,7 +287,7 @@ Output ONLY the tab-separated lines. Nothing else.`;
         return;
       }
       const [id, level, topic, question, optionsRaw, answer, explanation] = parts;
-      if (!validIdPattern.test(id.trim())) errors.push(`Line ${num}: invalid ID format "${id.trim()}" (should be like ca_e_001)`);
+      if (!validIdPattern.test(id.trim())) errors.push(`Line ${num}: invalid ID format "${id.trim()}" (should be like ca_e_16.03.2026_15.20_01)`);
       const opts = optionsRaw.split(',').map(o => o.trim()).filter(o => o);
       if (opts.length !== 4) errors.push(`Line ${num}: need exactly 4 options, found ${opts.length}`);
       if (!opts.includes(answer.trim())) errors.push(`Line ${num}: answer "${answer.trim()}" does not match any option`);

@@ -1,96 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nish-Logic GK/GS/CA Marathon</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="css/lobby.css">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;600&display=swap"
-        rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GK/CA Marathon — Nish-Logic</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#080c12;--surface:#0e1420;--surface2:#141b28;--border:#1e2a3a;--accent:#00e5ff;--gold:#f59e0b;--green:#10b981;--red:#ef4444;--text:#e2e8f0;--muted:#64748b;--fd:'Syne',sans-serif;--fm:'JetBrains Mono',monospace;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:var(--fd);min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,229,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0;}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px;position:relative;z-index:1;}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+.logo-top{font-size:.65rem;font-family:var(--fm);color:var(--accent);letter-spacing:.2em;text-transform:uppercase;display:block;}
+.logo-main{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1;}
+.logo-main b{color:var(--accent);}
+.lang-tog{display:flex;background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.lbtn{padding:8px 14px;font-family:var(--fd);font-size:.8rem;font-weight:600;background:none;border:none;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lbtn.on{background:var(--accent);color:var(--bg);}
+.scr{display:none;}.scr.on{display:block;}
+.slbl{font-family:var(--fm);font-size:.65rem;color:var(--accent);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;}
+.lgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.lbtn2{padding:16px 12px;border-radius:10px;border:1.5px solid var(--border);background:var(--surface2);font-family:var(--fd);font-weight:700;cursor:pointer;transition:all .2s;text-align:center;width:100%;}
+.lbtn2 .ln{font-size:1rem;color:var(--text);margin-bottom:2px;display:block;}
+.lbtn2 .ls{font-size:.7rem;font-family:var(--fm);color:var(--muted);display:block;}
+.lbtn2.on{border-color:var(--accent);background:rgba(0,229,255,.07);}
+.lbtn2.on .ln{color:var(--accent);}
+.qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.qbtn{padding:18px 8px;border-radius:10px;border:1.5px solid var(--border);background:var(--surface2);font-family:var(--fd);font-weight:700;cursor:pointer;transition:all .2s;text-align:center;width:100%;}
+.qbtn .qn{font-size:1.6rem;font-weight:800;color:var(--text);display:block;line-height:1;}
+.qbtn .ql{font-size:.65rem;font-family:var(--fm);color:var(--muted);margin-top:4px;display:block;}
+.qbtn .qt{font-size:.7rem;color:var(--gold);margin-top:6px;display:block;}
+.qbtn.on{border-color:var(--accent);background:rgba(0,229,255,.07);}
+.qbtn.on .qn,.qbtn.on .ql{color:var(--accent);}
+.sbtn{width:100%;padding:18px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent),#0077ff);color:var(--bg);font-family:var(--fd);font-size:1rem;font-weight:800;letter-spacing:.05em;cursor:pointer;margin-top:8px;transition:all .2s;}
+.sbtn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,229,255,.25);}
+.sbtn:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+.ebox{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3);border-radius:10px;padding:16px;color:var(--red);font-family:var(--fm);font-size:.8rem;text-align:center;margin-top:12px;display:none;}
+.ebox.on{display:block;}
+.load-wrap{text-align:center;padding:60px 20px;}
+.spin{width:48px;height:48px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:sp .8s linear infinite;margin:0 auto 20px;}
+@keyframes sp{to{transform:rotate(360deg);}}
+.ltxt{font-family:var(--fm);font-size:.8rem;color:var(--muted);}
+/* QUIZ */
+.qhdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
+.plbl{font-family:var(--fm);font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;display:block;}
+.pcnt{font-size:1.1rem;font-weight:800;display:block;}
+.pcnt span{color:var(--accent);}
+.tbox{text-align:right;}
+.tdsp{font-family:var(--fm);font-size:1.3rem;font-weight:500;color:var(--accent);transition:color .3s;display:block;}
+.tdsp.warn{color:var(--gold);}
+.tdsp.dng{color:var(--red);animation:pu .5s ease infinite alternate;}
+@keyframes pu{from{opacity:1;}to{opacity:.5;}}
+.pbar-w{height:3px;background:var(--border);border-radius:2px;margin-bottom:24px;overflow:hidden;}
+.pbar-f{height:100%;background:linear-gradient(90deg,var(--accent),#0077ff);border-radius:2px;transition:width .4s ease;}
+.qcard{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:16px;animation:fu .3s ease;}
+@keyframes fu{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.qmeta{display:flex;gap:8px;margin-bottom:14px;}
+.qtag{font-family:var(--fm);font-size:.6rem;padding:3px 8px;border-radius:4px;background:rgba(0,229,255,.1);color:var(--accent);border:1px solid rgba(0,229,255,.2);text-transform:uppercase;letter-spacing:.1em;}
+.qtag.ca{background:rgba(245,158,11,.1);color:var(--gold);border-color:rgba(245,158,11,.2);}
+.qtxt{font-size:1rem;font-weight:600;line-height:1.6;color:var(--text);}
+.ogrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
+@media(max-width:480px){.ogrid{grid-template-columns:1fr;}.lgrid{grid-template-columns:1fr 1fr;}}
+.obtn{padding:14px 16px;border-radius:10px;border:1.5px solid var(--border);background:var(--surface2);color:var(--text);font-family:var(--fd);font-size:.85rem;font-weight:500;cursor:pointer;text-align:left;transition:all .15s;display:flex;align-items:center;gap:10px;line-height:1.4;width:100%;}
+.obtn:hover:not(:disabled){border-color:var(--accent);background:rgba(0,229,255,.05);}
+.olt{font-family:var(--fm);font-size:.7rem;color:var(--muted);min-width:16px;font-weight:500;}
+.obtn.cor{border-color:var(--green);background:rgba(16,185,129,.1);color:var(--green);}
+.obtn.cor .olt{color:var(--green);}
+.obtn.wrg{border-color:var(--red);background:rgba(239,68,68,.1);color:var(--red);}
+.obtn.wrg .olt{color:var(--red);}
+.obtn:disabled{cursor:default;}.obtn.selected{border-color:var(--muted);background:rgba(100,116,139,0.15);color:var(--muted);}
+.expbox{background:var(--surface2);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:14px 16px;font-size:.82rem;color:var(--muted);line-height:1.6;margin-bottom:16px;display:none;}
+.expbox.on{display:block;}
+.expbox strong{color:var(--text);}
+.nxtbtn{width:100%;padding:16px;border-radius:10px;border:1.5px solid var(--accent);background:transparent;color:var(--accent);font-family:var(--fd);font-size:.9rem;font-weight:700;cursor:pointer;transition:all .2s;display:none;}
+.nxtbtn.on{display:block;}
+.nxtbtn:hover{background:rgba(0,229,255,.08);}
+/* RESULT */
+.res-wrap{text-align:center;}
+.rcircle{width:140px;height:140px;border-radius:50%;border:3px solid var(--border);margin:32px auto 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.rcircle::before{content:'';position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--accent) var(--pct),var(--border) 0);mask:radial-gradient(farthest-side,transparent calc(100% - 6px),black calc(100% - 6px));-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 6px),black calc(100% - 6px));}
+.rpct{font-size:2rem;font-weight:800;color:var(--accent);font-family:var(--fm);position:relative;z-index:1;}
+.rlbl{font-size:.6rem;font-family:var(--fm);color:var(--muted);text-transform:uppercase;letter-spacing:.1em;position:relative;z-index:1;}
+.rtitle{font-size:1.6rem;font-weight:800;margin-bottom:8px;}
+.rsub{font-size:.85rem;color:var(--muted);font-family:var(--fm);margin-bottom:24px;}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px;}
+.scard{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 10px;text-align:center;}
+.snum{font-size:1.5rem;font-weight:800;font-family:var(--fm);display:block;}
+.snum.g{color:var(--green);}.snum.r{color:var(--red);}.snum.o{color:var(--gold);}
+.slb{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;display:block;}
+.ract{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:32px;}
+.bp{padding:16px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent),#0077ff);color:var(--bg);font-family:var(--fd);font-size:.9rem;font-weight:800;cursor:pointer;transition:all .2s;}
+.bp:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,229,255,.25);}
+.bs{padding:16px;border-radius:12px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:var(--fd);font-size:.9rem;font-weight:600;cursor:pointer;transition:all .2s;}
+.bs:hover{border-color:var(--accent);color:var(--accent);}
+/* REVIEW */
+.rev-div{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+.rev-line{flex:1;height:1px;background:var(--border);}
+.rev-lbl{font-family:var(--fm);font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;white-space:nowrap;}
+.ritem{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:14px;}
+.ritem.ok{border-left-color:var(--green);}
+.ritem-hdr{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;}
+.rqnum{font-family:var(--fm);font-size:.68rem;font-weight:700;color:#fff;padding:2px 7px;border-radius:4px;white-space:nowrap;margin-top:2px;}
+.ritem.ok .rqnum{background:var(--green);}
+.ritem:not(.ok) .rqnum{background:var(--red);}
+.rqtxt{font-size:.92rem;font-weight:700;color:var(--text);line-height:1.5;}
+.rtopic{font-family:var(--fm);font-size:.6rem;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:.1em;}
+.ryans{font-size:.83rem;margin-bottom:4px;}
+.ryans.ok{color:var(--green);}.ryans.ng{color:var(--red);}.ryans.sk{color:var(--muted);}
+.rcans{font-size:.83rem;color:var(--green);margin-bottom:10px;}
+.rexp{background:var(--surface2);border-radius:6px;padding:10px 14px;font-size:.8rem;color:var(--muted);line-height:1.6;}
+.rexp strong{color:var(--text);}
+.pact{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px;margin-bottom:40px;}
+.bpr{padding:16px;border-radius:12px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-family:var(--fd);font-size:.9rem;font-weight:700;cursor:pointer;transition:all .2s;}
+.bpr:hover{border-color:var(--accent);color:var(--accent);}
+.bpa{padding:16px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent),#0077ff);color:var(--bg);font-family:var(--fd);font-size:.9rem;font-weight:800;cursor:pointer;transition:all .2s;}
+.bpa:hover{transform:translateY(-1px);}
+/* PRINT */
+.print-cert{display:none;}
+.wmbrand{display:none;}
+@media print{
+  body{background:#fff!important;color:#000!important;}
+  body::before{display:none;}
+  .hdr,.ract,.pact,.sgrid,.rcircle,.rtitle,.rsub{display:none!important;}
+  .print-cert{display:block;text-align:center;margin-bottom:32px;padding-bottom:20px;border-bottom:2px dashed #ccc;}
+  .wmbrand{display:block;text-align:center;font-size:.75rem;color:#aaa;margin-bottom:24px;letter-spacing:.2em;font-family:monospace;}
+  .ritem{background:#fff!important;border:none!important;border-left:3px solid #ccc!important;page-break-inside:avoid;}
+  .ritem.ok{border-left-color:#22c55e!important;}
+  .ritem:not(.ok){border-left-color:#ef4444!important;}
+  .rqtxt{color:#000!important;}
+  .ryans.ok{color:#16a34a!important;}.ryans.ng{color:#dc2626!important;}.ryans.sk{color:#888!important;}
+  .rcans{color:#16a34a!important;}
+  .rexp{background:#f5f5f5!important;color:#444!important;}
+  .rqnum{color:#fff!important;}
+}
+</style>
 </head>
-
 <body>
-    <canvas id="matrixCanvas"></canvas>
+<div class="wrap">
 
-    <main class="quiz-container glass-container">
-        <!-- Custom Header -->
-        <header class="profile-section">
-            <h1 class="glitch small-glitch" data-text="GK/GS/CA Marathon">GK/GS/CA Marathon</h1>
-            <h2 class="subtitle">&lt; 10,000 Question Live Pool /&gt;</h2>
-        </header>
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <span class="logo-top">Nish-Logic</span>
+      <div class="logo-main">GK/CA <b>Marathon</b></div>
+    </div>
+    <div class="lang-tog">
+      <button class="lbtn on" onclick="setLang('en')" id="btn-en">EN</button>
+      <button class="lbtn" onclick="setLang('hi')" id="btn-hi">हि</button>
+    </div>
+  </div>
 
-        <!-- Configuration Form -->
-        <form id="marathon-config" class="config-form">
-            <!-- Language Toggle (Google Translate Target) -->
-            <div class="config-group">
-                <label>Language | भाषा</label>
-                <div class="toggle-container">
-                    <span class="toggle-label">English</span>
-                    <label class="switch">
-                        <input type="checkbox" id="lang-toggle">
-                        <span class="slider round"></span>
-                    </label>
-                    <span class="toggle-label">हिंदी</span>
-                </div>
-            </div>
+  <!-- SETUP -->
+  <div class="scr on" id="scr-setup">
+    <div class="card">
+      <div class="slbl">Exam Level</div>
+      <div class="lgrid">
+        <button class="lbtn2 on" onclick="selLevel('s')" id="lv-s">
+          <span class="ln">SSC / Bank</span>
+          <span class="ls">CGL · IBPS PO</span>
+        </button>
+        <button class="lbtn2" onclick="selLevel('u')" id="lv-u">
+          <span class="ln">UPSC / CAT</span>
+          <span class="ls">IAS · CAT</span>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="slbl">Marathon Length</div>
+      <div class="qgrid">
+        <button class="qbtn on" onclick="selLen(25)" id="ql-25">
+          <span class="qn">25</span><span class="ql">Questions</span><span class="qt">⏱ 10 min</span>
+        </button>
+        <button class="qbtn" onclick="selLen(50)" id="ql-50">
+          <span class="qn">50</span><span class="ql">Questions</span><span class="qt">⏱ 20 min</span>
+        </button>
+        <button class="qbtn" onclick="selLen(100)" id="ql-100">
+          <span class="qn">100</span><span class="ql">Questions</span><span class="qt">⏱ 40 min</span>
+        </button>
+      </div>
+    </div>
+    <button class="sbtn" onclick="startM()" id="go-btn">START MARATHON →</button>
+    <div class="ebox" id="err"></div>
+  </div>
 
-            <!-- Exam Level -->
-            <div class="config-group">
-                <label for="exam-level">Exam Level</label>
-                <select id="exam-level" required class="cyber-select">
-                    <option value="bank_ssc">Bank / SSC (Level 13-15)</option>
-                    <option value="upsc_cse">UPSC / State CSE (Level 15-17)</option>
-                </select>
-            </div>
+  <!-- LOADING -->
+  <div class="scr" id="scr-load">
+    <div class="load-wrap">
+      <div class="spin"></div>
+      <div class="ltxt" id="ltxt">Fetching questions...</div>
+    </div>
+  </div>
 
-            <!-- Marathon Length -->
-            <div class="config-group">
-                <label>Marathon Length</label>
-                <div class="radio-group" id="length-group">
-                    <input type="radio" id="len-25" name="length" value="25" checked>
-                    <label for="len-25">25 Qs</label>
+  <!-- QUIZ -->
+  <div class="scr" id="scr-quiz">
+    <div class="qhdr">
+      <div>
+        <span class="plbl">Question</span>
+        <span class="pcnt"><span id="qcur">1</span> / <span id="qtot">25</span></span>
+      </div>
+      <div class="tbox">
+        <span class="plbl">Time Left</span>
+        <span class="tdsp" id="tdsp">10:00</span>
+      </div>
+    </div>
+    <div class="pbar-w"><div class="pbar-f" id="pbar" style="width:0%"></div></div>
+    <div class="qcard" id="qcard">
+      <div class="qmeta">
+        <span class="qtag" id="qttype">GK</span>
+        <span class="qtag" id="qttopic">Topic</span>
+      </div>
+      <div class="qtxt" id="qtxt">Loading...</div>
+    </div>
+    <div class="ogrid" id="ogrid"></div>
+    <div class="expbox" id="expbox"><strong>Explanation:</strong> <span id="exptxt"></span></div>
+    <button class="nxtbtn" id="nxtbtn" onclick="nextQ()">Next Question →</button>
+  </div>
 
-                    <input type="radio" id="len-50" name="length" value="50">
-                    <label for="len-50">50 Qs</label>
+  <!-- RESULT -->
+  <div class="scr" id="scr-res">
+    <div class="res-wrap">
 
-                    <input type="radio" id="len-100" name="length" value="100">
-                    <label for="len-100">100 Qs</label>
-                </div>
-            </div>
+      <!-- Print cert -->
+      <div class="print-cert">
+        <div style="font-size:1.4rem;font-weight:800;letter-spacing:.05em;">CERTIFICATE OF PERFORMANCE</div>
+        <div style="font-size:.85rem;letter-spacing:.3em;margin:4px 0;">GK / CA MARATHON</div>
+        <div style="font-size:.8rem;color:#666;" id="pcdate"></div>
+        <div style="font-size:2.5rem;font-weight:900;margin:16px 0;" id="pcscore"></div>
+        <div style="font-size:.9rem;color:#555;" id="pcverd"></div>
+      </div>
 
-            <!-- Timer Mapping (Auto-updated based on Length) -->
-            <div class="config-group">
-                <label>Time Limit</label>
-                <div class="timer-display neon-text" id="time-display">10 Minutes</div>
-                <input type="hidden" id="timer-val" value="10">
-            </div>
+      <div class="rcircle" id="rcircle">
+        <span class="rpct" id="rpct">0%</span>
+        <span class="rlbl">Score</span>
+      </div>
+      <div class="rtitle" id="rtitle">Well Done!</div>
+      <div class="rsub" id="rsub">Marathon Complete</div>
 
-            <button type="submit" class="cyber-button submit-btn">
-                <span class="btn-text">START MARATHON</span>
-                <span class="btn-glitch"></span>
-            </button>
-        </form>
-    </main>
+      <div class="sgrid">
+        <div class="scard"><span class="snum g" id="sc-c">0</span><span class="slb">Correct</span></div>
+        <div class="scard"><span class="snum r" id="sc-w">0</span><span class="slb">Wrong</span></div>
+        <div class="scard"><span class="snum o" id="sc-t">0:00</span><span class="slb">Time Used</span></div>
+      </div>
 
-    <!-- Hidden element for standard Google Translate rendering -->
-    <div id="google_translate_element" style="display:none;"></div>
+      <div class="ract">
+        <button class="bp" onclick="replayM()">Retry →</button>
+        <button class="bs" onclick="goHome()">← Settings</button>
+      </div>
 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,hi',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="../js/matrix.js?v=2.3"></script>
-    <script src="js/lobby.js"></script>
+      <!-- REVIEW -->
+      <div class="rev-div">
+        <div class="rev-line"></div>
+        <div class="rev-lbl">Question Review</div>
+        <div class="rev-line"></div>
+      </div>
+      <div id="revlist"></div>
+
+      <div class="pact">
+        <button class="bpr" onclick="window.print()">🖨 PRINT / PDF</button>
+        <button class="bpa" onclick="replayM()">PLAY AGAIN →</button>
+      </div>
+      <div class="wmbrand">NISH-LOGIC</div>
+
+    </div>
+  </div>
+
+</div>
+<script type="module">
+import{initializeApp}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import{getFirestore,collection,getDocs}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const cfg={apiKey:"REPLACE_API_KEY",authDomain:"nish-logic.firebaseapp.com",projectId:"nish-logic",storageBucket:"nish-logic.appspot.com",messagingSenderId:"REPLACE_SENDER_ID",appId:"REPLACE_APP_ID"};
+const app=initializeApp(cfg);
+const db=getFirestore(app);
+
+let level='s',len=25,qs=[],idx=0,cor=0,wrg=0,tl=0,tu=0,tiv=null,ans=false,ua=[];
+
+window.setLang=function(l){
+  document.getElementById('btn-en').classList.toggle('on',l==='en');
+  document.getElementById('btn-hi').classList.toggle('on',l==='hi');
+};
+window.selLevel=function(l){
+  level=l;
+  document.querySelectorAll('.lbtn2').forEach(b=>b.classList.remove('on'));
+  document.getElementById('lv-'+l).classList.add('on');
+};
+window.selLen=function(n){
+  len=n;
+  document.querySelectorAll('.qbtn').forEach(b=>b.classList.remove('on'));
+  document.getElementById('ql-'+n).classList.add('on');
+};
+
+async function fetchQs(lv){
+  let all=[];
+  for(const col of['sgk_'+lv,'ca_'+lv]){
+    document.getElementById('ltxt').textContent='Loading '+col+'...';
+    try{
+      const snap=await getDocs(collection(db,col));
+      snap.forEach(d=>{
+        const dt=d.data();
+        if(dt.question) all.push({...dt,_col:col});
+      });
+    }catch(e){console.error(col,e);}
+  }
+  return all;
+}
+
+function parse(doc){
+  const strip=s=>s.replace(/^\([a-d]\)\s*/i,'').trim();
+  let opts=[];
+  if(typeof doc.options==='string') opts=doc.options.split(',').map(o=>strip(o));
+  else if(Array.isArray(doc.options)) opts=doc.options.map(o=>strip(o));
+  const ans=strip(doc.answer||doc.correct_answer||'');
+  return{topic:doc.topic||doc.category||'General',question:doc.question||'',options:opts,answer:ans,explanation:doc.explanation||'',type:(doc._col||'').startsWith('ca')?'CA':'GK'};
+}
+
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+function startTimer(s){
+  tl=s;tu=0;clearInterval(tiv);updTimer();
+  tiv=setInterval(()=>{tl--;tu++;updTimer();if(tl<=0){clearInterval(tiv);endM();}},1000);
+}
+function updTimer(){
+  const m=Math.floor(tl/60),s=tl%60,el=document.getElementById('tdsp');
+  el.textContent=m+':'+String(s).padStart(2,'0');
+  el.className='tdsp'+(tl<=60?' dng':tl<=180?' warn':'');
+}
+
+window.startM=async function(){
+  document.getElementById('err').classList.remove('on');
+  document.getElementById('go-btn').disabled=true;
+  showScr('scr-load');
+  try{
+    const all=await fetchQs(level);
+    if(all.length<len){
+      showScr('scr-setup');document.getElementById('go-btn').disabled=false;
+      const e=document.getElementById('err');
+      e.textContent='Only '+all.length+' questions found. Add more via Admin Panel.';e.classList.add('on');return;
+    }
+    qs=shuffle(all).slice(0,len);idx=0;cor=0;wrg=0;ua=[];ans=false;
+    document.getElementById('qtot').textContent=len;
+    startTimer({25:600,50:1200,100:2400}[len]);
+    showScr('scr-quiz');renderQ();
+  }catch(e){
+    showScr('scr-setup');document.getElementById('go-btn').disabled=false;
+    const eb=document.getElementById('err');eb.textContent='Error: '+(e.message||'Could not load.');eb.classList.add('on');
+  }
+};
+
+function renderQ(){
+  ans=false;
+  const q=parse(qs[idx]);
+  document.getElementById('qcur').textContent=idx+1;
+  document.getElementById('pbar').style.width=(idx/qs.length*100)+'%';
+  const tt=document.getElementById('qttype');
+  tt.textContent=q.type;tt.className='qtag'+(q.type==='CA'?' ca':'');
+  document.getElementById('qttopic').textContent=q.topic;
+  document.getElementById('qtxt').textContent=q.question;
+  const g=document.getElementById('ogrid');g.innerHTML='';
+  ['A','B','C','D'].forEach((lt,i)=>{
+    const b=document.createElement('button');b.className='obtn';
+    b.innerHTML='<span class="olt">'+lt+'</span>'+q.options[i];
+    b.onclick=()=>selAns(b,q.options[i],q.answer,q.explanation);
+    g.appendChild(b);
+  });
+  document.getElementById('expbox').classList.remove('on');
+  document.getElementById('nxtbtn').classList.remove('on');
+  const c=document.getElementById('qcard');c.style.animation='none';c.offsetHeight;c.style.animation='';
+}
+
+function selAns(btn,sel,correct,expl){
+  if(ans)return;ans=true;
+  document.getElementById('ogrid').querySelectorAll('.obtn').forEach(b=>{
+    b.disabled=true;
+  });
+  const isCor=sel===correct;
+  if(isCor)cor++;else wrg++;
+  btn.classList.add('selected');
+  ua[idx]={sel,isCor};
+  document.getElementById('nxtbtn').classList.add('on');
+  document.getElementById('nxtbtn').textContent=idx===qs.length-1?'Finish Marathon ✓':'Next Question →';
+}
+
+window.nextQ=function(){
+  if(!ans)ua[idx]={sel:null,isCor:false};
+  if(idx>=qs.length-1)endM();else{idx++;renderQ();}
+};
+
+function endM(){
+  clearInterval(tiv);
+  for(let i=0;i<qs.length;i++)if(!ua[i])ua[i]={sel:null,isCor:false};
+  const pct=Math.round(cor/qs.length*100);
+  document.getElementById('rpct').textContent=pct+'%';
+  document.getElementById('rcircle').style.setProperty('--pct',pct+'%');
+  document.getElementById('sc-c').textContent=cor;
+  document.getElementById('sc-w').textContent=qs.length-cor;
+  const um=Math.floor(tu/60),us=tu%60,ts=um+':'+String(us).padStart(2,'0');
+  document.getElementById('sc-t').textContent=ts;
+  let t='Keep Practising!',s='Review your answers below.';
+  if(pct>=90){t='Outstanding! 🏆';s='Exam-ready performance.';}
+  else if(pct>=75){t='Excellent! ⚡';s='Strong command of the subject.';}
+  else if(pct>=60){t='Good Effort! 👍';s='Review wrong answers below.';}
+  document.getElementById('rtitle').textContent=t;
+  document.getElementById('rsub').textContent=s+' — '+len+' Qs · '+(level==='s'?'SSC/Bank':'UPSC/CAT');
+  const now=new Date();
+  document.getElementById('pcdate').textContent='Completed: '+now.toLocaleDateString('en-IN')+'  |  Time: '+ts;
+  document.getElementById('pcscore').textContent=cor+'/'+qs.length;
+  document.getElementById('pcverd').textContent=t.replace(/[🏆⚡👍]/g,'').trim();
+  buildReview();
+  showScr('scr-res');
+}
+
+function buildReview(){
+  const list=document.getElementById('revlist');list.innerHTML='';
+  qs.forEach((qd,i)=>{
+    const q=parse(qd),u=ua[i]||{sel:null,isCor:false};
+    const item=document.createElement('div');
+    item.className='ritem'+(u.isCor?' ok':'');
+    const hdr=document.createElement('div');hdr.className='ritem-hdr';
+    const num=document.createElement('span');num.className='rqnum';num.textContent='Q'+(i+1);
+    const qt=document.createElement('div');qt.className='rqtxt';qt.textContent=q.question;
+    hdr.appendChild(num);hdr.appendChild(qt);
+    const top=document.createElement('div');top.className='rtopic';top.textContent=q.type+' · '+q.topic;
+    const ya=document.createElement('div');ya.className='ryans';
+    if(!u.sel){ya.classList.add('sk');ya.textContent='Your Answer: Not Attempted';}
+    else if(u.isCor){ya.classList.add('ok');ya.textContent='Your Answer: '+u.sel+' ✓';}
+    else{ya.classList.add('ng');ya.textContent='Your Answer: '+u.sel+' ✗';}
+    const ca=document.createElement('div');ca.className='rcans';ca.textContent='Correct Answer: '+q.answer;
+    const ex=document.createElement('div');ex.className='rexp';ex.innerHTML='<strong>Explanation:</strong> '+q.explanation;
+    item.appendChild(hdr);item.appendChild(top);item.appendChild(ya);
+    if(!u.isCor)item.appendChild(ca);
+    item.appendChild(ex);
+    list.appendChild(item);
+  });
+}
+
+window.replayM=function(){document.getElementById('go-btn').disabled=false;startM();};
+window.goHome=function(){clearInterval(tiv);document.getElementById('go-btn').disabled=false;showScr('scr-setup');};
+function showScr(id){document.querySelectorAll('.scr').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');}
+</script>
+<div id="google_translate_element" style="display:none;"></div>
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    pageLanguage:'en',
+    includedLanguages:'hi',
+    autoDisplay:false
+  },'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+window.setLang=function(l){
+  document.getElementById('btn-en').classList.toggle('on',l==='en');
+  document.getElementById('btn-hi').classList.toggle('on',l==='hi');
+  if(l==='hi'){
+    const sel=document.querySelector('.goog-te-combo');
+    if(sel){sel.value='hi';sel.dispatchEvent(new Event('change'));}
+  } else {
+    const frame=document.querySelector('.goog-te-banner-frame');
+    if(frame){
+      const restore=frame.contentDocument.querySelector('.goog-te-button button');
+      if(restore) restore.click();
+    }
+    window.location.reload();
+  }
+};
+</script>
 </body>
-
 </html>
