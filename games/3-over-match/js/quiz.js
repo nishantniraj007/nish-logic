@@ -79,7 +79,7 @@ function parseField(field) {
 }
 
 async function fetchCollection(collectionId) {
-    const url = `${BASE_URL}/${collectionId}?pageSize=500`;
+    const url = `${BASE_URL}/${collectionId}?pageSize=1000`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Failed to fetch ${collectionId} — status ${res.status}`);
     const data = await res.json();
