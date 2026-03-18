@@ -17,22 +17,32 @@
     .btn-google:hover { background: #f0f0f0; }
     .btn-primary { background: #7c6af7; color: #fff; width: 100%; margin-top: 12px; }
     .btn-primary:hover { background: #6a58e0; }
-    .level-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
-    .level-btn { background: #2a2a3e; color: #ccc; border: 2px solid transparent; border-radius: 10px; padding: 14px; font-size: 1rem; }
+    .btn-primary:disabled { background: #444; color: #888; cursor: not-allowed; }
+    .level-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+    .level-btn { background: #2a2a3e; color: #ccc; border: 2px solid transparent; border-radius: 10px; padding: 12px 8px; font-size: 0.9rem; }
     .level-btn.selected { border-color: #7c6af7; color: #fff; background: #3a2a5e; }
     .level-btn:hover { border-color: #a89fff; }
     .type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
     .type-btn { background: #2a2a3e; color: #ccc; border: 2px solid transparent; border-radius: 10px; padding: 12px; font-size: 0.95rem; }
     .type-btn.selected { border-color: #f7a26a; color: #fff; background: #3e2a1a; }
-    .type-btn:hover { border-color: #f7c99a; }
+    .type-btn:hover:not(.hidden-type) { border-color: #f7c99a; }
+    .type-btn.hidden-type { display: none; }
     textarea { width: 100%; height: 200px; background: #0f0f1a; color: #eee; border: 1px solid #444; border-radius: 8px; padding: 12px; font-size: 0.9rem; font-family: monospace; resize: vertical; }
     .target-label { text-align: center; font-size: 0.95rem; color: #a89fff; margin-bottom: 12px; min-height: 22px; }
     .status { text-align: center; margin-top: 12px; font-size: 0.9rem; min-height: 20px; }
     .status.ok { color: #6af7a2; }
     .status.err { color: #f76a6a; }
-    input[type="password"] { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #444; background: #0f0f1a; color: #eee; font-size: 1rem; margin-bottom: 12px; }
+    input[type="password"], input[type="text"] { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #444; background: #0f0f1a; color: #eee; font-size: 1rem; margin-bottom: 8px; }
     .logout { float: right; background: transparent; color: #888; font-size: 0.8rem; border: 1px solid #444; padding: 6px 12px; border-radius: 6px; }
     .logout:hover { color: #fff; border-color: #888; }
+    .sync-result { display: flex; justify-content: center; gap: 20px; margin-top: 12px; font-size: 0.95rem; font-weight: 600; min-height: 24px; }
+    .sync-saved { color: #6af7a2; }
+    .sync-skipped { color: #f7d26a; }
+    .sync-failed { color: #f76a6a; }
+    .api-note { font-size: 0.78rem; color: #888; margin-bottom: 12px; }
+    .btn-generate { background: #1a4a2e; color: #6af7a2; border: 2px solid #6af7a2; border-radius: 8px; padding: 12px; width: 100%; font-size: 1rem; cursor: pointer; margin-top: 8px; }
+    .btn-generate:hover { background: #2a6a3e; }
+    .btn-generate:disabled { background: #1a2a1e; color: #444; border-color: #444; cursor: not-allowed; }
   </style>
 </head>
 <body>
@@ -62,36 +72,57 @@
   <div class="card">
     <button class="logout" id="btn-logout">Logout</button>
     <h1>⚡ Admin Panel</h1>
+
     <h2>1. Select Level</h2>
     <div class="level-grid">
       <button class="level-btn" data-level="e">Easy</button>
       <button class="level-btn" data-level="m">Medium</button>
       <button class="level-btn" data-level="s">SSC-Bank</button>
       <button class="level-btn" data-level="u">UPSC-CAT</button>
+      <button class="level-btn" data-level="n">NEET UG</button>
+      <button class="level-btn" data-level="i">IIT/ENGG</button>
+      <button class="level-btn" data-level="clat_e">CLAT</button>
     </div>
+
     <h2>2. Select Type</h2>
-    <div class="type-grid">
-      <button class="type-btn" data-type="qa">QA — Quant & Aptitude</button>
-      <button class="type-btn" data-type="lr">LR — Logical Reasoning</button>
-      <button class="type-btn" data-type="sgk">GK — General Knowledge</button>
-      <button class="type-btn" data-type="ca">CA — Current Affairs</button>
+    <div class="type-grid" id="type-grid">
+      <button class="type-btn" data-type="qa" data-levels="e,m,s,u">QA — Quant & Aptitude</button>
+      <button class="type-btn" data-type="lr" data-levels="e,m,s,u">LR — Logical Reasoning</button>
+      <button class="type-btn" data-type="sgk" data-levels="e,m,s,u">GK — General Knowledge</button>
+      <button class="type-btn" data-type="ca" data-levels="e,m,s,u">CA — Current Affairs</button>
+      <button class="type-btn" data-type="eng" data-levels="s,u,clat_e">English</button>
+      <button class="type-btn" data-type="comp" data-levels="s,u">AIO — Computer Studies</button>
+      <button class="type-btn" data-type="phy" data-levels="n,i">Physics</button>
+      <button class="type-btn" data-type="chem" data-levels="n,i">Chemistry</button>
+      <button class="type-btn" data-type="bio" data-levels="n">Biology</button>
+      <button class="type-btn" data-type="mat" data-levels="i">Maths</button>
     </div>
+
     <div class="target-label" id="target-label">Select level and type to see target collection</div>
+
     <h2>3. Generate with AI</h2>
     <div style="background:#0f0f1a; border:1px solid #444; border-radius:8px; padding:12px; margin-bottom:16px;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-        <span style="color:#a89fff; font-size:0.9rem;">📋 Copy this prompt into any AI (Gemini, ChatGPT, Claude)</span>
+        <span style="color:#a89fff; font-size:0.9rem;">📋 Prompt Preview</span>
         <button onclick="copyPrompt()" style="background:#2a2a3e; color:#ccc; border:1px solid #444; border-radius:6px; padding:6px 14px; font-size:0.8rem;">Copy</button>
       </div>
-      <textarea id="ai-prompt" readonly style="width:100%; height:160px; background:#0a0a14; color:#88ff88; border:1px solid #333; border-radius:6px; padding:10px; font-size:0.78rem; font-family:monospace; resize:none;"></textarea>
+      <textarea id="ai-prompt" readonly style="width:100%; height:120px; background:#0a0a14; color:#88ff88; border:1px solid #333; border-radius:6px; padding:10px; font-size:0.78rem; font-family:monospace; resize:none;"></textarea>
+    </div>
+
+    <div style="background:#0f0f1a; border:1px solid #2a4a2e; border-radius:8px; padding:12px; margin-bottom:16px;">
+      <label style="color:#6af7a2; font-size:0.9rem; display:block; margin-bottom:8px;">🤖 AI Generate (Gemini BYOK)</label>
+      <input type="text" id="gemini-key" placeholder="Enter your Gemini API Key..." />
+      <p class="api-note">🔒 Your key is never sent to our servers. Strictly client-side execution.</p>
+      <button class="btn-generate" id="btn-generate">⚡ Generate Questions</button>
+      <p class="status" id="generate-status"></p>
     </div>
 
     <h2>4. Paste Questions (Toon Format)</h2>
-    <textarea id="questions-input" placeholder="ca_u_16.03.2026_15.20_01&#9;UPSC&#9;IR&#9;Question&#9;A, B, C, D&#9;Answer&#9;Explanation"></textarea>
+    <textarea id="questions-input" placeholder="ca_u_16.03.2026_15.20_01&#9;UPSC-CAT&#9;IR&#9;Question&#9;A, B, C, D&#9;Answer&#9;Explanation"></textarea>
     <button onclick="validateQuestions()" style="background:#2a2a3e; color:#a89fff; border:1px solid #a89fff; border-radius:8px; padding:12px; width:100%; font-size:1rem; cursor:pointer; margin-bottom:8px;">🔍 Validate Format</button>
     <div id="validation-result" style="margin-bottom:12px; font-size:0.85rem; font-family:monospace;"></div>
     <button class="btn-primary" id="btn-sync">⬆ Sync to Firestore</button>
-    <p class="status" id="sync-status"></p>
+    <div class="sync-result" id="sync-result"></div>
   </div>
 </div>
 
@@ -124,11 +155,8 @@
   }
 
   onAuthStateChanged(auth, user => {
-    if (user && user.email === ALLOWED_EMAIL) {
-      showScreen('screen-password');
-    } else {
-      showScreen('screen-login');
-    }
+    if (user && user.email === ALLOWED_EMAIL) showScreen('screen-password');
+    else showScreen('screen-login');
   });
 
   document.getElementById('btn-google-login').onclick = async () => {
@@ -146,11 +174,8 @@
 
   document.getElementById('btn-password-submit').onclick = () => {
     const val = document.getElementById('admin-password').value;
-    if (val === ADMIN_PASSWORD) {
-      showScreen('screen-admin');
-    } else {
-      document.getElementById('password-error').textContent = '⛔ Wrong password.';
-    }
+    if (val === ADMIN_PASSWORD) showScreen('screen-admin');
+    else document.getElementById('password-error').textContent = '⛔ Wrong password.';
   };
 
   document.getElementById('btn-logout').onclick = async () => {
@@ -161,18 +186,56 @@
   let selectedLevel = null;
   let selectedType = null;
 
+  // ── Level → allowed types map ──
+  const levelTypeMap = {
+    e:      ['qa','lr','sgk','ca'],
+    m:      ['qa','lr','sgk','ca'],
+    s:      ['qa','lr','sgk','ca','eng','comp'],
+    u:      ['qa','lr','sgk','ca','eng','comp'],
+    n:      ['phy','chem','bio'],
+    i:      ['phy','chem','mat'],
+    clat_e: ['eng']
+  };
+
+  // ── Firestore collection resolver ──
+  function resolveCollection(level, type) {
+    // Science exams: subject_exam format
+    if (['n','i'].includes(level)) return type + '_' + level;
+    // CLAT English
+    if (level === 'clat_e' && type === 'eng') return 'eng_clat';
+    // Default: type_level
+    return type + '_' + level;
+  }
+
   document.querySelectorAll('.level-btn').forEach(btn => {
     btn.onclick = () => {
       document.querySelectorAll('.level-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
       selectedLevel = btn.dataset.level;
+      selectedType = null;
+      document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('selected'));
+      filterTypeButtons(selectedLevel);
       updateTargetLabel();
       updateAiPrompt();
     };
   });
 
+  function filterTypeButtons(level) {
+    const allowed = levelTypeMap[level] || [];
+    document.querySelectorAll('.type-btn').forEach(btn => {
+      const levels = btn.dataset.levels.split(',');
+      if (allowed.includes(btn.dataset.type)) {
+        btn.classList.remove('hidden-type');
+      } else {
+        btn.classList.add('hidden-type');
+        btn.classList.remove('selected');
+      }
+    });
+  }
+
   document.querySelectorAll('.type-btn').forEach(btn => {
     btn.onclick = () => {
+      if (btn.classList.contains('hidden-type')) return;
       document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
       selectedType = btn.dataset.type;
@@ -181,48 +244,100 @@
     };
   });
 
-  // AI Prompt generator
+  function updateTargetLabel() {
+    if (selectedLevel && selectedType) {
+      const col = resolveCollection(selectedLevel, selectedType);
+      document.getElementById('target-label').textContent = '📦 Target collection: ' + col;
+    } else {
+      document.getElementById('target-label').textContent = 'Select level and type to see target collection';
+    }
+  }
+
+  // ── Prompt profiles ──
+  const levelProfiles = {
+    e: {
+      name: 'Easy',
+      profile: 'a Class 10 student scoring 90%+ in board exams (IQ 90-109)',
+      style: 'Direct factual recall. Single concept per question. No tricks. Clear and unambiguous language. Options should be obviously different from each other.',
+      avoid: 'Do not use tricky distractors. Avoid multi-concept questions.'
+    },
+    m: {
+      name: 'Medium',
+      profile: 'a Class 12 student scoring 80%+ in board exams (IQ 110-119)',
+      style: 'Application based questions. Mild inference required. Options are plausible but one is clearly correct on analysis. Tests understanding not just memory.',
+      avoid: 'Avoid purely factual questions. Push for applied understanding.'
+    },
+    s: {
+      name: 'SSC-Bank',
+      profile: 'an Engineering graduate with high IQ appearing for SSC CGL or IBPS PO (IQ 120-139)',
+      style: 'Tricky close distractors. Real exam pattern. Tests conceptual clarity under pressure. Options should include common misconceptions as wrong answers. Multi-step reasoning preferred.',
+      avoid: 'Avoid simple recall. All 4 options must seem plausible at first glance.'
+    },
+    u: {
+      name: 'UPSC-CAT',
+      profile: 'a UPSC or CAT topper with abstract reasoning ability (IQ 140+)',
+      style: 'Deep conceptual and analytical questions. Tests ability to eliminate near-correct options. Requires systemic thinking.',
+      avoid: 'No straightforward factual questions. Every option must require genuine analysis to eliminate.'
+    },
+    n: {
+      name: 'NEET-UG',
+      profile: 'a Class 12 appearing NEET aspirant with strong NCERT base (IQ 110-125)',
+      style: 'Application-based reasoning. Multi-step problem solving. Precise scientific terminology. NCERT-aligned with competitive twist. Options must be plausible — no obviously wrong distractors.',
+      avoid: 'Do not test pure memorization. Test concept application. Mention NCERT chapter relevance in explanation.'
+    },
+    i: {
+      name: 'IIT-ENGG',
+      profile: 'a Class 12 appearing JEE aspirant with high analytical ability (IQ 110-125)',
+      style: 'Multi-step problem solving. Application of formulas in non-standard situations. Strong conceptual base required. Plausible distractors based on common calculation errors.',
+      avoid: 'No direct formula plug-in questions. Push for multi-step reasoning and elimination.'
+    },
+    clat_e: {
+      name: 'CLAT',
+      profile: 'a Law entrance aspirant with strong reading comprehension and legal reasoning (IQ 115-130)',
+      style: 'Passage-based or principle-based legal reasoning. Tests application of legal principles to fact situations. English questions test advanced vocabulary and grammar in context.',
+      avoid: 'Avoid isolated grammar rules. Test language in context. For legal reasoning push for application not recall.'
+    }
+  };
+
+  const typeMap = {
+    qa: 'Quantitative Aptitude', lr: 'Logical Reasoning',
+    sgk: 'Static General Knowledge', ca: 'Current Affairs',
+    eng: 'English Language', comp: 'Computer Studies & IT Awareness (AIO)',
+    phy: 'Physics', chem: 'Chemistry', bio: 'Biology', mat: 'Mathematics'
+  };
+
+  function getExplanationRule(level, type) {
+    const deepLevels = ['s', 'u'];
+    const deepTypes = ['sgk', 'ca'];
+    const scienceLevels = ['n', 'i'];
+
+    if (scienceLevels.includes(level)) {
+      return `8. Explanation: 5-6 lines in this structure:
+   CONCEPT: [Core concept being tested]
+   APPLICATION: [How it applies to the question]
+   NCERT: [Relevant NCERT Class/Chapter reference]
+   EXAM TIP: [Common exam angle or frequent mistake to avoid]
+   No commas inside explanation. Each part on its own line.`;
+    }
+    if (deepLevels.includes(level) && deepTypes.includes(type)) {
+      return `8. Explanation: 5-6 lines in this structure:
+   WHAT: [What this topic/event/concept is about]
+   WHEN: [Historical or contextual timeline]
+   WHY: [Why it matters for ${levelProfiles[level]?.name} exam preparation]
+   CONTEXT: [Additional exam-relevant detail or common exam angle]
+   No commas inside explanation. Each part on its own line.`;
+    }
+    return `8. Explanation: one precise sentence — no commas inside it`;
+  }
+
   function updateAiPrompt() {
-    const l = selectedLevel || 'e';
-    const t = selectedType || 'ca';
-
-    const levelProfiles = {
-      e: {
-        name: 'Easy',
-        profile: 'a Class 10 student scoring 90%+ in board exams (IQ 90-109)',
-        style: 'Direct factual recall. Single concept per question. No tricks. Clear and unambiguous language. Options should be obviously different from each other.',
-        example_q: 'What is the capital of France?',
-        avoid: 'Do not use tricky distractors. Avoid multi-concept questions.'
-      },
-      m: {
-        name: 'Medium',
-        profile: 'a Class 12 student scoring 80%+ in board exams (IQ 110-119)',
-        style: 'Application based questions. Mild inference required. Options are plausible but one is clearly correct on analysis. Tests understanding not just memory.',
-        example_q: 'If the price elasticity of demand is greater than 1, the demand is considered?',
-        avoid: 'Avoid purely factual questions. Push for applied understanding.'
-      },
-      s: {
-        name: 'SSC-Bank',
-        profile: 'an Engineering graduate with high IQ appearing for SSC CGL or IBPS PO (IQ 120-139)',
-        style: 'Tricky close distractors. Real exam pattern. Tests conceptual clarity under pressure. Options should include common misconceptions as wrong answers. Multi-step reasoning preferred.',
-        example_q: 'Which of the following is NOT a feature of a perfectly competitive market?',
-        avoid: 'Avoid simple recall. All 4 options must seem plausible at first glance.'
-      },
-      u: {
-        name: 'UPSC-CAT',
-        profile: 'a UPSC or CAT topper with abstract reasoning ability (IQ 140+)',
-        style: 'Deep conceptual and analytical questions. Tests ability to eliminate near-correct options. Questions may involve current affairs analysis, data interpretation or interconnected concepts. Requires systemic thinking.',
-        example_q: 'Consider the following statements about the Monetary Policy Committee and identify which are correct.',
-        avoid: 'No straightforward factual questions. Every option must require genuine analysis to eliminate.'
-      }
-    };
-
-    const typeMap = { qa: 'Quantitative Aptitude', lr: 'Logical Reasoning', sgk: 'Static General Knowledge', ca: 'Current Affairs' };
-    const typeIdMap = { qa: 'qa', lr: 'lr', sgk: 'sgk', ca: 'ca' };
+    const l = selectedLevel;
+    const t = selectedType;
+    if (!l || !t) return;
 
     const lp = levelProfiles[l];
     const typeName = typeMap[t] || t;
-    const typeId = typeIdMap[t] || t;
+    const typeId = t;
     const now = new Date();
     const dd = String(now.getDate()).padStart(2,'0');
     const mm = String(now.getMonth()+1).padStart(2,'0');
@@ -231,8 +346,10 @@
     const min = String(now.getMinutes()).padStart(2,'0');
     const tsDate = `${dd}.${mm}.${yyyy}`;
     const tsTime = `${hh}.${min}`;
+    const colName = resolveCollection(l, t);
+    const explanationRule = getExplanationRule(l, t);
 
-    const prompt = `You are an expert question paper setter for competitive exams in India (SSC, IBPS, UPSC, CAT).
+    const prompt = `You are an expert question paper setter for competitive exams in India.
 
 TASK: Generate 10 high-quality ${typeName} questions.
 
@@ -245,15 +362,16 @@ ${lp.avoid}
 1. Each question must be on EXACTLY ONE LINE — no line breaks inside a question
 2. Fields separated by TAB only
 3. Format: ID[TAB]${lp.name}[TAB]Topic[TAB]Question[TAB]Option1, Option2, Option3, Option4[TAB]CorrectAnswer[TAB]Explanation
-4. ID format: ${typeId}_${l}_DD.MM.YYYY_HH.MM_NN (e.g. ${typeId}_${l}_${tsDate}_${tsTime}_01)
+4. ID format: ${typeId}_${l}_DD.MM.YYYY_HH.MM_NN (e.g. ${colName.replace('_','-')}_${tsDate}_${tsTime}_01 → use underscore not hyphen)
 5. Exactly 4 options, comma separated
 6. CorrectAnswer must exactly match one of the 4 options word for word
 7. NO blank lines, NO headers, NO numbering, NO markdown, NO quotes
-8. Explanation: one precise sentence — no commas inside it
+${explanationRule}
 
 EXAMPLE LINE:
-ca_e_${tsDate}_${tsTime}_01	Easy	Economy	Which body sets repo rate in India?	RBI, SEBI, NABARD, SIDBI	RBI	RBI is India central bank responsible for monetary policy.
+ca_e_${tsDate}_${tsTime}_01\tEasy\tEconomy\tWhich body sets repo rate in India?\tRBI, SEBI, NABARD, SIDBI\tRBI\tRBI is India central bank responsible for monetary policy.
 
+You MUST generate exactly 10 questions. Do not stop early. Do not add any commentary before or after.
 Output ONLY the tab-separated lines. Nothing else.`;
 
     const el = document.getElementById('ai-prompt');
@@ -270,81 +388,151 @@ Output ONLY the tab-separated lines. Nothing else.`;
     });
   }
 
-  // Validator
+  // ── AI Generate via Gemini BYOK ──
+  document.getElementById('btn-generate').onclick = async () => {
+    const key = document.getElementById('gemini-key').value.trim();
+    const status = document.getElementById('generate-status');
+    const btn = document.getElementById('btn-generate');
+
+    if (!selectedLevel || !selectedType) {
+      status.className = 'status err';
+      status.textContent = '⛔ Select level and type first.';
+      return;
+    }
+    if (!key) {
+      status.className = 'status err';
+      status.textContent = '⛔ Enter your Gemini API key.';
+      return;
+    }
+
+    const prompt = document.getElementById('ai-prompt').value;
+    btn.disabled = true;
+    status.className = 'status';
+    status.textContent = '⏳ Generating questions...';
+
+    try {
+      const models = ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.5-flash-8b'];
+      let text = '';
+      let lastError = '';
+      for (const model of models) {
+        status.textContent = `⏳ Trying ${model}...`;
+        try {
+          const res = await fetch(
+            `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`,
+            {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: { temperature: 0.7, maxOutputTokens: 4096 }
+              })
+            }
+          );
+          const data = await res.json();
+          if (data.error) {
+            lastError = data.error.message;
+            if (data.error.code === 429 || data.error.status === 'RESOURCE_EXHAUSTED') continue;
+            throw new Error(data.error.message);
+          }
+          text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+          if (text) break;
+        } catch(fallbackErr) {
+          lastError = fallbackErr.message;
+          continue;
+        }
+      }
+      if (!text) throw new Error('All models exhausted. Last error: ' + lastError);
+      document.getElementById('questions-input').value = text.trim();
+      status.className = 'status ok';
+      status.textContent = '✅ Questions generated! Review then Validate → Sync.';
+    } catch(e) {
+      status.className = 'status err';
+      status.textContent = '⛔ Error: ' + e.message;
+    } finally {
+      btn.disabled = false;
+    }
+  };
+
+  // ── ID pattern ──
+  const idPattern = /^(qa|lr|sgk|ca|eng|comp|phy|chem|bio|mat)_(e|m|s|u|n|i|clat_e)_\d{2}\.\d{2}\.\d{4}_\d{2}\.\d{2}_\d{2}$/;
+
+  // ── Merge multi-line explanations ──
+  function mergeLines(raw) {
+    const lines = raw.split('\n');
+    const merged = [];
+    for (const line of lines) {
+      if (!line.trim()) continue;
+      const firstField = line.split('\t')[0].trim();
+      if (idPattern.test(firstField)) {
+        merged.push(line);
+      } else {
+        if (merged.length > 0) merged[merged.length - 1] += ' ' + line.trim();
+      }
+    }
+    return merged;
+  }
+
   window.validateQuestions = function() {
     const raw = document.getElementById('questions-input').value.trim();
     const result = document.getElementById('validation-result');
     if (!raw) { result.innerHTML = '<span style="color:#f76a6a">⛔ Nothing to validate.</span>'; return; }
-    const lines = raw.split('\n').filter(l => l.trim());
-    const validIdPattern = /^(qa|lr|sgk|ca)_(e|m|s|u)_\d{2}\.\d{2}\.\d{4}_\d{2}\.\d{2}_\d{2}$/;
+    const lines = mergeLines(raw);
     let errors = [];
     let good = 0;
     lines.forEach((line, i) => {
       const parts = line.split('\t');
       const num = i + 1;
-      if (parts.length !== 7) {
-        errors.push(`Line ${num}: needs 7 tab-separated fields, found ${parts.length}`);
-        return;
-      }
+      if (parts.length !== 7) { errors.push(`Line ${num}: needs 7 tab-separated fields, found ${parts.length}`); return; }
       const [id, level, topic, question, optionsRaw, answer, explanation] = parts;
-      if (!validIdPattern.test(id.trim())) errors.push(`Line ${num}: invalid ID format "${id.trim()}" (should be like ca_e_16.03.2026_15.20_01)`);
+      if (!idPattern.test(id.trim())) errors.push(`Line ${num}: invalid ID format "${id.trim()}"`);
       const opts = optionsRaw.split(',').map(o => o.trim()).filter(o => o);
       if (opts.length !== 4) errors.push(`Line ${num}: need exactly 4 options, found ${opts.length}`);
       if (!opts.includes(answer.trim())) errors.push(`Line ${num}: answer "${answer.trim()}" does not match any option`);
       if (!question.trim()) errors.push(`Line ${num}: question is empty`);
       if (!explanation.trim()) errors.push(`Line ${num}: explanation is empty`);
-      if (errors.length === 0 || !errors.find(e => e.startsWith('Line ' + num))) good++;
+      if (!errors.find(e => e.startsWith('Line ' + num))) good++;
     });
     if (errors.length === 0) {
-      result.innerHTML = '<span style="color:#6af7a2">✅ All ' + good + ' questions are valid! Ready to sync.</span>';
+      result.innerHTML = '<span style="color:#6af7a2">✅ All ' + good + ' questions valid! Ready to sync.</span>';
     } else {
-      result.innerHTML = '<span style="color:#f7a26a">⚠️ ' + errors.length + ' issue(s) found:</span><br>' +
+      result.innerHTML = '<span style="color:#f7a26a">⚠️ ' + errors.length + ' issue(s):</span><br>' +
         errors.map(e => '<span style="color:#f76a6a">• ' + e + '</span>').join('<br>');
     }
   }
 
-  function updateTargetLabel() {
-    if (selectedLevel && selectedType) {
-      const col = selectedType + '_' + selectedLevel;
-      document.getElementById('target-label').textContent = '📦 Target collection: ' + col;
-    }
-  }
-
+  // ── Sync ──
   document.getElementById('btn-sync').onclick = async () => {
-    const status = document.getElementById('sync-status');
+    const syncResult = document.getElementById('sync-result');
+    syncResult.innerHTML = '';
     if (!selectedLevel || !selectedType) {
-      status.className = 'status err';
-      status.textContent = '⛔ Select a level and type first.';
-      return;
+      syncResult.innerHTML = '<span class="sync-failed">⛔ Select level and type first.</span>'; return;
     }
     const raw = document.getElementById('questions-input').value.trim();
     if (!raw) {
-      status.className = 'status err';
-      status.textContent = '⛔ No questions pasted.';
-      return;
+      syncResult.innerHTML = '<span class="sync-failed">⛔ No questions pasted.</span>'; return;
     }
-    const lines = raw.split('\n').filter(l => l.trim());
-    const colName = selectedType + '_' + selectedLevel;
-    status.className = 'status';
-    status.textContent = '⏳ Syncing...';
-    let saved = 0, failed = 0;
+    const lines = mergeLines(raw);
+    const colName = resolveCollection(selectedLevel, selectedType);
+    syncResult.innerHTML = '<span style="color:#a89fff">⏳ Syncing...</span>';
+    let saved = 0, skipped = 0, failed = 0;
     for (const line of lines) {
       const parts = line.split('\t');
-      if (parts.length < 7) { failed++; continue; }
+      if (parts.length < 7) { skipped++; continue; }
       const [id, level, topic, question, optionsRaw, answer, explanation] = parts;
       const options = optionsRaw.split(',').map(o => o.trim());
+      if (!options.includes(answer.trim())) { skipped++; continue; }
       try {
         await setDoc(doc(collection(db, colName), id.trim()), {
-          id: id.trim(), level, topic, question, options, answer, explanation,
+          id: id.trim(), level, topic, question, options, answer: answer.trim(), explanation,
           createdAt: new Date().toISOString()
         });
         saved++;
-      } catch(e) {
-        failed++;
-      }
+      } catch(e) { failed++; }
     }
-    status.className = saved > 0 ? 'status ok' : 'status err';
-    status.textContent = '✅ Saved: ' + saved + ' | ❌ Failed: ' + failed;
+    syncResult.innerHTML =
+      `<span class="sync-saved">✅ Saved: ${saved}</span>` +
+      `<span class="sync-skipped">⚠️ Skipped: ${skipped}</span>` +
+      `<span class="sync-failed">❌ Failed: ${failed}</span>`;
   };
 </script>
 </body>

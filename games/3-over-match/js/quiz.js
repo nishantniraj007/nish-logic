@@ -260,7 +260,7 @@ function finishGame() {
             <div class="ans-q"><span class="ans-tag">Q${i + 1}</span> ${q.question}</div>
             <div class="user-ans ${isCorrect ? '' : 'incorrect'}">Your Answer: ${userA || 'Not Attempted'}</div>
             ${!isCorrect ? `<div class="correct-ans">Correct Answer: ${q.correct_answer}</div>` : ''}
-            <div class="explanation"><strong>Explanation:</strong> ${q.explanation}</div>
+            <div class="explanation"><strong>Explanation:</strong><br>${q.explanation.replace(/WHAT:|WHEN:|WHY:|CONTEXT:/g, (m) => `<br><strong>${m}</strong>`)}</div>
             ${q.trick ? `<div class="trick">💡 Trick: ${q.trick}</div>` : ''}
         `;
         ansSheet.appendChild(card);

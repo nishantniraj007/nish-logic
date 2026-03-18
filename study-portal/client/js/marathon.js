@@ -224,7 +224,7 @@ class MarathonEngine {
                 <strong>Q${i+1}: ${q.question}</strong><br>
                 <span class="ans-label">Your Ans: ${ans.user_ans}</span> | 
                 <span class="correct-label">Correct: ${q.correct_answer}</span>
-                <p style="font-size: 0.85em; color: #aaa; margin-top:5px;"><em>Ex: ${q.explanation}</em></p>
+                <p style="font-size: 0.85em; color: #aaa; margin-top:5px;"><em>Ex: ${q.explanation.replace(/WHAT:|WHEN:|WHY:|CONTEXT:/g, (m) => `<br><strong>${m}</strong>`)}</em></p>
             `;
             review.appendChild(card);
         });
