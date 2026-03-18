@@ -124,13 +124,20 @@
     <button class="btn-primary" id="btn-sync">⬆ Sync to Firestore</button>
     <div class="sync-result" id="sync-result"></div>
   </div>
+
+  <div class="card">
+    <h1>📊 Bundle Dashboard</h1>
+    <p style="color:#888; font-size:0.85rem; margin-bottom:16px; text-align:center;">Shows current question counts and bundle readiness per level</p>
+    <button onclick="loadDashboard()" style="background:#2a2a3e; color:#a89fff; border:1px solid #a89fff; border-radius:8px; padding:10px; width:100%; font-size:0.95rem; cursor:pointer; margin-bottom:16px;">🔄 Refresh Counts</button>
+    <div id="dashboard-content" style="font-size:0.85rem; font-family:monospace;"></div>
+  </div>
 </div>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-  import { getFirestore, collection, doc, setDoc }
+  import { getFirestore, collection, doc, setDoc, getCountFromServer }
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   const firebaseConfig = {
@@ -186,7 +193,6 @@
   let selectedLevel = null;
   let selectedType = null;
 
-  // ── Level → allowed types map ──
   const levelTypeMap = {
     e:      ['qa','lr','sgk','ca'],
     m:      ['qa','lr','sgk','ca'],
@@ -197,13 +203,9 @@
     clat_e: ['eng']
   };
 
-  // ── Firestore collection resolver ──
   function resolveCollection(level, type) {
-    // Science exams: subject_exam format
     if (['n','i'].includes(level)) return type + '_' + level;
-    // CLAT English
     if (level === 'clat_e' && type === 'eng') return 'eng_clat';
-    // Default: type_level
     return type + '_' + level;
   }
 
@@ -223,7 +225,6 @@
   function filterTypeButtons(level) {
     const allowed = levelTypeMap[level] || [];
     document.querySelectorAll('.type-btn').forEach(btn => {
-      const levels = btn.dataset.levels.split(',');
       if (allowed.includes(btn.dataset.type)) {
         btn.classList.remove('hidden-type');
       } else {
@@ -253,79 +254,27 @@
     }
   }
 
-  // ── Prompt profiles ──
   const levelProfiles = {
-    e: {
-      name: 'Easy',
-      profile: 'a Class 10 student scoring 90%+ in board exams (IQ 90-109)',
-      style: 'Direct factual recall. Single concept per question. No tricks. Clear and unambiguous language. Options should be obviously different from each other.',
-      avoid: 'Do not use tricky distractors. Avoid multi-concept questions.'
-    },
-    m: {
-      name: 'Medium',
-      profile: 'a Class 12 student scoring 80%+ in board exams (IQ 110-119)',
-      style: 'Application based questions. Mild inference required. Options are plausible but one is clearly correct on analysis. Tests understanding not just memory.',
-      avoid: 'Avoid purely factual questions. Push for applied understanding.'
-    },
-    s: {
-      name: 'SSC-Bank',
-      profile: 'an Engineering graduate with high IQ appearing for SSC CGL or IBPS PO (IQ 120-139)',
-      style: 'Tricky close distractors. Real exam pattern. Tests conceptual clarity under pressure. Options should include common misconceptions as wrong answers. Multi-step reasoning preferred.',
-      avoid: 'Avoid simple recall. All 4 options must seem plausible at first glance.'
-    },
-    u: {
-      name: 'UPSC-CAT',
-      profile: 'a UPSC or CAT topper with abstract reasoning ability (IQ 140+)',
-      style: 'Deep conceptual and analytical questions. Tests ability to eliminate near-correct options. Requires systemic thinking.',
-      avoid: 'No straightforward factual questions. Every option must require genuine analysis to eliminate.'
-    },
-    n: {
-      name: 'NEET-UG',
-      profile: 'a Class 12 appearing NEET aspirant with strong NCERT base (IQ 110-125)',
-      style: 'Application-based reasoning. Multi-step problem solving. Precise scientific terminology. NCERT-aligned with competitive twist. Options must be plausible — no obviously wrong distractors.',
-      avoid: 'Do not test pure memorization. Test concept application. Mention NCERT chapter relevance in explanation.'
-    },
-    i: {
-      name: 'IIT-ENGG',
-      profile: 'a Class 12 appearing JEE aspirant with high analytical ability (IQ 110-125)',
-      style: 'Multi-step problem solving. Application of formulas in non-standard situations. Strong conceptual base required. Plausible distractors based on common calculation errors.',
-      avoid: 'No direct formula plug-in questions. Push for multi-step reasoning and elimination.'
-    },
-    clat_e: {
-      name: 'CLAT',
-      profile: 'a Law entrance aspirant with strong reading comprehension and legal reasoning (IQ 115-130)',
-      style: 'Passage-based or principle-based legal reasoning. Tests application of legal principles to fact situations. English questions test advanced vocabulary and grammar in context.',
-      avoid: 'Avoid isolated grammar rules. Test language in context. For legal reasoning push for application not recall.'
-    }
+    e: { name: 'Easy', profile: 'a Class 10 student scoring 90%+ in board exams (IQ 90-109)', style: 'Direct factual recall. Single concept per question. No tricks. Clear and unambiguous language. Options should be obviously different from each other.', avoid: 'Do not use tricky distractors. Avoid multi-concept questions.' },
+    m: { name: 'Medium', profile: 'a Class 12 student scoring 80%+ in board exams (IQ 110-119)', style: 'Application based questions. Mild inference required. Options are plausible but one is clearly correct on analysis. Tests understanding not just memory.', avoid: 'Avoid purely factual questions. Push for applied understanding.' },
+    s: { name: 'SSC-Bank', profile: 'an Engineering graduate with high IQ appearing for SSC CGL or IBPS PO (IQ 120-139)', style: 'Tricky close distractors. Real exam pattern. Tests conceptual clarity under pressure. Options should include common misconceptions as wrong answers. Multi-step reasoning preferred.', avoid: 'Avoid simple recall. All 4 options must seem plausible at first glance.' },
+    u: { name: 'UPSC-CAT', profile: 'a UPSC or CAT topper with abstract reasoning ability (IQ 140+)', style: 'Deep conceptual and analytical questions. Tests ability to eliminate near-correct options. Requires systemic thinking.', avoid: 'No straightforward factual questions. Every option must require genuine analysis to eliminate.' },
+    n: { name: 'NEET-UG', profile: 'a Class 12 appearing NEET aspirant with strong NCERT base (IQ 110-125)', style: 'Application-based reasoning. Multi-step problem solving. Precise scientific terminology. NCERT-aligned with competitive twist. Options must be plausible — no obviously wrong distractors.', avoid: 'Do not test pure memorization. Test concept application. Mention NCERT chapter relevance in explanation.' },
+    i: { name: 'IIT-ENGG', profile: 'a Class 12 appearing JEE aspirant with high analytical ability (IQ 110-125)', style: 'Multi-step problem solving. Application of formulas in non-standard situations. Strong conceptual base required. Plausible distractors based on common calculation errors.', avoid: 'No direct formula plug-in questions. Push for multi-step reasoning and elimination.' },
+    clat_e: { name: 'CLAT', profile: 'a Law entrance aspirant with strong reading comprehension and legal reasoning (IQ 115-130)', style: 'Passage-based or principle-based legal reasoning. Tests application of legal principles to fact situations.', avoid: 'Avoid isolated grammar rules. Test language in context.' }
   };
 
-  const typeMap = {
-    qa: 'Quantitative Aptitude', lr: 'Logical Reasoning',
-    sgk: 'Static General Knowledge', ca: 'Current Affairs',
-    eng: 'English Language', comp: 'Computer Studies & IT Awareness (AIO)',
-    phy: 'Physics', chem: 'Chemistry', bio: 'Biology', mat: 'Mathematics'
-  };
+  const typeMap = { qa: 'Quantitative Aptitude', lr: 'Logical Reasoning', sgk: 'Static General Knowledge', ca: 'Current Affairs', eng: 'English Language', comp: 'Computer Studies & IT Awareness (AIO)', phy: 'Physics', chem: 'Chemistry', bio: 'Biology', mat: 'Mathematics' };
 
   function getExplanationRule(level, type) {
     const deepLevels = ['s', 'u'];
     const deepTypes = ['sgk', 'ca'];
     const scienceLevels = ['n', 'i'];
-
     if (scienceLevels.includes(level)) {
-      return `8. Explanation: 5-6 lines in this structure:
-   CONCEPT: [Core concept being tested]
-   APPLICATION: [How it applies to the question]
-   NCERT: [Relevant NCERT Class/Chapter reference]
-   EXAM TIP: [Common exam angle or frequent mistake to avoid]
-   No commas inside explanation. Each part on its own line.`;
+      return `8. Explanation: 5-6 lines in this structure:\n   CONCEPT: [Core concept being tested]\n   APPLICATION: [How it applies to the question]\n   NCERT: [Relevant NCERT Class/Chapter reference]\n   EXAM TIP: [Common exam angle or frequent mistake to avoid]\n   No commas inside explanation. Each part on its own line.`;
     }
     if (deepLevels.includes(level) && deepTypes.includes(type)) {
-      return `8. Explanation: 5-6 lines in this structure:
-   WHAT: [What this topic/event/concept is about]
-   WHEN: [Historical or contextual timeline]
-   WHY: [Why it matters for ${levelProfiles[level]?.name} exam preparation]
-   CONTEXT: [Additional exam-relevant detail or common exam angle]
-   No commas inside explanation. Each part on its own line.`;
+      return `8. Explanation: 5-6 lines in this structure:\n   WHAT: [What this topic/event/concept is about]\n   WHEN: [Historical or contextual timeline]\n   WHY: [Why it matters for ${levelProfiles[level]?.name} exam preparation]\n   CONTEXT: [Additional exam-relevant detail or common exam angle]\n   No commas inside explanation. Each part on its own line.`;
     }
     return `8. Explanation: one precise sentence — no commas inside it`;
   }
@@ -334,7 +283,6 @@
     const l = selectedLevel;
     const t = selectedType;
     if (!l || !t) return;
-
     const lp = levelProfiles[l];
     const typeName = typeMap[t] || t;
     const typeId = t;
@@ -362,14 +310,11 @@ ${lp.avoid}
 1. Each question must be on EXACTLY ONE LINE — no line breaks inside a question
 2. Fields separated by TAB only
 3. Format: ID[TAB]${lp.name}[TAB]Topic[TAB]Question[TAB]Option1, Option2, Option3, Option4[TAB]CorrectAnswer[TAB]Explanation
-4. ID format: ${typeId}_${l}_DD.MM.YYYY_HH.MM_NN (e.g. ${colName.replace('_','-')}_${tsDate}_${tsTime}_01 → use underscore not hyphen)
+4. ID format: ${typeId}_${l}_DD.MM.YYYY_HH.MM_NN (e.g. ${colName}_${tsDate}_${tsTime}_01)
 5. Exactly 4 options, comma separated
 6. CorrectAnswer must exactly match one of the 4 options word for word
 7. NO blank lines, NO headers, NO numbering, NO markdown, NO quotes
 ${explanationRule}
-
-EXAMPLE LINE:
-ca_e_${tsDate}_${tsTime}_01\tEasy\tEconomy\tWhich body sets repo rate in India?\tRBI, SEBI, NABARD, SIDBI\tRBI\tRBI is India central bank responsible for monetary policy.
 
 You MUST generate exactly 10 questions. Do not stop early. Do not add any commentary before or after.
 Output ONLY the tab-separated lines. Nothing else.`;
@@ -393,7 +338,6 @@ Output ONLY the tab-separated lines. Nothing else.`;
     const key = document.getElementById('gemini-key').value.trim();
     const status = document.getElementById('generate-status');
     const btn = document.getElementById('btn-generate');
-
     if (!selectedLevel || !selectedType) {
       status.className = 'status err';
       status.textContent = '⛔ Select level and type first.';
@@ -404,14 +348,12 @@ Output ONLY the tab-separated lines. Nothing else.`;
       status.textContent = '⛔ Enter your Gemini API key.';
       return;
     }
-
     const prompt = document.getElementById('ai-prompt').value;
     btn.disabled = true;
     status.className = 'status';
     status.textContent = '⏳ Generating questions...';
-
     try {
-      const models = ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.5-flash-8b'];
+      const models = ['gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-04-17', 'gemini-1.5-flash'];
       let text = '';
       let lastError = '';
       for (const model of models) {
@@ -451,6 +393,55 @@ Output ONLY the tab-separated lines. Nothing else.`;
     } finally {
       btn.disabled = false;
     }
+  };
+
+  // ── Bundle Dashboard ──
+  const bundleConfig = {
+    'Easy':     { cols: {qa_e:100, lr_e:100, sgk_e:150, ca_e:150}, bundleCol: 'bundle_easy' },
+    'Medium':   { cols: {qa_m:100, lr_m:100, sgk_m:150, ca_m:150}, bundleCol: 'bundle_medium' },
+    'SSC-Bank': { cols: {qa_s:100, lr_s:100, sgk_s:100, ca_s:100, eng_s:50, comp_s:50}, bundleCol: 'bundle_ssc' },
+    'UPSC-CAT': { cols: {qa_u:100, lr_u:100, sgk_u:100, ca_u:100, eng_u:50, comp_u:50}, bundleCol: 'bundle_upsc' },
+    'NEET UG':  { cols: {phy_n:150, chem_n:150, bio_n:200}, bundleCol: 'bundle_neet' },
+    'IIT/ENGG': { cols: {phy_i:150, chem_i:150, mat_i:200}, bundleCol: 'bundle_iit' },
+    'CLAT':     { cols: {eng_clat:500}, bundleCol: 'bundle_clat' }
+  };
+
+  window.loadDashboard = async function() {
+    const el = document.getElementById('dashboard-content');
+    el.innerHTML = '<span style="color:#a89fff">⏳ Loading counts...</span>';
+    let html = '';
+    for (const [level, config] of Object.entries(bundleConfig)) {
+      let levelReady = true;
+      let levelHtml = `<div style="margin-bottom:16px; padding:12px; background:#0f0f1a; border-radius:8px; border:1px solid #2a2a3e;">`;
+      levelHtml += `<div style="color:#a89fff; font-weight:bold; margin-bottom:8px;">${level}</div>`;
+      for (const [col, needed] of Object.entries(config.cols)) {
+        try {
+          const snap = await getCountFromServer(collection(db, col));
+          const count = snap.data().count;
+          const ok = count >= needed;
+          if (!ok) levelReady = false;
+          const bar = ok ? '✅' : '❌';
+          const color = ok ? '#6af7a2' : '#f76a6a';
+          levelHtml += `<div style="color:${color}; margin-bottom:4px;">${bar} ${col}: ${count} / ${needed}</div>`;
+        } catch(e) {
+          levelReady = false;
+          levelHtml += `<div style="color:#f76a6a; margin-bottom:4px;">❌ ${col}: error</div>`;
+        }
+      }
+      try {
+        const bundleSnap = await getCountFromServer(collection(db, config.bundleCol));
+        const bundleCount = bundleSnap.data().count;
+        if (bundleCount > 0) {
+          levelHtml += `<div style="color:#f7d26a; margin-top:6px;">📦 Existing bundles: ${bundleCount}</div>`;
+        }
+      } catch(e) {}
+      const bundleStatus = levelReady
+        ? `<div style="color:#6af7a2; font-weight:bold; margin-top:8px;">🎯 READY TO PACK</div>`
+        : `<div style="color:#f7a26a; margin-top:8px;">⏳ Not enough questions yet</div>`;
+      levelHtml += bundleStatus + '</div>';
+      html += levelHtml;
+    }
+    el.innerHTML = html;
   };
 
   // ── ID pattern ──

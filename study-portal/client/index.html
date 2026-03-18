@@ -292,19 +292,31 @@ window.selLen=function(n){
   document.getElementById('ql-'+n).classList.add('on');
 };
 
+const CACHE_EXPIRY_MS=4*24*60*60*1000;
 async function fetchQs(lv){
-  let all=[];
-  for(const col of['sgk_'+lv,'ca_'+lv]){
-    document.getElementById('ltxt').textContent='Loading '+col+'...';
-    try{
-      const snap=await getDocs(collection(db,col));
-      snap.forEach(d=>{
-        const dt=d.data();
-        if(dt.question) all.push({...dt,_col:col});
-      });
-    }catch(e){console.error(col,e);}
-  }
-  return all;
+  const cacheKey='nish_bundle_'+lv;
+  try{
+    const cached=localStorage.getItem(cacheKey);
+    if(cached){
+      const parsed=JSON.parse(cached);
+      if(Date.now()-parsed.fetchedAt<CACHE_EXPIRY_MS){
+        console.log('Using cached bundle for '+lv);
+        return parsed.questions;
+      }
+    }
+  }catch(e){console.warn('Cache read error:',e);}
+  document.getElementById('ltxt').textContent='Loading bundle...';
+  const bundleCol='bundle_'+(lv==='s'?'ssc':'upsc');
+  const snap=await getDocs(collection(db,bundleCol));
+  const docs=snap.docs.filter(d=>d.id!=='_template');
+  if(docs.length===0)throw new Error('No bundles found in '+bundleCol);
+  const randomDoc=docs[Math.floor(Math.random()*docs.length)];
+  const questions=randomDoc.data().questions||[];
+  console.log('Fetched '+questions.length+' questions from '+bundleCol+'/'+randomDoc.id);
+  try{
+    localStorage.setItem(cacheKey,JSON.stringify({questions,fetchedAt:Date.now(),bundleId:randomDoc.id}));
+  }catch(e){console.warn('Cache write error:',e);}
+  return questions;
 }
 
 function parse(doc){
@@ -313,7 +325,8 @@ function parse(doc){
   if(typeof doc.options==='string') opts=doc.options.split(',').map(o=>strip(o));
   else if(Array.isArray(doc.options)) opts=doc.options.map(o=>strip(o));
   const ans=strip(doc.answer||doc.correct_answer||'');
-  return{topic:doc.topic||doc.category||'General',question:doc.question||'',options:opts,answer:ans,explanation:doc.explanation||'',type:(doc._col||'').startsWith('ca')?'CA':'GK'};
+  const src=doc._sourceCol||doc._col||doc.id||'';
+  return{topic:doc.topic||doc.category||'General',question:doc.question||'',options:opts,answer:ans,explanation:doc.explanation||'',type:src.startsWith('ca')?'CA':'GK'};
 }
 
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
@@ -339,7 +352,11 @@ window.startM=async function(){
       const e=document.getElementById('err');
       e.textContent='Only '+all.length+' questions found. Add more via Admin Panel.';e.classList.add('on');return;
     }
-    qs=shuffle(all).slice(0,len);idx=0;cor=0;wrg=0;ua=[];ans=false;
+    const gkPool=shuffle(all.filter(q=>{const s=(q._sourceCol||q.id||'');return s.startsWith('sgk');}));
+    const caPool=shuffle(all.filter(q=>{const s=(q._sourceCol||q.id||'');return s.startsWith('ca');}));
+    const ratio={25:{gk:12,ca:13},50:{gk:20,ca:30},100:{gk:50,ca:50}}[len]||{gk:12,ca:13};
+    qs=shuffle([...gkPool.slice(0,ratio.gk),...caPool.slice(0,ratio.ca)]);
+    idx=0;cor=0;wrg=0;ua=[];ans=false;
     document.getElementById('qtot').textContent=len;
     startTimer({25:600,50:1200,100:2400}[len]);
     showScr('scr-quiz');renderQ();

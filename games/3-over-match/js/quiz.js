@@ -1,5 +1,5 @@
 import fallbackData from "./fallback_data.js";
-// ── Firebase SDK (CDN module imports handled in index.html) ──────────────────
+// ── Firebase SDK ─────────────────────────────────────────────────────────────
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
@@ -39,8 +39,113 @@ const nextBtn = document.getElementById('next-btn');
 const submitBtn = document.getElementById('submit-btn');
 const timerDisplay = document.getElementById('timer');
 
-const DIFF_MAP = { easy: 'e', medium: 'm', ssc: 's', upsc: 'u' };
-const CHUNK_TYPES = ['qa', 'lr', 'sgk', 'ca'];
+const DIFF_MAP = { easy: 'easy', medium: 'medium', ssc: 'ssc', upsc: 'upsc' };
+const CACHE_EXPIRY_MS = 4 * 24 * 60 * 60 * 1000; // 4 days
+
+// ── Cookie helpers ────────────────────────────────────────────────────────────
+function setCookie(name, value) {
+    document.cookie = `${name}=${value};path=/`;
+    document.cookie = `${name}=${value};domain=.github.io;path=/`;
+    document.cookie = `${name}=${value};domain=.web.app;path=/`;
+}
+
+function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+}
+
+// ── Strip (a) (b) (c) (d) prefixes ───────────────────────────────────────────
+function strip(s) {
+    return (s || '').replace(/^\([a-d]\)\s*/i, '').trim();
+}
+
+// ── Fisher-Yates shuffle ──────────────────────────────────────────────────────
+function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+// ── Get type from question (_sourceCol or id prefix) ─────────────────────────
+function getType(q) {
+    const src = q._sourceCol || q.id || '';
+    return src.split('_')[0]; // qa, lr, sgk, ca
+}
+
+// ── Normalize question for game use ──────────────────────────────────────────
+function normalizeQ(q, colHint) {
+    let opts = [];
+    if (Array.isArray(q.options)) opts = q.options.map(o => strip(o));
+    else if (typeof q.options === 'string') opts = q.options.split(',').map(o => strip(o));
+    if (opts.length === 0) return null;
+    const ans = strip(q.correct_answer || q.answer || '');
+    if (!ans) return null;
+    if (q.question && q.question.toLowerCase().includes('template')) return null;
+    if ((q.explanation || '').toLowerCase().includes('template')) return null;
+    return {
+        id: q.id || 'N/A',
+        category: q.category || q.topic || colHint || '',
+        topic: q.topic || '',
+        question: q.question,
+        options: opts,
+        correct_answer: ans,
+        explanation: q.explanation || '',
+        trick: q.trick || null,
+        _sourceCol: q._sourceCol || ''
+    };
+}
+
+// ── 4-Day Cache: get bundle from localStorage or Firestore ───────────────────
+async function getBundleForLevel(level) {
+    const cacheKey = `nish_bundle_${level}`;
+    try {
+        const cached = localStorage.getItem(cacheKey);
+        if (cached) {
+            const parsed = JSON.parse(cached);
+            const age = Date.now() - parsed.fetchedAt;
+            if (age < CACHE_EXPIRY_MS) {
+                console.log(`✅ Using cached bundle for ${level} (${Math.floor(age/3600000)}h old)`);
+                return parsed.questions;
+            }
+            console.log(`⏰ Cache expired for ${level}, fetching fresh bundle...`);
+        }
+    } catch(e) {
+        console.warn('Cache read error:', e);
+    }
+
+    // Fetch from Firestore — pick a random bundle doc
+    const bundleCol = `bundle_${level}`;
+    const snap = await getDocs(collection(db, bundleCol));
+    const docs = snap.docs.filter(d => d.id !== '_template');
+    if (docs.length === 0) throw new Error(`No bundles found in ${bundleCol}`);
+
+    // Pick random bundle
+    const randomDoc = docs[Math.floor(Math.random() * docs.length)];
+    const data = randomDoc.data();
+    const questions = data.questions || [];
+    console.log(`📦 Fetched ${questions.length} questions from ${bundleCol}/${randomDoc.id}`);
+
+    // Save to cache
+    try {
+        localStorage.setItem(cacheKey, JSON.stringify({
+            questions,
+            fetchedAt: Date.now(),
+            bundleId: randomDoc.id
+        }));
+    } catch(e) {
+        console.warn('Cache write error (storage full?):', e);
+    }
+
+    return questions;
+}
+
+// ── Pick questions by type from bundle ───────────────────────────────────────
+function pickFromBundle(bundle, typePrefix, count) {
+    const pool = shuffle(bundle.filter(q => getType(q) === typePrefix));
+    return pool.slice(0, count).map(q => normalizeQ(q, typePrefix)).filter(Boolean);
+}
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
@@ -68,86 +173,28 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('print-btn').addEventListener('click', () => { window.print(); });
 });
 
-// ── Cookie helpers ────────────────────────────────────────────────────────────
-function setCookie(name, value) {
-    document.cookie = `${name}=${value};path=/`;
-    document.cookie = `${name}=${value};domain=.github.io;path=/`;
-    document.cookie = `${name}=${value};domain=.web.app;path=/`;
-}
-
-function getCookie(name) {
-    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-    return match ? match[2] : null;
-}
-
-// ── Strip (a) (b) (c) (d) prefixes ───────────────────────────────────────────
-function strip(s) {
-    return (s || '').replace(/^\([a-d]\)\s*/i, '').trim();
-}
-
-// ── Fetch collection using Firebase SDK — NO 300 doc limit ───────────────────
-async function fetchCollection(collectionId) {
-    const snap = await getDocs(collection(db, collectionId));
-    const parsed = [];
-    snap.forEach(docSnap => {
-        try {
-            const d = docSnap.data();
-            if (!d.question || (!d.correct_answer && !d.answer)) return;
-            if (d.question.toLowerCase().includes('template')) return;
-            if ((d.explanation || '').toLowerCase().includes('template')) return;
-            if ((d.correct_answer || d.answer || '').toLowerCase() === 'calculated') return;
-
-            let opts = [];
-            if (Array.isArray(d.options)) opts = d.options.map(o => strip(o));
-            else if (typeof d.options === 'string') opts = d.options.split(',').map(o => strip(o));
-            if (opts.length === 0) return;
-
-            const ans = strip(d.correct_answer || d.answer || '');
-
-            parsed.push({
-                id: d.id || 'N/A',
-                category: d.category || d.topic || collectionId,
-                topic: d.topic || '',
-                question: d.question,
-                options: opts,
-                correct_answer: ans,
-                explanation: d.explanation || '',
-                trick: d.trick || null
-            });
-        } catch (err) {
-            console.warn(`Skipped malformed doc in ${collectionId}`, err);
-        }
-    });
-    console.log(`  ${collectionId} → ${parsed.length} valid docs`);
-    return parsed;
-}
-
 // ── Start Game ────────────────────────────────────────────────────────────────
 async function startGame() {
     isTimerEnabled = timerToggle.checked;
     const diff = document.querySelector('input[name="difficulty"]:checked').value;
-    const suffix = DIFF_MAP[diff];
+    const level = DIFF_MAP[diff]; // easy, medium, ssc, upsc
 
     loadingState.style.display = 'flex';
     introScreen.style.display = 'none';
 
     try {
-        console.log(`Loading ${diff} questions from 4 collections...`);
-        const allChunks = await Promise.all(
-            CHUNK_TYPES.map(type => fetchCollection(`${type}_${suffix}`))
-        );
+        console.log(`Loading ${level} bundle...`);
+        const bundle = await getBundleForLevel(level);
 
-        // Pick: 4 QA, 4 LR, 4 SGK, 6 CA = 18
-        const picks = [4, 4, 4, 6];
-        quizData = [];
-        allChunks.forEach((chunk, i) => {
-            for (let j = chunk.length - 1; j > 0; j--) {
-                const k = Math.floor(Math.random() * (j + 1));
-                [chunk[j], chunk[k]] = [chunk[k], chunk[j]];
-            }
-            quizData.push(...chunk.slice(0, picks[i]));
-        });
+        // Pick 4 QA + 4 LR + 4 SGK + 6 CA = 18
+        const qa  = pickFromBundle(bundle, 'qa',  4);
+        const lr  = pickFromBundle(bundle, 'lr',  4);
+        const sgk = pickFromBundle(bundle, 'sgk', 4);
+        const ca  = pickFromBundle(bundle, 'ca',  6);
 
+        quizData = shuffle([...qa, ...lr, ...sgk, ...ca]);
+
+        // Deduplicate
         const seen = new Set();
         quizData = quizData.filter(q => {
             if (seen.has(q.question)) return false;
@@ -155,20 +202,15 @@ async function startGame() {
             return true;
         });
 
-        for (let j = quizData.length - 1; j > 0; j--) {
-            const k = Math.floor(Math.random() * (j + 1));
-            [quizData[j], quizData[k]] = [quizData[k], quizData[j]];
-        }
-
-        if (quizData.length === 0) throw new Error('No questions loaded');
-        console.log(`✅ Loaded ${quizData.length} live questions for ${diff}`);
+        if (quizData.length === 0) throw new Error('No questions loaded from bundle');
+        console.log(`✅ Loaded ${quizData.length} questions for ${level}`);
 
     } catch (e) {
-        console.warn('Firestore fetch failed, using local fallback.', e);
+        console.warn('Bundle fetch failed, using fallback.', e);
         if (typeof fallbackData !== 'undefined' && fallbackData[diff]) {
-            quizData = [...fallbackData[diff]].sort(() => 0.5 - Math.random());
+            quizData = shuffle([...fallbackData[diff]]);
         } else {
-            console.error('Fatal: No live data and fallback missing.');
+            console.error('Fatal: No bundle and no fallback.');
         }
     }
 
