@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Novel Writer - Step 3</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+:root{--mg:#00ff41;--bg:#0d0d0d;--glass:rgba(13,13,13,0.7);--border:rgba(0,255,65,0.3);--text:#e0e0e0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:flex-start;overflow-x:hidden;padding:20px 0;}
+#bgCanvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.3;}
+main{position:relative;z-index:1;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--border);border-radius:15px;padding:3rem;max-width:900px;width:95%;text-align:center;box-shadow:0 0 20px rgba(0,255,65,0.1);margin:20px auto;}
+h1{font-family:'Share Tech Mono',monospace;font-size:2.5rem;color:var(--mg);text-shadow:0 0 10px rgba(0,255,65,0.5);margin-bottom:0.5rem;}
+.subtitle{font-size:1.2rem;color:#888;margin-bottom:1.5rem;letter-spacing:2px;}
+.progress-bar{width:100%;height:10px;background:rgba(13,13,13,0.8);border:1px solid var(--mg);border-radius:5px;margin-top:1.5rem;overflow:hidden;}
+.progress{height:100%;background:var(--mg);box-shadow:0 0 10px var(--mg);}
+.cyber-form{display:flex;flex-direction:column;gap:1.5rem;text-align:left;margin-top:2rem;}
+.form-group{display:flex;flex-direction:column;gap:0.5rem;}
+.cyber-label{font-size:1.1rem;color:var(--mg);font-family:'Share Tech Mono',monospace;letter-spacing:1px;}
+.cyber-select,.cyber-input,.cyber-textarea{background:rgba(13,13,13,0.9);border:1px solid var(--mg);color:var(--text);padding:1rem;font-family:'Inter',sans-serif;font-size:1rem;border-radius:5px;outline:none;transition:all 0.3s ease;width:100%;}
+.cyber-select:focus,.cyber-input:focus,.cyber-textarea:focus{box-shadow:0 0 15px rgba(0,255,65,0.3);border-color:#fff;}
+.cyber-select option{background:var(--bg);color:var(--mg);}
+.cyber-textarea{resize:vertical;}
+.nav-buttons{margin-top:1rem;display:flex;justify-content:space-between;width:100%;gap:10px;}
+.action-menu{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;}
+.cyber-button{background:transparent;border:1px solid var(--mg);color:var(--mg);padding:1rem 1.5rem;font-family:'Share Tech Mono',monospace;font-size:1rem;cursor:pointer;text-transform:uppercase;letter-spacing:1px;text-decoration:none;display:inline-block;transition:all 0.3s;}
+.cyber-button:hover{background:rgba(0,255,65,0.1);box-shadow:0 0 15px rgba(0,255,65,0.4);}
+.cyber-button:disabled{opacity:0.5;cursor:not-allowed;}
+.btn-secondary{border-color:#888;color:#888;}
+.btn-secondary:hover{background:rgba(136,136,136,0.1);color:#fff;border-color:#fff;}
+.btn-danger{border-color:#ff3333;color:#ff3333;}
+.btn-danger:hover{background:rgba(255,51,51,0.1);}
+.row-group{display:flex;flex-direction:row;align-items:flex-start;gap:1rem;flex-wrap:wrap;}
+.row-group>div{flex:1;min-width:200px;}
+.help-text{font-size:0.8rem;color:#888;margin-top:0.5rem;}
+.help-link{color:var(--mg);text-decoration:none;}
+.output-container{background:rgba(0,0,0,0.8);border:1px solid var(--mg);padding:2rem;min-height:300px;max-height:500px;overflow-y:auto;font-family:'Times New Roman',serif;font-size:1.2rem;line-height:1.8;text-align:left;color:#e0e0e0;margin-top:1rem;}
+.loading-spinner{display:none;text-align:center;color:var(--mg);font-family:'Share Tech Mono',monospace;font-size:1.2rem;animation:blink 1s infinite;margin-top:1rem;}
+@keyframes blink{0%{opacity:0.2;}50%{opacity:1;}100%{opacity:0.2;}}
+</style>
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+<main>
+  <h1>AI Novel Writer</h1>
+  <h2 class="subtitle">Step 3: Generate & Export</h2>
+  <div class="progress-bar"><div class="progress" style="width:100%;"></div></div>
+
+  <form id="step3Form" class="cyber-form">
+    <div class="row-group">
+      <div>
+        <label for="outputLang" class="cyber-label">Output Language:</label>
+        <select id="outputLang" class="cyber-select" style="margin-top:5px;">
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="French">French</option>
+        </select>
+      </div>
+      <div style="flex:2;">
+        <label for="apiKey" class="cyber-label">Google AI API Key:</label>
+        <div style="display:flex;gap:10px;margin-top:5px;">
+          <input type="password" id="apiKey" class="cyber-input" placeholder="Enter your Gemini API Key..." style="flex:1;">
+          <a href="https://aistudio.google.com/app/apikey" target="_blank" class="cyber-button" style="padding:0.5rem 1rem;white-space:nowrap;">? HELP</a>
+        </div>
+        <div class="help-text">Your key is never sent to our servers. (Strictly local execution).</div>
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-top:1.5rem;">
+      <label for="coreTopic" class="cyber-label">What happens in this chapter?</label>
+      <textarea id="coreTopic" class="cyber-textarea" rows="4" placeholder="Describe the instance in your own words. e.g., 'The hero walks into a dark cave and finds a glowing sword.'"></textarea>
+    </div>
+
+    <div class="action-menu" style="margin-top:1rem;">
+      <button type="button" id="generateBtn" class="cyber-button">GENERATE CHAPTER</button>
+    </div>
+  </form>
+
+  <div id="loadingIndicator" class="loading-spinner">
+    <p>> CONNECTING TO NEURAL NET...</p>
+    <p>> SYNTHESIZING NARRATIVE...</p>
+  </div>
+
+  <h3 class="cyber-label" id="outputLabel" style="margin-top:2rem;display:none;">Chapter Output:</h3>
+  <div id="outputBox" class="output-container" style="display:none;"></div>
+
+  <div id="exportMenu" class="action-menu" style="margin-top:1.5rem;display:none;flex-wrap:wrap;gap:10px;">
+    <button id="saveChapterBtn" class="cyber-button btn-secondary">SAVE CHAPTER</button>
+    <button id="downloadBookBtn" class="cyber-button">DOWNLOAD AS BOOK (HTML)</button>
+    <button id="downloadTxtBtn" class="cyber-button" style="border-color:#0F0;">DOWNLOAD AS TEXT</button>
+  </div>
+
+  <div class="nav-buttons" style="margin-top:2rem;">
+    <a href="step2.html" class="cyber-button btn-secondary">← BACK</a>
+    <a href="../tools.html" class="cyber-button btn-danger">ABORT & EXIT</a>
+  </div>
+</main>
+
+<script>
+(function(){
+  const canvas=document.getElementById('bgCanvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,pts=[],t=0;
+  const COLS=60,ROWS=30;
+  function resize(){
+    W=canvas.width=window.innerWidth;
+    H=canvas.height=window.innerHeight;
+    pts=[];
+    for(let r=0;r<ROWS;r++) for(let c=0;c<COLS;c++) pts.push({bx:(c/(COLS-1))*W,by:(r/(ROWS-1))*H,ox:c,oy:r});
+  }
+  function project(x,y,z){const fov=600,s=fov/(fov+z);return{x:W/2+(x-W/2)*s,y:H/2+(y-H/2)*s,s};}
+  function draw(){
+    ctx.clearRect(0,0,W,H);t+=0.008;
+    const proj=pts.map(p=>{
+      const z=Math.sin(p.ox*0.3+t*2)*40+Math.cos(p.oy*0.4+t*1.5)*30+Math.sin((p.ox+p.oy)*0.2+t)*20;
+      const dy=Math.sin(p.ox*0.15+t)*60+Math.cos(p.oy*0.2+t*0.8)*40;
+      return project(p.bx,p.by+dy,z);
+    });
+    for(let r=0;r<ROWS;r++){ctx.beginPath();for(let c=0;c<COLS;c++){const p=proj[r*COLS+c];c===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);}ctx.strokeStyle='rgba(180,190,200,0.12)';ctx.lineWidth=0.5;ctx.stroke();}
+    for(let c=0;c<COLS;c++){ctx.beginPath();for(let r=0;r<ROWS;r++){const p=proj[r*COLS+c];r===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);}ctx.strokeStyle='rgba(180,190,200,0.06)';ctx.lineWidth=0.4;ctx.stroke();}
+    for(let i=0;i<proj.length;i++){const p=proj[i];ctx.beginPath();ctx.arc(p.x,p.y,p.s*1.2,0,Math.PI*2);ctx.fillStyle=`rgba(160,170,180,${p.s*0.4})`;ctx.fill();}
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize',resize);resize();draw();
+})();
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const saved=JSON.parse(localStorage.getItem('novelData'))||{};
+  if(!saved.format||!saved.characters){
+    alert('Missing data from Step 1 or 2. Redirecting to start.');
+    window.location.href='index.html';
+    return;
+  }
+
+  const generateBtn=document.getElementById('generateBtn');
+  const outputBox=document.getElementById('outputBox');
+  const outputLabel=document.getElementById('outputLabel');
+  const loadingIndicator=document.getElementById('loadingIndicator');
+  const exportMenu=document.getElementById('exportMenu');
+
+  generateBtn.addEventListener('click',async()=>{
+    const apiKey=document.getElementById('apiKey').value.trim();
+    const outputLang=document.getElementById('outputLang').value;
+    const coreTopic=document.getElementById('coreTopic').value.trim();
+    const d=JSON.parse(localStorage.getItem('novelData'))||{};
+
+    if(!apiKey){alert('Please enter your Google AI Studio API Key.');return;}
+    if(!coreTopic){alert('Please provide a topic for this chapter.');return;}
+
+    const systemText=`You are an expert AI Novel Writer. Strictly follow:
+1. FORMAT: ${d.format} (${d.format==='story'?'5-6 chapters':'50-60 chapters'}). This is ONE chapter only.
+2. AUTHOR STYLE: Write strictly in the voice of: ${d.author}.
+3. WORLD: Era/Place: ${d.eraPlace}. Rules/Genre: ${d.worldRules}. Story leads to: ${d.storyDirection}.
+4. CHARACTERS: ${d.characters.map(c=>`${c.name} (Age:${c.age}, ${c.gender}, ${c.nature})`).join(', ')}.
+5. OUTPUT LANGUAGE: Write entirely in ${outputLang}.
+Do not break character. Output chapter text directly using Markdown.`.trim();
+
+    const userPrompt=`Write this chapter:\n"${coreTopic}"`;
+
+    generateBtn.disabled=true;
+    generateBtn.textContent='GENERATING...';
+    outputLabel.style.display='block';
+    outputBox.style.display='none';
+    exportMenu.style.display='none';
+    loadingIndicator.style.display='block';
+    outputBox.innerHTML='';
+
+    try{
+      // Primary: gemini-2.5-flash, Fallback: gemini-2.5-flash-lite
+      const models=['gemini-2.5-flash','gemini-2.5-flash-lite-preview-06-17'];
+      let markdownOutput=null;
+
+      for(const model of models){
+        try{
+          const url=`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+          const resp=await fetch(url,{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({
+              system_instruction:{parts:[{text:systemText}]},
+              contents:[{parts:[{text:userPrompt}]}],
+              generationConfig:{temperature:0.7}
+            })
+          });
+          const data=await resp.json();
+          if(!resp.ok) throw new Error(data.error?.message||resp.statusText);
+          markdownOutput=data.candidates?.[0]?.content?.parts?.[0]?.text;
+          if(markdownOutput) break;
+        }catch(e){
+          console.warn(`Model ${model} failed:`,e.message);
+        }
+      }
+
+      if(!markdownOutput) throw new Error('All models failed. Check your API key.');
+
+      outputBox.innerHTML=marked.parse(markdownOutput);
+
+      d.generatedChapters=d.generatedChapters||[];
+      d.generatedChapters.push({topic:coreTopic,content:markdownOutput});
+      d.lastGenerated=Date.now();
+      localStorage.setItem('novelData',JSON.stringify(d));
+
+      loadingIndicator.style.display='none';
+      outputBox.style.display='block';
+      exportMenu.style.display='flex';
+
+    }catch(err){
+      console.error(err);
+      loadingIndicator.style.display='none';
+      outputBox.style.display='block';
+      outputBox.innerHTML=`<span style="color:#ff3333;">ERROR: ${err.message}</span>`;
+    }finally{
+      generateBtn.disabled=false;
+      generateBtn.textContent='GENERATE CHAPTER';
+    }
+  });
+
+  document.getElementById('saveChapterBtn').addEventListener('click',()=>{
+    alert('Chapter saved locally!');
+  });
+
+  document.getElementById('downloadBookBtn').addEventListener('click',()=>{
+    const d=JSON.parse(localStorage.getItem('novelData'))||{};
+    if(!d.generatedChapters||d.generatedChapters.length===0){alert('No chapters yet!');return;}
+    let html=`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>AI Book</title><style>body{background:#f4ecd8;color:#333;font-family:Georgia,serif;padding:40px;max-width:800px;margin:auto;} h1,h2{text-align:center;} h1{border-bottom:2px solid #ccc;padding-bottom:20px;margin-bottom:50px;} h2{margin-top:60px;}</style></head><body>`;
+    html+=`<h1>My AI Generated ${d.format==='story'?'Story':'Novel'}</h1>`;
+    d.generatedChapters.forEach((c,i)=>{html+=`<h2>Chapter ${i+1}</h2>${marked.parse(c.content)}<hr>`;});
+    html+=`</body></html>`;
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([html],{type:'text/html'}));
+    a.download='AI_Book.html';
+    a.click();
+  });
+
+  document.getElementById('downloadTxtBtn').addEventListener('click',()=>{
+    const d=JSON.parse(localStorage.getItem('novelData'))||{};
+    if(!d.generatedChapters||d.generatedChapters.length===0){alert('No chapters yet!');return;}
+    let txt=`AI Generated ${d.format==='story'?'Story':'Novel'} — Style: ${d.author}\n\n`;
+    d.generatedChapters.forEach((c,i)=>{txt+=`Chapter ${i+1}\n\n${c.content}\n\n---\n\n`;});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob(['\uFEFF',txt],{type:'text/plain;charset=utf-8'}));
+    a.download='AI_Book.txt';
+    a.click();
+  });
+});
+</script>
+</body>
+</html>

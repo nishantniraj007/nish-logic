@@ -1,5 +1,24 @@
 {
+  "project": {
+    "key": "32494000000013001"
+  },
   "client": {
-    "source": "client"
+    "version": "1.0",
+    "deploy": [
+      "index.html",
+      "css",
+      "js",
+      "data",
+      "scripts",
+      "marathon",
+      "home"
+    ]
+  },
+  "functions": {
+    "targets": [
+      "nish_logic_function"
+    ],
+    "ignore": [],
+    "source": "functions"
   }
 }

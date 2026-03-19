@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Novel Writer - Step 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--mg:#00ff41;--bg:#0d0d0d;--glass:rgba(13,13,13,0.7);--border:rgba(0,255,65,0.3);--text:#e0e0e0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;overflow-x:hidden;}
+#bgCanvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.3;}
+main{position:relative;z-index:1;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--border);border-radius:15px;padding:3rem;max-width:900px;width:95%;text-align:center;box-shadow:0 0 20px rgba(0,255,65,0.1);margin:20px auto;}
+h1{font-family:'Share Tech Mono',monospace;font-size:2.5rem;color:var(--mg);text-shadow:0 0 10px rgba(0,255,65,0.5);margin-bottom:0.5rem;}
+.subtitle{font-size:1.2rem;color:#888;margin-bottom:1.5rem;letter-spacing:2px;}
+.progress-bar{width:100%;height:10px;background:rgba(13,13,13,0.8);border:1px solid var(--mg);border-radius:5px;margin-top:1.5rem;overflow:hidden;}
+.progress{height:100%;background:var(--mg);box-shadow:0 0 10px var(--mg);transition:width 0.3s ease;}
+.cyber-form{display:flex;flex-direction:column;gap:1.5rem;text-align:left;margin-top:2rem;}
+.form-group{display:flex;flex-direction:column;gap:0.5rem;}
+.cyber-label{font-size:1.1rem;color:var(--mg);font-family:'Share Tech Mono',monospace;letter-spacing:1px;}
+.cyber-select,.cyber-input,.cyber-textarea{background:rgba(13,13,13,0.9);border:1px solid var(--mg);color:var(--text);padding:1rem;font-family:'Inter',sans-serif;font-size:1rem;border-radius:5px;outline:none;transition:all 0.3s ease;}
+.cyber-select:focus,.cyber-input:focus,.cyber-textarea:focus{box-shadow:0 0 15px rgba(0,255,65,0.3);border-color:#fff;}
+.cyber-select option{background:var(--bg);color:var(--mg);}
+.nav-buttons{margin-top:2rem;display:flex;justify-content:space-between;width:100%;}
+.cyber-button{background:transparent;border:1px solid var(--mg);color:var(--mg);padding:1rem 1.5rem;font-family:'Share Tech Mono',monospace;font-size:1rem;cursor:pointer;text-transform:uppercase;letter-spacing:1px;text-decoration:none;display:inline-block;transition:all 0.3s;}
+.cyber-button:hover{background:rgba(0,255,65,0.1);box-shadow:0 0 15px rgba(0,255,65,0.4);}
+.btn-secondary{border-color:#888;color:#888;}
+.btn-secondary:hover{background:rgba(136,136,136,0.1);box-shadow:0 0 15px rgba(136,136,136,0.4);color:#fff;border-color:#fff;}
+</style>
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+<main>
+  <h1>AI Novel Writer</h1>
+  <h2 class="subtitle">Step 1: Format & Author Style</h2>
+  <div class="progress-bar"><div class="progress" style="width:33%;"></div></div>
+
+  <form id="step1Form" class="cyber-form">
+    <div class="form-group">
+      <label for="formatSelect" class="cyber-label">Select Format:</label>
+      <select id="formatSelect" class="cyber-select" required>
+        <option value="" disabled selected>-- Choose length --</option>
+        <option value="story">Story (5-6 Chapters)</option>
+        <option value="novel">Novel (50-60 Chapters)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="authorSelect" class="cyber-label">Select Author Style:</label>
+      <select id="authorSelect" class="cyber-select" required>
+        <option value="" disabled selected>-- Choose an author's voice --</option>
+        <option value="Chetan Bhagat">Chetan Bhagat (Conversational, Relatable Drama)</option>
+        <option value="Munshi Premchand">Munshi Premchand (Social Realism, Deeply Emotional)</option>
+        <option value="J.K. Rowling">J.K. Rowling (Magical Realism, Detailed World-building)</option>
+        <option value="Stephen King">Stephen King (Suspense, Psychological Horror)</option>
+        <option value="George R.R. Martin">George R.R. Martin (Epic Fantasy, Political Intrigue)</option>
+        <option value="Agatha Christie">Agatha Christie (Classic Mystery, Deduction)</option>
+        <option value="Rabindranath Tagore">Rabindranath Tagore (Poetic, Philosophical)</option>
+        <option value="Amrita Pritam">Amrita Pritam (Feminist, Emotional, Raw)</option>
+        <option value="Haruki Murakami">Haruki Murakami (Surrealism, Melancholy)</option>
+        <option value="Ramdhari Singh Dinkar">Ramdhari Singh Dinkar (Heroic, Powerful, Patriotic)</option>
+        <option value="Arthur Conan Doyle">Arthur Conan Doyle (Analytical, Victorian Mystery)</option>
+        <option value="J.R.R. Tolkien">J.R.R. Tolkien (High Fantasy, Mythological)</option>
+        <option value="Ruskin Bond">Ruskin Bond (Nature-centric, Nostalgic, Gentle)</option>
+        <option value="Saadat Hasan Manto">Saadat Hasan Manto (Gritty Realism, Controversial)</option>
+        <option value="R.K. Narayan">R.K. Narayan (Simple, Ironic, Small-town life)</option>
+      </select>
+    </div>
+    <div class="nav-buttons">
+      <a href="../tools.html" class="cyber-button btn-secondary">← BACK TO TOOLS</a>
+      <button type="submit" class="cyber-button">SAVE & NEXT →</button>
+    </div>
+  </form>
+</main>
+
+<script>
+(function(){
+  const canvas=document.getElementById('bgCanvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,pts=[],t=0;
+  const COLS=60,ROWS=30;
+  function resize(){
+    W=canvas.width=window.innerWidth;
+    H=canvas.height=window.innerHeight;
+    pts=[];
+    for(let r=0;r<ROWS;r++) for(let c=0;c<COLS;c++) pts.push({bx:(c/(COLS-1))*W,by:(r/(ROWS-1))*H,ox:c,oy:r});
+  }
+  function project(x,y,z){const fov=600,s=fov/(fov+z);return{x:W/2+(x-W/2)*s,y:H/2+(y-H/2)*s,s};}
+  function draw(){
+    ctx.clearRect(0,0,W,H);t+=0.008;
+    const proj=pts.map(p=>{
+      const z=Math.sin(p.ox*0.3+t*2)*40+Math.cos(p.oy*0.4+t*1.5)*30+Math.sin((p.ox+p.oy)*0.2+t)*20;
+      const dy=Math.sin(p.ox*0.15+t)*60+Math.cos(p.oy*0.2+t*0.8)*40;
+      return project(p.bx,p.by+dy,z);
+    });
+    for(let r=0;r<ROWS;r++){ctx.beginPath();for(let c=0;c<COLS;c++){const p=proj[r*COLS+c];c===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);}ctx.strokeStyle='rgba(180,190,200,0.12)';ctx.lineWidth=0.5;ctx.stroke();}
+    for(let c=0;c<COLS;c++){ctx.beginPath();for(let r=0;r<ROWS;r++){const p=proj[r*COLS+c];r===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);}ctx.strokeStyle='rgba(180,190,200,0.06)';ctx.lineWidth=0.4;ctx.stroke();}
+    for(let i=0;i<proj.length;i++){const p=proj[i];ctx.beginPath();ctx.arc(p.x,p.y,p.s*1.2,0,Math.PI*2);ctx.fillStyle=`rgba(160,170,180,${p.s*0.4})`;ctx.fill();}
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize',resize);resize();draw();
+})();
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const form=document.getElementById('step1Form');
+  const formatSelect=document.getElementById('formatSelect');
+  const authorSelect=document.getElementById('authorSelect');
+  const saved=JSON.parse(localStorage.getItem('novelData'))||{};
+  if(saved.format) formatSelect.value=saved.format;
+  if(saved.author) authorSelect.value=saved.author;
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const d=JSON.parse(localStorage.getItem('novelData'))||{};
+    d.format=formatSelect.value;
+    d.author=authorSelect.value;
+    localStorage.setItem('novelData',JSON.stringify(d));
+    window.location.href='step2.html';
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Novel Writer - Step 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--mg:#00ff41;--bg:#0d0d0d;--glass:rgba(13,13,13,0.7);--border:rgba(0,255,65,0.3);--text:#e0e0e0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:flex-start;overflow-x:hidden;padding:20px 0;}
+#bgCanvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.3;}
+main{position:relative;z-index:1;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--border);border-radius:15px;padding:3rem;max-width:900px;width:95%;text-align:center;box-shadow:0 0 20px rgba(0,255,65,0.1);margin:20px auto;}
+h1{font-family:'Share Tech Mono',monospace;font-size:2.5rem;color:var(--mg);text-shadow:0 0 10px rgba(0,255,65,0.5);margin-bottom:0.5rem;}
+.subtitle{font-size:1.2rem;color:#888;margin-bottom:1.5rem;letter-spacing:2px;}
+.progress-bar{width:100%;height:10px;background:rgba(13,13,13,0.8);border:1px solid var(--mg);border-radius:5px;margin-top:1.5rem;overflow:hidden;}
+.progress{height:100%;background:var(--mg);box-shadow:0 0 10px var(--mg);}
+.cyber-form{display:flex;flex-direction:column;gap:1.5rem;text-align:left;margin-top:2rem;}
+.form-group{display:flex;flex-direction:column;gap:0.5rem;}
+.cyber-label{font-size:1.1rem;color:var(--mg);font-family:'Share Tech Mono',monospace;letter-spacing:1px;}
+.cyber-select,.cyber-input,.cyber-textarea{background:rgba(13,13,13,0.9);border:1px solid var(--mg);color:var(--text);padding:1rem;font-family:'Inter',sans-serif;font-size:1rem;border-radius:5px;outline:none;transition:all 0.3s ease;}
+.cyber-select:focus,.cyber-input:focus,.cyber-textarea:focus{box-shadow:0 0 15px rgba(0,255,65,0.3);border-color:#fff;}
+.cyber-select option{background:var(--bg);color:var(--mg);}
+.nav-buttons{margin-top:1rem;display:flex;justify-content:space-between;width:100%;}
+.cyber-button{background:transparent;border:1px solid var(--mg);color:var(--mg);padding:1rem 1.5rem;font-family:'Share Tech Mono',monospace;font-size:1rem;cursor:pointer;text-transform:uppercase;letter-spacing:1px;text-decoration:none;display:inline-block;transition:all 0.3s;}
+.cyber-button:hover{background:rgba(0,255,65,0.1);box-shadow:0 0 15px rgba(0,255,65,0.4);}
+.btn-secondary{border-color:#888;color:#888;}
+.btn-secondary:hover{background:rgba(136,136,136,0.1);color:#fff;border-color:#fff;}
+fieldset{border:1px solid var(--mg);padding:1.5rem;border-radius:5px;}
+legend{color:var(--mg);font-family:'Share Tech Mono',monospace;padding:0 10px;font-size:1.1rem;}
+.character-list{display:flex;flex-direction:column;gap:1rem;margin-top:1rem;}
+.character-card{background:rgba(0,255,65,0.05);border:1px dashed var(--mg);padding:1.5rem;border-radius:5px;position:relative;}
+.remove-char-btn{position:absolute;top:10px;right:10px;background:transparent;color:#ff3333;border:1px solid #ff3333;padding:0.2rem 0.6rem;cursor:pointer;font-family:'Share Tech Mono',monospace;transition:all 0.2s;}
+.remove-char-btn:hover{background:rgba(255,51,51,0.2);}
+.character-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem;}
+</style>
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+<main>
+  <h1>AI Novel Writer</h1>
+  <h2 class="subtitle">Step 2: Characters & World Building</h2>
+  <div class="progress-bar"><div class="progress" style="width:66%;"></div></div>
+
+  <form id="step2Form" class="cyber-form">
+    <fieldset>
+      <legend class="cyber-label">Characters</legend>
+      <div id="characterList" class="character-list"></div>
+      <div class="nav-buttons" style="margin-top:10px;">
+        <button type="button" id="addCharBtn" class="cyber-button" style="padding:0.5rem 1rem;width:auto;min-width:150px;">+ ADD CHARACTER</button>
+      </div>
+    </fieldset>
+
+    <fieldset style="margin-top:1rem;">
+      <legend class="cyber-label">World Context</legend>
+      <div class="form-group">
+        <label for="eraPlace" class="cyber-label">Era and Place:</label>
+        <input type="text" id="eraPlace" class="cyber-input" placeholder="e.g., 1800s Victorian London, 2050 Neo-Tokyo" required>
+      </div>
+      <div class="form-group" style="margin-top:1rem;">
+        <label for="worldRules" class="cyber-label">World Rules / Genre:</label>
+        <input type="text" id="worldRules" class="cyber-input" placeholder="e.g., Sci-Fi realism, High Magic Rules" required>
+      </div>
+      <div class="form-group" style="margin-top:1rem;">
+        <label for="storyDirection" class="cyber-label">Story Direction / Ending Note:</label>
+        <input type="text" id="storyDirection" class="cyber-input" placeholder="e.g., Tragic ending, Joyful redemption" required>
+      </div>
+    </fieldset>
+
+    <div class="nav-buttons">
+      <a href="index.html" class="cyber-button btn-secondary">← BACK</a>
+      <button type="submit" class="cyber-button">SAVE & NEXT →</button>
+    </div>
+  </form>
+</main>
+
+<template id="charTemplate">
+  <div class="character-card">
+    <button type="button" class="remove-char-btn">X</button>
+    <div class="character-grid">
+      <div class="form-group">
+        <label class="cyber-label" style="font-size:0.9rem;">Name:</label>
+        <input type="text" class="char-name cyber-input" style="padding:0.5rem;" required>
+      </div>
+      <div class="form-group">
+        <label class="cyber-label" style="font-size:0.9rem;">Age:</label>
+        <input type="number" class="char-age cyber-input" style="padding:0.5rem;" required min="0">
+      </div>
+      <div class="form-group">
+        <label class="cyber-label" style="font-size:0.9rem;">Gender:</label>
+        <select class="char-gender cyber-select" style="padding:0.5rem;" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="cyber-label" style="font-size:0.9rem;">Nature:</label>
+        <select class="char-nature cyber-select" style="padding:0.5rem;" required>
+          <option value="Heroic/Brave">Heroic/Brave</option>
+          <option value="Cunning/Manipulative">Cunning/Manipulative</option>
+          <option value="Innocent/Naive">Innocent/Naive</option>
+          <option value="Grumpy/Cynical">Grumpy/Cynical</option>
+          <option value="Wise/Mentor">Wise/Mentor</option>
+          <option value="Chaotic/Unpredictable">Chaotic/Unpredictable</option>
+          <option value="Loyal/Devoted">Loyal/Devoted</option>
+          <option value="Ambitious/Driven">Ambitious/Driven</option>
+          <option value="Cowardly/Fearful">Cowardly/Fearful</option>
+          <option value="Mysterious/Secretive">Mysterious/Secretive</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+(function(){
+  const canvas=document.getElementById('bgCanvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,pts=[],t=0;
+  const COLS=60,ROWS=30;
+  function resize(){
+    W=canvas.width=window.innerWidth;
+    H=canvas.height=window.innerHeight;
+    pts=[];
+    for(let r=0;r<ROWS;r++) for(let c=0;c<COLS;c++) pts.push({bx:(c/(COLS-1))*W,by:(r/(ROWS-1))*H,ox:c,oy:r});
+  }
+  function project(x,y,z){const fov=600,s=fov/(fov+z);return{x:W/2+(x-W/2)*s,y:H/2+(y-H/2)*s,s};}
+  function draw(){
+    ctx.clearRect(0,0,W,H);t+=0.008;
+    const proj=pts.map(p=>{
+      const z=Math.sin(p.ox*0.3+t*2)*40+Math.cos(p.oy*0.4+t*1.5)*30+Math.sin((p.ox+p.oy)*0.2+t)*20;
+      const dy=Math.sin(p.ox*0.15+t)*60+Math.cos(p.oy*0.2+t*0.8)*40;
+      return project(p.bx,p.by+dy,z);
+    });
+    for(let r=0;r<ROWS;r++){ctx.beginPath();for(let c=0;c<COLS;c++){const p=proj[r*COLS+c];c===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);}ctx.strokeStyle='rgba(180,190,200,0.12)';ctx.lineWidth=0.5;ctx.stroke();}
+    for(let c=0;c<COLS;c++){ctx.beginPath();for(let r=0;r<ROWS;r++){const p=proj[r*COLS+c];r===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);}ctx.strokeStyle='rgba(180,190,200,0.06)';ctx.lineWidth=0.4;ctx.stroke();}
+    for(let i=0;i<proj.length;i++){const p=proj[i];ctx.beginPath();ctx.arc(p.x,p.y,p.s*1.2,0,Math.PI*2);ctx.fillStyle=`rgba(160,170,180,${p.s*0.4})`;ctx.fill();}
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize',resize);resize();draw();
+})();
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const form=document.getElementById('step2Form');
+  const characterList=document.getElementById('characterList');
+  const addCharBtn=document.getElementById('addCharBtn');
+  const charTemplate=document.getElementById('charTemplate').content;
+  const saved=JSON.parse(localStorage.getItem('novelData'))||{};
+
+  if(saved.eraPlace) document.getElementById('eraPlace').value=saved.eraPlace;
+  if(saved.worldRules) document.getElementById('worldRules').value=saved.worldRules;
+  if(saved.storyDirection) document.getElementById('storyDirection').value=saved.storyDirection;
+
+  function addCharacterRow(data={}){
+    const clone=document.importNode(charTemplate,true);
+    const card=clone.querySelector('.character-card');
+    if(data.name) card.querySelector('.char-name').value=data.name;
+    if(data.age) card.querySelector('.char-age').value=data.age;
+    if(data.gender) card.querySelector('.char-gender').value=data.gender;
+    if(data.nature) card.querySelector('.char-nature').value=data.nature;
+    card.querySelector('.remove-char-btn').addEventListener('click',()=>card.remove());
+    characterList.appendChild(clone);
+  }
+
+  if(saved.characters&&saved.characters.length>0) saved.characters.forEach(c=>addCharacterRow(c));
+  else addCharacterRow();
+
+  addCharBtn.addEventListener('click',()=>addCharacterRow());
+
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const characters=[];
+    document.querySelectorAll('.character-card').forEach(card=>{
+      characters.push({
+        name:card.querySelector('.char-name').value,
+        age:card.querySelector('.char-age').value,
+        gender:card.querySelector('.char-gender').value,
+        nature:card.querySelector('.char-nature').value
+      });
+    });
+    if(characters.length===0){alert('Please add at least one character!');return;}
+    const d=JSON.parse(localStorage.getItem('novelData'))||{};
+    d.characters=characters;
+    d.eraPlace=document.getElementById('eraPlace').value;
+    d.worldRules=document.getElementById('worldRules').value;
+    d.storyDirection=document.getElementById('storyDirection').value;
+    localStorage.setItem('novelData',JSON.stringify(d));
+    window.location.href='step3.html';
+  });
+});
+</script>
+</body>
+</html>

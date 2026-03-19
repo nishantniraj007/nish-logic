@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "difficulty": "ssc",
+    "slot": 6,
+    "generated_at": "2026-03-08T08:38:55.043Z",
+    "type": "Hybrid AI/TBG Engine",
+    "breakdown": "4 QA, 4 LR, 4 Static, 6 CA"
+  },
+  "questions": [
+    {
+      "question": "Find the next number in the series: 5, 10, 20, 40, ?",
+      "correct_answer": "80",
+      "options": [
+        "82",
+        "75",
+        "80",
+        "160"
+      ],
+      "explanation": "The series follows a Geometric Progression with a constant multiplier ratio of 2. So, 40 * 2 = 80.",
+      "trick": "If numbers scale up very quickly, look for multiplication rather than addition.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Find the odd one out among the following numbers: 9, 50, 4, 16",
+      "correct_answer": "50",
+      "options": [
+        "9",
+        "50",
+        "4",
+        "16"
+      ],
+      "explanation": "4, 9, and 16 are perfect squares. 50 is not a perfect square.",
+      "trick": "Memorize squares up to 30 to instantly spot discrepancies.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #4 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 3",
+        "Option 4",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Statements:\n1. All Cars are Trucks.\n2. All Trucks are Vehicles.\n\nWhich conclusion logically follows?",
+      "correct_answer": "All Cars are Vehicles.",
+      "options": [
+        "All Cars are Vehicles.",
+        "No Cars are Vehicles.",
+        "Some Vehicles are not Cars.",
+        "None of the above."
+      ],
+      "explanation": "If A is a subset of B, and B is a subset of C, then A must be a subset of C completely.",
+      "trick": "Draw a venn diagram: Small circle A inside Medium B inside Large C.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #3 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 2",
+        "Option 3",
+        "Option 1"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Rs. 480 is divided between A and B in the ratio 3:7. What is A's share?",
+      "correct_answer": "Rs. 144",
+      "options": [
+        "Rs. 96",
+        "Rs. 192",
+        "Rs. 336",
+        "Rs. 144"
+      ],
+      "explanation": "Total parts = 3 + 7 = 10. Value of 1 part = 480/10 = 48. A's share = 3 * 48 = 144.",
+      "trick": "Divide total by sum of ratios, then multiply by A's ratio digit.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #6 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 2",
+        "Option 4",
+        "Option 1",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "What will be the Simple Interest on a principal amount of Rs. 8400 at an interest rate of 8% per annum over 5 years?",
+      "correct_answer": "Rs. 3360",
+      "options": [
+        "Rs. 3360",
+        "Rs. 3780",
+        "Rs. 3310",
+        "Rs. 3460"
+      ],
+      "explanation": "SI = (P * R * T) / 100 = (8400 * 8 * 5) / 100 = 3360.",
+      "trick": "Treat percentage as decimal visually: 84 * 8 * 5 = 3360.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "If an article is bought for Rs. 1000 and sold at a profit of 10%, what is the selling price?",
+      "correct_answer": "Rs. 1100",
+      "options": [
+        "Rs. 1000",
+        "Rs. 1100",
+        "Rs. 1200",
+        "Rs. 1300"
+      ],
+      "explanation": "SP = CP * (1 + Profit/100) = 1000 * 1.10 = Rs. 1100.",
+      "trick": "Calculate 10% of CP, multiply, and add it conceptually.",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #1 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 1",
+        "Option 4",
+        "Option 2",
+        "Option 3"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "correct_answer": "Rabindranath Tagore",
+      "options": [
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu",
+        "Rabindranath Tagore",
+        "Mahatma Gandhi"
+      ],
+      "explanation": "Jana Gana Mana.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #2 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 3",
+        "Option 2",
+        "Option 1"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    },
+    {
+      "question": "A can complete a piece of work in 48 days while B can complete the same work in 84 days. If they work together, in how many days will they complete the work?",
+      "correct_answer": "30.55 days",
+      "options": [
+        "32.55 days",
+        "30.55 days",
+        "29.55 days",
+        "34.55 days"
+      ],
+      "explanation": "Work = 48 * 84 = 4032. Rate = 48 + 84 = 132. Time = Work / Rate = 30.55 days.",
+      "trick": "Use formula: (A * B) / (A + B).",
+      "category": "Quantitative Aptitude"
+    },
+    {
+      "question": "Who was the first President of India?",
+      "correct_answer": "Dr. Rajendra Prasad",
+      "options": [
+        "B.R. Ambedkar",
+        "Sardar Patel",
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru"
+      ],
+      "explanation": "He served from 1950 to 1962.",
+      "category": "Static GK"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "correct_answer": "Nile",
+      "options": [
+        "Nile",
+        "Yangtze",
+        "Amazon",
+        "Mississippi"
+      ],
+      "explanation": "Length approx 6,650 km.",
+      "category": "Static GK"
+    },
+    {
+      "question": "If MAT is coded as NBU, how will PEN be coded in that same language?",
+      "correct_answer": "QFO",
+      "options": [
+        "RGP",
+        "ODM",
+        "PEN",
+        "QFO"
+      ],
+      "explanation": "Each letter is shifted forward by exactly 1 positions in the English alphabet.",
+      "trick": "Note the position gap between the first letter of the word and the first letter of its code.",
+      "category": "Logical Reasoning"
+    },
+    {
+      "question": "Which is the largest planet in our solar system?",
+      "correct_answer": "Jupiter",
+      "options": [
+        "Saturn",
+        "Neptune",
+        "Jupiter",
+        "Earth"
+      ],
+      "explanation": "Jupiter is a gas giant.",
+      "category": "Static GK"
+    },
+    {
+      "question": "[FALLBACK] Recent news Item #5 regarding events for ssc difficulty?",
+      "correct_answer": "Option 1",
+      "options": [
+        "Option 4",
+        "Option 3",
+        "Option 1",
+        "Option 2"
+      ],
+      "explanation": "Remote Database sync failed temporarily.",
+      "category": "Current Affairs"
+    }
+  ]
+}

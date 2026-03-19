@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nish-Logic Ecosystem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Courier New', monospace;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 4px;
+        }
+        
+        .vibe-badge {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .bio {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .tools-section h2 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .app-card {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            background: #667eea;
+            color: white;
+        }
+        
+        .app-card.ready {
+            border-color: #48bb78;
+        }
+        
+        .app-card.ready:hover {
+            background: #48bb78;
+            box-shadow: 0 10px 30px rgba(72, 187, 120, 0.4);
+        }
+        
+        .app-card.coming-soon {
+            opacity: 0.7;
+            border-color: #a0aec0;
+            cursor: not-allowed;
+        }
+        
+        .app-card.coming-soon:hover {
+            transform: none;
+            box-shadow: none;
+            background: white;
+            color: #333;
+        }
+        
+        .app-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .status {
+            font-size: 0.9rem;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .ready .status {
+            background: rgba(72, 187, 120, 0.1);
+            color: #48bb78;
+        }
+        
+        .coming-soon .status {
+            background: rgba(160, 174, 192, 0.1);
+            color: #718096;
+        }
+        
+        .app-card:hover .status {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .bio {
+                font-size: 1rem;
+            }
+            
+            .button-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>NISHANT NIRAJ</h1>
+            <div class="vibe-badge">&lt;Vibe Coder /&gt;</div>
+            
+            <div class="bio">
+                I build innovative solutions with minimal or zero cost using open<br>
+                technologies. My expertise includes deploying robust platforms directly<br>
+                from mobile devices to the cloud. I focus on creating accessible,<br>
+                practical, and serverless applications within the Nish-Logic ecosystem.
+            </div>
+        </div>
+
+        <!-- TOOLS Section -->
+        <div class="tools-section">
+            <h2>TOOLS</h2>
+            
+            <div class="button-grid">
+                <!-- Row 1 -->
+                <a href="https://nishantniraj007.github.io/games-vault" class="app-card" target="_blank">
+                    <h3>GAMES VAULT</h3>
+                    <span class="status">GitHub Pages</span>
+                </a>
+                
+                <a href="/manual" class="app-card">
+                    <h3>USER MANUAL</h3>
+                    <span class="status">Guide</span>
+                </a>
+                
+                <a href="/3-over-match" class="app-card ready">
+                    <h3>3 Over Match</h3>
+                    <span class="status">Ready!</span>
+                </a>
+                
+                <!-- Row 2 -->
+                <a href="/expert-analyser" class="app-card ready">
+                    <h3>Expert Analyser</h3>
+                    <span class="status">Ready!</span>
+                </a>
+                
+                <a href="/" class="app-card ready">
+                    <h3>STUDY PORTAL</h3>
+                    <span class="status">Marathon</span>
+                </a>
+                
+                <a href="/ai-novel-writer" class="app-card ready">
+                    <h3>AI Novel Writer</h3>
+                    <span class="status">BYOK</span>
+                </a>
+                
+                <!-- Row 3 -->
+                <a href="#" class="app-card coming-soon">
+                    <h3>AITTS</h3>
+                    <span class="status">Coming Soon</span>
+                </a>
+                
+                <a href="#" class="app-card coming-soon">
+                    <h3>Equation Solver</h3>
+                    <span class="status">Coming Soon</span>
+                </a>
+                
+                <a href="#" class="app-card coming-soon">
+                    <h3>Resume Builder</h3>
+                    <span class="status">Coming Soon</span>
+                </a>
+                
+                <!-- Row 4 -->
+                <a href="#" class="app-card coming-soon">
+                    <h3>Logic Labyrinth</h3>
+                    <span class="status">Coming Soon</span>
+                </a>
+                
+                <a href="#" class="app-card coming-soon">
+                    <h3>Pattern Pursuit</h3>
+                    <span class="status">Coming Soon</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

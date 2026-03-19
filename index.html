@@ -1,83 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishant Niraj | Vibe Coder</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <title>Nish-Logic</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0015;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+        canvas {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .logo {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-shadow: 0 0 30px rgba(180,80,255,0.8), 0 0 60px rgba(80,120,255,0.4);
+        }
+        .tagline {
+            font-size: clamp(0.7rem, 2vw, 0.95rem);
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .enter-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: clamp(0.65rem, 1.8vw, 0.85rem);
+            font-weight: bold;
+            color: #fff;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(180,80,255,0.3);
+        }
+        .enter-btn:hover {
+            background: rgba(180,80,255,0.2);
+            border-color: rgba(180,80,255,0.8);
+            box-shadow: 0 0 40px rgba(180,80,255,0.5);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-
 <body>
-    <canvas id="matrixCanvas"></canvas>
+<canvas id="plexus"></canvas>
 
-    <main class="glass-container">
-        <header class="profile-section">
-            <h1 class="glitch" data-text="Nishant Niraj">Nishant Niraj</h1>
-            <h2 class="subtitle">&lt; Vibe Coder /&gt;</h2>
-            <div class="description">
-                <p>
-                    I build innovative solutions with minimal or zero cost using open technologies.
-                    My expertise includes deploying robust platforms directly from mobile devices
-                    to the cloud. I focus on creating accessible, practical,
-                    and serverless applications within the Nish-Logic ecosystem.
-                </p>
-            </div>
-        </header>
+<div class="content">
+    <div class="logo">NISH-LOGIC</div>
+    <div class="tagline">Serverless · Open · Zero Cost</div>
+    <a href="https://nish-logic-60066876988.development.catalystserverless.in/app/index.html" class="enter-btn">
+        Enter the Nish-Logic Ecosystem
+    </a>
+</div>
 
-        <nav class="action-menu">
-            <div class="button-grid">
-                <div class="menu-item has-dropdown">
-                    <button class="cyber-button" id="toolsBtn" aria-expanded="false" aria-controls="toolsDropdown">
-                        <span class="btn-text">TOOLS</span>
-                        <span class="btn-glitch"></span>
-                    </button>
-                    <div class="dropdown-content" id="toolsDropdown">
-                        <a href="tools/ai-novel-writer/index.html" class="dropdown-link">AI Novel Writer (BYOK)</a>
-                        <a href="tools/ai-tts/index.html" class="dropdown-link coming-soon">AI TTS <span>(Coming Soon)</span></a>
-                        <a href="#" class="dropdown-link coming-soon">Equation Solver <span>(Coming Soon)</span></a>
-                        <a href="#" class="dropdown-link coming-soon">Resume Builder <span>(Coming Soon)</span></a>
-                    </div>
-                </div>
+<script>
+const canvas = document.getElementById('plexus');
+const ctx = canvas.getContext('2d');
+let W, H, particles = [];
+const COUNT = 80;
+const MAX_DIST = 150;
 
-                <div class="menu-item has-dropdown">
-                    <button class="cyber-button" id="gamesBtn" aria-expanded="false" aria-controls="gamesDropdown">
-                        <span class="btn-text">GAMES VAULT</span>
-                        <span class="btn-glitch"></span>
-                    </button>
-                    <div class="dropdown-content" id="gamesDropdown">
-                        <a href="https://nishantniraj007.github.io/nish-logic/games/3-over-match/index.html"
-                            class="dropdown-link ready-to-go" target="_blank">3 Over Match <span>(Ready!)</span></a>
-                        <a href="https://nishantniraj007.github.io/nish-logic/games/expert-analyser/index.html"
-                            class="dropdown-link ready-to-go" target="_blank">Expert Analyser <span>(Ready!)</span></a>
-                        <a href="#" class="dropdown-link coming-soon">Logic Labyrinth <span>(Coming Soon)</span></a>
-                        <a href="#" class="dropdown-link coming-soon">Equation Escape <span>(Coming Soon)</span></a>
-                        <a href="#" class="dropdown-link coming-soon">Pattern Pursuit <span>(Coming Soon)</span></a>
-                        <a href="#" class="dropdown-link coming-soon">Trivia Trek <span>(Coming Soon)</span></a>
-                    </div>
-                </div>
+const COLORS = [
+    {r:220, g:50,  b:255},
+    {r:100, g:80,  b:255},
+    {r:255, g:50,  b:180},
+    {r:50,  g:100, b:255},
+    {r:255, g:100, b:220},
+];
 
-                <div class="menu-item">
-                    <a href="manual/index.html" class="cyber-button" id="manualBtn">
-                        <span class="btn-text">USER MANUAL</span>
-                        <span class="btn-glitch"></span>
-                    </a>
-                </div>
+function resize(){
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+}
 
-                <div class="menu-item full-width">
-                    <a href="https://nish-logic-60066876988.development.catalystserverless.in/app/index.html"
-                        class="cyber-button outline study-btn" id="studyBtn" target="_blank">
-                        <span class="btn-text">STUDY PORTAL</span>
-                        <span class="btn-glitch"></span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </main>
+function randomColor(){
+    return COLORS[Math.floor(Math.random()*COLORS.length)];
+}
 
-    <script src="js/matrix.js?v=2.3"></script>
+function initParticles(){
+    particles = [];
+    for(let i=0; i<COUNT; i++){
+        const c = randomColor();
+        particles.push({
+            x: Math.random()*W,
+            y: Math.random()*H,
+            vx: (Math.random()-0.5)*0.6,
+            vy: (Math.random()-0.5)*0.6,
+            r: Math.random()*3+1.5,
+            c: c,
+            glow: Math.random()*0.5+0.5
+        });
+    }
+}
+
+function drawGradientBg(){
+    const grad = ctx.createRadialGradient(W*0.3, H*0.4, 0, W*0.3, H*0.4, W*0.7);
+    grad.addColorStop(0, '#1a0035');
+    grad.addColorStop(0.4, '#0d0025');
+    grad.addColorStop(1, '#050010');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0,W,H);
+
+    // Second glow
+    const grad2 = ctx.createRadialGradient(W*0.7, H*0.6, 0, W*0.7, H*0.6, W*0.5);
+    grad2.addColorStop(0, 'rgba(0,50,150,0.3)');
+    grad2.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = grad2;
+    ctx.fillRect(0,0,W,H);
+}
+
+function animate(){
+    ctx.clearRect(0,0,W,H);
+    drawGradientBg();
+
+    // Update positions
+    particles.forEach(p=>{
+        p.x += p.vx;
+        p.y += p.vy;
+        if(p.x<0||p.x>W) p.vx*=-1;
+        if(p.y<0||p.y>H) p.vy*=-1;
+    });
+
+    // Draw connections
+    for(let i=0; i<particles.length; i++){
+        for(let j=i+1; j<particles.length; j++){
+            const a = particles[i], b = particles[j];
+            const dx = a.x-b.x, dy = a.y-b.y;
+            const dist = Math.sqrt(dx*dx+dy*dy);
+            if(dist<MAX_DIST){
+                const alpha = (1-dist/MAX_DIST)*0.6;
+                // Mix colors of two particles
+                const r = Math.round((a.c.r+b.c.r)/2);
+                const g = Math.round((a.c.g+b.c.g)/2);
+                const bb = Math.round((a.c.b+b.c.b)/2);
+                ctx.beginPath();
+                ctx.moveTo(a.x, a.y);
+                ctx.lineTo(b.x, b.y);
+                ctx.strokeStyle = `rgba(${r},${g},${bb},${alpha})`;
+                ctx.lineWidth = 0.8;
+                ctx.stroke();
+            }
+        }
+    }
+
+    // Draw particles
+    particles.forEach(p=>{
+        // Outer glow
+        const grd = ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*6);
+        grd.addColorStop(0, `rgba(${p.c.r},${p.c.g},${p.c.b},${p.glow*0.6})`);
+        grd.addColorStop(1, `rgba(${p.c.r},${p.c.g},${p.c.b},0)`);
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r*6, 0, Math.PI*2);
+        ctx.fillStyle = grd;
+        ctx.fill();
+
+        // Core dot
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+        ctx.fillStyle = `rgba(${p.c.r},${p.c.g},${p.c.b},1)`;
+        ctx.fill();
+    });
+
+    requestAnimationFrame(animate);
+}
+
+window.addEventListener('resize', ()=>{ resize(); initParticles(); });
+resize();
+initParticles();
+animate();
+</script>
 </body>
-
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nish-Logic Ecosystem</title>
+    <title>Tools — Nish-Logic</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -42,28 +42,18 @@
 
         h1 {
             color: #0f0;
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
-            margin-bottom: 1rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 0.5rem;
             text-shadow: 0 0 10px #0f0;
             letter-spacing: 4px;
         }
 
-        .vibe-badge {
+        .subtitle {
             color: #0f0;
-            font-size: clamp(1rem, 3vw, 1.2rem);
+            opacity: 0.6;
+            font-size: 0.85rem;
             margin-bottom: 1.5rem;
-            opacity: 0.8;
-            border-bottom: 1px dashed #0f0;
-            padding-bottom: 1rem;
-        }
-
-        .bio {
-            color: #0f0;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-            opacity: 0.9;
-            font-size: clamp(0.9rem, 2.5vw, 1rem);
-            padding: 0 10px;
+            letter-spacing: 2px;
         }
 
         .divider {
@@ -110,11 +100,25 @@
             pointer-events: none;
         }
 
-        .footer {
+        .back-btn {
+            display: inline-block;
             margin-top: 1.5rem;
+            padding: 8px 20px;
+            font-size: 0.85rem;
             color: #0f0;
-            opacity: 0.4;
-            font-size: clamp(0.7rem, 2vw, 0.85rem);
+            background: transparent;
+            border: 1px dashed #0f0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            transition: all 0.2s ease;
+        }
+
+        .back-btn:hover {
+            opacity: 1;
+            background: rgba(0, 255, 0, 0.1);
         }
     </style>
 </head>
@@ -122,25 +126,19 @@
     <canvas id="matrix"></canvas>
 
     <div class="content">
-        <h1>NISHANT NIRAJ</h1>
-        <div class="vibe-badge">&lt;Vibe Coder /&gt;</div>
-
-        <div class="bio">
-            I build innovative solutions with minimal or zero cost using open technologies.
-            My expertise includes deploying robust platforms directly from mobile devices to the cloud.
-            I focus on creating accessible, practical, and serverless applications within the Nish-Logic ecosystem.
-        </div>
+        <h1>TOOLS</h1>
+        <div class="subtitle">— SELECT A TOOL —</div>
 
         <hr class="divider">
 
         <div class="btn-grid">
-            <a class="btn" href="home/tools.html">⚙ TOOLS</a>
-            <a class="btn" href="https://nishantniraj007.github.io/nish-logic/" target="_blank">🎮 GAMES VAULT</a>
-            <a class="btn" href="home/manual.html">📖 USER MANUAL</a>
-            <a class="btn" href="home/study.html">📚 STUDY PORTAL</a>
+            <a class="btn" href="ai-novel-writer/index.html">✍ AI NOVEL WRITER (BYOK)</a>
+            <a class="btn coming-soon" href="#">🎙 AITTS — COMING SOON</a>
+            <a class="btn coming-soon" href="#">📄 RESUME BUILDER — COMING SOON</a>
+            <a class="btn coming-soon" href="#">🔢 EQUATION SOLVER — COMING SOON</a>
         </div>
 
-        <div class="footer">⚡ NISH-LOGIC ECOSYSTEM ⚡</div>
+        <a class="back-btn" href="../index.html">← BACK</a>
     </div>
 
     <script>
@@ -149,8 +147,8 @@
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
-        const charArray = chars.split('');
+        const chars = '0123456789ABCDEF01';
+                const charArray = chars.split('');
         const fontSize = 14;
         const columns = canvas.width / fontSize;
         const drops = [];

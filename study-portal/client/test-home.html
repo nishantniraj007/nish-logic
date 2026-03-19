@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nish-Logic Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: 'Courier New', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 10px;
+            letter-spacing: 4px;
+        }
+        
+        .vibe-badge {
+            color: #e73c7e;
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: pulse 2s ease infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .bio {
+            color: #666;
+            line-height: 1.8;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .tools-section {
+            margin-top: 40px;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: clamp(1.8rem, 4vw, 2.2rem);
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .app-card {
+            background: white;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 25px 15px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            aspect-ratio: 1 / 0.9;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5) border-box;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(231, 60, 126, 0.3);
+        }
+        
+        .app-card h3 {
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            margin-bottom: 12px;
+            font-weight: bold;
+            word-break: break-word;
+            background: linear-gradient(45deg, #ee7752, #e73c7e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .status {
+            font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+            padding: 6px 15px;
+            border-radius: 20px;
+            background: rgba(231, 60, 126, 0.1);
+            color: #e73c7e;
+            display: inline-block;
+            margin-top: auto;
+        }
+        
+        .app-card:hover .status {
+            background: #e73c7e;
+            color: white;
+        }
+        
+        .dropdown {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 2px solid #e73c7e;
+            border-radius: 15px;
+            margin-top: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 1000;
+            overflow: hidden;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-item {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-item:hover {
+            background: linear-gradient(90deg, #ee7752, #e73c7e);
+            color: white;
+        }
+        
+        .dropdown-item .item-status {
+            float: right;
+            font-size: 0.75rem;
+            color: #23a6d5;
+        }
+        
+        .dropdown-item.coming-soon {
+            opacity: 0.7;
+        }
+        
+        .dropdown-item.coming-soon .item-status {
+            color: #a0aec0;
+        }
+        
+        @media (max-width: 900px) {
+            .button-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .button-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .app-card {
+                aspect-ratio: auto;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NISHANT NIRAJ</h1>
+            <div class="vibe-badge">&lt;Vibe Coder /&gt;</div>
+            
+            <div class="bio">
+                I build innovative solutions with minimal or zero cost using open technologies. 
+                My expertise includes deploying robust platforms directly from mobile devices to the cloud. 
+                I focus on creating accessible, practical, and serverless applications within the Nish-Logic ecosystem.
+            </div>
+        </div>
+
+        <div class="tools-section">
+            <h2>TOOLS</h2>
+            
+            <div class="button-grid">
+                <!-- Button 1: TOOLS -->
+                <div class="dropdown">
+                    <div class="app-card">
+                        <h3>TOOLS</h3>
+                        <span class="status">▼</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">
+                            AI Novel Writer <span class="item-status">BYOK</span>
+                        </a>
+                        <a href="#" class="dropdown-item coming-soon">
+                            AITTS <span class="item-status">Coming Soon</span>
+                        </a>
+                        <a href="#" class="dropdown-item coming-soon">
+                            Resume Builder <span class="item-status">Coming Soon</span>
+                        </a>
+                        <a href="#" class="dropdown-item coming-soon">
+                            Equation Solver <span class="item-status">Coming Soon</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Button 2: GAMES VAULT -->
+                <a href="https://nishantniraj007.github.io/games-vault" class="app-card" target="_blank">
+                    <h3>GAMES VAULT</h3>
+                    <span class="status">GitHub Pages</span>
+                </a>
+                
+                <!-- Button 3: USER MANUAL -->
+                <a href="#" class="app-card">
+                    <h3>USER MANUAL</h3>
+                    <span class="status">Guide</span>
+                </a>
+                
+                <!-- Button 4: STUDY PORTAL -->
+                <div class="dropdown">
+                    <div class="app-card">
+                        <h3>STUDY PORTAL</h3>
+                        <span class="status">▼</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/marathon" class="dropdown-item">
+                            Marathon <span class="item-status">Ready!</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            3 Over Match <span class="item-status">Ready!</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Expert Analyser <span class="item-status">Ready!</span>
+                        </a>
+                        <a href="#" class="dropdown-item coming-soon">
+                            NEET UG <span class="item-status">Coming Soon</span>
+                        </a>
+                        <a href="#" class="dropdown-item coming-soon">
+                            IIT JEE <span class="item-status">Coming Soon</span>
+                        </a>
+                        <a href="#" class="dropdown-item coming-soon">
+                            CLAT <span class="item-status">Coming Soon</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; color: #999; font-size: 0.8rem;">
+            ✦ Nish-Logic Ecosystem ✦
+        </div>
+    </div>
+</body>
+</html>

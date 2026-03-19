@@ -1,0 +1,10 @@
+{
+	"name": "nish_logic_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "nishantneeraj007@gmail.com",
+	"dependencies": {
+		"firebase-admin": "^13.7.0",
+		"zcatalyst-sdk-node": "latest"
+	}
+}
