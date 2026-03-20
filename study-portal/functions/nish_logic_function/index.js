@@ -1,23 +1,48 @@
-const admin = require("firebase-admin");
+const express = require('express');
+const admin = require('firebase-admin');
+
 admin.initializeApp({
-  credential: admin.credential.cert(require("./serviceaccount.json"))
+  credential: admin.credential.cert(require('./serviceaccount.json'))
 });
+
 const db = admin.firestore();
+const app = express();
 
-module.exports = async (req, res) => {
+// Level param → bundle collection map
+const LEVEL_MAP = {
+  's':      'bundle_ssc',
+  'u':      'bundle_upsc',
+  'e':      'bundle_easy',
+  'm':      'bundle_medium',
+  'n':      'bundle_neet',
+  'i':      'bundle_iit',
+  'clat_e': 'bundle_clat'
+};
+
+app.get('/', async (req, res) => {
   try {
-    const level = req.query.level || "s";
-    const col = level === "s" ? "bundle_ssc" : "bundle_upsc";
-
-    // Fetch bundle_01 directly — no collection scan
-    const doc = await db.collection(col).doc("bundle_01").get();
-    if (!doc.exists) {
-      res.send({ status: "error", message: "Bundle not found" });
-      return;
+    const level = req.query.level || 's';
+    const col = LEVEL_MAP[level];
+    if (!col) {
+      return res.status(400).json({ status: 'error', message: `Unknown level: ${level}` });
     }
 
-    res.send(doc.data());
+    // List all bundle docs, pick one at random
+    const snap = await db.collection(col).get();
+    const docs = snap.docs.filter(d => d.id !== '_template');
+    if (docs.length === 0) {
+      return res.status(404).json({ status: 'error', message: `No bundles found in ${col}` });
+    }
+
+    const randomDoc = docs[Math.floor(Math.random() * docs.length)];
+    const data = randomDoc.data();
+    console.log(`✅ Serving ${col}/${randomDoc.id} — ${(data.questions||[]).length} questions`);
+
+    return res.status(200).json(data);
   } catch (e) {
-    res.send({ status: "error", message: e.toString() });
+    console.error('Function error:', e);
+    return res.status(500).json({ status: 'error', message: e.toString() });
   }
-};
+});
+
+module.exports = app;

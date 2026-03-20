@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Expert Analyser — Nish-Logic</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#000;--surface:#0a0010;--surface2:#100018;--border:#2a0040;--accent:#7b2fff;--accent2:#a855f7;--text:#e8d5ff;--muted:#7c5fa8;--red:#ef4444;--green:#10b981;--fd:'Syne',sans-serif;--fm:'JetBrains Mono',monospace;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:var(--fd);min-height:100vh;overflow-x:hidden;}
+#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px;position:relative;z-index:1;}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+.logo-top{font-size:.65rem;font-family:var(--fm);color:var(--accent2);letter-spacing:.2em;text-transform:uppercase;display:block;}
+.logo-main{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1;}
+.logo-main b{color:var(--accent2);}
+.back-link{font-family:var(--fm);font-size:.75rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 14px;border-radius:8px;transition:all .2s;}
+.back-link:hover{border-color:var(--accent2);color:var(--accent2);}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;}
+.slbl{font-family:var(--fm);font-size:.65rem;color:var(--accent2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:12px;}
+.desc{font-size:.88rem;color:var(--muted);line-height:1.6;}
+.field-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:4px;}
+@media(max-width:600px){.field-row{grid-template-columns:1fr;}}
+.flbl{font-family:var(--fm);font-size:.65rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;display:block;}
+select,textarea,input[type=password]{width:100%;background:var(--surface2);border:1.5px solid var(--border);border-radius:8px;color:var(--text);font-family:var(--fd);font-size:.85rem;padding:12px 14px;transition:border .2s;outline:none;appearance:none;}
+select:focus,textarea:focus,input:focus{border-color:var(--accent2);}
+select option{background:#0a0010;}
+optgroup{color:var(--muted);font-size:.75rem;}
+textarea{resize:vertical;min-height:140px;line-height:1.6;}
+.sbtn{width:100%;padding:18px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-family:var(--fd);font-size:1rem;font-weight:800;cursor:pointer;transition:all .2s;margin-top:4px;letter-spacing:.05em;}
+.sbtn:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(123,47,255,.4);}
+.sbtn:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+.back-btn{background:none;border:1.5px solid var(--border);color:var(--muted);font-family:var(--fd);font-size:.8rem;padding:8px 16px;border-radius:8px;cursor:pointer;margin-bottom:16px;transition:all .2s;}
+.back-btn:hover{border-color:var(--accent2);color:var(--accent2);}
+.hidden{display:none!important;}
+.load-wrap{text-align:center;padding:80px 20px;}
+.spin{width:52px;height:52px;border:3px solid var(--border);border-top-color:var(--accent2);border-radius:50%;animation:sp .8s linear infinite;margin:0 auto 20px;}
+@keyframes sp{to{transform:rotate(360deg);}}
+.ltxt{font-family:var(--fm);font-size:.8rem;color:var(--muted);}
+.report-box{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:16px;line-height:1.8;font-size:.92rem;}
+.report-box h3{color:var(--accent2);font-size:1.1rem;margin:20px 0 10px;font-weight:700;}
+.report-box h4{color:var(--accent);font-size:.95rem;margin:16px 0 8px;font-weight:600;}
+.report-box p{color:var(--text);margin-bottom:12px;}
+.report-box ul,.report-box ol{padding-left:20px;margin-bottom:12px;}
+.report-box li{color:var(--text);margin-bottom:6px;}
+.report-box strong{color:var(--accent2);}
+.dl-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;}
+.dl-btn{padding:14px;border-radius:10px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-family:var(--fd);font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s;text-align:center;}
+.dl-btn:hover{border-color:var(--accent2);color:var(--accent2);}
+.reset-btn{width:100%;padding:14px;border-radius:10px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:var(--fd);font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;}
+.reset-btn:hover{border-color:var(--accent2);color:var(--accent2);}
+.err{color:var(--red);font-family:var(--fm);font-size:.8rem;padding:10px 14px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3);border-radius:8px;margin-bottom:12px;display:none;}
+.err.on{display:block;}
+</style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <span class="logo-top">Nish-Logic</span>
+      <div class="logo-main">Expert <b>Analyser</b></div>
+    </div>
+    <a class="back-link" href="tools.html">← Back</a>
+  </div>
+
+  <!-- STEP 1 -->
+  <div id="step-1">
+    <div class="card">
+      <div class="slbl">About</div>
+      <div class="desc">Paste any news article, incident, or world event. Get a deep expert analysis in the exact vocabulary and mental framework of your chosen specialist.</div>
+    </div>
+    <div class="card">
+      <div class="slbl">Configure Analysis</div>
+      <div class="field-row">
+        <div>
+          <span class="flbl">Expert Persona</span>
+          <select id="expert-type">
+            <optgroup label="── Strategy & Power ──">
+              <option value="Geopolitics Analyst">Geopolitics Analyst</option>
+              <option value="Military Historian">Military Historian</option>
+              <option value="UN Diplomat">UN Diplomat / Peace Negotiator</option>
+              <option value="Intelligence Analyst">Intelligence / RAW Analyst</option>
+            </optgroup>
+            <optgroup label="── Finance & Markets ──">
+              <option value="Financial Strategist">Financial Strategist</option>
+              <option value="Stock Market Expert">Stock Market & Trading Expert</option>
+              <option value="Venture Capitalist">Venture Capitalist / Angel Investor</option>
+              <option value="Chartered Accountant">Chartered Accountant / Tax Expert</option>
+              <option value="Founder">Billion-Dollar Startup Founder</option>
+              <option value="Behavioral Economist">Behavioral Economist</option>
+            </optgroup>
+            <optgroup label="── Law & Governance ──">
+              <option value="Legal Scholar">Legal Scholar</option>
+              <option value="Lawyer">Supreme Court Lawyer</option>
+              <option value="UPSC Topper">UPSC Rank 1 Aspirant</option>
+            </optgroup>
+            <optgroup label="── Science & Technology ──">
+              <option value="Cyber Security Expert">Cyber Security Expert</option>
+              <option value="Scientist">Nobel-Laureate Scientist</option>
+              <option value="Engineer">Distinguished Chief Engineer</option>
+              <option value="Urban Planner">Urban Planner / Smart City Expert</option>
+              <option value="Climate Scientist">Climate Scientist / Environmentalist</option>
+            </optgroup>
+            <optgroup label="── Human & Society ──">
+              <option value="Doctor">Top-Tier Medical Doctor</option>
+              <option value="Corporate HR">Corporate HR Director</option>
+              <option value="Sports Coach">Sports Coach / Psychologist</option>
+              <option value="Investigative Journalist">Investigative Journalist</option>
+              <option value="Crisis Consultant">Crisis Management Consultant</option>
+              <option value="PR Strategist">Social Media & PR Strategist</option>
+              <option value="Criminologist">Criminologist / Forensic Expert</option>
+            </optgroup>
+            <optgroup label="── Knowledge & Philosophy ──">
+              <option value="Educator">World-Class Educator</option>
+              <option value="Philosopher">Venerated Philosopher</option>
+              <option value="Economist">Economist / RBI Policy Analyst</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <span class="flbl">Word Count</span>
+          <select id="word-count">
+            <option value="200">200 Words — Brief</option>
+            <option value="500" selected>500 Words — Standard</option>
+            <option value="1000">1000 Words — In-Depth</option>
+          </select>
+        </div>
+        <div>
+          <span class="flbl">Output Language</span>
+          <select id="output-lang">
+            <option value="English" selected>English</option>
+            <option value="Hindi">Hindi (हिंदी)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <button class="sbtn" onclick="goToStep2()">NEXT STEP →</button>
+  </div>
+
+  <!-- STEP 2 -->
+  <div id="step-2" class="hidden">
+    <button class="back-btn" onclick="goToStep1()">← Back to Setup</button>
+    <div class="card">
+      <div class="slbl">Gemini API Key</div>
+      <input type="password" id="api-key" placeholder="Enter your Gemini API Key (stored locally only)"/>
+    </div>
+    <div class="card">
+      <div class="slbl">Incident / Situation</div>
+      <textarea id="incident-input" placeholder="Paste any news article, describe a world event, corporate incident, political development, or any situation you want analysed..."></textarea>
+    </div>
+    <div class="err" id="err"></div>
+    <button class="sbtn" id="analyse-btn" onclick="runAnalysis()">⚡ GENERATE EXPERT ANALYSIS</button>
+  </div>
+
+  <!-- LOADING -->
+  <div id="loading-section" class="hidden">
+    <div class="load-wrap">
+      <div class="spin"></div>
+      <div class="ltxt" id="load-txt">The Expert is analysing...</div>
+    </div>
+  </div>
+
+  <!-- REPORT -->
+  <div id="report-section" class="hidden">
+    <div class="report-box" id="analysis-report"></div>
+    <div class="dl-row">
+      <button class="dl-btn" onclick="downloadTxt()">📥 Download TXT</button>
+      <button class="dl-btn" onclick="downloadHtml()">📖 Download Reader View</button>
+    </div>
+    <button class="reset-btn" onclick="resetAll()">↺ Start New Analysis</button>
+  </div>
+
+</div>
+
+<script src="expert-analyser-bg.js"></script>
+<script src="expert-analyser.js"></script>
+</body>
+</html>

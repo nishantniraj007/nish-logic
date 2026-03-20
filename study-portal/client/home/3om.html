@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>3 Over Match — Nish-Logic</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0d0010;--surface:#140018;--surface2:#1a0020;--border:#2d0040;--accent:#ff2d9b;--accent2:#b44fff;--gold:#f59e0b;--green:#10b981;--red:#ef4444;--text:#f0e6ff;--muted:#9b7ab8;--fd:'Syne',sans-serif;--fm:'JetBrains Mono',monospace;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:var(--fd);min-height:100vh;overflow-x:hidden;}
+#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.5;}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px;position:relative;z-index:1;}
+
+/* Header */
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+.logo-top{font-size:.65rem;font-family:var(--fm);color:var(--accent);letter-spacing:.2em;text-transform:uppercase;display:block;}
+.logo-main{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1;}
+.logo-main b{color:var(--accent);}
+.back-link{font-family:var(--fm);font-size:.75rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 14px;border-radius:8px;transition:all .2s;}
+.back-link:hover{border-color:var(--accent);color:var(--accent);}
+
+/* Screens */
+.screen{display:none;flex-direction:column;gap:16px;}
+.screen.on{display:flex;}
+#loading-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;gap:16px;}
+.spin{width:48px;height:48px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:sp .8s linear infinite;}
+@keyframes sp{to{transform:rotate(360deg);}}
+.ltxt{font-family:var(--fm);font-size:.8rem;color:var(--muted);}
+
+/* Intro */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:4px;}
+.slbl{font-family:var(--fm);font-size:.65rem;color:var(--accent);letter-spacing:.15em;text-transform:uppercase;margin-bottom:12px;}
+.desc{font-size:.9rem;color:var(--muted);line-height:1.6;margin-bottom:4px;}
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.diff-label{display:flex;align-items:center;gap:10px;padding:14px;border-radius:10px;border:1.5px solid var(--border);background:var(--surface2);cursor:pointer;transition:all .2s;font-size:.85rem;font-weight:600;}
+.diff-label:hover{border-color:var(--accent2);}
+.diff-label input{accent-color:var(--accent);}
+.diff-label input:checked + span{color:var(--accent);}
+.toggle-row{display:flex;align-items:center;gap:12px;padding:14px 0;}
+.toggle-sw{position:relative;width:44px;height:24px;flex-shrink:0;}
+.toggle-sw input{opacity:0;width:0;height:0;}
+.toggle-sl{position:absolute;inset:0;background:var(--surface2);border:1px solid var(--border);border-radius:12px;cursor:pointer;transition:.3s;}
+.toggle-sl::before{content:'';position:absolute;width:16px;height:16px;left:3px;top:3px;background:var(--muted);border-radius:50%;transition:.3s;}
+.toggle-sw input:checked+.toggle-sl{background:rgba(255,45,155,.15);border-color:var(--accent);}
+.toggle-sw input:checked+.toggle-sl::before{transform:translateX(20px);background:var(--accent);}
+.toggle-lbl{font-size:.85rem;color:var(--muted);}
+.sbtn{width:100%;padding:18px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-family:var(--fd);font-size:1rem;font-weight:800;cursor:pointer;transition:all .2s;margin-top:4px;}
+.sbtn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,45,155,.3);}
+
+/* Game */
+.game-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
+.q-counter{font-family:var(--fm);font-size:.9rem;font-weight:700;}
+.badge{font-family:var(--fm);font-size:.65rem;padding:4px 10px;border-radius:20px;background:rgba(255,45,155,.1);color:var(--accent);border:1px solid rgba(255,45,155,.3);text-transform:uppercase;letter-spacing:.1em;}
+.timer{font-family:var(--fm);font-size:1.1rem;font-weight:700;color:var(--accent2);}
+.timer.hidden{display:none;}
+.pbar-w{height:3px;background:var(--border);border-radius:2px;margin-bottom:20px;}
+.pbar-f{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;transition:width .4s;}
+.qcard{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:16px;}
+.qtxt{font-size:1rem;font-weight:600;line-height:1.6;}
+.ogrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
+@media(max-width:480px){.ogrid{grid-template-columns:1fr;}}
+.option-btn{padding:14px 16px;border-radius:10px;border:1.5px solid var(--border);background:var(--surface2);color:var(--text);font-family:var(--fd);font-size:.85rem;font-weight:500;cursor:pointer;text-align:left;transition:all .15s;width:100%;}
+.option-btn:hover{border-color:var(--accent2);background:rgba(180,79,255,.05);}
+.option-btn.selected{border-color:var(--accent);background:rgba(255,45,155,.08);color:var(--accent);}
+.game-footer{display:flex;gap:10px;}
+.nav-btn{flex:1;padding:14px;border-radius:10px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:var(--fd);font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;}
+.nav-btn:hover:not(:disabled){border-color:var(--accent2);color:var(--accent2);}
+.nav-btn:disabled{opacity:.3;cursor:not-allowed;}
+.submit-btn{flex:2;padding:14px;border-radius:10px;border:none;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-family:var(--fd);font-size:.9rem;font-weight:800;cursor:pointer;transition:all .2s;}
+.submit-btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,45,155,.3);}
+
+/* Results */
+.cert{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px;text-align:center;margin-bottom:20px;}
+.cert-title{font-size:.7rem;font-family:var(--fm);color:var(--muted);letter-spacing:.3em;text-transform:uppercase;margin-bottom:4px;}
+.cert-sub{font-size:.85rem;font-family:var(--fm);color:var(--accent2);margin-bottom:20px;}
+.cert-meta{font-size:.8rem;color:var(--muted);font-family:var(--fm);margin-bottom:4px;}
+.final-score{font-size:3rem;font-weight:800;color:var(--accent);font-family:var(--fm);margin:16px 0 8px;}
+.cert-msg{font-size:.9rem;color:var(--muted);}
+.res-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;}
+.res-btn-p{padding:16px;border-radius:12px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-family:var(--fd);font-size:.9rem;font-weight:700;cursor:pointer;transition:all .2s;}
+.res-btn-p:hover{border-color:var(--accent);color:var(--accent);}
+.res-btn-a{padding:16px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-family:var(--fd);font-size:.9rem;font-weight:800;cursor:pointer;transition:all .2s;}
+.res-btn-a:hover{transform:translateY(-1px);}
+.rev-div{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+.rev-line{flex:1;height:1px;background:var(--border);}
+.rev-lbl{font-family:var(--fm);font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;white-space:nowrap;}
+.answer-card{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:12px;}
+.answer-card.correct{border-left-color:var(--green);}
+.ans-q{font-size:.9rem;font-weight:600;margin-bottom:8px;line-height:1.5;}
+.ans-tag{font-family:var(--fm);font-size:.65rem;background:var(--accent);color:#fff;padding:2px 6px;border-radius:4px;margin-right:8px;}
+.answer-card.correct .ans-tag{background:var(--green);}
+.user-ans{font-size:.82rem;margin-bottom:4px;}
+.user-ans.ok{color:var(--green);}.user-ans.ng{color:var(--red);}
+.correct-ans{font-size:.82rem;color:var(--green);margin-bottom:8px;}
+.explanation{background:var(--surface2);border-radius:6px;padding:10px 14px;font-size:.8rem;color:var(--muted);line-height:1.6;}
+
+@media print{
+  #bg-canvas{display:none;}
+  .hdr,.res-btns{display:none!important;}
+  body{background:#fff!important;color:#000!important;}
+  .answer-card{border:none!important;border-left:3px solid #ccc!important;}
+  .answer-card.correct{border-left-color:#22c55e!important;}
+}
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <span class="logo-top">Nish-Logic</span>
+      <div class="logo-main">3 Over <b>Match</b></div>
+    </div>
+    <a class="back-link" href="study.html">← Back</a>
+  </div>
+
+  <!-- LOADING -->
+  <div id="loading-state" style="display:none;">
+    <div class="spin"></div>
+    <div class="ltxt">Loading questions...</div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="screen on" id="intro-screen">
+    <div class="card">
+      <div class="slbl">About</div>
+      <div class="desc">18 questions across Aptitude · Reasoning · GK · Current Affairs. Beat the clock or play at your own pace.</div>
+    </div>
+    <div class="card">
+      <div class="slbl">Select Difficulty</div>
+      <div class="diff-grid">
+        <label class="diff-label"><input type="radio" name="difficulty" value="easy" checked/><span>Easy</span></label>
+        <label class="diff-label"><input type="radio" name="difficulty" value="medium"/><span>Medium</span></label>
+        <label class="diff-label"><input type="radio" name="difficulty" value="ssc"/><span>SSC / Bank</span></label>
+        <label class="diff-label"><input type="radio" name="difficulty" value="upsc"/><span>UPSC / CAT</span></label>
+      </div>
+    </div>
+    <div class="card">
+      <div class="toggle-row">
+        <label class="toggle-sw"><input type="checkbox" id="timer-toggle"/><span class="toggle-sl"></span></label>
+        <span class="toggle-lbl">Enable 15-Minute Timer</span>
+      </div>
+    </div>
+    <button class="sbtn" onclick="startGame()">START MATCH →</button>
+  </div>
+
+  <!-- GAME -->
+  <div class="screen" id="game-screen">
+    <div class="game-hdr">
+      <span class="q-counter" id="q-counter">Q: 1/18</span>
+      <span class="badge" id="category-badge">GK</span>
+      <span class="timer hidden" id="timer">15:00</span>
+    </div>
+    <div class="pbar-w"><div class="pbar-f" id="pbar" style="width:0%"></div></div>
+    <div class="qcard">
+      <div class="qtxt" id="question-text">Loading...</div>
+    </div>
+    <div class="ogrid" id="options-container"></div>
+    <div class="game-footer">
+      <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" disabled>← Prev</button>
+      <button class="nav-btn" id="next-btn" onclick="navigate(1)">Next →</button>
+      <button class="submit-btn" id="submit-btn" style="display:none;" onclick="finishGame()">Submit Match ✓</button>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="screen" id="result-screen">
+    <div class="cert">
+      <div class="cert-title">Certificate of Performance</div>
+      <div class="cert-sub">3 OVER MATCH</div>
+      <div class="cert-meta">Completed: <span id="cert-date">--</span> · Time: <span id="cert-time">--</span></div>
+      <div class="final-score" id="final-score">0/18</div>
+      <div class="cert-msg" id="cert-message">Well Played!</div>
+    </div>
+    <div class="res-btns">
+      <button class="res-btn-p" onclick="window.print()">🖨 Print / PDF</button>
+      <button class="res-btn-a" onclick="location.reload()">Play Again →</button>
+    </div>
+    <div class="rev-div"><div class="rev-line"></div><div class="rev-lbl">Question Review</div><div class="rev-line"></div></div>
+    <div id="answer-sheet"></div>
+  </div>
+
+</div>
+
+<!-- Pink/Purple Plexus 3D BG -->
+<script>
+(function(){
+  const canvas=document.getElementById('bg-canvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,pts=[],t=0;
+  const N=80, CONN_DIST=150, FOV=600;
+
+  function resize(){
+    W=canvas.width=window.innerWidth;
+    H=canvas.height=window.innerHeight;
+    pts=[];
+    for(let i=0;i<N;i++){
+      pts.push({
+        x:(Math.random()-.5)*W*1.5,
+        y:(Math.random()-.5)*H*1.5,
+        z:Math.random()*400-200,
+        vx:(Math.random()-.5)*.4,
+        vy:(Math.random()-.5)*.4,
+        vz:(Math.random()-.5)*.3,
+        r:Math.random()*3+1,
+        // pink or purple
+        hue:Math.random()<.5?320:280
+      });
+    }
+  }
+
+  function project(x,y,z){
+    const scale=FOV/(FOV+z+300);
+    return{
+      sx:W/2+(x)*scale,
+      sy:H/2+(y)*scale,
+      scale
+    };
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    t+=0.005;
+
+    // Update positions
+    pts.forEach(p=>{
+      p.x+=p.vx; p.y+=p.vy; p.z+=p.vz;
+      if(p.x>W) p.x=-W; if(p.x<-W) p.x=W;
+      if(p.y>H) p.y=-H; if(p.y<-H) p.y=H;
+      if(p.z>200) p.z=-200; if(p.z<-200) p.z=200;
+    });
+
+    // Draw connections
+    for(let i=0;i<pts.length;i++){
+      for(let j=i+1;j<pts.length;j++){
+        const a=pts[i], b=pts[j];
+        const dx=a.x-b.x, dy=a.y-b.y, dz=a.z-b.z;
+        const dist=Math.sqrt(dx*dx+dy*dy+dz*dz);
+        if(dist<CONN_DIST){
+          const pa=project(a.x,a.y,a.z);
+          const pb=project(b.x,b.y,b.z);
+          const alpha=(1-dist/CONN_DIST)*0.4;
+          const avgHue=(a.hue+b.hue)/2;
+          ctx.beginPath();
+          ctx.moveTo(pa.sx,pa.sy);
+          ctx.lineTo(pb.sx,pb.sy);
+          ctx.strokeStyle=`hsla(${avgHue},100%,70%,${alpha})`;
+          ctx.lineWidth=0.6;
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Draw dots with glow
+    pts.forEach(p=>{
+      const {sx,sy,scale}=project(p.x,p.y,p.z);
+      const r=p.r*scale*2;
+      // Outer glow
+      const grd=ctx.createRadialGradient(sx,sy,0,sx,sy,r*4);
+      grd.addColorStop(0,`hsla(${p.hue},100%,75%,${scale*0.4})`);
+      grd.addColorStop(1,`hsla(${p.hue},100%,75%,0)`);
+      ctx.beginPath();
+      ctx.arc(sx,sy,r*4,0,Math.PI*2);
+      ctx.fillStyle=grd;
+      ctx.fill();
+      // Core dot
+      ctx.beginPath();
+      ctx.arc(sx,sy,r,0,Math.PI*2);
+      ctx.fillStyle=`hsla(${p.hue},100%,85%,${scale*0.9})`;
+      ctx.fill();
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize',resize);
+  resize();
+  draw();
+})();
+</script>
+
+<script src="3om-config.js"></script>
+<script src="3om-data.js"></script>
+<script src="3om.js"></script>
+</body>
+</html>

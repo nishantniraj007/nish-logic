@@ -1,12 +1,10 @@
 /**
- * Nish-Logic GK/CA Marathon Engine
- * Data source: Zoho Function → Firestore (no SDK needed)
+ * marathon.js
+ * Game engine only — timer, scoring, shuffle, render, UI events.
+ * Calls window.getData(level) from marathon-data.js
+ * Behavior: user selects answer, can change, clicks Next to lock and advance.
+ * All feedback (correct/wrong/explanation) only in final review screen.
  */
-
-const ZOHO_API = '/server/nish_logic_function';
-const CACHE_EXPIRY_MS = 4 * 24 * 60 * 60 * 1000; // 4 days
-
-function strip(s){ return (s||'').replace(/^\([a-d]\)\s*/i,'').trim(); }
 
 function shuffle(arr){
     for(let i=arr.length-1;i>0;i--){
@@ -16,55 +14,8 @@ function shuffle(arr){
     return arr;
 }
 
-function normalizeQ(q){
-    let opts=[];
-    if(Array.isArray(q.options)) opts=q.options.map(o=>strip(o));
-    else if(typeof q.options==='string') opts=q.options.split(',').map(o=>strip(o));
-    if(opts.length===0) return null;
-    const ans=strip(q.correct_answer||q.answer||'');
-    if(!ans) return null;
-    if((q.question||'').toLowerCase().includes('template')) return null;
-    if((q.explanation||'').toLowerCase().includes('template')) return null;
-    const src=q._sourceCol||q.id||'';
-    return {
-        category: src.startsWith('ca') ? 'Current Affairs' : 'Static GK',
-        question: q.question,
-        options: opts,
-        correct_answer: ans,
-        explanation: q.explanation||''
-    };
-}
-
-async function getBundleForLevel(level){
-    const cacheKey=`nish_bundle_${level}`;
-    try{
-        const cached=localStorage.getItem(cacheKey);
-        if(cached){
-            const parsed=JSON.parse(cached);
-            if(Date.now()-parsed.fetchedAt<CACHE_EXPIRY_MS){
-                console.log(`✅ Using cached bundle for ${level}`);
-                return parsed.questions;
-            }
-            console.log(`⏰ Cache expired for ${level}, fetching fresh...`);
-        }
-    }catch(e){ console.warn('Cache read error:',e); }
-
-    const levelParam=level==='ssc'?'s':'u';
-    const res=await fetch(`${ZOHO_API}?level=${levelParam}`);
-    if(!res.ok) throw new Error(`Zoho API error: ${res.status}`);
-    const data=await res.json();
-    const questions=data.questions||[];
-    console.log(`📦 Fetched ${questions.length} questions via Zoho API`);
-
-    try{
-        localStorage.setItem(cacheKey,JSON.stringify({questions,fetchedAt:Date.now()}));
-    }catch(e){ console.warn('Cache write error:',e); }
-
-    return questions;
-}
-
 // ── Main state ────────────────────────────────────────────────────────────────
-let level='ssc', len=25, pool=[], quizData=[], idx=0, score=0;
+let level='ssc', len=25, quizData=[], idx=0, score=0;
 let answers=[], timeLeft=600, timerId=null;
 
 // ── Screen switcher ───────────────────────────────────────────────────────────
@@ -73,7 +24,7 @@ function showScr(id){
     document.getElementById(id).classList.add('on');
 }
 
-// ── Level / length selectors (called from HTML onclick) ───────────────────────
+// ── Level / length selectors ──────────────────────────────────────────────────
 window.selLevel=function(l){
     level=l==='s'?'ssc':'upsc';
     document.querySelectorAll('.lbtn2').forEach(b=>b.classList.remove('on'));
@@ -92,8 +43,7 @@ window.startM=async function(){
     document.getElementById('go-btn').disabled=true;
     showScr('scr-load');
     try{
-        const bundle=await getBundleForLevel(level);
-        pool=bundle.map(q=>normalizeQ(q)).filter(Boolean);
+        const pool = await window.getData(level);
         console.log(`✅ Pool ready: ${pool.length} questions`);
 
         if(pool.length<len){
@@ -145,53 +95,46 @@ function renderQ(){
         const b=document.createElement('button');
         b.className='obtn';
         b.innerHTML=`<span class="olt">${lt}</span>${q.options[i]||''}`;
-        b.onclick=()=>handleAnswer(q.options[i],b,q);
+        b.onclick=()=>handleAnswer(q.options[i],b);
         g.appendChild(b);
     });
 
-    document.getElementById('expbox').classList.remove('on');
-    document.getElementById('nxtbtn').classList.remove('on');
-    const c=document.getElementById('qcard');
-    c.style.animation='none'; c.offsetHeight; c.style.animation='';
-}
-
-// ── Handle answer ─────────────────────────────────────────────────────────────
-function handleAnswer(opt, btn, q){
-    if(answers[idx]) return;
-    const isCorrect=opt===q.correct_answer;
-    answers[idx]={user_ans:opt, is_correct:isCorrect};
-
-    document.getElementById('ogrid').querySelectorAll('.obtn').forEach(b=>b.disabled=true);
-
-    if(isCorrect){
-        btn.classList.add('cor');
-        score++;
-    } else {
-        btn.classList.add('wrg');
-        document.getElementById('ogrid').querySelectorAll('.obtn').forEach(b=>{
-            if(b.textContent.slice(1).trim()===q.correct_answer) b.classList.add('cor');
-        });
-    }
-
-    // Show explanation
-    if(q.explanation){
-        document.getElementById('exptxt').innerHTML=q.explanation.replace(
-            /WHAT:|WHEN:|WHY:|CONTEXT:|CONCEPT:|APPLICATION:|NCERT:|EXAM TIP:/g,
-            m=>`<br><strong>${m}</strong>`
-        );
-        document.getElementById('expbox').classList.add('on');
-    }
-
+    // Next button always visible, updates label
     const nb=document.getElementById('nxtbtn');
     nb.classList.add('on');
     nb.textContent=idx===quizData.length-1?'Finish Marathon ✓':'Next Question →';
 
-    setTimeout(()=>nextQ(), 1200);
+    // Reset answer for this question
+    answers[idx]=null;
+
+    const c=document.getElementById('qcard');
+    c.style.animation='none'; c.offsetHeight; c.style.animation='';
 }
 
-// ── Next question ─────────────────────────────────────────────────────────────
+// ── Handle answer — select only, no lock, no feedback ────────────────────────
+function handleAnswer(opt, btn){
+    // Deselect all options
+    document.getElementById('ogrid').querySelectorAll('.obtn').forEach(b=>{
+        b.classList.remove('selected');
+    });
+    // Select clicked option
+    btn.classList.add('selected');
+    // Store tentative answer — not locked yet
+    answers[idx]={user_ans: opt, is_correct: null};
+}
+
+// ── Next question — lock answer and advance ───────────────────────────────────
 window.nextQ=function(){
-    if(!answers[idx]) answers[idx]={user_ans:null,is_correct:false};
+    // Lock answer
+    if(answers[idx] && answers[idx].user_ans){
+        const q=quizData[idx];
+        const isCorrect=answers[idx].user_ans===q.correct_answer;
+        answers[idx].is_correct=isCorrect;
+        if(isCorrect) score++;
+    } else {
+        // No answer selected — mark as skipped
+        answers[idx]={user_ans:null, is_correct:false};
+    }
     idx++;
     if(idx<quizData.length) renderQ();
     else endQuiz();
@@ -215,10 +158,17 @@ function updateTimer(){
     el.className='tdsp'+(timeLeft<=60?' dng':timeLeft<=180?' warn':'');
 }
 
-// ── End quiz ──────────────────────────────────────────────────────────────────
+// ── End quiz — lock any remaining unanswered ──────────────────────────────────
 function endQuiz(){
     clearInterval(timerId);
-    for(let i=0;i<quizData.length;i++) if(!answers[i]) answers[i]={user_ans:null,is_correct:false};
+    for(let i=0;i<quizData.length;i++){
+        if(!answers[i] || answers[i].is_correct===null){
+            answers[i]={user_ans: answers[i]?answers[i].user_ans:null, is_correct:false};
+        }
+    }
+
+    // Recalculate score from locked answers
+    score=answers.filter(a=>a && a.is_correct).length;
 
     const pct=Math.round(score/quizData.length*100);
     document.getElementById('rpct').textContent=pct+'%';
@@ -246,7 +196,7 @@ function endQuiz(){
     showScr('scr-res');
 }
 
-// ── Review ────────────────────────────────────────────────────────────────────
+// ── Review — full feedback here only ─────────────────────────────────────────
 function buildReview(){
     const list=document.getElementById('revlist');
     list.innerHTML='';
@@ -269,7 +219,7 @@ function buildReview(){
 
         const ca=document.createElement('div'); ca.className='rcans'; ca.textContent='Correct: '+q.correct_answer;
         const ex=document.createElement('div'); ex.className='rexp';
-        ex.innerHTML='<strong>Explanation:</strong> '+q.explanation;
+        ex.innerHTML='<strong>Explanation:</strong> '+(q.explanation||'N/A');
 
         item.appendChild(hdr); item.appendChild(top); item.appendChild(ya);
         if(!ans.is_correct) item.appendChild(ca);

@@ -370,15 +370,15 @@ window.setLang=function(l){
     const sel=document.querySelector('.goog-te-combo');
     if(sel){sel.value='hi';sel.dispatchEvent(new Event('change'));}
   } else {
-    const frame=document.querySelector('.goog-te-banner-frame');
-    if(frame){
-      const restore=frame.contentDocument.querySelector('.goog-te-button button');
-      if(restore) restore.click();
-    }
-    window.location.reload();
+    const sel=document.querySelector('.goog-te-combo');
+    if(sel){sel.value='';sel.dispatchEvent(new Event('change'));}
+    document.cookie='googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie='googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain='+location.hostname;
   }
 };
 </script>
+<script src="marathon-config.js"></script>
+<script src="marathon-data.js"></script>
 <script src="marathon.js"></script>
 </body>
 </html>

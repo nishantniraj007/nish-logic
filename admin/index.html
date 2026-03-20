@@ -297,28 +297,40 @@
     const colName = resolveCollection(l, t);
     const explanationRule = getExplanationRule(l, t);
 
-    const prompt = `You are an expert question paper setter for competitive exams in India.
+const prompt = `You are a strict question paper setter for Indian competitive exams. You output ONLY raw tab-separated data lines. No commentary. No markdown. No explanation outside the format.
 
-TASK: Generate 10 high-quality ${typeName} questions.
+TASK: Generate exactly 10 ${typeName} questions. Not 9. Not 11. Exactly 10.
 
-TARGET STUDENT PROFILE:
-The questions must be perfectly calibrated for ${lp.profile}.
-Cognitive style: ${lp.style}
+TARGET PROFILE: ${lp.profile}
+COGNITIVE STYLE: ${lp.style}
+AVOID: ${lp.avoid}
 
-STRICT RULES:
-${lp.avoid}
-1. Each question must be on EXACTLY ONE LINE — no line breaks inside a question
-2. Fields separated by TAB only
-3. Format: ID[TAB]${lp.name}[TAB]Topic[TAB]Question[TAB]Option1, Option2, Option3, Option4[TAB]CorrectAnswer[TAB]Explanation
-4. ID format: ${typeId}_${l}_DD.MM.YYYY_HH.MM_NN (e.g. ${colName}_${tsDate}_${tsTime}_01)
-5. Exactly 4 options, comma separated
-6. CorrectAnswer must exactly match one of the 4 options word for word
-7. NO blank lines, NO headers, NO numbering, NO markdown, NO quotes
-${explanationRule}
+OUTPUT FORMAT — EVERY LINE MUST FOLLOW THIS EXACTLY:
+ID[TAB]ExamName[TAB]Topic[TAB]Question[TAB]Options[TAB]CorrectAnswer[TAB]Explanation
 
-You MUST generate exactly 10 questions. Do not stop early. Do not add any commentary before or after.
-Output ONLY the tab-separated lines. Nothing else.`;
+FIELD RULES — READ CAREFULLY:
+1. ID: ${typeId}_${l}_${tsDate}_${tsTime}_NN where NN is 01 to 10
+2. ExamName: always exactly "${lp.name}"
+3. Topic: one short topic name, no commas
+4. Question: full question text, NO commas inside, NO line breaks
+5. Options: EXACTLY 4 options separated by commas — NO MORE, NO LESS. Format: OptionA, OptionB, OptionC, OptionD. Never write more than 4. Never use semicolons.
+6. CorrectAnswer: must be copied WORD FOR WORD from one of the 4 options — not paraphrased, not shortened
+7. Explanation: ${explanationRule.replace('8. Explanation: ','')}
 
+HARD RULES — VIOLATION = INVALID OUTPUT:
+- Each question = exactly ONE line. Zero line breaks inside any field.
+- Fields separated by TAB character only. Never use TAB inside a field.
+- Options field: comma-separated, exactly 4 items, no nested commas, no extra options
+- CorrectAnswer must match one option exactly — character for character
+- No blank lines between questions
+- No headers, no numbering, no markdown, no quotes, no preamble, no closing remarks
+- No commas inside Question, CorrectAnswer, or Explanation fields
+- Output starts with line 1 (ID ending in _01) and ends with line 10 (ID ending in _10)
+
+EXAMPLE OF ONE VALID LINE:
+${typeId}_${l}_${tsDate}_${tsTime}_01\t${lp.name}\tSample Topic\tWhat is the sample question text here\tOption One, Option Two, Option Three, Option Four\tOption One\tThis is the explanation sentence with no commas inside it
+
+BEGIN OUTPUT NOW — 10 lines only:`;
     const el = document.getElementById('ai-prompt');
     if (el) el.value = prompt;
   }
@@ -353,7 +365,7 @@ Output ONLY the tab-separated lines. Nothing else.`;
     status.className = 'status';
     status.textContent = '⏳ Generating questions...';
     try {
-      const models = ['gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-04-17', 'gemini-1.5-flash'];
+      const models = ['gemini-2.5-flash', 'gemini-2.5-flash-lite'];
       let text = '';
       let lastError = '';
       for (const model of models) {
@@ -366,7 +378,7 @@ Output ONLY the tab-separated lines. Nothing else.`;
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({
                 contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: { temperature: 0.7, maxOutputTokens: 4096 }
+                generationConfig: { temperature: 0.7, maxOutputTokens: 65536 }
               })
             }
           );

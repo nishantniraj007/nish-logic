@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MCQ Book Download — Nish-Logic</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f5a800;--surface:rgba(255,255,255,0.92);--surface2:rgba(255,255,255,0.7);--border:rgba(180,120,0,0.25);--accent:#7c3a00;--accent2:#c47a00;--text:#1a0a00;--muted:#7a5000;--red:#dc2626;--green:#16a34a;--fd:'Syne',sans-serif;--fm:'JetBrains Mono',monospace;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:var(--fd);min-height:100vh;overflow-x:hidden;}
+#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;}
+.wrap{max-width:680px;margin:0 auto;padding:24px 16px;position:relative;z-index:1;}
+
+/* Header */
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+.logo-top{font-size:.65rem;font-family:var(--fm);color:var(--accent2);letter-spacing:.2em;text-transform:uppercase;display:block;}
+.logo-main{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1;color:var(--text);}
+.logo-main b{color:var(--accent);}
+.hdr-right{display:flex;align-items:center;gap:10px;}
+.back-link{font-family:var(--fm);font-size:.75rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 14px;border-radius:8px;transition:all .2s;background:var(--surface2);}
+.back-link:hover{border-color:var(--accent);color:var(--accent);}
+/* Login placeholder — reserved for future */
+.login-btn{font-family:var(--fm);font-size:.75rem;color:var(--muted);border:1px dashed var(--border);padding:8px 14px;border-radius:8px;background:transparent;cursor:not-allowed;opacity:.5;}
+
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:16px;backdrop-filter:blur(8px);}
+.slbl{font-family:var(--fm);font-size:.65rem;color:var(--accent2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:12px;}
+.desc{font-size:.88rem;color:var(--muted);line-height:1.6;}
+
+/* Exam selector */
+.exam-select{width:100%;background:rgba(255,255,255,0.9);border:1.5px solid var(--border);border-radius:8px;color:var(--text);font-family:var(--fd);font-size:.95rem;font-weight:600;padding:14px 16px;outline:none;appearance:none;cursor:pointer;transition:border .2s;}
+.exam-select:focus{border-color:var(--accent);}
+
+/* Subjects preview */
+.subjects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px;}
+@media(max-width:480px){.subjects-grid{grid-template-columns:1fr 1fr;}}
+.subj-chip{background:rgba(255,255,255,0.7);border:1px solid var(--border);border-radius:8px;padding:10px 12px;text-align:center;}
+.subj-name{font-size:.75rem;font-weight:700;color:var(--accent);display:block;margin-bottom:2px;}
+.subj-count{font-family:var(--fm);font-size:.65rem;color:var(--muted);}
+
+/* Info strip */
+.info-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;}
+.info-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center;backdrop-filter:blur(8px);}
+.info-val{font-size:1.3rem;font-weight:800;color:var(--accent);font-family:var(--fm);display:block;}
+.info-lbl{font-size:.65rem;color:var(--muted);font-family:var(--fm);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;display:block;}
+
+/* Download buttons */
+.dl-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;}
+.dl-btn{padding:18px;border-radius:12px;border:none;font-family:var(--fd);font-size:.9rem;font-weight:800;cursor:pointer;transition:all .2s;letter-spacing:.03em;}
+#download-btn-html{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;}
+#download-btn-html:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(120,60,0,.3);}
+#download-btn-pdf{background:rgba(255,255,255,0.9);color:var(--accent);border:1.5px solid var(--border);}
+#download-btn-pdf:hover{border-color:var(--accent);transform:translateY(-1px);}
+.dl-btn:disabled{opacity:.5;cursor:not-allowed;transform:none!important;}
+
+/* Payment placeholder — reserved for future */
+.upgrade-banner{background:rgba(255,255,255,0.5);border:1.5px dashed var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+.upgrade-text{font-size:.82rem;color:var(--muted);}
+.upgrade-text strong{color:var(--accent);}
+.upgrade-btn{font-family:var(--fm);font-size:.72rem;padding:6px 14px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:not-allowed;opacity:.6;}
+
+/* Loader */
+.loader{display:none;align-items:center;justify-content:center;gap:12px;padding:20px;}
+.spin{width:28px;height:28px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:sp .8s linear infinite;flex-shrink:0;}
+@keyframes sp{to{transform:rotate(360deg);}}
+.load-txt{font-family:var(--fm);font-size:.8rem;color:var(--muted);}
+
+/* Status */
+.status-msg{display:none;font-family:var(--fm);font-size:.8rem;padding:12px 16px;border-radius:8px;margin-bottom:12px;}
+.status-msg.info{background:rgba(255,255,255,0.7);color:var(--accent);border:1px solid var(--border);}
+.status-msg.ok{background:rgba(22,163,74,.08);color:var(--green);border:1px solid rgba(22,163,74,.3);}
+.status-msg.err{background:rgba(220,38,38,.08);color:var(--red);border:1px solid rgba(220,38,38,.3);}
+
+/* Limit notice */
+.limit-note{font-family:var(--fm);font-size:.72rem;color:var(--muted);text-align:center;padding:8px 0;}
+</style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <span class="logo-top">Nish-Logic</span>
+      <div class="logo-main">MCQ <b>Book</b></div>
+    </div>
+    <div class="hdr-right">
+      <!-- Login placeholder — enable when auth is ready -->
+      <button class="login-btn" disabled title="Coming Soon">👤 Login</button>
+      <a class="back-link" href="study.html">← Back</a>
+    </div>
+  </div>
+
+  <!-- INFO STRIP -->
+  <div class="info-strip">
+    <div class="info-item"><span class="info-val">1000</span><span class="info-lbl">Questions</span></div>
+    <div class="info-item" style="background:#0a0a0a;border-color:#c47a00;padding:8px;"><img src="nish-logic-logo.webp" style="width:80px;height:80px;object-fit:cover;object-position:center 10%;display:block;margin:0 auto;border-radius:50%;"/></div>
+    <div class="info-item"><span class="info-val">15d</span><span class="info-lbl">Refresh Cycle</span></div>
+  </div>
+
+  <!-- EXAM SELECTOR -->
+  <div class="card">
+    <div class="slbl">Select Exam</div>
+    <select class="exam-select" id="exam-select" onchange="updatePreview()">
+      <option value="ssc">SSC / Bank (CGL · IBPS PO)</option>
+      <option value="upsc">UPSC / CAT (IAS · CAT)</option>
+      <option value="neet">NEET UG (Biology · Physics · Chemistry)</option>
+      <option value="iit">IIT JEE (Physics · Chemistry · Maths)</option>
+    </select>
+  </div>
+
+  <!-- SUBJECTS PREVIEW -->
+  <div class="card">
+    <div class="slbl">Subjects Included</div>
+    <div class="subjects-grid" id="subjects-grid"></div>
+  </div>
+
+  <!-- UPGRADE BANNER — payment placeholder -->
+  <div class="upgrade-banner">
+    <div class="upgrade-text"><strong>Pro Access</strong> — Unlimited downloads + Answer key PDF coming soon</div>
+    <button class="upgrade-btn" disabled>Upgrade ✦</button>
+  </div>
+
+  <!-- STATUS & LOADER -->
+  <div class="status-msg" id="status-msg"></div>
+  <div class="loader" id="loader"><div class="spin"></div><span class="load-txt">Fetching questions...</span></div>
+
+  <!-- DOWNLOAD BUTTONS -->
+  <div class="dl-grid">
+    <button class="dl-btn" id="download-btn-html" onclick="startDownload('html')">📄 Download HTML</button>
+    <button class="dl-btn" id="download-btn-pdf" onclick="startDownload('pdf')">🖨 Print / PDF</button>
+  </div>
+  <div class="limit-note">⏱ 1 download per 15 days · Fresh questions on each cycle</div>
+
+</div>
+
+<script src="book-bg.js"></script>
+<script src="book-config.js"></script>
+<script src="book-data.js"></script>
+<script src="book.js"></script>
+<script>
+// Populate subjects preview on exam change
+function updatePreview(){
+  const examKey = document.getElementById('exam-select').value;
+  const exam = window.BOOK_CONFIG.EXAMS[examKey];
+  const grid = document.getElementById('subjects-grid');
+  grid.innerHTML = exam.sections.map(sec =>
+    `<div class="subj-chip">
+      <span class="subj-name">${sec.label}</span>
+      <span class="subj-count">${sec.count * 2} Qs</span>
+    </div>`
+  ).join('');
+}
+// Init on load
+document.addEventListener('DOMContentLoaded', updatePreview);
+</script>
+</body>
+</html>
