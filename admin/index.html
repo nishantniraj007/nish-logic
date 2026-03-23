@@ -137,7 +137,7 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-  import { getFirestore, collection, doc, setDoc, getCountFromServer }
+  import { getFirestore, collection, doc, setDoc, getCountFromServer, getDocs, writeBatch }
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   const firebaseConfig = {
@@ -447,15 +447,104 @@ BEGIN OUTPUT NOW — 10 lines only:`;
           levelHtml += `<div style="color:#f7d26a; margin-top:6px;">📦 Existing bundles: ${bundleCount}</div>`;
         }
       } catch(e) {}
-      const bundleStatus = levelReady
-        ? `<div style="color:#6af7a2; font-weight:bold; margin-top:8px;">🎯 READY TO PACK</div>`
-        : `<div style="color:#f7a26a; margin-top:8px;">⏳ Not enough questions yet</div>`;
-      levelHtml += bundleStatus + '</div>';
-      html += levelHtml;
+const bundleStatus = levelReady
+  ? `<div style="margin-top:8px;display:flex;align-items:center;gap:10px;">
+      <span style="color:#6af7a2;font-weight:bold;">🎯 READY TO PACK</span>
+      <button onclick="packBundle('${level}')" style="background:linear-gradient(135deg,#6af7a2,#00c896);border:none;color:#000;font-weight:800;padding:6px 16px;border-radius:6px;cursor:pointer;font-size:.8rem;">⚡ PACK BUNDLE</button>
+      <span id="pack-status-${level}" style="font-size:.75rem;color:#a89fff;"></span>
+    </div>`
+  : `<div style="color:#f7a26a; margin-top:8px;">⏳ Not enough questions yet</div>`;
+levelHtml += bundleStatus + '</div>';      html += levelHtml;
     }
     el.innerHTML = html;
   };
+// ── Pack Bundle ──
+  window.packBundle = async function(levelName) {
+    const statusEl = document.getElementById(`pack-status-${levelName}`);
+    const config = bundleConfig[levelName];
+    if (!config) return;
 
+    if (!confirm(`Pack bundle for ${levelName}? This will delete original docs after packing.`)) return;
+
+    statusEl.textContent = '⏳ Packing...';
+
+    try {
+      // Fisher-Yates shuffle
+      function shuffle(arr){
+        for(let i=arr.length-1;i>0;i--){
+          const j=Math.floor(Math.random()*(i+1));
+          [arr[i],arr[j]]=[arr[j],arr[i]];
+        }
+        return arr;
+      }
+
+      // Pick N random docs from collection
+      async function pickRandom(colName, count){
+        const snap = await getDocs(collection(db, colName));
+        let docs = snap.docs.filter(d => {
+          const data = d.data();
+          return !data._template && !data.template && d.id !== '_template';
+        });
+        if(docs.length < count) throw new Error(`${colName} has ${docs.length} docs but needs ${count}`);
+        shuffle(docs);
+        return docs.slice(0, count);
+      }
+
+      // Get next bundle ID
+      async function getNextBundleId(bundleCol){
+        const snap = await getDocs(collection(db, bundleCol));
+        const existing = snap.docs.filter(d => d.id !== '_template').length;
+        return `bundle_${String(existing+1).padStart(2,'0')}`;
+      }
+
+      // Pick questions from each collection
+      statusEl.textContent = '⏳ Fetching questions...';
+      const allQuestions = [];
+      const toDelete = [];
+
+      for(const [col, needed] of Object.entries(config.cols)){
+        const picked = await pickRandom(col, needed);
+        for(const d of picked){
+          allQuestions.push({...d.data(), _sourceCol: col, _sourceId: d.id});
+          toDelete.push({col, id: d.id});
+        }
+      }
+
+      shuffle(allQuestions);
+
+      // Write bundle doc
+      statusEl.textContent = '⏳ Writing bundle...';
+      const bundleId = await getNextBundleId(config.bundleCol);
+      await setDoc(doc(collection(db, config.bundleCol), bundleId), {
+        bundleId,
+        level: levelName,
+        totalQuestions: allQuestions.length,
+        createdAt: new Date().toISOString(),
+        questions: allQuestions
+      });
+
+      // Delete original docs in batches
+      statusEl.textContent = '⏳ Cleaning up...';
+      const BATCH_SIZE = 400;
+      for(let i=0; i<toDelete.length; i+=BATCH_SIZE){
+        const batch = writeBatch(db);
+        toDelete.slice(i, i+BATCH_SIZE).forEach(({col, id}) => {
+          batch.delete(doc(db, col, id));
+        });
+        await batch.commit();
+      }
+
+      statusEl.style.color = '#6af7a2';
+      statusEl.textContent = `✅ ${config.bundleCol}/${bundleId} packed (${allQuestions.length} questions)`;
+
+      // Reload dashboard
+      setTimeout(() => loadDashboard(), 2000);
+
+    } catch(e) {
+      statusEl.style.color = '#f76a6a';
+      statusEl.textContent = '⛔ ' + e.message;
+    }
+  };
   // ── ID pattern ──
   const idPattern = /^(qa|lr|sgk|ca|eng|comp|phy|chem|bio|mat)_(e|m|s|u|n|i|clat_e)_\d{2}\.\d{2}\.\d{4}_\d{2}\.\d{2}_\d{2}$/;
 

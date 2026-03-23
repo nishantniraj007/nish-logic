@@ -29,6 +29,14 @@
         "destination": "/admin/index.html"
       },
       {
+        "source": "/admin-v2",
+        "destination": "/admin-v2/index.html"
+      },
+      {
+        "source": "/admin-v2/index.html",
+        "destination": "/admin-v2/index.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

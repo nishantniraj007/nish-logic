@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nish-Logic Admin V2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { background-color: #0f0f1a; color: white; font-family: 'Inter', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f0f1a; }
+        ::-webkit-scrollbar-thumb { background: #1a1a2e; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #7c6af7; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="module">
+        import * as Firebase    from './lib/firebase.js';
+        import * as Collections from './lib/collections.js';
+        import * as Prompt      from './lib/prompt.js';
+        window.Firebase    = Firebase;
+        window.Collections = Collections;
+        window.Prompt      = Prompt;
+    </script>
+
+    <script src="./lib/healthcheck.js"></script>
+
+    <script type="text/babel" src="./components/Auth.js"></script>
+    <script type="text/babel" src="./components/LevelSelector.js"></script>
+    <script type="text/babel" src="./components/TypeSelector.js"></script>
+    <script type="text/babel" src="./components/Generator.js"></script>
+    <script type="text/babel" src="./components/Validator.js"></script>
+    <script type="text/babel" src="./components/Dashboard.js"></script>
+    <script type="text/babel" src="./components/HealthCheck.js"></script>
+    <script type="text/babel" src="./components/BundleExport.js"></script>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        const TABS = [
+            { id: 'generate',  label: 'Generate'      },
+            { id: 'dashboard', label: 'Dashboard'     },
+            { id: 'health',    label: 'Health Check'  },
+            { id: 'export',    label: 'Bundle Export' },
+        ];
+
+        function App() {
+            const [isAuthenticated, setIsAuthenticated] = useState(false);
+            const [activeTab, setActiveTab]             = useState('generate');
+            const [level, setLevel]                     = useState('e');
+            const [type, setType]                       = useState('');
+            const [refreshTrigger, setRefreshTrigger]   = useState(0);
+            const [isReady, setIsReady]                 = useState(false);
+
+            useEffect(() => {
+                const check = setInterval(() => {
+                    if (
+                        window.Auth && window.LevelSelector && window.TypeSelector &&
+                        window.Generator && window.Validator && window.Dashboard &&
+                        window.HealthCheckPanel && window.BundleExport &&
+                        window.Firebase && window.HealthCheck
+                    ) {
+                        setIsReady(true);
+                        clearInterval(check);
+                    }
+                }, 100);
+                return () => clearInterval(check);
+            }, []);
+
+            if (!isReady) return (
+                <div className="flex items-center justify-center min-h-screen text-[#7c6af7] font-bold">
+                    Loading Admin Panel...
+                </div>
+            );
+
+            if (!isAuthenticated) {
+                return <window.Auth onAuthSuccess={() => setIsAuthenticated(true)} />;
+            }
+
+            return (
+                <div className="min-h-screen p-4 md:p-8 max-w-7xl mx-auto">
+                    <header className="flex justify-between items-center mb-8">
+                        <div>
+                            <h1 className="text-4xl font-black text-[#7c6af7] tracking-tighter">
+                                NISH-LOGIC <span className="text-white">V2</span>
+                            </h1>
+                            <p className="text-[#888] text-sm">Advanced MCQ Generation & Management</p>
+                        </div>
+                        <div className="text-right hidden md:block">
+                            <div className="text-xs text-[#888] uppercase font-bold">Admin Session</div>
+                            <div className="text-[#6af7a2] text-sm font-mono">nishantneeraj007@gmail.com</div>
+                        </div>
+                    </header>
+
+                    <nav className="flex gap-2 mb-8 border-b border-white/5">
+                        {TABS.map(tab => (
+                            <button
+                                key={tab.id}
+                                onClick={() => setActiveTab(tab.id)}
+                                className={`px-5 py-2.5 text-sm font-bold rounded-t-xl transition-all border-b-2 ${
+                                    activeTab === tab.id
+                                        ? 'text-white border-[#7c6af7] bg-[#1a1a2e]'
+                                        : 'text-[#888] border-transparent hover:text-white hover:bg-white/5'
+                                }`}
+                            >
+                                {tab.label}
+                            </button>
+                        ))}
+                    </nav>
+
+                    {activeTab === 'generate' && (
+                        <main>
+                            <section className="mb-8">
+                                <h2 className="text-xs font-bold text-[#888] uppercase mb-4 tracking-widest">Step 1: Select Level</h2>
+                                <window.LevelSelector selectedLevel={level} onSelect={(l) => { setLevel(l); setType(''); }} />
+                            </section>
+                            {level && (
+                                <section className="mb-8">
+                                    <h2 className="text-xs font-bold text-[#888] uppercase mb-4 tracking-widest">Step 2: Select Subject</h2>
+                                    <window.TypeSelector level={level} selectedType={type} onSelect={setType} />
+                                </section>
+                            )}
+                            {level && type && (
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                                    <window.Generator level={level} type={type} />
+                                    <window.Validator level={level} type={type} onSyncSuccess={() => setRefreshTrigger(prev => prev + 1)} />
+                                </div>
+                            )}
+                            {!type && (
+                                <div className="text-center text-[#555] text-sm py-12">
+                                    Select a level and subject to start generating
+                                </div>
+                            )}
+                        </main>
+                    )}
+
+                    {activeTab === 'dashboard' && <window.Dashboard key={refreshTrigger} />}
+                    {activeTab === 'health'    && <window.HealthCheckPanel />}
+                    {activeTab === 'export'    && <window.BundleExport />}
+
+                    <footer className="mt-20 py-8 border-t border-white/5 text-center text-[#888] text-xs">
+                        &copy; 2026 Nish-Logic. All rights reserved.
+                    </footer>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
