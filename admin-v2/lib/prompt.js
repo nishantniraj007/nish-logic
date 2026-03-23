@@ -63,5 +63,5 @@ FIELD RULES:
 EXAMPLE OF ONE VALID LINE:
 ${type}_${level}_${tsDate}_${tsTime}_01\t${levelProfile.name}\tSample Topic\tWhat is the sample question text here\tOption One, Option Two, Option Three, Option Four\tOption One\tThis is the explanation with no commas inside it
 
-BEGIN OUTPUT NOW — ${count} lines only:`;
+BEGIN OUTPUT NOW — ${count} lines only. Stop immediately after line ${nn}. Do not repeat. Do not restart. Do not add commentary.`;
 };
