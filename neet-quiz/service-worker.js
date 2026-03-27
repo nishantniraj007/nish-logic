@@ -1,35 +1,9 @@
-const CACHE_NAME = 'neet-quiz-v2';
-const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json'
-];
-
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
-    })
-  );
+const CACHE_NAME = 'neet-quiz-v1';
+self.addEventListener('install', () => self.skipWaiting());
+self.addEventListener('activate', (e) => {
+  e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))));
 });
-
-self.addEventListener('fetch', (event) => {
-  const url = new URL(event.request.url);
-
-  // Network first for API calls
-  if (url.pathname.includes('/questions')) {
-    event.respondWith(
-      fetch(event.request).catch(() => {
-        return caches.match(event.request);
-      })
-    );
-    return;
-  }
-
-  // Cache first for static assets
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
-  );
+self.addEventListener('fetch', (e) => {
+  if (e.request.url.includes('nish-logic-api') || e.request.url.includes('googleapis')) return;
+  e.respondWith(caches.match(e.request).then((cached) => cached || fetch(e.request).catch(() => cached)));
 });

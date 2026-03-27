@@ -1,5 +1,5 @@
 {
-  "name": "NEET-UG Quiz — Nish-Logic",
+  "name": "NEET-UG Quiz \u2014 Nish-Logic",
   "short_name": "NEET Quiz",
   "start_url": ".",
   "display": "standalone",
@@ -7,12 +7,12 @@
   "theme_color": "#D4AF37",
   "icons": [
     {
-      "src": "/assets/logo.png",
+      "src": "/nish-logic/neet-quiz/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/logo.png",
+      "src": "/nish-logic/neet-quiz/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
