@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 220" width="120" height="220">
+  <!-- Body/Shirt -->
+  <rect x="30" y="95" width="60" height="75" rx="8" fill="#1a1a2e"/>
+  <!-- Collar -->
+  <polygon points="60,95 45,110 60,105" fill="#ffffff" opacity="0.9"/>
+  <polygon points="60,95 75,110 60,105" fill="#ffffff" opacity="0.9"/>
+  <!-- Tie -->
+  <polygon points="60,100 56,125 60,130 64,125" fill="#D4AF37"/>
+  <!-- Head -->
+  <ellipse cx="60" cy="65" rx="28" ry="32" fill="#c8956c"/>
+  <!-- Hair -->
+  <ellipse cx="60" cy="38" rx="28" ry="12" fill="#2d1b00"/>
+  <rect x="32" y="38" width="56" height="10" fill="#2d1b00"/>
+  <!-- Ears -->
+  <ellipse cx="32" cy="65" rx="5" ry="7" fill="#c8956c"/>
+  <ellipse cx="88" cy="65" rx="5" ry="7" fill="#c8956c"/>
+  <!-- Eyes -->
+  <ellipse cx="50" cy="62" rx="8" ry="6" fill="white"/>
+  <ellipse cx="70" cy="62" rx="8" ry="6" fill="white"/>
+  <circle cx="51" cy="63" r="4" fill="#1a0a00"/>
+  <circle cx="71" cy="63" r="4" fill="#1a0a00"/>
+  <circle cx="52" cy="61" r="1.5" fill="white"/>
+  <circle cx="72" cy="61" r="1.5" fill="white"/>
+  <!-- Spectacles -->
+  <rect x="42" y="57" width="16" height="11" rx="4" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+  <rect x="62" y="57" width="16" height="11" rx="4" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+  <line x1="58" y1="62" x2="62" y2="62" stroke="#D4AF37" stroke-width="1.5"/>
+  <line x1="32" y1="62" x2="42" y2="62" stroke="#D4AF37" stroke-width="1.5"/>
+  <line x1="78" y1="62" x2="88" y2="62" stroke="#D4AF37" stroke-width="1.5"/>
+  <!-- Nose -->
+  <ellipse cx="60" cy="72" rx="3" ry="4" fill="#b07850"/>
+  <!-- Mouth - slight smile -->
+  <path d="M52 80 Q60 86 68 80" stroke="#8b5e3c" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Arms -->
+  <rect x="10" y="98" width="22" height="12" rx="6" fill="#1a1a2e" transform="rotate(20 21 104)"/>
+  <rect x="88" y="98" width="22" height="12" rx="6" fill="#1a1a2e" transform="rotate(-20 99 104)"/>
+  <!-- Hands -->
+  <ellipse cx="16" cy="128" rx="9" ry="7" fill="#c8956c"/>
+  <ellipse cx="104" cy="128" rx="9" ry="7" fill="#c8956c"/>
+  <!-- Legs -->
+  <rect x="35" y="168" width="18" height="45" rx="6" fill="#2d3561"/>
+  <rect x="67" y="168" width="18" height="45" rx="6" fill="#2d3561"/>
+  <!-- Shoes -->
+  <ellipse cx="44" cy="213" rx="14" ry="6" fill="#1a1a1a"/>
+  <ellipse cx="76" cy="213" rx="14" ry="6" fill="#1a1a1a"/>
+</svg>
