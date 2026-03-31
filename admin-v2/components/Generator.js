@@ -1,16 +1,21 @@
 const { useState, useEffect } = React;
 
 const Generator = ({ level, type }) => {
-  const { fsDoc, fsGetDoc }                                      = window.Firebase;
-  const { resolveCollection, levelProfiles, getExplanationRule } = window.Collections;
-  const { generateSystemRole, generateUserMessage }               = window.Prompt;
+  const { fsDoc, fsGetDoc }                                          = window.Firebase;
+  const { resolveCollection, levelProfiles, getExplanationRule,
+          resolveSyllabusKey }                                        = window.Collections;
+  const { generateSystemRole, generateUserMessage, SYLLABUS_PARTS }  = window.Prompt;
 
   const [count, setCount]               = useState(10);
+  const [part, setPart]                 = useState('part1');
   const [apiKey, setApiKey]             = useState(localStorage.getItem('gemini_api_key') || '');
   const [isGenerating, setIsGenerating] = useState(false);
   const [status, setStatus]             = useState('');
   const [statusType, setStatusType]     = useState('');
   const [lastSynced, setLastSynced]     = useState(null);
+
+  // Reset part to part1 whenever level or type changes
+  useEffect(() => { setPart('part1'); }, [level, type]);
 
   useEffect(() => { if (level && type) fetchMeta(); }, [level, type]);
 
@@ -26,6 +31,10 @@ const Generator = ({ level, type }) => {
     localStorage.setItem('gemini_api_key', e.target.value);
   };
 
+  const syllabusKey  = resolveSyllabusKey(level, type);
+  const syllabusData = syllabusKey ? SYLLABUS_PARTS[syllabusKey] : null;
+  const partCount    = syllabusData ? Object.keys(syllabusData).length : 5;
+
   const handleGenerate = async () => {
     if (!apiKey) { setStatusType('err'); setStatus('Enter your Gemini API key.'); return; }
 
@@ -33,15 +42,13 @@ const Generator = ({ level, type }) => {
     setStatus('');
     setStatusType('');
 
-    // Fire empty event to clear Validator textarea immediately
     window.dispatchEvent(new CustomEvent('nish-generated', { detail: '' }));
 
     const lp              = levelProfiles[level];
     const explanationRule = getExplanationRule(level, type);
     const systemRole      = generateSystemRole();
-    const userMsg         = generateUserMessage(level, type, count, lp, explanationRule);
+    const userMsg         = generateUserMessage(level, type, count, part, lp, explanationRule, syllabusKey, syllabusData);
 
-    // AbortController — 4 minute safety timeout
     const controller = new AbortController();
     const timeout    = setTimeout(() => controller.abort(), 240000);
 
@@ -52,7 +59,6 @@ const Generator = ({ level, type }) => {
     for (const model of models) {
       setStatus(`Streaming from ${model}...`);
       try {
-        // Use streamGenerateContent endpoint for live streaming
         const res = await fetch(
           `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${apiKey}`,
           {
@@ -74,7 +80,6 @@ const Generator = ({ level, type }) => {
           throw new Error(lastError);
         }
 
-        // Read SSE stream token by token
         const reader  = res.body.getReader();
         const decoder = new TextDecoder();
         let accumulated = '';
@@ -82,9 +87,7 @@ const Generator = ({ level, type }) => {
         while (true) {
           const { done, value } = await reader.read();
           if (done) break;
-
           const chunk = decoder.decode(value, { stream: true });
-          // SSE lines look like: data: {"candidates":[...]}
           const lines = chunk.split('\n');
           for (const line of lines) {
             if (!line.startsWith('data: ')) continue;
@@ -95,15 +98,13 @@ const Generator = ({ level, type }) => {
               const token  = parsed.candidates?.[0]?.content?.parts?.[0]?.text || '';
               if (token) {
                 accumulated += token;
-                // Fire event with accumulated text so far — Validator updates live
                 window.dispatchEvent(new CustomEvent('nish-stream', { detail: accumulated }));
               }
-            } catch (e) { /* partial chunk, skip */ }
+            } catch (e) {}
           }
         }
 
         if (accumulated) {
-          // Final fire with complete clean text
           window.dispatchEvent(new CustomEvent('nish-generated', { detail: accumulated.trim() }));
           succeeded = true;
           break;
@@ -137,7 +138,7 @@ const Generator = ({ level, type }) => {
 
   const lp            = levelProfiles[level] || {};
   const explanRule    = getExplanationRule(level, type);
-  const promptPreview = `[SYSTEM]\n${generateSystemRole()}\n\n[USER]\n${generateUserMessage(level, type, count, lp, explanRule)}`;
+  const promptPreview = `[SYSTEM]\n${generateSystemRole()}\n\n[USER]\n${generateUserMessage(level, type, count, part, lp, explanRule, syllabusKey, syllabusData)}`;
 
   return (
     <div className="bg-[#1a1a2e] p-6 rounded-2xl border border-white/5 mb-8">
@@ -153,20 +154,38 @@ const Generator = ({ level, type }) => {
         )}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div className="mb-6">
+        <label className="block text-xs font-bold text-[#888] uppercase mb-2">Gemini API Key (BYOK)</label>
+        <input
+          type="password"
+          value={apiKey}
+          onChange={handleApiKeyChange}
+          placeholder="Enter API Key — saved locally"
+          className="w-full bg-[#0f0f1a] border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-[#7c6af7]"
+        />
+        <p className="text-[10px] text-[#555] mt-1">Key never leaves your browser. Stored in localStorage.</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <div>
-          <label className="block text-xs font-bold text-[#888] uppercase mb-2">Gemini API Key (BYOK)</label>
-          <input
-            type="password"
-            value={apiKey}
-            onChange={handleApiKeyChange}
-            placeholder="Enter API Key — saved locally"
+          <label className="block text-xs font-bold text-[#888] uppercase mb-2">Syllabus Part</label>
+          <select
+            value={part}
+            onChange={(e) => setPart(e.target.value)}
             className="w-full bg-[#0f0f1a] border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-[#7c6af7]"
-          />
-          <p className="text-[10px] text-[#555] mt-1">Key never leaves your browser. Stored in localStorage.</p>
+          >
+            {Array.from({ length: partCount }, (_, i) => (
+              <option key={`part${i + 1}`} value={`part${i + 1}`}>Part {i + 1}</option>
+            ))}
+          </select>
+          {syllabusData && syllabusData[part] && (
+            <p className="text-[10px] text-[#555] mt-1 truncate">
+              {syllabusData[part][0].split('—')[0].trim()}...
+            </p>
+          )}
         </div>
         <div>
-          <label className="block text-xs font-bold text-[#888] uppercase mb-2">Question Count (P11a)</label>
+          <label className="block text-xs font-bold text-[#888] uppercase mb-2">Question Count</label>
           <select
             value={count}
             onChange={(e) => setCount(parseInt(e.target.value))}
@@ -177,6 +196,13 @@ const Generator = ({ level, type }) => {
             <option value={50}>50 Questions</option>
             <option value={99}>99 Questions</option>
           </select>
+        </div>
+        <div>
+          <label className="block text-xs font-bold text-[#888] uppercase mb-2">Syllabus Key</label>
+          <div className="w-full bg-[#0f0f1a] border border-white/10 rounded-xl px-4 py-3 text-xs font-mono text-[#6af7a2]">
+            {syllabusKey || 'none'}
+          </div>
+          <p className="text-[10px] text-[#555] mt-1">Auto-resolved from level + subject</p>
         </div>
       </div>
 

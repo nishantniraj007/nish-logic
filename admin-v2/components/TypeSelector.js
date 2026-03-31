@@ -1,20 +1,21 @@
 const typeNames = {
-  qa: 'Quant',
-  lr: 'Logic',
-  sgk: 'Static GK',
-  ca: 'Current Affairs',
-  eng: 'English',
+  qa:   'Quant',
+  lr:   'Logic',
+  sgk:  'Static GK',
+  ca:   'Current Affairs',
+  eng:  'English',
   comp: 'Computer',
-  phy: 'Physics',
+  phy:  'Physics',
   chem: 'Chemistry',
-  bio: 'Biology',
-  mat: 'Math'
+  bio:  'Biology',
+  mat:  'Math',
+  varc: 'VARC',
+  dilr: 'DILR'
 };
 
 const TypeSelector = ({ level, selectedType, onSelect }) => {
   const { levelTypeMap } = window.Collections;
   const types = levelTypeMap[level] || [];
-
   return (
     <div className="flex flex-wrap gap-3 mb-8">
       {types.map((type) => (
@@ -33,5 +34,4 @@ const TypeSelector = ({ level, selectedType, onSelect }) => {
     </div>
   );
 };
-
 window.TypeSelector = TypeSelector;

@@ -1,6 +1,6 @@
 const { useState, useEffect } = React;
 
-const idPattern = /^(qa|lr|sgk|ca|eng|comp|phy|chem|bio|mat)_(e|m|s|u|n|i|clat_e)_\d{2}\.\d{2}\.\d{4}_\d{2}\.\d{2}_\d{2}$/;
+const idPattern = /^(qa|lr|sgk|ca|eng|comp|phy|chem|bio|mat|varc|dilr)_(e|m|s|b|u|c|n|i|clat_e)_\d{2}\.\d{2}\.\d{4}_\d{2}\.\d{2}_\d{2}$/;
 
 // Merge multi-line explanations back into single lines
 function mergeLines(raw) {
